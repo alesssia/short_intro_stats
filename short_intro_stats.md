@@ -181,8 +181,8 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 
 <span style="display:block; height:10px;"></span>
 
-- How to use measure of centrality and dispersion
 - How to sample from a population
+- How to use measure of centrality and dispersion
 - How to make estimation from a sample
 - How to calculate confidence intervals
 - How to make and test hypotheses
@@ -190,6 +190,426 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 <img src="./img/introduction/math_warning.png" img height="150px" align="right" border="0px"/>
 
 <!-- Qui un elenco piu' formale dei topics. Ci saranno anche delle formule matematiche, ma non preoccupatevi: andremo a spiegarle e saranno un aiuto per svolgere gli esercizi e in generale capire cosa stiamo facendo (si', ci sono anche degli esercizi!) -->
+
+---
+![bg opacity](./img//backgrounds/sampling_bg.png)
+
+<span style="display:block; height:190px;"></span>
+
+# Sampling
+
+---
+## Learning objectives
+
+<span style="display:block; height:50px;"></span>
+
+- Understand the difference between sample and population
+- Understand the difference between sampling strategies
+- Understand sampling error and bias
+
+--- 
+## Sample *vs*  &nbsp;Population
+
+<span style="display:block; height:2px;"></span>
+
+<center>
+<img src="./img/sampling/ISTAT.png" img height="450px" border="4px"/>
+</center>
+
+<!-- Popolazione e' l'insieme di tutti gli individui per cui vogliamo studiare un fenomeno, e.g., popolazione italiana
+
+Il modo tradizionale per studiare una popolazione e' il censimento, che pero' ha due svantaggi: a) e' costoso, e b) non e' possibile raccogliere tutte le informazioni possiboli e immaginabili (trauma cranico al nido)
+
+Avveniva ogni 10 anni, ultimo nel 2011 -> dal 2018 permanent census, sotto gruppo della popolazione, quindi quello che chiamiamo un campione statistico -->
+
+---
+## Sample *vs*  &nbsp;Population (in the clinic)
+
+<span style="display:block; height:2px;"></span>
+
+<center>
+<img src="./img/sampling/delirium_2024_underlined.png" img height="450px" border="4px"/>
+</center>
+
+<!-- Nella ricerca clinica, la popolazione e' l'insieme di tutti i pazienti che ci interessano
+
+Campione sono quelli che siamo andati a reclutare .
+
+Ovviamente questi campioni devono essere scelti con procedimenti e regole che garantiscano la capacità del campione di rappresentare la popolazione
+-->
+
+---
+## Opportunity *vs*  &nbsp; random sample
+
+<span style="display:block; height:50px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; An **opportunity** sample is the sample is drawn from the part of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the population that is close to hand (and which may not 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; represent the whole population)
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; All the patients presenting to a given clinic in a given period of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; time are enrolled
+
+<!-- Iniziamo con il distinguere il campionamento probabilistico da quello non propabilistico.
+
+Nel campionamento non-probabilistico, o opportunustico, la selezione del campione avviene in base a criteri di comodo o di praticità, per esempio perché certi individui sono più facilmente contattabili, o per ragioni di costo -->
+
+---
+## Opportunity *vs*  &nbsp; random sample
+
+<span style="display:block; height:50px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; A **random** sample is the sample in which the probability of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getting any particular sample may be calculated (and which 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; should represent the whole population)
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; A randomly selected set of patients with the disease is enrolled
+
+<!-- Nel campionamento probabilistico ogni unità della popolazione in studio ha una probabilità NOTA di essere estratta (non distorto o viziato) -->
+
+---
+## Strategy 1: Simple random sampling
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%">
+
+:dart: &nbsp;&nbsp;&nbsp; A sample of size $n$ drawn from a 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population of size $N$ ensuring 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; that every possible sample of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; size $n$ is equally likely
+
+</div>
+</div>
+<div>
+
+</div>
+</div>
+
+<!-- Nel campionamento casuale semplice tutte le unità della popolazione hanno la stessa probabilità di essere estratte:
+
+data una popolazione di N individui ed un campione di dimensione n  la probabilità che l’i-esimo individuo entri nel campione è “n/N” -->
+
+---
+## Strategy 1: Simple random sampling
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; without replacement
+
+<span style="display:block; height:30px;"></span>
+
+
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<img src="./img/sampling/numbers-tombola.jpg" img height="400px" align="right" border="0px"/>
+
+</div>
+</div>
+
+<!-- Disporre di un elenco completo di tutti i soggetti della popolazione e una loro numerazione
+
+Decidere quante unità si vogliono selezionare e calcolare la frazione di campionamento -->
+
+---
+## Strategy 1: Simple random sampling
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; without replacement
+
+<span style="display:block; height:30px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $49, 65, 25, 74, 18$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $90, 47, 24, 71, 37$
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<img src="./img/sampling/numbers-tombola_simple.jpg" img height="400px" align="right" border="0px"/>
+
+</div>
+</div>
+
+<!--  Estrarre le unità tramite sorteggio casuale o tavole dei numeri casuali (costruite in modo da non avere vizi sistematici. Sono delle serie di numeri tra 0 e 9 disposti a caso e caratterizzati dall’avere una distribuzione uniforme) -->
+
+---
+## Strategy 2: Systematic Sampling
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:50px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 42$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $step = N/n = 90/10=9$ 
+
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<img src="./img/sampling/numbers-tombola.jpg" img height="400px" align="right" border="0px"/>
+
+</div>
+</div>
+
+<!-- Estraggo a caso una prima unita'
+Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli individui estratti  -->
+
+---
+## Strategy 2: Systematic Sampling
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:50px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 42$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $step = N/n = 90/10=9$ 
+
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<img src="./img/sampling/numbers-tombola_systematic.jpg" img height="400px" align="right" border="0px"/>
+
+</div>
+</div>
+
+<!--  dopo la prima estrazione casuale si estrae una unità ogni N/n-->
+
+---
+## Strategy 3: Stratified Random Sampling
+
+<span style="display:block; height:50px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; The population is divided into homohenous group (strata) and 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a simple random sample is drawn from each stratum
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #1: stratified systematic sample 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #2: stratified sampling proportional to size
+
+---
+## Strategy 3: Stratified Random Sampling
+
+<div class="columns">
+<div>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $M=90$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{female}=60$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{male}=30$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=9$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{female} = 6$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{female} = 3$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Females: 46, 20, 26,$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $50, 47,  3$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Males: 69, 85, 87$
+
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<img src="./img/sampling/numbers-tombola_stratified.jpg" img height="400px" align="right" border="0px"/>
+
+</div>
+</div>
+
+<!-- Esempi di strata : sesso, eta', condizione sociale -->
+
+---
+## Strategy 4: Cluster sampling
+
+<span style="display:block; height:10px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; The population is divided into clusters, and a simple random 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample is drawn
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation: one stage (observing everything) *vs* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; two stage (sampling within clusters)
+
+<!-- Le unità della popolazione sono suddivise in CLUSTER o GRAPPOLI in base a circostanze organizzative, strutturali, geografiche.
+All’interno dei cluster le unità possono essere molto diverse tra di loro.
+
+Il campione si forma estraendo casualmente un numero prestabilito di cluster, dopodichè si possono includere tutte le unità che appartengono al cluster (1 stadio) o solo una parte (2 stadi, usano campionamento semplice o stratificato)
+ -->
+
+---
+## Strategy 4: Cluster sampling
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/sampling/google-earth-torino.jpg" img height="450px" border="0px"/>
+</center>
+
+--- 
+## Strategy 4: Cluster sampling in the wild
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:450px;"></span>
+
+<div style="font-size: 80%" align="right">
+https://hbsc.org
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/sampling/hbsc.jpg" img height="500px" border="4px"/>
+</center>
+
+</div>
+
+<!--  Studio internazionale che si tiene ogni 4 anni e che raccoglie informazioni sui ragazzi di 11, 13, 15 e, recentemente anche 17 anni (che sono la mia popolazione) 
+Ma non li raccoglie tutti, ne raccoglie un campione.
+
+Divido la popolazione in classi (clusters) e poi vado a prendere dalla lista fornita dal ministero e poi selezioni scuole e classi da quella lista, andando a prendere TUTTI gli studenti della classe 
+
+Countries may choose to stratify their samples to ensure representation by, for example, geographic location,
+ethnic group or school type.
+-->
+
+---
+### Exercise #1
+
+:question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  on cheese consumption to every 5th customer entering
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  the supermarket
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above 
+
+---
+### Exercise #1 -- Solution
+
+:question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  on cheese consumption to every 5th customer entering
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  the supermarket
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above :white_check_mark: 
+
+---
+## Selection bias
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:50px;"></span>
+- Survivor bias
+- Volunteer bias
+- Lost to follow up bias
+- $\dots$
+
+</div>
+<div>
+
+<img src="./img/sampling/Survivorship-bias.svg.png" img height="450px" align="right" border="0px"/>
+
+</div>
+
+<!-- Anche se facciamo attenzione i nostri sample possono avere delle distorsioni
+
+- voglio andare a vedere dove gli aerei da guerra vengono colpiti per rinforzarli
+- - volontari alsop SES e soprattuto donne
+- sto testando un nuovo farmaco, le persone che hanno i side effect peggiori possono interromperlo, o quelli per cui non funziona possono morire -->
+
+---
+## Selection bias in the wild
+
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/sampling/ukbb_bias.png" img height="300px" border="4px"/>
+</center>
+
+<!-- Persino in un campione di 0.5M di persone come la UKBB, si osserva che non rispondere o rispondere non lo so a questionari (109 domande, in questo studio) non e' casuale e dipende da foattori genetici e ambientali -->
+
+---
+### Exercise #2
+
+:question: &nbsp;&nbsp;&nbsp; Researchers send pensioners a snail mail to ask about their 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mental health  after the COVID-19 lockdown. Pensioners are  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  then asked to post their  answer back
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Will their study suffer any bias?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) No
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Yes, volunteer bias
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yes, survivor bias
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both c) and d)
+
+---
+### Exercise #2 -- Solution
+
+:question: &nbsp;&nbsp;&nbsp; Researchers send pensioners a snail mail to ask about their 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mental health  after the COVID-19 lockdown. Pensioners are  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  then asked to post their  answer back
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Will their study suffer any bias?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) No
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Yes, volunteer bias
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yes, survivor bias
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both c) and d) :white_check_mark: 
+
+---
+![bg opacity](./img/backgrounds/sampling_bg.png)
+
+## Summary
+
+<span style="display:block; height:50px;"></span>
+
+- When can't study a population, we select a representative sample
+- There are different sampling strategies 
+- Samples may suffer from biases
 
 ---
 ![bg opacity](./img/backgrounds/Descriptive_bg.png)
@@ -204,7 +624,8 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 <span style="display:block; height:50px;"></span>
 
 - Understand the differences between data types
-- Be able to summarize each data type using measure of centrality and  dispersion
+- Be able to summarize each data type using measure of centrality and dispersion
+- Understand the difference between statistics and parameters
 - Understand why visualise your data is important
 
 ---
@@ -223,7 +644,7 @@ Categoriche:
 - Ordinali -> dati che rappresentano categorie ordinate (ECOG performance status [0-4]) -->
 
 ---
-### Exercise #1
+### Exercise #3
 
 <div class="columns">
 <div>
@@ -528,7 +949,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 | Numeric | Mean, Median, Mode | Range, IQR, standard deviation
 
 ---
-### Exercise #2
+### Exercise #4
 
 <div class="columns">
 <div>
@@ -554,7 +975,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 </div>
 
 ---
-### Exercise #2 -- Solution
+### Exercise #4 -- Solution
 
 <div class="columns">
 <div>
@@ -580,7 +1001,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 </div>
 
 ---
-### Exercise #3
+### Exercise #5
 
 <div class="columns">
 <div>
@@ -606,7 +1027,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 </div>
 
 ---
-### Exercise #3 -- Solution
+### Exercise #5 -- Solution
 
 <div class="columns">
 <div>
@@ -632,7 +1053,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 </div>
 
 ---
-### Exercise #4
+### Exercise #6
 
 <span style="display:block; height:1px;"></span>
 
@@ -647,7 +1068,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Either a) or d)
 
 ---
-### Exercise #4 -- Solution
+### Exercise #6 -- Solution
 
 <span style="display:block; height:1px;"></span>
 
@@ -660,6 +1081,60 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Age: mean (SD), sex: mean (SD), lipid levels: mean (SD) 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or b) :white_check_mark: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Either a) or d)
+
+---
+## Parameters *vs*  &nbsp; statistics
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:2px;"></span>
+
+<center>
+<img src="./img/sampling/DBS_population.png" img height="450px" border="0px"/>
+</center>
+
+</div>
+<div>
+
+$$
+\mu=80 \text{ 𝑚𝑚𝐻𝑔}
+$$
+
+$$
+\sigma=3 \text{ 𝑚𝑚𝐻𝑔}
+$$
+
+</div>
+
+<!-- Una cosa che non vi ho detto, ma che ci tornera' utile in seguito e' che la media e la SD di una popolazione si chiamano PARAMETRI e si indicano con le lettere greche -->
+
+---
+## Parameters *vs*  &nbsp; statistics
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:2px;"></span>
+
+<center>
+<img src="./img/sampling/DBS_sample.png" img height="450px" border="0px"/>
+</center>
+
+</div>
+<div>
+
+$$
+\bar{x}=78 \text{ 𝑚𝑚𝐻𝑔}
+$$
+
+$$
+s=6 \text{ 𝑚𝑚𝐻𝑔}
+$$
+
+</div>
+
+<!-- media e SD misurati su un campione si chiamano invece STATISTICHE e sono indicati con lettere latine  -->
 
 ---
 ## Data visualisation: boxplots
@@ -713,424 +1188,6 @@ Visconti A., et al., Total serum *N*‐glycans associate with response to immune
 - Data are described with measures of centrality and dispersion
 - Visualising your data is always a good idea
 
----
-![bg opacity](./img//backgrounds/sampling_bg.png)
-
-<span style="display:block; height:190px;"></span>
-
-# Sampling
-
----
-## Learning objectives
-
-<span style="display:block; height:50px;"></span>
-
-- Understand the difference between sample and population
-- Understand the difference between statistics and parameters
-- Understand the difference between sampling strategies
-- Understand sampling error and bias
-
---- 
-## Sample *vs*  &nbsp;Population
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/sampling/ISTAT.png" img height="450px" border="4px"/>
-</center>
-
-<!-- Popolazione e' l'insieme di tutti gli individui per cui vogliamo studiare un fenomeno, e.g., popolazione italiana
-
-Il modo tradizionale per studiare una popolazione e' il censimento, che pero' ha due svantaggi: a) e' costoso, e b) non e' possibile raccogliere tutte le informazioni possiboli e immaginabili (trauma cranico al nido)
-
-Avveniva ogni 10 anni, ultimo nel 2011 -> dal 2018 permanent census, sotto gruppo della popolazione, quindi quello che chiamiamo un campione statistico -->
-
----
-## Sample *vs*  &nbsp;Population (in the clinic)
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/sampling/delirium_2024_underlined.png" img height="450px" border="4px"/>
-</center>
-
-<!-- Nella ricerca clinica, la popolazione e' l'insieme di tutti i pazienti che ci interessano
-
-Campione sono quelli che siamo andati a reclutare .
-
-Ovviamente questi campioni devono essere scelti con procedimenti e regole che garantiscano la capacità del campione di rappresentare la popolazione
--->
-
----
-## Parameters *vs*  &nbsp; statistics
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/sampling/DBS_population.png" img height="450px" border="0px"/>
-</center>
-
-</div>
-<div>
-
-$$
-\mu=80 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-$$
-\sigma=3 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-</div>
-
----
-## Parameters *vs*  &nbsp; statistics
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/sampling/DBS_sample.png" img height="450px" border="0px"/>
-</center>
-
-</div>
-<div>
-
-$$
-\bar{x}=83 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-$$
-s=7 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-</div>
-
----
-## Parameters *vs*  &nbsp; statistics
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/sampling/DBS_sample_2.png" img height="450px" border="0px"/>
-</center>
-
-</div>
-<div>
-
-$$
-\bar{x}=78 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-$$
-s=6 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-sampling error $= \mu - \bar{x} =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 80-78 =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 2$  𝑚𝑚𝐻𝑔
-
-</div>
-
----
-## Opportunity *vs*  &nbsp; random sample
-
-<span style="display:block; height:50px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; An **opportunity** sample is the sample is drawn from the part of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the population that is close to hand (and which may not 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; represent the whole population)
-
-<span style="display:block; height:10px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; All the patients presenting to a given clinic in a given period of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; time are enrolled
-
----
-## Opportunity *vs*  &nbsp; random sample
-
-<span style="display:block; height:50px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; A **random** sample is the sample in which the probability of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getting any particular sample may be calculated (and which 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; should represent the whole population)
-
-<span style="display:block; height:10px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; A randomly selected set of patients with the disease is enrolled
-
----
-## Strategy 1: Simple random sampling
-
-<span style="display:block; height:50px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; A sample of size $n$ drawn from a population of size $N$ ensuring 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; that every possible sample of size $n$ is equally likely
-
-<span style="display:block; height:30px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Random number generator (with or without replacement)
-
----
-## Strategy 1: Simple random sampling
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$ 
-
-<span style="display:block; height:30px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $49, 65, 25, 74, 18$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $90, 47, 24, 71, 37$
-</div>
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<img src="./img/sampling/numbers-tombola_simple.jpg" img height="400px" align="right" border="0px"/>
-
----
-## Strategy 2: Systematic Sampling
-
-<span style="display:block; height:50px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; An item $x$ is chosen at random, then every $N/n$<sup>th</sup> item after
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (*i.e.*, $x+(N/n)$, $x + 2\times (N/n)$, $x + 3\times (N/n)$, $\dots$ ,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $x + (n-1) \times (N/n)$) is selected
-
----
-## Strategy 2: Systematic Sampling
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:50px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $step = N/n = 90/10=9$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 42$
-
-</div>
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<img src="./img/sampling/numbers-tombola_systematic.jpg" img height="400px" align="right" border="0px"/>
-
-</div>
-</div>
-
----
-## Strategy 3: Stratified Random Sampling
-
-<span style="display:block; height:50px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; The population is divided into homohenous group (strata) and 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a simple random sample is drawn from each stratum
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #1: stratified systematic sample 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #2: stratified sampling proportional to size
-
----
-## Strategy 3: Stratified Random Sampling
-
-<div class="columns">
-<div>
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $M=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{female}=60$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{male}=30$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=9$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{female} = 5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{female} = 3$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Females: 46, 20, 26,$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $50, 47,  3$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Males: 69, 85, 87$
-
-</div>
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<img src="./img/sampling/numbers-tombola_stratified.jpg" img height="400px" align="right" border="0px"/>
-
-</div>
-</div>
-
----
-## Strategy 4: Cluster sampling
-
-<span style="display:block; height:10px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; The population is divided into clusters, and a simple random 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample is drawn
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #1: using systematic sample instead
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #2: one stage (observing everything) *vs* 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; two stage (sampling within clusters) 
-
----
-## Strategy 4: Cluster sampling
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/sampling/google-earth-torino.jpg" img height="450px" border="0px"/>
-</center>
-
---- 
-## Strategy 4: Cluster sampling in the wild
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:450px;"></span>
-
-<div style="font-size: 80%" align="right">
-https://hbsc.org
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/sampling/hbsc.jpg" img height="500px" border="4px"/>
-</center>
-
-</div>
-
----
-### Exercise #3
-
-:question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  on cheese consumption to every 5th customer entering
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  the supermarket
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above 
-
----
-### Exercise #3 -- Solution
-
-:question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  on cheese consumption to every 5th customer entering
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  the supermarket
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above :white_check_mark: 
-
----
-### Exercise #4
-
-:question: &nbsp;&nbsp;&nbsp; Researchers send pensioners a snail mail to ask about their 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mental health  after the COVID-19 lockdown. Pensioners are  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  then asked to post their  answer back
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above 
-
----
-### Exercise #4 -- Solution
-
-:question: &nbsp;&nbsp;&nbsp; Researchers send pensioners a snail mail to ask about their 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mental health  after the COVID-19 lockdown. Pensioners are  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  then asked to post their  answer back
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling  :white_check_mark:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above 
-
----
-## Selection bias
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:50px;"></span>
-- Survivor bias
-- Lost to follow up bias
-- Volunteer bias
-- Early termination bias
-- $\dots$
-
-</div>
-<div>
-
-<img src="./img/sampling/Survivorship-bias.svg.png" img height="450px" align="right" border="0px"/>
-
-</div>
-
----
-### Exercise #5
-
-:question: &nbsp;&nbsp;&nbsp; Researchers send pensioners a snail mail to ask about their 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mental health  after the COVID-19 lockdown. Pensioners are  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  then asked to post their  answer back
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Will their study suffer any bias?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) No
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Yes, volunteer bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yes, survivor bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both c) and d)
-
----
-### Exercise #5 -- Solution
-
-:question: &nbsp;&nbsp;&nbsp; Researchers send pensioners a snail mail to ask about their 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mental health  after the COVID-19 lockdown. Pensioners are  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  then asked to post their  answer back
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Will their study suffer any bias?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) No
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Yes, volunteer bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yes, survivor bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both c) and d) :white_check_mark: 
-
----
-![bg opacity](./img/backgrounds/sampling_bg.png)
-
-## Summary
-
-<span style="display:block; height:50px;"></span>
-
-- When can't study a population, we select a representative sample
-- There are different sampling strategies 
-- Samples may suffer from biases
 
 ---
 ![bg opacity](./img/backgrounds/normal_bg.png)

@@ -5,8 +5,8 @@ Slides include teacher notes, which are in Italian (the language I'm delivering 
 
 ## Topics covered
 
-- How to use measure of centrality and dispersion
 - How to sample from a population
+- How to use measure of centrality and dispersion
 - How to make estimation from a sample
 - How to calculate confidence intervals
 - How to make and test hypotheses
