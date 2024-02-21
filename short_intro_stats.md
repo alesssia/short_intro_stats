@@ -114,6 +114,10 @@ style: |
 </div>
 </div>
 
+<!-- Florence Nightingale era un'infermiera britannica che e' considerata la madre dell'infermieristica come la intendiamo oggi, un titolo che si e' guadagnato durante la guerra di Crimea, quando era sovrintendente di un ospedale di Instambul. 
+
+Appena arrivata ad Instabul, Florence, si accorge subito delle pessime condizioni di sovraffollameto e pulizia, ma oltre a cercare di mettere una pezza, pulendo e disinfettando tutto con le sue infermiere, si mette anche a raccogliere dati, soprattutto sulle cause di morte dei soldati. -->
+
 ---
 ## Florence Nightingale
 
@@ -122,6 +126,15 @@ style: |
 <center>
 <img src="./img/introduction/Nightingale-mortality.png" img height="500px"  border="4px"/>
 </center>
+
+<!-- E questi dati non solo li raccoglie, ma li riassume e presenta anche sotto forma di polar diagram, che spedisce regolarmente al governo britannico. 
+
+Come si legge il grafico. Blu = malattie infettive, Rosso = ferite riportate in battaglia, nero = altre cause
+
+E cosa concludiamo? 
+Che migliorare le condizioni igenice (pulizia, luce, ventilazione, ...) degli ospedali, aumenta le possibilita' di salvare il paziente. 
+
+E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e presentare i dati, e nel prendere delle decisioni basate su di essi. Insomma, grazie alla statistica. -->
 
 ---
 ## What is Statistics?
@@ -132,6 +145,10 @@ style: |
 
 * The drawing of inferences about a body of data when only a part of the data is observed <br/>&rarr; *Inferential* &nbsp; statistics
 
+<!-- - Individuare in maniera efficiente i tratti importanti delle informazioni che sono state raccolte
+
+- Partire dal particolare per capire come le informazioni si possono estendere alla totalità -->
+
 ---
 ## What will we learn?
 
@@ -141,6 +158,13 @@ style: |
 - How to summarize data
 - How to make decision with data
 
+
+<!-- - Come raccogliere i dati, che andranno scelti oculatamente per far si' che il particolare che ossserviamo si estenda alla totalita' della popolazione
+
+- Come sintetizzarli, utilizzando vari indici, ma anche qualche rappresentazione grafica
+
+- come usare approcci statistici per stimare valori della popolazione, e definire e verificare ipotesi -->
+
 ---
 ## What will we learn?
 
@@ -149,6 +173,8 @@ style: |
 <center>
 <img src="./img/hypothesis_testing/jama_network_hypothesis.png " img height="300px" border="4px"/>
 </center>
+
+<!-- Andremo per esempio a capire come disegnare un piano di raccolta e analisi dei dati che ci permetta di verificare la nostra ipotesi che un farmaco sia meglio della standard care durante un'infezione COVID -->
 
 ---
 ## Topics covered
@@ -162,6 +188,8 @@ style: |
 - How to make and test hypotheses
 
 <img src="./img/introduction/math_warning.png" img height="150px" align="right" border="0px"/>
+
+<!-- Qui un elenco piu' formale dei topics. Ci saranno anche delle formule matematiche, ma non preoccupatevi: andremo a spiegarle e saranno un aiuto per svolgere gli esercizi e in generale capire cosa stiamo facendo (si', ci sono anche degli esercizi!) -->
 
 ---
 ![bg opacity](./img/backgrounds/Descriptive_bg.png)
@@ -184,19 +212,29 @@ style: |
 
 <img src="./img/descriptive/Variables.png" img height="450px" align="right" border="0px"/>
 
+<!-- Andiamo a dividere i dati in variabili quantitative (o numeriche) o qualitative (o categorighe) 
+
+Numeriche: 
+- continue (altezza, peso, BMI)
+- discrete (numero di pazienti ammessi in PS)
+
+Categoriche:
+- Nominali -> due categorie binarie (diabete si/no), piu' categorie (gruppo sanguigno)
+- Ordinali -> dati che rappresentano categorie ordinate (ECOG performance status [0-4]) -->
+
 ---
 ### Exercise #1
 
 <div class="columns">
 <div>
 
-:handshake: &nbsp;&nbsp;&nbsp; Which types of data are 
+:question: &nbsp;&nbsp;&nbsp; Which types of data are 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; included in this table?
 
-<span style="display:block; height:300px;"></span>
+<span style="display:block; height:280px;"></span>
 
 <div style="font-size: 50%">
-Ely EW, Shintani A, Truman B, et al. Delirium as a Predictor of Mortality in Mechanically Ventilated Patients in the Intensive Care Unit. JAMA. 2004; doi:10.1001/jama.291.14.1753
+Visconti A., et al., Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
 </div>
 
 </div>
@@ -209,6 +247,38 @@ Ely EW, Shintani A, Truman B, et al. Delirium as a Predictor of Mortality in Mec
 </div>
 </div>
 
+--- 
+## Why do  we care?
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:120px;"></span>
+
+<center>
+<img src="./img/descriptive/Table1_caption.png" img height="120px" border="4px"/>
+</center>
+
+<span style="display:block; height:120px;"></span>
+
+<div style="font-size: 50%">
+Visconti A., et al., Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Table1.png" img height="550px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Perche' il modo in cui andiamo prima a presentare e poi ad analizzare una variabile dipende dal suop tipo.
+
+Numeriche media/SD, categoriche N/% -->
+
 ---
 ## Measures of centrality and dispersion
 
@@ -217,6 +287,12 @@ Ely EW, Shintani A, Truman B, et al. Delirium as a Predictor of Mortality in Mec
 <center>
 <img src="./img/descriptive/descriptive.png" img height="450px" border="4px"/>
 </center>
+
+<!--  E cosa sono poi queste media, SD? Sono due delle proprieta' che descrivono i dati
+
+Tendenza centrale (o posizione) -> Individuano il valore intorno al quale i dati sono raggruppati
+
+Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione delle osservazioni intorno al valore centrale -->
 
 ---
 ## Measure of centrality: mode
@@ -236,32 +312,13 @@ Ely EW, Shintani A, Truman B, et al. Delirium as a Predictor of Mortality in Mec
 ---
 ## Measure of centrality: median
 
+:dart: &nbsp;&nbsp;&nbsp;The "middle" value
+
 <span style="display:block; height:1px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; If $n$ is odd:
-$$
-
-\text{median}(x)=x_{(n+1)/2}
-
-$$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If $n$ is even:
-$$
-
-\text{median}(x)={\frac {x_{(n/2)}+x_{((n/2)+1)}}{2}}
-
-$$
-
----
-## Measure of centrality: median
-
-<span style="display:block; height:3px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 8, 9\}$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
-
-<span style="display:block; height:20px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $n=8,  x= \{1, 2, 3, 4, 5, 6, 8, 9\}$
 
@@ -271,63 +328,18 @@ $$
 ---
 ## Measure of centrality: median
 
-<span style="display:block; height:3px;"></span>
+:dart: &nbsp;&nbsp;&nbsp; Robust to outliers
+
+<span style="display:block; height:1px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 8, 9\}$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
 
-<span style="display:block; height:20px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $n=7, x= \{1, 3, 3, 6, 7, 48, 109\}$ 
+:pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 48, 109\}$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
-
-
----
-## Measure of centrality: mean
-
-<span style="display:block; height:1px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; aka arithmetic mean
-
-$$
-{\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)=
-{\frac {x_{1}+x_{2}+\dots +x_{n}}{n}}
-$$
-
-<span style="display:block; height:10px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{4, 36, 45, 50, 75\}$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 75}{5} = 42$
-
----
-## Mode *vs* &nbsp;median *vs* &nbsp;mean
-
-<span style="display:block; height:100px;"></span>
-
-<center>
-<img src="./img/descriptive/mode_vs_median_vs_mean.png" img height="200px" border="0px"/>
-</center>
-
----
-## Median, quartiles, percentiles
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/descriptive/quantile.png" img height="450px" border="4px"/>
-</center>
-
----
-## Percentiles in the wild
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/descriptive/percentile_chart.gif" img height="500px" border="4px"/>
-</center>
+<!-- La mediana non e' influenzata da valori anomali o estremi (outliers) -->
 
 ---
 ## Quartiles
@@ -344,7 +356,60 @@ $$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Q3(x_{7:11})= x_{(5+1)/2}=x_9=43$
 
+<!-- Mentre la mediana divide i dati in due meta' esatte, molto usati sono anche i quartili, che dividono i dati in 4 parti uguali -->
 
+---
+## Percentiles
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/percentile_chart.gif" img height="500px" border="4px"/>
+</center>
+
+<!-- Il percentile invece divide i dati in 100 intervalli, e dato una percentile, per esempio il decimo, sappiamo che il 10% dei valori assunti dalla variabile sono inferiori o uguali a quel valore -->
+
+---
+## Measure of centrality: mean
+
+<span style="display:block; height:1px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; Arithmetic mean
+
+$$
+{\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)=
+{\frac {x_{1}+x_{2}+\dots +x_{n}}{n}}
+$$
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{4, 36, 45, 50, 75\}$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 75}{5} = 42$
+
+<!-- Somma dei singoli valori diviso il numero di osservazioni  -->
+
+---
+## Mode *vs* &nbsp;median *vs* &nbsp;mean
+
+<span style="display:block; height:100px;"></span>
+
+<center>
+<img src="./img/descriptive/mode_vs_median_vs_mean.png" img height="200px" border="0px"/>
+</center>
+
+<!-- La moda e' la parte piu' alta della curva, la mediana divide l'area in 2 parti uguali e la media e' il "balance point", quello in cui starebbe in equilibrio se fosse fatta di un materiale solido -->
+
+---
+## The shape of a distribution
+
+<span style="display:block; height:70px;"></span>
+
+<center>
+<img src="./img/descriptive/434px-Relationship_between_mean_and_median_under_different_skewness.png" img height="250px" border="0px"/>
+</center>
+
+<!-- Asimmetrica a destra/sinistra -->
 
 ---
 ## Measures of dispersion
@@ -375,6 +440,8 @@ $$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\text{range}(x)}= \text{max}(x)-\text{min}(x)=49-6=43$
 
+<!-- Il range pero' si basa solo sui due valori estremi, senza indicare come si distribuiscono i dati entro l’intervallo -->
+
 ---
 ## Measure of dispersion: interquantile range
 
@@ -388,12 +455,55 @@ $$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\text{IQR}(x)}= \text{Q3}(x)-\text{Q1}(x)=43-15=28$
 
+<!-- Non sono considerati i valori estremi, ma sappiamo come si distribuisce la meta dei dati rispetto al valore centrale -->
+
+---
+## Measure of dispersion: variance
+
+<span style="display:block; height:1px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; $s^2 = \frac{1}{n-1}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
+
+<span style="display:block; height:1px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{1, 2, 3\}$ &nbsp;&nbsp;&nbsp; $\bar{x}=\frac{1+2+3}{3}=2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \frac{1}{2}\times [1^2+ 0^2+1^2 ]=  \frac{1}{2}\times 2 = 1$
+
+<!-- Distanza media (al quatrato!) tra ognuno dei valori osservati e la media -->
+
+---
+## Measure of dispersion: variance
+
+<span style="display:block; height:1px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; $s^2 = \frac{1}{n-1}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; why &nbsp; $\frac{1}{n-1}$ &nbsp; ?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sum _{i=1}^{n}(x_{i}-\bar {x} ) = 0$
+
+<span style="display:block; height:1px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{1, 2, 3\}$ &nbsp;&nbsp;&nbsp; $\bar{x}=\frac{1+2+3}{3}=2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sum _{i=1}^{n}(x_{i}-\bar {x} ) = (1-2) + (2-2) + (3-2) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1 + 0 + 1 = 0$
+
+<!-- Perche' si divide per (n-1) e non n? 
+
+Dipende dal fatto che La somma degli scarti dalla media aritmetica è nulla
+Qundi se conosco i primi (n-1) valori, conosco anche l'ultimo
+
+n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di dati (n) meno il numero di costanti gia' calcolate dai dati (in questo caso 1, la media) -->
+
 ---
 ## Measure of dispersion: standard deviation
 
 <span style="display:block; height:1px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; $s =\sqrt {{\frac {1}{n-1}}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}}$
+:dart: &nbsp;&nbsp;&nbsp; $s = \sqrt{s^2} = \sqrt {{\frac {1}{n-1}}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}}$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
 
@@ -402,7 +512,9 @@ $$
 :pushpin: &nbsp;&nbsp;&nbsp;  $x= \{1, 2, 3\}$ &nbsp;&nbsp;&nbsp; $\bar{x}=\frac{1+2+3}{3}=2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \sqrt {\frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] }=$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \sqrt {\frac{1}{2}\times [1^2+ 0^2+1^2 }]= \sqrt {\frac{1}{2}\times 2}= \sqrt {1} = 1$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \sqrt {\frac{1}{2}\times [1^2+ 0^2+1^2 }]= \sqrt {\frac{1}{2}\times 2}= \sqrt {1} = 1$
+
+<!-- che nella varianza l'unità di misura è diversa da quella della variabile su cui è calcolata, si utilizza la sua radice quadrata detta SCARTO QUADRATICO MEDIO o deviazione standard. -->
 
 ---
 ## Centrality, dispersion, and data types
@@ -411,36 +523,118 @@ $$
 
 | Data type | Centrality Measure | Dispersion Measure |
 | ---- | ----- | ---- |
-| Nominal | Mode | None |
+| Nominal | Mode | - |
 | Ordinal | Median, Mode | Range, IQR |
 | Numeric | Mean, Median, Mode | Range, IQR, standard deviation
 
 ---
-## Measures in the wild
+### Exercise #2
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:450px;"></span>
+<span style="display:block; height:1px;"></span>
 
-<div style="font-size: 50%">
-Ely EW, Shintani A, Truman B, et al. Delirium as a Predictor of Mortality in Mechanically Ventilated Patients in the Intensive Care Unit. JAMA. 2004; doi:10.1001/jama.291.14.1753
-</div>
+:question: &nbsp;&nbsp;&nbsp; Which curve has the larger 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mean?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) blue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) green
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) red
 
 </div>
 <div>
 
+<span style="display:block; height:50px;"></span>
+
 <center>
-<img src="./img/descriptive/Table1.png" img height="550px" border="4px"/>
+<img src="./img/descriptive/exercise_mean.png" img height="300px" border="4px"/>
 </center>
 
 </div>
+
+---
+### Exercise #2 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Which curve has the larger 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mean?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) blue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) green
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) red :white_check_mark: 
+
+</div>
+<div>
+
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/descriptive/exercise_mean.png" img height="300px" border="4px"/>
+</center>
+
 </div>
 
 ---
-### Exercise #2
+### Exercise #3
 
-<span style="display:block; height:10px;"></span>
+<div class="columns">
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Which curve has the larger 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) blue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) green
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) red
+
+</div>
+<div>
+
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/descriptive/exercise_sd.png" img height="300px" border="4px"/>
+</center>
+
+</div>
+
+---
+### Exercise #3 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Which curve has the larger 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) blue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) green
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) red  :white_check_mark: 
+
+</div>
+<div>
+
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/descriptive/exercise_sd.png" img height="300px" border="4px"/>
+</center>
+
+</div>
+
+---
+### Exercise #4
+
+<span style="display:block; height:1px;"></span>
 
 :question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, lipid levels
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarize their data?
@@ -453,9 +647,9 @@ Ely EW, Shintani A, Truman B, et al. Delirium as a Predictor of Mortality in Mec
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Either a) or d)
 
 ---
-### Exercise #2 -- Solution
+### Exercise #4 -- Solution
 
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:1px;"></span>
 
 :question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, lipid levels
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarize their data?
@@ -470,33 +664,34 @@ Ely EW, Shintani A, Truman B, et al. Delirium as a Predictor of Mortality in Mec
 ---
 ## Data visualisation: boxplots
 
+<div class="columns">
+<div>
+
+<span style="display:block; height:400px;"></span>
+
+<div style="font-size: 50%">
+Visconti A., et al., Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+</div>
+
+</div>
+<div>
+
 <span style="display:block; height:10px;"></span>
 
 <center>
 <img src="./img/descriptive/boxplot.png" img height="450px" border="4px"/>
 </center>
 
----
-## Boxplots in the wild
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:450px;"></span>
-
-<div style="font-size: 50%">
-Ross, Joseph S., et al. Hospital volume and 30-day mortality for three common medical conditions. New England Journal of Medicine 362.12 (2010) doi:10.1056/NEJMsa0907130
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/descriptive/boxplot_nejm.png" img height="500px" border="4px"/>
-</center>
-
 </div>
 </div>
+
+<!-- boxplot consente di rappresentare visivamente alcune caratteristiche di una distribuzione statistica: 
+
+- il grado di dispersione dei dati;
+-  la misura di tendenza centrale;
+- la forma della distribuzione;
+- la presenza di valori anomali -->
+
 
 ---
 ## Data visualisation: DataSaurus Dozen
@@ -544,6 +739,12 @@ Ross, Joseph S., et al. Hospital volume and 30-day mortality for three common me
 <img src="./img/sampling/ISTAT.png" img height="450px" border="4px"/>
 </center>
 
+<!-- Popolazione e' l'insieme di tutti gli individui per cui vogliamo studiare un fenomeno, e.g., popolazione italiana
+
+Il modo tradizionale per studiare una popolazione e' il censimento, che pero' ha due svantaggi: a) e' costoso, e b) non e' possibile raccogliere tutte le informazioni possiboli e immaginabili (trauma cranico al nido)
+
+Avveniva ogni 10 anni, ultimo nel 2011 -> dal 2018 permanent census, sotto gruppo della popolazione, quindi quello che chiamiamo un campione statistico -->
+
 ---
 ## Sample *vs*  &nbsp;Population (in the clinic)
 
@@ -552,6 +753,13 @@ Ross, Joseph S., et al. Hospital volume and 30-day mortality for three common me
 <center>
 <img src="./img/sampling/delirium_2024_underlined.png" img height="450px" border="4px"/>
 </center>
+
+<!-- Nella ricerca clinica, la popolazione e' l'insieme di tutti i pazienti che ci interessano
+
+Campione sono quelli che siamo andati a reclutare .
+
+Ovviamente questi campioni devono essere scelti con procedimenti e regole che garantiscano la capacità del campione di rappresentare la popolazione
+-->
 
 ---
 ## Parameters *vs*  &nbsp; statistics

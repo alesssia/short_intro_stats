@@ -1,7 +1,7 @@
 # STATS 101: A short introduction to statistics 
 
 Material for the short (9h) *"Stat 101"* course for medical residents I'm delivering at UniTO. 
-It includes slides and teacher notes.
+Slides include teacher notes, which are in Italian (the language I'm delivering the course in).
 
 ## Topics covered
 
