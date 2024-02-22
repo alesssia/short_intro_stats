@@ -584,7 +584,7 @@ ethnic group or school type.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) No
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Yes, volunteer bias
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yes, survivor bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both c) and d)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both b) and c)
 
 ---
 ### Exercise #2 -- Solution
@@ -598,7 +598,7 @@ ethnic group or school type.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) No
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Yes, volunteer bias
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yes, survivor bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both c) and d) :white_check_mark: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both b) and c) :white_check_mark: 
 
 ---
 ![bg opacity](./img/backgrounds/sampling_bg.png)
@@ -949,6 +949,17 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 | Numeric | Mean, Median, Mode | Range, IQR, standard deviation
 
 ---
+## Parameters *vs*  &nbsp; statistics
+
+<span style="display:block; height:30px;"></span>
+
+- Parameters: calculated on the population ($\mu, \sigma$)
+
+- Statistics: calculated on the sample ($\bar{x}, s$)
+
+<!-- Una cosa che non vi ho detto, ma che ci tornera' utile in seguito e' che la media e la SD di una popolazione si chiamano PARAMETRI e si indicano con le lettere greche media e SD misurati su un campione si chiamano invece STATISTICHE e sono indicati con lettere latine -->
+
+---
 ### Exercise #4
 
 <div class="columns">
@@ -1082,59 +1093,6 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or b) :white_check_mark: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Either a) or d)
 
----
-## Parameters *vs*  &nbsp; statistics
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/sampling/DBS_population.png" img height="450px" border="0px"/>
-</center>
-
-</div>
-<div>
-
-$$
-\mu=80 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-$$
-\sigma=3 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-</div>
-
-<!-- Una cosa che non vi ho detto, ma che ci tornera' utile in seguito e' che la media e la SD di una popolazione si chiamano PARAMETRI e si indicano con le lettere greche -->
-
----
-## Parameters *vs*  &nbsp; statistics
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/sampling/DBS_sample.png" img height="450px" border="0px"/>
-</center>
-
-</div>
-<div>
-
-$$
-\bar{x}=78 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-$$
-s=6 \text{ 𝑚𝑚𝐻𝑔}
-$$
-
-</div>
-
-<!-- media e SD misurati su un campione si chiamano invece STATISTICHE e sono indicati con lettere latine  -->
 
 ---
 ## Data visualisation: boxplots
@@ -1201,55 +1159,350 @@ Visconti A., et al., Total serum *N*‐glycans associate with response to immune
 
 <span style="display:block; height:50px;"></span>
 
+- Introduce the Normal distribution
 - Understanding how to move from empirical to theoretical distributions
 - Understand point estimates
-- Introduce the Normal distribution
 
 ---
-## From sample to population
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/estimation/sample2pop1.png" img height="450px" border="4px"/>
-</center>
-
----
-## From sample to population
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/estimation/sample2pop2.png" img height="450px" border="4px"/>
-</center>
-
----
-## From sample to population
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/estimation/sample2pop3.png" img height="450px" border="4px"/>
-</center>
-
---- 
-## From sample to population 
+## The Normal distribution
 
 <div class="columns">
 <div>
 
+<span style="display:block; height:30px;"></span>
+
+- Symmetrical
+- $\mathcal{N} = (\mu, \sigma^2)$
+
+</div>
+<div>
+<span style="display:block; height:80px;"></span>
+
+<center>
+<img src="./img/estimation/normal_distribution.png" img height="300px" border="4px"/>
+</center>
+
+<div style="font-size: 90%" align="right">
+
+$$
+{\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}} 
+$$
+
+</div>
+
+</div>
+
+<!-- La distribuzione GAUSSIANA è una distribuzione caratterizzata da una forma a campana.
+E' simmetrica.
+Definita in maniera univoca dalla media e dalla deviazione standard -->
+
+---
+## The Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+- Symmetrical
+- $\mathcal{N} = (\mu, \sigma^2)$
+
+</div>
+<div>
+<span style="display:block; height:80px;"></span>
+
+<center>
+<img src="./img/estimation/1200px-Normal_Distribution_PDF.svg.png" img height="300px" border="4px"/>
+</center>
+
+<div style="font-size: 90%" align="right">
+
+$$
+{\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}} 
+$$
+
+</div>
+
+</div>
+
+<!-- A diverse combinazioni di mu/sigma corrispondono diverse (e infinte) ditribuzioni normali -->
+
+---
+## The Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+- Symmetrical
+- $\mathcal{N} = (\mu, \sigma^2)$
+- $\text{Area under the curve} = 1$
+
+<span style="display:block; height:20px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; What is the area left of the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; median? And right?
+
+</div>
+<div>
+<span style="display:block; height:80px;"></span>
+
+<center>
+<img src="./img/estimation/normal_distribution.png" img height="300px" border="4px"/>
+</center>
+
+<div style="font-size: 90%" align="right">
+
+$$
+{\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}} 
+$$
+
+</div>
+
+</div>
+
+---
+## The  Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+- Symmetrical
+- $\mathcal{N} = (\mu, \sigma^2)$
+- $\text{Area under the curve} = 1$
+
+</div>
+<div>
+<span style="display:block; height:80px;"></span>
+
+<center>
+<img src="./img/estimation/Standard_Normal_Distribution.png" img height="370px" border="4px"/>
+</center>
+</div>
+
+---
+## The Standard Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+- $\mathcal{N} = \mathcal{Z} = (0, 1)$
+
+</div>
+<div>
+
+</div>
+
+---
+## The Standard Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
+
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/estimation/n2z_1.png" img height="400px" border="4px"/>
+</center>
+</div>
+
+<!-- Magenta: mu=4, sd=1.5 -->
+
+---
+## The Standard Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
+
+- $\mathcal{Z} = \frac{x - \mu}{}$
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/estimation/n2z_2.png" img height="400px" border="4px"/>
+</center>
+</div>
+
+---
+## The Standard Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
+
+- $\mathcal{Z} = \frac{x - \mu}{\sigma}$
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/estimation/n2z_3.png" img height="400px" border="4px"/>
+</center>
+</div>
+
+---
+## The Standard Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
+
+- $\mathcal{Z} = \frac{x - \mu}{\sigma}$
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/estimation/n2z_4.png" img height="400px" border="4px"/>
+</center>
+</div>
+
+---
+## The Standard Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
+
+- $\mathcal{Z} = \frac{x - \mu}{\sigma}$
+
+</div>
+<div>
+
+<center>
+<img src="./img/estimation/normal_table.jpg" img height="550px" border="4px"/>
+</center>
+</div>
+</div>
+
+<!-- E perche la SND ci piace? Perche' esistono delle tavole che ci dicono qual e' l'area sottesa  ad una certa porzione della curva, che corrispondono alla probabilita' di trovare (nel caso di queste tavole) un valore < di quello osservato (area colorata)
+
+Ci sono diverse versioni di queste tabelle, per esempio quella complementare che riporta l'area per la zona bianca (probabilita' di osservare valori piu' estremi) -->
+
+---
+## The Standard Normal distribution in practice
+
+<span style="display:block; height:30px;"></span>
+
+<div class="columns">
+<div>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = ?$
+
+</div>
+<div>
+
+</div>
+</div>
+
+---
+## The Standard Normal distribution in practice
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{176 - 170}{9.5} = 0.63$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = 1 - 0.7357 =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.26$
+
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/estimation/normal_table_zoom_example1.jpg" img height="280px" border="4px"/>
+</center>	
+
+</div>
+</div>
+
+<!-- Ok, ora abbiamo le basi per affrontare il prossimo argomento, la statistica inferenziale -->
+
+---
+## Inferential statistics
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/estimation/sample2pop_empty.png" img height="450px" border="4px"/>
+</center>
+
+<!-- Ricapitoliamo: quando non possiamo studiare una popolazione ne usiamo un campione rappresentativo -->
+
+---
+## Inferential statistics
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/estimation/sample2pop.png" img height="450px" border="4px"/>
+</center>
+
+<!-- e poi usiamo le informazioni raccolte dal campione per trarre delle conclusioni sulla popolazione 
+Questo processo si chiama statistica inferenziale,
+
+Procedimento induttivo che ha lo scopo di stimare i parametri (caratteristiche) sconosciuti della popolazione a partire dalle statistiche (stime conosciute) del campione 
+
+Sulla base di un campione estratto casualmente da 1 popolazione cosa può essere detto circa la popolazione da cui il campione è stato estratto? -->
+
+--- 
+## Inferential statistics
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%">
+
 :pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $m=747$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with BMI>25
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15 y.o. males are
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; overweight (BMI > 25)?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
-<span style="display:block; height:70px;"></span>
+</div>
 
-<div style="font-size: 80%" align="right">
+<span style="display:block; height:160px;"></span>
+
+<div style="font-size: 70%" align="right">
 https://hbsc.org
 </div>
 
@@ -1264,49 +1517,23 @@ https://hbsc.org
 
 </div>
 
---- 
-## From sample to population 
+---
+## Inferential statistics
 
 <div class="columns">
 <div>
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $m=747$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with BMI>25
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}$  = 3.1
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15 y.o. males are
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; overweight (BMI > 25)?
-$$
-\frac{m}{n} \times 100 = \frac{747}{6,705} \times 100 = 11.1\%
-$$
-
-</div>
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/estimation/hbsc_BMI_sample.png" img height="370px" border="4px"/>
-</center>
-
-</div>
-
---- 
-## From sample to population 
-
-<div class="columns">
-<div>
+<div style="font-size: 90%">
 
 :pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $m=747$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with BMI>25
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15 y.o. males are
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; overweight (BMI > 25)?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
+
+</div>
 
 </div>
 <div>
@@ -1315,8 +1542,9 @@ $$
 
 <center>
 <img src="./img/estimation/hbsc_BMI_pop.png" img height="370px" border="4px"/>
+</center>
 
-<div style="font-size: 90%" align="right">
+<div style="font-size: 70%" align="right">
 
 $$
 {\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}} 
@@ -1324,107 +1552,35 @@ $$
 
 </div>
 
-</center>
-
+</div>
 </div>
 
+<!-- Professione di fede, e andiamo a stimare i parametri della popolazione andandoli a eguagliare alle statistiche
+
+ricordiamo
+- statistiche se calcolate su un campione di dati
+- parametri se descrivono la popolazione
+
+Adiamo a calcolare la funzione corrispondente e sovvraporla al valore della popolazione
+ -->
+
 ---
-## The Normal distribution
+## Inferential statistics
 
 <div class="columns">
 <div>
 
-- Symmetrical
-- $\text{Area under the curve} = 1$
-
-<span style="display:block; height:50px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; What is the area left of the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; median? And right?
-
-</div>
-<div>
-<span style="display:block; height:80px;"></span>
-
-<center>
-<img src="./img/estimation/normal_distribution.png" img height="370px" border="4px"/>
-</center>
-</div>
-
----
-## The  Normal distribution
-
-<div class="columns">
-<div>
-
-- Symmetrical
-- $\text{Area under the curve} = 1$
-- $\mathcal{N} = (\mu, \sigma)$
-
-</div>
-<div>
-<span style="display:block; height:80px;"></span>
-
-<center>
-<img src="./img/estimation/Standard_Normal_Distribution.png" img height="370px" border="4px"/>
-</center>
-</div>
-
----
-## The standard Normal distribution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-- $\mathcal{N} = (\mu, \sigma) \rightarrow \mathcal{Z} = (0, 1)$
-
-- $\mathcal{Z} = \frac{x - \mu}{\sigma}$
-
-</div>
-<div>
-<span style="display:block; height:180px;"></span>
-
-<center>
-<img src="./img/estimation/Converting+to+a+Standard+Normal+Distribution.jpg" img height="170px" border="4px"/>
-</center>
-</div>
-
----
-## The standard Normal distribution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-- $\mathcal{N} = (\mu, \sigma) \rightarrow \mathcal{Z} = (0, 1)$
-
-- $\mathcal{Z} = \frac{x - \mu}{\sigma}$
-
-</div>
-<div>
-
-<center>
-<img src="./img/estimation/normal_table.jpg" img height="550px" border="4px"/>
-</center>
-</div>
-
----
-## From sample to population 
-
-<div class="columns">
-<div>
+<div style="font-size: 90%">
 
 :pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $m=747$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with BMI>25
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15 y.o. males are
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; overweight (BMI > 25)?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
+
+</div>
 
 <div style="font-size: 80%">
 
@@ -1447,32 +1603,77 @@ $$
 </div>
 
 ---
-## From sample to population 
+## Inferential statistics
 
 <div class="columns">
 <div>
 
+<div style="font-size: 90%">
+
 :pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $m=747$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with BMI>25
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15 y.o. males are
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; overweight (BMI > 25)?
-
-<div style="font-size: 80%" >
-
-<span style="display:block; height:0px;"></span>
-
-$\mathcal{P}(\text{BMI}>25) = (1 - 0.8686) = 0.1314$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\approx 13.1\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 </div>
 
+<div style="font-size: 80%">
+
+<span style="display:block; height:1px;"></span>
+
+$$
+z = \frac{x - \mu}{\sigma} = \frac{25 - 21.5}{3.1} = 1.12
+$$
+
+</div>
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/estimation/normal_table_zoom_annotated.jpg" img height="370px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<div style="font-size: 80%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}>25) = (1 - 0.8686) = 0.1314 = 13.1\%$
+
+</div>
+
+<!-- Quello che abbiamo fatto e' un INFERENZA, non sappiamo quanti sono i 15enni sovrappeso, ma se il nostro campione e' rappresentativo, stimiamo che siano il 13.1% della popolazione -->
+
+--- 
+## Inferential statistics 
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample**?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $m=747$ &nbsp;&nbsp;&nbsp; have BMI>25
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{m}{n}  = \frac{747}{6,705} = 0.111 = 11.1\%$
+
 <div style="font-size: 80%" align="right">
 
-(*vs* &nbsp;&nbsp;&nbsp;$11.1\%$)
+(*vs* &nbsp;&nbsp;&nbsp;$13.1\%$)
+
+</div>
 
 </div>
 
@@ -1482,11 +1683,16 @@ $\mathcal{P}(\text{BMI}>25) = (1 - 0.8686) = 0.1314$
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/estimation/normal_table_zoom_annotated.jpg" img height="370px" border="4px"/>
-
+<img src="./img/estimation/hbsc_BMI_sample.png" img height="370px" border="4px"/>
 </center>
 
 </div>
+</div>
+
+<!-- Per confronto, andiamo a calcolare la % di 13enni sovrappeso nel campione
+
+Se i due valori fossero stati diversi, ci avrebbe dato un'idicazione che la nostra stima non era accurata (ma non e' stato il caso)
+ -->
 
 ---
 ### Exercise #6
@@ -1494,15 +1700,14 @@ $\mathcal{P}(\text{BMI}>25) = (1 - 0.8686) = 0.1314$
 <div class="columns">
 <div>
 
-<div style="font-size: 84%">
+<div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp; 15 y.o. males
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; are obese (BMI>30) in the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 30$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 </div>
@@ -1524,19 +1729,18 @@ $\mathcal{P}(\text{BMI}>25) = (1 - 0.8686) = 0.1314$
 
 <div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp; 15 y.o. males
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; are obese (BMI>30) in the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 30$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 <span style="display:block; height:30px;"></span>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{x - \mu}{\sigma} = \frac{30 - 21.5}{3.1} = 2.74$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(1 - 0.9969) \times 100 = 0.31\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1 - 0.9969 = 0.0031 = 0.31\%$
 
 </div>
 
@@ -1555,16 +1759,16 @@ $\mathcal{P}(\text{BMI}>25) = (1 - 0.8686) = 0.1314$
 <div class="columns">
 <div>
 
-<div style="font-size: 85%">
+<div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp; 15 y.o. males
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5<BMI<25$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population has  a normal weight
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (18.5<BMI<25) ?
 
 </div>
 
@@ -1583,22 +1787,21 @@ $\mathcal{P}(\text{BMI}>25) = (1 - 0.8686) = 0.1314$
 <div class="columns">
 <div>
 
-<div style="font-size: 85%">
+<div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp; 15 y.o. males
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population has  a normal weight
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (18.5<BMI<25) ?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5<BMI<25$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_1 = \frac{x - \mu}{\sigma} = \frac{25 - 21.5}{3.1} = 1.12$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(1 - 0.8686) \times 100 = 13.4\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1 - 0.8686 = 0.131 = 13.1\%$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_2 = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(1 - 0.8340) \times 100 = 16.6\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1 - 0.8340 = 0.166 = 16.6\%$
 
 </div>
 
@@ -1611,7 +1814,7 @@ $\mathcal{P}(\text{BMI}>25) = (1 - 0.8686) = 0.1314$
 <img src="./img/estimation/area_normal.png" img height="250px" border="4px"/>
 </center>
 
-$100\%-13.4\%-16.6\%=70\%$
+$1-0.131-0.166=0.703=70.3\%$
 
 </div>
 
@@ -1623,7 +1826,7 @@ $100\%-13.4\%-16.6\%=70\%$
 <span style="display:block; height:50px;"></span>
 
 - We use statistics to estimate parameters
-- We can exploit the property of the Normal distribution
+- We can exploit the property of the Standard Normal distribution
 
 ---
 ![bg opacity](./img/backgrounds/confidence_intervals_bg.png)
