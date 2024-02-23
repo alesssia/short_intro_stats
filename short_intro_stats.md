@@ -1150,18 +1150,18 @@ Visconti A., et al., Total serum *N*‐glycans associate with response to immune
 ---
 ![bg opacity](./img/backgrounds/normal_bg.png)
 
-<span style="display:block; height:190px;"></span>
+<span style="display:block; height:150px;"></span>
 
-# Estimation
+# The Normal Distribution &<br/>
+# the Central Limit Theorem
 
 ---
 ## Learning objectives
 
 <span style="display:block; height:50px;"></span>
 
-- Introduce the Normal distribution
-- Understanding how to move from empirical to theoretical distributions
-- Understand point estimates
+- Know the characteristics of the Normal distribution
+- Understand the Central Limit Theorem
 
 ---
 ## The Normal distribution
@@ -1179,7 +1179,7 @@ Visconti A., et al., Total serum *N*‐glycans associate with response to immune
 <span style="display:block; height:80px;"></span>
 
 <center>
-<img src="./img/estimation/normal_distribution.png" img height="300px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_distribution.png" img height="300px" border="4px"/>
 </center>
 
 <div style="font-size: 90%" align="right">
@@ -1212,7 +1212,7 @@ Definita in maniera univoca dalla media e dalla deviazione standard -->
 <span style="display:block; height:80px;"></span>
 
 <center>
-<img src="./img/estimation/1200px-Normal_Distribution_PDF.svg.png" img height="300px" border="4px"/>
+<img src="./img/normal_and_CLT/1200px-Normal_Distribution_PDF.svg.png" img height="300px" border="4px"/>
 </center>
 
 <div style="font-size: 90%" align="right">
@@ -1249,7 +1249,7 @@ $$
 <span style="display:block; height:80px;"></span>
 
 <center>
-<img src="./img/estimation/normal_distribution.png" img height="300px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_distribution.png" img height="300px" border="4px"/>
 </center>
 
 <div style="font-size: 90%" align="right">
@@ -1279,7 +1279,7 @@ $$
 <span style="display:block; height:80px;"></span>
 
 <center>
-<img src="./img/estimation/Standard_Normal_Distribution.png" img height="370px" border="4px"/>
+<img src="./img/normal_and_CLT/Standard_Normal_Distribution.png" img height="370px" border="4px"/>
 </center>
 </div>
 
@@ -1291,7 +1291,7 @@ $$
 
 <span style="display:block; height:30px;"></span>
 
-- $\mathcal{N} = \mathcal{Z} = (0, 1)$
+- $\mathcal{N} = Z = (0, 1)$
 
 </div>
 <div>
@@ -1306,7 +1306,7 @@ $$
 
 <span style="display:block; height:30px;"></span>
 
-- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
 
 </div>
 <div>
@@ -1314,7 +1314,7 @@ $$
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/estimation/n2z_1.png" img height="400px" border="4px"/>
+<img src="./img/normal_and_CLT/n2z_1.png" img height="400px" border="4px"/>
 </center>
 </div>
 
@@ -1328,16 +1328,16 @@ $$
 
 <span style="display:block; height:30px;"></span>
 
-- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
 
-- $\mathcal{Z} = \frac{x - \mu}{}$
+- $Z = \frac{x - \mu}{}$
 </div>
 <div>
 
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/estimation/n2z_2.png" img height="400px" border="4px"/>
+<img src="./img/normal_and_CLT/n2z_2.png" img height="400px" border="4px"/>
 </center>
 </div>
 
@@ -1349,16 +1349,16 @@ $$
 
 <span style="display:block; height:30px;"></span>
 
-- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
 
-- $\mathcal{Z} = \frac{x - \mu}{\sigma}$
+- $Z = \frac{x - \mu}{\sigma}$
 </div>
 <div>
 
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/estimation/n2z_3.png" img height="400px" border="4px"/>
+<img src="./img/normal_and_CLT/n2z_3.png" img height="400px" border="4px"/>
 </center>
 </div>
 
@@ -1370,36 +1370,15 @@ $$
 
 <span style="display:block; height:30px;"></span>
 
-- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
 
-- $\mathcal{Z} = \frac{x - \mu}{\sigma}$
-</div>
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/estimation/n2z_4.png" img height="400px" border="4px"/>
-</center>
-</div>
-
----
-## The Standard Normal distribution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-- $\mathcal{N} = (\mu, \sigma^2) \rightarrow \mathcal{Z} = (0, 1)$
-
-- $\mathcal{Z} = \frac{x - \mu}{\sigma}$
+- $Z = \frac{x - \mu}{\sigma}$
 
 </div>
 <div>
 
 <center>
-<img src="./img/estimation/normal_table.jpg" img height="550px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_table.jpg" img height="550px" border="4px"/>
 </center>
 </div>
 </div>
@@ -1447,43 +1426,14 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/estimation/normal_table_zoom_example1.jpg" img height="280px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_table_zoom_example1.jpg" img height="280px" border="4px"/>
 </center>	
 
 </div>
 </div>
 
-<!-- Ok, ora abbiamo le basi per affrontare il prossimo argomento, la statistica inferenziale -->
-
----
-## Inferential statistics
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/estimation/sample2pop_empty.png" img height="450px" border="4px"/>
-</center>
-
-<!-- Ricapitoliamo: quando non possiamo studiare una popolazione ne usiamo un campione rappresentativo -->
-
----
-## Inferential statistics
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/estimation/sample2pop.png" img height="450px" border="4px"/>
-</center>
-
-<!-- e poi usiamo le informazioni raccolte dal campione per trarre delle conclusioni sulla popolazione 
-Questo processo si chiama statistica inferenziale,
-
-Procedimento induttivo che ha lo scopo di stimare i parametri (caratteristiche) sconosciuti della popolazione a partire dalle statistiche (stime conosciute) del campione 
-
-Sulla base di un campione estratto casualmente da 1 popolazione cosa può essere detto circa la popolazione da cui il campione è stato estratto? -->
-
 --- 
-## Inferential statistics
+## The Standard Normal distribution in practice
 
 <div class="columns">
 <div>
@@ -1518,7 +1468,7 @@ https://hbsc.org
 </div>
 
 ---
-## Inferential statistics
+## The Standard Normal distribution in practice
 
 <div class="columns">
 <div>
@@ -1541,7 +1491,7 @@ https://hbsc.org
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/estimation/hbsc_BMI_pop.png" img height="370px" border="4px"/>
+<img src="./img/normal_and_CLT/hbsc_BMI_pop.png" img height="370px" border="4px"/>
 </center>
 
 <div style="font-size: 70%" align="right">
@@ -1565,7 +1515,7 @@ Adiamo a calcolare la funzione corrispondente e sovvraporla al valore della popo
  -->
 
 ---
-## Inferential statistics
+## The Standard Normal distribution in practice
 
 <div class="columns">
 <div>
@@ -1597,13 +1547,13 @@ $$
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/estimation/normal_table_zoom.jpg" img height="370px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_table_zoom.jpg" img height="370px" border="4px"/>
 </center>
 
 </div>
 
 ---
-## Inferential statistics
+## The Standard Normal distribution in practice
 
 <div class="columns">
 <div>
@@ -1635,7 +1585,7 @@ $$
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/estimation/normal_table_zoom_annotated.jpg" img height="370px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_table_zoom_annotated.jpg" img height="370px" border="4px"/>
 </center>
 
 </div>
@@ -1648,51 +1598,6 @@ $$
 </div>
 
 <!-- Quello che abbiamo fatto e' un INFERENZA, non sappiamo quanti sono i 15enni sovrappeso, ma se il nostro campione e' rappresentativo, stimiamo che siano il 13.1% della popolazione -->
-
---- 
-## Inferential statistics 
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 25$ in the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample**?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $m=747$ &nbsp;&nbsp;&nbsp; have BMI>25
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{m}{n}  = \frac{747}{6,705} = 0.111 = 11.1\%$
-
-<div style="font-size: 80%" align="right">
-
-(*vs* &nbsp;&nbsp;&nbsp;$13.1\%$)
-
-</div>
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/estimation/hbsc_BMI_sample.png" img height="370px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- Per confronto, andiamo a calcolare la % di 13enni sovrappeso nel campione
-
-Se i due valori fossero stati diversi, ci avrebbe dato un'idicazione che la nostra stima non era accurata (ma non e' stato il caso)
- -->
 
 ---
 ### Exercise #6
@@ -1716,7 +1621,7 @@ Se i due valori fossero stati diversi, ci avrebbe dato un'idicazione che la nost
 <div>
 
 <center>
-<img src="./img/estimation/normal_table.jpg" img height="500px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_table.jpg" img height="500px" border="4px"/>
 </center>
 
 </div>
@@ -1748,7 +1653,7 @@ Se i due valori fossero stati diversi, ci avrebbe dato un'idicazione che la nost
 <div>
 
 <center>
-<img src="./img/estimation/normal_table.jpg" img height="500px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_table.jpg" img height="500px" border="4px"/>
 </center>
 
 </div>
@@ -1776,7 +1681,7 @@ Se i due valori fossero stati diversi, ci avrebbe dato un'idicazione che la nost
 <div>
 
 <center>
-<img src="./img/estimation/normal_table.jpg" img height="500px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_table.jpg" img height="500px" border="4px"/>
 </center>
 
 </div>
@@ -1803,6 +1708,8 @@ Se i due valori fossero stati diversi, ci avrebbe dato un'idicazione che la nost
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_2 = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1 - 0.8340 = 0.166 = 16.6\%$
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1-0.131-0.166=0.703=70.3\%$
+
 </div>
 
 </div>
@@ -1811,45 +1718,26 @@ Se i due valori fossero stati diversi, ci avrebbe dato un'idicazione che la nost
 <span style="display:block; height:100px;"></span>
 
 <center>
-<img src="./img/estimation/area_normal.png" img height="250px" border="4px"/>
+<img src="./img/normal_and_CLT/area_normal.png" img height="250px" border="4px"/>
 </center>
-
-$1-0.131-0.166=0.703=70.3\%$
 
 </div>
 
 ---
-![bg opacity](./img/backgrounds/normal_bg.png)
+## The Normal distribution in the wild
 
-## Summary
-
-<span style="display:block; height:50px;"></span>
-
-- We use statistics to estimate parameters
-- We can exploit the property of the Standard Normal distribution
-
----
-![bg opacity](./img/backgrounds/confidence_intervals_bg.png)
-
-<span style="display:block; height:150px;"></span>
-
-# Central Limit Theorem &<br/> Confidence Intervals
-
----
-## Learning objectives
-
-<span style="display:block; height:50px;"></span>
-
-- Introduce the Central Limit Theorem
-- Understand interval estimates (confidence intervals)
-
----
-## Back to Normal
+<span style="display:block; height:30px;"></span>
 
 <div class="columns">
 <div>
 
-- Several natural phenomena aproximate a Normal distrubuition
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 90%">
+
+- Several natural phenomena aproximate a Normal distribution
+
+</div>
 
 </div>
 <div>
@@ -1857,89 +1745,104 @@ $1-0.131-0.166=0.703=70.3\%$
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/estimation/hbsc_BMI_pop.png" img height="370px" border="4px"/>
+<img src="./img/normal_and_CLT/hbsc_BMI_pop.png" img height="370px" border="4px"/>
 </center>
 
 </div>
 
+<!-- Come per esempio il peso corporeo, l'altezza, il BMI, il quoziente inteellettivo... -->
+
 ---
-## Back to Normal
+## The Normal distribution in the wild
+
+<span style="display:block; height:30px;"></span>
 
 <div class="columns">
 <div>
 
-- Several natural phenomena aproximate a Normal distrubuition
-- Due to the "sum of many effects"
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 90%">
+
+- Several natural phenomena aproximate a Normal distribution
+- Several probability distributions aproximate a Normal distribution
+
+</div>
 
 </div>
 <div>
 
 <center>
-<img src="./img/confidence_intervals/Tallest_shortest.png" img height="450px" border="4px"/>
-
-
-<div style="font-size: 70%" >
-Sultan Kosen (251 cm) and <br> 
-Chandra Bahadur (54.6 cm)
-
-</div>
+<img src="./img/confidence_intervals/head_count.png" img height="370px" border="4px"/>
 </center>
 
 </div>
+
+<!-- Istogramma mostra il numero di volte in cui e' uscito testa in 1000 esperimenti in ognuno dei quali e' stata lanciata una monetina 100 volte -->
 
 ---
 ## The Central Limit Theorem (CLT)
 
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:1px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; As the sample size gets larger, the sampling distribution of the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample means approaches a normal distribution $\mathcal{N} = (\mu, \sigma')$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample means approaches a normal distribution $\mathcal{N} = (\mu, \frac{\sigma}{\sqrt{n}})$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu \approx \bar{x}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma' = \sigma/\sqrt{n} \rightarrow$ &nbsp; standard error 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma/\sqrt{n} \rightarrow$ &nbsp; standard error (SE)
+
+<!-- La forma della distribuzione delle medie campionarie è approssimativamente normale,  indipendentemente dalla distribuzione dei valori della popolazione d’origine dalla quale i campioni sono estratti, per n sufficientemente grande.
+
+e per la legge dei grandi numeri, quando n tende all'infinito, la media del campioname è uguale alla media della popolazione
+
+La deviazione standard della distribuzione di campionamento delle medie (Errore Standard) è il rapporto tra tra la standard deviation e la sqrt(n) 
+Dimunisce al crescere di N -->
 
 ---
-## Standard error $\neq$ standard deviation
-
-<span style="display:block; height:10px;"></span>
-
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu, \sigma')$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma' = \text{SE}$
+## The Central Limit Theorem (CLT)
 
 <span style="display:block; height:1px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp;  standard deviation (SD) &nbsp; $\rightarrow$ &nbsp; spread in the collected data
+:dart: &nbsp;&nbsp;&nbsp; As the sample size gets larger, the sampling distribution of the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample means approaches a normal distribution $\mathcal{N} = (\mu, \frac{\sigma}{\sqrt{n}})$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma/\sqrt{n} \rightarrow$ &nbsp; standard error (SE)
+
+<span style="display:block; height:10px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp;  Standard error $\neq$ standard deviation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation (SD) &nbsp; $\rightarrow$ &nbsp; spread in the collected data
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard error (SE) &nbsp; $\rightarrow$ &nbsp; error in the sample estimation
 
+<!-- Standard deviation: Si riferisce alle osservazioni, misura la variabilita' delle osservazioni
+
+Standard error: si riferosce alla stima di un parametro, misure l'incertezza nella statistica ottenuta da un campione
+ -->
+
 ---
-## The CLT in practice
+## The Standard Error
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu, \sigma')$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma' = \text{SE}$
-
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:40px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; 95\% of the sample means 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; are within 1.96 SE from the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  population mean
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population mean
 
 </div>
 <div>
 <span style="display:block; height:50px;"></span>
 
 <center>
-<img src="./img/estimation/Standard_Normal_Distribution.png" img height="400px" border="4px"/>
+<img src="./img/normal_and_CLT/Standard_Normal_Distribution.png" img height="400px" border="4px"/>
 </center>
 </div>
 
+<!-- 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione -->
+
 --- 
-## The CLT in practice
+## The Standard Error
 
 <span style="display:block; height:30px;"></span>
 
@@ -1947,32 +1850,197 @@ Chandra Bahadur (54.6 cm)
 <img src="./img/confidence_intervals/small_large_SE.png" img height="400px" border="4px"/>
 </center>
 
+<!-- Piu; lo SE e' piccolo, piu' la media campionaria osservata sara' vicina alla vera media della popolazione -->
+
 ---
-## The CLT in practice
+![bg opacity](./img/backgrounds/normal_bg.png)
+
+## Summary
+
+<span style="display:block; height:30px;"></span>
+
+- Multiple phenomena and statistical distributions are normally distributed
+- Using the standard normal distribution we can calculate the propability of an observation
+- For large samples, the sampling distribution of the sample means will be normally distributed (CLT)
+
+<!-- Ok, ora abbiamo le basi per affrontare il prossimo argomento, la statistica inferenziale -->
+
+---
+![bg opacity](./img/backgrounds/confidence_intervals_bg.png)
+
+<span style="display:block; height:190px;"></span>
+
+# Inferential statistics
+
+---
+## Learning objectives
+
+<span style="display:block; height:50px;"></span>
+
+- Understanding how to move from empirical to theoretical distributions
+- Be able to calculate point and interval estimates (confidence intervals)
+
+
+---
+## From sample to population
 
 <span style="display:block; height:1px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; The British Social Attitudes Survey asked *"out of 100 people, 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; how many do you thik are immigrants from non-Western 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; countries?"*
+<center>
+<img src="./img/confidence_intervals/sample2pop_empty.png" img height="450px" border="4px"/>
+</center>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $\bar{x} = 27.1$, &nbsp; $s = 18.9$
+<!-- Ricapitoliamo: quando non possiamo studiare una popolazione ne usiamo un campione rappresentativo -->
 
 ---
-## The CLT in practice
+## From sample to population
 
 <span style="display:block; height:1px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; The British Social Attitudes Survey asked *"out of 100 people, 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; how many do you thik are immigrants from non-Western 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; countries?"*
+<center>
+<img src="./img/confidence_intervals/sample2pop.png" img height="450px" border="4px"/>
+</center>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $\bar{x} = 27.1$, &nbsp; $s = 18.9$
+<!-- e poi usiamo le informazioni raccolte dal campione per trarre delle conclusioni sulla popolazione 
+Questo processo si chiama statistica inferenziale,
+
+Procedimento induttivo che ha lo scopo di stimare i parametri (caratteristiche) sconosciuti della popolazione a partire dalle statistiche (stime conosciute) del campione 
+
+Sulla base di un campione estratto casualmente da 1 popolazione cosa può essere detto circa la popolazione da cui il campione è stato estratto? -->
+
+---
+## Point estimates
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/hbsc_BMI_pop.png" img height="370px" border="4px"/>
+</center>
+
+</div>
+
+<!-- In realta' una stima puntuale l'abbiamo gia' fatta in passato, vi ricordate quando vi ho detto della processione di fede? Siao andati a la stima ottenuta nel campione per inferire il parametro della popolazione 
+
+Questo paramentro ha pero' un errore, che viene quantificato dall'errore standard
+-->
+
+--- 
+## Confidence intervals
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+:dart: &nbsp;&nbsp;&nbsp; A confidence interval (CI) is an
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interval which is expected to    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contain the parameter being 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; estimated with a given 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; probability
+
+</div>
+
+</div>
+<div>
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/Standard_Normal_Distribution.png" img height="400px" border="4px"/>
+</center>
+</div>
+
+<!-- Per esempio il 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione, quindi i valori che finiscono nell'intervallo di 2 SE dalla media hanno il 95% di probabilita' di inclidere il vero parametro sconosciuto -->
+
+---
+##  Confidence intervals for means
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+
+</div>
+
+<span style="display:block; height:310px;"></span>
+
+<div style="font-size: 70%" align="right">
+https://hbsc.org
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/sampling/hbsc.jpg" img height="500px" border="4px"/>
+</center>
+
+</div>
+
+<!-- Calcoliamo il 95% CI per la nostra stima -->
+
+---
+##  Confidence intervals for means
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n}$, &nbsp; where $\sigma=\text{???}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{18.9}{\sqrt(100)}=1.9$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{3.1}{\sqrt(6,705)}=0.038$
+
+</div>
+
+<span style="display:block; height:170px;"></span>
+
+<div style="font-size: 70%" align="right">
+https://hbsc.org
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/sampling/hbsc.jpg" img height="500px" border="4px"/>
+</center>
+
+</div>
+
 
 ---
-## The CLT in practice
+## Confidence intervals for means
 
 <div class="columns">
 <div>
@@ -1980,10 +2048,11 @@ Chandra Bahadur (54.6 cm)
 <span style="display:block; height:70px;"></span>
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $\bar{x} = 27.1$, &nbsp; $s = 18.9$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\mu=\text{???}$, &nbsp; $\sigma=\text{???}$
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{\text{SE}}=s/\sqrt{n} = \frac{18.9}{\sqrt(100)}=1.9$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{3.1}{\sqrt(6,705)}=0.038$
 </div>
 </div>
 
@@ -1996,81 +2065,34 @@ Chandra Bahadur (54.6 cm)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\bar{x} -1.96 \times SE \leq \mu \leq \bar{x} + 1.96 \times \hat{SE} ) = 95\%$
 
 ---
-## The CLT in practice
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:70px;"></span>
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $\bar{x} = 27.1$, &nbsp; $s = 18.9$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\mu=\text{???}$, &nbsp; $\sigma=\text{???}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{\text{SE}}=s/\sqrt{n} = \frac{18.9}{\sqrt(100)}=1.9$
-</div>
-</div>
-
-<div>
-<span style="display:block; height:50px;"></span>
-<img src="./img/confidence_intervals/CLT.png" img height="350px" border="4px"/>
-</div>
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(-1.96 \times \hat{SE} \leq \bar{x}-\mu \leq 1.96 \times \hat{SE} ) = 95\%$
-
----
-## The CLT in practice
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:70px;"></span>
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $\bar{x} = 27.1$, &nbsp; $s = 18.9$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\mu=\text{???}$, &nbsp; $\sigma=\text{???}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{\text{SE}}=s/\sqrt{n} = \frac{18.9}{\sqrt(100)}=1.9$
-</div>
-</div>
-
-<div>
-<span style="display:block; height:50px;"></span>
-<img src="./img/confidence_intervals/CLT.png" img height="350px" border="4px"/>
-</div>
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(|\bar{x}-\mu| \leq 1.96 \times \hat{SE}) = 95\%$
-
-<div style="font-size: 70%"> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  bias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Margin of error&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-</div>
-
----
-## The CLT in practice
+## Confidence intervals for means
 
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; The British Social Attitudes Survey asked *"out of 100 people, how many
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; do you thik are immigrants from non-Western countries?"*
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $\bar{x} = 27.1$, &nbsp; $s = 18.9$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{18.9}{\sqrt(100)}=1.9$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{3.1}{\sqrt(6,705)}=0.038$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\bar{x} -1.96 \times \hat{SE} \leq \mu \leq \bar{x} + 1.96 \times \hat{SE} ) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $=\mathcal{P}(27.1 - 1.96 \times 1.9 \leq \mu \leq 27.1 + 1.96 \times 1.9 ) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $=\mathcal{P}(23.38 \leq \mu \leq30.82) =95\%$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $=\mathcal{P}(21.5 - 1.96 \times 0.038 \leq \mu \leq 21.5 + 1.96 \times 0.038 ) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $=\mathcal{P}(21.42 \leq \mu \leq 21.58) =95\%$ 
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow 95\% \text{ Confidence Interval (CI)} = (23.38; 30.82)$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow 95\% \text{ Confidence Interval (CI)} = (21.42; 21.58)$
 
 </div>
 
+
+<!-- Abbiao un confidence interval molto stretto perche' si sono verificate due condinzioni che, indipendentemente, migliorano la stima:
+- un'alta numerosita' campionaria e
+- una bassa variabilita s tra le osservazioni
+ -->
+
 ---
-## Interpreating confidence intervals 
+## Interpreting confidence intervals 
 
 :pushpin: &nbsp;&nbsp;&nbsp; Population: Italian women 25-74 years old
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu=123 \text{ mmHg}$
@@ -2081,13 +2103,18 @@ Chandra Bahadur (54.6 cm)
 <img src="./img/confidence_intervals/womenBP.png" img height="350px" border="4px"/>
 </center>
 
+<!-- Cosa rappresentano quindi i CI? Che dati 100 campioni estratti dalla popolazione, 95 stimano un IC al cui interno è compresa la media reale della popolazione e solo 
+5 stimano un ic che non include la media reale.
+
+  -->
+
 ---
 ### Exercise #8
 
-:question: &nbsp;&nbsp;&nbsp; We take a random sample of 100 Italian women aged 25-74
+:question: &nbsp;&nbsp;&nbsp; We take a random sample of 500 Italian women aged 25-74
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with the following summary statistics
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}=126.9 \text{ mmHg}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}=122.1 \text{ mmHg}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s=19.8 \text{ mmHg}$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What is the 95% CI for the true mean $\mu$?
@@ -2095,15 +2122,16 @@ Chandra Bahadur (54.6 cm)
 ---
 ### Exercise #8 -- Solution
 
-:question: &nbsp;&nbsp;&nbsp; $\bar{x}=126.9 \text{ mmHg}$
+:question: &nbsp;&nbsp;&nbsp; $n=500$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}=122.1 \text{ mmHg}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s=19.8 \text{ mmHg}$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What is the 95% CI for the true mean $\mu$?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{19.8}{\sqrt(100)}=1.98$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{19.8}{\sqrt(500)}=0.89$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - 1.96 \times \hat{SE} \text{ ; } \bar{x} + 1.96 \times \hat{SE}) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (126.9 - 1.96 \times 1.98 \text{ ; }  126.9 + 1.96 \times 1.98)$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (123.0; 130.8)$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (122.1 - 1.96 \times 0.89 \text{ ; }  122.1 + 1.96 \times 0.89)$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (120.34; 123.86)$
 
 ---
 ## The $\alpha$ level
@@ -2116,7 +2144,7 @@ Chandra Bahadur (54.6 cm)
 <span style="display:block; height:10px;"></span>
 <div style="font-size: 90%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $\mathcal{Z}_{\alpha/2}$ |
+| Confidence Level | $\alpha$ | $\alpha/2$ | $Z_{\alpha/2}$ |
 | ----: | ----- | ---- | ----|
 | 95% | 5% | 2.5% |  |
 
@@ -2132,6 +2160,8 @@ Chandra Bahadur (54.6 cm)
 </div>
 </div>
 
+<!-- L’intervallo di confidenza (IC) al 95% è il più usato e intuitivamente abbiamo gia' capito da dove deirva il fattore 1.96 (circa 2SE contengono il 95% dei campioni), ma vediamolo in modo piu' formale -->
+
 ---
 ## The $\alpha$ level
 
@@ -2143,7 +2173,7 @@ Chandra Bahadur (54.6 cm)
 <span style="display:block; height:10px;"></span>
 <div style="font-size: 90%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $\mathcal{Z}_{\alpha/2}$ |
+| Confidence Level | $\alpha$ | $\alpha/2$ | $Z_{\alpha/2}$ |
 | ----: | ----- | ---- | ----|
 | 95% | 5% | 2.5% | 1.96 |
 
@@ -2169,17 +2199,136 @@ $100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$
 
 <div style="font-size: 90%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $\mathcal{Z}_{\alpha/2}$ |
+| Confidence Level | $\alpha$ | $\alpha/2$ | $Z_{\alpha/2}$ |
 | ----: | -----: | ---- | ----:|
-| 95% | 5% | 2.5% | 1.960 |
-| 90% | 10% | 5.0% | 1.645 |
-| 99% | 1% | 0.5% | 2.576 |
+| 95% | 5% | 2.5% | 1.96 |
+| 90% | 10% | 5.0% | 1.65 |
+| 99% | 1% | 0.5% | 2.58 |
 
 <span style="display:block; height:10px;"></span>
 
-$100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.960$ 
-$100\% - 5.0\% = 95.0\% \rightarrow \mathcal{z} = 1.645$ 
-$100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.576$ 
+$100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$ 
+$100\% - 5.0\% = 95.0\% \rightarrow \mathcal{z} = 1.65$ 
+$100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.58$ 
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Alphas sono i livelli di confidenza
+Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora proviamo a fare una domanda piu' teorica -->
+
+---
+### Exercise #9
+
+<div class="columns">
+<div>
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%" >
+
+:question: &nbsp;&nbsp;&nbsp;If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
+### Exercise #9 -- Solution
+
+<div class="columns">
+<div>
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%" >
+
+:question: &nbsp;&nbsp;&nbsp;If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$ :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
+### Exercise #10
+
+<div class="columns">
+<div>
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%" >
+
+:question: &nbsp;&nbsp;&nbsp;If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
+### Exercise #10 -- Solution
+
+<div class="columns">
+<div>
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%" >
+
+:question: &nbsp;&nbsp;&nbsp;If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
 </div>
 
 </div>
@@ -2213,7 +2362,6 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.576$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu_{\text{i}} - \mu_{\text{c}}, \sqrt{\frac{\sigma_\text{i}^2}{n_\text{i}} + \frac{\sigma_\text{i}^2}{n_\text{i}}})$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{CLT}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{i}} - \mu_{\text{c}} \approx \bar{x}_{\text{i}} - \bar{x}_{\text{c}}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE} \approx \hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}}$
 
 </div>
@@ -2250,7 +2398,7 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.576$
 </div>
 
 ---
-### Exercise #9
+### Exercise #11
 
 <span style="display:block; height:1px;"></span>
 
@@ -2264,14 +2412,14 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.576$
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($\mathcal{Z}_{\alpha/2}$=$\mathcal{Z}_{5/2}$=1.65)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($Z_{\alpha/2}$=$Z_{5/2}$=1.65)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($\mathcal{Z}_{\alpha/2}$=$\mathcal{Z}_{0.5/2}$=2.58)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($Z_{\alpha/2}$=$Z_{0.5/2}$=2.58)
 
 </div>
 
 ---
-### Exercise #9 -- Solution
+### Exercise #11 -- Solution
 
 <span style="display:block; height:1px;"></span>
 
@@ -2349,6 +2497,11 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.576$
 </div>
 </div>
 
+<!-- Gradi di liberta' misurano la quantità di informazione disponibile nei dati che può essere usata per stimare sigma (affidabilità della stima s)
+
+All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più affidabile: con n grande la distribuzione t si avvicina alla distribuzione normale
+ -->
+
 ---
 ## CTL and small sample size
 
@@ -2373,6 +2526,70 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.576$
 
 <center>
 <img src="./img/confidence_intervals/tdist_table.png" img height="550px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- La distribuzione di t è diversa per ciascuno dei gl: tavole
+ -->
+
+---
+## CTL and small sample size
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 80%" >
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=58$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{??}$ 
+
+</div>
+</div>
+<div>
+
+</div>
+</div>
+
+---
+## CTL and small sample size
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 80%" >
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=58$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(58)}=0.36$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 58 - 1 =57$
+
+</div>
+
+<div style="font-size: 70%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \mathcal{t} \times \hat{SE}; \text{ } \bar{x} + \mathcal{t} \times \hat{SE}) =$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (25.0 - \mathcal{t} \times 0.36; \text{ } 25.0 + \mathcal{t} \times 0.36) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (25.0 - 2 \times 0.36; \text{ } 25.0 + 2 \times 0.36) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (25.0 - 0.72; \text{ } 25.0 + 0.72) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (24.28; 25.72)$
+
+</div>
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
 </center>
 
 </div>
@@ -2416,7 +2633,7 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.576$
 </div>
 
 ---
-### Exercise #10
+### Exercise #12
 
 <span style="display:block; height:1px;"></span>
 
@@ -2429,16 +2646,16 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.576$
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($\mathcal{Z}_{\alpha/2}$=$\mathcal{Z}_{5/2}$=1.65)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($Z_{\alpha/2}$=$Z_{5/2}$=1.65)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($\mathcal{Z}_{\alpha/2}$=$\mathcal{Z}_{0.5/2}$=2.58)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($Z_{\alpha/2}$=$Z_{0.5/2}$=2.58)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 </div>
 
 ---
-### Exercise #10 -- Solution
+### Exercise #12 -- Solution
 
 <span style="display:block; height:1px;"></span>
 
@@ -2646,8 +2863,8 @@ Total | 180 | 183 | 363 |
 
 ## Summary
 
-- Multiple phenomena are normally distributed
-- We can take advantage of the CLT to calculate point and interval (CI) estimates
+- We use statistics to estimate parameters (point estimates)
+- We can take advantage of the CLT to calculate interval estimates (CI) 
 - 95% confidence intervals tell us the the true value has 95% probability of being inside the given range
 
 ---
@@ -2886,7 +3103,7 @@ Total | 180 | 183 | 363 |
 
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{Z} = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
 
 </div>
 
@@ -2924,7 +3141,7 @@ Total | 180 | 183 | 363 |
 
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{Z} = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We refuse the null hypothesis
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We refuse the null hypothesis
 
 </div>
 
@@ -2936,16 +3153,18 @@ Total | 180 | 183 | 363 |
 
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; How "*often*" Dexamethasone 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will differ from standard care?
+:pushpin: &nbsp;&nbsp;&nbsp; How likely is that we made a 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mistake, *i.e.*, Dexamethasone 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; differs from standard care, if 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; we accepted $\mathcal{H}_0$?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_i - \bar{x}_c = 2.6$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = 1.08$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{Z} = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\bar{X} > 2.4) = 1 - 0.992 =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.008$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\bar{X} > 2.4) = 1 - 0.9918 =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.0082$
 </div>
 
 </div>
@@ -2954,7 +3173,7 @@ Total | 180 | 183 | 363 |
 <span style="display:block; height:5px;"></span>
 
 <center>
-<img src="./img/estimation/normal_table.jpg" img height="500px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_table.jpg" img height="500px" border="4px"/>
 </center>
 
 </div>
@@ -2968,13 +3187,15 @@ Total | 180 | 183 | 363 |
 
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; How "*often*" Dexamethasone 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will differ from standard care?
+:pushpin: &nbsp;&nbsp;&nbsp; How likely is that we made a 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mistake, *i.e.*, Dexamethasone 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; differs from standard care, if 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; we accepted $\mathcal{H}_0$?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_i - \bar{x}_c = 2.6$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = 1.08$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{Z} = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
 
 </div>
 
@@ -2992,7 +3213,7 @@ Total | 180 | 183 | 363 |
 
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(|\bar{X}| > 2.4) = 2 \times (1 - 0.992) = 0.016$ &nbsp;&nbsp;&nbsp;&nbsp; $\leftarrow$ P value
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(|\bar{X}| > 2.4) = 2 \times 0.0082 = 0.0164$ &nbsp;&nbsp;&nbsp;&nbsp; $\leftarrow$ P value
 
 </div>
 
@@ -3055,7 +3276,7 @@ Total | 180 | 183 | 363 |
 <span style="display:block; height:10px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp; We tested the mean ventilator-free days to day 28, but 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; what if we $M$ tested multiple outcomes?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; what if we tested $M$ multiple outcomes?
 
 ---
 ## Multiple testing correction
@@ -3409,6 +3630,19 @@ Total | 180 | 183 | 363 |
 </div>
 
 ---
+## Pearson's $\chi^2$ test -- Yates' correction
+
+<span style="display:block; height:60px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; $\chi^2 = \sum \frac{(Observed- Expected)^2}{Expected}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\downarrow$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\chi^2 = \sum \frac{(|Observed- Expected|-0.5)^2}{Expected}$
+
+<!-- I valori osservati in una tabella sono frequenze (valori interi) La distribuzione chi-quadrato è invece una distribuzione continua. E’ stata proposta una correzione  -->
+
+---
 ## Errors in decision making 
 
 <span style="display:block; height:10px;"></span>
@@ -3434,6 +3668,11 @@ Rejected | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb
 Non rejected |  |   | 
 
 </center>
+
+---
+## Independent and paired samples
+
+
 
 ---
 ## Errors in decision making 
@@ -3542,7 +3781,7 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 </div>
 
 --- 
-## Exercise #11
+### Exercise #13
 
 <div style="font-size: 90%" >
 
@@ -3560,7 +3799,7 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 </div>
 
 ---
-### Exercise #11 -- Solution
+### Exercise #13 -- Solution
 
 <div style="font-size: 90%" >
 
@@ -3578,27 +3817,27 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 </div>
 
 --- 
-## Exercise #12
+### Exercise #14
 
 :question: &nbsp;&nbsp;&nbsp; I want to increase the power of my study, what factors are
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  under my control?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the level of significance $\alpha$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) the difference $\mu_i - \mu_c$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the samples' $\sigma^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) the samples' size $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the sample $\sigma^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) the sample size $n$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Both a) and d)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Both a) and c)
 
 --- 
-## Exercise #12 -- Solution
+### Exercise #14 -- Solution
 
 :question: &nbsp;&nbsp;&nbsp; I want to increase the power of my study, what factors are
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  under my control?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the level of significance $\alpha$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) the difference $\mu_i - \mu_c$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the samples' $\sigma^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the sample $\sigma^2$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) the sample size $n$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Both a) and d) :white_check_mark:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Both a) and c)
