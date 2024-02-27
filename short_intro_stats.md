@@ -13,8 +13,6 @@ style: |
 ---
 
 # Introduction to statistics
-### Visconti Alessia
-###### alessia.visconti@unito.it
 
 ---
 ## Agenda
@@ -139,11 +137,11 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 ---
 ## What is Statistics?
 
-<span style="display:block; height:50px;"></span>
+<span style="display:block; height:30px;"></span>
 
-* The collection, organization, summarization, and analysis of data &rarr; *Descriptive* &nbsp; statistics
+* The collection, organization, summarization, and analysis of data <br/> &nbsp;&nbsp;&nbsp; &rarr; *Descriptive* &nbsp;statistics
 
-* The drawing of inferences about a body of data when only a part of the data is observed <br/>&rarr; *Inferential* &nbsp; statistics
+* The drawing of inferences about a body of data when only a part of the data is observed <br/> &nbsp;&nbsp;&nbsp; &rarr; *Inferential* &nbsp;statistics
 
 <!-- - Individuare in maniera efficiente i tratti importanti delle informazioni che sono state raccolte
 
@@ -184,7 +182,7 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 - How to sample from a population
 - How to use measure of centrality and dispersion
 - How to make estimation from a sample
-- How to calculate confidence intervals
+- How to interpret confidence intervals
 - How to make and test hypotheses
 
 <img src="./img/introduction/math_warning.png" img height="150px" align="right" border="0px"/>
@@ -206,6 +204,25 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 - Understand the difference between sample and population
 - Understand the difference between sampling strategies
 - Understand sampling error and bias
+
+---
+## Sources of Data
+
+<span style="display:block; height:50px;"></span>
+
+- Routinely kept records
+- Surveys
+- Experiments
+- External sources
+
+<!-- L'attivita' statistica e' motivata dalla necessita' di rispondere ad una domanda (perche' i soldati in Crimea muoiono?)
+
+Dopo aver scelto la domanda e il modo (statistico) piu' appropriato per rispondere, dobbiamo iniziare a a raccogliere i dati  
+
+1) dati amministrativi su ricoveri, procedure, medicinali somministrati
+2) informazioni che non vengono raccolte di routine (esempio: aiuto a casa per pazienti fragili) 
+3) clinical trial, si provano su diversi pazienti diversi approcci clinici per decidere qual e' il migliore
+4) dati disponibili pubblicamente da altri studi, o che sono stati raccolti per rispondere a domande diverse ma che sono utili anche a noi -->
 
 --- 
 ## Sample *vs*  &nbsp;Population
@@ -243,7 +260,7 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 
 <span style="display:block; height:50px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; An **opportunity** sample is the sample is drawn from the part of 
+:dart: &nbsp;&nbsp;&nbsp; An **opportunity** sample is the sample drawn from the part of 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the population that is close to hand (and which may not 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; represent the whole population)
 
@@ -477,7 +494,7 @@ Il campione si forma estraendo casualmente un numero prestabilito di cluster, do
 </center>
 
 --- 
-## Strategy 4: Cluster sampling in the wild
+## Sampling in the wild
 
 <div class="columns">
 <div>
@@ -636,12 +653,12 @@ ethnic group or school type.
 <!-- Andiamo a dividere i dati in variabili quantitative (o numeriche) o qualitative (o categorighe) 
 
 Numeriche: 
-- continue (altezza, peso, BMI)
+- continue (altezza, peso, BMI, temperatura corporea)
 - discrete (numero di pazienti ammessi in PS)
 
-Categoriche:
+Categoriche:ß
 - Nominali -> due categorie binarie (diabete si/no), piu' categorie (gruppo sanguigno)
-- Ordinali -> dati che rappresentano categorie ordinate (ECOG performance status [0-4]) -->
+- Ordinali -> dati che rappresentano categorie ordinate (ECOG performance status [0-4], giudizi scolastici ("Insufficiente", "Sufficiente", "Buono", "Ottimo:")) -->
 
 ---
 ### Exercise #3
@@ -866,12 +883,10 @@ $$
 ---
 ## Measure of dispersion: range
 
-<span style="display:block; height:30px;"></span>
-
 <span style="display:block; height:70px;"></span>
 
 <center>
-<img src="./img/descriptive/434px-Relationship_between_mean_and_median_under_different_skewness.png" img height="250px" border="0px"/>
+<img src="./img/descriptive/outliers_range.svg" img height="250px" border="0px"/>
 </center>
 
 ---
@@ -888,6 +903,15 @@ $$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\text{IQR}(x)}= \text{Q3}(x)-\text{Q1}(x)=43-15=28$
 
 <!-- Non sono considerati i valori estremi, ma sappiamo come si distribuisce la meta dei dati rispetto al valore centrale -->
+
+---
+## Measure of dispersion: variance
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/descriptive/dart_variance.png" img height="450px" border="0px"/>
+</center>
 
 ---
 ## Measure of dispersion: variance
@@ -1084,10 +1108,9 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), lipid levels: mean (SD)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), lipid levels: median (IQR)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: N (%), lipid levels: median (IQR)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Age: mean (SD), sex: mean (SD), lipid levels: mean (SD) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or b)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Either a) or d)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: mean (SD), lipid levels: mean (SD) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Either a) or b)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or c)
 
 ---
 ### Exercise #6 -- Solution
@@ -1099,11 +1122,26 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), lipid levels: mean (SD)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), lipid levels: median (IQR)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: N (%), lipid levels: median (IQR)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Age: mean (SD), sex: mean (SD), lipid levels: mean (SD) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or b) :white_check_mark: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Either a) or d)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: mean (SD), lipid levels: mean (SD) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Either a) or b) :white_check_mark: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or c)
 
+---
+## Data visualisation: boxplots
+
+<span style="display:block; height:70px;"></span>
+
+<center>
+<img src="./img/descriptive/boxplot_explanation.png" img height="250px" border="0px"/>
+</center>
+
+
+<!-- boxplot consente di rappresentare visivamente alcune caratteristiche di una distribuzione statistica: 
+
+- il grado di dispersione dei dati;
+-  la misura di tendenza centrale;
+- la forma della distribuzione;
+- la presenza di valori anomali -->
 
 ---
 ## Data visualisation: boxplots
@@ -1129,12 +1167,7 @@ Visconti A., et al., Total serum *N*‐glycans associate with response to immune
 </div>
 </div>
 
-<!-- boxplot consente di rappresentare visivamente alcune caratteristiche di una distribuzione statistica: 
-
-- il grado di dispersione dei dati;
--  la misura di tendenza centrale;
-- la forma della distribuzione;
-- la presenza di valori anomali -->
+<!-- conrontare due distribuzioni -->
 
 
 ---
@@ -1889,7 +1922,7 @@ Standard error: si riferosce alla stima di un parametro, misure l'incertezza nel
 <span style="display:block; height:50px;"></span>
 
 - Understanding how to move from empirical to theoretical distributions
-- Be able to calculate point and interval estimates (confidence intervals)
+- Be able to calculate and interpret point and interval estimates (confidence intervals)
 
 
 ---
