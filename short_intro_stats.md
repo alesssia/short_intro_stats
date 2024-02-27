@@ -256,9 +256,9 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 -->
 
 ---
-## Opportunity *vs*  &nbsp; random sample
+## Opportunity *vs*  &nbsp;random sample
 
-<span style="display:block; height:50px;"></span>
+<span style="display:block; height:30px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; An **opportunity** sample is the sample drawn from the part of 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the population that is close to hand (and which may not 
@@ -274,9 +274,9 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 Nel campionamento non-probabilistico, o opportunustico, la selezione del campione avviene in base a criteri di comodo o di praticità, per esempio perché certi individui sono più facilmente contattabili, o per ragioni di costo -->
 
 ---
-## Opportunity *vs*  &nbsp; random sample
+## Opportunity *vs*  &nbsp;random sample
 
-<span style="display:block; height:50px;"></span>
+<span style="display:block; height:30px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; A **random** sample is the sample in which the probability of 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getting any particular sample may be calculated (and which 
@@ -625,7 +625,7 @@ ethnic group or school type.
 <span style="display:block; height:50px;"></span>
 
 - When can't study a population, we select a representative sample
-- There are different sampling strategies 
+- There are different sampling strategies
 - Samples may suffer from biases
 
 ---
@@ -656,7 +656,7 @@ Numeriche:
 - continue (altezza, peso, BMI, temperatura corporea)
 - discrete (numero di pazienti ammessi in PS)
 
-Categoriche:ß
+Categoriche:
 - Nominali -> due categorie binarie (diabete si/no), piu' categorie (gruppo sanguigno)
 - Ordinali -> dati che rappresentano categorie ordinate (ECOG performance status [0-4], giudizi scolastici ("Insufficiente", "Sufficiente", "Buono", "Ottimo:")) -->
 
@@ -747,6 +747,21 @@ Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione del
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $x= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(x)=1 \land   4$
 
+<!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
+
+Si usa soprattutto per i dati categorici -->
+
+---
+## Measure of centrality: median
+
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/descriptive/median.png" img height="350px" border="0px"/>
+</center>
+
+<!-- Divide l'insieme di dati in due parti uguali, con il numero osservazioni <= mediana uguale a quello >= -->
+
 ---
 ## Measure of centrality: median
 
@@ -762,6 +777,8 @@ Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione del
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)={\frac {x_{(n/2)}+x_{((n/2)+1)}}{2}} = {\frac {x_{(8/2)}+x_{((8/2)+1)}}{2}}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $={\frac {x_{4}+x_{5}}{2}} = {\frac {4+5}{2}} = 4.5$ 
+
+<!-- Quando il numero di osservazioni e' pari, ci sono due valori mediani, e in questo caso si prende la loro media aritmetica -->
 
 ---
 ## Measure of centrality: median
@@ -782,6 +799,17 @@ Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione del
 ---
 ## Quartiles
 
+<span style="display:block; height:40px;"></span>
+
+<center>
+<img src="./img/descriptive/quartiles.png" img height="330px" border="0px"/>
+</center>
+
+<!-- Mentre la mediana divide i dati in due meta' esatte, molto usati sono anche i quartili, che dividono i dati in 4 parti uguali -->
+
+---
+## Quartiles
+
 <span style="display:block; height:10px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $n=11, x= \{6, 7, 15, 36, 39, \underline{40}, 41, 42, 43, 47, 49\}$ 
@@ -793,8 +821,6 @@ Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione del
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Q1(x_{1:5})= x_{(5+1)/2}=x_3=15$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Q3(x_{7:11})= x_{(5+1)/2}=x_9=43$
-
-<!-- Mentre la mediana divide i dati in due meta' esatte, molto usati sono anche i quartili, che dividono i dati in 4 parti uguali -->
 
 ---
 ## Percentiles
@@ -826,6 +852,24 @@ $$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 75}{5} = 42$
 
 <!-- Somma dei singoli valori diviso il numero di osservazioni  -->
+
+---
+## Measure of centrality: mean
+
+<span style="display:block; height:1px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; Not really robust to outliers
+
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{4, 36, 45, 50, 175\}$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 175}{5} = 62$
+
+<!-- Mentre la media e' la misura piu' usata per descrivere la tendenza centrale per la sua unicita' (c'e' solo una media) e semplicita', non e' particolarmente robusta rispetto agli outliers. Il valore atipico SOVRADIMENSIONA la media.
+
+Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori alla media per evidenziare queste situazioni  -->
 
 ---
 ## Mode *vs* &nbsp;median *vs* &nbsp;mean
@@ -878,7 +922,7 @@ $$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\text{range}(x)}= \text{max}(x)-\text{min}(x)=49-6=43$
 
-<!-- Il range pero' si basa solo sui due valori estremi, senza indicare come si distribuiscono i dati entro l’intervallo -->
+<!-- INTERVALLO di VARIAZIONE. Il range pero' si basa solo sui due valori estremi, senza indicare come si distribuiscono i dati entro l’intervallo -->
 
 ---
 ## Measure of dispersion: range
@@ -887,6 +931,17 @@ $$
 
 <center>
 <img src="./img/descriptive/outliers_range.svg" img height="250px" border="0px"/>
+</center>
+
+<!-- Il range ha tuttavia un'utilita' limitata: tiene conto solo di due valori, e non e' robusta quando ci sono valori anomali -->
+
+---
+## Measure of dispersion: interquantile range
+
+<span style="display:block; height:70px;"></span>
+
+<center>
+<img src="./img/descriptive/iqr.png" img height="300px" border="0px"/>
 </center>
 
 ---
@@ -913,6 +968,8 @@ $$
 <img src="./img/descriptive/dart_variance.png" img height="450px" border="0px"/>
 </center>
 
+<!-- Misura la distanza media tra le osservazioni e la media del campione. Piu' bassa e' la varianza, piu' le osservazioni saranno vicine alla media  -->
+
 ---
 ## Measure of dispersion: variance
 
@@ -929,7 +986,7 @@ $$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] =$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \frac{1}{2}\times [1^2+ 0^2+1^2 ]=  \frac{1}{2}\times 2 = 1$
 
-<!-- Distanza media (al quatrato!) tra ognuno dei valori osservati e la media -->
+<!-- Andiamo a fare la distanza (differenza) tra ciascun valore e la media, la eleviamo al quatrato, la sommiamo e andiamo a dividerla per la dimensione del campione - 1 -->
 
 ---
 ## Measure of dispersion: variance
@@ -947,7 +1004,7 @@ $$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sum _{i=1}^{n}(x_{i}-\bar {x} ) = (1-2) + (2-2) + (3-2) =$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1 + 0 + 1 = 0$
 
-<!-- Perche' si divide per (n-1) e non n? 
+<!-- Perche' si divide per (n-1) e non n, come ci aspetteremmo? 
 
 Dipende dal fatto che La somma degli scarti dalla media aritmetica è nulla
 Qundi se conosco i primi (n-1) valori, conosco anche l'ultimo
@@ -970,7 +1027,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \sqrt {\frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] }=$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \sqrt {\frac{1}{2}\times [1^2+ 0^2+1^2 }]= \sqrt {\frac{1}{2}\times 2}= \sqrt {1} = 1$
 
-<!-- che nella varianza l'unità di misura è diversa da quella della variabile su cui è calcolata, si utilizza la sua radice quadrata detta SCARTO QUADRATICO MEDIO o deviazione standard. -->
+<!-- che nella varianza l'unità di misura è diversa da quella della variabile su cui è calcolata (abbiamo fatto il quadrato delle fifferenze, ricordate?), si utilizza la sua radice quadrata detta SCARTO QUADRATICO MEDIO o deviazione standard. -->
 
 ---
 ## Centrality, dispersion, and data types
@@ -984,7 +1041,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 | Numeric | Mean, Median, Mode | Range, IQR, standard deviation
 
 ---
-## Parameters *vs*  &nbsp; statistics
+## Parameters *vs*  &nbsp;statistics
 
 <span style="display:block; height:30px;"></span>
 
@@ -1138,9 +1195,9 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 
 <!-- boxplot consente di rappresentare visivamente alcune caratteristiche di una distribuzione statistica: 
 
-- il grado di dispersione dei dati;
--  la misura di tendenza centrale;
-- la forma della distribuzione;
+- il grado di dispersione dei dati (via IQR)
+-  la misura di tendenza centrale (via mediana)
+- la forma della distribuzione (con i "baffi")
 - la presenza di valori anomali -->
 
 ---
@@ -1167,7 +1224,11 @@ Visconti A., et al., Total serum *N*‐glycans associate with response to immune
 </div>
 </div>
 
-<!-- conrontare due distribuzioni -->
+<!-- 50% dei dati sta tra -0.6 e 1, la mediana e' circa 0.3, il baffo ci dice che e' assimmetrica a dx, non ci sono outliers
+
+conrontare due distribuzioni, simile IQR, ma diverse mediane
+
+Mediana, quartili (ma anche percentili) si dicono misure di posizionamento perche' ci fanno "posizionare" i dati -->
 
 
 ---
@@ -1269,7 +1330,10 @@ $$
 
 </div>
 
-<!-- A diverse combinazioni di mu/sigma corrispondono diverse (e infinte) ditribuzioni normali -->
+<!-- A diverse combinazioni di mu/sigma corrispondono diverse (e infinte) ditribuzioni normali 
+
+e = costante matematica che e' circa 2.718
+-->
 
 ---
 ## The Normal distribution
@@ -1305,6 +1369,8 @@ $$
 </div>
 
 </div>
+
+<!-- il fatto che l'area e' 1 dipende dal fatto che la normale sia una distribuzione di probabilita' -->
 
 ---
 ## The  Normal distribution
@@ -1342,6 +1408,8 @@ $$
 
 </div>
 
+<!-- Distribuzione normale standardizzata -->
+
 ---
 ## The Standard Normal distribution
 
@@ -1374,7 +1442,7 @@ $$
 
 - $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
 
-- $Z = \frac{x - \mu}{}$
+- $z = \frac{x - \mu}{}$
 </div>
 <div>
 
@@ -1395,7 +1463,7 @@ $$
 
 - $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
 
-- $Z = \frac{x - \mu}{\sigma}$
+- $z = \frac{x - \mu}{\sigma}$
 </div>
 <div>
 
@@ -1416,7 +1484,7 @@ $$
 
 - $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
 
-- $Z = \frac{x - \mu}{\sigma}$
+- $z = \frac{x - \mu}{\sigma}$
 
 </div>
 <div>
@@ -1817,12 +1885,30 @@ $$
 <div>
 
 <center>
-<img src="./img/confidence_intervals/head_count.png" img height="370px" border="4px"/>
+<img src="./img/normal_and_CLT/head_count.png" img height="370px" border="4px"/>
 </center>
 
 </div>
 
-<!-- Istogramma mostra il numero di volte in cui e' uscito testa in 1000 esperimenti in ognuno dei quali e' stata lanciata una monetina 100 volte -->
+<!-- Istogramma mostra il numero di volte in cui e' uscito testa in 1000 esperimenti in ognuno dei quali e' stata lanciata una monetina 100 volte.
+
+Questo esempio ci permette di introdurre un nuovo, utuilissimo concetto che e' quello della distribuzione campionaria -->
+
+---
+## Sampling distribution
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/sampling_distro.png" img height="400px" border="0px"/>
+</center>
+
+<!-- Distribuzione campionaria e' la distribuzione di tutti i possibile valori che possono essere assunti da qualche statistica (e.g., la media) calcolata da campioni della stessa dimenzione ed estratti casualmente dalla stessa popolazione 
+
+Come si costruisce? 
+1. Estraggo tutti i possibili capioni di dimensione n
+2. Calcolo la statistica di interesse
+3. Tego traccia di ciascun valore della statistica e della sua frequenza -->
 
 ---
 ## The Central Limit Theorem (CLT)
@@ -1830,16 +1916,22 @@ $$
 <span style="display:block; height:1px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; As the sample size gets larger, the sampling distribution of the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample means approaches a normal distribution $\mathcal{N} = (\mu, \frac{\sigma}{\sqrt{n}})$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample means approaches a normal distribution $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma/\sqrt{n} \rightarrow$ &nbsp; standard error (SE)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE)
 
 <!-- La forma della distribuzione delle medie campionarie è approssimativamente normale,  indipendentemente dalla distribuzione dei valori della popolazione d’origine dalla quale i campioni sono estratti, per n sufficientemente grande.
 
 e per la legge dei grandi numeri, quando n tende all'infinito, la media del campioname è uguale alla media della popolazione
 
-La deviazione standard della distribuzione di campionamento delle medie (Errore Standard) è il rapporto tra tra la standard deviation e la sqrt(n) 
-Dimunisce al crescere di N -->
+La varianza della distribuzione campionaria  è il rapporto tra tra la varianza della popolazione e la dimenzione del campione usato per calcolarla 
+
+La radice quastrada della varianza della distribizione campionaria e' l'errore standard della media
+
+L'errore standard diminuisce al crescere di N e al decresere della varianza
+
+Quanto deve essere grande il campione perche' la distribuzione sia normale? 
+Nella maggior parte delle situazioni pratiche, n=30 e' soddisfacente, ma l'approssimazione migliora all'aumentare di n -->
 
 ---
 ## The Central Limit Theorem (CLT)
@@ -1847,13 +1939,13 @@ Dimunisce al crescere di N -->
 <span style="display:block; height:1px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; As the sample size gets larger, the sampling distribution of the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample means approaches a normal distribution $\mathcal{N} = (\mu, \frac{\sigma}{\sqrt{n}})$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample means approaches a normal distribution $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma/\sqrt{n} \rightarrow$ &nbsp; standard error (SE)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE)
 
 <span style="display:block; height:10px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp;  Standard error $\neq$ standard deviation
+:dart: &nbsp;&nbsp;&nbsp;  standard error $\neq$ standard deviation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation (SD) &nbsp; $\rightarrow$ &nbsp; spread in the collected data
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard error (SE) &nbsp; $\rightarrow$ &nbsp; error in the sample estimation
 
@@ -1883,7 +1975,13 @@ Standard error: si riferosce alla stima di un parametro, misure l'incertezza nel
 </center>
 </div>
 
-<!-- 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione -->
+<!-- Approssimando una Normale, la distribizione campionaria ha le stesse (utili) caratteristiche della normale:
+- e' simmetrica
+- ha area 1
+- 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione 
+
+Tutti concetti che ci torneranno utili tra poco
+-->
 
 --- 
 ## The Standard Error
@@ -1891,7 +1989,7 @@ Standard error: si riferosce alla stima di un parametro, misure l'incertezza nel
 <span style="display:block; height:30px;"></span>
 
 <center>
-<img src="./img/confidence_intervals/small_large_SE.png" img height="400px" border="4px"/>
+<img src="./img/normal_and_CLT/small_large_SE.png" img height="400px" border="4px"/>
 </center>
 
 <!-- Piu; lo SE e' piccolo, piu' la media campionaria osservata sara' vicina alla vera media della popolazione -->
@@ -1981,9 +2079,11 @@ Sulla base di un campione estratto casualmente da 1 popolazione cosa può essere
 
 </div>
 
-<!-- In realta' una stima puntuale l'abbiamo gia' fatta in passato, vi ricordate quando vi ho detto della processione di fede? Siao andati a la stima ottenuta nel campione per inferire il parametro della popolazione 
+<!-- In realta' una stima puntuale l'abbiamo gia' fatta in passato, vi ricordate quando vi ho detto della processione di fede? Siao andati a la stima ottenuta nel campione per inferire il parametro della popolazione.
 
-Questo paramentro ha pero' un errore, che viene quantificato dall'errore standard
+Quello che abbiamo fatto e' una STIMA PUNTUALE. Abbiamo preso due statistiche del campione e siamo andati ad usarli per stimare due parametri della popolazione
+
+Questo paramentro ha pero' un errore e il suo grado di attendibilita' viene valutato in termini di probabilita'
 -->
 
 --- 
@@ -1996,11 +2096,10 @@ Questo paramentro ha pero' un errore, che viene quantificato dall'errore standar
 
 <div style="font-size: 90%">
 
-:dart: &nbsp;&nbsp;&nbsp; A confidence interval (CI) is an
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interval which is expected to    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contain the parameter being 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; estimated with a given 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; probability
+:dart: &nbsp;&nbsp;&nbsp; A confidence interval (CI) is a
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; range of values which includes   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the estimated parameter with
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a given degree of confidence
 
 </div>
 
@@ -2013,7 +2112,14 @@ Questo paramentro ha pero' un errore, che viene quantificato dall'errore standar
 </center>
 </div>
 
-<!-- Per esempio il 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione, quindi i valori che finiscono nell'intervallo di 2 SE dalla media hanno il 95% di probabilita' di inclidere il vero parametro sconosciuto -->
+<!-- E come? Attraverso gli CI, che stimano il parametro della popolazione tramite un intervallo di valori che, con una probabilità prefissata, comprende il vero valore del parametro sconosciuto. 
+
+Per esempio il 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione, quindi i valori che finiscono nell'intervallo di 2 SE dalla media hanno il 95% di probabilita' di inclidere il vero parametro sconosciuto 
+
+I CI vengono costruti attorno alla stima puntuale 
+
+Infatti non abbiamo mu e non abbiamo sigma, ma abbiamo la media e la varianza campionaria (le nostre stime puntuali).
+-->
 
 ---
 ##  Confidence intervals for means
@@ -2108,6 +2214,10 @@ https://hbsc.org
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\bar{x} -1.96 \times SE \leq \mu \leq \bar{x} + 1.96 \times \hat{SE} ) = 95\%$
 
+<!-- 1,96 e' il coefficiente di attendibilita', ci dice entro quanti errori standard si trova il 95% di tutti i possibili valori della media campionaria
+
+Stima intervallare devinita come stimatore +/- il prodotto tra coeff di attendibilita' e SE. Questa quantita' si chiama anche PRECISIONE della STIMA o MARGINE DI ERRORE -->
+
 ---
 ## Confidence intervals for means
 
@@ -2130,10 +2240,11 @@ https://hbsc.org
 </div>
 
 
-<!-- Abbiao un confidence interval molto stretto perche' si sono verificate due condinzioni che, indipendentemente, migliorano la stima:
+<!-- Questo esempio ci dice che abbiamo un grado di fiducia (o LIVELLO DI CONFIDENZA) del 95% che la media della popolazione si trovi tra 21.42 e 21.58 kg/m2.
+
+Abbiao un confidence interval molto stretto perche' si sono verificate due condinzioni che, indipendentemente, migliorano la stima intervallare:
 - un'alta numerosita' campionaria e
-- una bassa variabilita s tra le osservazioni
- -->
+- una bassa variabilita s tra le osservazioni -->
 
 ---
 ## Interpreting confidence intervals 
@@ -2147,10 +2258,7 @@ https://hbsc.org
 <img src="./img/confidence_intervals/womenBP.png" img height="350px" border="4px"/>
 </center>
 
-<!-- Cosa rappresentano quindi i CI? Che dati 100 campioni estratti dalla popolazione, 95 stimano un IC al cui interno è compresa la media reale della popolazione e solo 
-5 stimano un ic che non include la media reale.
-
-  -->
+<!-- Cosa rappresentano quindi i CI? Che dati 100 campioni estratti dalla popolazione, 95 stimano un IC al cui interno è compresa la media reale della popolazione e solo 5 stimano un ic che non include la media reale -->
 
 ---
 ### Exercise #8
@@ -2177,6 +2285,10 @@ https://hbsc.org
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (122.1 - 1.96 \times 0.89 \text{ ; }  122.1 + 1.96 \times 0.89)$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (120.34; 123.86)$
 
+<!-- stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard 
+
+Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione p sia compresa tra questi valori -->
+
 ---
 ## The $\alpha$ level
 
@@ -2188,7 +2300,7 @@ https://hbsc.org
 <span style="display:block; height:10px;"></span>
 <div style="font-size: 90%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $Z_{\alpha/2}$ |
+| Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
 | ----: | ----- | ---- | ----|
 | 95% | 5% | 2.5% |  |
 
@@ -2204,7 +2316,9 @@ https://hbsc.org
 </div>
 </div>
 
-<!-- L’intervallo di confidenza (IC) al 95% è il più usato e intuitivamente abbiamo gia' capito da dove deirva il fattore 1.96 (circa 2SE contengono il 95% dei campioni), ma vediamolo in modo piu' formale -->
+<!-- L’intervallo di confidenza (IC) al 95% è il più usato e intuitivamente abbiamo gia' capito da dove deirva il fattore 1.96 (circa 2SE contengono il 95% dei campioni), ma vediamolo in modo piu' formale 
+
+Quando accettiamo un livello di confidenza del 95% accettiamo implicitamente un errore del 5%, distribuito equamente a dx e sx dell'intrevallo di confidenza (in verde), quindi 2.5% per parte -->
 
 ---
 ## The $\alpha$ level
@@ -2217,7 +2331,7 @@ https://hbsc.org
 <span style="display:block; height:10px;"></span>
 <div style="font-size: 90%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $Z_{\alpha/2}$ |
+| Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
 | ----: | ----- | ---- | ----|
 | 95% | 5% | 2.5% | 1.96 |
 
@@ -2234,6 +2348,10 @@ $100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$
 </div>
 </div>
 
+<!--  e qual e' l'aera di questa parte bianca? E' la totalita' dell'area (1, o 100%) meno l'area bianca (2.5%), quindi 97.5%
+
+E' qual e' il valore di z per cui la curva sottende un'area del 97.5%? 1.96 (le tavole si possono anche leggere al contrario, non solo da z all'area, ma anche dall'area a z) -->
+
 ---
 ## The $\alpha$ level
 
@@ -2243,7 +2361,7 @@ $100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$
 
 <div style="font-size: 90%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $Z_{\alpha/2}$ |
+| Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
 | ----: | -----: | ---- | ----:|
 | 95% | 5% | 2.5% | 1.96 |
 | 90% | 10% | 5.0% | 1.65 |
@@ -2266,7 +2384,8 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.58$
 </div>
 </div>
 
-<!-- Alphas sono i livelli di confidenza
+<!-- 95% e' il valore piu' usato, ma altri comuni sono 90 e 99%, a cui corrispondono fattori di attendibilita' di 1.65 e 2.58
+
 Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora proviamo a fare una domanda piu' teorica -->
 
 ---
@@ -2390,6 +2509,8 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 
 :pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
 
+<!-- Ci sono casi in cui vogliamo stimare la differenza tra medie di una popolazione (per esempio tra i pazienti che hanno ricevuto un nuovo trattamento e quelli che hanno avuto la cura standard o il placebo) -->
+
 ---
 ## Confidence intervals for differences of means
 
@@ -2422,6 +2543,8 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 </div>
 </div>
 
+<!-- Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni -->
+
 ---
 ## Confidence intervals for differences of means
 
@@ -2441,6 +2564,10 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 
 </div>
 
+<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard 
+
+Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione p sia compresa tra questi valori -->
+
 ---
 ### Exercise #11
 
@@ -2456,11 +2583,13 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($Z_{\alpha/2}$=$Z_{5/2}$=1.65)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($Z_{\alpha/2}$=$Z_{0.5/2}$=2.58)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
 
 </div>
+
+<!-- Vi ho iportato i coefficienti di attendibilita' -->
 
 ---
 ### Exercise #11 -- Solution
@@ -2482,6 +2611,10 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = (2.6 - 2.58 \times 1.08 ; \text{ } 2.6 + 2.58 \times 1.08) = (-0.19; \text{ } 5.39)$
 
 </div>
+
+<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard  
+
+Abbiamo un grado di confidenza del X% che la differenza delle medie delle due popolazioni sia compresa tra il X e X  -->
 
 ---
 ## CTL and small sample size
@@ -2509,6 +2642,17 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 
 </div>
 </div>
+
+<!-- Quando la dimensione campionaria e' grande la nostra fiducia nell'approssimare sigma con la varianza campionaria e' ben riposta  e possiamo usare la normale per il calcolo dei CI, ma cosa succede quando i campioni soo piccoli? Usiamo la distribuzione  di Student
+
+Come la normale:
+- ha media 0
+- e' simmetrica
+- ha varianza >1 che si avvicina a 1 al crescere di N
+- e' una famiglia di distribuzioni, 1 per ogni valore campionario n-1
+
+Meno appuntita al centro e code piu' alte
+ -->
 
 ---
 ## CTL and small sample size
@@ -2541,7 +2685,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 </div>
 </div>
 
-<!-- Gradi di liberta' misurano la quantità di informazione disponibile nei dati che può essere usata per stimare sigma (affidabilità della stima s)
+<!-- infatti la t-dist tiene conto dei valori campionari n-1, detti anche Gradi di liberta', che misurano la quantità di informazione disponibile nei dati che può essere usata per stimare sigma (affidabilità della stima s)
 
 All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più affidabile: con n grande la distribuzione t si avvicina alla distribuzione normale
  -->
@@ -2575,8 +2719,9 @@ All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più a
 </div>
 </div>
 
-<!-- La distribuzione di t è diversa per ciascuno dei gl: tavole
- -->
+<!-- Il procedimento per la costruzione dei CI e' lo stesso, quello che cambia e' la tavola da dove andiamo ad estrare il coefficiente di attendibilita' (t) 
+
+Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno dei gl: usare le tavole corrette!!! -->
 
 ---
 ## CTL and small sample size
@@ -2639,6 +2784,8 @@ All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più a
 </div>
 </div>
 
+<!-- Abbiamo un grado di confidenza del 95% che la media della popolazione p sia compresa tra 24.28 e 25.72 -->
+
 ---
 ## Confidence intervals for proportions
 
@@ -2646,17 +2793,20 @@ All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più a
 
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; The British Social Attitudes Survey: *how many overestimated  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the proportion of immigrants who are from non-Western 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; countries?*
+:pushpin: &nbsp;&nbsp;&nbsp; How many patients show gastrointestinal side effects from a   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new medication?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $m=69$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\pi, \frac{\pi \times (1-\pi)}{n})$ &nbsp; $\rightarrow \text{CLT}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $SE = \sqrt{\frac{\pi \times (1-\pi)}{n}}$, &nbsp; where $\pi = \text{???}$
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}}$, &nbsp; where $\bar{p} = \frac{m}{n}$
 
 </div>
+
+<!-- In campo medico ci sono molte questioni legate alla proporzione di pazienti con una certa caratteristica. Per esempio la proporzione di pazienti con una malattia, la proporzione di pazienti che necessita un ricovero, o quella che soffre di effetti collaterali dopo l'assunzione di un farmaco
+
+Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una stima non distorta della proporzione della popolazione e la distribuzione campionaria si approssima ad una normale  -->
 
 ---
 ## Confidence intervals for proportions
@@ -2676,6 +2826,10 @@ All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più a
 
 </div>
 
+<!-- stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard.
+
+Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione p sia compresa tra il 60 e il 78% -->
+
 ---
 ### Exercise #12
 
@@ -2690,13 +2844,15 @@ All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più a
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($Z_{\alpha/2}$=$Z_{5/2}$=1.65)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($Z_{\alpha/2}$=$Z_{0.5/2}$=2.58)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 </div>
+
+<!-- vi ho riportato i coefficienti di attendibilita' -->
 
 ---
 ### Exercise #12 -- Solution
@@ -2720,6 +2876,11 @@ All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più a
 
 </div>
 
+<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard  
+
+Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p sia compresa tra il x e x%
+-->
+
 ---
 ### Confidence intervals for differences of proportion
 
@@ -2732,7 +2893,7 @@ All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più a
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
 </div>
 
 </div>
@@ -2747,36 +2908,8 @@ All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più a
 </div>
 </div>
 
----
-### Confidence intervals for differences of proportion
+<!-- Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazienti con una certa caratteristica che provengono da due diverse popolazioi, come la proporzione di uomini e donne che soffrono di una qualche malattia, o due gruppi di persone che rispondono o meno ad un farmaco. -->
 
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
-
-</div>
-
-</div>
-<div>
-
-<div style="font-size: 80%" >
-
-| | Int | Cnt | Tot
-| :---- | -----: | ----: | ----: |
-HIV+ |
-HIV- |
-Total | 180 | 183 | 363 |
-
-</div>
-
-</div>
-</div>
 
 ---
 ### Confidence intervals for differences of proportion
@@ -2790,69 +2923,7 @@ Total | 180 | 183 | 363 |
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
-
-</div>
-
-</div>
-<div>
-
-<div style="font-size: 80%" >
-
-| | Int | Cnt | Tot
-| :---- | -----: | ----: | ----: |
-HIV+ | 13 | 40 | 53 | 
-HIV- |
-Total | 180 | 183 | 363 |
-
-</div>
-
-</div>
-</div>
-
----
-### Confidence intervals for differences of proportion
-
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
-
-</div>
-
-</div>
-<div>
-
-<div style="font-size: 80%" >
-
-| | Int | Cnt | Tot
-| :---- | -----: | ----: | ----: |
-HIV+ | 13 | 40 | 53 | 
-HIV- | 167 | 143 | 310
-Total | 180 | 183 | 363 |
-
-</div>
-
-</div>
-</div>
-
----
-### Confidence intervals for differences of proportion
-
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
 </div>
 
 <span style="display:block; height:5px;"></span>
@@ -2860,47 +2931,51 @@ Total | 180 | 183 | 363 |
 <div style="font-size: 80%" >
 
 $\mathcal{N} = (\pi_{\text{i}} - \pi_{\text{c}}, \frac{\pi_i \times (1-\pi_i)}{n_i}+\frac{\pi_c \times (1-\pi_c)}{n_c})$ 
-$SE = \sqrt{\frac{\pi_i \times (1-\pi_i)}{n_i})+\frac{\pi_c \times (1-\pi_c)}{n_c}}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{CLT}$ 
 
-$\pi_{\text{i}} - \pi_{\text{c}} \approx \hat{p}_{\text{i}} - \hat{p}_{\text{c}}$
- $\text{SE} \approx \hat{\text{SE}} = \sqrt{\frac{\hat{p}_i \times (1-\hat{p}_i)}{n_i}+\frac{\hat{p}_c \times (1-\hat{p}_c)}{n_c}}$
+$\hat{\text{SE}} = \sqrt{\frac{\hat{p}_i \times (1-\hat{p}_i)}{n_i}+\frac{\hat{p}_c \times (1-\hat{p}_c)}{n_c}}$
 </div>
 
 </div>
 <div>
 
-<div style="font-size: 80%" >
+<span style="display:block; height:5px;"></span>
 
-| | Int | Cnt | Tot
-| :---- | -----: | ----: | ----: |
-HIV+ | 13 | 40 | 53 | 
-HIV- | 167 | 143 | 310
-Total | 180 | 183 | 363 |
+<center>
+<img src="./img/confidence_intervals/nejm.png" img height="290px" border="4px"/>
+</center>
 
 </div>
 
 </div>
 </div>
+
+<!-- Per il teorema del limite centrale, di nuovo, la differenza tra le proporzioni campionarie e' una stima non distorta della differenza di proporzioni nella popolazione e la distribuzione campionaria si approssima ad una normale  -->
 
 ---
 ### Confidence intervals for differences of proportion
 
 :pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
 
-<span style="display:block; height:5px;"></span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+<span style="display:block; height:1px;"></span>
 
-<div style="font-size: 80%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\pi_{\text{i}} - \pi_{\text{c}} \approx \hat{p}_{\text{i}} - \hat{p}_{\text{c}}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE} \approx \hat{\text{SE}} = \sqrt{\frac{\hat{p}_i \times (1-\hat{p}_i)}{n_i}+\frac{\hat{p}_c \times (1-\hat{p}_c)}{n_c}}$
+<div style="font-size: 90%" >
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{p}_{\text{i}} - \hat{p}_{\text{c}} = \frac{m_i}{tot_i} - \frac{m_c}{tot_c} = \frac{13}{180} - \frac{40}{183} = 0.07 - 0.22 = -0.15$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{SE} = \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $95\%CI = (\hat{p}_{\text{i}} - \hat{p}_{\text{c}} -1.96 \times \hat{SE}; \text{ } \hat{p}_{\text{i}} - \hat{p}_{\text{c}} +1.96 \times \hat{SE}) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (-0.15 - 0.007; \text{ }  -0.015 + 0.07) = (-0.22 ; -0.08)$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\hat{p}_{\text{i}} - \hat{p}_{\text{c}} -1.96 \times \hat{SE}; \text{ } \hat{p}_{\text{i}} - \hat{p}_{\text{c}} +1.96 \times \hat{SE}) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (-0.15 - 0.007; \text{ }  -0.015 + 0.07) = (-0.22 ; -0.08)$ 
 
 </div>
+
+<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard  
+
+Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p sia compresa tra il x e x%
+-->
 
 ---
 ![bg opacity](./img/backgrounds/confidence_intervals_bg.png)
@@ -2910,6 +2985,8 @@ Total | 180 | 183 | 363 |
 - We use statistics to estimate parameters (point estimates)
 - We can take advantage of the CLT to calculate interval estimates (CI) 
 - 95% confidence intervals tell us the the true value has 95% probability of being inside the given range
+
+<!-- Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p sia compresa tra il x e x% -->
 
 ---
 ![bg opacity](./img/backgrounds/hypothesis_testing_bg.png)
@@ -2953,6 +3030,10 @@ Total | 180 | 183 | 363 |
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is using Dexamethasone better than standard care?
 
+<!-- Un'ipotesi puo' essere definita come una congettura su una o piu' popplaioni 
+
+Questo e' cosa ci aspettiamo di poter concludere come risultato del nostro test statistico -->
+
 ---
 ## Making hyphoteses
 
@@ -2979,6 +3060,7 @@ Total | 180 | 183 | 363 |
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
 
+<!-- Tuttavia quello che andiamo a testaere e' un'affermazione diversa, il suo opposto: sono dexamethasone e la cura standard uguali? -->
 ---
 ## Making hyphoteses
 
@@ -3008,6 +3090,8 @@ Total | 180 | 183 | 363 |
 
 </div>
 </div>
+
+<!-- In modo piu' formale, quello che andiamo a testare sono l'ipotesi nulla (non ci sono differenze) -->
 
 ---
 ## Making hyphoteses
@@ -3045,6 +3129,13 @@ Total | 180 | 183 | 363 |
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{Alternative hypothesis} \text{ } (\mathcal{H}_1)$
 
 </div>
+
+<!-- e l'ipotesti alternativa (la nostra congettura).
+Le due ipotesi sono complementari: insieme esauriscono tutte i possibili valori assunti dal parametro studiato
+
+ATtENZIONE: com il test di ipotesi non si fa la DIMOSTRAZIONE di un'ipotesi, si ha semplicemente un'indicazione sul fatto che l'ipotesi sia o meno supportata dai dati.
+
+Non rifiutando l'ipotesi nulla, non diciamo che essa sia vera, ma che potrebbe essere vera -->
 
 ---
 ## Testing hyphoteses
@@ -3113,6 +3204,87 @@ Total | 180 | 183 | 363 |
 
 </div>
 
+<!-- A questo punto andiamo a calcolarci la nostra statistica di interesse X (qui la differenza delle medie) e il suo errore standard. 
+
+Quindi andiamo a chiederci se questo valore e' troppo lontano dalla nostra ipotesi (che in questo caso e' che non ci sia differenza, quindi che X sia zero). Piu' nel dettaglio ci chiediamo quanto lontano e' troppo lontano, se vogliamo un livello di significativita' (per esempio) del 5%?  -->
+
+---
+## Testing hyphoteses
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_i - \bar{x}_c = 2.6$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = 1.08$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow 1.96 \times \hat{SE} = 2.12$
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:5px;"></span>
+
+<center>
+<img src="./img/hypothesis_testing/CLT.png" img height="270px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Un livello di significicativita' (o alfa) del 5%, come nel nostro esempio, ci dice qual e' la probabilita; di rifiutare l'ipotesi nulla nel caso questa sia vera (identificare un falso positivo, vedremo questo piu' avanti) 
+
+Quant'e' quindi troppo lontano dallo zero per rispettare un livello di significativita' del 5%? Lo abbiamo gia' visto che gli intervalli di confidenza: il rapporto tra il coefficiente di attendibilita' e l'errore standard, che indica la regione di non rifiuto (o accettazione, in verde) che si contrappone alla regione di rifiuto (in bianco) -->
+
+---
+## Testing hyphoteses
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_i - \bar{x}_c = 2.6$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = 1.08$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow 1.96 \times \hat{SE} = 2.12$ 
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:5px;"></span>
+
+<center>
+<img src="./img/hypothesis_testing/CLT.png" img height="270px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
+
+</div>
+
+<!-- Andiamo quindi a calcolarci la statistica del test, o RAPPORTO CRITICO, per vedere se e' incluso nella regione di non rifuto e... non lo e'  -->
+
 ---
 ## Testing hyphoteses
 
@@ -3147,47 +3319,16 @@ Total | 180 | 183 | 363 |
 
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We refuse the null hypothesis
 
 </div>
 
----
-## Testing hyphoteses
+<!-- Quindi  rifutiamo l'ipotesti nulla. Di conseguenza possiamo comcludere che l'ipotesi alternativa (le due medie sono diverse) e' vera.
 
-:pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
+Nel caso H0 non fosse stata rifiutata, invece, avremmo concluso che H0 potrebbe essere vera.
 
-<div class="columns">
-<div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_i - \bar{x}_c = 2.6$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = 1.08$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow 1.96 \times \hat{SE} = 2.12$ 
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:5px;"></span>
-
-<center>
-<img src="./img/hypothesis_testing/CLT.png" img height="270px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We refuse the null hypothesis
-
-</div>
+In entrambi i casi, dobbiamo tenere a mente che stiamo facendo un ragionamento di tipo probabilistico
+-->
 
 ---
 ## Significance
@@ -3205,7 +3346,7 @@ Total | 180 | 183 | 363 |
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_i - \bar{x}_c = 2.6$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = 1.08$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\bar{X} > 2.4) = 1 - 0.9918 =$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.0082$
@@ -3223,6 +3364,12 @@ Total | 180 | 183 | 363 |
 </div>
 </div>
 
+<!-- La regione di non rifiuto include i valori che hanno un probabilita' maggioore di verificarsi se H0 e' vera. Viceversa la regione di rifiuto include i valori che hanno una probabilita' minore di verificarsi se H1 e' vera.
+
+E come la misuriamo questa probabilita'? Unsando il p value, che ci dice quanto sono improbabili i risultati ottenuti da questo campione dato che l'ipotesi nulla e' vera.
+
+Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia vera dandoci una forte ragione per dubitare che le due medie siano uguali -->
+
 ---
 ## Significance
 
@@ -3236,10 +3383,10 @@ Total | 180 | 183 | 363 |
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; differs from standard care, if 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; we accepted $\mathcal{H}_0$?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_i - \bar{x}_c = 2.6$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = 1.08$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X}-\mu}{\hat{SE}} = \frac{2.6}{1.08} = 2.4$
+<span style="display:block; height:15px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{i}} - \mu_{\text{c}} = 0$
 
 </div>
 
@@ -3298,21 +3445,13 @@ Total | 180 | 183 | 363 |
 :dart: &nbsp;&nbsp;&nbsp; $p < \alpha \rightarrow \text{reject } \mathcal{H}_0$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $p \geq \alpha \rightarrow \text{fail  to reject } \mathcal{H}_0$
 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha= 0.05 \rightarrow$ the data are NOT consistent with $\mathcal{H}_0$ if $\bar{X}$ would 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; happen in less 5% of  the experiments 
-
----
-## Making decision
-
-<span style="display:block; height:10px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; $p < \alpha \rightarrow \text{reject } \mathcal{H}_0$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $p \geq \alpha \rightarrow \text{fail  to reject } \mathcal{H}_0$
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha= 0.05 \rightarrow P < 0.05 \rightarrow |\bar{X}| > 1.96 \times \hat{SE}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha= 0.01 \rightarrow P < 0.01 \rightarrow |\bar{X}| > 2.58 \times \hat{SE}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha= 0.1 \text{ }\text{ } \rightarrow P < 0.1 \text{ } \text{ } \rightarrow |\bar{X}| > 1.65 \times \hat{SE}$
+
+<!-- il p value ci dice quanto sono improbabili i risultati ottenuti da questo campione dato che l'ipotesi nulla e' vera
+
+Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia vera dandoci una forte ragione per dubitare che le due medie siano uguali -->
 
 ---
 ## Multiple testing correction
@@ -3333,7 +3472,11 @@ Total | 180 | 183 | 363 |
 <span style="display:block; height:10px;"></span>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Bonferroni correction:  $\alpha = \alpha/M$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - False positive rate (FDR)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - False discovery rate (FDR)
+
+
+<!-- FDR intuitivamente ci dice quale proporzione di falso positivi andiamo ad accettare (FDR = FP/(FP+TP) ) 
+Un FDR del 5%, per esempio, ci dice che accettiamo che oni 100 volte che "chiamiamo" un risultato (diciamo che un test e' significativo), in 5 stiamo facendo un errore-->
 
 ---
 ## Hypothesis testing (in steps)
@@ -3348,13 +3491,16 @@ Total | 180 | 183 | 363 |
 
 &nbsp;&nbsp;&nbsp; 4. Make a decision about $\mathcal{H}_0$
 
+<!-- alpha = livello di significativita' 
+test statistic= RAPPORT CRITICO -->
+
 ---
 ### Exercise 13
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is the birth weight of babies born from smoking mothers the same 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; as those born from non-smoking mothers?
+:question: &nbsp;&nbsp;&nbsp; Does the birth weight of babies born from smoking mothers differ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from that of babies  born from non-smoking mothers?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
@@ -3366,24 +3512,25 @@ Total | 180 | 183 | 363 |
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is the birth weight of babies born from smoking mothers the same 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; as those born from non-smoking mothers?
+:question: &nbsp;&nbsp;&nbsp; Does the birth weight of babies born from smoking mothers differ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from that of babies  born from non-smoking mothers?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Set $\mathcal{H}_0$ and $\mathcal{H}_1$ &nbsp; $\rightarrow$ &nbsp; $\mathcal{H}_0: \mu_s - \mu_c = 0 \text{, } \mathcal{H}_1: \mu_s - \mu_c \neq 0$
 
-
 </div>
+
+<!-- Primo passo, andiamo a costruire la nostra ipotesi nulla. Notiamo che H1 e' la conclusione a cui vogliamo arrivare.  -->
 
 ---
 ### Exercise 13 -- Solution
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is the birth weight of babies born from smoking mothers the same 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; as those born from non-smoking mothers?
+:question: &nbsp;&nbsp;&nbsp; Does the birth weight of babies born from smoking mothers differ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from that of babies  born from non-smoking mothers?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
@@ -3393,6 +3540,8 @@ Total | 180 | 183 | 363 |
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Define $\alpha$ &nbsp; $\rightarrow$ &nbsp; $\alpha = 0.05$
 
 </div>
+
+<!-- Decisiamo per un livello di significativita; di 0.05. Non vi ho detto nulla, quindi anche 0.01 o 0.1 vanno benissimo. -->
 
 ---
 ### Exercise 13 -- Solution
@@ -3413,11 +3562,43 @@ Total | 180 | 183 | 363 |
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_s - \bar{x}_c = 3241.6 - 3424.1 = -182.5$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{s}^2}{n_\text{s}} + \frac{s_\text{i}^2}{n_\text{i}}} = \sqrt{\frac{476.5^2}{5065} + \frac{474.6^2}{8143}} = 8.51$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \pm 1.96 \times \hat{SE} = 1.96 \times 8.51 = \pm 16.68$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X} - \mu}{\hat{\text{SE}}} = \frac{-182.5 - 0}{8.51}=-21.44$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \pm 1.96 \times \hat{SE} = \pm 1.96 \times 8.51 = \pm 16.68$
+
+
+</div>
+
+<!-- Per quello che ci siamo detti sul C:T e sulle distribuzioni campuionarie, sappiamo che la media campionaria e' una normale com media 0 e SD = varianza devinita da questa formula, e che l'area di accettazione (o non rifiuto) corrisponde a 1.96 x SE. 
+
+Quindi andiamo ad accettare H0 se la statistica del test cade nella regione +/- 16.68 -->
+
+---
+### Exercise 13 -- Solution
+
+<div style="font-size: 90%" >
+
+:question: &nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. $\mathcal{H}_0: \mu_s - \mu_c = 0$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. $\alpha = 0.05$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Calculate the test statistics &nbsp; $\downarrow$ 
+
+</div>
+
+<div style="font-size: 80%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_s - \bar{x}_c = 3241.6 - 3424.1 = -182.5$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{s}^2}{n_\text{s}} + \frac{s_\text{i}^2}{n_\text{i}}} = \sqrt{\frac{476.5^2}{5065} + \frac{474.6^2}{8143}} = 8.51$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \pm 1.96 \times \hat{SE} = \pm 1.96 \times 8.51 = \pm 16.68$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{\bar{X} - \mu}{\hat{\text{SE}}} = \frac{-182.5 - 0}{8.51}=-21.44$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $P(\bar{X} < -21.44) +  P(\bar{X} > 21.44)= 0 \times 2 = 0$
 
 </div>
+
+<!-- Ma il nostro valore critico cade molto piu' in la', cade nella regione di rifiuto. e con un p calue molto basso. 
+
+Ricordiamo che il p value ci dice quanto sono improbabili i risultati ottenuti da questo campione dato che l'ipotesi nulla e' vera -->
 
 ---
 ### Exercise 13 -- Solution
@@ -3430,13 +3611,12 @@ Total | 180 | 183 | 363 |
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. $\mathcal{H}_0: \mu_s - \mu_c = 0$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. $\alpha = 0.05$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. &nbsp;&nbsp;&nbsp;&nbsp; $\pm 1.96 \times \hat{SE} = 1.96 \times 8.51 = \pm 16.68$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Z = \frac{\bar{X} - \mu}{\hat{\text{SE}}} = \frac{-182.5 - 0}{8.51}=-21.44$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{\bar{X} - \mu}{\hat{\text{SE}}} = \frac{-182.5 - 0}{8.51}=-21.44$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $P(\bar{X} < -21.44) +  P(\bar{X} > 21.44)= 0 \times 2 = 0$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Make a decision about $\mathcal{H}_0$ &nbsp; $\rightarrow$ We refuse  $\mathcal{H}_0$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Make a decision about $\mathcal{H}_0$ &nbsp; $\rightarrow$ We refuse $\mathcal{H}_0$
 
 </div>
-
 
 ---
 ## Testing differences in proportion
@@ -3445,6 +3625,13 @@ Total | 180 | 183 | 363 |
 
 <div class="columns">
 <div>
+
+<div style="font-size: 90%" >
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
+</div>
 
 </div>
 <div>
@@ -3466,11 +3653,12 @@ Total | 180 | 183 | 363 |
 <div class="columns">
 <div>
 
-<span style="display:block; height:5px;"></span><span style="display:block; height:5px;"></span>
-
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$ &nbsp;&nbsp;&nbsp; $\leftarrow$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$ &nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_1: \pi_{\text{i}} - \pi_{\text{c}}  \neq 0$  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
@@ -3488,47 +3676,7 @@ Total | 180 | 183 | 363 |
 </div>
 </div>
 
----
-## Testing differences in proportion
-
-:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$ &nbsp;&nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{P} = \pi_{\text{i}} - \pi_{\text{c}} \approx \hat{p}_{\text{i}} - \hat{p}_{\text{c}} =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \frac{13}{180} - \frac{40}{183} = 0.07 - 0.22$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -0.15 = -15\%$
-
-</div>
-
-</div>
-<div>
-
-<div style="font-size: 80%" >
-
-<center>
-
-| | Int | Cnt | Tot
-| :---- | -----: | ----: | ----: |
-HIV+ | 13 | 40 | 53 | 
-HIV- | 167 | 143 | 310
-Total | 180 | 183 | 363 |
-</center>
-
-</div>
-</div>
-</div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\text{SE} \approx \hat{\text{SE}} = \sqrt{\frac{\bar{P} \times (1-\bar{P})}{n_i}+\frac{\bar{P} \times (1-\bar{P})}{n_c}} = \sqrt{\frac{0.15 \times (1-0.15)}{180}+\frac{0.15 \times (1-0.15)}{183}} = 0.037$
-</div>
+<!-- Andiamo a definire le nostre ipotesi (notiamo che H1 e' la nostra congettura) e il livello di significativita' -->
 
 ---
 ## Testing differences in proportion
@@ -3537,13 +3685,57 @@ Total | 180 | 183 | 363 |
 
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$ &nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$, &nbsp;&nbsp;&nbsp; $\alpha = 0.05$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{P} = -0.15$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = 0.037$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{P} =  \hat{p}_{\text{i}} - \hat{p}_{\text{c}} = \frac{13}{180} - \frac{40}{183} = 0.07 - 0.22 = -0.15 = -15\%$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{\hat{P}-0}{\hat{SE}} = \frac{0.15}{0.037} = 4.06 \geq 1.96 \text{ } \rightarrow$ &nbsp; we reject $\mathcal{H}_0$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{\text{SE}} = \sqrt{\frac{\bar{P} \times (1-\bar{P})}{n_i}+\frac{\bar{P} \times (1-\bar{P})}{n_c}} = \sqrt{\frac{0.15 \times (1-0.15)}{180}+\frac{0.15 \times (1-0.15)}{183}} = 0.037$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \pm 1.96 \times \hat{SE} = \pm 1.96 \times 0.037 = \pm 0.073$
+
+</div>
+
+<!-- Sappiamo che per il CLT, la distribuzione delle differenze di proporzioni ha media P e SE cosi.
+
+Andiamo a calcolare la nostra area di accettazione o non rifiuto al livello di significativita; scelto-->
+
+---
+## Testing differences in proportion
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$, &nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{P} = -0.15$, &nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = 0.037$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \pm 1.96 \times \hat{SE} = \pm 1.96 \times 0.037 = \pm 0.073$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{\hat{P}-0}{\hat{SE}} = \frac{0.15}{0.037} = 4.06 > 0.073 \text{ } \rightarrow$ &nbsp; we reject $\mathcal{H}_0$
+
+</div>
+
+<!-- Andiamo quindi a calcolarci il valore critico , che cade nella regione di non rifiuto.-->
+
+---
+## Testing differences in proportion
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$, &nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \pm 1.96 \times \hat{SE} = \pm 1.96 \times 0.037 = \pm 0.073$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{\hat{P}-0}{\hat{SE}} = \frac{0.15}{0.037} = 4.06 > 0.073 \text{ } \rightarrow$ &nbsp; we reject $\mathcal{H}_0$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(|\bar{P}| > 4.06) = 2 \times (1 - 0.999975) = 0.00005 = 5 \times 10^{-5} \leftarrow$ P value
 </div>
@@ -3551,51 +3743,136 @@ Total | 180 | 183 | 363 |
 ---
 ## Pearson's $\chi^2$ test
 
-<div class="columns">
-<div>
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
 
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard care?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$ &nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{\text{tot}^+}{tot}=\frac{53}{363}=0.146$
-
 </div>
 
-</div>
-<div>
+<!-- Proviamo ora a calcolare se l'uso di zidovudine influisce sulla trasmissione del virus dell'HIV da madre a bambino usando un test diverso, il Pearson\s chi2.
 
-<div style="font-size: 80%" >
+Di nuovo andiamo a definire H0 come proporzione di bambini che contraggio il virus essere la stessa tra chi ha assunto il medicinale e chi no (ipotesi di indipendenza) e H1 proporzione di infetti diversi tra chi a preso il farmaco o meno (ipotesi di associazione)
 
-<center>
-
-| | Int | Cnt | Tot
-| :---- | -----: | ----: | ----: |
-HIV+ | 13 | 40 | 53 | 
-HIV- | 167 | 143 | 310
-Total | 180 | 183 | 363 |
-</center>
-
-</div>
-</div>
-</div>
+non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 
 ---
 ## Pearson's $\chi^2$ test
 
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
+
 <div class="columns">
 <div>
 
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard care?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$ &nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+</div>
+
+</div>
+<div>
+
+<div style="font-size: 75%" >
+
+| | Int | Cnt | Tot
+| :---- | -----: | ----: | ----: |
+HIV+ |
+HIV- |
+Total | 180 | 183 | 363 |
+
+</div>
+
+</div>
+</div>
+
+<!-- Andiamo innanzitutto a costruirci una tabella di contigenza, dove andiamo ad indicare le dimensioni dei due campioni -->
+
+---
+## Pearson's $\chi^2$ test
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+</div>
+
+</div>
+<div>
+
+<div style="font-size: 75%" >
+
+| | Int | Cnt | Tot
+| :---- | -----: | ----: | ----: |
+HIV+ | 13 | 40 | 53 | 
+HIV- |
+Total | 180 | 183 | 363 |
+
+</div>
+
+</div>
+</div>
+
+<!-- Anduiamo poi a riportare di casi di infezione nei due campioni -->
+
+---
+## Pearson's $\chi^2$ test
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+</div>
+
+</div>
+<div>
+
+<div style="font-size: 75%" >
+
+| | Int | Cnt | Tot
+| :---- | -----: | ----: | ----: |
+HIV+ | 13 | 40 | 53 | 
+HIV- | 167 | 143 | 310
+Total | 180 | 183 | 363 |
+
+</div>
+</div>
+</div>
+
+<!-- Andiamo poi a completare la differenza per indicare anche il numero di infanti che non ha contratto l'infezione -->
+
+---
+## Pearson's $\chi^2$ test
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{\text{tot}^+}{tot}=\frac{53}{363}=0.146$
@@ -3605,9 +3882,43 @@ Total | 180 | 183 | 363 |
 </div>
 <div>
 
-<div style="font-size: 80%" >
+<div style="font-size: 75%" >
 
-<center>
+| | Int | Cnt | Tot
+| :---- | -----: | ----: | ----: |
+HIV+ | 13 | 40 | 53 | 
+HIV- | 167 | 143 | 310
+Total | 180 | 183 | 363 |
+
+</div>
+</div>
+</div>
+
+<!-- Se non ci fosse differenza tra i due gruppi, la proporzione di infetti nei due campioni sarebbe la stessa, e sarebbe la stessa osservata nel totale -->
+
+---
+## Pearson's $\chi^2$ test
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{\text{tot}^+}{tot}=\frac{53}{363}=0.146$
+
+</div>
+
+</div>
+<div>
+
+<div style="font-size: 75%" >
 
 | | Int | Cnt | Tot
 | :---- | -----: | ----: | ----: |
@@ -3617,33 +3928,29 @@ Total | 180 | 183 | 363 |
 
 | | Int | Cnt | Tot
 | :---- | -----: | ----: | ----: |
-HIV+ | 180 $\times$ 0.146 | 183 $\times$ 0.146 | 53 | 
+HIV+ | 180 $\times$<br/> 0.146 | 183 $\times$<br/> 0.146 | 53 | 
 HIV- |  |  | 310
 Total | 180 | 183 | 363 |
 
-</center>
-
 </div>
 </div>
 </div>
 
-<div style="font-size: 90%" >
-
-
-</div>
+<!-- Andiamo quindi a costruire una nuova tabella di contingenza, che non rappresenta piu' le condizioni osservate ma quelle attese se la nosrra ipotesi fosse vera -->
 
 ---
 ## Pearson's $\chi^2$ test
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
 
 <div class="columns">
 <div>
 
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard care?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$ &nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{\text{tot}^+}{tot}=\frac{53}{363}=0.146$
@@ -3653,9 +3960,47 @@ Total | 180 | 183 | 363 |
 </div>
 <div>
 
-<div style="font-size: 80%" >
+<div style="font-size: 75%" >
 
-<center>
+| | Int | Cnt | Tot
+| :---- | -----: | ----: | ----: |
+HIV+ | 13 | 40 | 53 | 
+HIV- | 167 | 143 | 310
+Total | 180 | 183 | 363 |
+
+| | Int | Cnt | Tot
+| :---- | -----: | ----: | ----: |
+HIV+ | 26.28 | 27.72 | 53 | 
+HIV- |  |   | 
+Total | 180 | 183 | 363 |
+
+</div>
+</div>
+</div>
+
+---
+## Pearson's $\chi^2$ test
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{\text{tot}^+}{tot}=\frac{53}{363}=0.146$
+
+</div>
+
+</div>
+<div>
+
+<div style="font-size: 75%" >
 
 | | Int | Cnt | Tot
 | :---- | -----: | ----: | ----: |
@@ -3669,38 +4014,43 @@ HIV+ | 26.28 | 27.72 | 53 |
 HIV- | 153.72 | 155.28  | 310
 Total | 180 | 183 | 363 |
 
-</center>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
+<!-- L'idea alla ase del chi2 test e' che Tanto maggiore è la differenza tra frequenze osservate ed attese, tanto meno plausibile è l'ipotesi nulla, cioè tanto più improbabile è che la frequenza di infezione sia indipendente dall’utilizzo del farmaco -->
 
 ---
 ## Pearson's $\chi^2$ test
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
 
 <div class="columns">
 <div>
 
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard care?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$ &nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{\text{tot}^+}{tot}=\frac{53}{363}=0.146$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\chi^2 = \sum \frac{(Observed- Expected)^2}{Expected} =$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\chi^2 = \sum \frac{(Observed- Expected)^2}{Expected}$
+</div>
+
+<div style="font-size: 80%" >
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \frac{(13-16.28)^2}{26.28} + \frac{(167-153.72)^2}{153.72} +$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $+\frac{(40-27.2)^2}{27.2} + \frac{(143-155.26)^2}{155.26} =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 14.85$
 
 </div>
 
 </div>
 <div>
 
-<div style="font-size: 80%" >
-
-<center>
+<div style="font-size: 75%" >
 
 | | Int | Cnt | Tot
 | :---- | -----: | ----: | ----: |
@@ -3714,33 +4064,26 @@ HIV+ | 26.28 | 27.72 | 53 |
 HIV- | 153.72 | 155.28  | 310
 Total | 180 | 183 | 363 |
 
-</center>
-
 </div>
 </div>
 </div>
 
-<div style="font-size: 80%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\chi^2 = \frac{(13-16.28)^2}{26.28} + \frac{(167-153.72)^2}{153.72} + \frac{(40-27.2)^2}{27.2} + \frac{(143-155.26)^2}{155.26} = 14.85$
-
-</div> 
+<!-- Andiamo quindi a calcolarci queste differenze rra la i valori attesi e quelli osservati secondo questa formula -->
 
 ---
 ## Pearson's $\chi^2$ test
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
 
 <div class="columns">
 <div>
 
 <div style="font-size: 90%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard care?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{H}_0: \pi_{\text{i}} - \pi_{\text{c}}  = 0$ &nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{\text{tot}^+}{tot}=\frac{53}{363}=0.146$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\chi^2 = 14.85$ &nbsp;&nbsp;&nbsp; $\text{df} = 1$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\chi^2_\alpha = 3.84 < 14.85$
@@ -3753,15 +4096,20 @@ Total | 180 | 183 | 363 |
 </div>
 <div>
 
-<div style="font-size: 80%" >
+<span style="display:block; height:70px;"></span>
+
 
 <center>
-<img src="./img/hypothesis_testing/chitable.png" img height="490px" border="4px"/>
+<img src="./img/hypothesis_testing/chitable.png" img height="210px" border="4px"/>
 </center>
 
 </div>
 </div>
-</div>
+
+<!-- Il chi2 e' di nuovo una distribuzione di probabilita' per cui esistono delle tavole. Come la distribuzione t, amche la chi2 e' una famiglia di distribuzioni, 1 per ogni grado di liberta'. Nel nostro caso, in cui abbiamo uan tabella 2x2 abbiamo 1 grado di liberta'. Infatti dobbiamo definire il valore di solo 3 celle perche' tutte e 4 siano definite 
+
+I HGdL sono numero di righe -1 * numero di colonne -1
+-->
 
 ---
 ### Exercise 14
@@ -3775,7 +4123,7 @@ Total | 180 | 183 | 363 |
 
 <span style="display:block; height:10px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use the $\chi^2$ test
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use the $\chi^2$ test, $\alpha = 0.05$
 
 </div>
 
@@ -3791,8 +4139,12 @@ Total | 180 | 183 | 363 |
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Set $\mathcal{H}_0$ and $\mathcal{H}_1$ &nbsp; $\rightarrow$ &nbsp; $\mathcal{H}_0: \pi_s - \pi_c = 0 \text{, } \mathcal{H}_1: \pi_s - \pi_c \neq 0$
 
-
 </div>
+
+<!-- H0 la proporzione di soggetti deceduti e' uguale tra coloro che usavano e non usavano le cinture di sicurezza (indipendenza) 
+
+H1: la proporzione di deceduti e' diversa (associazione)
+-->
 
 ---
 ### Exercise 14 -- Solution
@@ -3809,6 +4161,8 @@ Total | 180 | 183 | 363 |
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Define $\alpha$ &nbsp; $\rightarrow$ &nbsp; $\alpha = 0.05$
 
 </div>
+
+<!-- Livello di significativita' -->
 
 ---
 ### Exercise 14 -- Solution
@@ -3841,11 +4195,14 @@ Total | 180 | 183 | 363 |
 </div>
 <div>
 
-	
 </div>
 </div>
 
 </div>
+
+<!--  Andiamo a calcolare le frequenze osservate con la tabella di contingenza
+
+Se non ci fosse differenza tra i due gruppi, la proporzione di infetti nei due campioni sarebbe la stessa, e sarebbe la stessa osservata nel totale -->
 
 ---
 ### Exercise 14 -- Solution
@@ -3890,6 +4247,8 @@ Total | 180 | 183 | 363 |
 </div>
 
 </div>
+
+<!-- Andiamo quindi a calcolare le frequenze attese, sottp H0 e il valre del chi2-->
 
 ---
 ### Exercise 14 -- Solution
@@ -3950,8 +4309,9 @@ $\chi^2=\frac{(3-7.5)^2}{7.5} + \frac{(13-8.7)^2}{8.7} + \frac{(247-242.5)^2}{24
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\chi^2_\alpha = 3.84 < 4.98$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\chi^2 > 4.98) = 0.03$
 
-
 </div>
+
+<!-- Abbiamo ora il nostro valore xhi, il GdL, con alpga == 00.5 il rapporto critico sarebbe 3.84, che e' meno estremo di quello che osserviamo nei nostri dati, che infatti corrisponde a un pvalue di 0.03 -->
 
 ---
 ### Exercise 14 -- Solution
@@ -3975,6 +4335,8 @@ $\chi^2=\frac{(3-7.5)^2}{7.5} + \frac{(13-8.7)^2}{8.7} + \frac{(247-242.5)^2}{24
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Make a decision about $\mathcal{H}_0$ &nbsp; $\rightarrow$ We refuse  $\mathcal{H}_0$
 
 </div>
+
+<!-- andiamo percho' a rifiutare H0 -->
 
 ---
 ## Pearson's $\chi^2$ test -- Yates' correction
