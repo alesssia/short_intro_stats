@@ -56,7 +56,7 @@ style: |
 </div>
 
 ---
-## How to aks questions/give feedback
+## How to ask questions/give feedback
 
 <span style="display:block; height:10px;"></span>
 
@@ -139,7 +139,7 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 
 <span style="display:block; height:30px;"></span>
 
-* The collection, organization, summarization, and analysis of data <br/> &nbsp;&nbsp;&nbsp; &rarr; *Descriptive* &nbsp;statistics
+* The collection, organisation, summarisation, and analysis of data <br/> &nbsp;&nbsp;&nbsp; &rarr; *Descriptive* &nbsp;statistics
 
 * The drawing of inferences about a body of data when only a part of the data is observed <br/> &nbsp;&nbsp;&nbsp; &rarr; *Inferential* &nbsp;statistics
 
@@ -153,7 +153,7 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 <span style="display:block; height:30px;"></span>
 
 - How to collect data
-- How to summarize data
+- How to summarise data
 - How to make decision with data
 
 
@@ -172,7 +172,15 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 <img src="./img/hypothesis_testing/jama_network_hypothesis.png " img height="300px" border="4px"/>
 </center>
 
-<!-- Andremo per esempio a capire come disegnare un piano di raccolta e analisi dei dati che ci permetta di verificare la nostra ipotesi che un farmaco sia meglio della standard care durante un'infezione COVID -->
+
+<span style="display:block; height:60px;"></span>
+
+<div style="font-size: 50%">
+Tomazini, B.M., et al. Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", Jama, 2020, doi:10.1001/jama.2020.17021
+</div>
+
+
+<!-- Andremo per esempio a capire come disegnare un piano di raccolta e analisi dei dati che ci permetta di capire se Nei pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS), desametasone è efficace nell’aumentare il numero di giorni di respirazione autonoma? -->
 
 ---
 ## Topics covered
@@ -201,11 +209,11 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 
 <span style="display:block; height:50px;"></span>
 
-- Understand the difference between sample and population
+- Understand the difference between population and sample
 - Understand the difference between sampling strategies
 - Understand sampling error and bias
 
----
+<!-- ---
 ## Sources of Data
 
 <span style="display:block; height:50px;"></span>
@@ -222,10 +230,10 @@ Dopo aver scelto la domanda e il modo (statistico) piu' appropriato per risponde
 1) dati amministrativi su ricoveri, procedure, medicinali somministrati
 2) informazioni che non vengono raccolte di routine (esempio: aiuto a casa per pazienti fragili) 
 3) clinical trial, si provano su diversi pazienti diversi approcci clinici per decidere qual e' il migliore
-4) dati disponibili pubblicamente da altri studi, o che sono stati raccolti per rispondere a domande diverse ma che sono utili anche a noi -->
+4) dati disponibili pubblicamente da altri studi, o che sono stati raccolti per rispondere a domande diverse ma che sono utili anche a noi --> -->
 
 --- 
-## Sample *vs*  &nbsp;Population
+## Population *vs*  &nbsp;sample
 
 <span style="display:block; height:2px;"></span>
 
@@ -235,12 +243,15 @@ Dopo aver scelto la domanda e il modo (statistico) piu' appropriato per risponde
 
 <!-- Popolazione e' l'insieme di tutti gli individui per cui vogliamo studiare un fenomeno, e.g., popolazione italiana
 
-Il modo tradizionale per studiare una popolazione e' il censimento, che pero' ha due svantaggi: a) e' costoso, e b) non e' possibile raccogliere tutte le informazioni possiboli e immaginabili (trauma cranico al nido)
+Il modo tradizionale per studiare una popolazione e' il censimento, che pero' ha diversi svantaggi, tra cui il costo
 
-Avveniva ogni 10 anni, ultimo nel 2011 -> dal 2018 permanent census, sotto gruppo della popolazione, quindi quello che chiamiamo un campione statistico -->
+Avveniva ogni 10 anni, ultimo nel 2011 -> dal 2018 permanent census, sotto gruppo della popolazione, quindi quello che chiamiamo un campione statistico 
+
+Altro svantaggio , e b) non e' possibile raccogliere tutte le informazioni possiboli e immaginabili (trauma cranico al nido)
+-->
 
 ---
-## Sample *vs*  &nbsp;Population (in the clinic)
+## Population *vs*  &nbsp;sample (in the clinic)
 
 <span style="display:block; height:2px;"></span>
 
@@ -431,7 +442,7 @@ Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli indiv
 
 <span style="display:block; height:50px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; The population is divided into homohenous group (strata) and 
+:dart: &nbsp;&nbsp;&nbsp; The population is divided into homogenous group (strata) and 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a simple random sample is drawn from each stratum
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #1: stratified systematic sample 
@@ -449,7 +460,7 @@ Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli indiv
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=9$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{female} = 6$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{female} = 3$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{male} = 3$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Females: 46, 20, 26,$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $50, 47,  3$
@@ -519,7 +530,8 @@ https://hbsc.org
 <!--  Studio internazionale che si tiene ogni 4 anni e che raccoglie informazioni sui ragazzi di 11, 13, 15 e, recentemente anche 17 anni (che sono la mia popolazione) 
 Ma non li raccoglie tutti, ne raccoglie un campione.
 
-Divido la popolazione in classi (clusters) e poi vado a prendere dalla lista fornita dal ministero e poi selezioni scuole e classi da quella lista, andando a prendere TUTTI gli studenti della classe 
+Innanzitutto li devo dividere per regioni (stratificato), poi vado a identifcare le scuole (cluster)
+All'interno delle scuole vado a fare un ulteriore strato per grado/eta' e poi prpcedo con un sistematic sampling all'interno di ciascuno strato per identiicare le classi (di cui scelgo TUTTI gli studenti della classe)
 
 Countries may choose to stratify their samples to ensure representation by, for example, geographic location,
 ethnic group or school type.
@@ -633,7 +645,7 @@ ethnic group or school type.
 
 <span style="display:block; height:190px;"></span>
 
-# Summarize data
+# Summarise data
 
 ---
 ## Learning objectives
@@ -641,7 +653,7 @@ ethnic group or school type.
 <span style="display:block; height:50px;"></span>
 
 - Understand the differences between data types
-- Be able to summarize each data type using measure of centrality and dispersion
+- Be able to summarise each data type using measure of centrality and dispersion
 - Understand the difference between statistics and parameters
 - Understand why visualise your data is important
 
@@ -684,6 +696,15 @@ Visconti A., et al., Total serum *N*‐glycans associate with response to immune
 
 </div>
 </div>
+
+<!-- Sesso: Binaria
+Eta'/BMI: continua
+BRAF: binaria
+Metastatic stage: Ordinale
+ECOG score: ordinale
+ICI teraphy: categorico (con piu' categorie) 
+N: discreto
+-->
 
 --- 
 ## Why do  we care?
@@ -754,11 +775,19 @@ Si usa soprattutto per i dati categorici -->
 ---
 ## Measure of centrality: median
 
-<span style="display:block; height:50px;"></span>
+:dart: &nbsp;&nbsp;&nbsp;The "middle" value
+
+<span style="display:block; height:10px;"></span>
 
 <center>
-<img src="./img/descriptive/median.png" img height="350px" border="0px"/>
+<img src="./img/descriptive/median.png" img height="300px" border="0px"/>
 </center>
+
+<div style="font-size: 90%" align="right">
+
+:warning: Data should be sorted!
+
+</div>
 
 <!-- Divide l'insieme di dati in due parti uguali, con il numero osservazioni <= mediana uguale a quello >= -->
 
@@ -769,6 +798,8 @@ Si usa soprattutto per i dati categorici -->
 
 <span style="display:block; height:1px;"></span>
 
+<div style="font-size: 90%">
+
 :pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 8, 9\}$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
@@ -777,6 +808,14 @@ Si usa soprattutto per i dati categorici -->
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)={\frac {x_{(n/2)}+x_{((n/2)+1)}}{2}} = {\frac {x_{(8/2)}+x_{((8/2)+1)}}{2}}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $={\frac {x_{4}+x_{5}}{2}} = {\frac {4+5}{2}} = 4.5$ 
+
+</div>
+
+<div style="font-size: 90%" align="right">
+
+:warning: Data should be sorted!
+
+</div>
 
 <!-- Quando il numero di osservazioni e' pari, ci sono due valori mediani, e in questo caso si prende la loro media aritmetica -->
 
@@ -787,25 +826,47 @@ Si usa soprattutto per i dati categorici -->
 
 <span style="display:block; height:1px;"></span>
 
+<div style="font-size: 90%">
+
 :pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 8, 9\}$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
 
-:pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 48, 109\}$ 
+:pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 8, 109\}$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
+
+</div>
+
+<div style="font-size: 90%" align="right">
+
+<span style="display:block; height:1px;"></span>
+
+:warning: Data should be sorted!
+
+</div>
+
+
 <!-- La mediana non e' influenzata da valori anomali o estremi (outliers) -->
 
 ---
 ## Quartiles
 
-<span style="display:block; height:40px;"></span>
+<span style="display:block; height:20px;"></span>
 
 <center>
-<img src="./img/descriptive/quartiles.png" img height="330px" border="0px"/>
+<img src="./img/descriptive/quartiles.png" img height="300px" border="0px"/>
 </center>
 
 <!-- Mentre la mediana divide i dati in due meta' esatte, molto usati sono anche i quartili, che dividono i dati in 4 parti uguali -->
+
+<span style="display:block; height:20px;"></span>
+
+<div style="font-size: 90%" align="right">
+
+:warning: Data should be sorted!
+
+</div>
 
 ---
 ## Quartiles
@@ -821,6 +882,13 @@ Si usa soprattutto per i dati categorici -->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Q1(x_{1:5})= x_{(5+1)/2}=x_3=15$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Q3(x_{7:11})= x_{(5+1)/2}=x_9=43$
+
+
+<div style="font-size: 90%" align="right">
+
+:warning: Data should be sorted!
+
+</div>
 
 ---
 ## Percentiles
@@ -849,7 +917,7 @@ $$
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $x= \{4, 36, 45, 50, 75\}$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 75}{5} = 42$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac{1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 75}{5} = 42$
 
 <!-- Somma dei singoli valori diviso il numero di osservazioni  -->
 
@@ -927,16 +995,37 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 ---
 ## Measure of dispersion: range
 
-<span style="display:block; height:70px;"></span>
+<span style="display:block; height:50px;"></span>
 
 <center>
 <img src="./img/descriptive/outliers_range.svg" img height="250px" border="0px"/>
 </center>
 
+<span style="display:block; height:10px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; $\text{range}(x)= \text{?}$
+
+<!-- Il range ha tuttavia un'utilita' limitata: tiene conto solo di due valori, e non e' robusta quando ci sono valori anomali
+
+14 osservazioni -->
+
+---
+## Measure of dispersion: range
+
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/descriptive/outliers_range.svg" img height="250px" border="0px"/>
+</center>
+
+<span style="display:block; height:10px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; $\text{range}(x)= \text{max}(x)-\text{min}(x)=9,754-2,830=6,924$
+
 <!-- Il range ha tuttavia un'utilita' limitata: tiene conto solo di due valori, e non e' robusta quando ci sono valori anomali -->
 
 ---
-## Measure of dispersion: interquantile range
+## Measure of dispersion: interquartile range
 
 <span style="display:block; height:70px;"></span>
 
@@ -945,7 +1034,7 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 </center>
 
 ---
-## Measure of dispersion: interquantile range
+## Measure of dispersion: interquartile range
 
 <span style="display:block; height:30px;"></span>
 
@@ -958,6 +1047,18 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\text{IQR}(x)}= \text{Q3}(x)-\text{Q1}(x)=43-15=28$
 
 <!-- Non sono considerati i valori estremi, ma sappiamo come si distribuisce la meta dei dati rispetto al valore centrale -->
+
+---
+## Measure of dispersion: interquartile range
+
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/descriptive/outliers_range.svg" img height="250px" border="0px"/>
+</center>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\text{range}(x) = \text{max}(x)-\text{min}(x)=9,754-2,830=6,924$
+:pushpin: &nbsp;&nbsp;&nbsp; $\text{IQR}(x) \text{ }\text{ } = \text{Q3}(x)-\text{Q1}(x) \text{ }\text{ }\text{ }\text{ } =5,253-3,423=1,830$
 
 ---
 ## Measure of dispersion: variance
@@ -1161,7 +1262,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 <span style="display:block; height:1px;"></span>
 
 :question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, lipid levels
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarize their data?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarise their data?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), lipid levels: mean (SD)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), lipid levels: median (IQR)
@@ -1175,7 +1276,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 <span style="display:block; height:1px;"></span>
 
 :question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, lipid levels
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarize their data?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarise their data?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), lipid levels: mean (SD)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), lipid levels: median (IQR)
@@ -1201,7 +1302,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 - la presenza di valori anomali -->
 
 ---
-## Data visualisation: boxplots
+## Boxplots in the wild
 
 <div class="columns">
 <div>
@@ -1843,11 +1944,9 @@ $$
 <div class="columns">
 <div>
 
-<span style="display:block; height:30px;"></span>
-
 <div style="font-size: 90%">
 
-- Several natural phenomena aproximate a Normal distribution
+- Several natural phenomena approximate a Normal distribution
 
 </div>
 
@@ -1872,12 +1971,10 @@ $$
 <div class="columns">
 <div>
 
-<span style="display:block; height:30px;"></span>
-
 <div style="font-size: 90%">
 
-- Several natural phenomena aproximate a Normal distribution
-- Several probability distributions aproximate a Normal distribution
+- Several natural phenomena approximate a Normal distribution
+- Several probability distributions approximate a Normal distribution
 
 </div>
 
@@ -1908,7 +2005,9 @@ Questo esempio ci permette di introdurre un nuovo, utuilissimo concetto che e' q
 Come si costruisce? 
 1. Estraggo tutti i possibili capioni di dimensione n
 2. Calcolo la statistica di interesse
-3. Tego traccia di ciascun valore della statistica e della sua frequenza -->
+3. Tego traccia di ciascun valore della statistica e della sua frequenza 
+
+La forma della distribuzione delle medie campionarie è approssimativamente normale,  indipendentemente dalla distribuzione dei valori della popolazione d’origine dalla quale i campioni sono estratti, per n sufficientemente grande.-->
 
 ---
 ## The Central Limit Theorem (CLT)
@@ -1920,9 +2019,7 @@ Come si costruisce?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE)
 
-<!-- La forma della distribuzione delle medie campionarie è approssimativamente normale,  indipendentemente dalla distribuzione dei valori della popolazione d’origine dalla quale i campioni sono estratti, per n sufficientemente grande.
-
-e per la legge dei grandi numeri, quando n tende all'infinito, la media del campioname è uguale alla media della popolazione
+<!-- e per la legge dei grandi numeri, quando n tende all'infinito, la media del campioname è uguale alla media della popolazione
 
 La varianza della distribuzione campionaria  è il rapporto tra tra la varianza della popolazione e la dimenzione del campione usato per calcolarla 
 
@@ -2002,7 +2099,7 @@ Tutti concetti che ci torneranno utili tra poco
 <span style="display:block; height:30px;"></span>
 
 - Multiple phenomena and statistical distributions are normally distributed
-- Using the standard normal distribution we can calculate the propability of an observation
+- Using the standard normal distribution we can calculate the probability of an observation
 - For large samples, the sampling distribution of the sample means will be normally distributed (CLT)
 
 <!-- Ok, ora abbiamo le basi per affrontare il prossimo argomento, la statistica inferenziale -->
@@ -2166,7 +2263,7 @@ https://hbsc.org
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n}$, &nbsp; where $\sigma=\text{???}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n}$, &nbsp; where $\sigma=\text{?}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{3.1}{\sqrt(6,705)}=0.038$
 
 </div>
@@ -2293,7 +2390,7 @@ Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione 
 ## The $\alpha$ level
 
 :dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - 1.96 \times \hat{SE} \text{ ; }  \bar{x} + 1.96 \times \hat{SE})$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $1.96$ &nbsp; ???
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $1.96$ &nbsp; ?
 
 <div class="columns">
 <div>
@@ -2324,7 +2421,7 @@ Quando accettiamo un livello di confidenza del 95% accettiamo implicitamente un 
 ## The $\alpha$ level
 
 :dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - 1.96 \times \hat{SE} \text{ ; }  \bar{x} + 1.96 \times \hat{SE})$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $1.96$ &nbsp; ???
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $1.96$ &nbsp; ?
 
 <div class="columns">
 <div>
@@ -2397,7 +2494,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp;If the CI is large we are...
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
 
 <span style="display:block; height:10px;"></span>
 
@@ -2426,7 +2523,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp;If the CI is large we are...
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
 
 <span style="display:block; height:10px;"></span>
 
@@ -2455,7 +2552,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp;If the CI is large we are...
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
 
 <span style="display:block; height:10px;"></span>
 
@@ -2484,7 +2581,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp;If the CI is large we are...
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
 
 <span style="display:block; height:10px;"></span>
 
@@ -2543,7 +2640,13 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 </div>
 </div>
 
-<!-- Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni -->
+<!-- Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni 
+
+Abbiamo due gruppo di pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS
+uno con lo standard of care e uno a cui abbiamo somministrati desametasone endovenoso. 
+
+Qual e' il CI per la differenza delle medie dei due gruppi aumentare per il numero di giorni di respirazione autonoma?
+-->
 
 ---
 ## Confidence intervals for differences of means
@@ -2583,13 +2686,13 @@ Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione 
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
 
 </div>
 
-<!-- Vi ho iportato i coefficienti di attendibilita' -->
+<!-- Vi ho riportato i coefficienti di attendibilita' -->
 
 ---
 ### Exercise #11 -- Solution
@@ -2737,7 +2840,7 @@ Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno de
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{??}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{?}$ 
 
 </div>
 </div>
@@ -2844,10 +2947,10 @@ Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione 
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{??}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 </div>
@@ -2908,7 +3011,11 @@ Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p
 </div>
 </div>
 
-<!-- Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazienti con una certa caratteristica che provengono da due diverse popolazioi, come la proporzione di uomini e donne che soffrono di una qualche malattia, o due gruppi di persone che rispondono o meno ad un farmaco. -->
+<!-- Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazienti con una certa caratteristica che provengono da due diverse popolazioi, come la proporzione di uomini e donne che soffrono di una qualche malattia, o due gruppi di persone che rispondono o meno ad un farmaco. 
+
+
+Randomized Trial on the efficacy of AZT in reducing the risk of maternal-infant HIV transmission
+HIV positive pregnant women randomized to receive AZT or placebo -->
 
 
 ---
@@ -2995,6 +3102,10 @@ Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p
 
 # Making decision with data
 
+<!-- Sino ad adesso siamo andati a raccogliere i dati, descriverli e fare stime di paramentri di popolazione partendo da campioni, ma fare stime non basta. Dobbiamo anche prendere decisioni. Se Florence Nightingale si fosse limitata a fare stime dei soldiati morti, il governo non avrebbe stanziato fondi per migliorare la situazione non solo dei soldati, ma anche dei malati in tempo di pace.
+
+Vediamo quindi ora come usare dell'evidenza dai dati per prendere delle decisioni -->
+
 ---
 ## Learning objectives
 
@@ -3005,7 +3116,7 @@ Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p
 - Understand Type I and II errors and the power of a study
 
 ---
-## Making hyphoteses
+## Making hypotheses
 
 <span style="display:block; height:1px;"></span>
 
@@ -3030,12 +3141,17 @@ Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is using Dexamethasone better than standard care?
 
-<!-- Un'ipotesi puo' essere definita come una congettura su una o piu' popplaioni 
+<!-- 
+Vogliamo rispondere a questa domanda perche' dobbiamo decidere se dobbiamo iniziare ad aggiungere dexametasone endovenoso per trattare i nostri pazienti con COVID.
+
+Un'ipotesi puo' essere definita come una congettura su una o piu' popplaioni
+
+Ogni studio inizia con un'ipotesi, quella che viene chiamata "domanda di ricerca"
 
 Questo e' cosa ci aspettiamo di poter concludere come risultato del nostro test statistico -->
 
 ---
-## Making hyphoteses
+## Making hypotheses
 
 <span style="display:block; height:1px;"></span>
 
@@ -3060,9 +3176,14 @@ Questo e' cosa ci aspettiamo di poter concludere come risultato del nostro test 
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
 
-<!-- Tuttavia quello che andiamo a testaere e' un'affermazione diversa, il suo opposto: sono dexamethasone e la cura standard uguali? -->
+<!-- Tuttavia quello che andiamo a testaere e' un'affermazione diversa, il suo opposto: sono dexamethasone e la cura standard uguali? 
+
+È più semplice trovare evidenze contro un’ipotesi piuttosto che evidenze a favore
+
+Il metodo scientifico si basa sulla falsificazione delle ipotesi (K. Popper), infatti il fatto di aver trovato dell'evidenza in favore di un'ipotesi non vuold dire che non sara' mai possibile trovare ulteriore evidenza che la renda falsa -->
+
 ---
-## Making hyphoteses
+## Making hypotheses
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
 
@@ -3091,10 +3212,17 @@ Questo e' cosa ci aspettiamo di poter concludere come risultato del nostro test 
 </div>
 </div>
 
-<!-- In modo piu' formale, quello che andiamo a testare sono l'ipotesi nulla (non ci sono differenze) -->
+<!-- Il metodo statistico formalizza questa idea valutando evidenze contro un’ipotesi nulla, quindi, quello che andiamo a testare sono l'ipotesi nulla (non ci sono differenze). Dexamethasome ha la stessa efficacia della terapia standard
+Dexamethasome non aumenta il numero di giorni di respirazione autonoma.
+
+L’ipotesi nulla (𝐻_0 )  è l’ipotesi considerata vera finché non vengono presentate delle prove (evidenza empirica) per mostrare che non lo è
+
+Diciamo che si e' innocenti sino a prova contraria: in corte, non e' l'imputato che deve convincere il giudice di essere innocente, ma l'accusa che deve portare abbastanza prove per dimostrare la colpevolezza.
+
+analogamente, non possiamo provare una teoria, ma possiamo falsificare delle affermazioni -->
 
 ---
-## Making hyphoteses
+## Making hypotheses
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
 
@@ -3135,10 +3263,12 @@ Le due ipotesi sono complementari: insieme esauriscono tutte i possibili valori 
 
 ATtENZIONE: com il test di ipotesi non si fa la DIMOSTRAZIONE di un'ipotesi, si ha semplicemente un'indicazione sul fatto che l'ipotesi sia o meno supportata dai dati.
 
-Non rifiutando l'ipotesi nulla, non diciamo che essa sia vera, ma che potrebbe essere vera -->
+Non rifiutando l'ipotesi nulla, non diciamo che essa sia vera, ma che potrebbe essere vera 
+
+ATTENZIONE ad un ultimo punto: i dati su cui andiamo a testare la nostra ipotesi sono quelli di un campione, ma l'ipotesi viene fatta sull'intera popolazione -->
 
 ---
-## Testing hyphoteses
+## Testing hypotheses
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
 
@@ -3168,7 +3298,7 @@ Non rifiutando l'ipotesi nulla, non diciamo che essa sia vera, ma che potrebbe e
 </div>
 
 ---
-## Testing hyphoteses
+## Testing hypotheses
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
 
@@ -3209,7 +3339,7 @@ Non rifiutando l'ipotesi nulla, non diciamo che essa sia vera, ma che potrebbe e
 Quindi andiamo a chiederci se questo valore e' troppo lontano dalla nostra ipotesi (che in questo caso e' che non ci sia differenza, quindi che X sia zero). Piu' nel dettaglio ci chiediamo quanto lontano e' troppo lontano, se vogliamo un livello di significativita' (per esempio) del 5%?  -->
 
 ---
-## Testing hyphoteses
+## Testing hypotheses
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
 
@@ -3245,7 +3375,7 @@ Quindi andiamo a chiederci se questo valore e' troppo lontano dalla nostra ipote
 Quant'e' quindi troppo lontano dallo zero per rispettare un livello di significativita' del 5%? Lo abbiamo gia' visto che gli intervalli di confidenza: il rapporto tra il coefficiente di attendibilita' e l'errore standard, che indica la regione di non rifiuto (o accettazione, in verde) che si contrappone alla regione di rifiuto (in bianco) -->
 
 ---
-## Testing hyphoteses
+## Testing hypotheses
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
 
@@ -3283,10 +3413,12 @@ Quant'e' quindi troppo lontano dallo zero per rispettare un livello di significa
 
 </div>
 
-<!-- Andiamo quindi a calcolarci la statistica del test, o RAPPORTO CRITICO, per vedere se e' incluso nella regione di non rifuto e... non lo e'  -->
+<!-- Andiamo quindi a calcolarci la statistica del test, o RAPPORTO CRITICO, per vedere se e' incluso nella regione di non rifuto e... non lo e'  
+
+Osservare questo valore e' una prova, un'evidenza, che la nostra ipotesi nulla non e' vera -->
 
 ---
-## Testing hyphoteses
+## Testing hypotheses
 
 :pushpin: &nbsp;&nbsp;&nbsp; Is Dexamethasone the same as standard care?
 
@@ -3368,7 +3500,9 @@ In entrambi i casi, dobbiamo tenere a mente che stiamo facendo un ragionamento d
 
 E come la misuriamo questa probabilita'? Unsando il p value, che ci dice quanto sono improbabili i risultati ottenuti da questo campione dato che l'ipotesi nulla e' vera.
 
-Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia vera dandoci una forte ragione per dubitare che le due medie siano uguali -->
+Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia vera dandoci una forte ragione per dubitare che le due medie siano uguali 
+
+In modo molto informale. L’espressione statisticamente significativo vuol dire che sono state raccolte prove sufficienti per rifiutare l’ipotesi nulla -->
 
 ---
 ## Significance
@@ -3407,6 +3541,10 @@ Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia ver
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(|\bar{X}| > 2.4) = 2 \times 0.0082 = 0.0164$ &nbsp;&nbsp;&nbsp;&nbsp; $\leftarrow$ P value
 
 </div>
+
+<!--Se p-value = 0.02
+Se l’ipotesi nulla fosse vera, la probabilità di osservare il risultato che abbiamo ottenuto, o una differenza ancora maggiore, sarebbe solo dell’2%
+Se il farmaco non fosse efficace (ipotesi nulla fosse vera) solo in 2 campione ogni 100 avremmo il risultato osservato -->
 
 ---
 ## One- and two-tailed tests
@@ -3451,7 +3589,13 @@ Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia ver
 
 <!-- il p value ci dice quanto sono improbabili i risultati ottenuti da questo campione dato che l'ipotesi nulla e' vera
 
-Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia vera dandoci una forte ragione per dubitare che le due medie siano uguali -->
+Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia vera dandoci una forte ragione per dubitare che le due medie siano uguali 
+
+0.05 e; una solta di standard, ma altri valori usati sono 0.01 
+
+P value di 0.01 ci dice che se l’ipotesi nulla fosse vera, la probabilità di osservare il risultato che abbiamo ottenuto, o una differenza ancora maggiore, sarebbe solo dell’1%
+Se il farmaco non fosse efficace (ipotesi nulla fosse vera) solo in 1 campione ogni 100 avremmo il risultato osservato 
+-->
 
 ---
 ## Multiple testing correction
@@ -3645,6 +3789,11 @@ Ricordiamo che il p value ci dice quanto sono improbabili i risultati ottenuti d
 </div>
 </div>
 
+<!-- Randomized Trial on the efficacy of AZT in reducing the risk of maternal-infant HIV transmission
+HIV positive pregnant women randomized to receive AZT or placebo 
+
+Research hypothesis: efficay of zidovudine (AZT) in reducing the risk of maternal-infant HIV transmission -->
+
 ---
 ## Testing differences in proportion
 
@@ -3753,7 +3902,7 @@ Andiamo a calcolare la nostra area di accettazione o non rifiuto al livello di s
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
 </div>
 
-<!-- Proviamo ora a calcolare se l'uso di zidovudine influisce sulla trasmissione del virus dell'HIV da madre a bambino usando un test diverso, il Pearson\s chi2.
+<!-- Proviamo ora a calcolare se l'uso di zidovudine influisce sulla trasmissione del virus dell'HIV da madre a bambino usando un test diverso, il Pearson\s chi2, un testo usato comunemente per testare le differenze tra variabili categoriche
 
 Di nuovo andiamo a definire H0 come proporzione di bambini che contraggio il virus essere la stessa tra chi ha assunto il medicinale e chi no (ipotesi di indipendenza) e H1 proporzione di infetti diversi tra chi a preso il farmaco o meno (ipotesi di associazione)
 
@@ -3894,7 +4043,7 @@ Total | 180 | 183 | 363 |
 </div>
 </div>
 
-<!-- Se non ci fosse differenza tra i due gruppi, la proporzione di infetti nei due campioni sarebbe la stessa, e sarebbe la stessa osservata nel totale -->
+<!-- Se non ci fosse differenza tra i due gruppi (ovvero se H0 fosse vera), la proporzione di infetti nei due campioni sarebbe la stessa, e sarebbe la stessa osservata nel totale -->
 
 ---
 ## Pearson's $\chi^2$ test
@@ -4108,7 +4257,11 @@ Total | 180 | 183 | 363 |
 
 <!-- Il chi2 e' di nuovo una distribuzione di probabilita' per cui esistono delle tavole. Come la distribuzione t, amche la chi2 e' una famiglia di distribuzioni, 1 per ogni grado di liberta'. Nel nostro caso, in cui abbiamo uan tabella 2x2 abbiamo 1 grado di liberta'. Infatti dobbiamo definire il valore di solo 3 celle perche' tutte e 4 siano definite 
 
-I HGdL sono numero di righe -1 * numero di colonne -1
+I GdL sono numero di righe -1 * numero di colonne -1
+
+E' pressoche' equivalente al z-test per confrontare due popolazioni, ,a puo' essere esteso a piu' di due gruppi e con piu' di due categorie (anche se qui ci siamo limitati ad usarne 2 per comodita' e per confronto con z-test)
+
+ATTENSIONE: funziona bene con "grandi" sample size (>5 in each cell) -> se meno di questo uso il Fisher's test 
 -->
 
 ---
@@ -4311,7 +4464,9 @@ $\chi^2=\frac{(3-7.5)^2}{7.5} + \frac{(13-8.7)^2}{8.7} + \frac{(247-242.5)^2}{24
 
 </div>
 
-<!-- Abbiamo ora il nostro valore xhi, il GdL, con alpga == 00.5 il rapporto critico sarebbe 3.84, che e' meno estremo di quello che osserviamo nei nostri dati, che infatti corrisponde a un pvalue di 0.03 -->
+<!-- Abbiamo ora il nostro valore xhi, il GdL, con alpga == 00.5 il rapporto critico sarebbe 3.84, che e' meno estremo di quello che osserviamo nei nostri dati, che infatti corrisponde a un pvalue di 0.03 
+
+P value di 0.03 ci dice che se l’ipotesi nulla fosse vera, la probabilità di osservare il risultato che abbiamo ottenuto, o una differenza ancora maggiore, sarebbe solo dell’3% -->
 
 ---
 ### Exercise 14 -- Solution
@@ -4383,6 +4538,32 @@ Non rejected |  |   |
 
 <span style="display:block; height:10px;"></span>
 
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+
+| $\mathcal{H}_0 \text{ is}$ | TRUE | FALSE | 
+| :---- | -----: | ----: | 
+Rejected | false positive | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  
+Non rejected | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  false negative | 
+
+</center>
+
+<!-- Un falso positivo (o errore del primo tipo) occorre quando H0 e' corretta, ma il test conduce a un risultato significativo. E quanto e' probabile questo errore?
+
+Se usiamo un livello si significativita' del 5% abbiamo 5% di possibilita' di dichiarare nulla H0 quando non lo e'. 
+
+SLIDE INDIETRO: ma cosa succed se accettiamo l'ipotesi nulla? ricordamoci che accettare H0 non e' una prova formaale che non c'e' differenza tra i due gruppi, ma solo che questa ipotesi non e' supportata dai dati: in questo caso avremmo identificato un falso negativo (o errore del secondo tipo)
+-->
+
+---
+## Errors in decision making 
+
+<span style="display:block; height:10px;"></span>
+
 :dart: &nbsp;&nbsp;&nbsp; $\alpha$ &nbsp; is the level of significance, or Type I error
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\beta$ &nbsp; is the Type II error
 
@@ -4397,6 +4578,23 @@ Non rejected |  | $\beta$ |
 
 </center>
 
+<!-- Quindi l'errore del primo tipo e' il livello di significativita' alfa. 
+Come controllo per T1E? Scegliendo un alfa sufficientemente piccolo 
+
+INDIETRO CON LE SLIDE
+
+Quello che facciamo in questo caso e' un errore del secondo tipo, che viene indicato con beta. Non e' cosi' facile controllare per T2E, e vedremo in un secndo come e' possibile mitigarlo -->
+
+---
+## Specificity *vs* &nbsp;sensitivity
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/hypothesis_testing/COVID-test.png" img height="450px" border="0px"/>
+</center>
+
+<!-- Un altro modo di vedere questi errori e' in termine di Specificita' e sensitivita. Un test che e' specifico e' un test che ha pochi falsi positivi (se il test e' positivo, molto probabilmente ho il COVID). Un test che e' sensibile, invece ha pochi falsi negativi (se e' negativo molto probabilmente non ho preso il covid). Qiesto test e' invece molto specifico (pochi falsi positivi) ma anche poco sensibile (molti falsi negativim, in cui il test e' negativo ma io il COVID ce l'ho)   -->
 
 ---
 ## Errors in decision making 
@@ -4417,13 +4615,15 @@ Non rejected | true negative | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 </center>
 
+<!-- Sino ad adesso abbiamo parlato di "errori" ma ci sono ancora due caselle da riempire: quelle delle cose giuste, ovvero i TN/TP, che possono essere definiti come -->
+
 ---
-## Errors in decision making 
+## Power of a study
 
 <span style="display:block; height:10px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; $1 -  \beta$ &nbsp; is the power of a statistical test
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Accettable power: $80\%$)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Acceptable power: $80\%$)
 
 <span style="display:block; height:10px;"></span>
 
@@ -4436,6 +4636,8 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 </center>
 
+<!-- quello interessante e' il TP, op 1-beta, che e' anche la potenza di uno studio, ovvero la probabilita' di rifiutare G0 quando e' falsa -->
+
 ---
 ## Power of a study
 
@@ -4444,12 +4646,12 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 <span style="display:block; height:40px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp;  The power is decreased by:
+:dart: &nbsp;&nbsp;&nbsp;  The power is increased by:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - smaller $\alpha$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - smaller  $\mu_i - \mu_c$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - larger $\sigma^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - smaller sample size $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - larger $\alpha$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - larger  $\mu_i - \mu_c$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - smaller $\sigma^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - larger sample size $n$
 </div>
 <div>
 
@@ -4463,16 +4665,24 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 </div>
 </div>
 
+<!-- Blu e' H0, Rossa e' H1. alfa e' nostro valore critico. La zona blu indica i falsi positivi, qunado rigettiamo l'ipotesi nulla anche se e' vera. la zona rossa indica i falsi negativi. Se il nostro scopo e' limitare i falsi negativi (e quindi la zona rossa), quello che possiamo fare e':
+- scegliere alfa piu' grande (sposta il valore critico a sx)
+- spostare la curva rossa a dx (ovvero aumentare la differenz tra le medie)
+- avere le curve meno sovvrapposte, quindi con una standard deviation piu bassa -> gruppi piu' omogenei (e eterogenei tra di loro)
+- avere campioni piu' grandi (piu' informazioni sulla popolazione, SE piu' piccolo, piu' precisione nelle conclusioni)
+
+ -->
+
 --- 
 ### Exercise #15
 
 <div style="font-size: 90%" >
 
 :question: &nbsp;&nbsp;&nbsp; There was a shepherd boy who repeatedly cried wolf when there was  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  no wolf. Each time, howerver, villagers went to help him. Then,  the wolf 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  arrived,  but when he cryed wolf no villager showed up.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  no wolf. Yet, each time, villagers went to help him. Then, the wolf 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  arrived, but, when the boy cried wolf, no villager helped.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of errors are the villagers doing? 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of errors are the villagers making? 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Type I error, then Type II error
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Type II error, then Type I error
@@ -4487,10 +4697,10 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 <div style="font-size: 90%" >
 
 :question: &nbsp;&nbsp;&nbsp; There was a shepherd boy who repeatedly cried wolf when there was  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  no wolf. Each time, howerver, villagers went to help him. Then,  the wolf 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  arrived,  but when he cryed wolf no villager showed up.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  no wolf. Yet, each time, villagers went to help him. Then, the wolf 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  arrived, but, when the boy cried wolf, no villager helped.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of errors are the villagers doing? 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of errors are the villagers making? 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Type I error, then Type II error :white_check_mark: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Type II error, then Type I error
@@ -4507,8 +4717,8 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the level of significance $\alpha$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) the difference $\mu_i - \mu_c$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the sample $\sigma^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) the sample size $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the samples' $\sigma^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) the samples' size $n$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Both a) and d)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Both a) and c)
 
@@ -4520,10 +4730,12 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the level of significance $\alpha$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) the difference $\mu_i - \mu_c$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the sample $\sigma^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) the sample size $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the samples' $\sigma^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) the samples' size $n$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Both a) and d) :white_check_mark:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Both a) and c)
+
+<!--  Cosa vuol dire in pratica? Che per raggiunger una data potenza (80%) devo andare a decidere un livello di significativita; alfa dato le differenze in media e std delle mie popolazioni e poi a calcolare quante persone mi servono per raggiungere la potenza prefissata -->
 
 ---
 ## Independent and paired samples
@@ -4577,7 +4789,7 @@ Sono detti parametrici perché dipendono da determinati parametri (media, deviaz
 
 | Sample | Data type | $\mathcal{H}_0$ | Parametric test | Non-parametric test |
 | ---- | ---- |  ----- | ---- | ---- |
-| Independent | Numerical | $\mu_1 = \mu_2$ | Student's t-test | Mann-Whitnew's tets |
+| Independent | Numerical | $\mu_1 = \mu_2$ | Student's t-test | Mann-Whitney's test |
 | Paired | Numerical | $\mu_1 = \mu_2$ | Student's t-test | Wilcoxon's test |
 | Independent | Categorical | $\pi_1 = \pi_2$ | Z-test, $\chi^2$ | Fisher's test |
 | Paired | Categorical | $\pi_1 = \pi_2$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- | McNemar's test |
@@ -4611,6 +4823,19 @@ Sono detti parametrici perché dipendono da determinati parametri (media, deviaz
 <center>
 <img src="./img/conclusions/parachute.png" img height="490px" border="4px"/>
 </center>
+
+---
+## The PARACHUTE trial 
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/conclusions/parachute_RWY.jpg" img height="450px" border="4px"/>
+<img src="./img/conclusions/parachute_LRV.jpg" img height="450px" border="4px"/>
+<img src="./img/conclusions/parachute_BKN.jpg" img height="450px" border="4px"/>
+</center>
+
+<!-- Significativita' clinica \neq significativita' statistica -->
 
 ---
 ## Closing remarks
