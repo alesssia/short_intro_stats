@@ -67,7 +67,7 @@ style: |
 - Interrupt me
 - Take advantage of end/start/breaks
 - Send emails alessia.visconti@unito.it
-- Use the shared pad: https://etherpad.wikimedia.org/p/intro_stats_2024_specialita
+- Use the shared pad: https://etherpad.wikimedia.org/p/intro_stats_2024_specialita (or https://t.ly/vRbvy)
 
 ---
 ![bg opacity](./img/backgrounds/Introduction_bg.png)
@@ -1003,7 +1003,7 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 
 <span style="display:block; height:10px;"></span>
 
-:question: &nbsp;&nbsp;&nbsp; $\text{range}(x)= \text{?}$
+:question: &nbsp;&nbsp;&nbsp; $\text{range}(x)= \text{ ?}$
 
 <!-- Il range ha tuttavia un'utilita' limitata: tiene conto solo di due valori, e non e' robusta quando ci sono valori anomali
 
@@ -1400,7 +1400,9 @@ $$
 
 <!-- La distribuzione GAUSSIANA è una distribuzione caratterizzata da una forma a campana.
 E' simmetrica.
-Definita in maniera univoca dalla media e dalla deviazione standard -->
+Definita in maniera univoca dalla media e dalla deviazione standard 
+
+sigma^2 e' la varianza -->
 
 ---
 ## The Normal distribution
@@ -1484,6 +1486,7 @@ $$
 - Symmetrical
 - $\mathcal{N} = (\mu, \sigma^2)$
 - $\text{Area under the curve} = 1$
+- *3-sigma* (or *68–95–99.7*) rule
 
 </div>
 <div>
@@ -1493,6 +1496,11 @@ $$
 <img src="./img/normal_and_CLT/Standard_Normal_Distribution.png" img height="370px" border="4px"/>
 </center>
 </div>
+
+<!-- Ci dice che il 68,27%, il 95,45% e il 99,73% dei valori si trovano rispettivamente all'interno di una, due e tre deviazioni standard della media 
+
+Perche' questo ci e' utile? Lo vedremo tra poco quando parleremo degli intervalli di confidenza, ma possiamo anticipare che puo' essere usata per ottenere rapidamente una stima approssimativa della probabilità di qualcosa o come semplice test empirico per individuare valori anomali 
+-->
 
 ---
 ## The Standard Normal distribution
@@ -1610,7 +1618,7 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 
 :pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = ?$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = \text{ ?}$
 
 </div>
 <div>
@@ -1645,6 +1653,55 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 </div>
 </div>
 
+---
+### Exercise #7
+
+<span style="display:block; height:30px;"></span>
+
+<div class="columns">
+<div>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 179.5) = \text{ ?}$
+
+</div>
+<div>
+
+<center>
+<img src="./img/normal_and_CLT/normal_table_zoom.jpg" img height="350px" border="4px"/>
+</center>	
+
+</div>
+</div>
+
+---
+### Exercise #7 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{179.5 - 170}{9.5} = 1$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 179.5) = 1 - 0.8413 =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.16$
+
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/normal_table_zoom.jpg" img height="350px" border="4px"/>
+</center>	
+
+</div>
+</div>
+
 --- 
 ## The Standard Normal distribution in practice
 
@@ -1658,7 +1715,7 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $\text{BMI} > 25$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 </div>
@@ -1680,6 +1737,9 @@ https://hbsc.org
 
 </div>
 
+<!-- Studio internazionale che si tiene ogni 4 anni e che raccoglie informazioni sui ragazzi di 11, 13, 15 e, recentemente anche 17 anni (che sono la mia popolazione) 
+Ma non li raccoglie tutti, ne raccoglie un campione. -->
+
 ---
 ## The Standard Normal distribution in practice
 
@@ -1693,7 +1753,7 @@ https://hbsc.org
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $\text{BMI} > 25$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 </div>
@@ -1740,7 +1800,7 @@ Adiamo a calcolare la funzione corrispondente e sovvraporla al valore della popo
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $\text{BMI} > 25$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 </div>
@@ -1764,6 +1824,7 @@ $$
 </center>
 
 </div>
+</div>
 
 ---
 ## The Standard Normal distribution in practice
@@ -1778,7 +1839,7 @@ $$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $\text{BMI} > 25$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 </div>
@@ -1806,14 +1867,15 @@ $$
 
 <div style="font-size: 80%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}>25) = (1 - 0.8686) = 0.1314 = 13.1\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}>25) = 1 - 0.8686 = 0.1314 \rightarrow 13.1\%$
 
+</div>
 </div>
 
 <!-- Quello che abbiamo fatto e' un INFERENZA, non sappiamo quanti sono i 15enni sovrappeso, ma se il nostro campione e' rappresentativo, stimiamo che siano il 13.1% della popolazione -->
 
 ---
-### Exercise #6
+### Exercise #8
 
 <div class="columns">
 <div>
@@ -1821,11 +1883,11 @@ $$
 <div style="font-size: 80%">
 
 :pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 30$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $\text{BMI} > 30$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 </div>
@@ -1838,9 +1900,10 @@ $$
 </center>
 
 </div>
+</div>
 
 ---
-### Exercise #6 -- Solution
+### Exercise #8 -- Solution
 
 <div class="columns">
 <div>
@@ -1848,17 +1911,18 @@ $$
 <div style="font-size: 80%">
 
 :pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 30$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $\text{BMI} > 30$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 <span style="display:block; height:30px;"></span>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{x - \mu}{\sigma} = \frac{30 - 21.5}{3.1} = 2.74$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1 - 0.9969 = 0.0031 = 0.31\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}>30) = 1 - 0.9969$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.0031 \rightarrow 0.31\%$
 
 </div>
 
@@ -1870,9 +1934,10 @@ $$
 </center>
 
 </div>
+</div>
 
 ---
-### Exercise #7
+### Exercise #9
 
 <div class="columns">
 <div>
@@ -1880,11 +1945,11 @@ $$
 <div style="font-size: 80%">
 
 :pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5<BMI<25$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5< \text{BMI} <25$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
 
 
@@ -1898,9 +1963,10 @@ $$
 </center>
 
 </div>
+</div>
 
 ---
-### Exercise #7 -- Solution
+### Exercise #9 -- Solution
 
 <div class="columns">
 <div>
@@ -1908,20 +1974,12 @@ $$
 <div style="font-size: 80%">
 
 :pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5<BMI<25$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5< \text{BMI} <25$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_1 = \frac{x - \mu}{\sigma} = \frac{25 - 21.5}{3.1} = 1.12$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1 - 0.8686 = 0.131 = 13.1\%$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_2 = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1 - 0.8340 = 0.166 = 16.6\%$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1-0.131-0.166=0.703=70.3\%$
 
 </div>
 
@@ -1935,6 +1993,195 @@ $$
 </center>
 
 </div>
+</div>
+
+<!-- Io voglio sapere quant' e' l'area colorata, che posso calcolare come 1-parte bianca <18.5 e poi -parte bianca >25 -->
+
+---
+### Exercise #9 -- Solution
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5< \text{BMI} <25$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_{25} = \frac{x - \mu}{\sigma} = \frac{25 - 21.5}{3.1} = 1.12$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}>25) = 1 - 0.8686 =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.131$
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:100px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/area_normal.png" img height="250px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- L'area bianca a dx di z_25 l'abbiamo appena calcolata -->
+
+---
+### Exercise #9 -- Solution
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5< \text{BMI} <25$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}>25) = 0.131$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_{18.5} = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:100px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/area_normal.png" img height="250px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Nelle tavoole non abbiamo -0.97 -->
+
+---
+### Exercise #9 -- Solution
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5< \text{BMI} <25$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}>25) = 0.131$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_{18.5} = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:100px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/area_normal_symmetrical.png" img height="250px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Nelle tavoole non abbiamo -0.97, ma sappiamo che la normale e' simmetrica rispetto alla mediana/media/moda, quindi sappiamo che area > 0.97 == area < -0.97 -->
+
+---
+### Exercise #9 -- Solution
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5< \text{BMI} <25$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}>30) = 0.131$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_{18.5} = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}<18.5) = 1 - 0.8340 =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.166$
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:100px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/area_normal_symmetrical.png" img height="250px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Andiamo quindi a vedere l'area fino a 0.97 e poi a calcolare quella oltre 0.97 facendo 1- -->
+
+---
+### Exercise #9 -- Solution
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5< \text{BMI} <25$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}>30) = 0.131$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI}<18.5) = 0.166$
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:100px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/area_normal.png" img height="250px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(18.5 < \text{BMI}<25) = 1-0.131-0.166 = 0.703 \rightarrow 70.3\%$
+
+</div>
+
+<!-- Non ci resta che fare ultimo passo, ovvero calcolare l'area colorata in mezzo come 1-due aree bianche -->
 
 ---
 ## The Normal distribution in the wild
@@ -1987,7 +2234,7 @@ $$
 
 </div>
 
-<!-- Istogramma mostra il numero di volte in cui e' uscito testa in 1000 esperimenti in ognuno dei quali e' stata lanciata una monetina 100 volte.
+<!-- Supponiamo di aver fatto un esperimento, di aver preso una monetina, lanciata 5 volte e contato il numero di volte che e' venuto testa. A volte ne verranno 0/5, a volte 5/5 ma (visto che la monentina e' bilanciata) e' piu' probabile che ne vengano 2/ o 3/5.  Se questi 5 lanci li facciamo per 1000 volte e poi andiamo a rappresentarli con un istogramma, otteniamo questa figura, che ha, come ci aspettiamo, una media di 2.5, anche se ci sono due "mode". 
 
 Questo esempio ci permette di introdurre un nuovo, utuilissimo concetto che e' quello della distribuzione campionaria -->
 
@@ -2019,7 +2266,9 @@ La forma della distribuzione delle medie campionarie è approssimativamente norm
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE)
 
-<!-- e per la legge dei grandi numeri, quando n tende all'infinito, la media del campioname è uguale alla media della popolazione
+<!-- e per la legge dei grandi numeri, quando n tende all'infinito, la media del campioname è uguale alla media della popolazione.
+
+SE per esempio nei nostri lanci di monetine l'esperimento lo avessimo fatto non per 1000 ma per 100k volte, avremmo visto un'approssimazione piu' normale e meno bi-modale
 
 La varianza della distribuzione campionaria  è il rapporto tra tra la varianza della popolazione e la dimenzione del campione usato per calcolarla 
 
@@ -2044,7 +2293,7 @@ Nella maggior parte delle situazioni pratiche, n=30 e' soddisfacente, ma l'appro
 
 :dart: &nbsp;&nbsp;&nbsp;  standard error $\neq$ standard deviation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation (SD) &nbsp; $\rightarrow$ &nbsp; spread in the collected data
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard error (SE) &nbsp; $\rightarrow$ &nbsp; error in the sample estimation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard error (SE) &nbsp; $\rightarrow$ &nbsp; error in the estimation
 
 <!-- Standard deviation: Si riferisce alle osservazioni, misura la variabilita' delle osservazioni
 
@@ -2111,6 +2360,8 @@ Tutti concetti che ci torneranno utili tra poco
 
 # Inferential statistics
 
+<!--- Partire dal particolare per capire come le informazioni si possono estendere alla totalità -->
+
 ---
 ## Learning objectives
 
@@ -2160,7 +2411,7 @@ Sulla base di un campione estratto casualmente da 1 popolazione cosa può essere
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $BMI > 25$ in the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $\text{BMI} > 25$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
 </div>
@@ -2263,7 +2514,7 @@ https://hbsc.org
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n}$, &nbsp; where $\sigma=\text{?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n}$, &nbsp; where $\sigma=\text{ ?}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{3.1}{\sqrt(6,705)}=0.038$
 
 </div>
@@ -2358,7 +2609,7 @@ Abbiao un confidence interval molto stretto perche' si sono verificate due condi
 <!-- Cosa rappresentano quindi i CI? Che dati 100 campioni estratti dalla popolazione, 95 stimano un IC al cui interno è compresa la media reale della popolazione e solo 5 stimano un ic che non include la media reale -->
 
 ---
-### Exercise #8
+### Exercise #10
 
 :question: &nbsp;&nbsp;&nbsp; We take a random sample of 500 Italian women aged 25-74
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with the following summary statistics
@@ -2369,7 +2620,7 @@ Abbiao un confidence interval molto stretto perche' si sono verificate due condi
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What is the 95% CI for the true mean $\mu$?
 
 ---
-### Exercise #8 -- Solution
+### Exercise #10 -- Solution
 
 :question: &nbsp;&nbsp;&nbsp; $n=500$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}=122.1 \text{ mmHg}$
@@ -2430,6 +2681,36 @@ Quando accettiamo un livello di confidenza del 95% accettiamo implicitamente un 
 
 | Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
 | ----: | ----- | ---- | ----|
+| 95% | 5% | 2.5% |  |
+
+$100\% - 2.5\% = 97.5\%$ 
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!--  e qual e' l'aera di questa parte bianca? E' la totalita' dell'area (1, o 100%) meno l'area bianca (2.5%), quindi 97.5%-->
+
+---
+## The $\alpha$ level
+
+:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - 1.96 \times \hat{SE} \text{ ; }  \bar{x} + 1.96 \times \hat{SE})$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $1.96$ &nbsp; ?
+
+<div class="columns">
+<div>
+<span style="display:block; height:10px;"></span>
+<div style="font-size: 90%" >
+
+| Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
+| ----: | ----- | ---- | ----|
 | 95% | 5% | 2.5% | 1.96 |
 
 $100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$  
@@ -2445,9 +2726,9 @@ $100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$
 </div>
 </div>
 
-<!--  e qual e' l'aera di questa parte bianca? E' la totalita' dell'area (1, o 100%) meno l'area bianca (2.5%), quindi 97.5%
+<!--  E' qual e' il valore di z per cui la curva sottende un'area del 97.5%? 1.96 (le tavole si possono anche leggere al contrario, non solo da z all'area, ma anche dall'area a z) 
 
-E' qual e' il valore di z per cui la curva sottende un'area del 97.5%? 1.96 (le tavole si possono anche leggere al contrario, non solo da z all'area, ma anche dall'area a z) -->
+coefficiente di attendibilita'-->
 
 ---
 ## The $\alpha$ level
@@ -2483,10 +2764,10 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.58$
 
 <!-- 95% e' il valore piu' usato, ma altri comuni sono 90 e 99%, a cui corrispondono fattori di attendibilita' di 1.65 e 2.58
 
-Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora proviamo a fare una domanda piu' teorica -->
+Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 
 ---
-### Exercise #9
+### Exercise #11
 
 <div class="columns">
 <div>
@@ -2515,7 +2796,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 </div>
 
 ---
-### Exercise #9 -- Solution
+### Exercise #11 -- Solution
 
 <div class="columns">
 <div>
@@ -2544,7 +2825,16 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 </div>
 
 ---
-### Exercise #10
+### Exercise #11 -- Solution
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/small_large_CI_likelihood.png" img height="400px" border="4px"/>
+</center>
+
+---
+### Exercise #12
 
 <div class="columns">
 <div>
@@ -2573,7 +2863,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 </div>
 
 ---
-### Exercise #10 -- Solution
+### Exercise #12 -- Solution
 
 <div class="columns">
 <div>
@@ -2602,6 +2892,15 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 </div>
 
 ---
+### Exercise #12 -- Solution
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/small_large_CI_precision.png" img height="400px" border="4px"/>
+</center>
+
+---
 ## Confidence intervals for differences of means
 
 :pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
@@ -2618,14 +2917,35 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 
 <div style="font-size: 90%" >
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu_{\text{i}} - \mu_{\text{c}}, \sqrt{\frac{\sigma_\text{i}^2}{n_\text{i}} + \frac{\sigma_\text{c}^2}{n_\text{c}}})$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{CLT}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}}$
+
+</div>
+
+</div>
+<div>
+
+</div>
+</div>
+
+<!-- Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni -->
+
+---
+## Confidence intervals for differences of means
+
+:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu_{\text{i}} - \mu_{\text{c}}, \sqrt{\frac{\sigma_\text{i}^2}{n_\text{i}} + \frac{\sigma_\text{i}^2}{n_\text{i}}})$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{CLT}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE} \approx \hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}}$
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
 </div>
 
 </div>
@@ -2640,13 +2960,32 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99$ CI, ma ora prov
 </div>
 </div>
 
-<!-- Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni 
-
-Abbiamo due gruppo di pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS
+<!-- Abbiamo due gruppo di pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS
 uno con lo standard of care e uno a cui abbiamo somministrati desametasone endovenoso. 
 
-Qual e' il CI per la differenza delle medie dei due gruppi aumentare per il numero di giorni di respirazione autonoma?
+Il numero di giorni di respirazione autonoma????
+
+Qual e' il CI per la differenza delle medie dei due gruppi?
 -->
+
+---
+## Confidence intervals for differences of means
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%" >
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{i}} - \bar{x}_{\text{c}} = 6.6-4.0=2.6$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}  = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
+
+</div>
+
+<!--  CTL differenza tra le medie campionarie e' la diffeenza tra le medie della popolazione
+SE lo calcoliamo cosi' -->
+
 
 ---
 ## Confidence intervals for differences of means
@@ -2669,10 +3008,10 @@ Qual e' il CI per la differenza delle medie dei due gruppi aumentare per il nume
 
 <!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard 
 
-Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione p sia compresa tra questi valori -->
+Abbiamo un grado di confidenza del 95% che la differenza delle medie delle due popolazioni sia compresa tra questi valori -->
 
 ---
-### Exercise #11
+### Exercise #13
 
 <span style="display:block; height:1px;"></span>
 
@@ -2686,16 +3025,14 @@ Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione 
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{ ?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
 
 </div>
 
 <!-- Vi ho riportato i coefficienti di attendibilita' -->
 
 ---
-### Exercise #11 -- Solution
+### Exercise #13 -- Solution
 
 <span style="display:block; height:1px;"></span>
 
@@ -2710,8 +3047,6 @@ Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione 
 <span style="display:block; height:1px;"></span>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = (2.6 - 1.65 \times 1.08 ; \text{ } 2.6 + 1.65 \times 1.08) = (0.82; \text{ } 4.38)$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = (2.6 - 2.58 \times 1.08 ; \text{ } 2.6 + 2.58 \times 1.08) = (-0.19; \text{ } 5.39)$
 
 </div>
 
@@ -2748,11 +3083,13 @@ Abbiamo un grado di confidenza del X% che la differenza delle medie delle due po
 
 <!-- Quando la dimensione campionaria e' grande la nostra fiducia nell'approssimare sigma con la varianza campionaria e' ben riposta  e possiamo usare la normale per il calcolo dei CI, ma cosa succede quando i campioni soo piccoli? Usiamo la distribuzione  di Student
 
+- e' una famiglia di distribuzioni, 1 per ogni valore campionario n-1
+
 Come la normale:
 - ha media 0
 - e' simmetrica
 - ha varianza >1 che si avvicina a 1 al crescere di N
-- e' una famiglia di distribuzioni, 1 per ogni valore campionario n-1
+
 
 Meno appuntita al centro e code piu' alte
  -->
@@ -2788,7 +3125,9 @@ Meno appuntita al centro e code piu' alte
 </div>
 </div>
 
-<!-- infatti la t-dist tiene conto dei valori campionari n-1, detti anche Gradi di liberta', che misurano la quantità di informazione disponibile nei dati che può essere usata per stimare sigma (affidabilità della stima s)
+<!-- una famiglia di distribuzioni, 1 per ogni valore campionario n-1
+
+ infatti la t-dist tiene conto dei valori campionari n-1, detti anche Gradi di liberta', che misurano la quantità di informazione disponibile nei dati che può essere usata per stimare sigma (affidabilità della stima s)
 
 All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più affidabile: con n grande la distribuzione t si avvicina alla distribuzione normale
  -->
@@ -2840,7 +3179,7 @@ Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno de
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
 
 </div>
 </div>
@@ -2848,6 +3187,38 @@ Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno de
 
 </div>
 </div>
+
+---
+## CTL and small sample size
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 80%" >
+
+:pushpin: &nbsp;&nbsp;&nbsp; $n=58$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(58)}=0.36$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 58 - 1 =57$
+
+</div>
+
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- coefficiente di attendibilita' -->
 
 ---
 ## CTL and small sample size
@@ -2899,17 +3270,31 @@ Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno de
 :pushpin: &nbsp;&nbsp;&nbsp; How many patients show gastrointestinal side effects from a   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new medication?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $m=69$
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\pi, \frac{\pi \times (1-\pi)}{n})$ &nbsp; $\rightarrow \text{CLT}$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}}$, &nbsp; where $\bar{p} = \frac{m}{n}$
 
 </div>
 
-<!-- In campo medico ci sono molte questioni legate alla proporzione di pazienti con una certa caratteristica. Per esempio la proporzione di pazienti con una malattia, la proporzione di pazienti che necessita un ricovero, o quella che soffre di effetti collaterali dopo l'assunzione di un farmaco
+<!-- In campo medico ci sono molte questioni legate alla proporzione di pazienti con una certa caratteristica. Per esempio la proporzione di pazienti con una malattia, la proporzione di pazienti che necessita un ricovero, o quella che soffre di effetti collaterali dopo l'assunzione di un farmaco  
 
-Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una stima non distorta della proporzione della popolazione e la distribuzione campionaria si approssima ad una normale  -->
+Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una stima non distorta della proporzione della popolazione e la distribuzione campionaria si approssima ad una normale -->
+
+---
+## Confidence intervals for proportions
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%" >
+
+:pushpin: &nbsp;&nbsp;&nbsp; How many patients show gastrointestinal side effects from a   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new medication?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $m=69$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
+
+</div>
 
 ---
 ## Confidence intervals for proportions
@@ -2923,7 +3308,21 @@ Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{69}{100} = 0.69$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.69\times(1-0.69)}{100}} = 0.046$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\hat{p} - 1.96 \times \hat{SE}; \text{ } \hat{p} + 1.96 \times \hat{SE}) =$
+<!-- proporzione campionaria -->
+
+---
+## Confidence intervals for proportions
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%" >
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $n=100$, &nbsp; $m=69$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{69}{100} = 0.69$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.69\times(1-0.69)}{100}} = 0.046$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{p} - 1.96 \times \hat{SE}; \text{ } \bar{p} + 1.96 \times \hat{SE}) =$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.69 - 1.96 \times 0.046 ; \text{ } 0.69 + 1.96 \times 0.046) =$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.60; \text{ } 0.78)$
 
@@ -2934,7 +3333,7 @@ Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una 
 Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione p sia compresa tra il 60 e il 78% -->
 
 ---
-### Exercise #12
+### Exercise #14
 
 <span style="display:block; height:1px;"></span>
 
@@ -2947,18 +3346,16 @@ Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione 
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{ ?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 </div>
 
-<!-- vi ho riportato i coefficienti di attendibilita' -->
+<!-- Prima abbiamo fatto il 90% ora facciamo il 99%.
+vi ho riportato i coefficienti di attendibilita' -->
 
 ---
-### Exercise #12 -- Solution
+### Exercise #14 -- Solution
 
 <span style="display:block; height:1px;"></span>
 
@@ -2971,10 +3368,7 @@ Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione 
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = (\hat{p} - 1.65 \times \hat{SE}; \text{ } \hat{p} + 1.65 \times \hat{SE}) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.69 - 1.65 \times 0.046 ; \text{ } 0.69 + 1.65 \times 0.046) = (0.61; \text{ } 0.77)$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = (\hat{p} - 2.58 \times \hat{SE}; \text{ } \hat{p} + 2.58 \times \hat{SE}) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = (\bar{p} - 2.58 \times \hat{SE}; \text{ } \bar{p} + 2.58 \times \hat{SE}) =$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.69 - 2.58 \times 0.046 ; \text{ } 0.69 + 2.58 \times 0.046) = (0.57; \text{ } 0.81)$
 
 </div>
@@ -2989,33 +3383,7 @@ Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p
 
 :pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
 
-<div class="columns">
-<div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:5px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/nejm.png" img height="290px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazienti con una certa caratteristica che provengono da due diverse popolazioi, come la proporzione di uomini e donne che soffrono di una qualche malattia, o due gruppi di persone che rispondono o meno ad un farmaco. 
-
-
-Randomized Trial on the efficacy of AZT in reducing the risk of maternal-infant HIV transmission
-HIV positive pregnant women randomized to receive AZT or placebo -->
+<!-- Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazienti con una certa caratteristica che provengono da due diverse popolazioi, come la proporzione di uomini e donne che soffrono di una qualche malattia, o due gruppi di persone che rispondono o meno ad un farmaco -->
 
 
 ---
@@ -3023,39 +3391,14 @@ HIV positive pregnant women randomized to receive AZT or placebo -->
 
 :pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
 
-<div class="columns">
-<div>
-
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
-</div>
-
-<span style="display:block; height:5px;"></span>
-
-<div style="font-size: 80%" >
-
-$\mathcal{N} = (\pi_{\text{i}} - \pi_{\text{c}}, \frac{\pi_i \times (1-\pi_i)}{n_i}+\frac{\pi_c \times (1-\pi_c)}{n_c})$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\pi_{\text{i}} - \pi_{\text{c}}, \frac{\pi_i \times (1-\pi_i)}{n_i}+\frac{\pi_c \times (1-\pi_c)}{n_c})$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{CLT}$ 
 
-$\hat{\text{SE}} = \sqrt{\frac{\hat{p}_i \times (1-\hat{p}_i)}{n_i}+\frac{\hat{p}_c \times (1-\hat{p}_c)}{n_c}}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_i \times (1-\bar{p}_i)}{n_i}+\frac{\bar{p}_c \times (1-\bar{p}_c)}{n_c}}$
 </div>
 
-</div>
-<div>
-
-<span style="display:block; height:5px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/nejm.png" img height="290px" border="4px"/>
-</center>
-
-</div>
-
-</div>
-</div>
 
 <!-- Per il teorema del limite centrale, di nuovo, la differenza tra le proporzioni campionarie e' una stima non distorta della differenza di proporzioni nella popolazione e la distribuzione campionaria si approssima ad una normale  -->
 
@@ -3064,17 +3407,68 @@ $\hat{\text{SE}} = \sqrt{\frac{\hat{p}_i \times (1-\hat{p}_i)}{n_i}+\frac{\hat{p
 
 :pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
 
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:5px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/nejm.png" img height="290px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- 
+Randomized Trial on the efficacy of AZT in reducing the risk of maternal-infant HIV transmission
+HIV positive pregnant women randomized to receive AZT or placebo -->
+
+---
+### Confidence intervals for differences of proportion
+
+:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
 <span style="display:block; height:1px;"></span>
 
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{p}_{\text{i}} - \hat{p}_{\text{c}} = \frac{m_i}{tot_i} - \frac{m_c}{tot_c} = \frac{13}{180} - \frac{40}{183} = 0.07 - 0.22 = -0.15$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p}_{\text{i}} - \bar{p}_{\text{c}} = \frac{m_i}{n_i} - \frac{m_c}{n_c} = \frac{13}{180} - \frac{40}{183} = 0.07 - 0.22 = -0.15$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{SE} = \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\hat{p}_{\text{i}} - \hat{p}_{\text{c}} -1.96 \times \hat{SE}; \text{ } \hat{p}_{\text{i}} - \hat{p}_{\text{c}} +1.96 \times \hat{SE}) =$
+</div>
+
+<!--  differenza tra le proporzioni campionarie-->
+
+---
+### Confidence intervals for differences of proportion
+
+:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p}_{\text{i}} - \bar{p}_{\text{c}} = \frac{m_i}{n_i} - \frac{m_c}{n_c} = \frac{13}{180} - \frac{40}{183} = 0.07 - 0.22 = -0.15$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{SE} = \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{p}_{\text{i}} - \bar{p}_{\text{c}} -1.96 \times \hat{SE}; \text{ } \bar{p}_{\text{i}} - \bar{p}_{\text{c}} +1.96 \times \hat{SE}) =$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (-0.15 - 0.007; \text{ }  -0.015 + 0.07) = (-0.22 ; -0.08)$ 
 
 </div>
@@ -3113,7 +3507,8 @@ Vediamo quindi ora come usare dell'evidenza dai dati per prendere delle decision
 
 - Make and test hypotheses
 - Interpret P values
-- Understand Type I and II errors and the power of a study
+- Understand Type I and II errors 
+- Understand the power of a study
 
 ---
 ## Making hypotheses
@@ -3142,13 +3537,14 @@ Vediamo quindi ora come usare dell'evidenza dai dati per prendere delle decision
 :pushpin: &nbsp;&nbsp;&nbsp; Is using Dexamethasone better than standard care?
 
 <!-- 
+Nei pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS), desametasone è efficace nell’aumentare il numero di giorni di respirazione autonoma?
+
 Vogliamo rispondere a questa domanda perche' dobbiamo decidere se dobbiamo iniziare ad aggiungere dexametasone endovenoso per trattare i nostri pazienti con COVID.
 
-Un'ipotesi puo' essere definita come una congettura su una o piu' popplaioni
-
 Ogni studio inizia con un'ipotesi, quella che viene chiamata "domanda di ricerca"
+Questo e' cosa ci aspettiamo di poter concludere come risultato del nostro test statistico 
 
-Questo e' cosa ci aspettiamo di poter concludere come risultato del nostro test statistico -->
+Un'ipotesi puo' essere definita come una congettura su una o piu' popplaioni -->
 
 ---
 ## Making hypotheses
@@ -3212,7 +3608,7 @@ Il metodo scientifico si basa sulla falsificazione delle ipotesi (K. Popper), in
 </div>
 </div>
 
-<!-- Il metodo statistico formalizza questa idea valutando evidenze contro un’ipotesi nulla, quindi, quello che andiamo a testare sono l'ipotesi nulla (non ci sono differenze). Dexamethasome ha la stessa efficacia della terapia standard
+<!-- Il metodo statistico formalizza questa idea (È più semplice trovare evidenze contro un’ipotesi piuttosto che evidenze a favore) valutando evidenze contro un’ipotesi nulla, quindi, quello che andiamo a testare sono l'ipotesi nulla (non ci sono differenze). Dexamethasome ha la stessa efficacia della terapia standard
 Dexamethasome non aumenta il numero di giorni di respirazione autonoma.
 
 L’ipotesi nulla (𝐻_0 )  è l’ipotesi considerata vera finché non vengono presentate delle prove (evidenza empirica) per mostrare che non lo è
@@ -3475,6 +3871,36 @@ In entrambi i casi, dobbiamo tenere a mente che stiamo facendo un ragionamento d
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; differs from standard care, if 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; we accepted $\mathcal{H}_0$?
 
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:5px;"></span>
+
+<center>
+<img src="./img/hypothesis_testing/CLT.png" img height="270px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- La regione di non rifiuto include i valori che hanno un probabilita' maggioore di verificarsi se H0 e' vera. Viceversa la regione di rifiuto include i valori che hanno una probabilita' minore di verificarsi se H1 e' vera. -->
+
+
+---
+## Significance
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+:pushpin: &nbsp;&nbsp;&nbsp; How likely is that we made a 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mistake, *i.e.*, Dexamethasone 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; differs from standard care, if 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; we accepted $\mathcal{H}_0$?
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_i - \bar{x}_c = 2.6$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = 1.08$
 
@@ -3496,13 +3922,7 @@ In entrambi i casi, dobbiamo tenere a mente che stiamo facendo un ragionamento d
 </div>
 </div>
 
-<!-- La regione di non rifiuto include i valori che hanno un probabilita' maggioore di verificarsi se H0 e' vera. Viceversa la regione di rifiuto include i valori che hanno una probabilita' minore di verificarsi se H1 e' vera.
-
-E come la misuriamo questa probabilita'? Unsando il p value, che ci dice quanto sono improbabili i risultati ottenuti da questo campione dato che l'ipotesi nulla e' vera.
-
-Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia vera dandoci una forte ragione per dubitare che le due medie siano uguali 
-
-In modo molto informale. L’espressione statisticamente significativo vuol dire che sono state raccolte prove sufficienti per rifiutare l’ipotesi nulla -->
+<!-- E come la misuriamo questa probabilita'? -->
 
 ---
 ## Significance
@@ -3520,7 +3940,7 @@ In modo molto informale. L’espressione statisticamente significativo vuol dire
 
 <span style="display:block; height:15px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{i}} - \mu_{\text{c}} = 0$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{i}} - \mu_{\text{c}} = 0$ &nbsp; $\rightarrow$ &nbsp; $\mathcal{P}(|\bar{X}| > 2.4)$ 
 
 </div>
 
@@ -3536,13 +3956,30 @@ In modo molto informale. L’espressione statisticamente significativo vuol dire
 </div>
 </div>
 
+<!-- Pero' quest'area non e' corretta (mu diversa, 2 zone bianche) -->
+
+---
+## Significance
+
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(|\bar{X}| > 2.4) = 2 \times 0.0082 = 0.0164$ &nbsp;&nbsp;&nbsp;&nbsp; $\leftarrow$ P value
+:pushpin: &nbsp;&nbsp;&nbsp; How likely is that we made a 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mistake, *i.e.*, Dexamethasone 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; differs from standard care, if 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; we accepted $\mathcal{H}_0$?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(|\bar{X}| > 2.4) = 2 \times (1 - 0.9918) = 2 \times 0.0082 = 0.0164$ &nbsp;&nbsp;&nbsp; $\leftarrow$ &nbsp; P value
 
 </div>
 
-<!--Se p-value = 0.02
+<!--
+Unsando il p value, che ci dice quanto sono improbabili i risultati ottenuti da questo campione dato che l'ipotesi nulla e' vera.
+
+Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia vera dandoci una forte ragione per dubitare che le due medie siano uguali 
+
+In modo molto informale. L’espressione statisticamente significativo vuol dire che sono state raccolte prove sufficienti per rifiutare l’ipotesi nulla 
+
+Se p-value = 0.02
 Se l’ipotesi nulla fosse vera, la probabilità di osservare il risultato che abbiamo ottenuto, o una differenza ancora maggiore, sarebbe solo dell’2%
 Se il farmaco non fosse efficace (ipotesi nulla fosse vera) solo in 2 campione ogni 100 avremmo il risultato osservato -->
 
@@ -3589,8 +4026,6 @@ Se il farmaco non fosse efficace (ipotesi nulla fosse vera) solo in 2 campione o
 
 <!-- il p value ci dice quanto sono improbabili i risultati ottenuti da questo campione dato che l'ipotesi nulla e' vera
 
-Un p value molto piccolo ci dice quindi che sia molto improbabile che H0 sia vera dandoci una forte ragione per dubitare che le due medie siano uguali 
-
 0.05 e; una solta di standard, ma altri valori usati sono 0.01 
 
 P value di 0.01 ci dice che se l’ipotesi nulla fosse vera, la probabilità di osservare il risultato che abbiamo ottenuto, o una differenza ancora maggiore, sarebbe solo dell’1%
@@ -3619,7 +4054,10 @@ Se il farmaco non fosse efficace (ipotesi nulla fosse vera) solo in 1 campione o
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - False discovery rate (FDR)
 
 
-<!-- FDR intuitivamente ci dice quale proporzione di falso positivi andiamo ad accettare (FDR = FP/(FP+TP) ) 
+<!-- livello di significicativita' alpha
+
+
+FDR intuitivamente ci dice quale proporzione di falso positivi andiamo ad accettare (FDR = FP/(FP+TP) ) 
 Un FDR del 5%, per esempio, ci dice che accettiamo che oni 100 volte che "chiamiamo" un risultato (diciamo che un test e' significativo), in 5 stiamo facendo un errore-->
 
 ---
@@ -3639,27 +4077,27 @@ Un FDR del 5%, per esempio, ci dice che accettiamo che oni 100 volte che "chiami
 test statistic= RAPPORT CRITICO -->
 
 ---
-### Exercise 13
+### Exercise 15
 
 <div style="font-size: 90%" >
 
 :question: &nbsp;&nbsp;&nbsp; Does the birth weight of babies born from smoking mothers differ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from that of babies  born from non-smoking mothers?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{s}}=3241.6, s_{\text{s}}=476.5$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
 
 </div>
 
 ---
-### Exercise 13 -- Solution
+### Exercise 15 -- Solution
 
 <div style="font-size: 90%" >
 
 :question: &nbsp;&nbsp;&nbsp; Does the birth weight of babies born from smoking mothers differ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from that of babies  born from non-smoking mothers?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{s}}=3241.6, s_{\text{s}}=476.5$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Set $\mathcal{H}_0$ and $\mathcal{H}_1$ &nbsp; $\rightarrow$ &nbsp; $\mathcal{H}_0: \mu_s - \mu_c = 0 \text{, } \mathcal{H}_1: \mu_s - \mu_c \neq 0$
@@ -3669,14 +4107,14 @@ test statistic= RAPPORT CRITICO -->
 <!-- Primo passo, andiamo a costruire la nostra ipotesi nulla. Notiamo che H1 e' la conclusione a cui vogliamo arrivare.  -->
 
 ---
-### Exercise 13 -- Solution
+### Exercise 15 -- Solution
 
 <div style="font-size: 90%" >
 
 :question: &nbsp;&nbsp;&nbsp; Does the birth weight of babies born from smoking mothers differ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from that of babies  born from non-smoking mothers?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{s}}=3241.6, s_{\text{s}}=476.5$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. $\mathcal{H}_0: \mu_s - \mu_c = 0$
@@ -3688,11 +4126,11 @@ test statistic= RAPPORT CRITICO -->
 <!-- Decisiamo per un livello di significativita; di 0.05. Non vi ho detto nulla, quindi anche 0.01 o 0.1 vanno benissimo. -->
 
 ---
-### Exercise 13 -- Solution
+### Exercise 15 -- Solution
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
+:question: &nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{s}}=3241.6, s_{\text{s}}=476.5$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. $\mathcal{H}_0: \mu_s - \mu_c = 0$
@@ -3705,7 +4143,7 @@ test statistic= RAPPORT CRITICO -->
 <div style="font-size: 80%" >
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_s - \bar{x}_c = 3241.6 - 3424.1 = -182.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{s}^2}{n_\text{s}} + \frac{s_\text{i}^2}{n_\text{i}}} = \sqrt{\frac{476.5^2}{5065} + \frac{474.6^2}{8143}} = 8.51$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{s}^2}{n_\text{s}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{476.5^2}{5065} + \frac{474.6^2}{8143}} = 8.51$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \pm 1.96 \times \hat{SE} = \pm 1.96 \times 8.51 = \pm 16.68$
 
 
@@ -3716,11 +4154,11 @@ test statistic= RAPPORT CRITICO -->
 Quindi andiamo ad accettare H0 se la statistica del test cade nella regione +/- 16.68 -->
 
 ---
-### Exercise 13 -- Solution
+### Exercise 15 -- Solution
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
+:question: &nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{s}}=3241.6, s_{\text{s}}=476.5$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. $\mathcal{H}_0: \mu_s - \mu_c = 0$
@@ -3733,10 +4171,10 @@ Quindi andiamo ad accettare H0 se la statistica del test cade nella regione +/- 
 <div style="font-size: 80%" >
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{X} = \bar{x}_s - \bar{x}_c = 3241.6 - 3424.1 = -182.5$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{s}^2}{n_\text{s}} + \frac{s_\text{i}^2}{n_\text{i}}} = \sqrt{\frac{476.5^2}{5065} + \frac{474.6^2}{8143}} = 8.51$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{s}^2}{n_\text{s}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{476.5^2}{5065} + \frac{474.6^2}{8143}} = 8.51$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \pm 1.96 \times \hat{SE} = \pm 1.96 \times 8.51 = \pm 16.68$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{\bar{X} - \mu}{\hat{\text{SE}}} = \frac{-182.5 - 0}{8.51}=-21.44$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $P(\bar{X} < -21.44) +  P(\bar{X} > 21.44)= 0 \times 2 = 0$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $P(|\bar{X}| > 21.44)= 0 \times 2 = 0$
 
 </div>
 
@@ -3745,18 +4183,18 @@ Quindi andiamo ad accettare H0 se la statistica del test cade nella regione +/- 
 Ricordiamo che il p value ci dice quanto sono improbabili i risultati ottenuti da questo campione dato che l'ipotesi nulla e' vera -->
 
 ---
-### Exercise 13 -- Solution
+### Exercise 15 -- Solution
 
 <div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{i}}=3241.6, s_{\text{i}}=476.5$ 
+:question: &nbsp;&nbsp;&nbsp; $n_{\text{s}}=5065, \bar{x}_{\text{s}}=3241.6, s_{\text{s}}=476.5$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=8143, \bar{x}_{\text{c}}=3424.1, s_{\text{c}}=474.6$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. $\mathcal{H}_0: \mu_s - \mu_c = 0$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. $\alpha = 0.05$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. &nbsp;&nbsp;&nbsp;&nbsp; $\pm 1.96 \times \hat{SE} = 1.96 \times 8.51 = \pm 16.68$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{\bar{X} - \mu}{\hat{\text{SE}}} = \frac{-182.5 - 0}{8.51}=-21.44$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $P(\bar{X} < -21.44) +  P(\bar{X} > 21.44)= 0 \times 2 = 0$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $P(|\bar{X}| > 21.44)= 0 \times 2 = 0$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Make a decision about $\mathcal{H}_0$ &nbsp; $\rightarrow$ We refuse $\mathcal{H}_0$
 
@@ -4218,6 +4656,41 @@ Total | 180 | 183 | 363 |
 </div>
 
 <!-- Andiamo quindi a calcolarci queste differenze rra la i valori attesi e quelli osservati secondo questa formula -->
+---
+## Pearson's $\chi^2$ test
+
+:pushpin: &nbsp;&nbsp;&nbsp; Is zidovudine the same as standard care?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\alpha = 0.05$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\chi^2 = 14.85$ &nbsp;&nbsp;&nbsp; $\text{df} = 1$
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:70px;"></span>
+
+
+<center>
+<img src="./img/hypothesis_testing/chitable.png" img height="210px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Il chi2 e' di nuovo una distribuzione di probabilita' per cui esistono delle tavole. Come la distribuzione t, amche la chi2 e' una famiglia di distribuzioni, 1 per ogni grado di liberta'. Nel nostro caso, in cui abbiamo uan tabella 2x2 abbiamo 1 grado di liberta'. Infatti dobbiamo definire il valore di solo 3 celle perche' tutte e 4 siano definite 
+
+I GdL sono numero di righe -1 * numero di colonne -1 -->
 
 ---
 ## Pearson's $\chi^2$ test
@@ -4255,17 +4728,13 @@ Total | 180 | 183 | 363 |
 </div>
 </div>
 
-<!-- Il chi2 e' di nuovo una distribuzione di probabilita' per cui esistono delle tavole. Come la distribuzione t, amche la chi2 e' una famiglia di distribuzioni, 1 per ogni grado di liberta'. Nel nostro caso, in cui abbiamo uan tabella 2x2 abbiamo 1 grado di liberta'. Infatti dobbiamo definire il valore di solo 3 celle perche' tutte e 4 siano definite 
-
-I GdL sono numero di righe -1 * numero di colonne -1
-
-E' pressoche' equivalente al z-test per confrontare due popolazioni, ,a puo' essere esteso a piu' di due gruppi e con piu' di due categorie (anche se qui ci siamo limitati ad usarne 2 per comodita' e per confronto con z-test)
+<!-- E' pressoche' equivalente al z-test per confrontare due popolazioni, ,a puo' essere esteso a piu' di due gruppi e con piu' di due categorie (anche se qui ci siamo limitati ad usarne 2 per comodita' e per confronto con z-test)
 
 ATTENSIONE: funziona bene con "grandi" sample size (>5 in each cell) -> se meno di questo uso il Fisher's test 
 -->
 
 ---
-### Exercise 14
+### Exercise 16
 
 <div style="font-size: 90%" >
 
@@ -4281,7 +4750,7 @@ ATTENSIONE: funziona bene con "grandi" sample size (>5 in each cell) -> se meno 
 </div>
 
 ---
-### Exercise 14 -- Solution
+### Exercise 16 -- Solution
 
 <div style="font-size: 90%" >
 
@@ -4300,7 +4769,7 @@ H1: la proporzione di deceduti e' diversa (associazione)
 -->
 
 ---
-### Exercise 14 -- Solution
+### Exercise 16 -- Solution
 
 <div style="font-size: 90%" >
 
@@ -4318,7 +4787,7 @@ H1: la proporzione di deceduti e' diversa (associazione)
 <!-- Livello di significativita' -->
 
 ---
-### Exercise 14 -- Solution
+### Exercise 16 -- Solution
 
 <div style="font-size: 90%" >
 
@@ -4358,7 +4827,7 @@ H1: la proporzione di deceduti e' diversa (associazione)
 Se non ci fosse differenza tra i due gruppi, la proporzione di infetti nei due campioni sarebbe la stessa, e sarebbe la stessa osservata nel totale -->
 
 ---
-### Exercise 14 -- Solution
+### Exercise 16 -- Solution
 
 <div style="font-size: 90%" >
 
@@ -4404,7 +4873,7 @@ Se non ci fosse differenza tra i due gruppi, la proporzione di infetti nei due c
 <!-- Andiamo quindi a calcolare le frequenze attese, sottp H0 e il valre del chi2-->
 
 ---
-### Exercise 14 -- Solution
+### Exercise 16 -- Solution
 
 <div style="font-size: 90%" >
 
@@ -4446,7 +4915,7 @@ $\chi^2=\frac{(3-7.5)^2}{7.5} + \frac{(13-8.7)^2}{8.7} + \frac{(247-242.5)^2}{24
 </div>
 
 ---
-### Exercise 14 -- Solution
+### Exercise 16 -- Solution
 
 <div style="font-size: 90%" >
 
@@ -4469,7 +4938,7 @@ $\chi^2=\frac{(3-7.5)^2}{7.5} + \frac{(13-8.7)^2}{8.7} + \frac{(247-242.5)^2}{24
 P value di 0.03 ci dice che se l’ipotesi nulla fosse vera, la probabilità di osservare il risultato che abbiamo ottenuto, o una differenza ancora maggiore, sarebbe solo dell’3% -->
 
 ---
-### Exercise 14 -- Solution
+### Exercise 16 -- Solution
 
 <div style="font-size: 90%" >
 
@@ -4674,7 +5143,7 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
  -->
 
 --- 
-### Exercise #15
+### Exercise #17
 
 <div style="font-size: 90%" >
 
@@ -4692,7 +5161,7 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 </div>
 
 ---
-### Exercise #15 -- Solution
+### Exercise #17 -- Solution
 
 <div style="font-size: 90%" >
 
@@ -4710,7 +5179,7 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 </div>
 
 --- 
-### Exercise #16
+### Exercise #18
 
 :question: &nbsp;&nbsp;&nbsp; I want to increase the power of my study, what factors are
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  under my control?
@@ -4723,7 +5192,7 @@ Non rejected | $1 -  \alpha$ | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) Both a) and c)
 
 --- 
-### Exercise #16 -- Solution
+### Exercise #18 -- Solution
 
 :question: &nbsp;&nbsp;&nbsp; I want to increase the power of my study, what factors are
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  under my control?
