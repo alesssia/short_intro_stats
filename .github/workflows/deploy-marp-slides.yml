@@ -24,6 +24,9 @@ jobs:
       - name: Ensure build dir exists
         run: mkdir -p build
 
+      - name: Copy images directory (if exists)
+        run: if [[ -d img ]]; then cp -R img build/img; fi		
+
       - name: Copy html version
         run: cp -R short_intro_stats_Day*.html build/
 
