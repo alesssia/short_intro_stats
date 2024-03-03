@@ -37,7 +37,7 @@ jobs:
       - name: Marp Build (Day1_pdf)
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: short_intro_stats_Day1.md --allow-local-files -o build/short_intro_stats_Day1/README.pdf
+          args: short_intro_stats_Day1.md --allow-local-files -o build/short_intro_stats_Day1.pdf
         env:
           MARP_USER: root:root
 
@@ -58,7 +58,7 @@ jobs:
       - name: Marp Build (Day2_pdf)
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: short_intro_stats_Day2.md --allow-local-files -o build/short_intro_stats_Day2/README.pdf
+          args: short_intro_stats_Day2.md --allow-local-files -o build/short_intro_stats_Day2.pdf
         env:
           MARP_USER: root:root
 
@@ -79,7 +79,7 @@ jobs:
       - name: Marp Build (Day3_pdf)
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: short_intro_stats_Day3.md --allow-local-files -o build/short_intro_stats_Day3/README.pdf
+          args: short_intro_stats_Day3.md --allow-local-files -o build/short_intro_stats_Day3.pdf
         env:
           MARP_USER: root:root
 
