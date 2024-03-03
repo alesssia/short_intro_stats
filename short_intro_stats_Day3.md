@@ -14,6 +14,8 @@ style: |
 
 # Introduction to statistics
 
+### (Day 3)
+
 ---
 ## Agenda
 
@@ -104,7 +106,7 @@ style: |
 - Multiple phenomena and statistical distributions are normally distributed (CLT)
 
 - We use statistics to estimate parameters (point estimates)
-- We usee interval estimates (confidence intervals) to estimate the error of the point estimate 
+- We use interval estimates (confidence intervals) to estimate point estimates' uncertainty  
 
 <!-- 95% confidence intervals tell us the the true value has 95% probability of being inside the given range -->
 
@@ -1943,4 +1945,4 @@ R. Fisher
 ![bg opacity](./img/backgrounds/wrappingup_bg.png)
 
 <span style="display:block; height:190px;"></span>
-# Thank you!
+# Thank you

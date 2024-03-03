@@ -14,6 +14,8 @@ style: |
 
 # Introduction to statistics
 
+### (Day 2)
+
 ---
 ## Agenda
 
