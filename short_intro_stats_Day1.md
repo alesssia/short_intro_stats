@@ -215,25 +215,6 @@ Tomazini, B.M., et al. Effect of dexamethasone on days alive and ventilator-free
 - Understand the difference between sampling strategies
 - Understand sampling error and bias
 
-<!-- ---
-## Sources of Data
-
-<span style="display:block; height:50px;"></span>
-
-- Routinely kept records
-- Surveys
-- Experiments
-- External sources
-
-<!-- L'attivita' statistica e' motivata dalla necessita' di rispondere ad una domanda (perche' i soldati in Crimea muoiono?)
-
-Dopo aver scelto la domanda e il modo (statistico) piu' appropriato per rispondere, dobbiamo iniziare a a raccogliere i dati  
-
-1) dati amministrativi su ricoveri, procedure, medicinali somministrati
-2) informazioni che non vengono raccolte di routine (esempio: aiuto a casa per pazienti fragili) 
-3) clinical trial, si provano su diversi pazienti diversi approcci clinici per decidere qual e' il migliore
-4) dati disponibili pubblicamente da altri studi, o che sono stati raccolti per rispondere a domande diverse ma che sono utili anche a noi --> -->
-
 --- 
 ## Population *vs*  &nbsp;sample
 
@@ -337,10 +318,8 @@ data una popolazione di N individui ed un campione di dimensione n  la probabili
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; without replacement
 
 <span style="display:block; height:30px;"></span>
-
 
 </div>
 <div>
@@ -366,7 +345,6 @@ Decidere quante unità si vogliono selezionare e calcolare la frazione di campio
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; without replacement
 
 <span style="display:block; height:30px;"></span>
 
@@ -456,7 +434,7 @@ Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli indiv
 <div class="columns">
 <div>
 
-:pushpin: &nbsp;&nbsp;&nbsp;  $M=90$
+:pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{female}=60$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{male}=30$
 
@@ -670,9 +648,9 @@ Numeriche:
 - continue (altezza, peso, BMI, temperatura corporea)
 - discrete (numero di pazienti ammessi in PS)
 
-Categoriche:
-- Nominali -> due categorie binarie (diabete si/no), piu' categorie (gruppo sanguigno)
-- Ordinali -> dati che rappresentano categorie ordinate (ECOG performance status [0-4], giudizi scolastici ("Insufficiente", "Sufficiente", "Buono", "Ottimo:")) -->
+Categoriche si dividono in 2 classi
+- Nominali (categorie che non possono essere ordinate) -> due categorie binarie (diabete si/no), piu' categorie (gruppo sanguigno)
+- Ordinali (categorie che non possono essere ordinate) -> dati che rappresentano categorie ordinate (giudizi scolastici ("Insufficiente", "Sufficiente", "Buono", "Ottimo:"), "Sottopeso", "Normopeso" ...) -->
 
 ---
 ### Exercise #3
@@ -686,7 +664,9 @@ Categoriche:
 <span style="display:block; height:280px;"></span>
 
 <div style="font-size: 50%">
+	
 Visconti A., et al., Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
 </div>
 
 </div>
@@ -703,9 +683,11 @@ Visconti A., et al., Total serum *N*‐glycans associate with response to immune
 Eta'/BMI: continua
 BRAF: binaria
 Metastatic stage: Ordinale
-ECOG score: ordinale
+ECOG score: ordinale (o fully active  5 morto, 4 completamente disabile, 3 capable of only limited selfcare)
 ICI teraphy: categorico (con piu' categorie) 
 N: discreto
+
+Lactate dehydrogenase, dichotomized according to the upper limit of normal for each centre.
 -->
 
 --- 
@@ -1029,26 +1011,15 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 ---
 ## Measure of dispersion: interquartile range
 
-<span style="display:block; height:70px;"></span>
+<span style="display:block; height:1px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; ${\text{IQR}(x)}= \text{Q3}(x)-\text{Q1}(x)$
+
+<span style="display:block; height:20px;"></span>
 
 <center>
 <img src="./img/descriptive/iqr.png" img height="300px" border="0px"/>
 </center>
-
----
-## Measure of dispersion: interquartile range
-
-<span style="display:block; height:30px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; ${\text{IQR}(x)}= \text{Q3}(x)-\text{Q1}(x)$
-
-<span style="display:block; height:30px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{6, 7, \underline{15}, 36, 39, \underline{40}, 41, 42, \underline{{43}}, 47, 49\}$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\text{IQR}(x)}= \text{Q3}(x)-\text{Q1}(x)=43-15=28$
-
-<!-- Non sono considerati i valori estremi, ma sappiamo come si distribuisce la meta dei dati rispetto al valore centrale -->
 
 ---
 ## Measure of dispersion: interquartile range
@@ -1061,6 +1032,9 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 
 :pushpin: &nbsp;&nbsp;&nbsp; $\text{range}(x) = \text{max}(x)-\text{min}(x)=9,754-2,830=6,924$
 :pushpin: &nbsp;&nbsp;&nbsp; $\text{IQR}(x) \text{ }\text{ } = \text{Q3}(x)-\text{Q1}(x) \text{ }\text{ }\text{ }\text{ } =5,253-3,423=1,830$
+
+<!-- Non sono considerati i valori estremi, ma sappiamo come si distribuisce la meta dei dati rispetto al valore centrale -->
+
 
 ---
 ## Measure of dispersion: variance
@@ -1312,7 +1286,9 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 <span style="display:block; height:400px;"></span>
 
 <div style="font-size: 50%">
+
 Visconti A., et al., Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
 </div>
 
 </div>
