@@ -509,7 +509,8 @@ https://hbsc.org
 
 </div>
 
-<!--  Studio internazionale che si tiene ogni 4 anni e che raccoglie informazioni sui ragazzi di 11, 13, 15 e, recentemente anche 17 anni (che sono la mia popolazione) 
+<!--  Health beavious in school aged children 
+Studio internazionale che si tiene ogni 4 anni e che raccoglie informazioni sui ragazzi di 11, 13, 15 e, recentemente anche 17 anni (che sono la mia popolazione) 
 Ma non li raccoglie tutti, ne raccoglie un campione.
 
 Innanzitutto li devo dividere per regioni (stratificato), poi vado a identifcare le scuole (cluster)
@@ -578,7 +579,7 @@ ethnic group or school type.
 <span style="display:block; height:50px;"></span>
 
 <center>
-<img src="./img/sampling/ukbb_bias.png" img height="300px" border="4px"/>
+<img src="./img/sampling/UKBB_bias.png" img height="300px" border="4px"/>
 </center>
 
 <!-- Persino in un campione di 0.5M di persone come la UKBB, si osserva che non rispondere o rispondere non lo so a questionari (109 domande, in questo studio) non e' casuale e dipende da foattori genetici e ambientali -->
@@ -642,7 +643,7 @@ ethnic group or school type.
 ---
 # Type of data
 
-<img src="./img/descriptive/Variables.png" img height="450px" align="right" border="0px"/>
+<img src="./img/descriptive/variables.png" img height="450px" align="right" border="0px"/>
 
 <!-- Andiamo a dividere i dati in variabili quantitative (o numeriche) o qualitative (o categorighe) 
 
