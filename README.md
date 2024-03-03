@@ -11,6 +11,10 @@ Slides include teacher notes, which are in Italian (the language I'm delivering 
 - How to calculate confidence intervals
 - How to make and test hypotheses
 
+## Schedule
+
+The course will be delivered in three days, each formed by about 3h of frontal lesson with exercises.
+
 ## Sources
 
 While I consulted multiple sources for creating this material, these are the most prominent:
