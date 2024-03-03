@@ -67,7 +67,7 @@ style: |
 <span style="display:block; height:60px;"></span>
 
 - Interrupt me
-- Take advantage of end/start/breaks
+- Take advantage of start/end/breaks
 - Send emails alessia.visconti@unito.it
 - Use the shared pad: https://etherpad.wikimedia.org/p/intro_stats_2024_specialita (or https://t.ly/vRbvy)
 
@@ -178,7 +178,9 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 <span style="display:block; height:60px;"></span>
 
 <div style="font-size: 50%">
-Tomazini, B.M., et al. Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", Jama, 2020, doi:10.1001/jama.2020.17021
+	
+Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", JAMA, 2020, doi:10.1001/jama.2020.17021
+
 </div>
 
 
@@ -665,7 +667,7 @@ Categoriche si dividono in 2 classi
 
 <div style="font-size: 50%">
 	
-Visconti A., et al., Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
 
 </div>
 
@@ -705,7 +707,9 @@ Lactate dehydrogenase, dichotomized according to the upper limit of normal for e
 <span style="display:block; height:120px;"></span>
 
 <div style="font-size: 50%">
-Visconti A., et al., Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+	
+Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
 </div>
 
 </div>
@@ -1287,7 +1291,7 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 
 <div style="font-size: 50%">
 
-Visconti A., et al., Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
 
 </div>
 
