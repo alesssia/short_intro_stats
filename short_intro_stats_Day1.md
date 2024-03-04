@@ -69,7 +69,7 @@ style: |
 - Interrupt me
 - Take advantage of start/end/breaks
 - Send emails alessia.visconti@unito.it
-- Use the shared pad: https://etherpad.wikimedia.org/p/intro_stats_2024_specialita (or https://t.ly/vRbvy)
+- Use the shared pad: https://etherpad.wikimedia.org/p/intro_stats_2024_specialita <br/> (or https://t.ly/vRbvy)
 
 ---
 ![bg opacity](./img/backgrounds/Introduction_bg.png)
@@ -555,10 +555,10 @@ ethnic group or school type.
 <div>
 
 <span style="display:block; height:50px;"></span>
-- Survivor bias
-- Volunteer bias
-- Lost to follow up bias
-- $\dots$
+* Survivor bias
+* Volunteer bias
+* Lost to follow up bias
+* $\dots$
 
 </div>
 <div>
@@ -637,7 +637,7 @@ ethnic group or school type.
 
 - Understand the differences between data types
 - Be able to summarise each data type using measure of centrality and dispersion
-- Understand the difference between statistics and parameters
+- Understand the difference between parameters and statistics
 - Understand why visualise your data is important
 
 ---
@@ -857,27 +857,6 @@ Si usa soprattutto per i dati categorici -->
 
 </div>
 
----
-## Quartiles
-
-<span style="display:block; height:10px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $n=11, x= \{6, 7, 15, 36, 39, \underline{40}, 41, 42, 43, 47, 49\}$ 
-
-<span style="display:block; height:5px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Q2(x)=\text{median}(x)=x_{(n+1)/2} = x_{(11+1)/2}=x_6=40$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Q1(x_{1:5})= x_{(5+1)/2}=x_3=15$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Q3(x_{7:11})= x_{(5+1)/2}=x_9=43$
-
-
-<div style="font-size: 90%" align="right">
-
-:warning: Data should be sorted!
-
-</div>
 
 ---
 ## Percentiles
@@ -1119,8 +1098,8 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 | Data type | Centrality Measure | Dispersion Measure |
 | ---- | ----- | ---- |
 | Nominal | Mode | - |
-| Ordinal | Median, Mode | Range, IQR |
-| Numeric | Mean, Median, Mode | Range, IQR, standard deviation
+| Ordinal | Mode, Median | Range, IQR |
+| Numeric | Mode, Median, Mean | Range, IQR, standard deviation |
 
 ---
 ## Parameters *vs*  &nbsp;statistics
@@ -1242,12 +1221,12 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 
 <span style="display:block; height:1px;"></span>
 
-:question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, lipid levels
+:question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, and cholesterol
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarise their data?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), lipid levels: mean (SD)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), lipid levels: median (IQR)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: mean (SD), lipid levels: mean (SD) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), cholesterol: mean (SD)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), cholesterol: median (IQR)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: mean (SD), cholesterol: mean (SD) 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Either a) or b)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or c)
 
@@ -1256,12 +1235,12 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 
 <span style="display:block; height:1px;"></span>
 
-:question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, lipid levels
+:question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, and cholesterol
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarise their data?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), lipid levels: mean (SD)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), lipid levels: median (IQR)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: mean (SD), lipid levels: mean (SD) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), cholesterol: mean (SD)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), cholesterol: median (IQR)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: mean (SD), cholesterol: mean (SD) 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Either a) or b) :white_check_mark: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or c)
 
