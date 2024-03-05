@@ -96,9 +96,11 @@ style: |
 - When can't study a population, we select a representative sample
 - There are different sampling strategies
 
+<span style="display:block; height:10px;"></span>
+
+- There are different types of data
 - Data are described with measures of centrality (mode, median, mean) and dispersion (range, IQR, standard deviation)
 - Parameters (calculated on the population) *vs*&nbsp; statistics (calculated on the sample)
-
 
 ---
 ![bg opacity](./img/backgrounds/normal_bg.png)
@@ -246,7 +248,9 @@ $$
 
 <!-- Ci dice che il 68,27%, il 95,45% e il 99,73% dei valori si trovano rispettivamente all'interno di una, due e tre deviazioni standard della media 
 
-Perche' questo ci e' utile? Lo vedremo tra poco quando parleremo degli intervalli di confidenza, ma possiamo anticipare che puo' essere usata per ottenere rapidamente una stima approssimativa della probabilità di qualcosa o come semplice test empirico per individuare valori anomali 
+Perche' questo ci e' utile? Lo vedremo tra poco quando parleremo degli intervalli di confidenza, e dopodomani quando andremo a testare delle ipotesi ma possiamo anticipare che puo' essere usata  come semplice test empirico per individuare valori anomali 
+
+1.5 IQR (fence of the boxplot) -> If the data are normally distributed, the fence will be 2.7 standard deviations from the mean, so cases outside of it will be quite rare (0.4%)
 -->
 
 ---
@@ -358,20 +362,24 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 ---
 ## The Standard Normal distribution in practice
 
-<span style="display:block; height:30px;"></span>
-
 <div class="columns">
 <div>
 
+<span style="display:block; height:30px;"></span>
+
 :pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
 </div>
 <div>
 
+<span style="display:block; height:360px;"></span>
+
 </div>
 </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = \text{ ?}$
 
 ---
 ## The Standard Normal distribution in practice
@@ -385,8 +393,27 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{176 - 170}{9.5} = 0.63$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = 1 - 0.7357 =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.26$
+</div>
+<div>
+
+<span style="display:block; height:360px;"></span>
+
+</div>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = \text{ ?}$
+
+---
+## The Standard Normal distribution in practice
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{176 - 170}{9.5} = 0.63$
 
 </div>
 <div>
@@ -399,6 +426,34 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 
 </div>
 </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = \text{ ?}$
+
+---
+## The Standard Normal distribution in practice
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{176 - 170}{9.5} = 0.63$
+
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/normal_and_CLT/normal_table_zoom_example1.jpg" img height="280px" border="4px"/>
+</center>	
+
+</div>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = 1 - 0.7357 = 0.264$
 
 ---
 ### Exercise #7
@@ -666,7 +721,7 @@ $$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $\text{BMI} \geq 30$ in the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
 
-<span style="display:block; height:30px;"></span>
+<span style="display:block; height:10px;"></span>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{x - \mu}{\sigma} = \frac{30 - 21.5}{3.1} = 2.74$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 30) = 1 - 0.9969$
@@ -858,6 +913,12 @@ Ci sono altri modi di risolvere l'esercizio e ne andremo a vedere un secondo in 
 </div>
 </div>
 
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 18.5) = \mathcal{P}(z < -0.97) = \mathcal{P}(z \geq 0.97)$
+
+</div>
+
 <!-- Nelle tavoole non abbiamo -0.97, ma sappiamo che la normale e' simmetrica rispetto alla mediana/media/moda, quindi sappiamo che area > 0.97 == area < -0.97 -->
 
 
@@ -881,20 +942,22 @@ Ci sono altri modi di risolvere l'esercizio e ne andremo a vedere un secondo in 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 25) = 0.1314$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_{18.5} = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 18.5) = 1 - 0.8340 =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.166$
 </div>
 
 </div>
 <div>
 
-<span style="display:block; height:100px;"></span>
-
 <center>
-<img src="./img/normal_and_CLT/area_normal_symmetrical.png" img height="250px" border="4px"/>
+<img src="./img/normal_and_CLT/normal_table.jpg" img height="450px" border="4px"/>
 </center>
 
 </div>
+</div>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 18.5) = \mathcal{P}(z < -0.97) = \mathcal{P}(z \geq 0.97) = 1 - 0.8340 = 0.166$
+
 </div>
 
 <!-- Andiamo quindi a vedere l'area fino a 0.97 e poi a calcolare quella oltre 0.97 facendo 1- -->
@@ -918,7 +981,7 @@ Ci sono altri modi di risolvere l'esercizio e ne andremo a vedere un secondo in 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 25) = 0.8686$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 25) = 0.1314$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \leq 18.5) = 0.166$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 18.5) = 0.166$
 
 
 </div>
@@ -1072,7 +1135,7 @@ La forma della distribuzione delle medie campionarie è approssimativamente norm
 
 <!-- e per la legge dei grandi numeri, quando n tende all'infinito, la media del campioname è uguale alla media della popolazione.
 
-SE per esempio nei nostri lanci di monetine l'esperimento lo avessimo fatto non per 1000 ma per 100k volte, avremmo visto un'approssimazione piu' normale e meno bi-modale
+SE per esempio nei nostri lanci di monetine l'esperimento lo avessimo fatto non per 5 ma per 50 0 500 volte, avremmo visto un'approssimazione piu' normale e meno bi-modale
 
 La varianza della distribuzione campionaria  è il rapporto tra tra la varianza della popolazione e la dimenzione del campione usato per calcolarla 
 
@@ -1101,7 +1164,7 @@ Nella maggior parte delle situazioni pratiche, n=30 e' soddisfacente, ma l'appro
 
 <!-- Standard deviation: Si riferisce alle osservazioni, misura la variabilita' delle osservazioni
 
-Standard error: si riferosce alla stima di un parametro, misure l'incertezza nella statistica ottenuta da un campione
+Standard error: si riferosce alla stima di un parametro, misure l'incertezza nella statistica ottenuta da un campione, ci dice quanto la media osservata e' diversa dalla media reale della popolazione
  -->
 
 ---
@@ -1113,8 +1176,8 @@ Standard error: si riferosce alla stima di un parametro, misure l'incertezza nel
 <span style="display:block; height:40px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; 95\% of the sample means 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; are within 1.96 SE from the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population mean
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; are within ~$2 \times \text{SE}$ from 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  population mean
 
 </div>
 <div>
@@ -1266,12 +1329,7 @@ Questo paramentro ha pero' un errore e il suo grado di attendibilita' viene valu
 
 <!-- E come? Attraverso gli CI, che stimano il parametro della popolazione tramite un intervallo di valori che, con una probabilità prefissata, comprende il vero valore del parametro sconosciuto. 
 
-Per esempio il 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione, quindi i valori che finiscono nell'intervallo di 2 SE dalla media hanno il 95% di probabilita' di inclidere il vero parametro sconosciuto 
-
-I CI vengono costruti attorno alla stima puntuale 
-
-Infatti non abbiamo mu e non abbiamo sigma, ma abbiamo la media e la varianza campionaria (le nostre stime puntuali).
--->
+Per esempio il 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione, quindi i valori che finiscono nell'intervallo di 2 SE dalla media hanno il 95% di probabilita' di inclidere il vero parametro sconosciuto -->
 
 ---
 ##  Confidence intervals for means
@@ -1339,6 +1397,10 @@ https://hbsc.org
 </center>
 
 </div>
+
+<!-- I CI vengono costruti attorno alla stima puntuale 
+
+Infatti non abbiamo mu e non abbiamo sigma, ma abbiamo la media e la varianza campionaria (le nostre stime puntuali). -->
 
 ---
 ##  Confidence intervals for means
@@ -1739,12 +1801,16 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 ---
 ## Confidence intervals for differences of means
 
+<span style="display:block; height:1px;"></span>
+
 :pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
 
 <!-- Ci sono casi in cui vogliamo stimare la differenza tra medie di una popolazione (per esempio tra i pazienti che hanno ricevuto un nuovo trattamento e quelli che hanno avuto la cura standard o il placebo) -->
 
 ---
 ## Confidence intervals for differences of means
+
+<span style="display:block; height:1px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
 
@@ -1770,6 +1836,8 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 
 ---
 ## Confidence intervals for differences of means
+
+<span style="display:block; height:1px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
 
@@ -2106,15 +2174,27 @@ Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno de
 :pushpin: &nbsp;&nbsp;&nbsp; How many patients show gastrointestinal side effects from a   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new medication?
 
+</div>
+
+<!-- In campo medico ci sono molte questioni legate alla proporzione di pazienti con una certa caratteristica. Per esempio la proporzione di pazienti con una malattia, la proporzione di pazienti che necessita un ricovero, o quella che soffre di effetti collaterali dopo l'assunzione di un farmaco  -->
+
+---
+## Confidence intervals for proportions
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%" >
+
+:pushpin: &nbsp;&nbsp;&nbsp; How many patients show gastrointestinal side effects from a   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new medication?
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\pi, \frac{\pi \times (1-\pi)}{n})$ &nbsp; $\rightarrow \text{CLT}$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}}$, &nbsp; where $\bar{p} = \frac{m}{n}$
 
 </div>
 
-<!-- In campo medico ci sono molte questioni legate alla proporzione di pazienti con una certa caratteristica. Per esempio la proporzione di pazienti con una malattia, la proporzione di pazienti che necessita un ricovero, o quella che soffre di effetti collaterali dopo l'assunzione di un farmaco  
-
-Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una stima non distorta della proporzione della popolazione e la distribuzione campionaria si approssima ad una normale -->
+<!-- Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una stima non distorta della proporzione della popolazione e la distribuzione campionaria si approssima ad una normale -->
 
 ---
 ## Confidence intervals for proportions
@@ -2283,7 +2363,7 @@ HIV positive pregnant women randomized to receive AZT or placebo -->
 <div style="font-size: 90%" >
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p}_{\text{i}} - \bar{p}_{\text{c}} = \frac{m_i}{n_i} - \frac{m_c}{n_c} = \frac{13}{180} - \frac{40}{183} = 0.07 - 0.22 = -0.15$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{SE} = \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{SE} = \sqrt{\frac{\bar{p}_i \times (1-\bar{p}_i)}{n_i}+\frac{\bar{p}_c \times (1-\bar{p}_c)}{n_c}}= \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
 
 </div>
 
@@ -2301,8 +2381,8 @@ HIV positive pregnant women randomized to receive AZT or placebo -->
 
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p}_{\text{i}} - \bar{p}_{\text{c}} = \frac{m_i}{n_i} - \frac{m_c}{n_c} = \frac{13}{180} - \frac{40}{183} = 0.07 - 0.22 = -0.15$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{SE} = \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p}_{\text{i}} - \bar{p}_{\text{c}}  = -0.15$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{SE} = 0.036$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{p}_{\text{i}} - \bar{p}_{\text{c}} -1.96 \times \hat{SE}; \text{ } \bar{p}_{\text{i}} - \bar{p}_{\text{c}} +1.96 \times \hat{SE}) =$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (-0.15 - 0.007; \text{ }  -0.015 + 0.07) = (-0.22 ; -0.08)$ 
