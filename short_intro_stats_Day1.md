@@ -58,20 +58,6 @@ style: |
 </div>
 
 ---
-## How to ask questions/give feedback
-
-<span style="display:block; height:10px;"></span>
-
-<img src="./img/introduction/qr_code.png" img height="300px" align="right" border="4px"/>
-
-<span style="display:block; height:60px;"></span>
-
-- Interrupt me
-- Take advantage of start/end/breaks
-- Send emails alessia.visconti@unito.it
-- Use the shared pad: https://etherpad.wikimedia.org/p/intro_stats_2024_specialita <br/> (or https://t.ly/vRbvy)
-
----
 ![bg opacity](./img/backgrounds/Introduction_bg.png)
 
 <span style="display:block; height:190px;"></span>
@@ -81,45 +67,205 @@ style: |
 ---
 ## Why are we here?
 
+---
+## Will you buy this mouthwash?
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/introduction/colluttorio.png" img height="450px" border="4px"/>
+</center>
+
+<!-- CHIEDERE SEMPRE Perch&eacute; RISPONDONO COSI'
+
+Cosa vuol dire "fino al"? Se eliminasse il 10% dei batteri e raggiungesse il 20% della bocca, questo annuncio sarebbe ancora vero, o lo dobbiamo segnalare per pubblicita' ingannevole? Unico modo per renderlo falso e' che elimini tutti batteri e raggiunga piu' di tutta la bocca (due condizioni abbastanza improbabili, nel primo caso, o impossibili, nel secondo) -->
+
 
 ---
-## &nbsp;
+## What happens after WWII?
 
 <div class="columns">
 <div>
 
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/introduction/Lefthandness_covered.png" img height="450px" border="4px"/>
+</center>
+
 </div>
 <div>
 
+
+</div>
+</div>
+
+<!--  DESCRIVERE BENE IL GRAFICO Come prosegue questa curva? -->
+
+---
+## What happens after WWII?
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
 <center>
-<img src="./img/introduction/220px-Florence_Nightingale_(H_Hering_NPG_x82368).jpg" img height="500px" align="right" border="4px"/>
+<img src="./img/introduction/Lefthandness.png" img height="450px" border="4px"/>
+</center>
+
+</div>
+<div>
+
+
+</div>
+</div>
+
+<!-- Cosa sta succedendo? Che messaggio avrei potuto passare se avessi interrotto la serie temporale al 1940, invece di proseguire sino ai giorni nostri?
+
+Quali sono le cause di questa curva? -->
+
+---
+## Civic education, about 1935
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/introduction/Lefthandness.png" img height="450px" border="4px"/>
+</center>
+
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/introduction/lefthandess_2.jpeg" img height="450px" border="4px"/>
 </center>
 
 </div>
 </div>
 
+ <!-- Ricordiamoci che per interpretare i numeri dobbiamo anche usare le nostre conoscenze sul problema in questione. om qiesyp caso sulle norme sociali che forzavano i mancini a "correggersi" --> -->
+
 ---
-## Florence Nightingale
+## Storks and babies
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/introduction/storks.png" img height="420px" border="4px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+<br/> Sies, H., *A new parameter for sex education*. Nature, 1988, doi:10.1038/332495a0
+
+</div>
+
+<!-- 
+DESCRIVERE BENE IL GRAFICO.
+
+Qual e' lo scopo di questo grafico? Convincerci che c'e' una relazione tra questi due valori
+
+Artefatto dovuto alla doppia scala, vado a trasformare le due distribuzioni empiriche (ovvero la collezione di valori raccolti) in modo che "sembrino" di avere lo stesso andamento. C'e' un sito che ne raccoglie centinaia di questi esempi
+-->
+
+---
+## Milk and tumours
+
+<span style="display:block; height:1px;"></span>
+
+- English women, who consume large quantities of milk, develop some types of tumours 18 times more frequently than Japanese women, who rarely drink it
+* Tumours usually appear late in life.
+* British women live, on average, 12 years more than Japanese women
+
+<span style="display:block; height:50px;"></span>
+
+<div style="font-size: 50%" align="right">
+
+<br/> Huff, D., *How to lie with statistics*. W. W. Norton & Company, 1954
+
+</div>
+
+<!-- Chiedere cosa ne pensano mano a mano che aggiungo informazione.
+
+Quello che viene fatto qui e' un post-hoc fallacy. (in latino: Post hoc ergo propter hoc, Dopo di ci`o, quindi a causa di ci`o) `e un’argomentazione apparentemente valida ma fondata su un errore logico in cui si crede che, perch ́e l’evento Y accade dopo l’evento X, allora X debba aver causato Y . L’errore logico consiste nel concludere che ci sia un nesso causale quando `e presente solo un nesso temporale (prima bevo tanto latte, poi mi viene un tumore) 
+
+Per tornare a vaccino e autismo
+La maggioranza delle malattie che secondo alcuni (profani) sarebbero sorte "a causa del vaccino" iniziano a manifestarsi (o sono diagnosticate) proprio nell'età in cui ci si vaccina. Scientificamente smentita, una delle affermazioni che si ripetono continuamente è: "il bambino stava bene, dopo la vaccinazione è diventato autistico".
+
+Correlation is not causation, Correlazione non e' causalita', "dopo di" non significa "a causa di"
+-->
+
+---
+## Why are we here?
+
+<span style="display:block; height:10px;"></span>
+
+- because "numbers" (or rather, the way they are presented) are sometimes deceiving
+
 
 <div class="columns">
 <div>
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./img/introduction/correlation.png" img height="185px" border="4px"/>
+</center>
 
 </div>
 <div>
 
 <center>
-<img src="./img/introduction/220px-Florence_Nightingale_(H_Hering_NPG_x82368).jpg" img height="500px" align="right" border="4px"/>
+<img src="./img/introduction/tobacco.png" img height="330px" border="4px"/>
 </center>
 
 </div>
 </div>
 
-<!-- Florence Nightingale era un'infermiera britannica che e' considerata la madre dell'infermieristica come la intendiamo oggi, un titolo che si e' guadagnato durante la guerra di Crimea, quando era sovrintendente di un ospedale di Instambul. 
 
-Appena arrivata ad Instabul, Florence, si accorge subito delle pessime condizioni di sovraffollameto e pulizia, ma oltre a cercare di mettere una pezza, pulendo e disinfettando tutto con le sue infermiere, si mette anche a raccogliere dati, soprattutto sulle cause di morte dei soldati. -->
+<!-- Statisticulation `e un termine inventato da Darrell Huff nel suo libro “How to lie with statistics” (pubblicato nel 1954). Viene usato per descrivere tutti quei casi un cui le Scienze statistiche vengono usate in modo fuorviante, sia accidentalmente (il ricercatore non si accorge che l'eta' media in Inghilterra e Giappone e' diversa) ma anche volontariamente (l'autismo viene dopo il vaccino, il vaccino causa l'autismo). Vedi anche Framing.
+
+The numbers have no way of speaking for themselves. We speak for them. We imbue them with meaning.
+
+— Nate Silver, The Signal and the Nois
+-->
 
 ---
-## Florence Nightingale
+## Why are we here?
+
+<span style="display:block; height:60px;"></span>
+
+> Why do soldiers die?
+
+<!-- Ma i numeri non ci ingannano solo, ci permettono anche di rispondere a delle domande e prendere delle decisioni -->
+
+---
+## Who is this person?
+
+<span style="display:block; height:1px;"></span>
+
+
+<center>
+<img src="./img/introduction/220px-Florence_Nightingale_(H_Hering_NPG_x82368).jpg" img height="450px" align="right" border="4px"/>
+</center>
+
+
+<!-- Serve qualcuno che non solo si ponga la domanda, ma sappia anche come rispondere. 
+
+Sapete chi e questa persona?
+
+Florence Nightingale era un'infermiera britannica che e' considerata la madre dell'infermieristica come la intendiamo oggi, un titolo che si e' guadagnato durante la guerra di Crimea, quando era sovrintendente di un ospedale di Instambul. 
+
+Appena arrivata ad Instabul, Florence, si accorge subito delle pessime condizioni di sovraffollameto e pulizia, ma oltre a cercare di mettere una pezza, pulendo e disinfettando tutto con le sue infermiere,  si mette anche a raccogliere dati, soprattutto sulle cause di morte dei soldati -->
+
+---
+## Why do soldiers die?
 
 <span style="display:block; height:1px;"></span>
 
@@ -135,6 +281,182 @@ E cosa concludiamo?
 Che migliorare le condizioni igenice (pulizia, luce, ventilazione, ...) degli ospedali, aumenta le possibilita' di salvare il paziente. 
 
 E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e presentare i dati, e nel prendere delle decisioni basate su di essi. Insomma, grazie alla statistica. -->
+
+
+---
+## Why are we here?
+
+<span style="display:block; height:30px;"></span>
+
+- because "numbers" (or rather, the way they are presented) are sometimes deceiving
+- Why “numbers” (and the way they are presented) help us describe, understand, and change the world
+
+---
+## Why are we here?
+
+<span style="display:block; height:30px;"></span>
+
+- to learn how to read, understand, and critically analyse scientific papers
+- to be able to carry out research involving the acquisition, processing, and analysis of data
+
+<span style="display:block; height:120px;"></span>
+
+<!-- <div style="font-size: 150%" align="right">
+<b>Statistica ma anche data literacy</b>
+</div> -->
+
+---
+
+<span style="display:block; height:200px;"></span>
+
+
+## Scientific research
+
+<!-- Iniziamo a spostarci piu' verso il terreno che ci interessa, ma prima facciamo un'escursus in un argomento un po' trasversale, ovvero come avviene la ricerca scientifica e che ruolo gioca la statistica -->
+
+---
+## Problem
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+> Why do soldiers die?
+
+</div>
+<div>
+
+
+</div>
+</div>
+
+---
+## Plan
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+- How do we answer?
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/introduction/220px-Florence_Nightingale_(H_Hering_NPG_x82368).jpg" img height="450px" align="right" border="4px"/>
+
+</div>
+</div>
+
+<!-- Decido di andare in un ospedale da campo per raccogliere dati 
+
+ In the wise words of Dale Carnegie, 'An hour of planning can save you 10 hours of doing'.
+-->
+
+---
+## Data
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/introduction/reparto-ospedaliero-a-scutari-joseph-austin-benwell-1856-circa_b35770b5_800x481.jpg" img height="430px" align="right" border="4px"/>
+
+<div style="font-size: 50%" align="right">
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> Scutari Hospital. J.A. Benwell. about 1856
+
+</div>
+
+<!-- Poi si raccolgono i dati -->
+
+---
+## Analysis 
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/introduction/Nightingale-mortality.png" img height="480px"  border="4px" align="right"/>
+</center>
+
+<!-- Questo vuol dire anche andarli a presentare con altri numeri (statistiche) o con rappresentazioni grafiche, come vedremo la prossima lezione -->
+
+---
+## Conclusions
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/introduction/Unknown_artist_-_Florence_Nightingale_(1820_-_1910)_at_Scutari_Hospital_in_Turkey_around_1855_-_(MeisterDrucke-1007503).jpg" img height="440px"  border="4px" align="right"/>
+
+
+<div style="font-size: 50%" align="right">
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>  Florence Nightingale (1820 - 1910) at Scutari Hospital in Turkey around 1855, unknown artist
+
+</div>
+
+<!-- E cosa concludiamo? 
+Che migliorare le condizioni igenice (pulizia, luce, ventilazione, ...) degli ospedali, aumenta le possibilita' di salvare il paziente.  -->
+
+---
+## The data problem-solving cycle 
+
+<span style="display:block; height:2px;"></span>
+
+<center>
+<img src="./img/introduction/PPDAC.png" img height="450px" border="0px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
+
+</div>
+
+
+<!-- e' il processo circolare che definisce i passi necessari per risolvere un problema scientifico attraverso l’analisi statistica dei dati. Un esempio `e il PPDAC cycle.
+
+ Problem-Plan-Data-Analysis-Conclusion cycle. 
+ 
+ Nella prima fase si definisce un problema, solitamente formulato come una domanda di ricerca. 
+ Nella parte di Planning, il ricercatore decide come rispondere alla domanda di ricerca. Solitamente ignorata, ma assoulutamente cruciale, GARBACE IN, GARBACE OUT. Questo include, 
+ i) verificare se esiste una collezione di dati di alta qualit`a che pu`o essere usata, ii) decidere e giustificare perch ́e sia necessario raccogliere nuove collezioni di dati, e quali dati siano necessari e come debbano essere raccolti 
+ iii) decidere e giustificare da qua- le Popolazione i dati verranno raccolti, tenendo anche in considerazione considerazione etiche e logistiche (per esempio, questionari che richiedano un tempo troppo lungo per essere completati), 
+ iv) decidere e giustificare quando e dove la raccolta dati debba iniziare e finire, 
+ v) decidere e giustifi- care i metodi analitici che verranno utilizzati, e 
+ vi) definire delle probabili risposte alla domanda di ricerca (ipotesi)
+ 
+ Nella terza fase, i dati vengono raccolti, organizzati, puliti e verificati. 
+ Nella quarta fase, i dati vengono esplora- ti, visualizzati e analizzati, per esempio attraverso la creazione di tabelle e/o grafici, di statistiche descrittive. In questo contesto si inseriscono anche il Test di ipotesi e il calcolo e l’interpretazione di un Intervallo di confidenza di una Statistica. 
+ Nell’ultima fase, i risultati vengono interpre- tati e comunicati e usati per formulare nuove domande di ricerca la cui risposta verr`a ricercata nel prossimo PPDAC cycle.
+-->
+
+---
+## Inductive reasoning
+
+<span style="display:block; height:60px;"></span>
+
+Derive a general rule from observations
+
+<!-- 
+
+Deduttivo: tutti gli uomini sono mortali, Pinco Pallo e' un uomo, Pinco Pallo e' mortale.
+Induttivo: vedo che diversi uomini muoiono, tutti gli uomini sono mortali,
+
+Dedittivo: per imparare una lingua prima imparo la grammatica, poi il vocabolario, poi la sintassi e poi parlo
+Induttivo: ascolto gli altri parlare e mi arrangio
+Insieme: in realta' nella vita usiamo insieme sia induttivo che deduttivom per esempio impariamo delle regole a scuola e dei modi di dire nel paese
+
+
+Quello che abbiamo fatto e' stato in taking particular instances and trying to work out general conclusions.
+
+we don’t know the customs in a community about kissing female friends on the cheek, and we have to try to work it out by observing whether people kiss once, twice, three times, or not at all.
+
+Questo e' il contrario del ragionamento deduttivo, using the rules of cold logic to work from general premises to particular conclusions. 
+
+If the law of the country is that cars should drive on the right, then we can deduce that on any particular occasion it is best to drive on the right. But induction works the other way,  -->
+
 
 ---
 ## What is Statistics?
@@ -175,7 +497,7 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 </center>
 
 
-<span style="display:block; height:60px;"></span>
+<span style="display:block; height:10px;"></span>
 
 <div style="font-size: 50%">
 	
@@ -192,7 +514,7 @@ Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-f
 <span style="display:block; height:10px;"></span>
 
 - How to sample from a population
-- How to use measure of centrality and dispersion
+- How to use Measure of central tendency and dispersion
 - How to make estimation from a sample
 - How to interpret confidence intervals
 - How to make and test hypotheses
@@ -216,6 +538,30 @@ Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-f
 - Understand the difference between population and sample
 - Understand the difference between sampling strategies
 - Understand sampling error and bias
+
+---
+
+<span style="display:block; height:2px;"></span>
+
+<center>
+<img src="./img/sampling/PPDAC.png" img height="500px" border="0px"/>
+</center>
+
+<span style="display:block; height:5px;"></span>
+
+<div style="font-size: 50%" align="right">
+
+Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
+
+</div>
+
+<!-- Nella parte di Planning, il ricercatore decide come rispondere alla domanda di ricerca. Solitamente ignorata, ma assoulutamente cruciale, GARBACE IN, GARBACE OUT. Questo include, 
+ i) verificare se esiste una collezione di dati di alta qualit`a che pu`o essere usata, ii) decidere e giustificare perch ́e sia necessario raccogliere nuove collezioni di dati, e quali dati siano necessari e come debbano essere raccolti 
+ iii) decidere e giustificare da qua- le Popolazione i dati verranno raccolti, tenendo anche in considerazione considerazione etiche e logistiche (per esempio, questionari che richiedano un tempo troppo lungo per essere completati), 
+ iv) decidere e giustificare quando e dove la raccolta dati debba iniziare e finire, 
+ v) decidere e giustifi- care i metodi analitici che verranno utilizzati, e 
+ vi) definire delle probabili risposte alla domanda di ricerca (ipotesi) -->
+
 
 --- 
 ## Population *vs*  &nbsp;sample
@@ -250,6 +596,265 @@ Campione sono quelli che siamo andati a reclutare .
 
 Ovviamente questi campioni devono essere scelti con procedimenti e regole che garantiscano la capacità del campione di rappresentare la popolazione
 -->
+
+---
+### Exercise #1
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
+</center>
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the population of this study?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+
+</div>
+
+<!-- <div style="font-size: 50%" align="right">
+
+Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", JAMA, 2020, doi:10.1001/jama.2020.17021
+
+</div> -->
+
+<style>
+  #countdown_exercise_1{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_1.running {
+    background-color: green;
+  }
+  #countdown_exercise_1.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_1"></button>
+
+<script>
+<!--
+const countdown_exercise_1= document.getElementById("countdown_exercise_1");
+const seconds_exercise_1= 60; // seconds_exercise_1
+let timeLeft_exercise_1= seconds_exercise_1;
+let timerInterval_exercise_1= null;
+
+function formatTime_exercise_1(seconds_exercise_1) {
+  const minutes = Math.floor(seconds_exercise_1/ 60);
+  const remainingseconds_exercise_1= seconds_exercise_1% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_1).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_1() {
+  countdown_exercise_1.textContent = formatTime_exercise_1(timeLeft_exercise_1);
+}
+
+function startTimer_exercise_1() {
+  if (timerInterval_exercise_1=== null) {
+    countdown_exercise_1.classList.add('running');
+    countdown_exercise_1.classList.remove('finished');
+    timerInterval_exercise_1= setInterval(() => {
+      if (timeLeft_exercise_1> 0) {
+        timeLeft_exercise_1--;
+        updateButton_exercise_1();
+      } else {
+        clearInterval(timerInterval_exercise_1);
+        timerInterval_exercise_1= null;
+        countdown_exercise_1.classList.remove('running');
+        countdown_exercise_1.classList.add('finished');
+        countdown_exercise_1.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_1();
+  }
+}
+
+function pauseTimer_exercise_1() {
+  clearInterval(timerInterval_exercise_1);
+  timerInterval_exercise_1= null;
+  countdown_exercise_1.classList.remove('running');
+}
+
+function resetTimer_exercise_1() {
+  timeLeft_exercise_1= seconds_exercise_1;
+  updateButton_exercise_1();
+  countdown_exercise_1.classList.remove('finished');
+  countdown_exercise_1.classList.remove('running');
+  timerInterval_exercise_1= null;
+}
+
+countdown_exercise_1.addEventListener("click", () => {
+  if (countdown_exercise_1.classList.contains('finished')) {
+    resetTimer_exercise_1();
+  } else {
+    startTimer_exercise_1();
+  }
+});
+
+updateButton_exercise_1();
+-->
+</script>
+
+
+---
+### Exercise #1 -- Solution
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
+</center>
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the population of this study?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; :white_check_mark: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+
+</div>
+
+
+---
+### Exercise #2
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
+</center>
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the sample used in this study?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+
+</div>
+
+<style>
+  #countdown_exercise_1bis{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_1bis.running {
+    background-color: green;
+  }
+  #countdown_exercise_1bis.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_1bis"></button>
+
+<script>
+<!--
+const countdown_exercise_1bis= document.getElementById("countdown_exercise_1bis");
+const seconds_exercise_1bis= 60; // seconds_exercise_1bis
+let timeLeft_exercise_1bis= seconds_exercise_1bis;
+let timerInterval_exercise_1bis= null;
+
+function formatTime_exercise_1bis(seconds_exercise_1bis) {
+  const minutes = Math.floor(seconds_exercise_1bis/ 60);
+  const remainingseconds_exercise_1bis= seconds_exercise_1bis% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_1bis).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_1bis() {
+  countdown_exercise_1bis.textContent = formatTime_exercise_1bis(timeLeft_exercise_1bis);
+}
+
+function startTimer_exercise_1bis() {
+  if (timerInterval_exercise_1bis=== null) {
+    countdown_exercise_1bis.classList.add('running');
+    countdown_exercise_1bis.classList.remove('finished');
+    timerInterval_exercise_1bis= setInterval(() => {
+      if (timeLeft_exercise_1bis> 0) {
+        timeLeft_exercise_1bis--;
+        updateButton_exercise_1bis();
+      } else {
+        clearInterval(timerInterval_exercise_1bis);
+        timerInterval_exercise_1bis= null;
+        countdown_exercise_1bis.classList.remove('running');
+        countdown_exercise_1bis.classList.add('finished');
+        countdown_exercise_1bis.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_1bis();
+  }
+}
+
+function pauseTimer_exercise_1bis() {
+  clearInterval(timerInterval_exercise_1bis);
+  timerInterval_exercise_1bis= null;
+  countdown_exercise_1bis.classList.remove('running');
+}
+
+function resetTimer_exercise_1bis() {
+  timeLeft_exercise_1bis= seconds_exercise_1bis;
+  updateButton_exercise_1bis();
+  countdown_exercise_1bis.classList.remove('finished');
+  countdown_exercise_1bis.classList.remove('running');
+  timerInterval_exercise_1bis= null;
+}
+
+countdown_exercise_1bis.addEventListener("click", () => {
+  if (countdown_exercise_1bis.classList.contains('finished')) {
+    resetTimer_exercise_1bis();
+  } else {
+    startTimer_exercise_1bis();
+  }
+});
+
+updateButton_exercise_1bis();
+-->
+</script>
+
+
+---
+### Exercise #2 -- Solution
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
+</center>
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the sample used in this study?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS :white_check_mark: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+
+</div>
 
 ---
 ## Opportunity *vs*  &nbsp;random sample
@@ -521,32 +1126,128 @@ ethnic group or school type.
 -->
 
 ---
-### Exercise #1
+### Exercise #3
 
-:question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  on cheese consumption to every 5th customer entering
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  the supermarket
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions  on cheese
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  consumption to every 5th customer entering the supermarket
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above 
 
----
-### Exercise #1 -- Solution
+</div>
 
-:question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  on cheese consumption to every 5th customer entering
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  the supermarket
+<span style="display:block; height:10px;"></span>
+
+<style>
+  #countdown_exercise_2{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_2.running {
+    background-color: green;
+  }
+  #countdown_exercise_2.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_2"></button>
+
+<script>
+<!--
+const countdown_exercise_2= document.getElementById("countdown_exercise_2");
+const seconds_exercise_2= 60; // seconds_exercise_2
+let timeLeft_exercise_2= seconds_exercise_2;
+let timerInterval_exercise_2= null;
+
+function formatTime_exercise_2(seconds_exercise_2) {
+  const minutes = Math.floor(seconds_exercise_2/ 60);
+  const remainingseconds_exercise_2= seconds_exercise_2% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_2).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_2() {
+  countdown_exercise_2.textContent = formatTime_exercise_2(timeLeft_exercise_2);
+}
+
+function startTimer_exercise_2() {
+  if (timerInterval_exercise_2=== null) {
+    countdown_exercise_2.classList.add('running');
+    countdown_exercise_2.classList.remove('finished');
+    timerInterval_exercise_2= setInterval(() => {
+      if (timeLeft_exercise_2> 0) {
+        timeLeft_exercise_2--;
+        updateButton_exercise_2();
+      } else {
+        clearInterval(timerInterval_exercise_2);
+        timerInterval_exercise_2= null;
+        countdown_exercise_2.classList.remove('running');
+        countdown_exercise_2.classList.add('finished');
+        countdown_exercise_2.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_2();
+  }
+}
+
+function pauseTimer_exercise_2() {
+  clearInterval(timerInterval_exercise_2);
+  timerInterval_exercise_2= null;
+  countdown_exercise_2.classList.remove('running');
+}
+
+function resetTimer_exercise_2() {
+  timeLeft_exercise_2= seconds_exercise_2;
+  updateButton_exercise_2();
+  countdown_exercise_2.classList.remove('finished');
+  countdown_exercise_2.classList.remove('running');
+  timerInterval_exercise_2= null;
+}
+
+countdown_exercise_2.addEventListener("click", () => {
+  if (countdown_exercise_2.classList.contains('finished')) {
+    resetTimer_exercise_2();
+  } else {
+    startTimer_exercise_2();
+  }
+});
+
+updateButton_exercise_2();
+-->
+</script>
+
+
+---
+### Exercise #3 -- Solution
+
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions  on cheese
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  consumption to every 5th customer entering the supermarket
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above :white_check_mark: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above &nbsp; :white_check_mark: 
+
+</div>
 
 ---
 ## Selection bias
@@ -554,63 +1255,198 @@ ethnic group or school type.
 <div class="columns">
 <div>
 
-<span style="display:block; height:50px;"></span>
-* Survivor bias
-* Volunteer bias
-* Lost to follow up bias
-* $\dots$
+<span style="display:block; height:10px;"></span>
+
+- Survivor bias
 
 </div>
 <div>
 
+<span style="display:block; height:5px;"></span>
+
 <img src="./img/sampling/Survivorship-bias.svg.png" img height="450px" align="right" border="0px"/>
 
+</div>
 </div>
 
 <!-- Anche se facciamo attenzione i nostri sample possono avere delle distorsioni
 
 - voglio andare a vedere dove gli aerei da guerra vengono colpiti per rinforzarli
-- - volontari alsop SES e soprattuto donne
-- sto testando un nuovo farmaco, le persone che hanno i side effect peggiori possono interromperlo, o quelli per cui non funziona possono morire -->
+e l’errore logico che si commette quando si prendano in considerazione solo gli elementi che hanno superato un determinato pro- cesso di selezione, trascurando i restanti; tipicamente ci`o avviene poich ́e i primi sono fisicamente disponibili/visibili e i secondi no. -->
 
 ---
-## Selection bias in the wild
+## Selection bias
 
-<span style="display:block; height:50px;"></span>
+<span style="display:block; height:10px;"></span>
 
-<center>
-<img src="./img/sampling/UKBB_bias.png" img height="300px" border="4px"/>
-</center>
+- Survivor bias
 
-<!-- Persino in un campione di 0.5M di persone come la UKBB, si osserva che non rispondere o rispondere non lo so a questionari (109 domande, in questo studio) non e' casuale e dipende da foattori genetici e ambientali -->
+<div style="font-size: 90%">
 
----
-### Exercise #2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer lasting"*
 
-:question: &nbsp;&nbsp;&nbsp; Researchers send pensioners a snail mail to ask about their 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mental health  after the COVID-19 lockdown. Pensioners are  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  then asked to post their  answer back
+</div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Will their study suffer any bias?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) No
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Yes, volunteer bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yes, survivor bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both b) and c)
+<!-- Just as new buildings are being built every day and older structures are constantly torn down, the story of most civil and urban architecture involves a process of constant renewal, renovation, and revolution. Only the most beautiful, useful, and structurally sound buildings survive from one generation to the next. This creates a selection effect where the ugliest and weakest buildings of history have been eradicated (disappearing from public view, leaving the visible impression that all earlier buildings were more beautiful and better built).
+-->
 
 ---
-### Exercise #2 -- Solution
+## Selection bias
 
-:question: &nbsp;&nbsp;&nbsp; Researchers send pensioners a snail mail to ask about their 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mental health  after the COVID-19 lockdown. Pensioners are  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  then asked to post their  answer back
+<span style="display:block; height:10px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Will their study suffer any bias?
+- Survivor bias
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) No
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Yes, volunteer bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yes, survivor bias
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Both b) and c) :white_check_mark: 
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer lasting"*
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"I don't understand why, nowadays, one should to do X,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I never did it, and I'm still here to tell it"*
+
+<div>
+
+<!-- 
+
+X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when helmets became standard gear, the amount of people being treated for head wounds skyrocketed. But thats because they would have been killed without the helmet. 
+-->
+
+---
+## Selection bias
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+- Survivor bias
+- Volunteer bias
+
+
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<img src="./img/sampling/sampling_bias_comics.jpeg" img height="450px" align="right" border="4px"/>
+
+</div>
+</div>
+
+<!-- - occorre quando i volontari hanno caratteristiche diverse rispet- to alla Popolazione che si vuole studiare.  volontari alsop SES e soprattuto donne
+- occorre quando uno o piu` soggetti di uno studio di- ventano irreperibili durante lo studio stesso sto testando un nuovo farmaco, le persone che hanno i side effect peggiori possono interromperlo, o quelli per cui non funziona possono morire -->
+
+---
+## Selection bias
+
+<span style="display:block; height:10px;"></span>
+
+- Survivor bias
+- Volunteer bias
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  A teacher wonders if extra lessons improve exam performance.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She prepares them, inviting interested students to sign up. 
+
+</div>
+
+<!-- Self-selection bias is likely because students who are more serious about school are more likely to sign up  -->
+
+---
+## Selection bias
+
+<span style="display:block; height:10px;"></span>
+
+- Survivor bias
+- Volunteer bias
+- Lost to follow up bias
+
+---
+## Selection bias
+
+<span style="display:block; height:10px;"></span>
+
+- Survivor bias
+- Volunteer bias
+- Lost to follow up bias
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is tesing a new drug on a court of 100 cancer patients 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow up. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What do we conclude about this new drug knowing that these 30 people...
+
+
+</div>
+
+---
+## Selection bias
+
+<span style="display:block; height:10px;"></span>
+
+- Survivor bias
+- Volunteer bias
+- Lost to follow up bias
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is tesing a new drug on a court of 100 cancer patients 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow up. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What do we conclude about this new drug knowing that these 30 people....
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
+
+</div>
+
+---
+## Selection bias
+
+<span style="display:block; height:10px;"></span>
+
+- Survivor bias
+- Volunteer bias
+- Lost to follow up bias
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is tesing a new drug on a court of 100 cancer patients 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow up. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What do we conclude about this new drug knowing that these 30 people....
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped the drug?
+
+</div>
+
+---
+## Selection bias
+
+<span style="display:block; height:10px;"></span>
+
+- Survivor bias
+- Volunteer bias
+- Lost to follow up bias
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is tesing a new drug on a court of 100 cancer patients 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow up. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What do we conclude about this new drug knowing that these 30 people....
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped the drug?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  went back home?
+
+</div>
+
+
+---
+## Selection bias
+
+<span style="display:block; height:10px;"></span>
+
+- Survivor bias
+- Volunteer bias
+- Lost to follow up bias
+- $\dots$
 
 ---
 ![bg opacity](./img/backgrounds/sampling_bg.png)
@@ -622,6 +1458,10 @@ ethnic group or school type.
 - When can't study a population, we select a representative sample
 - There are different sampling strategies
 - Samples may suffer from biases
+
+<!-- - La popolazione &egrave; l'insieme di tutti gli individui per cui vogliamo studiare un fenomeno ed è, teoricamente, infinita
+- Il campione &egrave; un sotto insieme (rappresentativo?) della popolazione
+- Anche con campioni rappresentativi (casuali) possono esserci errori e/o bias -->
 
 ---
 ![bg opacity](./img/backgrounds/Descriptive_bg.png)
@@ -636,9 +1476,23 @@ ethnic group or school type.
 <span style="display:block; height:50px;"></span>
 
 - Understand the differences between data types
-- Be able to summarise each data type using measure of centrality and dispersion
+- Be able to summarise each data type using Measure of central tendency and dispersion
 - Understand the difference between parameters and statistics
 - Understand why visualise your data is important
+
+---
+
+<span style="display:block; height:2px;"></span>
+
+<center>
+<img src="./img/descriptive/PPDAC_qualitative.png" img height="500px" border="0px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
+
+</div>
 
 ---
 # Type of data
@@ -656,7 +1510,144 @@ Categoriche si dividono in 2 classi
 - Ordinali (categorie che non possono essere ordinate) -> dati che rappresentano categorie ordinate (giudizi scolastici ("Insufficiente", "Sufficiente", "Buono", "Ottimo:"), "Sottopeso", "Normopeso" ...) -->
 
 ---
-### Exercise #3
+## What type of data is this?
+
+<div class="columns">
+<div>
+
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+
+</div>
+</div>
+
+---
+## What type of data is this?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+<span style="display:block; height:40px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; The number of death in a hospital
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+
+</div>
+</div>
+
+---
+## What type of data is this?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+<span style="display:block; height:40px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; The size of a T-shirt
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+
+</div>
+</div>
+
+---
+## What type of data is this?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+<span style="display:block; height:40px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; One's nationality
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+
+</div>
+</div>
+
+---
+## What type of data is this?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+<span style="display:block; height:40px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Fasting blood sugar levels
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+
+</div>
+</div>
+
+---
+## What type of data is this?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+<span style="display:block; height:40px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Passing the driving licence test
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+
+</div>
+</div>
+
+---
+### Exercise #4
 
 <div class="columns">
 <div>
@@ -664,7 +1655,95 @@ Categoriche si dividono in 2 classi
 :question: &nbsp;&nbsp;&nbsp; Which types of data are 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; included in this table?
 
-<span style="display:block; height:280px;"></span>
+<span style="display:block; height:40px;"></span>
+
+<style>
+  #countdown_exercise_4{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_4.running {
+    background-color: green;
+  }
+  #countdown_exercise_4.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_4"></button>
+
+<script>
+<!--
+const countdown_exercise_4= document.getElementById("countdown_exercise_4");
+const seconds_exercise_4= 120; // seconds_exercise_4
+let timeLeft_exercise_4= seconds_exercise_4;
+let timerInterval_exercise_4= null;
+
+function formatTime_exercise_4(seconds_exercise_4) {
+  const minutes = Math.floor(seconds_exercise_4/ 60);
+  const remainingseconds_exercise_4= seconds_exercise_4% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_4).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_4() {
+  countdown_exercise_4.textContent = formatTime_exercise_4(timeLeft_exercise_4);
+}
+
+function startTimer_exercise_4() {
+  if (timerInterval_exercise_4=== null) {
+    countdown_exercise_4.classList.add('running');
+    countdown_exercise_4.classList.remove('finished');
+    timerInterval_exercise_4= setInterval(() => {
+      if (timeLeft_exercise_4> 0) {
+        timeLeft_exercise_4--;
+        updateButton_exercise_4();
+      } else {
+        clearInterval(timerInterval_exercise_4);
+        timerInterval_exercise_4= null;
+        countdown_exercise_4.classList.remove('running');
+        countdown_exercise_4.classList.add('finished');
+        countdown_exercise_4.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_4();
+  }
+}
+
+function pauseTimer_exercise_4() {
+  clearInterval(timerInterval_exercise_4);
+  timerInterval_exercise_4= null;
+  countdown_exercise_4.classList.remove('running');
+}
+
+function resetTimer_exercise_4() {
+  timeLeft_exercise_4= seconds_exercise_4;
+  updateButton_exercise_4();
+  countdown_exercise_4.classList.remove('finished');
+  countdown_exercise_4.classList.remove('running');
+  timerInterval_exercise_4= null;
+}
+
+countdown_exercise_4.addEventListener("click", () => {
+  if (countdown_exercise_4.classList.contains('finished')) {
+    resetTimer_exercise_4();
+  } else {
+    startTimer_exercise_4();
+  }
+});
+
+updateButton_exercise_4();
+-->
+</script>
+
+
+<span style="display:block; height:140px;"></span>
 
 <div style="font-size: 50%">
 	
@@ -699,7 +1778,7 @@ Lactate dehydrogenase, dichotomized according to the upper limit of normal for e
 <div class="columns">
 <div>
 
-<span style="display:block; height:120px;"></span>
+<span style="display:block; height:50px;"></span>
 
 <center>
 <img src="./img/descriptive/Table1_caption.png" img height="120px" border="4px"/>
@@ -728,7 +1807,762 @@ Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immu
 Numeriche media/SD, categoriche N/% -->
 
 ---
-## Measures of centrality and dispersion
+## Categorical variables
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+#### Frequency table
+
+<div style="font-size: 87%">
+
+- absolute frequency (the number)
+- relative frequency (the percentage)
+
+</div>
+
+<span style="display:block; height:80px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Table1_var_categoriche.png" img height="550px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- AssolutaL: numero di volte in cui una certa modalità si manifesta nel campione  
+possono assumere valori compresi tra 0 e n (dimensione del campione)
+la loro somma è pari a n
+
+Relativa: rapporto tra la frequenza assoluta con cui si manifesta una modalità e la numerosità totale del campione
+possono assumere valori compresi tra 0 e 1 (o 0 e 100)
+la loro somma è pari a 1
+
+Frequenze assolute e relative forniscono le stesse informazioni sulla distribuzione. 
+
+-->
+
+---
+### Exercize #5
+
+<div class="columns">
+<div>
+
+<div style="font-size: 97%">
+
+:question: &nbsp;&nbsp;&nbsp; Which sex is more frequent?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</div>
+
+<span style="display:block; height:270px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:100px;"></span>
+
+<center>
+<img src="./img/descriptive/Table1_sex.png" img height="250px" border="4px"/>
+</center>
+
+<style>
+  #countdown_exercize_5{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercize_5.running {
+    background-color: green;
+  }
+  #countdown_exercize_5.finished {
+    background-color: red;
+  }
+</style>
+
+<span style="display:block; height:30px;"></span>
+
+<button id="countdown_exercize_5"></button>
+
+<script>
+<!--
+const countdown_exercize_5= document.getElementById("countdown_exercize_5");
+const seconds_exercize_5= 20; // seconds_exercize_5
+let timeLeft_exercize_5= seconds_exercize_5;
+let timerInterval_exercize_5= null;
+
+function formatTime_exercize_5(seconds_exercize_5) {
+  const minutes = Math.floor(seconds_exercize_5/ 60);
+  const remainingseconds_exercize_5= seconds_exercize_5% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercize_5).padStart(2, '0')}`;
+}
+
+function updateButton_exercize_5() {
+  countdown_exercize_5.textContent = formatTime_exercize_5(timeLeft_exercize_5);
+}
+
+function startTimer_exercize_5() {
+  if (timerInterval_exercize_5=== null) {
+    countdown_exercize_5.classList.add('running');
+    countdown_exercize_5.classList.remove('finished');
+    timerInterval_exercize_5= setInterval(() => {
+      if (timeLeft_exercize_5> 0) {
+        timeLeft_exercize_5--;
+        updateButton_exercize_5();
+      } else {
+        clearInterval(timerInterval_exercize_5);
+        timerInterval_exercize_5= null;
+        countdown_exercize_5.classList.remove('running');
+        countdown_exercize_5.classList.add('finished');
+        countdown_exercize_5.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercize_5();
+  }
+}
+
+function pauseTimer_exercize_5() {
+  clearInterval(timerInterval_exercize_5);
+  timerInterval_exercize_5= null;
+  countdown_exercize_5.classList.remove('running');
+}
+
+function resetTimer_exercize_5() {
+  timeLeft_exercize_5= seconds_exercize_5;
+  updateButton_exercize_5();
+  countdown_exercize_5.classList.remove('finished');
+  countdown_exercize_5.classList.remove('running');
+  timerInterval_exercize_5= null;
+}
+
+countdown_exercize_5.addEventListener("click", () => {
+  if (countdown_exercize_5.classList.contains('finished')) {
+    resetTimer_exercize_5();
+  } else {
+    startTimer_exercize_5();
+  }
+});
+
+updateButton_exercize_5();
+-->
+</script>
+
+</div>
+</div>
+
+<!-- Le frequenze relative: facilitano la percezione del peso delle modalità -->
+
+---
+
+### Exercize #5  -- Solution
+
+<div class="columns">
+<div>
+
+<div style="font-size: 97%">
+
+:question: &nbsp;&nbsp;&nbsp; Which sex is more frequent?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</div>
+
+<span style="display:block; height:270px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:100px;"></span>
+
+<center>
+<img src="./img/descriptive/Table1_sex_Solution.png" img height="250px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Le frequenze relative: facilitano la percezione del peso delle modalità -->
+
+---
+## Contingency table
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/descriptive/Cbt_sex_abstract.png" img height="350px" border="4px"/>
+</center>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 50%" align="right">
+ 
+Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administered Small-Group Cognitive Behavior Therapy for Persistent Insomnia in General Practice*, Sleep, 2007, doi:10.1186/s12885-023-10511-3
+
+</div>
+
+<!-- SPIEGARE CHE SI TRATTA DI UN RCT E COSA DIAVOLO E' UN RCT -- Useremo questo studio per costruire e capire cos'e' una tabelle di contingenza 
+
+ `e una tabella a doppia entrata (con righe e colon- ne) in cui si riportano le frequenze congiunte di due variabili.
+-->
+
+---
+### Exercize #6
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+</center>
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | ----- | ---- | ----|
+| Males |  |  |  |
+| Females |  |  |  |
+| Total |  |  |  |
+
+</center>
+
+</div>
+
+<style>
+  #countdown_exercize_6{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercize_6.running {
+    background-color: green;
+  }
+  #countdown_exercize_6.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercize_6"></button>
+
+<script>
+<!--
+const countdown_exercize_6= document.getElementById("countdown_exercize_6");
+const seconds_exercize_6= 300; // seconds_exercize_6
+let timeLeft_exercize_6= seconds_exercize_6;
+let timerInterval_exercize_6= null;
+
+function formatTime_exercize_6(seconds_exercize_6) {
+  const minutes = Math.floor(seconds_exercize_6/ 60);
+  const remainingseconds_exercize_6= seconds_exercize_6% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercize_6).padStart(2, '0')}`;
+}
+
+function updateButton_exercize_6() {
+  countdown_exercize_6.textContent = formatTime_exercize_6(timeLeft_exercize_6);
+}
+
+function startTimer_exercize_6() {
+  if (timerInterval_exercize_6=== null) {
+    countdown_exercize_6.classList.add('running');
+    countdown_exercize_6.classList.remove('finished');
+    timerInterval_exercize_6= setInterval(() => {
+      if (timeLeft_exercize_6> 0) {
+        timeLeft_exercize_6--;
+        updateButton_exercize_6();
+      } else {
+        clearInterval(timerInterval_exercize_6);
+        timerInterval_exercize_6= null;
+        countdown_exercize_6.classList.remove('running');
+        countdown_exercize_6.classList.add('finished');
+        countdown_exercize_6.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercize_6();
+  }
+}
+
+function pauseTimer_exercize_6() {
+  clearInterval(timerInterval_exercize_6);
+  timerInterval_exercize_6= null;
+  countdown_exercize_6.classList.remove('running');
+}
+
+function resetTimer_exercize_6() {
+  timeLeft_exercize_6= seconds_exercize_6;
+  updateButton_exercize_6();
+  countdown_exercize_6.classList.remove('finished');
+  countdown_exercize_6.classList.remove('running');
+  timerInterval_exercize_6= null;
+}
+
+countdown_exercize_6.addEventListener("click", () => {
+  if (countdown_exercize_6.classList.contains('finished')) {
+    resetTimer_exercize_6();
+  } else {
+    startTimer_exercize_6();
+  }
+});
+
+updateButton_exercize_6();
+-->
+</script>
+
+<!--  `e una tabella a doppia entrata (con righe e colon- ne) in cui si riportano le frequenze congiunte di due variabili. 
+
+La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoterapia "focalizzata sul problema" e "orientata all'azione". Essa si concentra sul cambiamento delle distorsioni cognitive (come pensieri, convinzioni e atteggiamenti) e sui comportamenti ad esse associati, per migliorare la regolazione emotiva[1][2] e sviluppare adeguate strategie di coping. 
+-->
+
+---
+### Exercize #6 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+</center>
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  |  |  |
+| Females | 72 |  65 |  |
+| Total | 107 | 94  | 201 |
+
+</center>
+
+</div>
+
+---
+### Exercize #6 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+</center>
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  35 |  29 |  |
+| Females | 72 |  65 |  |
+| Total | 107 | 94  | 201 |
+
+</center>
+
+</div>
+
+---
+### Exercize #6 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+</center>
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  35 |  29 | 64 |
+| Females | 72 |  65 | 137 |
+| Total | 107 | 94  | 201 |
+
+</center>
+
+</div>
+
+<div style="font-size: 80%" align="right">
+
+Abbiamo completato la nostra Tabella di Contingenza (con frequenze assolute)
+
+</div>
+
+<!--  `e una tabella a doppia entrata (con righe e colon- ne) in cui si riportano le frequenze congiunte di due variabili.  -->
+
+---
+### Exercize #6 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+</center>
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  35 (35/107) |  29 (29/94) | 64  (64/201)|
+| Females | 72 (72/107) |  65 (65/94) | 137 (64/201) |
+| Total | 107 | 94  | 201 |
+
+</center>
+
+</div>
+
+<div style="font-size: 72%" align="right">
+ 
+Option 1: let's divide "by columns", that is, calculate the  <br/> percentage of males and females in each arm of the experiment
+
+</div>
+
+
+<!-- Indentifico i gruppi e poi lavoro al loro interno
+
+Le frequenze relative le potete fare in entrambe le direzioni, o di riga o di colonna, a seconda del messaggio che volete trasmettere.
+
+Potete calcolare la frequenza dei due sessi in ciuascun ramo del RCT (come ho fatto io, dividendo per il totale di colonna) o la frequenza dei due trattamenti per ciascun sesso (se aveste diviso per il totale di riga). Qualcuno ha diviso per riga?
+
+ -->
+
+---
+### Exercize #6 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+</center>
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  35 (32.7%) |  29 (30.9%) | 64  (31.8%)|
+| Females | 72 (67.3%) |  65 (69.1%) | 137 (68.2%) |
+| Total | 107 | 94  | 201 |
+
+</center>
+
+</div>
+
+
+<div style="font-size: 72%" align="right">
+ 
+Option 1: let's divide "by columns", that is, calculate the  <br/> percentage of males and females in each arm of the experiment
+
+</div>
+
+
+<!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità -->
+
+---
+### Exercize #6 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+</center>
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  35 (35/64) |  29 (29/64) | 64  |
+| Females | 72 (72/137) |  65 (65/137) | 137 |
+| Total | 107 (107/201) | 94 (94/201)  | 201 |
+
+</center>
+
+</div>
+
+<div style="font-size: 72%" align="right">
+
+Option 2: let's divide "by rows", that is, calculate the percentage </br> of subjects in each arm of the experiments that is either male or female
+
+</div>
+
+
+<!-- Le frequenze relative le potete fare in entrambe le direzioni, o di riga o di colonna, a seconda del messaggio che volete trasmettere.
+
+Potete calcolare la frequenza dei due sessi in ciuascun ramo del RCT (come ho fatto io, dividendo per il totale di colonna) o la frequenza dei due trattamenti per ciascun sesso (se aveste diviso per il totale di riga). Qualcuno ha diviso per riga?
+
+ -->
+
+---
+### Exercize #6 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+</center>
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  35 (54.7%) |  29 (45.3%) | 64  |
+| Females | 72 (52.6%) |  65 (47.4%) | 137 |
+| Total | 107 (53.2%) | 94 (46.8%)  | 201 |
+
+
+</center>
+
+</div>
+
+
+<div style="font-size: 72%" align="right">
+ 
+Option 2: let's divide "by rows", that is, calculate the percentage </br> of subjects in each arm of the experiments that is either male or female
+
+</div>
+
+
+<!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità -->
+
+---
+### Exercize #7
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women similar?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+
+:question: &nbsp;&nbsp;&nbsp; Comparing the two arms, is the proportion of men and women similar?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  35 (32.7%) |  29 (30.9%) | 64  (31.8%)|
+| Females | 72 (67.3%) |  65 (69.1%) | 137 (68.2%) |
+| Total | 107 | 94  | 201 |
+
+</center>
+
+<div>
+
+<style>
+  #countdown_exercize_7{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercize_7.running {
+    background-color: green;
+  }
+  #countdown_exercize_7.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercize_7"></button>
+
+<script>
+<!--
+const countdown_exercize_7= document.getElementById("countdown_exercize_7");
+const seconds_exercize_7= 120; // seconds_exercize_7
+let timeLeft_exercize_7= seconds_exercize_7;
+let timerInterval_exercize_7= null;
+
+function formatTime_exercize_7(seconds_exercize_7) {
+  const minutes = Math.floor(seconds_exercize_7/ 60);
+  const remainingseconds_exercize_7= seconds_exercize_7% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercize_7).padStart(2, '0')}`;
+}
+
+function updateButton_exercize_7() {
+  countdown_exercize_7.textContent = formatTime_exercize_7(timeLeft_exercize_7);
+}
+
+function startTimer_exercize_7() {
+  if (timerInterval_exercize_7=== null) {
+    countdown_exercize_7.classList.add('running');
+    countdown_exercize_7.classList.remove('finished');
+    timerInterval_exercize_7= setInterval(() => {
+      if (timeLeft_exercize_7> 0) {
+        timeLeft_exercize_7--;
+        updateButton_exercize_7();
+      } else {
+        clearInterval(timerInterval_exercize_7);
+        timerInterval_exercize_7= null;
+        countdown_exercize_7.classList.remove('running');
+        countdown_exercize_7.classList.add('finished');
+        countdown_exercize_7.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercize_7();
+  }
+}
+
+function pauseTimer_exercize_7() {
+  clearInterval(timerInterval_exercize_7);
+  timerInterval_exercize_7= null;
+  countdown_exercize_7.classList.remove('running');
+}
+
+function resetTimer_exercize_7() {
+  timeLeft_exercize_7= seconds_exercize_7;
+  updateButton_exercize_7();
+  countdown_exercize_7.classList.remove('finished');
+  countdown_exercize_7.classList.remove('running');
+  timerInterval_exercize_7= null;
+}
+
+countdown_exercize_7.addEventListener("click", () => {
+  if (countdown_exercize_7.classList.contains('finished')) {
+    resetTimer_exercize_7();
+  } else {
+    startTimer_exercize_7();
+  }
+});
+
+updateButton_exercize_7();
+-->
+</script>
+
+<!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità 
+
+LEGGERE PRIMA DI DARE LA Solution Nel campione, quindi vado a vedere la colonna dei totali, Le donne sono il doppio degli uomini. No, non sono uguali
+-->
+
+---
+### Exercize #7 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women similar?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+
+:question: &nbsp;&nbsp;&nbsp; Comparing the two arms, is the proportion of men and women similar?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  35 (32.7%) |  29 (30.9%) | 64  (31.8%)|
+| Females | 72 (67.3%) |  65 (69.1%) | 137 (68.2%1) |
+| Total | 107 | 94  | 201 |
+
+</center>
+
+<!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità 
+
+Nel campione, quindi vado a vedere la colonna dei totali, Le donne sono il doppio degli uomini. No, non sono uguali
+
+LEGGERE PRIMA DI DARE LA Solution DELLA SECONDA Nel due bracci dell'esperimento, quindi vado a confrontare le due colonne, la proporzione di donne e' sempre il 70% e di uomini e' sempre il 30%, quindi si', sono simili
+
+-->
+
+</div>
+
+---
+### Exercize #7 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women similar?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+
+:question: &nbsp;&nbsp;&nbsp; Comparing the two arms, is the proportion of men and women similar?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True  &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+
+<center>
+
+|  | CBT | Standard | Total |
+| ----: | -----: | ----: | ----: |
+| Males |  35 (32.7%) |  29 (30.9%) | 64  (31.8%)|
+| Females | 72 (67.3%) |  65 (69.1%) | 137 (68.2%1) |
+| Totale | 107 | 94  | 201 |
+
+</center>
+
+<!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità 
+
+
+Nel due bracci dell'esperimento, quindi vado a confrontare le due colonne, la proporzione di donne e' sempre il 70% e di uomini e' sempre il 30%, quindi si', sono simili
+-->
+
+</div>
+
+---
+## Measures of central tendency and dispersion
 
 <span style="display:block; height:5px;"></span>
 
@@ -743,7 +2577,7 @@ Tendenza centrale (o posizione) -> Individuano il valore intorno al quale i dati
 Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione delle osservazioni intorno al valore centrale -->
 
 ---
-## Measure of centrality: mode
+## Measure of central tendency: mode
 
 <span style="display:block; height:1px;"></span>
 
@@ -752,17 +2586,138 @@ Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione del
 <span style="display:block; height:10px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp; $x= \{1, 1, 1, 3, 4, 4, 7, 8, 8, 9, 9\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(x)=1$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $x= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(x)=1 \land   4$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(x)=1$
 
 <!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
 
 Si usa soprattutto per i dati categorici -->
 
 ---
-## Measure of centrality: median
+### Exercise #8
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the mode of the following data sets
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(y)= \text{ } ?$
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(z)= \text{ } ?$
+
+<style>
+  #countdown_exercise_8{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_8.running {
+    background-color: green;
+  }
+  #countdown_exercise_8.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_8"></button>
+
+<script>
+<!--
+const countdown_exercise_8= document.getElementById("countdown_exercise_8");
+const seconds_exercise_8= 30; // seconds_exercise_8
+let timeLeft_exercise_8= seconds_exercise_8;
+let timerInterval_exercise_8= null;
+
+function formatTime_exercise_8(seconds_exercise_8) {
+  const minutes = Math.floor(seconds_exercise_8/ 60);
+  const remainingseconds_exercise_8= seconds_exercise_8% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_8).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_8() {
+  countdown_exercise_8.textContent = formatTime_exercise_8(timeLeft_exercise_8);
+}
+
+function startTimer_exercise_8() {
+  if (timerInterval_exercise_8=== null) {
+    countdown_exercise_8.classList.add('running');
+    countdown_exercise_8.classList.remove('finished');
+    timerInterval_exercise_8= setInterval(() => {
+      if (timeLeft_exercise_8> 0) {
+        timeLeft_exercise_8--;
+        updateButton_exercise_8();
+      } else {
+        clearInterval(timerInterval_exercise_8);
+        timerInterval_exercise_8= null;
+        countdown_exercise_8.classList.remove('running');
+        countdown_exercise_8.classList.add('finished');
+        countdown_exercise_8.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_8();
+  }
+}
+
+function pauseTimer_exercise_8() {
+  clearInterval(timerInterval_exercise_8);
+  timerInterval_exercise_8= null;
+  countdown_exercise_8.classList.remove('running');
+}
+
+function resetTimer_exercise_8() {
+  timeLeft_exercise_8= seconds_exercise_8;
+  updateButton_exercise_8();
+  countdown_exercise_8.classList.remove('finished');
+  countdown_exercise_8.classList.remove('running');
+  timerInterval_exercise_8= null;
+}
+
+countdown_exercise_8.addEventListener("click", () => {
+  if (countdown_exercise_8.classList.contains('finished')) {
+    resetTimer_exercise_8();
+  } else {
+    startTimer_exercise_8();
+  }
+});
+
+updateButton_exercise_8();
+-->
+</script>
+
+<!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
+
+Si usa soprattutto per i dati categorici -->
+
+---
+### Exercise #8 -- Solution
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the mode of the following data sets
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(y)=1 \text{ } \& \text{ }  4$
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(z)= \text{It doesn't existe}$
+
+<!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
+Ci possono essere piu' mode (la distribuzione e' detta multi modale)
+
+Si usa soprattutto per i dati categorici -->
+
+---
+## Measure of central tendency: median
 
 :dart: &nbsp;&nbsp;&nbsp;The "middle" value
 
@@ -781,7 +2736,7 @@ Si usa soprattutto per i dati categorici -->
 <!-- Divide l'insieme di dati in due parti uguali, con il numero osservazioni <= mediana uguale a quello >= -->
 
 ---
-## Measure of centrality: median
+## Measure of central tendency: median
 
 :dart: &nbsp;&nbsp;&nbsp;The "middle" value
 
@@ -808,24 +2763,124 @@ Si usa soprattutto per i dati categorici -->
 
 <!-- Quando il numero di osservazioni e' pari, ci sono due valori mediani, e in questo caso si prende la loro media aritmetica -->
 
----
-## Measure of centrality: median
 
-:dart: &nbsp;&nbsp;&nbsp; Robust to outliers
+---
+### Exercise #9
 
 <span style="display:block; height:1px;"></span>
 
-<div style="font-size: 90%">
+:question: &nbsp;&nbsp;&nbsp; Calculate the median of the following data sets
 
-:pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 8, 9\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)= \text{ ?}$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=\text{ ?}$ 
 
-:pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 8, 109\}$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
+<span style="display:block; height:40px;"></span>
 
-</div>
+<style>
+  #countdown_exercise_9{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_9.running {
+    background-color: green;
+  }
+  #countdown_exercise_9.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_9"></button>
+
+<script>
+<!--
+const countdown_exercise_9= document.getElementById("countdown_exercise_9");
+const seconds_exercise_9= 60; // seconds_exercise_9
+let timeLeft_exercise_9= seconds_exercise_9;
+let timerInterval_exercise_9= null;
+
+function formatTime_exercise_9(seconds_exercise_9) {
+  const minutes = Math.floor(seconds_exercise_9/ 60);
+  const remainingseconds_exercise_9= seconds_exercise_9% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_9).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_9() {
+  countdown_exercise_9.textContent = formatTime_exercise_9(timeLeft_exercise_9);
+}
+
+function startTimer_exercise_9() {
+  if (timerInterval_exercise_9=== null) {
+    countdown_exercise_9.classList.add('running');
+    countdown_exercise_9.classList.remove('finished');
+    timerInterval_exercise_9= setInterval(() => {
+      if (timeLeft_exercise_9> 0) {
+        timeLeft_exercise_9--;
+        updateButton_exercise_9();
+      } else {
+        clearInterval(timerInterval_exercise_9);
+        timerInterval_exercise_9= null;
+        countdown_exercise_9.classList.remove('running');
+        countdown_exercise_9.classList.add('finished');
+        countdown_exercise_9.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_9();
+  }
+}
+
+function pauseTimer_exercise_9() {
+  clearInterval(timerInterval_exercise_9);
+  timerInterval_exercise_9= null;
+  countdown_exercise_9.classList.remove('running');
+}
+
+function resetTimer_exercise_9() {
+  timeLeft_exercise_9= seconds_exercise_9;
+  updateButton_exercise_9();
+  countdown_exercise_9.classList.remove('finished');
+  countdown_exercise_9.classList.remove('running');
+  timerInterval_exercise_9= null;
+}
+
+countdown_exercise_9.addEventListener("click", () => {
+  if (countdown_exercise_9.classList.contains('finished')) {
+    resetTimer_exercise_9();
+  } else {
+    startTimer_exercise_9();
+  }
+});
+
+updateButton_exercise_9();
+-->
+</script>
+
+
+
+<!-- La mediana non e' influenzata da valori anomali o estremi (outliers) -->
+
+---
+### Exercise #9 -- Solution
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the median of the following data sets
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)=y_3=40$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=\text{ ?}$
 
 <div style="font-size: 90%" align="right">
 
@@ -834,6 +2889,32 @@ Si usa soprattutto per i dati categorici -->
 :warning: Data should be sorted!
 
 </div>
+
+
+<!-- La mediana non e' influenzata da valori anomali o estremi (outliers) -->
+
+---
+### Exercise #9 -- Solution
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the median of the following data sets
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)=y_3=40$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=z_3=40$ 
+
+
+<div style="font-size: 90%" align="right">
+
+
+:warning: Data should be sorted!
+
+</div>
+
+:dart: &nbsp;&nbsp;&nbsp; Robust to outliers
 
 
 <!-- La mediana non e' influenzata da valori anomali o estremi (outliers) -->
@@ -870,7 +2951,7 @@ Si usa soprattutto per i dati categorici -->
 <!-- Il percentile invece divide i dati in 100 intervalli, e dato una percentile, per esempio il decimo, sappiamo che il 10% dei valori assunti dalla variabile sono inferiori o uguali a quel valore -->
 
 ---
-## Measure of centrality: mean
+## Measure of central tendency: mean
 
 <span style="display:block; height:1px;"></span>
 
@@ -890,20 +2971,129 @@ $$
 <!-- Somma dei singoli valori diviso il numero di osservazioni  -->
 
 ---
-## Measure of centrality: mean
+### Exercise #10
 
 <span style="display:block; height:1px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; Not really robust to outliers
+:question: &nbsp;&nbsp;&nbsp; Calculate the mean of the following data sets
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {y}} = \text{ ?}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {z}} = \text{ ?}$
 
 
 <span style="display:block; height:10px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{4, 36, 45, 50, 175\}$ 
+<style>
+  #countdown_exercise_10{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_10.running {
+    background-color: green;
+  }
+  #countdown_exercise_10.finished {
+    background-color: red;
+  }
+</style>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 175}{5} = 62$
+<button id="countdown_exercise_10"></button>
 
-<!-- Mentre la media e' la misura piu' usata per descrivere la tendenza centrale per la sua unicita' (c'e' solo una media) e semplicita', non e' particolarmente robusta rispetto agli outliers. Il valore atipico SOVRADIMENSIONA la media.
+<script>
+<!--
+const countdown_exercise_10= document.getElementById("countdown_exercise_10");
+const seconds_exercise_10= 120; // seconds_exercise_10
+let timeLeft_exercise_10= seconds_exercise_10;
+let timerInterval_exercise_10= null;
+
+function formatTime_exercise_10(seconds_exercise_10) {
+  const minutes = Math.floor(seconds_exercise_10/ 60);
+  const remainingseconds_exercise_10= seconds_exercise_10% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_10).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_10() {
+  countdown_exercise_10.textContent = formatTime_exercise_10(timeLeft_exercise_10);
+}
+
+function startTimer_exercise_10() {
+  if (timerInterval_exercise_10=== null) {
+    countdown_exercise_10.classList.add('running');
+    countdown_exercise_10.classList.remove('finished');
+    timerInterval_exercise_10= setInterval(() => {
+      if (timeLeft_exercise_10> 0) {
+        timeLeft_exercise_10--;
+        updateButton_exercise_10();
+      } else {
+        clearInterval(timerInterval_exercise_10);
+        timerInterval_exercise_10= null;
+        countdown_exercise_10.classList.remove('running');
+        countdown_exercise_10.classList.add('finished');
+        countdown_exercise_10.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_10();
+  }
+}
+
+function pauseTimer_exercise_10() {
+  clearInterval(timerInterval_exercise_10);
+  timerInterval_exercise_10= null;
+  countdown_exercise_10.classList.remove('running');
+}
+
+function resetTimer_exercise_10() {
+  timeLeft_exercise_10= seconds_exercise_10;
+  updateButton_exercise_10();
+  countdown_exercise_10.classList.remove('finished');
+  countdown_exercise_10.classList.remove('running');
+  timerInterval_exercise_10= null;
+}
+
+countdown_exercise_10.addEventListener("click", () => {
+  if (countdown_exercise_10.classList.contains('finished')) {
+    resetTimer_exercise_10();
+  } else {
+    startTimer_exercise_10();
+  }
+});
+
+updateButton_exercise_10();
+-->
+</script>
+
+
+<!-- La media non e' particolarmente robusta rispetto agli outliers. Il valore atipico SOVRADIMENSIONA la media.
+
+Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori alla media per evidenziare queste situazioni  -->
+
+---
+### Exercise #10 -- Solution
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the mean of the following data sets
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {y}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{y_{i}}\right) = \frac{6 + 34 + 40 + 55 + 75}{5} = 42$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {z}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{z_{i}}\right) = \frac{4 + 36 + 45 + 50 + 175}{5} = 62$
+
+<span style="display:block; height:1px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; Not robust to outliers
+
+<!-- La media non e' particolarmente robusta rispetto agli outliers. Il valore atipico SOVRADIMENSIONA la media.
 
 Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori alla media per evidenziare queste situazioni  -->
 
@@ -927,7 +3117,148 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 <img src="./img/descriptive/434px-Relationship_between_mean_and_median_under_different_skewness.png" img height="250px" border="0px"/>
 </center>
 
-<!-- Asimmetrica a destra/sinistra -->
+<!-- La posizione di moda media e mediana va a definire anche quella che e' la forma della distribuzione, che descrive come una Distribuzione empirica e/o Di- stribuzione di popolazione si distribuisce. 
+
+Si dice che una distribuzione abbia una forma simmetrica quando Moda, Mediana e Media coincidono e dividono la distribuzione stessa in due parti identiche. 
+
+Qualora que- sta condizione non si verificasse, la forma della distribuzione viene detta asimmetrica. 
+Una distribuzione asimmetrica positiva `e caratterizzata da una curva in cui i valori sono raggruppati nella parte sinistra, con una lunga coda a destra (anche detta: asimmetrica a destra). 
+Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva in cui i valori sono raggruppati nella parte destra, con una lunga coda a sinistra (anche detta: asimmetrica a sinistra). --->
+
+---
+## The shape of a distribution
+
+<span style="display:block; height:70px;"></span>
+
+<center>
+<img src="./img/descriptive/Bimodal_geological.png" img height="350px" border="0px"/>
+</center>
+
+<!-- Si dice che una distribuzione sia bi- o multi-modale quando presenta due o piu` gobbe corrispondenti ai diversi valori che la moda puo` assumere nel campione.
+ -->
+
+---
+### Exercise 11
+
+:question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *The mean length of stay was 22.4 days (median: 14 days).*
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The shape of the distribution is...
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) symmetric
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) positive skew 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) negative skew
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+
+
+<span style="display:block; height:10px;"></span>
+
+<style>
+  #countdown_exercise_11{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	float: right;
+  }
+  #countdown_exercise_11.running {
+    background-color: green;
+  }
+  #countdown_exercise_11.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_11"></button>
+
+<script>
+<!--
+const countdown_exercise_11= document.getElementById("countdown_exercise_11");
+const seconds_exercise_11= 120; // seconds_exercise_11
+let timeLeft_exercise_11= seconds_exercise_11;
+let timerInterval_exercise_11= null;
+
+function formatTime_exercise_11(seconds_exercise_11) {
+  const minutes = Math.floor(seconds_exercise_11/ 60);
+  const remainingseconds_exercise_11= seconds_exercise_11% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_11).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_11() {
+  countdown_exercise_11.textContent = formatTime_exercise_11(timeLeft_exercise_11);
+}
+
+function startTimer_exercise_11() {
+  if (timerInterval_exercise_11=== null) {
+    countdown_exercise_11.classList.add('running');
+    countdown_exercise_11.classList.remove('finished');
+    timerInterval_exercise_11= setInterval(() => {
+      if (timeLeft_exercise_11> 0) {
+        timeLeft_exercise_11--;
+        updateButton_exercise_11();
+      } else {
+        clearInterval(timerInterval_exercise_11);
+        timerInterval_exercise_11= null;
+        countdown_exercise_11.classList.remove('running');
+        countdown_exercise_11.classList.add('finished');
+        countdown_exercise_11.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_11();
+  }
+}
+
+function pauseTimer_exercise_11() {
+  clearInterval(timerInterval_exercise_11);
+  timerInterval_exercise_11= null;
+  countdown_exercise_11.classList.remove('running');
+}
+
+function resetTimer_exercise_11() {
+  timeLeft_exercise_11= seconds_exercise_11;
+  updateButton_exercise_11();
+  countdown_exercise_11.classList.remove('finished');
+  countdown_exercise_11.classList.remove('running');
+  timerInterval_exercise_11= null;
+}
+
+countdown_exercise_11.addEventListener("click", () => {
+  if (countdown_exercise_11.classList.contains('finished')) {
+    resetTimer_exercise_11();
+  } else {
+    startTimer_exercise_11();
+  }
+});
+
+updateButton_exercise_11();
+-->
+</script>
+
+
+</div>
+</div>
+
+
+
+---
+### Exercise 11 -- Solution
+
+:question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *The mean length of stay was 22.4 days (median: 14 days).*
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The shape of the distribution is...
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) symmetric
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) positive skew &nbsp;&nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) negative skew
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+
 
 ---
 ## Measures of dispersion
@@ -948,49 +3279,25 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 ---
 ## Measure of dispersion: range
 
-<span style="display:block; height:30px;"></span>
+<span style="display:block; height:1px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; ${\text{range}(x)}= \text{max}(x)-\text{min}(x)$
 
-<span style="display:block; height:30px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{6, 7, 15, 36, 39, 40, 41, 42, 43, 47, 49\}$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\text{range}(x)}= \text{max}(x)-\text{min}(x)=49-6=43$
-
-<!-- INTERVALLO di VARIAZIONE. Il range pero' si basa solo sui due valori estremi, senza indicare come si distribuiscono i dati entro l’intervallo -->
-
----
-## Measure of dispersion: range
-
-<span style="display:block; height:50px;"></span>
+<span style="display:block; height:1px;"></span>
 
 <center>
 <img src="./img/descriptive/outliers_range.svg" img height="250px" border="0px"/>
 </center>
 
-<span style="display:block; height:10px;"></span>
+&nbsp;&nbsp;&nbsp; $\text{range}(x)= \text{max}(x)-\text{min}(x)=9,754-2,830=6,924$
 
-:question: &nbsp;&nbsp;&nbsp; $\text{range}(x)= \text{ ?}$
+<!-- INTERVALLO di VARIAZIONE. Il range ha tuttavia un'utilita' limitata, si basa solo sui due valori estremi, senza indicare come si distribuiscono i dati entro l’intervallo e non e' robusta quando ci sono valori anomali 
 
-<!-- Il range ha tuttavia un'utilita' limitata: tiene conto solo di due valori, e non e' robusta quando ci sono valori anomali
+piu; semplice, meno informativo  Il range ha tuttavia un'utilita' limitata: tiene conto solo di due valori, e non e' robusta quando ci sono valori anomali 
 
-14 osservazioni -->
+ Non fornisce però informazioni sulla distribuzione delle osservazioni: non è ad esempio possibile capire se i valori siano dispersi o raggruppati in un’estremità…
 
----
-## Measure of dispersion: range
-
-<span style="display:block; height:50px;"></span>
-
-<center>
-<img src="./img/descriptive/outliers_range.svg" img height="250px" border="0px"/>
-</center>
-
-<span style="display:block; height:10px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; $\text{range}(x)= \text{max}(x)-\text{min}(x)=9,754-2,830=6,924$
-
-<!-- Il range ha tuttavia un'utilita' limitata: tiene conto solo di due valori, e non e' robusta quando ci sono valori anomali -->
+14 osservazioni-->
 
 ---
 ## Measure of dispersion: interquartile range
@@ -1005,20 +3312,7 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 <img src="./img/descriptive/iqr.png" img height="300px" border="0px"/>
 </center>
 
----
-## Measure of dispersion: interquartile range
-
-<span style="display:block; height:50px;"></span>
-
-<center>
-<img src="./img/descriptive/outliers_range.svg" img height="250px" border="0px"/>
-</center>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\text{range}(x) = \text{max}(x)-\text{min}(x)=9,754-2,830=6,924$
-:pushpin: &nbsp;&nbsp;&nbsp; $\text{IQR}(x) \text{ }\text{ } = \text{Q3}(x)-\text{Q1}(x) \text{ }\text{ }\text{ }\text{ } =5,253-3,423=1,830$
-
 <!-- Non sono considerati i valori estremi, ma sappiamo come si distribuisce la meta dei dati rispetto al valore centrale -->
-
 
 ---
 ## Measure of dispersion: variance
@@ -1049,7 +3343,7 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 
 <!-- Andiamo a fare la distanza (differenza) tra ciascun valore e la media, la eleviamo al quatrato, la sommiamo e andiamo a dividerla per la dimensione del campione - 1 -->
 
----
+<!-- ---
 ## Measure of dispersion: variance
 
 <span style="display:block; height:1px;"></span>
@@ -1070,7 +3364,7 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 Dipende dal fatto che La somma degli scarti dalla media aritmetica è nulla
 Qundi se conosco i primi (n-1) valori, conosco anche l'ultimo
 
-n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di dati (n) meno il numero di costanti gia' calcolate dai dati (in questo caso 1, la media) -->
+n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di dati (n) meno il numero di costanti gia' calcolate dai dati (in questo caso 1, la media) --> -->
 
 ---
 ## Measure of dispersion: standard deviation
@@ -1101,176 +3395,205 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 | Ordinal | Mode, Median | Range, IQR |
 | Numeric | Mode, Median, Mean | Range, IQR, standard deviation |
 
+<!-- Scelta della misura di tendenza centrale
+- media se la distribuzione è simmetrica
+- mediana se la distribuzione NON è simmetrica (forse a causa di valori estremi)
+- moda per indicare il valore più comune nell’ambito della distribuzione  (ma come accennavo piu' usato nel caso di variabile categoriche)
+
+Inoltre, Se la numerosità del campione è piccola, la mediana e il range interquartile sono misure più robuste
+-->
+
+---
+### Exercise #12
+
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Coronary-artery calcium scores averaged 68.9&plusmn;244.2 (range 0 to 1526)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  in  patients and 8.8&plusmn;41.8 (range 0 to 243.4) in controls.*
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which measures do we use to describe this variable?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) mean and standard deviation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) median and interquantile range 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and standard deviation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+
+</div>
+
+<style>
+  #countdown_exercise_12{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_12.running {
+    background-color: green;
+  }
+  #countdown_exercise_12.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_12"></button>
+
+<script>
+<!--
+const countdown_exercise_12= document.getElementById("countdown_exercise_12");
+const seconds_exercise_12= 120; // seconds_exercise_12
+let timeLeft_exercise_12= seconds_exercise_12;
+let timerInterval_exercise_12= null;
+
+function formatTime_exercise_12(seconds_exercise_12) {
+  const minutes = Math.floor(seconds_exercise_12/ 60);
+  const remainingseconds_exercise_12= seconds_exercise_12% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_12).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_12() {
+  countdown_exercise_12.textContent = formatTime_exercise_12(timeLeft_exercise_12);
+}
+
+function startTimer_exercise_12() {
+  if (timerInterval_exercise_12=== null) {
+    countdown_exercise_12.classList.add('running');
+    countdown_exercise_12.classList.remove('finished');
+    timerInterval_exercise_12= setInterval(() => {
+      if (timeLeft_exercise_12> 0) {
+        timeLeft_exercise_12--;
+        updateButton_exercise_12();
+      } else {
+        clearInterval(timerInterval_exercise_12);
+        timerInterval_exercise_12= null;
+        countdown_exercise_12.classList.remove('running');
+        countdown_exercise_12.classList.add('finished');
+        countdown_exercise_12.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_12();
+  }
+}
+
+function pauseTimer_exercise_12() {
+  clearInterval(timerInterval_exercise_12);
+  timerInterval_exercise_12= null;
+  countdown_exercise_12.classList.remove('running');
+}
+
+function resetTimer_exercise_12() {
+  timeLeft_exercise_12= seconds_exercise_12;
+  updateButton_exercise_12();
+  countdown_exercise_12.classList.remove('finished');
+  countdown_exercise_12.classList.remove('running');
+  timerInterval_exercise_12= null;
+}
+
+countdown_exercise_12.addEventListener("click", () => {
+  if (countdown_exercise_12.classList.contains('finished')) {
+    resetTimer_exercise_12();
+  } else {
+    startTimer_exercise_12();
+  }
+});
+
+updateButton_exercise_12();
+-->
+</script>
+
+
+
+<!-- Valutando i valori numerici (media e DS), come 
+con la media e la deviazione standard (come per tutte le altre variabili in tabella) 
+con la mediana e il range interquartile (perché la variabile non ha una distribuzione normale) -->
+
+---
+### Exercise #12 -- Solution
+
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Coronary-artery calcium scores averaged 68.9&plusmn;244.2 (range 0 to 1526)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  in  patients and 8.8&plusmn;41.8 (range 0 to 243.4) in controls.*
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which measures do we use to describe this variable?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) mean and standard deviation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) median and interquantile range &nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and standard deviation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+
+</div>
+
+--- 
+## Outliers in the wild
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/outliers_mean.png" img height="450px" border="0px"/>
+</center>
+
+<div style="font-size: 50%">
+
+Reilly, J. *et al.*. *Procedure‐Specific Surgical Site Infection Rates and Postdischarge Surveillance in Scotland*,  Infection Control and Hospital Epidemiology, 2006, doi:10.1086/509839  
+
+</div>
+
 ---
 ## Parameters *vs*  &nbsp;statistics
 
-<span style="display:block; height:30px;"></span>
+- Parameters: calculated on the population 
+- Statistics: calculated on the sample 
 
-- Parameters: calculated on the population ($\mu, \sigma$)
+<center>
 
-- Statistics: calculated on the sample ($\bar{x}, s$)
+|  | Parameter| Statistic |
+| ----: | :-----: | :----: | 
+| Size | $N$ | $n$ |
+| Mean | $\mu$ | $\bar{x}$ |
+| Standard deviation | $\sigma$ | $s$ |
+| Proportion | $\pi$ | $p$ |
+
+</center>
+
 
 <!-- Una cosa che non vi ho detto, ma che ci tornera' utile in seguito e' che la media e la SD di una popolazione si chiamano PARAMETRI e si indicano con le lettere greche media e SD misurati su un campione si chiamano invece STATISTICHE e sono indicati con lettere latine -->
 
 ---
-### Exercise #4
+<span style="display:block; height:150px;"></span>
+
+# Notes on data visualization
+
+---
+## Bar chart
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:40px;"></span>
 
-:question: &nbsp;&nbsp;&nbsp; Which curve has the larger 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mean?
+<div style="font-size: 90%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) blue
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) green
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) red
-
-</div>
-<div>
-
-<span style="display:block; height:50px;"></span>
-
-<center>
-<img src="./img/descriptive/exercise_mean.png" img height="300px" border="4px"/>
-</center>
+- categorical data
+  - absolute frequency
+  - relative frequency
 
 </div>
 
----
-### Exercise #4 -- Solution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; Which curve has the larger 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mean?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) blue
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) green
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) red :white_check_mark: 
-
-</div>
-<div>
-
-<span style="display:block; height:50px;"></span>
-
-<center>
-<img src="./img/descriptive/exercise_mean.png" img height="300px" border="4px"/>
-</center>
-
-</div>
-
----
-### Exercise #5
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; Which curve has the larger 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) blue
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) green
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) red
-
-</div>
-<div>
-
-<span style="display:block; height:50px;"></span>
-
-<center>
-<img src="./img/descriptive/exercise_sd.png" img height="300px" border="4px"/>
-</center>
-
-</div>
-
----
-### Exercise #5 -- Solution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; Which curve has the larger 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) blue
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) green
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) red  :white_check_mark: 
-
-</div>
-<div>
-
-<span style="display:block; height:50px;"></span>
-
-<center>
-<img src="./img/descriptive/exercise_sd.png" img height="300px" border="4px"/>
-</center>
-
-</div>
-
----
-### Exercise #6
-
-<span style="display:block; height:1px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, and cholesterol
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarise their data?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), cholesterol: mean (SD)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), cholesterol: median (IQR)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: mean (SD), cholesterol: mean (SD) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Either a) or b)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or c)
-
----
-### Exercise #6 -- Solution
-
-<span style="display:block; height:1px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; Researchers have collected age, sex, and cholesterol
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How should they summarise their data?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Age: mean (SD), sex: N (%), cholesterol: mean (SD)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Age: median (IQR), sex: N (%), cholesterol: median (IQR)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Age: mean (SD), sex: mean (SD), cholesterol: mean (SD) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Either a) or b) :white_check_mark: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) Either a) or c)
-
----
-## Data visualisation: boxplots
-
-<span style="display:block; height:70px;"></span>
-
-<center>
-<img src="./img/descriptive/boxplot_explanation.png" img height="250px" border="0px"/>
-</center>
-
-
-<!-- boxplot consente di rappresentare visivamente alcune caratteristiche di una distribuzione statistica: 
-
-- il grado di dispersione dei dati (via IQR)
--  la misura di tendenza centrale (via mediana)
-- la forma della distribuzione (con i "baffi")
-- la presenza di valori anomali -->
-
----
-## Boxplots in the wild
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:400px;"></span>
+<span style="display:block; height:100px;"></span>
 
 <div style="font-size: 50%">
-
+ 
 Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
 
 </div>
@@ -1278,20 +3601,681 @@ Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immu
 </div>
 <div>
 
-<span style="display:block; height:10px;"></span>
-
 <center>
-<img src="./img/descriptive/boxplot.png" img height="450px" border="4px"/>
+<img src="./img/visualization/MStage_barplot_vertical.png" img height="500px" border="4px"/>
 </center>
 
 </div>
 </div>
 
-<!-- 50% dei dati sta tra -0.6 e 1, la mediana e' circa 0.3, il baffo ci dice che e' assimmetrica a dx, non ci sono outliers
+<!-- Diagramma a barre 
 
-conrontare due distribuzioni, simile IQR, ma diverse mediane
+Qui vi mostro lo stage metastatico della corte dell'esempio precedente, che e' divisa in 5 classi.
 
-Mediana, quartili (ma anche percentili) si dicono misure di posizionamento perche' ci fanno "posizionare" i dati -->
+E` considerata uno delle visualizzazioni piu` efficaci per rappresentare dati categorici, anche se noiso
+
+Ciascuna Modalit`a viene rappresentata da una barra, la cui dimensione `e proporzionale alla sua frequenza, assoluta o relativa. 
+
+NON DIRLO: Perch ́e le dimensioni delle barre siano esattamente proporzionali, `e necessario che l’asse delle ordinate inizi dallo zero e non da un punto arbitrario (a questo riguardo vedi anche: Statisticulation).
+
+Sorting bars often add insight.
+Avoid filling with color palettes.
+
+Long labels? Think of an horizontal version.
+-->
+
+---
+## Horizontal bar chart
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- categorical data
+  - absolute frequency
+  - relative frequency
+
+</div>
+
+<span style="display:block; height:100px;"></span>
+
+
+<div style="font-size: 50%">
+
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/MStage_barplot_horizontal.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Diagramma a barre orizzontali 
+variazione ulteriore: Circular bar chart, lollipop -->
+
+---
+## Horizontal bar chart
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- categorical data
+  - absolute frequency
+  - relative frequency
+
+</div>
+
+<span style="display:block; height:100px;"></span>
+
+
+<div style="font-size: 50%">
+
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/ICI_therapy_barplot_horizotal.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Diagramma a barre orizzontali 
+variazione ulteriore: Circular bar chart, lollipop -->
+
+---
+## Circular bar chart
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- categorical data
+  - absolute frequency
+  - relative frequency
+
+</div>
+
+<span style="display:block; height:130px;"></span>
+
+
+<div style="font-size: 50%">
+
+Visconti, A., *et al.*. *The genetics and epidemiology of N-and O-immunoglobulin A glycomics.*, 2024, doi:10.1186/s13073-024-01369-6
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/circular_bar_plot.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+
+
+---
+## What does this graph tell us?
+
+- From 1 to 10, how happy were you yesterday?
+
+<center>
+<img src="./img/visualization/wellbeing_cropped.png" img height="400px" border="4px"/>
+</center>
+
+<!-- To demonstrate, let’s take a look at the 16 to 19 and 20 to 24 age groups. It’s natural for people to compare lengths so looking at these two bars you might think that 16 to 19 year olds were almost twice as happy as 20 to 14 year olds, when actually they’re pretty similar – only a difference of 0.27. -->
+
+---
+
+## What does this graph tell us?
+
+- From 1 to 10, how happy were you yesterday?
+
+<center>
+<img src="./img/visualization/wellbeing_from_zero.png" img height="400px" border="4px"/>
+</center>
+
+<!-- 
+16 to 19 year olds were almost twice as happy as 20 to 14 year olds, when actually they’re pretty similar – only a difference of 0.27.
+
+Ciascuna Modalit`a viene rappresentata da una barra, la cui dimensione `e proporzionale alla sua frequenza, assoluta o relativa. 
+
+Perch ́e le dimensioni delle barre siano esattamente proporzionali, `e necessario che l’asse delle ordinate inizi dallo zero e non da un punto arbitrario (a questo riguardo vedi anche: Statisticulation).
+
+Non e' necessariamente fatto per ingannare, ma i grafici pensavano di migliorare la visualizzazione
+
+Wow, that’s a lot of orange. Any patterns in the data just seem to be dominated the fact that there are lots of bars. So what can we do to focus more on the pattern in the data? 
+
+ -->
+---
+## What does this graph tell us?
+
+- From 1 to 10, how happy were you yesterday?
+
+<center>
+<img src="./img/visualization/wellbeing_dots.png" img height="400px" border="4px"/>
+</center>
+
+<!-- ne way of managing this would be to move away from using bars entirely, for example, using the position of a dot to mark each data point. The length aspect no longer exists and the reader is forced to look at the position of the data point relative to the x-axis in order to make a comparison between categories. -->
+
+---
+## Lollipop chart
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- categorical data
+  - absolute frequency
+  - relative frequency
+
+</div>
+
+<span style="display:block; height:100px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/MStage_lollipop_horizontal.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
+## Pie chart
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- categorical data
+  - relative frequency
+
+</div>
+
+<span style="display:block; height:140px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/MStage_piechart.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Diagramma a torta
+
+A pie chart is a circle divided into sectors that each represent a proportion of the whole. It is often used to show proportion, where the sum of the sectors equal 100%.
+
+Pie charts are highly critized and must be avoided as much as possible. Human is very bad at translating angles towards values. 
+
+Don't use it
+Don't use 3D.
+Don't use a legend, annotate directly each slice.
+If displaying proportion, sum must add up to 100.
+Don't put several pie charts one beside each other to compare them.
+
+-->
+
+---
+## Donut chart
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- categorical data
+  - relative frequency
+
+</div>
+
+<span style="display:block; height:140px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/MStage_Donut.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Diagramma a ciambella - cugino di primo grado. 
+Ho migliorato la grafica andando ad annotare le percentuali -->
+
+---
+## Waffle chart
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- categorical data
+  - relative frequency
+
+</div>
+
+<span style="display:block; height:140px;"></span>
+
+<div style="font-size: 50%">
+ 
+*Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/MStage_waffle.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- A Waffle Chart visually represents categorical data through a grid of small squares, resembling a waffle. Each category is assigned a unique color, and the number of squares allocated to each category corresponds to its proportional share of the total data count. 
+
+They are often 10 by 10 grids, where each cell represents 1%. Despite the name, circles, pictograms (such as of people), and other shapes may be used instead of squares. One major benefit to square charts is that smaller percentages, difficult to see on traditional pie charts, can be easily depicted.
+
+Common Mistakes
+ sum must add up to 100.
+
+ Possiamo anche farlo con i pittogrammi
+ -->
+
+---
+## Infographics
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/visualization/waffle_with_icons.png" img height="350px" border="0px"/>
+</center>
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 50%" align="right">
+
+Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
+
+</div>
+
+<!-- Figure 1.4 uses icon arrays to directly represent the expected frequencies of bowel cancer in 100 people.
+
+In Figure 1.4 the ‘cancer’ icons are randomly scattered among the 100. While such scatter has been shown to increase the impression of unpredictability, it should only be used when there is a single additional highlighted icon. There should be no need to count icons in order to make a quick visual comparison.
+
+ -->
+
+---
+## Mosaic plot
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- categorical data
+  - relative frequency
+
+</div>
+
+<span style="display:block; height:140px;"></span>
+
+<div style="font-size: 50%">
+ 
+*Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/mosaic_plot.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Mosaic plots provide an ideal method both for visualizing contingency tables.
+
+Sono la proporzione sul totale.  
+
+round(prop.table(freq_a)*100, 0)
+
+      Females Males
+  M0        1     1
+  M1a       7     9
+  M1b       7    12
+  M1c      10    26
+  M1d      10    16
+ -->
+
+
+---
+## Histogram
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- numerical data
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/Age_histogram_bin1.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Un istogramma prende in input una variabile numerica che viene discretizzata in classi (o bins)
+and the number of observation per bin is represented by the height of the bar.
+.
+Play with the bin size, it can give different insight.
+ -->
+
+---
+## Histogram
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- numerical data
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/Age_histogram_bin5.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- 
+Play with the bin size, it can give different insight.
+
+Avoid filling with color palettes. anche se 
+ -->
+
+---
+## Histogram
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- numerical data
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/Age_histogram_bin5_response.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!--  il colore e' utile per rappresentare la distribution of several variable on the same axis , cosa possibile using this technique.
+
+Anche se a volte pou' essere confuso
+ -->
+
+---
+## Miami plot/Mirror histogram
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- numerical data
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/Age_histogram_bin5_response_mirror.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- No legenda, uso i colori, ho fissato gli assi 
+Ovviamente si puo' usare solo se ci sono due variabili, ne avessimo 3 o piu' ricadremmo nel caso precedente
+-->
+
+---
+## Boxplot
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/visualization/boxplot_explanation.png" img height="450px" border="0px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+https://r-graph-gallery.com/boxplot
+
+</div>
+
+<!-- o box and whiskers plot, o diagramma a scatola e baffi o diagram- ma degli estremi e dei quartili, `e una rappresentazione grafica utilizzata per descrivere la distribuzione di una Variabile continua o una Variabi- le discreta utilizzando sia indici di dispersione (Inter-quartile range) sia di posizione (Mediana e Quartile). Viene rappresentato da un rettangolo (box) e da due segmenti (whiskers o baffi). Il rettangolo `e delimitato dal primo e dal terzo quartile e diviso al suo interno dalla mediana (o secondo quartile). La lunghezza dei segmenti rappresenta 1.5 volte l’interquarti- le range. I punti oltre il segmento rappresentano dei (possibili) Valori estremi. 
+
+Non usare colori
+-->
+
+---
+## Boxplot
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- numerical data
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/Boxplot_age_ORR_simple.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- 
+Boxplot hides the sample size of each group, show it with annotation or box width.
+
+Boxplot hides the underlying distribution. Use jitter if low number of data points, or use violin with bigger data.
+ -->
+
+---
+## Boxplot
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/visualization/box-plot-vs-histogram-w-callouts.png" img height="450px" border="4px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+https://nightingaledvs.com/ive-stopped-using-box-plots-should-you/
+
+</div>
+
+<!-- 
+Boxplot hides the sample size of each group, show it with annotation or box width.
+
+Boxplot hides the underlying distribution. Use jitter if low number of data points, or use violin with bigger data.
+ -->
+
+---
+## Boxplot
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- numerical data
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/visualization/Boxplot_age_ORR_violin.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Boxplot hides the sample size of each group, show it with annotation or box width.
+
+Boxplot hides the underlying distribution. Use jitter if low number of data points, or use violin with bigger data. Leggermente bimodale -->
 
 
 ---
