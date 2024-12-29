@@ -606,7 +606,7 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 <img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
 </center>
 
-<div style="font-size: 80%">
+<div style="font-size: 75%">
 
 :question: &nbsp;&nbsp;&nbsp; Which is the population of this study?
 
@@ -718,7 +718,7 @@ updateButton_exercise_1();
 <img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
 </center>
 
-<div style="font-size: 80%">
+<div style="font-size: 75%">
 
 :question: &nbsp;&nbsp;&nbsp; Which is the population of this study?
 
@@ -739,7 +739,7 @@ updateButton_exercise_1();
 <img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
 </center>
 
-<div style="font-size: 80%">
+<div style="font-size: 75%">
 
 :question: &nbsp;&nbsp;&nbsp; Which is the sample used in this study?
 
@@ -845,7 +845,7 @@ updateButton_exercise_1bis();
 <img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
 </center>
 
-<div style="font-size: 80%">
+<div style="font-size: 75%">
 
 :question: &nbsp;&nbsp;&nbsp; Which is the sample used in this study?
 
@@ -1909,7 +1909,7 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 <script>
 <!--
 const countdown_exercize_5= document.getElementById("countdown_exercize_5");
-const seconds_exercize_5= 20; // seconds_exercize_5
+const seconds_exercize_5= 30; // seconds_exercize_5
 let timeLeft_exercize_5= seconds_exercize_5;
 let timerInterval_exercize_5= null;
 
@@ -2003,7 +2003,7 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 <span style="display:block; height:100px;"></span>
 
 <center>
-<img src="./img/descriptive/Table1_sex_Solution.png" img height="250px" border="4px"/>
+<img src="./img/descriptive/Table1_sex_soluzione.png" img height="250px" border="4px"/>
 </center>
 
 </div>
@@ -2435,7 +2435,7 @@ Option 2: let's divide "by rows", that is, calculate the percentage </br> of sub
 <script>
 <!--
 const countdown_exercize_7= document.getElementById("countdown_exercize_7");
-const seconds_exercize_7= 120; // seconds_exercize_7
+const seconds_exercize_7= 60; // seconds_exercize_7
 let timeLeft_exercize_7= seconds_exercize_7;
 let timerInterval_exercize_7= null;
 
@@ -2804,7 +2804,7 @@ Si usa soprattutto per i dati categorici -->
 <script>
 <!--
 const countdown_exercise_9= document.getElementById("countdown_exercise_9");
-const seconds_exercise_9= 60; // seconds_exercise_9
+const seconds_exercise_9= 30; // seconds_exercise_9
 let timeLeft_exercise_9= seconds_exercise_9;
 let timerInterval_exercise_9= null;
 
@@ -3140,6 +3140,8 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
 ---
 ### Exercise 11
 
+<div style="font-size: 90%">
+
 :question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *The mean length of stay was 22.4 days (median: 14 days).*
@@ -3151,8 +3153,7 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) negative skew
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
 
-
-<span style="display:block; height:10px;"></span>
+</div>
 
 <style>
   #countdown_exercise_11{
@@ -3178,7 +3179,7 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
 <script>
 <!--
 const countdown_exercise_11= document.getElementById("countdown_exercise_11");
-const seconds_exercise_11= 120; // seconds_exercise_11
+const seconds_exercise_11= 60; // seconds_exercise_11
 let timeLeft_exercise_11= seconds_exercise_11;
 let timerInterval_exercise_11= null;
 
@@ -3248,6 +3249,8 @@ updateButton_exercise_11();
 ---
 ### Exercise 11 -- Solution
 
+<div style="font-size: 90%">
+
 :question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *The mean length of stay was 22.4 days (median: 14 days).*
@@ -3259,6 +3262,7 @@ updateButton_exercise_11();
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) negative skew
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
 
+</div>
 
 ---
 ## Measures of dispersion
@@ -3447,7 +3451,7 @@ Inoltre, Se la numerosità del campione è piccola, la mediana e il range interq
 <script>
 <!--
 const countdown_exercise_12= document.getElementById("countdown_exercise_12");
-const seconds_exercise_12= 120; // seconds_exercise_12
+const seconds_exercise_12= 30; // seconds_exercise_12
 let timeLeft_exercise_12= seconds_exercise_12;
 let timerInterval_exercise_12= null;
 
