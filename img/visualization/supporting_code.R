@@ -184,9 +184,9 @@ glycans$Gender <- ifelse(glycans$Gender == "F", "Female", "Male")
 
 p <- ggplot(glycans, aes(x=Age)) + geom_histogram(aes(y=..density.., fill=Gender), position = "identity", binwidth=5, color="black", alpha=0.2) + scale_fill_manual("Sex", values=c("magenta", "darkgreen")) + scale_color_manual("Sex", values=c("magenta", "darkgreen")) + theme_bw(base_size = font.size) + theme(axis.ticks = element_line(size = 0.3)) + theme(plot.subtitle=element_text(size=font.size/4*3), plot.title=element_text(size=font.size)) + xlab("Age (years)") + ylab("Density") + ggtitle("Bin size = 5") + theme(legend.position="bottom") + geom_density(aes(colour=Gender), adjust = 0.6, bw=5, lwd=2)
 
-png("Age_histogram_bin5_glycan_age_sex.png")
-print(p)
-dev.off()
+# png("Age_histogram_bin5_glycan_age_sex.png")
+# print(p)
+# dev.off()
 
 
 p <- ggplot(md, aes(x=ORR, y=age)) + geom_boxplot(fill="grey84", size=0.8) + graphic.settings + xlab("Response") + ylab("Age (years)") 

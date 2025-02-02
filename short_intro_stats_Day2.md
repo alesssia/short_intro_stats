@@ -3,6 +3,8 @@ theme: gaia
 _class: lead
 paginate: false
 marp: true
+backgroundColor: #FAFAFA
+color: black
 
 style: |
   .columns {
@@ -12,63 +14,15 @@ style: |
   }
 ---
 
+<style>
+section {
+ font-family:  'Atkinson Hyperlegible', 'Helvetica', 'Arial', sans-serif;
+}
+</style>
+
 # Introduction to statistics
 
 ### (Day 2)
-
----
-## Agenda
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%">
-
-<div class="columns">
-<div>
-
-- **Where:**
-  - Mar 4: :white_check_mark:
-  - Mar 5: AULA DARWIN - MBC
-  - Mar 6 : Online
-
-<span style="display:block; height:1px;"></span>
-
-- **When:**
-  - 14-17
-  - 1 coffee break
-
-</div>
-<div>
-
-- **Who:**
-    
-    - Paola Dalmasso paola.dalmasso@unito.it
-    - Alessia Visconti alessia.visconti@unito.it
-
-<span style="display:block; height:1px;"></span>
-
-- **How (to pass):**
-    - Attend at least 2 lessons
-
-</div>
-
-</div>
-
-</div>
-
----
-## How to ask questions/give feedback
-
-<span style="display:block; height:10px;"></span>
-
-<img src="./img/introduction/qr_code.png" img height="300px" align="right" border="4px"/>
-
-<span style="display:block; height:60px;"></span>
-
-- Interrupt me
-- Take advantage of start/end/breaks
-- Send emails alessia.visconti@unito.it
-- Use the shared pad: https://etherpad.wikimedia.org/p/intro_stats_2024_specialita <br/> (or https://t.ly/vRbvy)
 
 ---
 ![bg opacity](./img/backgrounds/wrappingup_bg.png)
@@ -80,11 +34,20 @@ style: |
 ---
 ## Recap
 
-<span style="display:block; height:30px;"></span>
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%">
 
 - The collection, organisation, summarisation, and analysis of data <br/> &nbsp;&nbsp;&nbsp; &rarr; *Descriptive* &nbsp;statistics
-
 - The drawing of inferences about a body of data when only a part of the data is observed <br/> &nbsp;&nbsp;&nbsp; &rarr; *Inferential* &nbsp;statistics
+
+<span style="display:block; height:1px;"></span>
+
+
+- When can't study a population, we select a representative sample
+- There are different sampling strategies
+
+</div>
 
 <!-- - Individuare in maniera efficiente i tratti importanti delle informazioni che sono state raccolte
 
@@ -93,22 +56,23 @@ style: |
 ---
 ## Recap
 
-- When can't study a population, we select a representative sample
-- There are different sampling strategies
+<span style="display:block; height:1px;"></span>
 
-<span style="display:block; height:10px;"></span>
+<div style="font-size: 90%">
 
 - There are different types of data
-- Data are described with measures of centrality (mode, median, mean) and dispersion (range, IQR, standard deviation)
+- Categorical variables  are described with absolute and relative frequencies
+- Numerical variables are described with measures of central tendency (mode, median, mean) and dispersion (range, IQR, standard deviation)
 - Parameters (calculated on the population) *vs*&nbsp; statistics (calculated on the sample)
+
+</div>
 
 ---
 ![bg opacity](./img/backgrounds/normal_bg.png)
 
 <span style="display:block; height:150px;"></span>
 
-# The Normal Distribution &<br/>
-# the Central Limit Theorem
+# The Normal Distribution 
 
 ---
 ## Learning objectives
@@ -116,7 +80,93 @@ style: |
 <span style="display:block; height:50px;"></span>
 
 - Know the characteristics of the Normal distribution
-- Understand the Central Limit Theorem
+- Know the characteristics of the Standard Normal distribution
+- Know the characteristics of the Student's $\mathcal{t}$ distribution
+
+---
+
+<span style="display:block; height:2px;"></span>
+
+<center>
+<img src="./img/normal/PPDAC.png" img height="500px" border="0px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
+
+</div>
+
+---
+## Let's go back to populations
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+Birth weight distribution for British twins
+
+<span style="display:block; height:155px;"></span>
+
+<div style="font-size: 80%" align="right">
+
+$N=1,000,000$
+$\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
+$median = 2408\text{ g}$
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/normal/Twin_BW_hist.png" img height="450px" border="4px"/>
+</center>
+
+</div>
+
+<!-- The population distribution is the pattern made by the birth weights of all these babies, which we can obtain from TwinsUK data on the weights for 1M twins born in the UK from 1917 to 1998 to non-Hispanic white women – although this is not the entire set of twin births, it is such a large sample that we can take it as the population. (sono dati simulati a partire da dati reali) -->
+
+---
+## Let's go back to populations
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+Birth weight distribution for British twins
+
+<span style="display:block; height:155px;"></span>
+
+<div style="font-size: 80%" align="right">
+
+$N=1,000,000$
+$\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
+$median = 2408\text{ g}$
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/normal/Twin_BW_hist_normale.png" img height="450px" border="4px"/>
+</center>
+
+</div>
+
+<!-- The shape of this distribution is important. Measurements such as weight, income, height, and so on can, at least in principle, be as fine-grained as desired, and so can be considered ‘continuous’ quantities whose population distributions are smooth. The classic example is the ‘bell-shaped curve’, or normal distribution, first explored in detail by Carl Friedrich Gauss.
+
+Theory shows that the normal distribution can be expected to occur for phenomena that are driven by large numbers of small influences, for example a complex physical trait that is not influenced by just a few genes. 
+
+Figure shows a normal curve with the same mean and standard deviation as the recorded weights. The smooth normal curve and the histogram are gratifyingly close, and other complex traits such as height and cognitive skills also have approximately normal population distributions. 
+-->
 
 ---
 ## The Normal distribution
@@ -126,24 +176,18 @@ style: |
 
 <span style="display:block; height:30px;"></span>
 
-- Symmetrical
 - $\mathcal{N} = (\mu, \sigma^2)$
+- $\text{mode} \equiv \text{median} \equiv \text{mean}$
+- Symmetrical
 
 </div>
 <div>
-<span style="display:block; height:80px;"></span>
+
+<span style="display:block; height:30px;"></span>
 
 <center>
-<img src="./img/normal_and_CLT/normal_distribution.png" img height="300px" border="4px"/>
+<img src="./img/normal/Twin_BW_normale.png" img height="450px" border="4px"/>
 </center>
-
-<div style="font-size: 90%" align="right">
-
-$$
-{\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}} 
-$$
-
-</div>
 
 </div>
 
@@ -151,7 +195,10 @@ $$
 E' simmetrica.
 Definita in maniera univoca dalla media e dalla deviazione standard 
 
-sigma^2 e' la varianza -->
+sigma^2 e' la varianza <!-- The normal distribution is characterized by its mean, or expectation, and its standard deviation.
+
+It is an impressive achievement to be able to summarize over a million births by just these two quantities. 
+ -->
 
 ---
 ## The Normal distribution
@@ -159,32 +206,335 @@ sigma^2 e' la varianza -->
 <div class="columns">
 <div>
 
+<span style="display:block; height:40px;"></span>
+
+- $\text{Area under the curve} = 1$
+- proportion $\equiv$ likelihood
+
+<span style="display:block; height:120px;"></span>
+
+<div style="font-size: 80%" align="right">
+
+$\text{very low birth weight (VLBW)} < 1500 \text{ g}$
+$\text{Twins with VLBW} = 6\%$
+$\mathcal{P}(\text{twins with VLBW}) = 0.06$
+
+</div>
+
+</div>
+<div>
+
 <span style="display:block; height:30px;"></span>
 
-- Symmetrical
-- $\mathcal{N} = (\mu, \sigma^2)$
+<center>
+<img src="./img/normal/Twin_BW_normale_area.png" img height="450px" border="4px"/>
+</center>
+
+</div>
+
+<!-- il fatto che l'area e' 1 dipende dal fatto che la normale sia una distribuzione di probabilita'
+
+For medical rather than statistical reasons, babies below 1,500 g ‘very low birth weight’. Figure 3.2(d) shows that we would expect 6% of babies in this group to be very low birth weight – in fact the actual number is ~74K (0.7%), in close agreement with the prediction from the normal curve. 
+
+ -->
+
+---
+### Exercise #1
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; Which distributions has the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; largest mean?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Green
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Blue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yellow
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) None of the above
+
+</div>
 
 </div>
 <div>
 <span style="display:block; height:80px;"></span>
 
 <center>
-<img src="./img/normal_and_CLT/1200px-Normal_Distribution_PDF.svg.png" img height="300px" border="4px"/>
+<img src="./img/normal/1200px-Normal_Distribution_PDF.svg_covered.png" img height="300px" border="4px"/>
 </center>
 
-<div style="font-size: 90%" align="right">
+</div>
+</div>
 
-$$
-{\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}} 
-$$
+<span style="display:block; height:30px;"></span>
+
+<style>
+  #countdown_exercise_1{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float:right;
+  }
+  #countdown_exercise_1.running {
+    background-color: green;
+  }
+  #countdown_exercise_1.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_1"></button>
+
+<script>
+<!--
+const countdown_exercise_1= document.getElementById("countdown_exercise_1");
+const seconds_exercise_1= 60; // seconds_exercise_1
+let timeLeft_exercise_1= seconds_exercise_1;
+let timerInterval_exercise_1= null;
+
+function formatTime_exercise_1(seconds_exercise_1) {
+  const minutes = Math.floor(seconds_exercise_1/ 60);
+  const remainingseconds_exercise_1= seconds_exercise_1% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_1).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_1() {
+  countdown_exercise_1.textContent = formatTime_exercise_1(timeLeft_exercise_1);
+}
+
+function startTimer_exercise_1() {
+  if (timerInterval_exercise_1=== null) {
+    countdown_exercise_1.classList.add('running');
+    countdown_exercise_1.classList.remove('finished');
+    timerInterval_exercise_1= setInterval(() => {
+      if (timeLeft_exercise_1> 0) {
+        timeLeft_exercise_1--;
+        updateButton_exercise_1();
+      } else {
+        clearInterval(timerInterval_exercise_1);
+        timerInterval_exercise_1= null;
+        countdown_exercise_1.classList.remove('running');
+        countdown_exercise_1.classList.add('finished');
+        countdown_exercise_1.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_1();
+  }
+}
+
+function pauseTimer_exercise_1() {
+  clearInterval(timerInterval_exercise_1);
+  timerInterval_exercise_1= null;
+  countdown_exercise_1.classList.remove('running');
+}
+
+function resetTimer_exercise_1() {
+  timeLeft_exercise_1= seconds_exercise_1;
+  updateButton_exercise_1();
+  countdown_exercise_1.classList.remove('finished');
+  countdown_exercise_1.classList.remove('running');
+  timerInterval_exercise_1= null;
+}
+
+countdown_exercise_1.addEventListener("click", () => {
+  if (countdown_exercise_1.classList.contains('finished')) {
+    resetTimer_exercise_1();
+  } else {
+    startTimer_exercise_1();
+  }
+});
+
+updateButton_exercise_1();
+-->
+</script>
+
+---
+### Exercise #1 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; Which distributions has the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; largest mean?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Green
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Blue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yellow
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) None of the above &nbsp;&nbsp; :white_check_mark:
 
 </div>
 
 </div>
+<div>
+<span style="display:block; height:80px;"></span>
 
-<!-- A diverse combinazioni di mu/sigma corrispondono diverse (e infinte) ditribuzioni normali 
+<center>
+<img src="./img/normal/1200px-Normal_Distribution_PDF.svg_sd_covered.png" img height="300px" border="4px"/>
+</center>
 
-e = costante matematica che e' circa 2.718
+</div>
+
+---
+### Exercise #2
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; Which distributions has the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; largest standard deviation?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Green
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Blue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yellow
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) None of the above
+
+</div>
+
+</div>
+<div>
+<span style="display:block; height:80px;"></span>
+
+<center>
+<img src="./img/normal/1200px-Normal_Distribution_PDF.svg_sd_covered.png" img height="300px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<span style="display:block; height:30px;"></span>
+
+<style>
+  #countdown_exercise_2{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float:right;
+  }
+  #countdown_exercise_2.running {
+    background-color: green;
+  }
+  #countdown_exercise_2.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_2"></button>
+
+<script>
+<!--
+const countdown_exercise_2= document.getElementById("countdown_exercise_2");
+const seconds_exercise_2= 60; // seconds_exercise_2
+let timeLeft_exercise_2= seconds_exercise_2;
+let timerInterval_exercise_2= null;
+
+function formatTime_exercise_2(seconds_exercise_2) {
+  const minutes = Math.floor(seconds_exercise_2/ 60);
+  const remainingseconds_exercise_2= seconds_exercise_2% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_2).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_2() {
+  countdown_exercise_2.textContent = formatTime_exercise_2(timeLeft_exercise_2);
+}
+
+function startTimer_exercise_2() {
+  if (timerInterval_exercise_2=== null) {
+    countdown_exercise_2.classList.add('running');
+    countdown_exercise_2.classList.remove('finished');
+    timerInterval_exercise_2= setInterval(() => {
+      if (timeLeft_exercise_2> 0) {
+        timeLeft_exercise_2--;
+        updateButton_exercise_2();
+      } else {
+        clearInterval(timerInterval_exercise_2);
+        timerInterval_exercise_2= null;
+        countdown_exercise_2.classList.remove('running');
+        countdown_exercise_2.classList.add('finished');
+        countdown_exercise_2.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_2();
+  }
+}
+
+function pauseTimer_exercise_2() {
+  clearInterval(timerInterval_exercise_2);
+  timerInterval_exercise_2= null;
+  countdown_exercise_2.classList.remove('running');
+}
+
+function resetTimer_exercise_2() {
+  timeLeft_exercise_2= seconds_exercise_2;
+  updateButton_exercise_2();
+  countdown_exercise_2.classList.remove('finished');
+  countdown_exercise_2.classList.remove('running');
+  timerInterval_exercise_2= null;
+}
+
+countdown_exercise_2.addEventListener("click", () => {
+  if (countdown_exercise_2.classList.contains('finished')) {
+    resetTimer_exercise_2();
+  } else {
+    startTimer_exercise_2();
+  }
+});
+
+updateButton_exercise_2();
+-->
+</script>
+
+---
+### Exercise #2 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; Which distributions has the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; largest standard deviation?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Green
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Blue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Yellow &nbsp;&nbsp;&nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) None of the above
+
+</div>
+
+</div>
+<div>
+<span style="display:block; height:80px;"></span>
+
+<center>
+<img src="./img/normal/1200px-Normal_Distribution_PDF.svg.png" img height="300px" border="4px"/>
+</center>
+
+</div>
+
+<!-- A diverse combinazioni di mu/sigma corrispondono diverse (e infinte) distribuzioni normali 
 -->
 
 ---
@@ -193,65 +543,276 @@ e = costante matematica che e' circa 2.718
 <div class="columns">
 <div>
 
-<span style="display:block; height:30px;"></span>
+<span style="display:block; height:px;"></span>
 
-- Symmetrical
-- $\mathcal{N} = (\mu, \sigma^2)$
-- $\text{Area under the curve} = 1$
+<div style="font-size: 80%">
+
+- 3 $\sigma$ rule:
+  - 68% of the observed values are at 1 $\sigma$ from the mean
+  - 95% at 2 $\sigma$
+  - 99.7% at 3 $\sigma$
+
+<span style="display:block; height:1px;"></span>
+
+- Empirical rule:
+  - values $< 2 \sigma$ are *"common"*
+  - values $> 2 \sigma$ are *"unusual"*  
+  - values $> 3 \sigma$ are *"outliers"*  
+
+</div>
+</div>
+<div>
+<span style="display:block; height:80px;"></span>
+
+<center>
+<img src="./img/normal/Standard_Normal_Distribution.png" img height="370px" border="4px"/>
+</center>
+
+</div>
+
+<!-- From the mathematical properties of the normal distribution, we know that roughly 95% of the population will be contained in the interval given by the mean ± two standard deviations, and 99.8% in the central ± three standard deviations. 
+
+68% at 1SD -> valori comuni vs valori inusuali -->
+
+---
+## Outliers
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/normal/Boxplot_vs_PDF.svg.png" img height="480px" border="0px"/>
+</center>
+
+<!-- Se i dati sono distribuiti normalmente c'e' una corrispondenza tra 1.5IQR dal 1o e 3o quartile e le standard deviation dalla media 
+1.5 IQR (fence of the boxplot) -> If the data are normally distributed, the fence will be 2.7 standard deviations from the mean, so cases outside of it will be quite rare (0.4%)
+-->
+
+---
+### Exercise #3
+
+<div style="font-size: 85%">
+
+:question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate the following values, when possible
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The median height
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The tallest Italian man's height
+
+</div>
+
+<style>
+  #countdown_exercise_3{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_3.running {
+    background-color: green;
+  }
+  #countdown_exercise_3.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_3"></button>
+
+<script>
+<!--
+const countdown_exercise_3= document.getElementById("countdown_exercise_3");
+const seconds_exercise_3= 360; // seconds_exercise_3
+let timeLeft_exercise_3= seconds_exercise_3;
+let timerInterval_exercise_3= null;
+
+function formatTime_exercise_3(seconds_exercise_3) {
+  const minutes = Math.floor(seconds_exercise_3/ 60);
+  const remainingseconds_exercise_3= seconds_exercise_3% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_3).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_3() {
+  countdown_exercise_3.textContent = formatTime_exercise_3(timeLeft_exercise_3);
+}
+
+function startTimer_exercise_3() {
+  if (timerInterval_exercise_3=== null) {
+    countdown_exercise_3.classList.add('running');
+    countdown_exercise_3.classList.remove('finished');
+    timerInterval_exercise_3= setInterval(() => {
+      if (timeLeft_exercise_3> 0) {
+        timeLeft_exercise_3--;
+        updateButton_exercise_3();
+      } else {
+        clearInterval(timerInterval_exercise_3);
+        timerInterval_exercise_3= null;
+        countdown_exercise_3.classList.remove('running');
+        countdown_exercise_3.classList.add('finished');
+        countdown_exercise_3.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_3();
+  }
+}
+
+function pauseTimer_exercise_3() {
+  clearInterval(timerInterval_exercise_3);
+  timerInterval_exercise_3= null;
+  countdown_exercise_3.classList.remove('running');
+}
+
+function resetTimer_exercise_3() {
+  timeLeft_exercise_3= seconds_exercise_3;
+  updateButton_exercise_3();
+  countdown_exercise_3.classList.remove('finished');
+  countdown_exercise_3.classList.remove('running');
+  timerInterval_exercise_3= null;
+}
+
+countdown_exercise_3.addEventListener("click", () => {
+  if (countdown_exercise_3.classList.contains('finished')) {
+    resetTimer_exercise_3();
+  } else {
+    startTimer_exercise_3();
+  }
+});
+
+updateButton_exercise_3();
+-->
+</script>
+
+
+---
+### Exercise #3 -- Solution
+
+<div style="font-size: 85%">
+
+:question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate the following values, when possible
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The median height $\rightarrow$ coincide with the mean $= 170 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$
+
+</div>
+
+---
+### Exercise #3 -- Solution
+
+<div style="font-size: 85%">
+
+:question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate the following values, when possible
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The median height $\rightarrow$ 170cm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$ $\rightarrow$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; those at the right of the median, half of the area under the curve 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 50\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers
+
+</div>
+
+---
+### Exercise #3 -- Solution
+
+<div style="font-size: 85%">
+
+:question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate the following values, when possible
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The median height $\rightarrow$ 170cm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$ $\rightarrow 50\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers $\rightarrow$ those $>2$  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation from the mean $= 170 - 9.5 \times 2 = 151 \text{ cm }$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{and } 170 + 9.5 \times 2 = 189 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height
+
+</div>
+
+---
+### Exercise #3 -- Solution
+
+<div style="font-size: 85%">
+
+:question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate the following values, when possible
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The median height $\rightarrow$ 170cm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$ $\rightarrow 50\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{ } <151 \text{ cm and }  >189 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height $\rightarrow$ the mode, which coincides with the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mean and the median $= 170 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The tallest Italian man's height
+
+</div>
+
+---
+### Exercise #3 -- Solution
+
+<div style="font-size: 85%">
+
+:question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate the following values, when possible
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The median height $\rightarrow$ 170cm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$ $\rightarrow 50\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{ } <151 \text{ cm and} >189 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height $\rightarrow 170 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The tallest Italian man's height $\rightarrow$ we can't calculate this!
+
+</div>
+
+---
+## Proportion $\equiv$ likelihood
+
+<div class="columns">
+<div>
 
 <span style="display:block; height:20px;"></span>
 
-:question: &nbsp;&nbsp;&nbsp; What is the area left of the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; median? And right?
+<div style="font-size: 90%">
 
-</div>
-<div>
-<span style="display:block; height:80px;"></span>
+- 6% of the twins have a very low birth weight
+- The probability of being very low birth weight is 0.06
 
-<center>
-<img src="./img/normal_and_CLT/normal_distribution.png" img height="300px" border="4px"/>
-</center>
+<span style="display:block; height:20px;"></span>
 
-<div style="font-size: 90%" align="right">
-
-$$
-{\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}} 
-$$
-
+<div align="right">
+How did we get these numbers?
 </div>
 
 </div>
 
-<!-- il fatto che l'area e' 1 dipende dal fatto che la normale sia una distribuzione di probabilita' -->
-
----
-## The  Normal distribution
-
-<div class="columns">
+</div>
 <div>
 
 <span style="display:block; height:30px;"></span>
 
-- Symmetrical
-- $\mathcal{N} = (\mu, \sigma^2)$
-- $\text{Area under the curve} = 1$
-- *3-sigma* (or *68–95–99.7*) rule
-
-</div>
-<div>
-<span style="display:block; height:80px;"></span>
-
 <center>
-<img src="./img/normal_and_CLT/Standard_Normal_Distribution.png" img height="370px" border="4px"/>
+<img src="./img/normal/Twin_BW_normale_area.png" img height="450px" border="4px"/>
 </center>
+
 </div>
-
-<!-- Ci dice che il 68,27%, il 95,45% e il 99,73% dei valori si trovano rispettivamente all'interno di una, due e tre deviazioni standard della media 
-
-Perche' questo ci e' utile? Lo vedremo tra poco quando parleremo degli intervalli di confidenza, e dopodomani quando andremo a testare delle ipotesi ma possiamo anticipare che puo' essere usata  come semplice test empirico per individuare valori anomali 
-
-1.5 IQR (fence of the boxplot) -> If the data are normally distributed, the fence will be 2.7 standard deviations from the mean, so cases outside of it will be quite rare (0.4%)
--->
 
 ---
 ## The Standard Normal distribution
@@ -286,7 +847,7 @@ Perche' questo ci e' utile? Lo vedremo tra poco quando parleremo degli intervall
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/normal_and_CLT/n2z_1.png" img height="400px" border="4px"/>
+<img src="./img/normal/n2z_1.png" img height="400px" border="4px"/>
 </center>
 </div>
 
@@ -309,7 +870,7 @@ Perche' questo ci e' utile? Lo vedremo tra poco quando parleremo degli intervall
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/normal_and_CLT/n2z_2.png" img height="400px" border="4px"/>
+<img src="./img/normal/n2z_2.png" img height="400px" border="4px"/>
 </center>
 </div>
 
@@ -330,7 +891,7 @@ Perche' questo ci e' utile? Lo vedremo tra poco quando parleremo degli intervall
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/normal_and_CLT/n2z_3.png" img height="400px" border="4px"/>
+<img src="./img/normal/n2z_3.png" img height="400px" border="4px"/>
 </center>
 </div>
 
@@ -350,7 +911,7 @@ Perche' questo ci e' utile? Lo vedremo tra poco quando parleremo degli intervall
 <div>
 
 <center>
-<img src="./img/normal_and_CLT/normal_table.jpg" img height="550px" border="4px"/>
+<img src="./img/normal/normal_table.jpg" img height="550px" border="4px"/>
 </center>
 </div>
 </div>
@@ -360,872 +921,407 @@ Perche' questo ci e' utile? Lo vedremo tra poco quando parleremo degli intervall
 Ci sono diverse versioni di queste tabelle, per esempio quella complementare che riporta l'area per la zona bianca (probabilita' di osservare valori piu' estremi) -->
 
 ---
-## The Standard Normal distribution in practice
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-
-</div>
-<div>
-
-<span style="display:block; height:360px;"></span>
-
-</div>
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = \text{ ?}$
-
----
-## The Standard Normal distribution in practice
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{176 - 170}{9.5} = 0.63$
-
-</div>
-<div>
-
-<span style="display:block; height:360px;"></span>
-
-</div>
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = \text{ ?}$
-
----
-## The Standard Normal distribution in practice
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{176 - 170}{9.5} = 0.63$
-
-</div>
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/normal_table_zoom_example1.jpg" img height="280px" border="4px"/>
-</center>	
-
-</div>
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = \text{ ?}$
-
----
-## The Standard Normal distribution in practice
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{176 - 170}{9.5} = 0.63$
-
-</div>
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/normal_table_zoom_example1.jpg" img height="280px" border="4px"/>
-</center>	
-
-</div>
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 176) = 1 - 0.7357 = 0.264$
-
----
-### Exercise #7
-
-<span style="display:block; height:30px;"></span>
-
-<div class="columns">
-<div>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 179.5) = \text{ ?}$
-
-</div>
-<div>
-
-<center>
-<img src="./img/normal_and_CLT/normal_table_zoom.jpg" img height="350px" border="4px"/>
-</center>	
-
-</div>
-</div>
-
----
-### Exercise #7 -- Solution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu=170 \text{ cm}$ &nbsp;&nbsp;&nbsp; $\sigma=9.5 \text{ cm}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{179.5 - 170}{9.5} = 1$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x \geq 179.5) = 1 - 0.8413 =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.16$
-
-</div>
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/normal_table_zoom.jpg" img height="350px" border="4px"/>
-</center>	
-
-</div>
-</div>
-
---- 
-## The Standard Normal distribution in practice
-
-<div class="columns">
-<div>
+### The Standard Normal distribution in practice
 
 <div style="font-size: 90%">
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+<div class="columns">
+<div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $\text{BMI} \geq 25$ in the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
+<span style="display:block; height:30px;"></span>
+
+
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 </div>
+<div>
+
+<span style="display:block; height:360px;"></span>
+
+</div>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
+
+</div>
+
+---
+### The Standard Normal distribution in practice
+
+<div style="font-size: 90%">
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{1500\text{ g} - 2404\text{ g}}{580\text{ g}}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1.56$
+
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/normal/normal_table_zoom.jpg" img height="280px" border="4px"/>
+</center> 
+
+</div>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
+
+</div>
+
+---
+### The Standard Normal distribution in practice
+
+<div style="font-size: 90%">
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{1500\text{ g} - 2404\text{ g}}{580\text{ g}}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1.56$
+
+</div>
+<div>
 
 <span style="display:block; height:160px;"></span>
 
-<div style="font-size: 70%" align="right">
-https://hbsc.org
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:1px;"></span>
-
 <center>
-<img src="./img/sampling/hbsc.jpg" img height="500px" border="4px"/>
-</center>
+<img src="./img/normal/area_normal_symmetrical.png" img height="180px" border="4px"/>
+</center> 
+
+</div>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
 
 </div>
 
-<!-- Health beavious in school aged children 
-Studio internazionale che si tiene ogni 4 anni e che raccoglie informazioni sui ragazzi di 11, 13, 15 e, recentemente anche 17 anni (che sono la mia popolazione) 
-Ma non li raccoglie tutti, ne raccoglie un campione. -->
+<!-- Fare vedere che la curva e' simmetrica quindi possiamo usare 1.56 per conoscere l'area -->
 
 ---
-## The Standard Normal distribution in practice
+### The Standard Normal distribution in practice
+
+<div style="font-size: 90%">
 
 <div class="columns">
 <div>
 
-<div style="font-size: 90%">
+<span style="display:block; height:30px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+:pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $\text{BMI} \geq 25$ in the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
-
-</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{1500\text{ g} - 2404\text{ g}}{580\text{ g}}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1.56$
 
 </div>
 <div>
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/normal_and_CLT/hbsc_BMI_pop.png" img height="370px" border="4px"/>
-</center>
-
-<div style="font-size: 70%" align="right">
-
-$$
-{\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}} 
-$$
-
-</div>
+<img src="./img/normal/normal_table_zoom_example.jpg" img height="280px" border="4px"/>
+</center> 
 
 </div>
 </div>
 
-<!-- Professione di fede, e andiamo a stimare i parametri della popolazione andandoli a eguagliare alle statistiche
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = 1 - 0.9406 = 0.0594 \rightarrow 5.94\%$
 
-ricordiamo
-- statistiche se calcolate su un campione di dati
-- parametri se descrivono la popolazione
-
-Adiamo a calcolare la funzione corrispondente e sovvraporla al valore della popolazione
- -->
-
----
-## The Standard Normal distribution in practice
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $\text{BMI} \geq 25$ in the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
-
-</div>
-
-<div style="font-size: 80%">
-
-<span style="display:block; height:1px;"></span>
-
-$$
-z = \frac{x - \mu}{\sigma} = \frac{25 - 21.5}{3.1} = 1.12
-$$
-
-</div>
-</div>
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/normal_table_zoom.jpg" img height="370px" border="4px"/>
-</center>
-
-</div>
 </div>
 
 ---
-## The Standard Normal distribution in practice
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have  $\text{BMI} \geq 25$ in the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
-
-</div>
-
-<div style="font-size: 80%">
-
-<span style="display:block; height:1px;"></span>
-
-$$
-z = \frac{x - \mu}{\sigma} = \frac{25 - 21.5}{3.1} = 1.12
-$$
-
-</div>
-</div>
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/normal_table_zoom_annotated.jpg" img height="370px" border="4px"/>
-</center>
-
-</div>
-</div>
+### Exercise #4
 
 <div style="font-size: 80%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 25) = 1 - 0.8686 = 0.1314 \rightarrow 13.1\%$
+:question: &nbsp;&nbsp;&nbsp; Not knowing that the baby has a twin, the pediatrician tells to the mother that
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a birth weight lower than $2500$ g is unusual. Should the mother be worried?
 
 </div>
-</div>
-
-<!-- Quello che abbiamo fatto e' un INFERENZA, non sappiamo quanti sono i 15enni sovrappeso, ma se il nostro campione e' rappresentativo, stimiamo che siano il 13.1% della popolazione -->
-
----
-### Exercise #8
 
 <div class="columns">
 <div>
 
-<div style="font-size: 80%">
+<span style="display:block; height:30px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+<div style="font-size: 80%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $\text{BMI} \geq 30$ in the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
 
 </div>
 
-</div>
-<div>
+<span style="display:block; height:170px;"></span>
 
-<center>
-<img src="./img/normal_and_CLT/normal_table.jpg" img height="500px" border="4px"/>
-</center>
+<style>
+  #countdown_exercise_4{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_4.running {
+    background-color: green;
+  }
+  #countdown_exercise_4.finished {
+    background-color: red;
+  }
+</style>
 
-</div>
-</div>
+<button id="countdown_exercise_4"></button>
 
----
-### Exercise #8 -- Solution
+<script>
+<!--
+const countdown_exercise_4= document.getElementById("countdown_exercise_4");
+const seconds_exercise_4= 300; // seconds_exercise_4
+let timeLeft_exercise_4= seconds_exercise_4;
+let timerInterval_exercise_4= null;
 
-<div class="columns">
-<div>
+function formatTime_exercise_4(seconds_exercise_4) {
+  const minutes = Math.floor(seconds_exercise_4/ 60);
+  const remainingseconds_exercise_4= seconds_exercise_4% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_4).padStart(2, '0')}`;
+}
 
-<div style="font-size: 80%">
+function updateButton_exercise_4() {
+  countdown_exercise_4.textContent = formatTime_exercise_4(timeLeft_exercise_4);
+}
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+function startTimer_exercise_4() {
+  if (timerInterval_exercise_4=== null) {
+    countdown_exercise_4.classList.add('running');
+    countdown_exercise_4.classList.remove('finished');
+    timerInterval_exercise_4= setInterval(() => {
+      if (timeLeft_exercise_4> 0) {
+        timeLeft_exercise_4--;
+        updateButton_exercise_4();
+      } else {
+        clearInterval(timerInterval_exercise_4);
+        timerInterval_exercise_4= null;
+        countdown_exercise_4.classList.remove('running');
+        countdown_exercise_4.classList.add('finished');
+        countdown_exercise_4.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_4();
+  }
+}
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $\text{BMI} \geq 30$ in the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
+function pauseTimer_exercise_4() {
+  clearInterval(timerInterval_exercise_4);
+  timerInterval_exercise_4= null;
+  countdown_exercise_4.classList.remove('running');
+}
 
-<span style="display:block; height:10px;"></span>
+function resetTimer_exercise_4() {
+  timeLeft_exercise_4= seconds_exercise_4;
+  updateButton_exercise_4();
+  countdown_exercise_4.classList.remove('finished');
+  countdown_exercise_4.classList.remove('running');
+  timerInterval_exercise_4= null;
+}
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{x - \mu}{\sigma} = \frac{30 - 21.5}{3.1} = 2.74$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 30) = 1 - 0.9969$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.0031 \rightarrow 0.31\%$
+countdown_exercise_4.addEventListener("click", () => {
+  if (countdown_exercise_4.classList.contains('finished')) {
+    resetTimer_exercise_4();
+  } else {
+    startTimer_exercise_4();
+  }
+});
 
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/normal_and_CLT/normal_table.jpg" img height="500px" border="4px"/>
-</center>
-
-</div>
-</div>
-
----
-### Exercise #9
-
-<div class="columns">
-<div>
-
-<div style="font-size: 80%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5 < \text{BMI} < 25$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
-
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/normal_and_CLT/normal_table.jpg" img height="500px" border="4px"/>
-</center>
-
-</div>
-</div>
-
----
-### Exercise #9 -- Solution
-
-<div class="columns">
-<div>
-
-<div style="font-size: 80%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5 < \text{BMI} < 25$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:100px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/area_normal.png" img height="250px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- Io voglio sapere quant' e' l'area colorata, che posso calcolare come 1-parte bianca <18.5 e poi -parte bianca >25 -->
-
----
-### Exercise #9 -- Solution
-
-<div class="columns">
-<div>
-
-<div style="font-size: 80%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5 < \text{BMI} < 25$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_{25} = \frac{x - \mu}{\sigma} = \frac{25 - 21.5}{3.1} = 1.12$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 25) = 0.8686$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 25) = 1 - 0.8686 =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 0.1314$
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:100px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/area_normal.png" img height="250px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- L'area bianca a dx di z_25 l'abbiamo appena calcolata  e ci indica l'aera dall'inizio della curva alla fino a z_25. Ora per calcolare l'area azzurra, dobbiamo andare a togliere l'area bianca a sx, ovvero l'area della curva sottesa tra l'inizio e z_18.5,
-
-Ci sono altri modi di risolvere l'esercizio e ne andremo a vedere un secondo in attimo
+updateButton_exercise_4();
 -->
+</script>
+
+
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/normal/normal_table_zoom.jpg" img height="280px" border="4px"/>
+</center> 
+
+</div>
+</div>
+
+<!-- For medical rather than statistical reasons, babies below 2,500 g are considered ‘low birth weight’, and those below 1,500 g ‘very low birth weight’.  -->
 
 ---
-### Exercise #9 -- Solution
+### Exercise #4 -- Solution
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; Not knowing that the baby has a twin, the pediatrician tells to the mother that
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a birth weight lower than $2500$ g is unusual. Should the mother be worried?
+
+</div>
 
 <div class="columns">
 <div>
-
-<div style="font-size: 80%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5 < \text{BMI} < 25$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 25) = 0.8686$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 25) = 0.1314$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_{18.5} = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:100px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/area_normal.png" img height="250px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- Nelle tavoole non abbiamo -0.97 -->
-
----
-### Exercise #9 -- Solution
-
-<div class="columns">
-<div>
-
-<div style="font-size: 80%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5 < \text{BMI} < 25$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 25) = 0.8686$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 25) = 0.1314$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_{18.5} = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:100px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/area_normal_symmetrical.png" img height="250px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<div style="font-size: 80%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 18.5) = \mathcal{P}(z < -0.97) = \mathcal{P}(z \geq 0.97)$
-
-</div>
-
-<!-- Nelle tavoole non abbiamo -0.97, ma sappiamo che la normale e' simmetrica rispetto alla mediana/media/moda, quindi sappiamo che area > 0.97 == area < -0.97 -->
-
-
----
-### Exercise #9 -- Solution
-
-<div class="columns">
-<div>
-
-<div style="font-size: 80%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5 < \text{BMI} < 25$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 25) = 0.8686$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 25) = 0.1314$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z_{18.5} = \frac{x - \mu}{\sigma} = \frac{18.5 - 21.5}{3.1} = -0.97$
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/normal_and_CLT/normal_table.jpg" img height="450px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<div style="font-size: 80%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 18.5) = \mathcal{P}(z < -0.97) = \mathcal{P}(z \geq 0.97) = 1 - 0.8340 = 0.166$
-
-</div>
-
-<!-- Andiamo quindi a vedere l'area fino a 0.97 e poi a calcolare quella oltre 0.97 facendo 1- -->
-
----
-### Exercise #9 -- Solution
-
-<div class="columns">
-<div>
-
-<div style="font-size: 80%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5 < \text{BMI} < 25$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 25) = 0.8686$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 25) = 0.1314$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 18.5) = 0.166$
-
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:100px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/area_normal.png" img height="250px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<div style="font-size: 80%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(18.5 < \text{BMI} < 25) = 0.8686 - 0.166 = 0.726 \rightarrow 70.3\%$
-
-</div>
-
-<!-- Area blu (<25) - area bianca (<18>) -->
-
-
----
-### Exercise #9 -- (Alternative) Solution
-
-<div class="columns">
-<div>
-
-<div style="font-size: 80%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $18.5 < \text{BMI} < 25$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the population?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 25) = 0.8686$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} \geq 25) = 0.1314$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\text{BMI} < 18.5) = 0.166$
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:100px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/area_normal.png" img height="250px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<div style="font-size: 80%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(18.5 < \text{BMI} < 25) = 1 - 0.1314 - 0.166 = 0.7026 \rightarrow 70.3\%$
-
-</div>
-
-<!-- Non ci resta che fare ultimo passo, ovvero calcolare l'area colorata in mezzo come 1-due aree bianche -->
-
----
-## The Normal distribution in the wild
 
 <span style="display:block; height:30px;"></span>
 
+<div style="font-size: 80%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{2500 - 2404}{580} = 0.17$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 2500) = 0.5675 \rightarrow 56.75\%$
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/normal/normal_table_zoom.jpg" img height="280px" border="4px"/>
+</center> 
+
+</div>
+</div>
+
+---
+### Exercise #4 -- Solution
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; Not knowing that the baby has a twin, the pediatrician tells to the mother that
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a birth weight lower than $2500$ g is unusual. Should the mother be worried?
+
+</div>
+
 <div class="columns">
 <div>
 
-<div style="font-size: 90%">
+<span style="display:block; height:30px;"></span>
 
-- Several natural phenomena approximate a Normal distribution
+<div style="font-size: 80%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{2500 - 2404}{580} = 0.17$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 2500) = 0.5675 \rightarrow 56.75\%$
 
 </div>
 
 </div>
 <div>
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:20px;"></span>
 
 <center>
-<img src="./img/normal_and_CLT/hbsc_BMI_pop.png" img height="370px" border="4px"/>
-</center>
+<img src="./img/normal/Twin_BW_normale_area_exercise.png" img height="350px" border="4px"/>
+</center> 
 
 </div>
-
-<!-- Come per esempio il peso corporeo, l'altezza, il BMI, il quoziente inteellettivo... -->
+</div>
 
 ---
-## The Normal distribution in the wild
-
-<span style="display:block; height:30px;"></span>
+## The Student's $\mathcal{t}$ distribution
 
 <div class="columns">
 <div>
-
-<div style="font-size: 90%">
-
-- Several natural phenomena approximate a Normal distribution
-- Several probability distributions approximate a Normal distribution
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/normal_and_CLT/head_count.png" img height="370px" border="4px"/>
-</center>
-
-</div>
-
-<!-- Supponiamo di aver fatto un esperimento, di aver preso una monetina, lanciata 5 volte e contato il numero di volte che e' venuto testa. A volte ne verranno 0/5, a volte 5/5 ma (visto che la monentina e' bilanciata) e' piu' probabile che ne vengano 2/ o 3/5.  Se questi 5 lanci li facciamo per 1000 volte e poi andiamo a rappresentarli con un istogramma, otteniamo questa figura, che ha, come ci aspettiamo, una media di 2.5, anche se ci sono due "mode". 
-
-Questo esempio ci permette di introdurre un nuovo, utuilissimo concetto che e' quello della distribuzione campionaria -->
-
----
-## Sampling distribution
-
-<span style="display:block; height:30px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/sampling_distro.png" img height="400px" border="0px"/>
-</center>
-
-<!-- Distribuzione campionaria e' la distribuzione di tutti i possibile valori che possono essere assunti da qualche statistica (e.g., la media) calcolata da campioni della stessa dimenzione ed estratti casualmente dalla stessa popolazione 
-
-Come si costruisce? 
-1. Estraggo tutti i possibili capioni di dimensione n
-2. Calcolo la statistica di interesse
-3. Tego traccia di ciascun valore della statistica e della sua frequenza 
-
-La forma della distribuzione delle medie campionarie è approssimativamente normale,  indipendentemente dalla distribuzione dei valori della popolazione d’origine dalla quale i campioni sono estratti, per n sufficientemente grande.-->
-
----
-## The Central Limit Theorem (CLT)
-
-<span style="display:block; height:1px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; As the sample size gets larger, the sampling distribution of the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample means approaches a normal distribution $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE)
-
-<!-- e per la legge dei grandi numeri, quando n tende all'infinito, la media del campioname è uguale alla media della popolazione.
-
-SE per esempio nei nostri lanci di monetine l'esperimento lo avessimo fatto non per 5 ma per 50 0 500 volte, avremmo visto un'approssimazione piu' normale e meno bi-modale
-
-La varianza della distribuzione campionaria  è il rapporto tra tra la varianza della popolazione e la dimenzione del campione usato per calcolarla 
-
-La radice quastrada della varianza della distribizione campionaria e' l'errore standard della media
-
-L'errore standard diminuisce al crescere di N e al decresere della varianza
-
-Quanto deve essere grande il campione perche' la distribuzione sia normale? 
-Nella maggior parte delle situazioni pratiche, n=30 e' soddisfacente, ma l'approssimazione migliora all'aumentare di n -->
-
----
-## The Central Limit Theorem (CLT)
-
-<span style="display:block; height:1px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; As the sample size gets larger, the sampling distribution of the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample means approaches a normal distribution $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE)
 
 <span style="display:block; height:10px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp;  standard error $\neq$ standard deviation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation (SD) &nbsp; $\rightarrow$ &nbsp; spread in the collected data
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard error (SE) &nbsp; $\rightarrow$ &nbsp; error in the estimation
+<div style="font-size: 80%" >
 
-<!-- Standard deviation: Si riferisce alle osservazioni, misura la variabilita' delle osservazioni
+- When observations are too little to be approximated to a Normal distribution
+  
+</div>
 
-Standard error: si riferosce alla stima di un parametro, misure l'incertezza nella statistica ottenuta da un campione, ci dice quanto la media osservata e' diversa dalla media reale della popolazione
+</div>
+<div>
+
+<span style="display:block; height:5px;"></span>
+
+<center>
+<img src="./img/normal/tdist.png" img height="450px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Quando la dimensione campionaria e' grande la nostra fiducia nell'approssimare sigma con la varianza campionaria e' ben riposta  e possiamo usare la normale per il calcolo dei CI, ma cosa succede quando i campioni soo piccoli? Usiamo la distribuzione  di Student
+
+- e' una famiglia di distribuzioni, 1 per ogni valore campionario n-1
+
+Come la normale:
+- ha media 0
+- e' simmetrica
+- ha varianza >1 che si avvicina a 1 al crescere di N
+
+
+Meno appuntita al centro e code piu' alte
  -->
 
 ---
-## The Standard Error
+## The Student's $\mathcal{t}$ distribution
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:40px;"></span>
+<span style="display:block; height:10px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; 95\% of the sample means 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; are within ~$2 \times \text{SE}$ from 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  population mean
+<div style="font-size: 80%" >
+
+- When observations are too little to be approximated to a Normal distribution
+
+- Student's $\mathcal{t}$ distribution
+  - keeps into account the degree of freedom $(\mathcal{df})$
+  - one sample of size $n \rightarrow \mathcal{df} = n -1$
+
+
+</div>
 
 </div>
 <div>
-<span style="display:block; height:50px;"></span>
 
 <center>
-<img src="./img/normal_and_CLT/Standard_Normal_Distribution.png" img height="400px" border="4px"/>
+<img src="./img/normal/tdist_table.png" img height="550px" border="4px"/>
 </center>
+
+</div>
 </div>
 
-<!-- Approssimando una Normale, la distribizione campionaria ha le stesse (utili) caratteristiche della normale:
-- e' simmetrica
-- ha area 1
-- 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione 
+<!-- una famiglia di distribuzioni, 1 per ogni valore campionario n-1
 
-Tutti concetti che ci torneranno utili tra poco
--->
+ infatti la t-dist tiene conto dei valori campionari n-1, detti anche Gradi di liberta', che misurano la quantità di informazione disponibile nei dati che può essere usata per stimare sigma (affidabilità della stima s)
 
---- 
-## The Standard Error
+All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più affidabile: con n grande la distribuzione t si avvicina alla distribuzione normale
+ -->
 
-<span style="display:block; height:30px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/small_large_SE.png" img height="400px" border="4px"/>
-</center>
-
-<!-- Piu; lo SE e' piccolo, piu' la media campionaria osservata sara' vicina alla vera media della popolazione -->
-
----
-![bg opacity](./img/backgrounds/normal_bg.png)
-
-## Summary
-
-<span style="display:block; height:30px;"></span>
-
-- Multiple phenomena and statistical distributions are normally distributed
-- Using the standard normal distribution we can calculate the probability of an observation
-- For large samples, the sampling distribution of the sample means will be normally distributed (CLT)
-
-<!-- Ok, ora abbiamo le basi per affrontare il prossimo argomento, la statistica inferenziale -->
 
 ---
 ![bg opacity](./img/backgrounds/confidence_intervals_bg.png)
 
 <span style="display:block; height:190px;"></span>
 
-# Inferential statistics
+# Estimates and Confidence Intervals 
 
 <!--- Partire dal particolare per capire come le informazioni si possono estendere alla totalità -->
 
@@ -1237,6 +1333,33 @@ Tutti concetti che ci torneranno utili tra poco
 - Understanding how to move from empirical to theoretical distributions
 - Be able to calculate and interpret point and interval estimates (confidence intervals)
 
+---
+
+<span style="display:block; height:2px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/PPDAC.png" img height="500px" border="0px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
+
+</div>
+
+---
+## &nbsp;&nbsp;&nbsp; :warning:  Disclaimer  :warning:
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If this part seems difficult to you, it's because it's really difficult.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You may have to spend quite a bit of time before understanding
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  it completely. Don't worry, we've all been there!
+
+</div>
 
 ---
 ## From sample to population
@@ -1266,285 +1389,1426 @@ Procedimento induttivo che ha lo scopo di stimare i parametri (caratteristiche) 
 Sulla base di un campione estratto casualmente da 1 popolazione cosa può essere detto circa la popolazione da cui il campione è stato estratto? -->
 
 ---
-## Point estimates
-
-<div class="columns">
-<div>
+## How accurate are we?
 
 <div style="font-size: 90%">
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What percentage of 15 y.o. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; males have $\text{BMI} \geq 25$ in the
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population?
+The mean BMI for Italian 11 years old girls is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
 
 </div>
-
-</div>
-<div>
 
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/normal_and_CLT/hbsc_BMI_pop.png" img height="370px" border="4px"/>
+<img src="./img/confidence_intervals/Females_11yo_complete_dataset.png" img height="380px" border="4px"/>
 </center>
 
-</div>
+<!-- In the age band of 11 yo there were about 400 girls. Since we know the survey was based on a proper random-sampling scheme, it is fairly reasonable to assume that the study population matches the target population, which is the Italian adolescent population. The crucial question is: how close are these statistics to what we would have found had we been able to ask every 11yo in the country? 
 
-<!-- In realta' una stima puntuale l'abbiamo gia' fatta in passato, vi ricordate quando vi ho detto della processione di fede? Siao andati a la stima ottenuta nel campione per inferire il parametro della popolazione.
+Magenta dotted line is the mean
 
-Quello che abbiamo fatto e' una STIMA PUNTUALE. Abbiamo preso due statistiche del campione e siamo andati ad usarli per stimare due parametri della popolazione
-
-Questo paramentro ha pero' un errore e il suo grado di attendibilita' viene valutato in termini di probabilita'
+As an illustration of how the accuracy of statistics depends on sample size, we shall pretend for the moment that the men in the survey in fact represent the population in which we are interested. 
 -->
 
---- 
-## Confidence intervals
+---
+## Sample size
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 10$
+
+</div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/Females_11yo_N10.png" img height="420px" border="4px"/>
+</center>
+
+<!--
+For illustration, we then take successive samples of individuals from this ‘population’ of 760 men, pausing when we reach 10, 50, 100, 200 and 380 men. 
+
+The data distributions of these samples are shown 
+
+it is clear that the smaller samples are ‘bumpier’, and the summary stats (mean here) is sensitive to single data-points
+
+ Magenta dotted line is the mean
+Density should use another scale -->
+
+---
+## Sample size
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 50$
+
+</div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/Females_11yo_N50.png" img height="420px" border="4px"/>
+</center>
+
+<!-- the rather high number of partners  in the first sample of ten individuals gets steadily overwhelmed, as the statistics get closer and closer to those of the whole group of 796 men as the sample size increases. -->
+
+---
+## Sample size
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 100$
+
+</div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/Females_11yo_N100.png" img height="420px" border="4px"/>
+</center>
+
+<!-- the rather high number of partners  in the first sample of ten individuals gets steadily overwhelmed, as the statistics get closer and closer to those of the whole group of 796 men as the sample size increases. -->
+
+---
+## Sample size
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 200$
+
+</div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/Females_11yo_N200.png" img height="420px" border="4px"/>
+</center>
+
+<!-- the rather high number of partners  in the first sample of ten individuals gets steadily overwhelmed, as the statistics get closer and closer to those of the whole group of 796 men as the sample size increases. -->
+
+---
+## Sample size
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 300$
+
+</div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/Females_11yo_N300.png" img height="420px" border="4px"/>
+</center>
+
+<!-- the rather high number of partners  in the first sample of ten individuals gets steadily overwhelmed, as the statistics get closer and closer to those of the whole group of 796 men as the sample size increases. -->
+
+---
+### Exercise #5
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; When the sample size increases, an estimate of a parameter
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) improves
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) worsens
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) is sensitive to single data-points
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) there is no difference
+
+
+</div>
+
+<span style="display:block; height:80px;"></span>
+
+<style>
+  #countdown_exercise_5{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_5.running {
+    background-color: green;
+  }
+  #countdown_exercise_5.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_5"></button>
+
+<script>
+<!--
+const countdown_exercise_5= document.getElementById("countdown_exercise_5");
+const seconds_exercise_5= 60; // seconds_exercise_5
+let timeLeft_exercise_5= seconds_exercise_5;
+let timerInterval_exercise_5= null;
+
+function formatTime_exercise_5(seconds_exercise_5) {
+  const minutes = Math.floor(seconds_exercise_5/ 60);
+  const remainingseconds_exercise_5= seconds_exercise_5% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_5).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_5() {
+  countdown_exercise_5.textContent = formatTime_exercise_5(timeLeft_exercise_5);
+}
+
+function startTimer_exercise_5() {
+  if (timerInterval_exercise_5=== null) {
+    countdown_exercise_5.classList.add('running');
+    countdown_exercise_5.classList.remove('finished');
+    timerInterval_exercise_5= setInterval(() => {
+      if (timeLeft_exercise_5> 0) {
+        timeLeft_exercise_5--;
+        updateButton_exercise_5();
+      } else {
+        clearInterval(timerInterval_exercise_5);
+        timerInterval_exercise_5= null;
+        countdown_exercise_5.classList.remove('running');
+        countdown_exercise_5.classList.add('finished');
+        countdown_exercise_5.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_5();
+  }
+}
+
+function pauseTimer_exercise_5() {
+  clearInterval(timerInterval_exercise_5);
+  timerInterval_exercise_5= null;
+  countdown_exercise_5.classList.remove('running');
+}
+
+function resetTimer_exercise_5() {
+  timeLeft_exercise_5= seconds_exercise_5;
+  updateButton_exercise_5();
+  countdown_exercise_5.classList.remove('finished');
+  countdown_exercise_5.classList.remove('running');
+  timerInterval_exercise_5= null;
+}
+
+countdown_exercise_5.addEventListener("click", () => {
+  if (countdown_exercise_5.classList.contains('finished')) {
+    resetTimer_exercise_5();
+  } else {
+    startTimer_exercise_5();
+  }
+});
+
+updateButton_exercise_5();
+-->
+</script>
+
+
+---
+### Exercise #5 -- Solution
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%">
+
+:question: &nbsp;&nbsp;&nbsp; When the sample size increases, an estimate of a parameter
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) improves &nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) worsens
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) is sensitive to single data-points
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) there is no difference
+
+</div>
+
+---
+## How accurate are we?
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%">
+
+With this example, we introduced two ideas:<br/>
+
+  1. Larger samples improve population parameter estimation
+
+  2. If we keep extracting (sub)samples, we get a feeling for ​​the variation (aka confidence interval) around the "plausible" value of the population parameter
+
+<span style="display:block; height:1px;"></span>
+
+<div align="right">
+
+and so, now?
+
+</div>
+
+</div>
+
+---
+## Estimates & confidence intervals
+
+How does one estimate the variation around the true population parameter, if what they are looking for is the true population parameter?
+
+<span style="display:block; height:10px;"></span>
+
+<img src="./img/confidence_intervals/dog-chasing-tail-6.gif" img height="300px" border="0px" style="float: right; padding: 10px 50px 100px 100px;"/>
+
+<!--  
+Now we come to a critical step. In order to work out how accurate these statistics might be, we need to think of how much our statistics might change if we (in our imagination) were to repeat the sampling process many times. In other words, if we repeatedly drew samples of 796 men from the country, how much would the calculated statistics vary?
+
+If we knew how much these estimates would vary, then it would help tell us how accurate our actual estimate was. But unfortunately we could only work out the precise variability in our estimates if we knew precisely the details of the population. And this is exactly what we do not know.  -->
+
+---
+## Estimates & confidence intervals
+
+<span style="display:block; height:10px;"></span>
+
+1. Assuming that the population is similar to the sample <br/> $\rightarrow$ *via* bootstrapping
+
+2. Making mathematical assumptions about the shape of the population distribution <br/> $\rightarrow$ *via* central limit theorem
+
+<!-- There are two ways to resolve this circularity. The first is to make some mathematical assumptions about the shape of the population distribution, and use sophisticated probability theory to work out the variability we would expect in our estimate, and hence how far away we might expect, say, the average of our sample to be from the mean of the population. This is the traditional method that is taught in statistics textbooks, and we shall see how this works in Chapter 9. 
+
+However, there is an alternative approach, based on the plausible assumption that the population should look roughly like the sample. Since we cannot repeatedly draw a new sample from the population, we instead repeatedly draw new samples from our sample! -->
+
+---
+## Estimates & confidence intervals
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_\text{Bootstrapping} = 1000$
+
+</div>
+
+<span style="display:block; height:0px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/bootstrapping.png" img height="450px" border="4px"/>
+</center>
+
+<!-- If we repeat this resampling, say, 1,000 times, we get 1,000 possible estimates of the mean. These are displayed as histograms, with each histogram showing the spread of bootstrap estimates around the mean of the original sample. These are known as sampling distributions of estimates, since they reflect the variability in estimates that arise from repeated sampling of data.
+
+Figure displays some clear features. The first, and perhaps most notable, is that almost all trace of the skewness of the original samples has gone – the distributions of the estimates based on the resampled data are almost symmetric around the mean of the original data. This is a first glimpse of what is known as the Central Limit Theorem, which says that the distribution of sample means tends towards the form of a normal distribution with increasing sample size, almost regardless of the shape of the original data distribution. 
+
+Additionally, is that the bootstrap distributions get narrower as the sample size increases
+ -->
+
+---
+## Estimates & confidence intervals
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Interval including 95% of the means obtained *via* bootstrapping
+
+</div>
+
+<span style="display:block; height:0px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/bootstrapping_fence.png" img height="450px" border="4px"/>
+</center>
+
+<!-- For example, we can find the range of values that contains 95% of the means of the bootstrap resamples, and call this a 95% uncertainty interval
+for the original estimates, or alternatively they can be called margins of error. These are shown in Table 7.2 – the symmetry of the bootstrap distributions means the uncertainty intervals are roughly symmetric around the original estimate.
+
+Per farlo sfruttiamo le proprieta' della distribuzione normale (indipendentemente dalla distribuzione del campione) 
+
+Ma prima osserviamo ancora che the bootstrap distributions get narrower as the sample size increases, which is reflected in the steadily narrower 95% uncertainty intervals.
+ -->
+
+ ---
+## Estimates & confidence intervals
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Interval including 95% of the means obtained *via* bootstrapping
+
+</div>
+
+<span style="display:block; height:0px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/bootstrapping_CI.png" img height="450px" border="4px"/>
+</center>
+
+<!-- For example, we can find the range of values that contains 95% of the means of the bootstrap resamples, and call this a 95% uncertainty interval
+for the original estimates, or alternatively they can be called margins of error. These are shown in Table 7.2 – the symmetry of the bootstrap distributions means the uncertainty intervals are roughly symmetric around the original estimate.
+
+Per farlo sfruttiamo le proprieta' della distribuzione normale (indipendentemente dalla distribuzione del campione) 
+
+Ma prima osserviamo ancora che the bootstrap distributions get narrower as the sample size increases, which is reflected in the steadily narrower 95% uncertainty intervals.
+The second important feature of Figure 7.3 is that the bootstrap distributions get narrower as the sample size increases, which is reflected in the steadily narrower 95% uncertainty intervals. 
+
+Bootstrapping provides an intuitive, computer-intensive way of assessing the uncertainty in our estimates, without making strong assumptions and without using probability theory. But the technique is not feasible when it comes to, say, working out the margins of error on unemployment surveys of 100,000 people. Although bootstrapping is a simple, brilliant and extraordinarily effective idea, it is just too clumsy to bootstrap such large quantities of data, especially when a convenient theory exists that can generate formulae for the width of uncertainty intervals.
+
+-->
+
+---
+### Exercise #6
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; When the sample size increases, the accuracy of a parameter 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; estimate...
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) improves
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) worsens
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+
+<span style="display:block; height:80px;"></span>
+
+<style>
+  #countdown_exercise_6{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float:right;
+  }
+  #countdown_exercise_6.running {
+    background-color: green;
+  }
+  #countdown_exercise_6.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_6"></button>
+
+<script>
+<!--
+const countdown_exercise_6= document.getElementById("countdown_exercise_6");
+const seconds_exercise_6= 60; // seconds_exercise_6
+let timeLeft_exercise_6= seconds_exercise_6;
+let timerInterval_exercise_6= null;
+
+function formatTime_exercise_6(seconds_exercise_6) {
+  const minutes = Math.floor(seconds_exercise_6/ 60);
+  const remainingseconds_exercise_6= seconds_exercise_6% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_6).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_6() {
+  countdown_exercise_6.textContent = formatTime_exercise_6(timeLeft_exercise_6);
+}
+
+function startTimer_exercise_6() {
+  if (timerInterval_exercise_6=== null) {
+    countdown_exercise_6.classList.add('running');
+    countdown_exercise_6.classList.remove('finished');
+    timerInterval_exercise_6= setInterval(() => {
+      if (timeLeft_exercise_6> 0) {
+        timeLeft_exercise_6--;
+        updateButton_exercise_6();
+      } else {
+        clearInterval(timerInterval_exercise_6);
+        timerInterval_exercise_6= null;
+        countdown_exercise_6.classList.remove('running');
+        countdown_exercise_6.classList.add('finished');
+        countdown_exercise_6.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_6();
+  }
+}
+
+function pauseTimer_exercise_6() {
+  clearInterval(timerInterval_exercise_6);
+  timerInterval_exercise_6= null;
+  countdown_exercise_6.classList.remove('running');
+}
+
+function resetTimer_exercise_6() {
+  timeLeft_exercise_6= seconds_exercise_6;
+  updateButton_exercise_6();
+  countdown_exercise_6.classList.remove('finished');
+  countdown_exercise_6.classList.remove('running');
+  timerInterval_exercise_6= null;
+}
+
+countdown_exercise_6.addEventListener("click", () => {
+  if (countdown_exercise_6.classList.contains('finished')) {
+    resetTimer_exercise_6();
+  } else {
+    startTimer_exercise_6();
+  }
+});
+
+updateButton_exercise_6();
+-->
+</script>
+
+
+---
+### Exercise #6 -- Solution
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; When the sample size increases, the accuracy of a parameter 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; estimate...
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) improves :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) worsens
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+---
+## Let's stop for a minute
+
+
+
+<div style="font-size: 90%">
+
+We introduced two difficult and important concepts:
+
+  1. there is a variability in the estimate of a parameter that depends on the sample
+
+  2. the shape of the sampling distribution doesn't depend on the shape of the empirical distribution, and can be approximate to a Normal distribution for large samples
+
+<span style="display:block; height:1px;"></span>
+
+<div align="right">
+
+We now have all the elements for facing the second approach that<br/> can be used to calculate parameters estimates and confidence interval
+
+</div>
+</div>
+
+<!-- 
+- the variability in statistics based on samples
+
+- the fact that the shape of the distribution of the statistics does not depend on the shape of the original distribution from which the individual data-points are drawn
+
+- bootstrapping data when we do not want to make assumptions about the shape of the population
+
+Rather remarkably, this has all been accomplished without any mathematics except the idea of drawing observations at random. -->
+
+---
+### The sampling distribution & <br/> the central limit theorem
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:40px;"></span>
+<span style="display:block; height:10px;"></span>
 
-<div style="font-size: 90%">
-
-:dart: &nbsp;&nbsp;&nbsp; A confidence interval (CI) is a
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; range of values which includes   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the estimated parameter with
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a given degree of confidence
-
-</div>
+<center>
+<img src="./img/confidence_intervals/sampling_distro.png" img height="350px" border="0px"/>
+</center>
 
 </div>
 <div>
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ &nbsp; standard error (SE)
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Distribuzione campionaria e' la distribuzione di tutti i possibile valori che possono essere assunti da qualche statistica (e.g., la media) calcolata da campioni della stessa dimensione ed estratti casualmente dalla stessa popolazione 
+
+Come si costruisce? 
+1. Estraggo tutti i possibili campioni di dimensione n
+2. Calcolo la statistica di interesse
+3. Tengo traccia di ciascun valore della statistica e della sua frequenza 
+
+La forma della distribuzione delle medie campionarie è approssimativamente normale,  indipendentemente dalla distribuzione dei valori della popolazione d’origine dalla quale i campioni sono estratti, per n sufficientemente grande.
+
+Teorema del limite centrale ci dice che la Distribuzione campionaria tende a presentare una Distribuzione Normale N = (μ, σ2 ), indipendentemente
+dalla forma della distribuzione empirica osservata nel Campione quando
+questo `e sufficientemente grande (≈ n > 30). La statistica misurata viene
+considerata uno stimatore del Parametro μ della distribuzione campiona-
+ria, mentre la sua Standard deviation è la radice quadrata del rapporto tra tra la varianza della popolazione e la dimensione del campione usato per calcolarla 
+anche conosciuta come Errore standard della stima della statistica.
+
+L'errore standard diminuisce al crescere di N e al decrescere della varianza
+
+Quanto deve essere grande il campione perch&egrave; la distribuzione sia normale? 
+Nella maggior parte delle situazioni pratiche, n=30 e' soddisfacente, ma l'approssimazione migliora all'aumentare di n (lo vedremo tra qualche slide) -->
+
+---
+## Let's put the pieces together...
+
+<div class="columns">
+<div>
+
 <span style="display:block; height:50px;"></span>
 
-<center>
-<img src="./img/normal_and_CLT/Standard_Normal_Distribution.png" img height="400px" border="4px"/>
-</center>
+<div style="font-size: 80%">
+
+- the sampling distribution is a Normal distribution
+- in a Normal distrubution, 95% of the data are at (about) $2 \times \text{SD}$ from the mean
+- a 95% confidence interval is at (about) $2 \times \text{SE}$ from the sampling distribution mean
+
 </div>
 
-<!-- E come? Attraverso gli CI, che stimano il parametro della popolazione tramite un intervallo di valori che, con una probabilità prefissata, comprende il vero valore del parametro sconosciuto. 
+</div>
+<div>
 
-Per esempio il 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione, quindi i valori che finiscono nell'intervallo di 2 SE dalla media hanno il 95% di probabilita' di inclidere il vero parametro sconosciuto -->
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/normal/Standard_Normal_Distribution.png" img height="400px" border="4px"/>
+</center>
+</div>
+</div>
+
+<!-- Approssimando una Normale, la distribuzione campionaria ha le stesse (utili) caratteristiche della normale:
+- &egrave; simmetrica
+- ha area 1
+- 95% delle medie campionarie sono a 2 SE dalla vera media della popolazione 
+
+Tutti concetti che ci torneranno utili tra poco
+-->
 
 ---
-##  Confidence intervals for means
-
-<div class="columns">
-<div>
+## Calculating confidence intervals
 
 <div style="font-size: 90%">
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+:dart: &nbsp; A 95% CI is at (about) $2 \times \text{SE}$ from the sampling distribution mean ($\bar{x}$)
 
 </div>
-
-<span style="display:block; height:310px;"></span>
-
-<div style="font-size: 70%" align="right">
-https://hbsc.org
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/sampling/hbsc.jpg" img height="500px" border="4px"/>
-</center>
-
-</div>
-
-<!-- Calcoliamo il 95% CI per la nostra stima -->
-
----
-##  Confidence intervals for means
 
 <div class="columns">
 <div>
+
+<span style="display:block; height:30px;"></span>
 
 <div style="font-size: 90%">
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Calculate SE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Calculate $2 \times \text{SE}$, *i.e.*, $95\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Margin of Error (ME)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Calculate the $95\% \text{ CI}$ as 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $(\bar{x} - \text{ ME} \text{ } ; \text{ } \bar{x} + \text{ ME} )$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n}$, &nbsp; where $\sigma=\text{ ?}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{3.1}{\sqrt(6,705)}=0.038$
-
-</div>
-
-<span style="display:block; height:170px;"></span>
-
-<div style="font-size: 70%" align="right">
-https://hbsc.org
 </div>
 
 </div>
 <div>
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:10px;"></span>
 
 <center>
-<img src="./img/sampling/hbsc.jpg" img height="500px" border="4px"/>
+<img src="./img/confidence_intervals/ME_and_CI.png" img height="400px" border="4px"/>
 </center>
 
 </div>
-
-<!-- I CI vengono costruti attorno alla stima puntuale 
-
-Infatti non abbiamo mu e non abbiamo sigma, ma abbiamo la media e la varianza campionaria (le nostre stime puntuali). -->
-
----
-##  Confidence intervals for means
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n}$, &nbsp; where $\sigma=\text{ ?}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{3.1}{\sqrt(6,705)}=0.038$
-
 </div>
 
-
-</div>
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/normal_and_CLT/Standard_Normal_Distribution.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-
-<!-- Andiamo a dirlo ancora una volta: a circa 2SE dalla media ho il 95% delle mie osservazioni -->
-
----
-## Confidence intervals for means
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:70px;"></span>
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{3.1}{\sqrt(6,705)}=0.038$
-</div>
-</div>
-
-<div>
-<span style="display:block; height:50px;"></span>
-<img src="./img/confidence_intervals/CLT.png" img height="350px" border="4px"/>
-</div>
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\bar{x} -1.96 \times SE \leq \mu \leq \bar{x} + 1.96 \times \hat{SE} ) = 95\%$
-
-<!-- Per il CTL e per la legge dei grandi numeri, la media del campione e' la media della popolazione. Se io prendo 2SE a sx della media e 2SE a destra (quindi x +/- 2 SE) ho il 95% di probabilta' di includere il vero valore mu, la media della popolazione
-
-1,96 e' il coefficiente di attendibilita', ci dice entro quanti errori standard si trova il 95% di tutti i possibili valori della media campionaria
-
-Stima intervallare devinita come stimatore +/- il prodotto tra coeff di attendibilita' e SE. Questa quantita' si chiama anche PRECISIONE della STIMA o MARGINE DI ERRORE -->
-
----
-## Confidence intervals for means
-
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=6,705$ &nbsp;&nbsp;&nbsp;15 y.o. males
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 21.5 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 3.1 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{3.1}{\sqrt(6,705)}=0.038$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(\bar{x} -1.96 \times \hat{SE} \leq \mu \leq \bar{x} + 1.96 \times \hat{SE} ) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $=\mathcal{P}(21.5 - 1.96 \times 0.038 \leq \mu \leq 21.5 + 1.96 \times 0.038 ) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $=\mathcal{P}(21.42 \leq \mu \leq 21.58) =95\%$ 
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow 95\% \text{ Confidence Interval (CI)} = (21.42; 21.58)$
-
-</div>
-
-
-<!-- Questo esempio ci dice che abbiamo un grado di fiducia (o LIVELLO DI CONFIDENZA) del 95% che la media della popolazione si trovi tra 21.42 e 21.58 kg/m2.
-
-Abbiao un confidence interval molto stretto perche' si sono verificate due condinzioni che, indipendentemente, migliorano la stima intervallare:
-- un'alta numerosita' campionaria e
-- una bassa variabilita s tra le osservazioni -->
 
 ---
 ## Interpreting confidence intervals 
 
-:pushpin: &nbsp;&nbsp;&nbsp; Population: Italian women 25-74 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu=123 \text{ mmHg}$
+<div style="font-size: 90%">
 
-<span style="display:block; height:1px;"></span>
+&nbsp;&nbsp;&nbsp; A confidence interval is a range of values which includes the
+&nbsp;&nbsp;&nbsp; estimated parameter with a given degree of confidence
+
+---
+## Interpreting confidence intervals 
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp; If we could sample the population 100 times, 95 would estimate a
+&nbsp;&nbsp;&nbsp;  confidence interval which includes the true population parameter
+
+</div>
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 90%">
+
+:pushpin: &nbsp;&nbsp;&nbsp; Population: Italian women 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25-74 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu=123 \text{ mmHg}$
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
 
 <center>
 <img src="./img/confidence_intervals/womenBP.png" img height="350px" border="4px"/>
 </center>
 
-<!-- Cosa rappresentano quindi i CI? Che dati 100 campioni estratti dalla popolazione, 95 stimano un IC al cui interno è compresa la media reale della popolazione e solo 5 stimano un ic che non include la media reale -->
+</div>
+</div>
+
+<!-- Cosa rappresentano quindi i CI? Che dati 100 campioni estratti dalla popolazione, 95 stimano un IC al cui interno è compresa la media reale della popolazione e solo 5 stimano un ic che non include la media reale 
+
+a confidence interval is the range of population parameters for which our observed statistic is a plausible consequence.
+-->
+
+---
+### Exercise #7
+
+<div style="font-size: 75%" >
+
+:question: &nbsp;&nbsp;&nbsp; In the Results section, the authors reported the following
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *In Mexican Americans, the mean age at menarche was 12.09 years 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (95% CI = 11.81 to 12.37 years)*
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this means that...
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the age at menarche for Mexican American girls is included between 11.81 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and 12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 95% of Mexican American girls experience menarche between 11.81 and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the mean age at menarche for Mexican American girls has a 95% probability 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of being included between 11.81 and 12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above
+
+</div>
+
+
+<!-- Questa differenza di 200 euro a dx e sx della media e' il margine di errore del 95% -->
+
+<style>
+  #countdown_exercise_7{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_7.running {
+    background-color: green;
+  }
+  #countdown_exercise_7.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_7"></button>
+
+<script>
+<!--
+const countdown_exercise_7= document.getElementById("countdown_exercise_7");
+const seconds_exercise_7= 60; // seconds_exercise_7
+let timeLeft_exercise_7= seconds_exercise_7;
+let timerInterval_exercise_7= null;
+
+function formatTime_exercise_7(seconds_exercise_7) {
+  const minutes = Math.floor(seconds_exercise_7/ 60);
+  const remainingseconds_exercise_7= seconds_exercise_7% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_7).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_7() {
+  countdown_exercise_7.textContent = formatTime_exercise_7(timeLeft_exercise_7);
+}
+
+function startTimer_exercise_7() {
+  if (timerInterval_exercise_7=== null) {
+    countdown_exercise_7.classList.add('running');
+    countdown_exercise_7.classList.remove('finished');
+    timerInterval_exercise_7= setInterval(() => {
+      if (timeLeft_exercise_7> 0) {
+        timeLeft_exercise_7--;
+        updateButton_exercise_7();
+      } else {
+        clearInterval(timerInterval_exercise_7);
+        timerInterval_exercise_7= null;
+        countdown_exercise_7.classList.remove('running');
+        countdown_exercise_7.classList.add('finished');
+        countdown_exercise_7.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_7();
+  }
+}
+
+function pauseTimer_exercise_7() {
+  clearInterval(timerInterval_exercise_7);
+  timerInterval_exercise_7= null;
+  countdown_exercise_7.classList.remove('running');
+}
+
+function resetTimer_exercise_7() {
+  timeLeft_exercise_7= seconds_exercise_7;
+  updateButton_exercise_7();
+  countdown_exercise_7.classList.remove('finished');
+  countdown_exercise_7.classList.remove('running');
+  timerInterval_exercise_7= null;
+}
+
+countdown_exercise_7.addEventListener("click", () => {
+  if (countdown_exercise_7.classList.contains('finished')) {
+    resetTimer_exercise_7();
+  } else {
+    startTimer_exercise_3();
+  }
+});
+
+updateButton_exercise_7();
+-->
+</script>
+
+
+---
+### Exercise #7 -- Solution
+
+<div style="font-size: 75%" >
+
+:question: &nbsp;&nbsp;&nbsp; In the Results section, the authors reported the following
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *In Mexican Americans, the mean age at menarche was 12.09 years 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (95% CI = 11.81 to 12.37 years)*
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this means that...
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the age at menarche for Mexican American girls is included between 11.81 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and 12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 95% of Mexican American girls experience menarche between 11.81  and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the mean age at menarche for Mexican American girls has a 95% probability  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of being included between 11.81 and 12.37 years old &nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above
+
+</div>
+
+---
+### Exercise #8
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<span style="display:block; height:20px;"></span>
+
+<style>
+  #countdown_exercise_8{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_8.running {
+    background-color: green;
+  }
+  #countdown_exercise_8.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_8"></button>
+
+<script>
+<!--
+const countdown_exercise_8= document.getElementById("countdown_exercise_8");
+const seconds_exercise_8= 60; // seconds_exercise_8
+let timeLeft_exercise_8= seconds_exercise_8;
+let timerInterval_exercise_8= null;
+
+function formatTime_exercise_8(seconds_exercise_8) {
+  const minutes = Math.floor(seconds_exercise_8/ 60);
+  const remainingseconds_exercise_8= seconds_exercise_8% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_8).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_8() {
+  countdown_exercise_8.textContent = formatTime_exercise_8(timeLeft_exercise_8);
+}
+
+function startTimer_exercise_8() {
+  if (timerInterval_exercise_8=== null) {
+    countdown_exercise_8.classList.add('running');
+    countdown_exercise_8.classList.remove('finished');
+    timerInterval_exercise_8= setInterval(() => {
+      if (timeLeft_exercise_8> 0) {
+        timeLeft_exercise_8--;
+        updateButton_exercise_8();
+      } else {
+        clearInterval(timerInterval_exercise_8);
+        timerInterval_exercise_8= null;
+        countdown_exercise_8.classList.remove('running');
+        countdown_exercise_8.classList.add('finished');
+        countdown_exercise_8.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_8();
+  }
+}
+
+function pauseTimer_exercise_8() {
+  clearInterval(timerInterval_exercise_8);
+  timerInterval_exercise_8= null;
+  countdown_exercise_8.classList.remove('running');
+}
+
+function resetTimer_exercise_8() {
+  timeLeft_exercise_8= seconds_exercise_8;
+  updateButton_exercise_8();
+  countdown_exercise_8.classList.remove('finished');
+  countdown_exercise_8.classList.remove('running');
+  timerInterval_exercise_8= null;
+}
+
+countdown_exercise_8.addEventListener("click", () => {
+  if (countdown_exercise_8.classList.contains('finished')) {
+    resetTimer_exercise_8();
+  } else {
+    startTimer_exercise_8();
+  }
+});
+
+updateButton_exercise_8();
+-->
+</script>
+
+---
+### Exercise #8 -- Solution
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/small_large_CI_likelihood.png" img height="400px" border="4px"/>
+</center>
+
+---
+### Exercise #8 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$ :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+
+</div>
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+
+
+---
+### Exercise #9
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<span style="display:block; height:20px;"></span>
+
+<style>
+  #countdown_exercise_9{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_9.running {
+    background-color: green;
+  }
+  #countdown_exercise_9.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_9"></button>
+
+<script>
+<!--
+const countdown_exercise_9= document.getElementById("countdown_exercise_9");
+const seconds_exercise_9= 60; // seconds_exercise_9
+let timeLeft_exercise_9= seconds_exercise_9;
+let timerInterval_exercise_9= null;
+
+function formatTime_exercise_9(seconds_exercise_9) {
+  const minutes = Math.floor(seconds_exercise_9/ 60);
+  const remainingseconds_exercise_9= seconds_exercise_9% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_9).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_9() {
+  countdown_exercise_9.textContent = formatTime_exercise_9(timeLeft_exercise_9);
+}
+
+function startTimer_exercise_9() {
+  if (timerInterval_exercise_9=== null) {
+    countdown_exercise_9.classList.add('running');
+    countdown_exercise_9.classList.remove('finished');
+    timerInterval_exercise_9= setInterval(() => {
+      if (timeLeft_exercise_9> 0) {
+        timeLeft_exercise_9--;
+        updateButton_exercise_9();
+      } else {
+        clearInterval(timerInterval_exercise_9);
+        timerInterval_exercise_9= null;
+        countdown_exercise_9.classList.remove('running');
+        countdown_exercise_9.classList.add('finished');
+        countdown_exercise_9.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_9();
+  }
+}
+
+function pauseTimer_exercise_9() {
+  clearInterval(timerInterval_exercise_9);
+  timerInterval_exercise_9= null;
+  countdown_exercise_9.classList.remove('running');
+}
+
+function resetTimer_exercise_9() {
+  timeLeft_exercise_9= seconds_exercise_9;
+  updateButton_exercise_9();
+  countdown_exercise_9.classList.remove('finished');
+  countdown_exercise_9.classList.remove('running');
+  timerInterval_exercise_9= null;
+}
+
+countdown_exercise_9.addEventListener("click", () => {
+  if (countdown_exercise_9.classList.contains('finished')) {
+    resetTimer_exercise_9();
+  } else {
+    startTimer_exercise_9();
+  }
+});
+
+updateButton_exercise_9();
+-->
+</script>
+
+---
+### Exercise #9 -- Solution
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/small_large_CI_precision.png" img height="400px" border="4px"/>
+</center>
+
+---
+### Exercise #9 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+
+
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+</div>
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+
+
 
 ---
 ### Exercise #10
 
-:question: &nbsp;&nbsp;&nbsp; We take a random sample of 500 Italian women aged 25-74
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with the following summary statistics
+<div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}=122.1 \text{ mmHg}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s=19.8 \text{ mmHg}$
+The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What is the 95% CI for the true mean $\mu$?
+:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \text{ ?}$
+
+
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+<style>
+  #countdown_exercise_10{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_10.running {
+    background-color: green;
+  }
+  #countdown_exercise_10.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_10"></button>
+
+<script>
+<!--
+const countdown_exercise_10= document.getElementById("countdown_exercise_10");
+const seconds_exercise_10= 300; // seconds_exercise_10
+let timeLeft_exercise_10= seconds_exercise_10;
+let timerInterval_exercise_10= null;
+
+function formatTime_exercise_10(seconds_exercise_10) {
+  const minutes = Math.floor(seconds_exercise_10/ 60);
+  const remainingseconds_exercise_10= seconds_exercise_10% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_10).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_10() {
+  countdown_exercise_10.textContent = formatTime_exercise_10(timeLeft_exercise_10);
+}
+
+function startTimer_exercise_10() {
+  if (timerInterval_exercise_10=== null) {
+    countdown_exercise_10.classList.add('running');
+    countdown_exercise_10.classList.remove('finished');
+    timerInterval_exercise_10= setInterval(() => {
+      if (timeLeft_exercise_10> 0) {
+        timeLeft_exercise_10--;
+        updateButton_exercise_10();
+      } else {
+        clearInterval(timerInterval_exercise_10);
+        timerInterval_exercise_10= null;
+        countdown_exercise_10.classList.remove('running');
+        countdown_exercise_10.classList.add('finished');
+        countdown_exercise_10.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_10();
+  }
+}
+
+function pauseTimer_exercise_10() {
+  clearInterval(timerInterval_exercise_10);
+  timerInterval_exercise_10= null;
+  countdown_exercise_10.classList.remove('running');
+}
+
+function resetTimer_exercise_10() {
+  timeLeft_exercise_10= seconds_exercise_10;
+  updateButton_exercise_10();
+  countdown_exercise_10.classList.remove('finished');
+  countdown_exercise_10.classList.remove('running');
+  timerInterval_exercise_10= null;
+}
+
+countdown_exercise_10.addEventListener("click", () => {
+  if (countdown_exercise_10.classList.contains('finished')) {
+    resetTimer_exercise_10();
+  } else {
+    startTimer_exercise_10();
+  }
+});
+
+updateButton_exercise_10();
+-->
+</script>
+
 
 ---
 ### Exercise #10 -- Solution
 
-:question: &nbsp;&nbsp;&nbsp; $n=500$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}=122.1 \text{ mmHg}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s=19.8 \text{ mmHg}$
+<div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What is the 95% CI for the true mean $\mu$?
+The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{19.8}{\sqrt(500)}=0.89$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - 1.96 \times \hat{SE} \text{ ; } \bar{x} + 1.96 \times \hat{SE}) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (122.1 - 1.96 \times 0.89 \text{ ; }  122.1 + 1.96 \times 0.89)$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (120.34; 123.86)$
+:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$
 
-<!-- calcolo il margine di errore, ovvero la stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = 3.3/\sqrt{403}=0.16$
 
-Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione p sia compresa tra questi valori -->
+<div>
+
+---
+### Exercise #10 -- Solution
+
+<div style="font-size: 90%" >
+
+The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = 3.3/\sqrt{403}=0.16$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $95\% \text{ ME} = 2 \times \hat{\text{SE}} = 2 \times 0.16 = 0.32$
+
+<!-- Per il CTL e per la legge dei grandi numeri, la media del campione e' la media della popolazione. Se io prendo 2SE a sx della media e 2SE a destra (quindi x +/- 2 SE) ho il 95% di probabilta' di includere il vero valore mu, la media della popolazione
+
+1,96 e' il coefficiente di attendibilita', ci dice entro quanti errori standard si trova il 95% di tutti i possibili valori della media campionaria
+
+Stima intervallare definita come stimatore +/- il prodotto tra coeff di attendibilita' e SE. Questa quantita' si chiama anche PRECISIONE della STIMA o MARGINE DI ERRORE -->
+
+---
+### Exercise #10 -- Solution
+
+<div style="font-size: 90%" >
+
+The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = 3.3/\sqrt{403}=0.16$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $95\% \text{ ME} = 2 \times \hat{\text{SE}} = 2 \times 0.16 = 0.32$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $95\% \text{CI} =  (\bar{x} - 95\% \text{ ME} \text{ } ; \text{ } \bar{x} + 95\% \text{ ME} ) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $=(18.4 - 0.32 \text{ } ; \text{ } 18.4 + 0.32) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (18.08 \text{ } ; \text{ }   18.72)$
+
+</div>
+
+<!-- Per il CTL e per la legge dei grandi numeri, la media del campione e' la media della popolazione. Se io prendo 2SE a sx della media e 2SE a destra (quindi x +/- 2 SE) ho il 95% di probabilta' di includere il vero valore mu, la media della popolazione
+
+1,96 e' il coefficiente di attendibilita', ci dice entro quanti errori standard si trova il 95% di tutti i possibili valori della media campionaria
+
+Stima intervallare definita come stimatore +/- il prodotto tra coeff di attendibilita' e SE. Questa quantita' si chiama anche PRECISIONE della STIMA o MARGINE DI ERRORE -->
+
+---
+### Exercise #11
+
+<div style="font-size: 90%" >
+
+:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the confidence interval?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) none of the above
+
+</div>
+
+<span style="display:block; height:40px;"></span>
+
+<style>
+  #countdown_exercise_11{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_11.running {
+    background-color: green;
+  }
+  #countdown_exercise_11.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_11"></button>
+
+<script>
+<!--
+const countdown_exercise_11= document.getElementById("countdown_exercise_11");
+const seconds_exercise_11= 60; // seconds_exercise_11
+let timeLeft_exercise_11= seconds_exercise_11;
+let timerInterval_exercise_11= null;
+
+function formatTime_exercise_11(seconds_exercise_11) {
+  const minutes = Math.floor(seconds_exercise_11/ 60);
+  const remainingseconds_exercise_11= seconds_exercise_11% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_11).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_11() {
+  countdown_exercise_11.textContent = formatTime_exercise_11(timeLeft_exercise_11);
+}
+
+function startTimer_exercise_11() {
+  if (timerInterval_exercise_11=== null) {
+    countdown_exercise_11.classList.add('running');
+    countdown_exercise_11.classList.remove('finished');
+    timerInterval_exercise_11= setInterval(() => {
+      if (timeLeft_exercise_11> 0) {
+        timeLeft_exercise_11--;
+        updateButton_exercise_11();
+      } else {
+        clearInterval(timerInterval_exercise_11);
+        timerInterval_exercise_11= null;
+        countdown_exercise_11.classList.remove('running');
+        countdown_exercise_11.classList.add('finished');
+        countdown_exercise_11.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_11();
+  }
+}
+
+function pauseTimer_exercise_11() {
+  clearInterval(timerInterval_exercise_11);
+  timerInterval_exercise_11= null;
+  countdown_exercise_11.classList.remove('running');
+}
+
+function resetTimer_exercise_11() {
+  timeLeft_exercise_11= seconds_exercise_11;
+  updateButton_exercise_11();
+  countdown_exercise_11.classList.remove('finished');
+  countdown_exercise_11.classList.remove('running');
+  timerInterval_exercise_11= null;
+}
+
+countdown_exercise_11.addEventListener("click", () => {
+  if (countdown_exercise_11.classList.contains('finished')) {
+    resetTimer_exercise_11();
+  } else {
+    startTimer_exercise_11();
+  }
+});
+
+updateButton_exercise_11();
+-->
+</script>
+
+
+---
+### Exercise #11 -- Solution
+
+<div style="font-size: 90%" >
+
+:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the confidence interval?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$ &nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$ &nbsp; :ballot_box_with_check:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) none of the above
+
+</div>
+
+<!-- Abbiamo un confidence interval molto stretto perche' si sono verificate due condizioni che, indipendentemente, migliorano la stima intervallare:
+- un'alta numerosit&agrave; campionaria e
+- una bassa variabilita s tra le osservazioni 
+
+Peccato che sigma non la possiamo controllare :) 
+-->
+
 
 ---
 ## The $\alpha$ level
 
-:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - 1.96 \times \hat{SE} \text{ ; }  \bar{x} + 1.96 \times \hat{SE})$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $1.96$ &nbsp; ?
+:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \approx 2 \times \hat{SE} \text{ ; }  \bar{x} + \approx 2 \times \hat{SE})$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $\approx 2$ &nbsp; ?
 
 <div class="columns">
 <div>
 <span style="display:block; height:10px;"></span>
-<div style="font-size: 90%" >
+<div style="font-size: 80%" >
 
 | Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
 | ----: | ----- | ---- | ----|
@@ -1569,13 +2833,14 @@ Quando accettiamo un livello di confidenza del 95% accettiamo implicitamente un 
 ---
 ## The $\alpha$ level
 
-:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - 1.96 \times \hat{SE} \text{ ; }  \bar{x} + 1.96 \times \hat{SE})$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $1.96$ &nbsp; ?
+:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \approx 2 \times \hat{SE} \text{ ; }  \bar{x} + \approx 2 \times \hat{SE})$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $\approx 2$ &nbsp; ?
 
 <div class="columns">
 <div>
 <span style="display:block; height:10px;"></span>
-<div style="font-size: 90%" >
+
+<div style="font-size: 80%" >
 
 | Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
 | ----: | ----- | ---- | ----|
@@ -1599,19 +2864,20 @@ $100\% - 2.5\% = 97.5\%$
 ---
 ## The $\alpha$ level
 
-:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - 1.96 \times \hat{SE} \text{ ; }  \bar{x} + 1.96 \times \hat{SE})$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $1.96$ &nbsp; ?
+:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \approx 2 \times \hat{SE} \text{ ; }  \bar{x} + \approx 2 \times \hat{SE})$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $\approx 2$ &nbsp; $\rightarrow 1.96$
 
 <div class="columns">
 <div>
 <span style="display:block; height:10px;"></span>
-<div style="font-size: 90%" >
+<div style="font-size: 80%" >
 
 | Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
 | ----: | ----- | ---- | ----|
 | 95% | 5% | 2.5% | 1.96 |
 
 $100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$  
+
 </div>
 
 </div>
@@ -1635,7 +2901,7 @@ coefficiente di attendibilita'-->
 <div>
 <span style="display:block; height:10px;"></span>
 
-<div style="font-size: 90%" >
+<div style="font-size: 80%" >
 
 | Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
 | ----: | -----: | ---- | ----:|
@@ -1665,451 +2931,141 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.58$
 Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 
 ---
-### Exercise #11
+## And for small samples?
 
 <div class="columns">
 <div>
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
-
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-</div>
-
----
-### Exercise #11 -- Solution
-
-<div class="columns">
-<div>
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
-
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$ :white_check_mark:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-</div>
-
----
-### Exercise #11 -- Solution
-
-<span style="display:block; height:30px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/small_large_CI_likelihood.png" img height="400px" border="4px"/>
-</center>
-
----
-### Exercise #12
-
-<div class="columns">
-<div>
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
-
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-</div>
-
----
-### Exercise #12 -- Solution
-
-<div class="columns">
-<div>
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
-
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise :white_check_mark:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-</div>
-
----
-### Exercise #12 -- Solution
-
-<span style="display:block; height:30px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/small_large_CI_precision.png" img height="400px" border="4px"/>
-</center>
-
----
-## Confidence intervals for differences of means
 
 <span style="display:block; height:1px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
+<div style="font-size: 80%" >
 
-<!-- Ci sono casi in cui vogliamo stimare la differenza tra medie di una popolazione (per esempio tra i pazienti che hanno ricevuto un nuovo trattamento e quelli che hanno avuto la cura standard o il placebo) -->
+:pushpin: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
 
----
-## Confidence intervals for differences of means
-
-<span style="display:block; height:1px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu_{\text{i}} - \mu_{\text{c}}, \sqrt{\frac{\sigma_\text{i}^2}{n_\text{i}} + \frac{\sigma_\text{c}^2}{n_\text{c}}})$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{CLT}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
 
 </div>
-
 </div>
 <div>
-
-</div>
-</div>
-
-<!-- Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni -->
-
----
-## Confidence intervals for differences of means
-
-<span style="display:block; height:1px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:5px;"></span>
 
 <center>
-<img src="./img/confidence_intervals/jama_network.png" img height="340px" border="4px"/>
+<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
 </center>
 
 </div>
 </div>
 
-<!-- Abbiamo due gruppo di pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS
-uno con lo standard of care e uno a cui abbiamo somministrati desametasone endovenoso. 
+---
+### Exercise 12
 
-Il numero di giorni di respirazione autonoma????
+<div class="columns">
+<div>
 
-Qual e' il CI per la differenza delle medie dei due gruppi?
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = \text{ ?}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
+
+
+</div>
+
+<span style="display:block; height:40px;"></span>
+
+<style>
+  #countdown_exercise_12{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_12.running {
+    background-color: green;
+  }
+  #countdown_exercise_12.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_12"></button>
+
+<script>
+<!--
+const countdown_exercise_12= document.getElementById("countdown_exercise_12");
+const seconds_exercise_12= 300; // seconds_exercise_12
+let timeLeft_exercise_12= seconds_exercise_12;
+let timerInterval_exercise_12= null;
+
+function formatTime_exercise_12(seconds_exercise_12) {
+  const minutes = Math.floor(seconds_exercise_12/ 60);
+  const remainingseconds_exercise_12= seconds_exercise_12% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_12).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_12() {
+  countdown_exercise_12.textContent = formatTime_exercise_12(timeLeft_exercise_12);
+}
+
+function startTimer_exercise_12() {
+  if (timerInterval_exercise_12=== null) {
+    countdown_exercise_12.classList.add('running');
+    countdown_exercise_12.classList.remove('finished');
+    timerInterval_exercise_12= setInterval(() => {
+      if (timeLeft_exercise_12> 0) {
+        timeLeft_exercise_12--;
+        updateButton_exercise_12();
+      } else {
+        clearInterval(timerInterval_exercise_12);
+        timerInterval_exercise_12= null;
+        countdown_exercise_12.classList.remove('running');
+        countdown_exercise_12.classList.add('finished');
+        countdown_exercise_12.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_12();
+  }
+}
+
+function pauseTimer_exercise_12() {
+  clearInterval(timerInterval_exercise_12);
+  timerInterval_exercise_12= null;
+  countdown_exercise_12.classList.remove('running');
+}
+
+function resetTimer_exercise_12() {
+  timeLeft_exercise_12= seconds_exercise_12;
+  updateButton_exercise_12();
+  countdown_exercise_12.classList.remove('finished');
+  countdown_exercise_12.classList.remove('running');
+  timerInterval_exercise_12= null;
+}
+
+countdown_exercise_12.addEventListener("click", () => {
+  if (countdown_exercise_12.classList.contains('finished')) {
+    resetTimer_exercise_12();
+  } else {
+    startTimer_exercise_12();
+  }
+});
+
+updateButton_exercise_12();
 -->
+</script>
 
----
-## Confidence intervals for differences of means
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{i}} - \bar{x}_{\text{c}} = 6.6-4.0=2.6$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}  = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
-
-</div>
-
-<!--  CTL differenza tra le medie campionarie e' la diffeenza tra le medie della popolazione
-SE lo calcoliamo cosi' -->
-
-
----
-## Confidence intervals for differences of means
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{i}} - \bar{x}_{\text{c}} = 6.6-4.0=2.6$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}  = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x}_{\text{i}} - \bar{x}_{\text{c}}) - 1.96 \times \hat{SE}; \text{ } (\bar{x}_{\text{i}} - \bar{x}_{\text{c}}) + 1.96 \times \hat{SE}) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (2.6 - 1.96 \times 1.08 ; \text{ } 2.6 + 1.96 \times 1.08) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.48; \text{ } 4.72)$
-
-</div>
-
-<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard 
-
-Abbiamo un grado di confidenza del 95% che la differenza delle medie delle due popolazioni sia compresa tra questi valori -->
-
----
-### Exercise #13
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp;  $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{i}} - \bar{x}_{\text{c}} = 6.6-4.0=2.6$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}  = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = \text{ ?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{5/2}$=1.65)
-
-</div>
-
-<!-- Vi ho riportato i coefficienti di attendibilita' -->
-
----
-### Exercise #13 -- Solution
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp;  $n_{\text{i}}=151, \bar{x}_{\text{i}}=6.6, s_{\text{i}}=10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=148, \bar{x}_{\text{c}}=4.0, s_{\text{c}}=8.7$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{i}} - \bar{x}_{\text{c}} = 6.6-4.0=2.6$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}  = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{i}^2}{n_\text{i}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{90\% CI} = (2.6 - 1.65 \times 1.08 ; \text{ } 2.6 + 1.65 \times 1.08) = (0.82; \text{ } 4.38)$
-
-</div>
-
-<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard  
-
-Abbiamo un grado di confidenza del X% che la differenza delle medie delle due popolazioni sia compresa tra il X e X  -->
-
----
-## CTL and small sample size
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 80%" >
-
-- CTL works for large sample size
-- $\mathcal{t}$ distribution
-  
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:5px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/tdist.png" img height="450px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- Quando la dimensione campionaria e' grande la nostra fiducia nell'approssimare sigma con la varianza campionaria e' ben riposta  e possiamo usare la normale per il calcolo dei CI, ma cosa succede quando i campioni soo piccoli? Usiamo la distribuzione  di Student
-
-- e' una famiglia di distribuzioni, 1 per ogni valore campionario n-1
-
-Come la normale:
-- ha media 0
-- e' simmetrica
-- ha varianza >1 che si avvicina a 1 al crescere di N
-
-
-Meno appuntita al centro e code piu' alte
- -->
-
----
-## CTL and small sample size
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 80%" >
-
-- CTL works for large sample size
-- $\mathcal{t}$ distribution
-  - keeps into account the degree of freedom $(\mathcal{df})$
-  - one sample of size $n \rightarrow \mathcal{df} = n -1$
-  - two samples of size $n_1 \land n_2 \rightarrow \mathcal{df} = n_1 -1 + n_2 - 1 =$
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= n_1 + n_2 -2$
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:5px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/tdist.png" img height="450px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- una famiglia di distribuzioni, 1 per ogni valore campionario n-1
-
- infatti la t-dist tiene conto dei valori campionari n-1, detti anche Gradi di liberta', che misurano la quantità di informazione disponibile nei dati che può essere usata per stimare sigma (affidabilità della stima s)
-
-All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più affidabile: con n grande la distribuzione t si avvicina alla distribuzione normale
- -->
-
----
-## CTL and small sample size
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 80%" >
-
-- CTL works for large sample size
-- $\mathcal{t}$ distribution
-  - keeps into account the degree of freedom $(\mathcal{df})$
-  - one sample of size $n \rightarrow \mathcal{df} = n -1$
-  - two samples of size $n_1 \land n_2 \rightarrow \mathcal{df} = n_1 -1 + n_2 - 1 =$
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= n_1 + n_2 -2$
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \mathcal{t} \times \hat{SE}; \text{ } \bar{x} + \mathcal{t} \times \hat{SE})$
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/tdist_table.png" img height="550px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- Il procedimento per la costruzione dei CI e' lo stesso, quello che cambia e' la tavola da dove andiamo ad estrare il coefficiente di attendibilita' (t) 
-
-Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno dei gl: usare le tavole corrette!!! -->
-
----
-## CTL and small sample size
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 80%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=58$ &nbsp;&nbsp;&nbsp; patients with T2D
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
-
-</div>
-</div>
-<div>
-
-</div>
-</div>
-
----
-## CTL and small sample size
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 80%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp; $n=58$ &nbsp;&nbsp;&nbsp; patients with T2D
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(58)}=0.36$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 58 - 1 =57$
-
-</div>
 
 
 </div>
@@ -2125,7 +3081,7 @@ Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno de
 <!-- coefficiente di attendibilita' -->
 
 ---
-## CTL and small sample size
+### Exercise 12 -- Solution
 
 <div class="columns">
 <div>
@@ -2134,22 +3090,46 @@ Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno de
 
 <div style="font-size: 80%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=58$ &nbsp;&nbsp;&nbsp; patients with T2D
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(58)}=0.36$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 58 - 1 =57$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(14)}= 0.7$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 15 - 1 = 14$
+
+</div>
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
+### Exercise 12 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(14)}= 0.7$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 15 - 1 = 14$
 
 </div>
 
 <div style="font-size: 70%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \mathcal{t} \times \hat{SE}; \text{ } \bar{x} + \mathcal{t} \times \hat{SE}) =$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (25.0 - \mathcal{t} \times 0.36; \text{ } 25.0 + \mathcal{t} \times 0.36) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (25.0 - 2 \times 0.36; \text{ } 25.0 + 2 \times 0.36) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (25.0 - 0.72; \text{ } 25.0 + 0.72) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (24.28; 25.72)$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = \mathcal{t} \times \hat{SE} = 2.145 \times 0.7 = 1.5$
 
 </div>
 </div>
@@ -2165,227 +3145,701 @@ Attenzione sempre al fattop che la distribuzione di t è diversa per ciascuno de
 <!-- Abbiamo un grado di confidenza del 95% che la media della popolazione p sia compresa tra 24.28 e 25.72 -->
 
 ---
-## Confidence intervals for proportions
+### Exercise 12 -- Solution
+
 
 <span style="display:block; height:1px;"></span>
 
-<div style="font-size: 90%" >
+<div style="font-size: 80%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; How many patients show gastrointestinal side effects from a   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new medication?
+:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(14)}= 0.7$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 15 - 1 = 14$
 
 </div>
 
-<!-- In campo medico ci sono molte questioni legate alla proporzione di pazienti con una certa caratteristica. Per esempio la proporzione di pazienti con una malattia, la proporzione di pazienti che necessita un ricovero, o quella che soffre di effetti collaterali dopo l'assunzione di un farmaco  -->
+<div style="font-size: 70%" >
 
----
-## Confidence intervals for proportions
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = \mathcal{t} \times \hat{SE} = 2.145 \times 0.7 = 1.5$
 
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp; How many patients show gastrointestinal side effects from a   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new medication?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\pi, \frac{\pi \times (1-\pi)}{n})$ &nbsp; $\rightarrow \text{CLT}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}}$, &nbsp; where $\bar{p} = \frac{m}{n}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \text{95\% ME} \text{ } ; \text{ } \bar{x} + \text{95\% ME}) =$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (25.0 - 1.5; \text{ } 25.0 + 1.5) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (23.5; 26.5)$
 
 </div>
 
-<!-- Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una stima non distorta della proporzione della popolazione e la distribuzione campionaria si approssima ad una normale -->
-
----
-## Confidence intervals for proportions
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp; How many patients show gastrointestinal side effects from a   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new medication?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=100$, &nbsp; $m=69$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
-
-</div>
-
----
-## Confidence intervals for proportions
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $n=100$, &nbsp; $m=69$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{69}{100} = 0.69$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.69\times(1-0.69)}{100}} = 0.046$
-
-<!-- proporzione campionaria -->
-
----
-## Confidence intervals for proportions
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $n=100$, &nbsp; $m=69$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{69}{100} = 0.69$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.69\times(1-0.69)}{100}} = 0.046$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{p} - 1.96 \times \hat{SE}; \text{ } \bar{p} + 1.96 \times \hat{SE}) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.69 - 1.96 \times 0.046 ; \text{ } 0.69 + 1.96 \times 0.046) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.60; \text{ } 0.78)$
-
-</div>
-
-<!-- stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard.
-
-Abbiamo un grado di confidenza del 95% che la proporzione del della popolazione p sia compresa tra il 60 e il 78% -->
-
----
-### Exercise #14
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp;  $n=100$, &nbsp; $m=69$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{69}{100} = 0.69$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.69\times(1-0.69)}{100}} = 0.046$
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = \text{ ?}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ($z_{\alpha/2}$=$z_{0.5/2}$=2.58)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-</div>
-
-<!-- Prima abbiamo fatto il 90% ora facciamo il 99%.
-vi ho riportato i coefficienti di attendibilita' -->
-
----
-### Exercise #14 -- Solution
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp;  $n=100$, &nbsp; $m=69$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{69}{100} = 0.69$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.69\times(1-0.69)}{100}} = 0.046$
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{99\% CI} = (\bar{p} - 2.58 \times \hat{SE}; \text{ } \bar{p} + 2.58 \times \hat{SE}) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.69 - 2.58 \times 0.046 ; \text{ } 0.69 + 2.58 \times 0.046) = (0.57; \text{ } 0.81)$
-
-</div>
-
-<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard  
-
-Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p sia compresa tra il x e x%
--->
-
----
-### Confidence intervals for differences of proportion
-
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
-
-<!-- Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazienti con una certa caratteristica che provengono da due diverse popolazioi, come la proporzione di uomini e donne che soffrono di una qualche malattia, o due gruppi di persone che rispondono o meno ad un farmaco -->
-
-
----
-### Confidence intervals for differences of proportion
-
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
-
-<div style="font-size: 90%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\pi_{\text{i}} - \pi_{\text{c}}, \frac{\pi_i \times (1-\pi_i)}{n_i}+\frac{\pi_c \times (1-\pi_c)}{n_c})$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{CLT}$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_i \times (1-\bar{p}_i)}{n_i}+\frac{\bar{p}_c \times (1-\bar{p}_c)}{n_c}}$
 </div>
 
 
-<!-- Per il teorema del limite centrale, di nuovo, la differenza tra le proporzioni campionarie e' una stima non distorta della differenza di proporzioni nella popolazione e la distribuzione campionaria si approssima ad una normale  -->
+<!-- Abbiamo un grado di confidenza del 95% che la media della popolazione p sia compresa tra 24.28 e 25.72 -->
 
 ---
-### Confidence intervals for differences of proportion
+### Confidence intervals for differences of means
 
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
+<div style="font-size: 90%">
+
+<span style="display:block; height:40px;"></span>
+
+<!-- :pushpin: &nbsp;&nbsp;&nbsp;  -->
+<!-- Which is the *true* difference in mean between two groups? -->
 
 <div class="columns">
 <div>
 
 <div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+:pushpin: &nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu_{\text{i}} - \mu_{\text{c}}, \sqrt{\frac{\sigma_\text{i}^2}{n_\text{i}} + \frac{\sigma_\text{c}^2}{n_\text{c}}})$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
 </div>
 
 </div>
 <div>
 
-<span style="display:block; height:5px;"></span>
+</div>
+</div>
+
+</div>
+
+<!-- 
+Ci sono casi in cui vogliamo stimare la differenza tra medie di una popolazione (per esempio tra i pazienti che hanno ricevuto un nuovo trattamento e quelli che hanno avuto la cura standard o il placebo)
+
+Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni -->
+
+---
+### Exercise #13
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
+
+<span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/confidence_intervals/nejm.png" img height="290px" border="4px"/>
+<img src="./img/confidence_intervals/jama_network.png" img height="180px" border="4px"/>
 </center>
+
+<div class="columns">
+<div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= \text{ ?}, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= \text{ ?}, \text{ } \text{ }  s_\text{i} = 8.7$ 
+
+</div>
+<div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \text{ ?}$
 
 </div>
 </div>
+
+</div>
+
+<span style="display:block; height:1px;"></span>
+
+
+<style>
+  #countdown_exercise_13{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_13.running {
+    background-color: green;
+  }
+  #countdown_exercise_13.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_13"></button>
+
+<script>
+<!--
+const countdown_exercise_13= document.getElementById("countdown_exercise_13");
+const seconds_exercise_13= 300; // seconds_exercise_13
+let timeLeft_exercise_13= seconds_exercise_13;
+let timerInterval_exercise_13= null;
+
+function formatTime_exercise_13(seconds_exercise_13) {
+  const minutes = Math.floor(seconds_exercise_13/ 60);
+  const remainingseconds_exercise_13= seconds_exercise_13% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_13).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_13() {
+  countdown_exercise_13.textContent = formatTime_exercise_13(timeLeft_exercise_13);
+}
+
+function startTimer_exercise_13() {
+  if (timerInterval_exercise_13=== null) {
+    countdown_exercise_13.classList.add('running');
+    countdown_exercise_13.classList.remove('finished');
+    timerInterval_exercise_13= setInterval(() => {
+      if (timeLeft_exercise_13> 0) {
+        timeLeft_exercise_13--;
+        updateButton_exercise_13();
+      } else {
+        clearInterval(timerInterval_exercise_13);
+        timerInterval_exercise_13= null;
+        countdown_exercise_13.classList.remove('running');
+        countdown_exercise_13.classList.add('finished');
+        countdown_exercise_13.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_13();
+  }
+}
+
+function pauseTimer_exercise_13() {
+  clearInterval(timerInterval_exercise_13);
+  timerInterval_exercise_13= null;
+  countdown_exercise_13.classList.remove('running');
+}
+
+function resetTimer_exercise_13() {
+  timeLeft_exercise_13= seconds_exercise_13;
+  updateButton_exercise_13();
+  countdown_exercise_13.classList.remove('finished');
+  countdown_exercise_13.classList.remove('running');
+  timerInterval_exercise_13= null;
+}
+
+countdown_exercise_13.addEventListener("click", () => {
+  if (countdown_exercise_13.classList.contains('finished')) {
+    resetTimer_exercise_13();
+  } else {
+    startTimer_exercise_13();
+  }
+});
+
+updateButton_exercise_13();
+-->
+</script>
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 50%" align="left">
+
+<br/> Tomazini B.M., *et al.*, *Effect of Dexamethasone on Days Alive and Ventilator-Free in Patients With Moderate or Severe Acute Respiratory Distress Syndrome and COVID-19*, JAMA, 2020
+
+</div>
+
+
+<!-- Abbiamo due gruppo di pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS
+uno con lo standard of care e uno a cui abbiamo somministrati desametasone endovenoso. 
+
+Il numero di giorni di respirazione autonoma????
+
+Qual e' il CI per la differenza delle medie dei due gruppi?
+-->
+
+---
+### Exercise #13 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/jama_network.png" img height="180px" border="4px"/>
+</center>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 151, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= 6.6, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 148, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= 4.0, \text{ } \text{ }  s_\text{i} = 8.7$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
+
+</div>
+
+
+<!--  CTL differenza tra le medie campionarie e' la diffeenza tra le medie della popolazione
+SE lo calcoliamo cosi' -->
+
+
+---
+### Exercise #13 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 151, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= 6.6, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 148, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= 4.0, \text{ } \text{ }  s_\text{i} = 8.7$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 1.08 = 2.16$
+
+</div>
+
+---
+### Exercise #13 -- Solution
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 151, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= 6.6, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 148, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= 4.0, \text{ } \text{ }  s_\text{i} = 8.7$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 1.08 = 2.16$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x}_{\text{i}} - \bar{x}_{\text{c}}) - \text{95\% ME} \text{ } ; \text{ } (\bar{x}_{\text{i}} - \bar{x}_{\text{c}}) + \text{95\% ME} =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= ((6.6-4.0) - 2.16 \text{ } ; \text{ } (6.6-4.0) + 2.16) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (2.6 - 2.16 \text{ } ; \text{ } 2.6+2.16 ) = (0.44 \text{ } ; \text{ } 4.78)$
+
+
+</div>
+
+<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard 
+
+Abbiamo un grado di confidenza del 95% che la differenza delle medie delle due popolazioni sia compresa tra questi valori -->
+
+
+---
+## Confidence intervals for proportions
+
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%" >
+
+<!-- :pushpin: &nbsp;&nbsp;&nbsp;  Which is the *true* proportion of individuals with a given    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; characteristic in a population? -->
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $\mathcal{N} = (\pi, \frac{\pi \times (1-\pi)}{n})$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}}$, &nbsp; where $\bar{p} = \frac{m}{n}$
+
+</div>
+
+<!-- 
+In campo medico ci sono molte questioni legate alla proporzione di pazienti con una certa caratteristica. Per esempio la proporzione di pazienti con una malattia, la proporzione di pazienti che necessita un ricovero, o quella che soffre di effetti collaterali dopo l'assunzione di un farmaco
+
+Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una stima non distorta della proporzione della popolazione e la distribuzione campionaria si approssima ad una normale 
+
+ -->
+
+---
+### Exercise #14
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/endometriosis.png" img height="180px" border="4px"/>
+</center>
+
+<div class="columns">
+<div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= \text{ ?}, \text{ } \text{ } \text{ } \text{ } m = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \text{ ?}$ 
+
+</div>
+<div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \text{ ?}$
+
+</div>
+</div>
+
+</div>
+
+<span style="display:block; height:1px;"></span>
+
+
+<style>
+  #countdown_exercise_14{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_14.running {
+    background-color: green;
+  }
+  #countdown_exercise_14.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_14"></button>
+
+<script>
+<!--
+const countdown_exercise_14= document.getElementById("countdown_exercise_14");
+const seconds_exercise_14= 300; // seconds_exercise_14
+let timeLeft_exercise_14= seconds_exercise_14;
+let timerInterval_exercise_14= null;
+
+function formatTime_exercise_14(seconds_exercise_14) {
+  const minutes = Math.floor(seconds_exercise_14/ 60);
+  const remainingseconds_exercise_14= seconds_exercise_14% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_14).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_14() {
+  countdown_exercise_14.textContent = formatTime_exercise_14(timeLeft_exercise_14);
+}
+
+function startTimer_exercise_14() {
+  if (timerInterval_exercise_14=== null) {
+    countdown_exercise_14.classList.add('running');
+    countdown_exercise_14.classList.remove('finished');
+    timerInterval_exercise_14= setInterval(() => {
+      if (timeLeft_exercise_14> 0) {
+        timeLeft_exercise_14--;
+        updateButton_exercise_14();
+      } else {
+        clearInterval(timerInterval_exercise_14);
+        timerInterval_exercise_14= null;
+        countdown_exercise_14.classList.remove('running');
+        countdown_exercise_14.classList.add('finished');
+        countdown_exercise_14.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_14();
+  }
+}
+
+function pauseTimer_exercise_14() {
+  clearInterval(timerInterval_exercise_14);
+  timerInterval_exercise_14= null;
+  countdown_exercise_14.classList.remove('running');
+}
+
+function resetTimer_exercise_14() {
+  timeLeft_exercise_14= seconds_exercise_14;
+  updateButton_exercise_14();
+  countdown_exercise_14.classList.remove('finished');
+  countdown_exercise_14.classList.remove('running');
+  timerInterval_exercise_14= null;
+}
+
+countdown_exercise_14.addEventListener("click", () => {
+  if (countdown_exercise_14.classList.contains('finished')) {
+    resetTimer_exercise_14();
+  } else {
+    startTimer_exercise_14();
+  }
+});
+
+updateButton_exercise_14();
+-->
+</script>
+
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 50%" align="left">
+
+<br/> Ferrero S.., *et al.*, *Prevalence of newly diagnosed endometriosis in women attending the general practitioner*,  <br/> Int J Gynaecol Obstet, 2020
+
+</div>
+
+---
+### Exercise #14 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/endometriosis.png" img height="180px" border="4px"/>
+</center>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= 1291, \text{ } \text{ } \text{ } \text{ } m = 46$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{46}{1291} = 0.036 = 3.6\%$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.036\times(1-0.036)}{1291}} = 0.005$
+
+</div>
+
+---
+### Exercise #14 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= 1291, \text{ } \text{ } \text{ } \text{ } m = 46$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{46}{1291} = 0.036 = 3.6\%$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.036\times(1-0.036)}{1291}} = 0.005$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 0.005 = 0.01$
+
+</div>
+
+---
+### Exercise #14 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= 1291, \text{ } \text{ } \text{ } \text{ } m = 46$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{46}{1291} = 0.036 = 3.6\%$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.036\times(1-0.036)}{1291}} = 0.005$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 0.005 = 0.01$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{p} - \text{95\% ME} \text{ } ; \text{ } \bar{p} + \text{95\% ME} =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.036 - 0.01 \text{ } ; \text{ } 0.036 + 0.01 ) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.026 \text{ } ; \text{ } 0.046 ) = (2.6\% \text{ } ; \text{ } 4.6\%)$
+
+
+</div>
+
+
+---
+### Confidence intervals for differences of proportion
+
+<div style="font-size: 90%" >
+
+<!-- :pushpin: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups? -->
+
+<span style="display:block; height:40px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mathcal{N} = (\pi_{\text{i}} - \pi_{\text{c}}, \frac{\pi_i \times (1-\pi_i)}{n_i}+\frac{\pi_c \times (1-\pi_c)}{n_c})$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_i \times (1-\bar{p}_i)}{n_i}+\frac{\bar{p}_c \times (1-\bar{p}_c)}{n_c}}$
+
+</div>
+
+
+<!--
+Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazienti con una certa caratteristica che provengono da due diverse popolazioi, come la proporzione di uomini e donne che soffrono di una qualche malattia, o due gruppi di persone che rispondono o meno ad un farmaco
+
+ Per il teorema del limite centrale, di nuovo, la differenza tra le proporzioni campionarie e' una stima non distorta della differenza di proporzioni nella popolazione e la distribuzione campionaria si approssima ad una normale  -->
+
+---
+### Exercise #15
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups?
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/nejm.png" img height="160px" border="4px"/>
+</center>
+
+<div class="columns">
+<div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ }  p_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \text{ ?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= \text{ ?}, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= \text{ ?}, \text{ } \text{ }  p_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \text{ ?}$ 
+
+</div>
+<div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_\text{i} \times (1-\bar{p}_\text{i})}{n_\text{i}}+\frac{\bar{p}_\text{c} \times (1-\bar{p}_\text{c})}{n_\text{c}}} = \text{ ?}$
+
+</div>
+</div>
+
+</div>
+
+<span style="display:block; height:10px;"></span>
+
+<style>
+  #countdown_exercise_15{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_15.running {
+    background-color: green;
+  }
+  #countdown_exercise_15.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_15"></button>
+
+<script>
+<!--
+const countdown_exercise_15= document.getElementById("countdown_exercise_15");
+const seconds_exercise_15= 300; // seconds_exercise_15
+let timeLeft_exercise_15= seconds_exercise_15;
+let timerInterval_exercise_15= null;
+
+function formatTime_exercise_15(seconds_exercise_15) {
+  const minutes = Math.floor(seconds_exercise_15/ 60);
+  const remainingseconds_exercise_15= seconds_exercise_15% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_15).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_15() {
+  countdown_exercise_15.textContent = formatTime_exercise_15(timeLeft_exercise_15);
+}
+
+function startTimer_exercise_15() {
+  if (timerInterval_exercise_15=== null) {
+    countdown_exercise_15.classList.add('running');
+    countdown_exercise_15.classList.remove('finished');
+    timerInterval_exercise_15= setInterval(() => {
+      if (timeLeft_exercise_15> 0) {
+        timeLeft_exercise_15--;
+        updateButton_exercise_15();
+      } else {
+        clearInterval(timerInterval_exercise_15);
+        timerInterval_exercise_15= null;
+        countdown_exercise_15.classList.remove('running');
+        countdown_exercise_15.classList.add('finished');
+        countdown_exercise_15.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_15();
+  }
+}
+
+function pauseTimer_exercise_15() {
+  clearInterval(timerInterval_exercise_15);
+  timerInterval_exercise_15= null;
+  countdown_exercise_15.classList.remove('running');
+}
+
+function resetTimer_exercise_15() {
+  timeLeft_exercise_15= seconds_exercise_15;
+  updateButton_exercise_15();
+  countdown_exercise_15.classList.remove('finished');
+  countdown_exercise_15.classList.remove('running');
+  timerInterval_exercise_15= null;
+}
+
+countdown_exercise_15.addEventListener("click", () => {
+  if (countdown_exercise_15.classList.contains('finished')) {
+    resetTimer_exercise_15();
+  } else {
+    startTimer_exercise_15();
+  }
+});
+
+updateButton_exercise_15();
+-->
+</script>
+
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 50%" align="left">
+
+<br/> Connor, E.M. *et al.*, *Reduction of Maternal-Infant Transmission of Human Immunodeficiency Virus Type 1 with Zidovudine Treatment*, NEJM, 1994
+
+</div>
+
 
 <!-- 
 Randomized Trial on the efficacy of AZT in reducing the risk of maternal-infant HIV transmission
 HIV positive pregnant women randomized to receive AZT or placebo -->
 
 ---
-### Confidence intervals for differences of proportion
+### Exercise #15 -- Solution
 
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
+<div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups?
 
 <span style="display:block; height:1px;"></span>
 
-<div style="font-size: 90%" >
+<center>
+<img src="./img/confidence_intervals/nejm.png" img height="160px" border="4px"/>
+</center>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p}_{\text{i}} - \bar{p}_{\text{c}} = \frac{m_i}{n_i} - \frac{m_c}{n_c} = \frac{13}{180} - \frac{40}{183} = 0.07 - 0.22 = -0.15$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{SE} = \sqrt{\frac{\bar{p}_i \times (1-\bar{p}_i)}{n_i}+\frac{\bar{p}_c \times (1-\bar{p}_c)}{n_c}}= \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  p_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 183, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= 40, \text{ } \text{ }  p_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \frac{40}{183} = 0.22$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_\text{i} \times (1-\bar{p}_\text{i})}{n_\text{i}}+\frac{\bar{p}_\text{c} \times (1-\bar{p}_\text{c})}{n_\text{c}}} = \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
 
 </div>
 
 <!--  differenza tra le proporzioni campionarie-->
 
 ---
-### Confidence intervals for differences of proportion
+### Exercise #15 -- Solution
 
-:pushpin: &nbsp;&nbsp;&nbsp; Are the intervention (i) and the control (c) group different?
+<div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}=180, m_{\text{i}}=13$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}=183, m_{\text{c}}=40$ 
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups?
 
 <span style="display:block; height:1px;"></span>
 
-<div style="font-size: 90%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p}_{\text{i}} - \bar{p}_{\text{c}}  = -0.15$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\hat{SE} = 0.036$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  p_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 183, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= 40, \text{ } \text{ }  p_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \frac{40}{183} = 0.22$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{p}_{\text{i}} - \bar{p}_{\text{c}} -1.96 \times \hat{SE}; \text{ } \bar{p}_{\text{i}} - \bar{p}_{\text{c}} +1.96 \times \hat{SE}) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (-0.15 - 0.007; \text{ }  -0.015 + 0.07) = (-0.22 ; -0.08)$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_\text{i} \times (1-\bar{p}_\text{i})}{n_\text{i}}+\frac{\bar{p}_\text{c} \times (1-\bar{p}_\text{c})}{n_\text{c}}} = \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 0.036 = 0.072$
+
+</div>
+
+---
+### Exercise #15 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups?
+
+<span style="display:block; height:1px;"></span>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  p_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 183, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= 40, \text{ } \text{ }  p_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \frac{40}{183} = 0.22$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_\text{i} \times (1-\bar{p}_\text{i})}{n_\text{i}}+\frac{\bar{p}_\text{c} \times (1-\bar{p}_\text{c})}{n_\text{c}}} = \sqrt{\frac{0.07 \times (1-0.07)}{180}+\frac{0.22 \times (1-0.22)}{183}} = 0.036$
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 0.036 = 0.072$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = ((\bar{p}_{\text{i}} - \bar{p}_{\text{c}}) - \text{95\% ME}  \text{ } ; \text{ } (\bar{p}_{\text{i}} - \bar{p}_{\text{c}}) + \text{95\% ME} ) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (-0.15 - 0.072 \text{ } ; \text{ }  -0.15 + 0.072) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (-0.222 ; -0.078)$ 
 
 </div>
 
@@ -2394,14 +3848,23 @@ HIV positive pregnant women randomized to receive AZT or placebo -->
 Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p sia compresa tra il x e x%
 -->
 
+
 ---
 ![bg opacity](./img/backgrounds/confidence_intervals_bg.png)
 
 ## Summary
 
+<div style="font-size: 80%" >
+
 - We use statistics to estimate parameters (point estimates)
+- Interval estimates (CI and/or ME) should be communicated along with the point estimates 
+- The sample size influences the size of the CI
+- Sampling distributions tend to show a normal distribution if the sample size is large enough (CLT)
 - We can take advantage of the CLT to calculate interval estimates (CI) 
+- For small sample size, the sampling distribution is approximated to a Student's $\mathcal{t}$ 
 - 95% confidence intervals tell us the the true value has 95% probability of being inside the given range
+
+</div>
 
 <!-- Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p sia compresa tra il x e x% -->
 

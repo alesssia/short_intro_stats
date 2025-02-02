@@ -3,6 +3,8 @@ theme: gaia
 _class: lead
 paginate: false
 marp: true
+backgroundColor: #FAFAFA
+color: black
 
 style: |
   .columns {
@@ -12,12 +14,18 @@ style: |
   }
 ---
 
+<style>
+section {
+ font-family:  'Atkinson Hyperlegible', 'Helvetica', 'Arial', sans-serif;
+}
+</style>
+
 # Introduction to statistics
 
 ### (Day 1)
 
 ---
-## Agenda
+## Housekeeping
 
 <span style="display:block; height:1px;"></span>
 
@@ -26,29 +34,17 @@ style: |
 <div class="columns">
 <div>
 
-- **Where:**
-  - Mar 4: AULA GALILEO - MBC
-  - Mar 5: AULA DARWIN - MBC
-  - Mar 6 : Online
-
-<span style="display:block; height:1px;"></span>
-
-- **When:**
-  - 14-17
-  - 1 coffee break
-
-</div>
-<div>
-
 - **Who:**
     
     - Paola Dalmasso paola.dalmasso@unito.it
     - Alessia Visconti alessia.visconti@unito.it
+</div>
+<div>
 
-<span style="display:block; height:1px;"></span>
 
-- **How (to pass):**
-    - Attend at least 2 lessons
+- **Exam:**
+    - Multiple-choice questions <br/>(*via* Moodle)
+
 
 </div>
 
@@ -81,75 +77,7 @@ style: |
 Cosa vuol dire "fino al"? Se eliminasse il 10% dei batteri e raggiungesse il 20% della bocca, questo annuncio sarebbe ancora vero, o lo dobbiamo segnalare per pubblicita' ingannevole? Unico modo per renderlo falso e' che elimini tutti batteri e raggiunga piu' di tutta la bocca (due condizioni abbastanza improbabili, nel primo caso, o impossibili, nel secondo) -->
 
 
----
-## What happens after WWII?
 
-<div class="columns">
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/introduction/Lefthandness_covered.png" img height="450px" border="4px"/>
-</center>
-
-</div>
-<div>
-
-
-</div>
-</div>
-
-<!--  DESCRIVERE BENE IL GRAFICO Come prosegue questa curva? -->
-
----
-## What happens after WWII?
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/introduction/Lefthandness.png" img height="450px" border="4px"/>
-</center>
-
-</div>
-<div>
-
-
-</div>
-</div>
-
-<!-- Cosa sta succedendo? Che messaggio avrei potuto passare se avessi interrotto la serie temporale al 1940, invece di proseguire sino ai giorni nostri?
-
-Quali sono le cause di questa curva? -->
-
----
-## Civic education, about 1935
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/introduction/Lefthandness.png" img height="450px" border="4px"/>
-</center>
-
-</div>
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/introduction/lefthandess_2.jpeg" img height="450px" border="4px"/>
-</center>
-
-</div>
-</div>
-
- <!-- Ricordiamoci che per interpretare i numeri dobbiamo anche usare le nostre conoscenze sul problema in questione. om qiesyp caso sulle norme sociali che forzavano i mancini a "correggersi" --> -->
 
 ---
 ## Storks and babies
@@ -206,23 +134,22 @@ Correlation is not causation, Correlazione non e' causalita', "dopo di" non sign
 
 <span style="display:block; height:10px;"></span>
 
-- because "numbers" (or rather, the way they are presented) are sometimes deceiving
+- Because "numbers" (or rather, the way they are presented) are sometimes deceiving
 
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:10px;"></span>
 
 <center>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./img/introduction/correlation.png" img height="185px" border="4px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./img/introduction/correlation.png" img height="185px" border="4px"/>
 </center>
 
 </div>
 <div>
 
 <center>
-<img src="./img/introduction/tobacco.png" img height="330px" border="4px"/>
+<img src="./img/introduction/tobacco.png" img height="300px" border="4px"/>
 </center>
 
 </div>
@@ -241,7 +168,7 @@ The numbers have no way of speaking for themselves. We speak for them. We imbue 
 
 <span style="display:block; height:60px;"></span>
 
-> Why do soldiers die?
+- Why do soldiers die?
 
 <!-- Ma i numeri non ci ingannano solo, ci permettono anche di rispondere a delle domande e prendere delle decisioni -->
 
@@ -252,7 +179,7 @@ The numbers have no way of speaking for themselves. We speak for them. We imbue 
 
 
 <center>
-<img src="./img/introduction/220px-Florence_Nightingale_(H_Hering_NPG_x82368).jpg" img height="450px" align="right" border="4px"/>
+<img src="./img/introduction/220px-Florence_Nightingale_H_Hering_NPG_x82368.jpg" img height="450px" align="right" border="4px"/>
 </center>
 
 
@@ -288,16 +215,16 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 
 <span style="display:block; height:30px;"></span>
 
-- because "numbers" (or rather, the way they are presented) are sometimes deceiving
-- Why “numbers” (and the way they are presented) help us describe, understand, and change the world
+- Because "numbers" (or rather, the way they are presented) are sometimes deceiving
+- Because “numbers” (and the way they are presented) help us describe, understand, and change the world
 
 ---
 ## Why are we here?
 
 <span style="display:block; height:30px;"></span>
 
-- to learn how to read, understand, and critically analyse scientific papers
-- to be able to carry out research involving the acquisition, processing, and analysis of data
+- To learn how to read, understand, and critically analyse scientific papers
+- To be able to carry out research involving the acquisition, processing, and analysis of data
 
 <span style="display:block; height:120px;"></span>
 
@@ -322,7 +249,7 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 
 <span style="display:block; height:60px;"></span>
 
-> Why do soldiers die?
+- Why do soldiers die?
 
 </div>
 <div>
@@ -346,7 +273,7 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 
 <span style="display:block; height:1px;"></span>
 
-<img src="./img/introduction/220px-Florence_Nightingale_(H_Hering_NPG_x82368).jpg" img height="450px" align="right" border="4px"/>
+<img src="./img/introduction/220px-Florence_Nightingale_H_Hering_NPG_x82368.jpg" img height="450px" align="right" border="4px"/>
 
 </div>
 </div>
@@ -387,7 +314,7 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 
 <span style="display:block; height:1px;"></span>
 
-<img src="./img/introduction/Unknown_artist_-_Florence_Nightingale_(1820_-_1910)_at_Scutari_Hospital_in_Turkey_around_1855_-_(MeisterDrucke-1007503).jpg" img height="440px"  border="4px" align="right"/>
+<img src="./img/introduction/Unknown_artist_-_Florence_Nightingale_1820_-_1910_at_Scutari_Hospital_in_Turkey_around_1855_-_MeisterDrucke-1007503.jpg" img height="440px"  border="4px" align="right"/>
 
 
 <div style="font-size: 50%" align="right">
@@ -481,47 +408,17 @@ If the law of the country is that cars should drive on the right, then we can de
 - How to make decision with data
 
 
+<img src="./img/introduction/math_warning.png" img height="150px" align="right" border="0px"/>
+
 <!-- - Come raccogliere i dati, che andranno scelti oculatamente per far si' che il particolare che ossserviamo si estenda alla totalita' della popolazione
 
 - Come sintetizzarli, utilizzando vari indici, ma anche qualche rappresentazione grafica
 
-- come usare approcci statistici per stimare valori della popolazione, e definire e verificare ipotesi -->
+- come usare approcci statistici per stimare valori della popolazione, e definire e verificare ipotesi 
 
----
-## What will we learn?
+Ci saranno anche delle formule matematiche, ma non preoccupatevi: andremo a spiegarle e saranno un aiuto per svolgere gli esercizi e in generale capire cosa stiamo facendo (si', ci sono anche degli esercizi!)
+-->
 
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/hypothesis_testing/jama_network_hypothesis.png " img height="300px" border="4px"/>
-</center>
-
-
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 50%">
-	
-Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", JAMA, 2020, doi:10.1001/jama.2020.17021
-
-</div>
-
-
-<!-- Andremo per esempio a capire come disegnare un piano di raccolta e analisi dei dati che ci permetta di capire se Nei pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS), desametasone è efficace nell’aumentare il numero di giorni di respirazione autonoma? -->
-
----
-## Topics covered
-
-<span style="display:block; height:10px;"></span>
-
-- How to sample from a population
-- How to use Measure of central tendency and dispersion
-- How to make estimation from a sample
-- How to interpret confidence intervals
-- How to make and test hypotheses
-
-<img src="./img/introduction/math_warning.png" img height="150px" align="right" border="0px"/>
-
-<!-- Qui un elenco piu' formale dei topics. Ci saranno anche delle formule matematiche, ma non preoccupatevi: andremo a spiegarle e saranno un aiuto per svolgere gli esercizi e in generale capire cosa stiamo facendo (si', ci sono anche degli esercizi!) -->
 
 ---
 ![bg opacity](./img//backgrounds/sampling_bg.png)
@@ -610,10 +507,10 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 
 :question: &nbsp;&nbsp;&nbsp; Which is the population of this study?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
 
 </div>
 
@@ -722,10 +619,10 @@ updateButton_exercise_1();
 
 :question: &nbsp;&nbsp;&nbsp; Which is the population of this study?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; :white_check_mark: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; :white_check_mark: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
 
 </div>
 
@@ -743,10 +640,10 @@ updateButton_exercise_1();
 
 :question: &nbsp;&nbsp;&nbsp; Which is the sample used in this study?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
 
 </div>
 
@@ -849,10 +746,10 @@ updateButton_exercise_1bis();
 
 :question: &nbsp;&nbsp;&nbsp; Which is the sample used in this study?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS :white_check_mark: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS :white_check_mark: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
 
 </div>
 
@@ -861,14 +758,18 @@ updateButton_exercise_1bis();
 
 <span style="display:block; height:30px;"></span>
 
+<div style="font-size: 95%">
+
 :dart: &nbsp;&nbsp;&nbsp; An **opportunity** sample is the sample drawn from the part of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the population that is close to hand (and which may not 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; represent the whole population)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the population that is close to hand (and which may not 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; represent the whole population)
 
 <span style="display:block; height:10px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp; All the patients presenting to a given clinic in a given period of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; time are enrolled
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; time are enrolled
+
+</div>
 
 <!-- Iniziamo con il distinguere il campionamento probabilistico da quello non propabilistico.
 
@@ -879,13 +780,17 @@ Nel campionamento non-probabilistico, o opportunustico, la selezione del campion
 
 <span style="display:block; height:30px;"></span>
 
+<div style="font-size: 95%">
+
 :dart: &nbsp;&nbsp;&nbsp; A **random** sample is the sample in which the probability of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getting any particular sample may be calculated (and which 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; should represent the whole population)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getting any particular sample may be calculated (and which 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; should represent the whole population)
 
 <span style="display:block; height:10px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp; A randomly selected set of patients with the disease is enrolled
+
+</div>
 
 <!-- Nel campionamento probabilistico ogni unità della popolazione in studio ha una probabilità NOTA di essere estratta (non distorto o viziato) -->
 
@@ -897,12 +802,12 @@ Nel campionamento non-probabilistico, o opportunustico, la selezione del campion
 
 <span style="display:block; height:10px;"></span>
 
-<div style="font-size: 90%">
+<div style="font-size: 85%">
 
 :dart: &nbsp;&nbsp;&nbsp; A sample of size $n$ drawn from a 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population of size $N$ ensuring 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; that every possible sample of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; size $n$ is equally likely
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population of size $N$ ensuring 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; that every possible sample of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; size $n$ is equally likely
 
 </div>
 </div>
@@ -923,8 +828,12 @@ data una popolazione di N individui ed un campione di dimensione n  la probabili
 
 <span style="display:block; height:10px;"></span>
 
+<div style="font-size: 95%">
+
 :pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$ 
+
+</div>
 
 <span style="display:block; height:30px;"></span>
 
@@ -950,14 +859,19 @@ Decidere quante unità si vogliono selezionare e calcolare la frazione di campio
 
 <span style="display:block; height:10px;"></span>
 
+<div style="font-size: 95%">
+
 :pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$ 
 
 <span style="display:block; height:30px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $49, 65, 25, 74, 18$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $90, 47, 24, 71, 37$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $49, 65, 25, 74, 18$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $90, 47, 24, 71, 37$
+
 </div>
+</div>
+
 <div>
 
 <span style="display:block; height:10px;"></span>
@@ -977,12 +891,16 @@ Decidere quante unità si vogliono selezionare e calcolare la frazione di campio
 
 <span style="display:block; height:50px;"></span>
 
+<div style="font-size: 95%">
+
 :pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 42$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 42$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $step = N/n = 90/10=9$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $step = N/n = 90/10=9$ 
+
+</div>
 
 </div>
 <div>
@@ -1005,13 +923,16 @@ Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli indiv
 
 <span style="display:block; height:50px;"></span>
 
+<div style="font-size: 95%">
+
 :pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 42$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 42$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $step = N/n = 90/10=9$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $step = N/n = 90/10=9$ 
 
+</div>
 </div>
 <div>
 
@@ -1030,10 +951,10 @@ Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli indiv
 <span style="display:block; height:50px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; The population is divided into homogenous group (strata) and 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a simple random sample is drawn from each stratum
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a simple random sample is drawn from each stratum
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #1: stratified systematic sample 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #2: stratified sampling proportional to size
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #1: stratified systematic sample 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #2: stratified sampling proportional to size
 
 ---
 ## Strategy 3: Stratified Random Sampling
@@ -1041,17 +962,23 @@ Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli indiv
 <div class="columns">
 <div>
 
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 90%">
+
 :pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{female}=60$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{male}=30$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{female}=60$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_{male}=30$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=9$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{female} = 6$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{male} = 3$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=9$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{female} = 6$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{male} = 3$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Females: 46, 20, 26,$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $50, 47,  3$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Males: 69, 85, 87$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Females: 46, 20, 26,$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $50, 47,  3$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Males: 69, 85, 87$
+
+</div>
 
 </div>
 <div>
@@ -1071,10 +998,10 @@ Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli indiv
 <span style="display:block; height:10px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; The population is divided into clusters, and a simple random 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample is drawn
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample is drawn
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation: one stage (observing everything) *vs* 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; two stage (sampling within clusters)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation: one stage (observing everything) *vs* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; two stage (sampling within clusters)
 
 <!-- Le unità della popolazione sono suddivise in CLUSTER o GRAPPOLI in base a circostanze organizzative, strutturali, geografiche.
 All’interno dei cluster le unità possono essere molto diverse tra di loro.
@@ -1131,15 +1058,15 @@ ethnic group or school type.
 <div style="font-size: 90%">
 
 :question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions  on cheese
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  consumption to every 5th customer entering the supermarket
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  consumption to every 5th customer entering the supermarket
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above 
 
 </div>
 
@@ -1237,15 +1164,15 @@ updateButton_exercise_2();
 <div style="font-size: 90%">
 
 :question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions  on cheese
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  consumption to every 5th customer entering the supermarket
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  consumption to every 5th customer entering the supermarket
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above &nbsp; :white_check_mark: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above &nbsp; :white_check_mark: 
 
 </div>
 
@@ -1283,7 +1210,7 @@ e l’errore logico che si commette quando si prendano in considerazione solo gl
 
 <div style="font-size: 90%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer lasting"*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer lasting"*
 
 </div>
 
@@ -1299,10 +1226,10 @@ e l’errore logico che si commette quando si prendano in considerazione solo gl
 
 <div style="font-size: 90%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer lasting"*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer lasting"*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"I don't understand why, nowadays, one should to do X,  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I never did it, and I'm still here to tell it"*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"I don't understand why, nowadays, one should to do X,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I never did it, and I'm still here to tell it"*
 
 <div>
 
@@ -1346,8 +1273,8 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <div style="font-size: 90%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  A teacher wonders if extra lessons improve exam performance.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She prepares them, inviting interested students to sign up. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  A teacher wonders if extra lessons improve exam performance.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She prepares them, inviting interested students to sign up. 
 
 </div>
 
@@ -1373,9 +1300,9 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is tesing a new drug on a court of 100 cancer patients 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow up. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What do we conclude about this new drug knowing that these 30 people...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a court of 100 cancer patients 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up. What do we conclude about this new drug knowing that these 30 people...
 
 
 </div>
@@ -1391,10 +1318,10 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is tesing a new drug on a court of 100 cancer patients 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow up. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What do we conclude about this new drug knowing that these 30 people....
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a court of 100 cancer patients 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up. What do we conclude about this new drug knowing that these 30 people...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
 
 </div>
 
@@ -1409,11 +1336,11 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is tesing a new drug on a court of 100 cancer patients 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow up. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What do we conclude about this new drug knowing that these 30 people....
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped the drug?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a court of 100 cancer patients 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up. What do we conclude about this new drug knowing that these 30 people...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped the drug?
 
 </div>
 
@@ -1428,12 +1355,12 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is tesing a new drug on a court of 100 cancer patients 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow up. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What do we conclude about this new drug knowing that these 30 people....
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped the drug?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  went back home?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a court of 100 cancer patients 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up. What do we conclude about this new drug knowing that these 30 people....
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped the drug?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  went back home?
 
 </div>
 
@@ -1453,10 +1380,11 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 ## Summary
 
-<span style="display:block; height:50px;"></span>
+<span style="display:block; height:1px;"></span>
 
-- When can't study a population, we select a representative sample
-- There are different sampling strategies
+
+- A population includes all individuals for whom we'd like to study a phenomenon, and it's (theoretically) infinite
+- When can't study a population, we can use different approaches to sample a (representative?) subset of the population
 - Samples may suffer from biases
 
 <!-- - La popolazione &egrave; l'insieme di tutti gli individui per cui vogliamo studiare un fenomeno ed è, teoricamente, infinita
@@ -1464,7 +1392,7 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 - Anche con campioni rappresentativi (casuali) possono esserci errori e/o bias -->
 
 ---
-![bg opacity](./img/backgrounds/Descriptive_bg.png)
+![bg opacity](./img/backgrounds/descriptive_bg.png)
 
 <span style="display:block; height:190px;"></span>
 
@@ -1476,7 +1404,7 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 <span style="display:block; height:50px;"></span>
 
 - Understand the differences between data types
-- Be able to summarise each data type using Measure of central tendency and dispersion
+- Be able to summarise each data type
 - Understand the difference between parameters and statistics
 - Understand why visualise your data is important
 
@@ -1653,9 +1581,9 @@ Categoriche si dividono in 2 classi
 <div>
 
 :question: &nbsp;&nbsp;&nbsp; Which types of data are 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; included in this table?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; included in this table?
 
-<span style="display:block; height:40px;"></span>
+<span style="display:block; height:180px;"></span>
 
 <style>
   #countdown_exercise_4{
@@ -1743,7 +1671,7 @@ updateButton_exercise_4();
 </script>
 
 
-<span style="display:block; height:140px;"></span>
+<span style="display:block; height:60px;"></span>
 
 <div style="font-size: 50%">
 	
@@ -1772,8 +1700,36 @@ N: discreto
 Lactate dehydrogenase, dichotomized according to the upper limit of normal for each centre.
 -->
 
+---
+### Exercise #4 -- Solution
+
+<div class="columns">
+<div>
+
+:question: &nbsp;&nbsp;&nbsp; Which types of data are 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; included in this table?
+
+
+<span style="display:block; height:270px;"></span>
+
+<div style="font-size: 50%">
+	
+Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Table1_solution.png" img height="550px" border="4px"/>
+</center>
+
+</div>
+</div>
+
 --- 
-## Why do  we care?
+## Why is it important?
 
 <div class="columns">
 <div>
@@ -1784,7 +1740,7 @@ Lactate dehydrogenase, dichotomized according to the upper limit of normal for e
 <img src="./img/descriptive/Table1_caption.png" img height="120px" border="4px"/>
 </center>
 
-<span style="display:block; height:120px;"></span>
+<span style="display:block; height:150px;"></span>
 
 <div style="font-size: 50%">
 	
@@ -1823,7 +1779,7 @@ Numeriche media/SD, categoriche N/% -->
 
 </div>
 
-<span style="display:block; height:80px;"></span>
+<span style="display:block; height:130px;"></span>
 
 <div style="font-size: 50%">
  
@@ -1854,7 +1810,7 @@ Frequenze assolute e relative forniscono le stesse informazioni sulla distribuzi
 -->
 
 ---
-### Exercize #5
+### Exercise #5
 
 <div class="columns">
 <div>
@@ -1862,7 +1818,7 @@ Frequenze assolute e relative forniscono le stesse informazioni sulla distribuzi
 <div style="font-size: 97%">
 
 :question: &nbsp;&nbsp;&nbsp; Which sex is more frequent?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 </div>
 
@@ -1884,7 +1840,7 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 </center>
 
 <style>
-  #countdown_exercize_5{
+  #countdown_Exercise_5{
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -1894,79 +1850,79 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
     cursor: pointer;
     float: right;
   }
-  #countdown_exercize_5.running {
+  #countdown_Exercise_5.running {
     background-color: green;
   }
-  #countdown_exercize_5.finished {
+  #countdown_Exercise_5.finished {
     background-color: red;
   }
 </style>
 
 <span style="display:block; height:30px;"></span>
 
-<button id="countdown_exercize_5"></button>
+<button id="countdown_Exercise_5"></button>
 
 <script>
 <!--
-const countdown_exercize_5= document.getElementById("countdown_exercize_5");
-const seconds_exercize_5= 30; // seconds_exercize_5
-let timeLeft_exercize_5= seconds_exercize_5;
-let timerInterval_exercize_5= null;
+const countdown_Exercise_5= document.getElementById("countdown_Exercise_5");
+const seconds_Exercise_5= 30; // seconds_Exercise_5
+let timeLeft_Exercise_5= seconds_Exercise_5;
+let timerInterval_Exercise_5= null;
 
-function formatTime_exercize_5(seconds_exercize_5) {
-  const minutes = Math.floor(seconds_exercize_5/ 60);
-  const remainingseconds_exercize_5= seconds_exercize_5% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercize_5).padStart(2, '0')}`;
+function formatTime_Exercise_5(seconds_Exercise_5) {
+  const minutes = Math.floor(seconds_Exercise_5/ 60);
+  const remainingseconds_Exercise_5= seconds_Exercise_5% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_Exercise_5).padStart(2, '0')}`;
 }
 
-function updateButton_exercize_5() {
-  countdown_exercize_5.textContent = formatTime_exercize_5(timeLeft_exercize_5);
+function updateButton_Exercise_5() {
+  countdown_Exercise_5.textContent = formatTime_Exercise_5(timeLeft_Exercise_5);
 }
 
-function startTimer_exercize_5() {
-  if (timerInterval_exercize_5=== null) {
-    countdown_exercize_5.classList.add('running');
-    countdown_exercize_5.classList.remove('finished');
-    timerInterval_exercize_5= setInterval(() => {
-      if (timeLeft_exercize_5> 0) {
-        timeLeft_exercize_5--;
-        updateButton_exercize_5();
+function startTimer_Exercise_5() {
+  if (timerInterval_Exercise_5=== null) {
+    countdown_Exercise_5.classList.add('running');
+    countdown_Exercise_5.classList.remove('finished');
+    timerInterval_Exercise_5= setInterval(() => {
+      if (timeLeft_Exercise_5> 0) {
+        timeLeft_Exercise_5--;
+        updateButton_Exercise_5();
       } else {
-        clearInterval(timerInterval_exercize_5);
-        timerInterval_exercize_5= null;
-        countdown_exercize_5.classList.remove('running');
-        countdown_exercize_5.classList.add('finished');
-        countdown_exercize_5.textContent = "Time's up!";
+        clearInterval(timerInterval_Exercise_5);
+        timerInterval_Exercise_5= null;
+        countdown_Exercise_5.classList.remove('running');
+        countdown_Exercise_5.classList.add('finished');
+        countdown_Exercise_5.textContent = "Time's up!";
       }
     }, 1000);
   } else {
-    pauseTimer_exercize_5();
+    pauseTimer_Exercise_5();
   }
 }
 
-function pauseTimer_exercize_5() {
-  clearInterval(timerInterval_exercize_5);
-  timerInterval_exercize_5= null;
-  countdown_exercize_5.classList.remove('running');
+function pauseTimer_Exercise_5() {
+  clearInterval(timerInterval_Exercise_5);
+  timerInterval_Exercise_5= null;
+  countdown_Exercise_5.classList.remove('running');
 }
 
-function resetTimer_exercize_5() {
-  timeLeft_exercize_5= seconds_exercize_5;
-  updateButton_exercize_5();
-  countdown_exercize_5.classList.remove('finished');
-  countdown_exercize_5.classList.remove('running');
-  timerInterval_exercize_5= null;
+function resetTimer_Exercise_5() {
+  timeLeft_Exercise_5= seconds_Exercise_5;
+  updateButton_Exercise_5();
+  countdown_Exercise_5.classList.remove('finished');
+  countdown_Exercise_5.classList.remove('running');
+  timerInterval_Exercise_5= null;
 }
 
-countdown_exercize_5.addEventListener("click", () => {
-  if (countdown_exercize_5.classList.contains('finished')) {
-    resetTimer_exercize_5();
+countdown_Exercise_5.addEventListener("click", () => {
+  if (countdown_Exercise_5.classList.contains('finished')) {
+    resetTimer_Exercise_5();
   } else {
-    startTimer_exercize_5();
+    startTimer_Exercise_5();
   }
 });
 
-updateButton_exercize_5();
+updateButton_Exercise_5();
 -->
 </script>
 
@@ -1977,7 +1933,7 @@ updateButton_exercize_5();
 
 ---
 
-### Exercize #5  -- Solution
+### Exercise #5  -- Solution
 
 <div class="columns">
 <div>
@@ -1985,7 +1941,7 @@ updateButton_exercize_5();
 <div style="font-size: 97%">
 
 :question: &nbsp;&nbsp;&nbsp; Which sex is more frequent?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 </div>
 
@@ -2034,12 +1990,12 @@ Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administe
 -->
 
 ---
-### Exercize #6
+### Exercise #6
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
 
 <span style="display:block; height:1px;"></span>
 
@@ -2060,7 +2016,7 @@ Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administe
 </div>
 
 <style>
-  #countdown_exercize_6{
+  #countdown_Exercise_6{
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -2070,77 +2026,77 @@ Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administe
     cursor: pointer;
     float: right;
   }
-  #countdown_exercize_6.running {
+  #countdown_Exercise_6.running {
     background-color: green;
   }
-  #countdown_exercize_6.finished {
+  #countdown_Exercise_6.finished {
     background-color: red;
   }
 </style>
 
-<button id="countdown_exercize_6"></button>
+<button id="countdown_Exercise_6"></button>
 
 <script>
 <!--
-const countdown_exercize_6= document.getElementById("countdown_exercize_6");
-const seconds_exercize_6= 300; // seconds_exercize_6
-let timeLeft_exercize_6= seconds_exercize_6;
-let timerInterval_exercize_6= null;
+const countdown_Exercise_6= document.getElementById("countdown_Exercise_6");
+const seconds_Exercise_6= 300; // seconds_Exercise_6
+let timeLeft_Exercise_6= seconds_Exercise_6;
+let timerInterval_Exercise_6= null;
 
-function formatTime_exercize_6(seconds_exercize_6) {
-  const minutes = Math.floor(seconds_exercize_6/ 60);
-  const remainingseconds_exercize_6= seconds_exercize_6% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercize_6).padStart(2, '0')}`;
+function formatTime_Exercise_6(seconds_Exercise_6) {
+  const minutes = Math.floor(seconds_Exercise_6/ 60);
+  const remainingseconds_Exercise_6= seconds_Exercise_6% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_Exercise_6).padStart(2, '0')}`;
 }
 
-function updateButton_exercize_6() {
-  countdown_exercize_6.textContent = formatTime_exercize_6(timeLeft_exercize_6);
+function updateButton_Exercise_6() {
+  countdown_Exercise_6.textContent = formatTime_Exercise_6(timeLeft_Exercise_6);
 }
 
-function startTimer_exercize_6() {
-  if (timerInterval_exercize_6=== null) {
-    countdown_exercize_6.classList.add('running');
-    countdown_exercize_6.classList.remove('finished');
-    timerInterval_exercize_6= setInterval(() => {
-      if (timeLeft_exercize_6> 0) {
-        timeLeft_exercize_6--;
-        updateButton_exercize_6();
+function startTimer_Exercise_6() {
+  if (timerInterval_Exercise_6=== null) {
+    countdown_Exercise_6.classList.add('running');
+    countdown_Exercise_6.classList.remove('finished');
+    timerInterval_Exercise_6= setInterval(() => {
+      if (timeLeft_Exercise_6> 0) {
+        timeLeft_Exercise_6--;
+        updateButton_Exercise_6();
       } else {
-        clearInterval(timerInterval_exercize_6);
-        timerInterval_exercize_6= null;
-        countdown_exercize_6.classList.remove('running');
-        countdown_exercize_6.classList.add('finished');
-        countdown_exercize_6.textContent = "Time's up!";
+        clearInterval(timerInterval_Exercise_6);
+        timerInterval_Exercise_6= null;
+        countdown_Exercise_6.classList.remove('running');
+        countdown_Exercise_6.classList.add('finished');
+        countdown_Exercise_6.textContent = "Time's up!";
       }
     }, 1000);
   } else {
-    pauseTimer_exercize_6();
+    pauseTimer_Exercise_6();
   }
 }
 
-function pauseTimer_exercize_6() {
-  clearInterval(timerInterval_exercize_6);
-  timerInterval_exercize_6= null;
-  countdown_exercize_6.classList.remove('running');
+function pauseTimer_Exercise_6() {
+  clearInterval(timerInterval_Exercise_6);
+  timerInterval_Exercise_6= null;
+  countdown_Exercise_6.classList.remove('running');
 }
 
-function resetTimer_exercize_6() {
-  timeLeft_exercize_6= seconds_exercize_6;
-  updateButton_exercize_6();
-  countdown_exercize_6.classList.remove('finished');
-  countdown_exercize_6.classList.remove('running');
-  timerInterval_exercize_6= null;
+function resetTimer_Exercise_6() {
+  timeLeft_Exercise_6= seconds_Exercise_6;
+  updateButton_Exercise_6();
+  countdown_Exercise_6.classList.remove('finished');
+  countdown_Exercise_6.classList.remove('running');
+  timerInterval_Exercise_6= null;
 }
 
-countdown_exercize_6.addEventListener("click", () => {
-  if (countdown_exercize_6.classList.contains('finished')) {
-    resetTimer_exercize_6();
+countdown_Exercise_6.addEventListener("click", () => {
+  if (countdown_Exercise_6.classList.contains('finished')) {
+    resetTimer_Exercise_6();
   } else {
-    startTimer_exercize_6();
+    startTimer_Exercise_6();
   }
 });
 
-updateButton_exercize_6();
+updateButton_Exercise_6();
 -->
 </script>
 
@@ -2150,12 +2106,12 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 -->
 
 ---
-### Exercize #6 -- Solution
+### Exercise #6 -- Solution
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
 
 <span style="display:block; height:1px;"></span>
 
@@ -2176,12 +2132,12 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 </div>
 
 ---
-### Exercize #6 -- Solution
+### Exercise #6 -- Solution
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
 
 <span style="display:block; height:1px;"></span>
 
@@ -2202,12 +2158,12 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 </div>
 
 ---
-### Exercize #6 -- Solution
+### Exercise #6 -- Solution
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
 
 <span style="display:block; height:1px;"></span>
 
@@ -2229,19 +2185,19 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 
 <div style="font-size: 80%" align="right">
 
-Abbiamo completato la nostra Tabella di Contingenza (con frequenze assolute)
+We've just filled a contingency table (using the absolute frequencies)
 
 </div>
 
 <!--  `e una tabella a doppia entrata (con righe e colon- ne) in cui si riportano le frequenze congiunte di due variabili.  -->
 
 ---
-### Exercize #6 -- Solution
+### Exercise #6 -- Solution
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
 
 <span style="display:block; height:1px;"></span>
 
@@ -2261,7 +2217,7 @@ Abbiamo completato la nostra Tabella di Contingenza (con frequenze assolute)
 
 </div>
 
-<div style="font-size: 72%" align="right">
+<div style="font-size: 65%" align="right">
  
 Option 1: let's divide "by columns", that is, calculate the  <br/> percentage of males and females in each arm of the experiment
 
@@ -2277,12 +2233,12 @@ Potete calcolare la frequenza dei due sessi in ciuascun ramo del RCT (come ho fa
  -->
 
 ---
-### Exercize #6 -- Solution
+### Exercise #6 -- Solution
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
 
 <span style="display:block; height:1px;"></span>
 
@@ -2303,7 +2259,7 @@ Potete calcolare la frequenza dei due sessi in ciuascun ramo del RCT (come ho fa
 </div>
 
 
-<div style="font-size: 72%" align="right">
+<div style="font-size: 65%" align="right">
  
 Option 1: let's divide "by columns", that is, calculate the  <br/> percentage of males and females in each arm of the experiment
 
@@ -2313,12 +2269,12 @@ Option 1: let's divide "by columns", that is, calculate the  <br/> percentage of
 <!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità -->
 
 ---
-### Exercize #6 -- Solution
+### Exercise #6 -- Solution
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
 
 <span style="display:block; height:1px;"></span>
 
@@ -2338,7 +2294,7 @@ Option 1: let's divide "by columns", that is, calculate the  <br/> percentage of
 
 </div>
 
-<div style="font-size: 72%" align="right">
+<div style="font-size: 65%" align="right">
 
 Option 2: let's divide "by rows", that is, calculate the percentage </br> of subjects in each arm of the experiments that is either male or female
 
@@ -2352,12 +2308,12 @@ Potete calcolare la frequenza dei due sessi in ciuascun ramo del RCT (come ho fa
  -->
 
 ---
-### Exercize #6 -- Solution
+### Exercise #6 -- Solution
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
 
 <span style="display:block; height:1px;"></span>
 
@@ -2379,7 +2335,7 @@ Potete calcolare la frequenza dei due sessi in ciuascun ramo del RCT (come ho fa
 </div>
 
 
-<div style="font-size: 72%" align="right">
+<div style="font-size: 65%" align="right">
  
 Option 2: let's divide "by rows", that is, calculate the percentage </br> of subjects in each arm of the experiments that is either male or female
 
@@ -2389,15 +2345,15 @@ Option 2: let's divide "by rows", that is, calculate the percentage </br> of sub
 <!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità -->
 
 ---
-### Exercize #7
+### Exercise #7
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
 
 :question: &nbsp;&nbsp;&nbsp; Comparing the two arms, is the proportion of men and women similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
 
 <center>
 
@@ -2412,7 +2368,7 @@ Option 2: let's divide "by rows", that is, calculate the percentage </br> of sub
 <div>
 
 <style>
-  #countdown_exercize_7{
+  #countdown_Exercise_7{
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -2422,77 +2378,77 @@ Option 2: let's divide "by rows", that is, calculate the percentage </br> of sub
     cursor: pointer;
     float: right;
   }
-  #countdown_exercize_7.running {
+  #countdown_Exercise_7.running {
     background-color: green;
   }
-  #countdown_exercize_7.finished {
+  #countdown_Exercise_7.finished {
     background-color: red;
   }
 </style>
 
-<button id="countdown_exercize_7"></button>
+<button id="countdown_Exercise_7"></button>
 
 <script>
 <!--
-const countdown_exercize_7= document.getElementById("countdown_exercize_7");
-const seconds_exercize_7= 60; // seconds_exercize_7
-let timeLeft_exercize_7= seconds_exercize_7;
-let timerInterval_exercize_7= null;
+const countdown_Exercise_7= document.getElementById("countdown_Exercise_7");
+const seconds_Exercise_7= 60; // seconds_Exercise_7
+let timeLeft_Exercise_7= seconds_Exercise_7;
+let timerInterval_Exercise_7= null;
 
-function formatTime_exercize_7(seconds_exercize_7) {
-  const minutes = Math.floor(seconds_exercize_7/ 60);
-  const remainingseconds_exercize_7= seconds_exercize_7% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercize_7).padStart(2, '0')}`;
+function formatTime_Exercise_7(seconds_Exercise_7) {
+  const minutes = Math.floor(seconds_Exercise_7/ 60);
+  const remainingseconds_Exercise_7= seconds_Exercise_7% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_Exercise_7).padStart(2, '0')}`;
 }
 
-function updateButton_exercize_7() {
-  countdown_exercize_7.textContent = formatTime_exercize_7(timeLeft_exercize_7);
+function updateButton_Exercise_7() {
+  countdown_Exercise_7.textContent = formatTime_Exercise_7(timeLeft_Exercise_7);
 }
 
-function startTimer_exercize_7() {
-  if (timerInterval_exercize_7=== null) {
-    countdown_exercize_7.classList.add('running');
-    countdown_exercize_7.classList.remove('finished');
-    timerInterval_exercize_7= setInterval(() => {
-      if (timeLeft_exercize_7> 0) {
-        timeLeft_exercize_7--;
-        updateButton_exercize_7();
+function startTimer_Exercise_7() {
+  if (timerInterval_Exercise_7=== null) {
+    countdown_Exercise_7.classList.add('running');
+    countdown_Exercise_7.classList.remove('finished');
+    timerInterval_Exercise_7= setInterval(() => {
+      if (timeLeft_Exercise_7> 0) {
+        timeLeft_Exercise_7--;
+        updateButton_Exercise_7();
       } else {
-        clearInterval(timerInterval_exercize_7);
-        timerInterval_exercize_7= null;
-        countdown_exercize_7.classList.remove('running');
-        countdown_exercize_7.classList.add('finished');
-        countdown_exercize_7.textContent = "Time's up!";
+        clearInterval(timerInterval_Exercise_7);
+        timerInterval_Exercise_7= null;
+        countdown_Exercise_7.classList.remove('running');
+        countdown_Exercise_7.classList.add('finished');
+        countdown_Exercise_7.textContent = "Time's up!";
       }
     }, 1000);
   } else {
-    pauseTimer_exercize_7();
+    pauseTimer_Exercise_7();
   }
 }
 
-function pauseTimer_exercize_7() {
-  clearInterval(timerInterval_exercize_7);
-  timerInterval_exercize_7= null;
-  countdown_exercize_7.classList.remove('running');
+function pauseTimer_Exercise_7() {
+  clearInterval(timerInterval_Exercise_7);
+  timerInterval_Exercise_7= null;
+  countdown_Exercise_7.classList.remove('running');
 }
 
-function resetTimer_exercize_7() {
-  timeLeft_exercize_7= seconds_exercize_7;
-  updateButton_exercize_7();
-  countdown_exercize_7.classList.remove('finished');
-  countdown_exercize_7.classList.remove('running');
-  timerInterval_exercize_7= null;
+function resetTimer_Exercise_7() {
+  timeLeft_Exercise_7= seconds_Exercise_7;
+  updateButton_Exercise_7();
+  countdown_Exercise_7.classList.remove('finished');
+  countdown_Exercise_7.classList.remove('running');
+  timerInterval_Exercise_7= null;
 }
 
-countdown_exercize_7.addEventListener("click", () => {
-  if (countdown_exercize_7.classList.contains('finished')) {
-    resetTimer_exercize_7();
+countdown_Exercise_7.addEventListener("click", () => {
+  if (countdown_Exercise_7.classList.contains('finished')) {
+    resetTimer_Exercise_7();
   } else {
-    startTimer_exercize_7();
+    startTimer_Exercise_7();
   }
 });
 
-updateButton_exercize_7();
+updateButton_Exercise_7();
 -->
 </script>
 
@@ -2502,15 +2458,15 @@ LEGGERE PRIMA DI DARE LA Solution Nel campione, quindi vado a vedere la colonna 
 -->
 
 ---
-### Exercize #7 -- Solution
+### Exercise #7 -- Solution
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
 
 :question: &nbsp;&nbsp;&nbsp; Comparing the two arms, is the proportion of men and women similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
 
 <center>
 
@@ -2533,15 +2489,15 @@ LEGGERE PRIMA DI DARE LA Solution DELLA SECONDA Nel due bracci dell'esperimento,
 </div>
 
 ---
-### Exercize #7 -- Solution
+### Exercise #7 -- Solution
 
 <div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
 
 :question: &nbsp;&nbsp;&nbsp; Comparing the two arms, is the proportion of men and women similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True  &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True  &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
 
 <center>
 
@@ -2562,12 +2518,12 @@ Nel due bracci dell'esperimento, quindi vado a confrontare le due colonne, la pr
 </div>
 
 ---
-## Measures of central tendency and dispersion
+### Measures of central tendency and dispersion
 
-<span style="display:block; height:5px;"></span>
+<span style="display:block; height:30px;"></span>
 
 <center>
-<img src="./img/descriptive/descriptive.png" img height="450px" border="4px"/>
+<img src="./img/descriptive/descriptive.png" img height="400px" border="4px"/>
 </center>
 
 <!--  E cosa sono poi queste media, SD? Sono due delle proprieta' che descrivono i dati
@@ -2586,7 +2542,7 @@ Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione del
 <span style="display:block; height:10px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp; $x= \{1, 1, 1, 3, 4, 4, 7, 8, 8, 9, 9\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(x)=1$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(x)=1$
 
 <!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
 
@@ -2599,13 +2555,13 @@ Si usa soprattutto per i dati categorici -->
 
 :question: &nbsp;&nbsp;&nbsp; Calculate the mode of the following data sets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(y)= \text{ } ?$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(y)= \text{ } ?$
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(z)= \text{ } ?$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(z)= \text{ } ?$
 
 <style>
   #countdown_exercise_8{
@@ -2631,7 +2587,7 @@ Si usa soprattutto per i dati categorici -->
 <script>
 <!--
 const countdown_exercise_8= document.getElementById("countdown_exercise_8");
-const seconds_exercise_8= 30; // seconds_exercise_8
+const seconds_exercise_8= 60; // seconds_exercise_8
 let timeLeft_exercise_8= seconds_exercise_8;
 let timerInterval_exercise_8= null;
 
@@ -2703,13 +2659,13 @@ Si usa soprattutto per i dati categorici -->
 
 :question: &nbsp;&nbsp;&nbsp; Calculate the mode of the following data sets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(y)=1 \text{ } \& \text{ }  4$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(y)=1 \text{ } \& \text{ }  4$
 
 <span style="display:block; height:1px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{moda}(z)= \text{It doesn't existe}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(z)= \text{It doesn't exist}$
 
 <!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
 Ci possono essere piu' mode (la distribuzione e' detta multi modale)
@@ -2746,12 +2702,12 @@ Si usa soprattutto per i dati categorici -->
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 8, 9\}$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $n=8,  x= \{1, 2, 3, 4, 5, 6, 8, 9\}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)={\frac {x_{(n/2)}+x_{((n/2)+1)}}{2}} = {\frac {x_{(8/2)}+x_{((8/2)+1)}}{2}}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $={\frac {x_{4}+x_{5}}{2}} = {\frac {4+5}{2}} = 4.5$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)={\frac {x_{(n/2)}+x_{((n/2)+1)}}{2}} = {\frac {x_{(8/2)}+x_{((8/2)+1)}}{2}}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $={\frac {x_{4}+x_{5}}{2}} = {\frac {4+5}{2}} = 4.5$ 
 
 </div>
 
@@ -2771,11 +2727,11 @@ Si usa soprattutto per i dati categorici -->
 
 :question: &nbsp;&nbsp;&nbsp; Calculate the median of the following data sets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)= \text{ ?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)= \text{ ?}$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=\text{ ?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=\text{ ?}$ 
 
 
 <span style="display:block; height:40px;"></span>
@@ -2804,7 +2760,7 @@ Si usa soprattutto per i dati categorici -->
 <script>
 <!--
 const countdown_exercise_9= document.getElementById("countdown_exercise_9");
-const seconds_exercise_9= 30; // seconds_exercise_9
+const seconds_exercise_9= 60; // seconds_exercise_9
 let timeLeft_exercise_9= seconds_exercise_9;
 let timerInterval_exercise_9= null;
 
@@ -2876,11 +2832,11 @@ updateButton_exercise_9();
 
 :question: &nbsp;&nbsp;&nbsp; Calculate the median of the following data sets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)=y_3=40$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)=y_3=40$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=\text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=\text{ ?}$
 
 <div style="font-size: 90%" align="right">
 
@@ -2900,11 +2856,11 @@ updateButton_exercise_9();
 
 :question: &nbsp;&nbsp;&nbsp; Calculate the median of the following data sets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)=y_3=40$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)=y_3=40$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=z_3=40$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=z_3=40$ 
 
 
 <div style="font-size: 90%" align="right">
@@ -2940,17 +2896,6 @@ updateButton_exercise_9();
 
 
 ---
-## Percentiles
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/descriptive/percentile_chart.gif" img height="500px" border="4px"/>
-</center>
-
-<!-- Il percentile invece divide i dati in 100 intervalli, e dato una percentile, per esempio il decimo, sappiamo che il 10% dei valori assunti dalla variabile sono inferiori o uguali a quel valore -->
-
----
 ## Measure of central tendency: mean
 
 <span style="display:block; height:1px;"></span>
@@ -2966,7 +2911,7 @@ $$
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $x= \{4, 36, 45, 50, 75\}$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac{1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 75}{5} = 42$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac{1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 75}{5} = 42$
 
 <!-- Somma dei singoli valori diviso il numero di osservazioni  -->
 
@@ -2977,11 +2922,11 @@ $$
 
 :question: &nbsp;&nbsp;&nbsp; Calculate the mean of the following data sets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {y}} = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {y}} = \text{ ?}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {z}} = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {z}} = \text{ ?}$
 
 
 <span style="display:block; height:10px;"></span>
@@ -3083,15 +3028,15 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 
 :question: &nbsp;&nbsp;&nbsp; Calculate the mean of the following data sets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {y}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{y_{i}}\right) = \frac{6 + 34 + 40 + 55 + 75}{5} = 42$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {y}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{y_{i}}\right) = \frac{6 + 34 + 40 + 55 + 75}{5} = 42$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {z}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{z_{i}}\right) = \frac{4 + 36 + 45 + 50 + 175}{5} = 62$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {z}} = {\frac {1}{n}}\left(\sum _{i=1}^{n}{z_{i}}\right) = \frac{4 + 36 + 45 + 50 + 175}{5} = 62$
 
 <span style="display:block; height:1px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; Not robust to outliers
+:dart: &nbsp;&nbsp;&nbsp; Sensitive to outliers
 
 <!-- La media non e' particolarmente robusta rispetto agli outliers. Il valore atipico SOVRADIMENSIONA la media.
 
@@ -3144,14 +3089,14 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
 
 :question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *The mean length of stay was 22.4 days (median: 14 days).*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *The mean length of stay was 22.4 days (median: 14 days).*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The shape of the distribution is...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The shape of the distribution is...
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) symmetric
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) positive skew 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) negative skew
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) symmetric
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) positive skewed 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) negative skewed
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
 
 </div>
 
@@ -3253,14 +3198,14 @@ updateButton_exercise_11();
 
 :question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *The mean length of stay was 22.4 days (median: 14 days).*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *The mean length of stay was 22.4 days (median: 14 days).*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The shape of the distribution is...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The shape of the distribution is...
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) symmetric
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) positive skew &nbsp;&nbsp; :white_check_mark:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) negative skew
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) symmetric
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) positive skewed &nbsp;&nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) negative skewed
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
 
 </div>
 
@@ -3336,14 +3281,14 @@ piu; semplice, meno informativo  Il range ha tuttavia un'utilita' limitata: tien
 
 :dart: &nbsp;&nbsp;&nbsp; $s^2 = \frac{1}{n-1}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
 
 <span style="display:block; height:1px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $x= \{1, 2, 3\}$ &nbsp;&nbsp;&nbsp; $\bar{x}=\frac{1+2+3}{3}=2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \frac{1}{2}\times [1^2+ 0^2+1^2 ]=  \frac{1}{2}\times 2 = 1$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \frac{1}{2}\times [1^2+ 0^2+1^2 ]=  \frac{1}{2}\times 2 = 1$
 
 <!-- Andiamo a fare la distanza (differenza) tra ciascun valore e la media, la eleviamo al quatrato, la sommiamo e andiamo a dividerla per la dimensione del campione - 1 -->
 
@@ -3354,14 +3299,14 @@ piu; semplice, meno informativo  Il range ha tuttavia un'utilita' limitata: tien
 
 :dart: &nbsp;&nbsp;&nbsp; $s^2 = \frac{1}{n-1}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; why &nbsp; $\frac{1}{n-1}$ &nbsp; ?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sum _{i=1}^{n}(x_{i}-\bar {x} ) = 0$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; why &nbsp; $\frac{1}{n-1}$ &nbsp; ?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sum _{i=1}^{n}(x_{i}-\bar {x} ) = 0$
 
 <span style="display:block; height:1px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $x= \{1, 2, 3\}$ &nbsp;&nbsp;&nbsp; $\bar{x}=\frac{1+2+3}{3}=2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sum _{i=1}^{n}(x_{i}-\bar {x} ) = (1-2) + (2-2) + (3-2) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1 + 0 + 1 = 0$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sum _{i=1}^{n}(x_{i}-\bar {x} ) = (1-2) + (2-2) + (3-2) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1 + 0 + 1 = 0$
 
 <!-- Perche' si divide per (n-1) e non n, come ci aspetteremmo? 
 
@@ -3377,14 +3322,14 @@ n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di
 
 :dart: &nbsp;&nbsp;&nbsp; $s = \sqrt{s^2} = \sqrt {{\frac {1}{n-1}}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
 
 <span style="display:block; height:1px;"></span>
 
 :pushpin: &nbsp;&nbsp;&nbsp;  $x= \{1, 2, 3\}$ &nbsp;&nbsp;&nbsp; $\bar{x}=\frac{1+2+3}{3}=2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \sqrt {\frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] }=$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \sqrt {\frac{1}{2}\times [1^2+ 0^2+1^2 }]= \sqrt {\frac{1}{2}\times 2}= \sqrt {1} = 1$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \sqrt {\frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] }=$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \sqrt {\frac{1}{2}\times [1^2+ 0^2+1^2 }]= \sqrt {\frac{1}{2}\times 2}= \sqrt {1} = 1$
 
 <!-- che nella varianza l'unità di misura è diversa da quella della variabile su cui è calcolata (abbiamo fatto il quadrato delle fifferenze, ricordate?), si utilizza la sua radice quadrata detta SCARTO QUADRATICO MEDIO o deviazione standard. -->
 
@@ -3414,16 +3359,16 @@ Inoltre, Se la numerosità del campione è piccola, la mediana e il range interq
 
 :question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Coronary-artery calcium scores averaged 68.9&plusmn;244.2 (range 0 to 1526)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  in  patients and 8.8&plusmn;41.8 (range 0 to 243.4) in controls.*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Coronary-artery calcium scores averaged 68.9&plusmn;244.2 (range 0 to 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  1526) in  patients and 8.8&plusmn;41.8 (range 0 to 243.4) in controls.*
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which measures do we use to describe this variable?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which measures do we use to describe this variable?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) mean and standard deviation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) median and interquantile range 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and standard deviation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) mean and standard deviation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) median and interquartile range 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and standard deviation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
 
 </div>
 
@@ -3451,7 +3396,7 @@ Inoltre, Se la numerosità del campione è piccola, la mediana e il range interq
 <script>
 <!--
 const countdown_exercise_12= document.getElementById("countdown_exercise_12");
-const seconds_exercise_12= 30; // seconds_exercise_12
+const seconds_exercise_12= 60; // seconds_exercise_12
 let timeLeft_exercise_12= seconds_exercise_12;
 let timerInterval_exercise_12= null;
 
@@ -3525,16 +3470,16 @@ con la mediana e il range interquartile (perché la variabile non ha una distrib
 
 :question: &nbsp;&nbsp;&nbsp; In the results section, the authors reported the following
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Coronary-artery calcium scores averaged 68.9&plusmn;244.2 (range 0 to 1526)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  in  patients and 8.8&plusmn;41.8 (range 0 to 243.4) in controls.*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Coronary-artery calcium scores averaged 68.9&plusmn;244.2 (range 0 to 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1526) in  patients and 8.8&plusmn;41.8 (range 0 to 243.4) in controls.*
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which measures do we use to describe this variable?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which measures do we use to describe this variable?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) mean and standard deviation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) median and interquantile range &nbsp; :white_check_mark:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and standard deviation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) mean and standard deviation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) median and interquartile range &nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and standard deviation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
 
 </div>
 
@@ -4288,19 +4233,24 @@ Boxplot hides the underlying distribution. Use jitter if low number of data poin
 <span style="display:block; height:2px;"></span>
 
 <center>
-<img src="./img/descriptive/DataSaurusDozen.gif" img height="450px" border="4px"/>
+<img src="./img/visualization/DataSaurusDozen.gif" img height="450px" border="4px"/>
 </center>
 
 ---
-![bg opacity](./img/Descriptive_bg.png)
+![bg opacity](./img/descriptive_bg.png)
 
 ## Summary
 
-<span style="display:block; height:50px;"></span>
+
+<div style="font-size: 85%">
 
 - Data come in different types
-- Data are described with measures of centrality and dispersion
-- Visualising your data is always a good idea
+- Categorical variables can be summarized with absolute and relative frequencies 
+- Numerical variables can be summarized with measures of central tendency and dispersion, remembering that some of these measures are influenced by asimmetrical distribution and/or outliers
+- Variables can be summarised with multiple graphical representations (but some are better than others), and visualising your data is always a good idea
+- Samples are summarised by statistics, populations by parameters
+
+</div>
 
 ---
 ![bg opacity](./img/backgrounds/wrappingup_bg.png)
