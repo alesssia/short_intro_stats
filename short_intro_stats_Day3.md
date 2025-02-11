@@ -1014,7 +1014,15 @@ Ronald Fisher was an extraordinary, but difficult, man. He was extraordinary bec
 
 <div style="font-size: 80%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z$-test or $t$-test for differences in mean
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $t$-test$^{(*)}$ for differences in mean
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+<div style="font-size: 50%" >
+
+We are using the $t$-test for differences in mean and not the $z$-test because we don't know the standard deviation in the population (and are using the sample's standard deviation instead).
 
 </div>
 
@@ -1549,7 +1557,16 @@ updateButton_exercise_5();
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Choose a test statistic that estimates something that, if extreme 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enough, would lead one to doubt $\mathcal{H_0}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ &nbsp; $z$-test for differences in proportion
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ &nbsp; $t$-test$^{(*)}$ for differences in proportion
+
+</div>
+
+
+<span style="display:block; height:70px;"></span>
+
+<div style="font-size: 50%" >
+
+We are using the $t$-test for differences in proportion and not the $z$-test because we don't know the standard deviation in the population (and are using the sample's standard deviation instead).
 
 </div>
 

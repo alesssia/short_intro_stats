@@ -590,7 +590,7 @@ updateButton_exercise_2();
 ---
 ### Exercise #3
 
-<div style="font-size: 85%">
+<div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
@@ -601,7 +601,8 @@ updateButton_exercise_2();
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The tallest Italian man's height
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The range that includes 68% of the individuals
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) The tallest Italian man's height
 
 </div>
 
@@ -694,7 +695,7 @@ updateButton_exercise_3();
 ---
 ### Exercise #3 -- Solution
 
-<div style="font-size: 85%">
+<div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
@@ -709,7 +710,7 @@ updateButton_exercise_3();
 ---
 ### Exercise #3 -- Solution
 
-<div style="font-size: 85%">
+<div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
@@ -727,7 +728,7 @@ updateButton_exercise_3();
 ---
 ### Exercise #3 -- Solution
 
-<div style="font-size: 85%">
+<div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
@@ -737,8 +738,8 @@ updateButton_exercise_3();
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The median height $\rightarrow$ 170cm
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$ $\rightarrow 50\%$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers $\rightarrow$ those $>2$  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation from the mean $= 170 - 9.5 \times 2 = 151 \text{ cm }$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{and } 170 + 9.5 \times 2 = 189 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation from the mean $= 170 - 2 \times 9.5  = 151 \text{ cm }$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{and } 170 + 2\times 9.5  = 189 \text{ cm}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height
 
 </div>
@@ -746,7 +747,7 @@ updateButton_exercise_3();
 ---
 ### Exercise #3 -- Solution
 
-<div style="font-size: 85%">
+<div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
@@ -759,14 +760,14 @@ updateButton_exercise_3();
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{ } <151 \text{ cm and }  >189 \text{ cm}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height $\rightarrow$ the mode, which coincides with the 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mean and the median $= 170 \text{ cm}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The tallest Italian man's height
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The range that includes 68% of the individuals
 
 </div>
 
 ---
 ### Exercise #3 -- Solution
 
-<div style="font-size: 85%">
+<div style="font-size: 80%">
 
 :question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
@@ -778,7 +779,30 @@ updateButton_exercise_3();
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{ } <151 \text{ cm and} >189 \text{ cm}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height $\rightarrow 170 \text{ cm}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The tallest Italian man's height $\rightarrow$ we can't calculate this!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The range that includes 68% of the individuals $\rightarrow$  that included 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; between $\pm 1$   standard deviation from the mean 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= 170 - 9.5 \text{ to } 170 + 9.5 \text{ cm } = 160.5 \text{ to } 179.5$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) The tallest Italian man's height 
+
+</div>
+
+---
+### Exercise #3 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate the following values, when possible
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The median height $\rightarrow$ 170cm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$ $\rightarrow 50\%$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow \text{ } <151 \text{ cm and} >189 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height $\rightarrow 170 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The range that includes 68% of the individuals $\rightarrow$  $160.5 \text{ to } 179.5 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) The tallest Italian man's height $\rightarrow$ we can't calculate this!
 
 </div>
 
@@ -2869,7 +2893,9 @@ $100\% - 2.5\% = 97.5\%$
 
 <div class="columns">
 <div>
+
 <span style="display:block; height:10px;"></span>
+
 <div style="font-size: 80%" >
 
 | Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
