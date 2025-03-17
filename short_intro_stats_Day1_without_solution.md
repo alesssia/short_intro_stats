@@ -497,13 +497,11 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 ---
 ### Exercise #1
 
-<span style="display:block; height:1px;"></span>
-
 <center>
-<img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
+<img src="./img/sampling/abstract_ex1.png" img height="190px" border="4px"/>
 </center>
 
-<div style="font-size: 75%">
+<div style="font-size: 70%">
 
 :question: &nbsp;&nbsp;&nbsp; Which is the population of this study?
 
@@ -514,23 +512,22 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 
 </div>
 
-<!-- <div style="font-size: 50%" align="right">
 
-Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", JAMA, 2020, doi:10.1001/jama.2020.17021
+<div style="font-size: 50%" align="right">
 
-</div> -->
+<br/><br/> Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", JAMA, 2020, doi:10.1001/jama.2020.17021
+
+</div>
 
 
 ---
 ### Exercise #2
 
-<span style="display:block; height:1px;"></span>
-
 <center>
-<img src="./img/sampling/abstract_ex1.png" img height="200px" border="4px"/>
+<img src="./img/sampling/abstract_ex1.png" img height="190px" border="4px"/>
 </center>
 
-<div style="font-size: 75%">
+<div style="font-size: 70%">
 
 :question: &nbsp;&nbsp;&nbsp; Which is the sample used in this study?
 
@@ -538,6 +535,13 @@ Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-f
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+
+</div>
+
+
+<div style="font-size: 50%" align="right">
+
+<br/><br/> Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", JAMA, 2020, doi:10.1001/jama.2020.17021
 
 </div>
 
@@ -1822,7 +1826,7 @@ piu; semplice, meno informativo  Il range ha tuttavia un'utilita' limitata: tien
 
 <!-- Andiamo a fare la distanza (differenza) tra ciascun valore e la media, la eleviamo al quatrato, la sommiamo e andiamo a dividerla per la dimensione del campione - 1 -->
 
-<!-- ---
+---
 ## Measure of dispersion: variance
 
 <span style="display:block; height:1px;"></span>
@@ -1843,7 +1847,7 @@ piu; semplice, meno informativo  Il range ha tuttavia un'utilita' limitata: tien
 Dipende dal fatto che La somma degli scarti dalla media aritmetica è nulla
 Qundi se conosco i primi (n-1) valori, conosco anche l'ultimo
 
-n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di dati (n) meno il numero di costanti gia' calcolate dai dati (in questo caso 1, la media) --> -->
+n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di dati (n) meno il numero di costanti gia' calcolate dai dati (in questo caso 1, la media) --> 
 
 ---
 ## Measure of dispersion: standard deviation

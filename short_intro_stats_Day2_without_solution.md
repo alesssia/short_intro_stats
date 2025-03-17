@@ -180,6 +180,15 @@ Figure shows a normal curve with the same mean and standard deviation as the rec
 - $\text{mode} \equiv \text{median} \equiv \text{mean}$
 - Symmetrical
 
+
+<span style="display:block; height:120px;"></span>
+
+<div style="font-size: 80%" align="right">
+
+$f(x)={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}$
+
+</div>
+
 </div>
 <div>
 
@@ -211,9 +220,9 @@ It is an impressive achievement to be able to summarize over a million births by
 - $\text{Area under the curve} = 1$
 - proportion $\equiv$ likelihood
 
-<span style="display:block; height:120px;"></span>
+<span style="display:block; height:150px;"></span>
 
-<div style="font-size: 80%" align="right">
+<div style="font-size: 70%" align="right">
 
 $\text{very low birth weight (VLBW)} < 1500 \text{ g}$
 $\text{Twins with VLBW} = 6\%$
@@ -269,8 +278,6 @@ For medical rather than statistical reasons, babies below 1,500 g ‘very low bi
 </div>
 </div>
 
-<span style="display:block; height:30px;"></span>
-
 
 ---
 ### Exercise #2
@@ -303,7 +310,6 @@ For medical rather than statistical reasons, babies below 1,500 g ‘very low bi
 </div>
 </div>
 
-<span style="display:block; height:30px;"></span>
 
 ---
 ## The Normal distribution
@@ -373,6 +379,7 @@ For medical rather than statistical reasons, babies below 1,500 g ‘very low bi
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) The tallest Italian man's height
 
 </div>
+
 
 ---
 ## Proportion $\equiv$ likelihood
@@ -522,8 +529,6 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 
 <span style="display:block; height:30px;"></span>
 
-
-
 :pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -555,19 +560,21 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{1500\text{ g} - 2404\text{ g}}{580\text{ g}}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1.56$
 
+<span style="display:block; height:80px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
+
 </div>
 <div>
 
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/normal/normal_table_zoom.jpg" img height="280px" border="4px"/>
+<img src="./img/normal/normal_table_zoom.jpg" img height="380px" border="4px"/>
 </center> 
 
 </div>
 </div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
 
 </div>
 
@@ -625,7 +632,7 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/normal/normal_table_zoom_example.jpg" img height="280px" border="4px"/>
+<img src="./img/normal/normal_table_zoom_example.jpg" img height="350px" border="4px"/>
 </center> 
 
 </div>
@@ -656,21 +663,21 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 
 </div>
 
-<span style="display:block; height:170px;"></span>
 
 </div>
 <div>
 
-<span style="display:block; height:60px;"></span>
+<span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/normal/normal_table_zoom.jpg" img height="280px" border="4px"/>
+<img src="./img/normal/normal_table_zoom.jpg" img height="380px" border="4px"/>
 </center> 
 
 </div>
 </div>
 
 <!-- For medical rather than statistical reasons, babies below 2,500 g are considered ‘low birth weight’, and those below 1,500 g ‘very low birth weight’.  -->
+
 
 ---
 ## The Student's $\mathcal{t}$ distribution
@@ -952,8 +959,6 @@ Density should use another scale -->
 
 </div>
 
-<span style="display:block; height:80px;"></span>
-
 
 ---
 ## How accurate are we?
@@ -1088,9 +1093,6 @@ Bootstrapping provides an intuitive, computer-intensive way of assessing the unc
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) improves
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) worsens
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-
-<span style="display:block; height:80px;"></span>
 
 
 ---
@@ -1241,6 +1243,38 @@ Tutti concetti che ci torneranno utili tra poco
 </div>
 </div>
 
+---
+### Exercise #7
+
+<div style="font-size: 90%" >
+
+The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \text{ ?}$
+
+</div>
+
+
+---
+### Exercise #8
+
+<div style="font-size: 90%" >
+
+:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the confidence interval?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) none of the above
+
+</div>
+
+
+
 
 ---
 ## Interpreting confidence intervals 
@@ -1291,7 +1325,7 @@ a confidence interval is the range of population parameters for which our observ
 -->
 
 ---
-### Exercise #7
+### Exercise #9
 
 <div style="font-size: 75%" >
 
@@ -1315,107 +1349,6 @@ a confidence interval is the range of population parameters for which our observ
 
 <!-- Questa differenza di 200 euro a dx e sx della media e' il margine di errore del 95% -->
 
----
-### Exercise #8
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-<div style="font-size: 80%" >
-
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
-
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<span style="display:block; height:20px;"></span>
-
----
-### Exercise #9
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-<div style="font-size: 80%" >
-
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
-
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<span style="display:block; height:20px;"></span>
-
----
-### Exercise #10
-
-<div style="font-size: 90%" >
-
-The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
-
-:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \text{ ?}$
-
-
-
-</div>
-
-<span style="display:block; height:180px;"></span>
-
-
----
-### Exercise #11
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the confidence interval?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) none of the above
-
-</div>
-
-<span style="display:block; height:40px;"></span>
 
 ---
 ## The $\alpha$ level
@@ -1551,6 +1484,99 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.58$
 Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 
 ---
+### Exercise #10
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; The larger the confidence level...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the larger the CI
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) the smaller the CI
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+
+---
+### Exercise #11
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
+### Exercise #12
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
 ## And for small samples?
 
 <div class="columns">
@@ -1578,7 +1604,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 </div>
 
 ---
-### Exercise 12
+### Exercise #13
 
 <div class="columns">
 <div>
@@ -1598,8 +1624,6 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 
 
 </div>
-
-<span style="display:block; height:40px;"></span>
 
 </div>
 <div>
@@ -1647,7 +1671,7 @@ Ci sono casi in cui vogliamo stimare la differenza tra medie di una popolazione 
 Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni -->
 
 ---
-### Exercise #13
+### Exercise #14
 
 <div style="font-size: 80%">
 
@@ -1663,7 +1687,7 @@ Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tr
 <div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= \text{ ?}, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= \text{ ?}, \text{ } \text{ }  s_\text{i} = 8.7$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= \text{ ?}, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= \text{ ?}, \text{ } \text{ }  s_\text{c} = 8.7$ 
 
 </div>
 <div>
@@ -1675,9 +1699,9 @@ Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tr
 
 </div>
 
-<span style="display:block; height:1px;"></span>
 
-<span style="display:block; height:1px;"></span>
+
+<span style="display:block; height:40px;"></span>
 
 <div style="font-size: 50%" align="left">
 
@@ -1718,7 +1742,7 @@ Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una 
  -->
 
 ---
-### Exercise #14
+### Exercise #15
 
 <div style="font-size: 80%">
 
@@ -1746,9 +1770,8 @@ Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una 
 
 </div>
 
-<span style="display:block; height:1px;"></span>
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:40px;"></span>
 
 <div style="font-size: 50%" align="left">
 
@@ -1777,7 +1800,7 @@ Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazient
  Per il teorema del limite centrale, di nuovo, la differenza tra le proporzioni campionarie e' una stima non distorta della differenza di proporzioni nella popolazione e la distribuzione campionaria si approssima ad una normale  -->
 
 ---
-### Exercise #15
+### Exercise #16
 
 <div style="font-size: 80%">
 
@@ -1805,9 +1828,8 @@ Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazient
 
 </div>
 
-<span style="display:block; height:10px;"></span>
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:40px;"></span>
 
 <div style="font-size: 50%" align="left">
 

@@ -180,6 +180,15 @@ Figure shows a normal curve with the same mean and standard deviation as the rec
 - $\text{mode} \equiv \text{median} \equiv \text{mean}$
 - Symmetrical
 
+
+<span style="display:block; height:120px;"></span>
+
+<div style="font-size: 80%" align="right">
+
+$f(x)={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}$
+
+</div>
+
 </div>
 <div>
 
@@ -211,9 +220,9 @@ It is an impressive achievement to be able to summarize over a million births by
 - $\text{Area under the curve} = 1$
 - proportion $\equiv$ likelihood
 
-<span style="display:block; height:120px;"></span>
+<span style="display:block; height:150px;"></span>
 
-<div style="font-size: 80%" align="right">
+<div style="font-size: 70%" align="right">
 
 $\text{very low birth weight (VLBW)} < 1500 \text{ g}$
 $\text{Twins with VLBW} = 6\%$
@@ -954,8 +963,6 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 
 <span style="display:block; height:30px;"></span>
 
-
-
 :pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -987,19 +994,21 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{1500\text{ g} - 2404\text{ g}}{580\text{ g}}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1.56$
 
+<span style="display:block; height:80px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
+
 </div>
 <div>
 
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/normal/normal_table_zoom.jpg" img height="280px" border="4px"/>
+<img src="./img/normal/normal_table_zoom.jpg" img height="380px" border="4px"/>
 </center> 
 
 </div>
 </div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
 
 </div>
 
@@ -1057,7 +1066,7 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 <span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/normal/normal_table_zoom_example.jpg" img height="280px" border="4px"/>
+<img src="./img/normal/normal_table_zoom_example.jpg" img height="350px" border="4px"/>
 </center> 
 
 </div>
@@ -1179,10 +1188,10 @@ updateButton_exercise_4();
 </div>
 <div>
 
-<span style="display:block; height:60px;"></span>
+<span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/normal/normal_table_zoom.jpg" img height="280px" border="4px"/>
+<img src="./img/normal/normal_table_zoom.jpg" img height="380px" border="4px"/>
 </center> 
 
 </div>
@@ -1218,11 +1227,12 @@ updateButton_exercise_4();
 </div>
 <div>
 
-<span style="display:block; height:60px;"></span>
+<span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/normal/normal_table_zoom.jpg" img height="280px" border="4px"/>
+<img src="./img/normal/normal_table_zoom.jpg" img height="380px" border="4px"/>
 </center> 
+
 
 </div>
 </div>
@@ -2033,79 +2043,20 @@ Tutti concetti che ci torneranno utili tra poco
 </div>
 </div>
 
-
----
-## Interpreting confidence intervals 
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp; A confidence interval is a range of values which includes the
-&nbsp;&nbsp;&nbsp; estimated parameter with a given degree of confidence
-
----
-## Interpreting confidence intervals 
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp; If we could sample the population 100 times, 95 would estimate a
-&nbsp;&nbsp;&nbsp;  confidence interval which includes the true population parameter
-
-</div>
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-<div style="font-size: 90%">
-
-:pushpin: &nbsp;&nbsp;&nbsp; Population: Italian women 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25-74 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu=123 \text{ mmHg}$
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/womenBP.png" img height="350px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- Cosa rappresentano quindi i CI? Che dati 100 campioni estratti dalla popolazione, 95 stimano un IC al cui interno è compresa la media reale della popolazione e solo 5 stimano un ic che non include la media reale 
-
-a confidence interval is the range of population parameters for which our observed statistic is a plausible consequence.
--->
-
 ---
 ### Exercise #7
 
-<div style="font-size: 75%" >
+<div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp; In the Results section, the authors reported the following
+The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *In Mexican Americans, the mean age at menarche was 12.09 years 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (95% CI = 11.81 to 12.37 years)*
+:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this means that...
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the age at menarche for Mexican American girls is included between 11.81 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and 12.37 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 95% of Mexican American girls experience menarche between 11.81 and
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  12.37 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the mean age at menarche for Mexican American girls has a 95% probability 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of being included between 11.81 and 12.37 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \text{ ?}$
 
 </div>
 
-
-<!-- Questa differenza di 200 euro a dx e sx della media e' il margine di errore del 95% -->
+<span style="display:block; height:180px;"></span>
 
 <style>
   #countdown_exercise_7{
@@ -2131,7 +2082,7 @@ a confidence interval is the range of population parameters for which our observ
 <script>
 <!--
 const countdown_exercise_7= document.getElementById("countdown_exercise_7");
-const seconds_exercise_7= 60; // seconds_exercise_7
+const seconds_exercise_7= 300; // seconds_exercise_7
 let timeLeft_exercise_7= seconds_exercise_7;
 let timerInterval_exercise_7= null;
 
@@ -2184,7 +2135,7 @@ countdown_exercise_7.addEventListener("click", () => {
   if (countdown_exercise_7.classList.contains('finished')) {
     resetTimer_exercise_7();
   } else {
-    startTimer_exercise_3();
+    startTimer_exercise_7();
   }
 });
 
@@ -2196,57 +2147,78 @@ updateButton_exercise_7();
 ---
 ### Exercise #7 -- Solution
 
-<div style="font-size: 75%" >
+<div style="font-size: 90%" >
 
-:question: &nbsp;&nbsp;&nbsp; In the Results section, the authors reported the following
+The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *In Mexican Americans, the mean age at menarche was 12.09 years 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (95% CI = 11.81 to 12.37 years)*
+:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this means that...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = 3.3/\sqrt{403}=0.16$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the age at menarche for Mexican American girls is included between 11.81 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and 12.37 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 95% of Mexican American girls experience menarche between 11.81  and
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.37 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the mean age at menarche for Mexican American girls has a 95% probability  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of being included between 11.81 and 12.37 years old &nbsp; :white_check_mark:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above
+<div>
+
+---
+### Exercise #7 -- Solution
+
+<div style="font-size: 90%" >
+
+The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = 3.3/\sqrt{403}=0.16$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $95\% \text{ ME} = 2 \times \hat{\text{SE}} = 2 \times 0.16 = 0.32$
+
+<!-- Per il CTL e per la legge dei grandi numeri, la media del campione e' la media della popolazione. Se io prendo 2SE a sx della media e 2SE a destra (quindi x +/- 2 SE) ho il 95% di probabilta' di includere il vero valore mu, la media della popolazione
+
+1,96 e' il coefficiente di attendibilita', ci dice entro quanti errori standard si trova il 95% di tutti i possibili valori della media campionaria
+
+Stima intervallare definita come stimatore +/- il prodotto tra coeff di attendibilita' e SE. Questa quantita' si chiama anche PRECISIONE della STIMA o MARGINE DI ERRORE -->
+
+---
+### Exercise #7 -- Solution
+
+<div style="font-size: 90%" >
+
+The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = 3.3/\sqrt{403}=0.16$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $95\% \text{ ME} = 2 \times \hat{\text{SE}} = 2 \times 0.16 = 0.32$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $95\% \text{CI} =  (\bar{x} - 95\% \text{ ME} \text{ } ; \text{ } \bar{x} + 95\% \text{ ME} ) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $=(18.4 - 0.32 \text{ } ; \text{ } 18.4 + 0.32) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (18.08 \text{ } ; \text{ }   18.72)$
 
 </div>
+
+<!-- Per il CTL e per la legge dei grandi numeri, la media del campione e' la media della popolazione. Se io prendo 2SE a sx della media e 2SE a destra (quindi x +/- 2 SE) ho il 95% di probabilta' di includere il vero valore mu, la media della popolazione
+
+1,96 e' il coefficiente di attendibilita', ci dice entro quanti errori standard si trova il 95% di tutti i possibili valori della media campionaria
+
+Stima intervallare definita come stimatore +/- il prodotto tra coeff di attendibilita' e SE. Questa quantita' si chiama anche PRECISIONE della STIMA o MARGINE DI ERRORE -->
+
 
 ---
 ### Exercise #8
 
-<div class="columns">
-<div>
+<div style="font-size: 90%" >
 
-<span style="display:block; height:30px;"></span>
+:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the confidence interval?
 
-<div style="font-size: 80%" >
-
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
-
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) none of the above
 
 </div>
 
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<span style="display:block; height:20px;"></span>
+<span style="display:block; height:40px;"></span>
 
 <style>
   #countdown_exercise_8{
@@ -2333,79 +2305,103 @@ updateButton_exercise_8();
 -->
 </script>
 
----
-### Exercise #8 -- Solution
-
-<span style="display:block; height:30px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/small_large_CI_likelihood.png" img height="400px" border="4px"/>
-</center>
 
 ---
 ### Exercise #8 -- Solution
+
+<div style="font-size: 90%" >
+
+:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the confidence interval?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$ &nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$ &nbsp; :ballot_box_with_check:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) none of the above
+
+</div>
+
+<!-- Abbiamo un confidence interval molto stretto perche' si sono verificate due condizioni che, indipendentemente, migliorano la stima intervallare:
+- un'alta numerosit&agrave; campionaria e
+- una bassa variabilita s tra le osservazioni 
+
+Peccato che sigma non la possiamo controllare :) 
+-->
+
+
+---
+## Interpreting confidence intervals 
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp; A confidence interval is a range of values which includes the
+&nbsp;&nbsp;&nbsp; estimated parameter with a given degree of confidence
+
+---
+## Interpreting confidence intervals 
+
+<div style="font-size: 90%">
+
+&nbsp;&nbsp;&nbsp; If we could sample the population 100 times, 95 would estimate a
+&nbsp;&nbsp;&nbsp;  confidence interval which includes the true population parameter
+
+</div>
 
 <div class="columns">
 <div>
 
 <span style="display:block; height:30px;"></span>
 
-<div style="font-size: 80%" >
+<div style="font-size: 90%">
 
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
-
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$ :white_check_mark:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
+:pushpin: &nbsp;&nbsp;&nbsp; Population: Italian women 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25-74 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu=123 \text{ mmHg}$
 
 </div>
+
 </div>
 <div>
 
+<span style="display:block; height:10px;"></span>
+
 <center>
-<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+<img src="./img/confidence_intervals/womenBP.png" img height="350px" border="4px"/>
 </center>
 
 </div>
 </div>
 
+<!-- Cosa rappresentano quindi i CI? Che dati 100 campioni estratti dalla popolazione, 95 stimano un IC al cui interno è compresa la media reale della popolazione e solo 5 stimano un ic che non include la media reale 
 
+a confidence interval is the range of population parameters for which our observed statistic is a plausible consequence.
+-->
 
 ---
 ### Exercise #9
 
-<div class="columns">
-<div>
+<div style="font-size: 75%" >
 
-<span style="display:block; height:30px;"></span>
+:question: &nbsp;&nbsp;&nbsp; In the Results section, the authors reported the following
 
-<div style="font-size: 80%" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *In Mexican Americans, the mean age at menarche was 12.09 years 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (95% CI = 11.81 to 12.37 years)*
 
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this means that...
 
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
-</center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the age at menarche for Mexican American girls is included between 11.81 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and 12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 95% of Mexican American girls experience menarche between 11.81 and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the mean age at menarche for Mexican American girls has a 95% probability 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of being included between 11.81 and 12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above
 
 </div>
-</div>
 
-<span style="display:block; height:20px;"></span>
+
+<!-- Questa differenza di 200 euro a dx e sx della media e' il margine di errore del 95% -->
 
 <style>
   #countdown_exercise_9{
@@ -2484,7 +2480,7 @@ countdown_exercise_9.addEventListener("click", () => {
   if (countdown_exercise_9.classList.contains('finished')) {
     resetTimer_exercise_9();
   } else {
-    startTimer_exercise_9();
+    startTimer_exercise_3();
   }
 });
 
@@ -2492,335 +2488,28 @@ updateButton_exercise_9();
 -->
 </script>
 
----
-### Exercise #9 -- Solution
-
-<span style="display:block; height:30px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/small_large_CI_precision.png" img height="400px" border="4px"/>
-</center>
 
 ---
 ### Exercise #9 -- Solution
 
-<div class="columns">
-<div>
+<div style="font-size: 75%" >
 
-<span style="display:block; height:30px;"></span>
+:question: &nbsp;&nbsp;&nbsp; In the Results section, the authors reported the following
 
-<div style="font-size: 80%" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *In Mexican Americans, the mean age at menarche was 12.09 years 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (95% CI = 11.81 to 12.37 years)*
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this means that...
 
-
-:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
-
-<span style="display:block; height:10px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise :white_check_mark:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-</div>
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
-</center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the age at menarche for Mexican American girls is included between 11.81 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and 12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 95% of Mexican American girls experience menarche between 11.81  and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the mean age at menarche for Mexican American girls has a 95% probability  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of being included between 11.81 and 12.37 years old &nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above
 
 </div>
-</div>
-
-
-
-
----
-### Exercise #10
-
-<div style="font-size: 90%" >
-
-The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
-
-:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \text{ ?}$
-
-
-
-</div>
-
-<span style="display:block; height:180px;"></span>
-
-<style>
-  #countdown_exercise_10{
-    padding: 10px 20px;
-    font-size: 20px;
-    color: white;
-    background-color: gray;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
-  }
-  #countdown_exercise_10.running {
-    background-color: green;
-  }
-  #countdown_exercise_10.finished {
-    background-color: red;
-  }
-</style>
-
-<button id="countdown_exercise_10"></button>
-
-<script>
-<!--
-const countdown_exercise_10= document.getElementById("countdown_exercise_10");
-const seconds_exercise_10= 300; // seconds_exercise_10
-let timeLeft_exercise_10= seconds_exercise_10;
-let timerInterval_exercise_10= null;
-
-function formatTime_exercise_10(seconds_exercise_10) {
-  const minutes = Math.floor(seconds_exercise_10/ 60);
-  const remainingseconds_exercise_10= seconds_exercise_10% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_10).padStart(2, '0')}`;
-}
-
-function updateButton_exercise_10() {
-  countdown_exercise_10.textContent = formatTime_exercise_10(timeLeft_exercise_10);
-}
-
-function startTimer_exercise_10() {
-  if (timerInterval_exercise_10=== null) {
-    countdown_exercise_10.classList.add('running');
-    countdown_exercise_10.classList.remove('finished');
-    timerInterval_exercise_10= setInterval(() => {
-      if (timeLeft_exercise_10> 0) {
-        timeLeft_exercise_10--;
-        updateButton_exercise_10();
-      } else {
-        clearInterval(timerInterval_exercise_10);
-        timerInterval_exercise_10= null;
-        countdown_exercise_10.classList.remove('running');
-        countdown_exercise_10.classList.add('finished');
-        countdown_exercise_10.textContent = "Time's up!";
-      }
-    }, 1000);
-  } else {
-    pauseTimer_exercise_10();
-  }
-}
-
-function pauseTimer_exercise_10() {
-  clearInterval(timerInterval_exercise_10);
-  timerInterval_exercise_10= null;
-  countdown_exercise_10.classList.remove('running');
-}
-
-function resetTimer_exercise_10() {
-  timeLeft_exercise_10= seconds_exercise_10;
-  updateButton_exercise_10();
-  countdown_exercise_10.classList.remove('finished');
-  countdown_exercise_10.classList.remove('running');
-  timerInterval_exercise_10= null;
-}
-
-countdown_exercise_10.addEventListener("click", () => {
-  if (countdown_exercise_10.classList.contains('finished')) {
-    resetTimer_exercise_10();
-  } else {
-    startTimer_exercise_10();
-  }
-});
-
-updateButton_exercise_10();
--->
-</script>
-
-
----
-### Exercise #10 -- Solution
-
-<div style="font-size: 90%" >
-
-The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
-
-:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = 3.3/\sqrt{403}=0.16$
-
-<div>
-
----
-### Exercise #10 -- Solution
-
-<div style="font-size: 90%" >
-
-The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
-
-:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = 3.3/\sqrt{403}=0.16$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $95\% \text{ ME} = 2 \times \hat{\text{SE}} = 2 \times 0.16 = 0.32$
-
-<!-- Per il CTL e per la legge dei grandi numeri, la media del campione e' la media della popolazione. Se io prendo 2SE a sx della media e 2SE a destra (quindi x +/- 2 SE) ho il 95% di probabilta' di includere il vero valore mu, la media della popolazione
-
-1,96 e' il coefficiente di attendibilita', ci dice entro quanti errori standard si trova il 95% di tutti i possibili valori della media campionaria
-
-Stima intervallare definita come stimatore +/- il prodotto tra coeff di attendibilita' e SE. Questa quantita' si chiama anche PRECISIONE della STIMA o MARGINE DI ERRORE -->
-
----
-### Exercise #10 -- Solution
-
-<div style="font-size: 90%" >
-
-The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
-
-:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = 3.3/\sqrt{403}=0.16$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $95\% \text{ ME} = 2 \times \hat{\text{SE}} = 2 \times 0.16 = 0.32$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $95\% \text{CI} =  (\bar{x} - 95\% \text{ ME} \text{ } ; \text{ } \bar{x} + 95\% \text{ ME} ) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $=(18.4 - 0.32 \text{ } ; \text{ } 18.4 + 0.32) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (18.08 \text{ } ; \text{ }   18.72)$
-
-</div>
-
-<!-- Per il CTL e per la legge dei grandi numeri, la media del campione e' la media della popolazione. Se io prendo 2SE a sx della media e 2SE a destra (quindi x +/- 2 SE) ho il 95% di probabilta' di includere il vero valore mu, la media della popolazione
-
-1,96 e' il coefficiente di attendibilita', ci dice entro quanti errori standard si trova il 95% di tutti i possibili valori della media campionaria
-
-Stima intervallare definita come stimatore +/- il prodotto tra coeff di attendibilita' e SE. Questa quantita' si chiama anche PRECISIONE della STIMA o MARGINE DI ERRORE -->
-
----
-### Exercise #11
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the confidence interval?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) none of the above
-
-</div>
-
-<span style="display:block; height:40px;"></span>
-
-<style>
-  #countdown_exercise_11{
-    padding: 10px 20px;
-    font-size: 20px;
-    color: white;
-    background-color: gray;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
-  }
-  #countdown_exercise_11.running {
-    background-color: green;
-  }
-  #countdown_exercise_11.finished {
-    background-color: red;
-  }
-</style>
-
-<button id="countdown_exercise_11"></button>
-
-<script>
-<!--
-const countdown_exercise_11= document.getElementById("countdown_exercise_11");
-const seconds_exercise_11= 60; // seconds_exercise_11
-let timeLeft_exercise_11= seconds_exercise_11;
-let timerInterval_exercise_11= null;
-
-function formatTime_exercise_11(seconds_exercise_11) {
-  const minutes = Math.floor(seconds_exercise_11/ 60);
-  const remainingseconds_exercise_11= seconds_exercise_11% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_11).padStart(2, '0')}`;
-}
-
-function updateButton_exercise_11() {
-  countdown_exercise_11.textContent = formatTime_exercise_11(timeLeft_exercise_11);
-}
-
-function startTimer_exercise_11() {
-  if (timerInterval_exercise_11=== null) {
-    countdown_exercise_11.classList.add('running');
-    countdown_exercise_11.classList.remove('finished');
-    timerInterval_exercise_11= setInterval(() => {
-      if (timeLeft_exercise_11> 0) {
-        timeLeft_exercise_11--;
-        updateButton_exercise_11();
-      } else {
-        clearInterval(timerInterval_exercise_11);
-        timerInterval_exercise_11= null;
-        countdown_exercise_11.classList.remove('running');
-        countdown_exercise_11.classList.add('finished');
-        countdown_exercise_11.textContent = "Time's up!";
-      }
-    }, 1000);
-  } else {
-    pauseTimer_exercise_11();
-  }
-}
-
-function pauseTimer_exercise_11() {
-  clearInterval(timerInterval_exercise_11);
-  timerInterval_exercise_11= null;
-  countdown_exercise_11.classList.remove('running');
-}
-
-function resetTimer_exercise_11() {
-  timeLeft_exercise_11= seconds_exercise_11;
-  updateButton_exercise_11();
-  countdown_exercise_11.classList.remove('finished');
-  countdown_exercise_11.classList.remove('running');
-  timerInterval_exercise_11= null;
-}
-
-countdown_exercise_11.addEventListener("click", () => {
-  if (countdown_exercise_11.classList.contains('finished')) {
-    resetTimer_exercise_11();
-  } else {
-    startTimer_exercise_11();
-  }
-});
-
-updateButton_exercise_11();
--->
-</script>
-
-
----
-### Exercise #11 -- Solution
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the confidence interval?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$ &nbsp; :white_check_mark:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$ &nbsp; :ballot_box_with_check:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) none of the above
-
-</div>
-
-<!-- Abbiamo un confidence interval molto stretto perche' si sono verificate due condizioni che, indipendentemente, migliorano la stima intervallare:
-- un'alta numerosit&agrave; campionaria e
-- una bassa variabilita s tra le osservazioni 
-
-Peccato che sigma non la possiamo controllare :) 
--->
 
 
 ---
@@ -2957,55 +2646,342 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.58$
 Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 
 ---
-## And for small samples?
+### Exercise #10
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:30px;"></span>
 
 <div style="font-size: 80%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+:question: &nbsp;&nbsp;&nbsp; The larger the confidence level...
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the larger the CI
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) the smaller the CI
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<span style="display:block; height:20px;"></span>
+
+<style>
+  #countdown_exercise_10{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_10.running {
+    background-color: green;
+  }
+  #countdown_exercise_10.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_10"></button>
+
+<script>
+<!--
+const countdown_exercise_10= document.getElementById("countdown_exercise_10");
+const seconds_exercise_10= 60; // seconds_exercise_10
+let timeLeft_exercise_10= seconds_exercise_10;
+let timerInterval_exercise_10= null;
+
+function formatTime_exercise_10(seconds_exercise_10) {
+  const minutes = Math.floor(seconds_exercise_10/ 60);
+  const remainingseconds_exercise_10= seconds_exercise_10% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_10).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_10() {
+  countdown_exercise_10.textContent = formatTime_exercise_10(timeLeft_exercise_10);
+}
+
+function startTimer_exercise_10() {
+  if (timerInterval_exercise_10=== null) {
+    countdown_exercise_10.classList.add('running');
+    countdown_exercise_10.classList.remove('finished');
+    timerInterval_exercise_10= setInterval(() => {
+      if (timeLeft_exercise_10> 0) {
+        timeLeft_exercise_10--;
+        updateButton_exercise_10();
+      } else {
+        clearInterval(timerInterval_exercise_10);
+        timerInterval_exercise_10= null;
+        countdown_exercise_10.classList.remove('running');
+        countdown_exercise_10.classList.add('finished');
+        countdown_exercise_10.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_10();
+  }
+}
+
+function pauseTimer_exercise_10() {
+  clearInterval(timerInterval_exercise_10);
+  timerInterval_exercise_10= null;
+  countdown_exercise_10.classList.remove('running');
+}
+
+function resetTimer_exercise_10() {
+  timeLeft_exercise_10= seconds_exercise_10;
+  updateButton_exercise_10();
+  countdown_exercise_10.classList.remove('finished');
+  countdown_exercise_10.classList.remove('running');
+  timerInterval_exercise_10= null;
+}
+
+countdown_exercise_10.addEventListener("click", () => {
+  if (countdown_exercise_10.classList.contains('finished')) {
+    resetTimer_exercise_10();
+  } else {
+    startTimer_exercise_10();
+  }
+});
+
+updateButton_exercise_10();
+-->
+</script>
+
+
+---
+### Exercise #10 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; The larger the confidence level...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the larger the CI &nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) the smaller the CI
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
 
 </div>
 </div>
 <div>
 
 <center>
-<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+
+---
+### Exercise #11
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<span style="display:block; height:20px;"></span>
+
+<style>
+  #countdown_exercise_11{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_11.running {
+    background-color: green;
+  }
+  #countdown_exercise_11.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_11"></button>
+
+<script>
+<!--
+const countdown_exercise_11= document.getElementById("countdown_exercise_11");
+const seconds_exercise_11= 60; // seconds_exercise_11
+let timeLeft_exercise_11= seconds_exercise_11;
+let timerInterval_exercise_11= null;
+
+function formatTime_exercise_11(seconds_exercise_11) {
+  const minutes = Math.floor(seconds_exercise_11/ 60);
+  const remainingseconds_exercise_11= seconds_exercise_11% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_11).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_11() {
+  countdown_exercise_11.textContent = formatTime_exercise_11(timeLeft_exercise_11);
+}
+
+function startTimer_exercise_11() {
+  if (timerInterval_exercise_11=== null) {
+    countdown_exercise_11.classList.add('running');
+    countdown_exercise_11.classList.remove('finished');
+    timerInterval_exercise_11= setInterval(() => {
+      if (timeLeft_exercise_11> 0) {
+        timeLeft_exercise_11--;
+        updateButton_exercise_11();
+      } else {
+        clearInterval(timerInterval_exercise_11);
+        timerInterval_exercise_11= null;
+        countdown_exercise_11.classList.remove('running');
+        countdown_exercise_11.classList.add('finished');
+        countdown_exercise_11.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_11();
+  }
+}
+
+function pauseTimer_exercise_11() {
+  clearInterval(timerInterval_exercise_11);
+  timerInterval_exercise_11= null;
+  countdown_exercise_11.classList.remove('running');
+}
+
+function resetTimer_exercise_11() {
+  timeLeft_exercise_11= seconds_exercise_11;
+  updateButton_exercise_11();
+  countdown_exercise_11.classList.remove('finished');
+  countdown_exercise_11.classList.remove('running');
+  timerInterval_exercise_11= null;
+}
+
+countdown_exercise_11.addEventListener("click", () => {
+  if (countdown_exercise_11.classList.contains('finished')) {
+    resetTimer_exercise_11();
+  } else {
+    startTimer_exercise_11();
+  }
+});
+
+updateButton_exercise_11();
+-->
+</script>
+
+---
+### Exercise #11 -- Solution
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/small_large_CI_likelihood.png" img height="400px" border="4px"/>
+</center>
+
+---
+### Exercise #11 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more likely of including $\mu$ :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less likely of including $\mu$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+
+</div>
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
 </center>
 
 </div>
 </div>
 
 ---
-### Exercise 12
+### Exercise #12
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:30px;"></span>
 
 <div style="font-size: 80%" >
 
-:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \text{ ?}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = \text{ ?}$
+<span style="display:block; height:10px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
 
 
 </div>
 
-<span style="display:block; height:40px;"></span>
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<span style="display:block; height:20px;"></span>
 
 <style>
   #countdown_exercise_12{
@@ -3031,7 +3007,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 <script>
 <!--
 const countdown_exercise_12= document.getElementById("countdown_exercise_12");
-const seconds_exercise_12= 300; // seconds_exercise_12
+const seconds_exercise_12= 60; // seconds_exercise_12
 let timeLeft_exercise_12= seconds_exercise_12;
 let timerInterval_exercise_12= null;
 
@@ -3092,22 +3068,47 @@ updateButton_exercise_12();
 -->
 </script>
 
+---
+### Exercise #12 -- Solution
 
+<span style="display:block; height:30px;"></span>
 
+<center>
+<img src="./img/confidence_intervals/small_large_CI_precision.png" img height="400px" border="4px"/>
+</center>
+
+---
+### Exercise #12 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; If the CI is large we are...
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) more precise 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) less precise :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
+
+</div>
 </div>
 <div>
 
 <center>
-<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
 </center>
 
 </div>
 </div>
 
-<!-- coefficiente di attendibilita' -->
 
 ---
-### Exercise 12 -- Solution
+## And for small samples?
 
 <div class="columns">
 <div>
@@ -3116,46 +3117,11 @@ updateButton_exercise_12();
 
 <div style="font-size: 80%" >
 
-:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+:pushpin: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(14)}= 0.7$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 15 - 1 = 14$
-
-</div>
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
-</center>
-
-</div>
-</div>
-
----
-### Exercise 12 -- Solution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 80%" >
-
-:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(14)}= 0.7$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 15 - 1 = 14$
-
-</div>
-
-<div style="font-size: 70%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = \mathcal{t} \times \hat{SE} = 2.145 \times 0.7 = 1.5$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
 
 </div>
 </div>
@@ -3167,105 +3133,30 @@ updateButton_exercise_12();
 
 </div>
 </div>
-
-<!-- Abbiamo un grado di confidenza del 95% che la media della popolazione p sia compresa tra 24.28 e 25.72 -->
-
----
-### Exercise 12 -- Solution
-
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 80%" >
-
-:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt(14)}= 0.7$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 15 - 1 = 14$
-
-</div>
-
-<div style="font-size: 70%" >
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = \mathcal{t} \times \hat{SE} = 2.145 \times 0.7 = 1.5$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \text{95\% ME} \text{ } ; \text{ } \bar{x} + \text{95\% ME}) =$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (25.0 - 1.5; \text{ } 25.0 + 1.5) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (23.5; 26.5)$
-
-</div>
-
-</div>
-
-
-<!-- Abbiamo un grado di confidenza del 95% che la media della popolazione p sia compresa tra 24.28 e 25.72 -->
-
----
-### Confidence intervals for differences of means
-
-<div style="font-size: 90%">
-
-<span style="display:block; height:40px;"></span>
-
-<!-- :pushpin: &nbsp;&nbsp;&nbsp;  -->
-<!-- Which is the *true* difference in mean between two groups? -->
-
-<div class="columns">
-<div>
-
-<div style="font-size: 90%" >
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu_{\text{i}} - \mu_{\text{c}}, \sqrt{\frac{\sigma_\text{i}^2}{n_\text{i}} + \frac{\sigma_\text{c}^2}{n_\text{c}}})$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}}$
-
-</div>
-
-</div>
-<div>
-
-</div>
-</div>
-
-</div>
-
-<!-- 
-Ci sono casi in cui vogliamo stimare la differenza tra medie di una popolazione (per esempio tra i pazienti che hanno ricevuto un nuovo trattamento e quelli che hanno avuto la cura standard o il placebo)
-
-Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni -->
 
 ---
 ### Exercise #13
 
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/jama_network.png" img height="180px" border="4px"/>
-</center>
-
 <div class="columns">
 <div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= \text{ ?}, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= \text{ ?}, \text{ } \text{ }  s_\text{i} = 8.7$ 
-
-</div>
-<div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \text{ ?}$
-
-</div>
-</div>
-
-</div>
-
 <span style="display:block; height:1px;"></span>
 
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = \text{ ?}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
+
+
+</div>
+
+<span style="display:block; height:40px;"></span>
 
 <style>
   #countdown_exercise_13{
@@ -3352,25 +3243,151 @@ updateButton_exercise_13();
 -->
 </script>
 
+
+
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- coefficiente di attendibilita' -->
+
+---
+### Exercise #13 -- Solution
+
+<div class="columns">
+<div>
+
 <span style="display:block; height:1px;"></span>
 
-<div style="font-size: 50%" align="left">
+<div style="font-size: 80%" >
 
-<br/> Tomazini B.M., *et al.*, *Effect of Dexamethasone on Days Alive and Ventilator-Free in Patients With Moderate or Severe Acute Respiratory Distress Syndrome and COVID-19*, JAMA, 2020
+:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt{15}}= 0.7$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 15 - 1 = 14$
+
+</div>
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
+### Exercise #13 -- Solution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt{15}}= 0.7$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 15 - 1 = 14$
+
+</div>
+
+<div style="font-size: 70%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = \mathcal{t} \times \hat{SE} = 2.145 \times 0.7 = 1.5$
+
+</div>
+</div>
+<div>
+
+<center>
+<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Abbiamo un grado di confidenza del 95% che la media della popolazione p sia compresa tra 24.28 e 25.72 -->
+
+---
+### Exercise #13 -- Solution
+
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \frac{2.7}{\sqrt{15}}= 0.7$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{df} = n-1 = 15 - 1 = 14$
+
+</div>
+
+<div style="font-size: 70%" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = \mathcal{t} \times \hat{SE} = 2.145 \times 0.7 = 1.5$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \text{95\% ME} \text{ } ; \text{ } \bar{x} + \text{95\% ME}) =$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (25.0 - 1.5; \text{ } 25.0 + 1.5) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (23.5; 26.5)$
+
+</div>
 
 </div>
 
 
-<!-- Abbiamo due gruppo di pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS
-uno con lo standard of care e uno a cui abbiamo somministrati desametasone endovenoso. 
-
-Il numero di giorni di respirazione autonoma????
-
-Qual e' il CI per la differenza delle medie dei due gruppi?
--->
+<!-- Abbiamo un grado di confidenza del 95% che la media della popolazione p sia compresa tra 24.28 e 25.72 -->
 
 ---
-### Exercise #13 -- Solution
+### Confidence intervals for differences of means
+
+<div style="font-size: 90%">
+
+<span style="display:block; height:40px;"></span>
+
+<!-- :pushpin: &nbsp;&nbsp;&nbsp;  -->
+<!-- Which is the *true* difference in mean between two groups? -->
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%" >
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu_{\text{i}} - \mu_{\text{c}}, \sqrt{\frac{\sigma_\text{i}^2}{n_\text{i}} + \frac{\sigma_\text{c}^2}{n_\text{c}}})$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}}$
+
+</div>
+
+</div>
+<div>
+
+</div>
+</div>
+
+</div>
+
+<!-- 
+Ci sono casi in cui vogliamo stimare la differenza tra medie di una popolazione (per esempio tra i pazienti che hanno ricevuto un nuovo trattamento e quelli che hanno avuto la cura standard o il placebo)
+
+Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni -->
+
+---
+### Exercise #14
 
 <div style="font-size: 80%">
 
@@ -3382,111 +3399,16 @@ Qual e' il CI per la differenza delle medie dei due gruppi?
 <img src="./img/confidence_intervals/jama_network.png" img height="180px" border="4px"/>
 </center>
 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 151, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= 6.6, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 148, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= 4.0, \text{ } \text{ }  s_\text{i} = 8.7$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
-
-</div>
-
-
-<!--  CTL differenza tra le medie campionarie e' la diffeenza tra le medie della popolazione
-SE lo calcoliamo cosi' -->
-
-
----
-### Exercise #13 -- Solution
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 151, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= 6.6, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 148, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= 4.0, \text{ } \text{ }  s_\text{i} = 8.7$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 1.08 = 2.16$
-
-</div>
-
----
-### Exercise #13 -- Solution
-
-<div style="font-size: 80%" >
-
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 151, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= 6.6, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 148, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= 4.0, \text{ } \text{ }  s_\text{i} = 8.7$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 1.08 = 2.16$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x}_{\text{i}} - \bar{x}_{\text{c}}) - \text{95\% ME} \text{ } ; \text{ } (\bar{x}_{\text{i}} - \bar{x}_{\text{c}}) + \text{95\% ME} =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= ((6.6-4.0) - 2.16 \text{ } ; \text{ } (6.6-4.0) + 2.16) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (2.6 - 2.16 \text{ } ; \text{ } 2.6+2.16 ) = (0.44 \text{ } ; \text{ } 4.78)$
-
-
-</div>
-
-<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard 
-
-Abbiamo un grado di confidenza del 95% che la differenza delle medie delle due popolazioni sia compresa tra questi valori -->
-
-
----
-## Confidence intervals for proportions
-
-
-<span style="display:block; height:40px;"></span>
-
-<div style="font-size: 90%" >
-
-<!-- :pushpin: &nbsp;&nbsp;&nbsp;  Which is the *true* proportion of individuals with a given    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; characteristic in a population? -->
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $\mathcal{N} = (\pi, \frac{\pi \times (1-\pi)}{n})$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}}$, &nbsp; where $\bar{p} = \frac{m}{n}$
-
-</div>
-
-<!-- 
-In campo medico ci sono molte questioni legate alla proporzione di pazienti con una certa caratteristica. Per esempio la proporzione di pazienti con una malattia, la proporzione di pazienti che necessita un ricovero, o quella che soffre di effetti collaterali dopo l'assunzione di un farmaco
-
-Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una stima non distorta della proporzione della popolazione e la distribuzione campionaria si approssima ad una normale 
-
- -->
-
----
-### Exercise #14
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/endometriosis.png" img height="180px" border="4px"/>
-</center>
-
 <div class="columns">
 <div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= \text{ ?}, \text{ } \text{ } \text{ } \text{ } m = \text{ ?}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \text{ ?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= \text{ ?}, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= \text{ ?}, \text{ } \text{ }  s_\text{c} = 8.7$ 
 
 </div>
 <div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \text{ ?}$
 
 </div>
 </div>
@@ -3581,17 +3503,120 @@ updateButton_exercise_14();
 -->
 </script>
 
-
 <span style="display:block; height:1px;"></span>
 
 <div style="font-size: 50%" align="left">
 
-<br/> Ferrero S.., *et al.*, *Prevalence of newly diagnosed endometriosis in women attending the general practitioner*,  <br/> Int J Gynaecol Obstet, 2020
+<br/> Tomazini B.M., *et al.*, *Effect of Dexamethasone on Days Alive and Ventilator-Free in Patients With Moderate or Severe Acute Respiratory Distress Syndrome and COVID-19*, JAMA, 2020
+
+</div>
+
+
+<!-- Abbiamo due gruppo di pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS
+uno con lo standard of care e uno a cui abbiamo somministrati desametasone endovenoso. 
+
+Il numero di giorni di respirazione autonoma????
+
+Qual e' il CI per la differenza delle medie dei due gruppi?
+-->
+
+---
+### Exercise #14 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/jama_network.png" img height="180px" border="4px"/>
+</center>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 151, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= 6.6, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 148, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= 4.0, \text{ } \text{ }  s_\text{c} = 8.7$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
+
+</div>
+
+
+<!--  CTL differenza tra le medie campionarie e' la diffeenza tra le medie della popolazione
+SE lo calcoliamo cosi' -->
+
+
+---
+### Exercise #14 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 151, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= 6.6, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 148, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= 4.0, \text{ } \text{ }  s_\text{c} = 8.7$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 1.08 = 2.16$
 
 </div>
 
 ---
 ### Exercise #14 -- Solution
+
+<div style="font-size: 80%" >
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 151, \text{ } \text{ } \text{ } \text{ } \bar{x}_{\text{i}}= 6.6, \text{ } \text{ } \text{ }  s_\text{i} = 10.0$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 148, \text{ } \text{ }  \text{ } \text{ }  \bar{x}_{\text{c}}= 4.0, \text{ } \text{ }  s_\text{c} = 8.7$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{s_\text{i}^2}{n_\text{i}} + \frac{s_\text{c}^2}{n_\text{c}}} = \sqrt{\frac{10.0^2}{151} + \frac{8.7^2}{148}} = 1.08$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 1.08 = 2.16$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x}_{\text{i}} - \bar{x}_{\text{c}}) - \text{95\% ME} \text{ } ; \text{ } (\bar{x}_{\text{i}} - \bar{x}_{\text{c}}) + \text{95\% ME} =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= ((6.6-4.0) - 2.16 \text{ } ; \text{ } (6.6-4.0) + 2.16) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (2.6 - 2.16 \text{ } ; \text{ } 2.6+2.16 ) = (0.44 \text{ } ; \text{ } 4.78)$
+
+
+</div>
+
+<!--  stima +/- prodotto tra il coefficiente di attendibilita' e l'errore standard 
+
+Abbiamo un grado di confidenza del 95% che la differenza delle medie delle due popolazioni sia compresa tra questi valori -->
+
+
+---
+## Confidence intervals for proportions
+
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%" >
+
+<!-- :pushpin: &nbsp;&nbsp;&nbsp;  Which is the *true* proportion of individuals with a given    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; characteristic in a population? -->
+
+:pushpin: &nbsp;&nbsp;&nbsp;  $\mathcal{N} = (\pi, \frac{\pi \times (1-\pi)}{n})$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}}$, &nbsp; where $\bar{p} = \frac{m}{n}$
+
+</div>
+
+<!-- 
+In campo medico ci sono molte questioni legate alla proporzione di pazienti con una certa caratteristica. Per esempio la proporzione di pazienti con una malattia, la proporzione di pazienti che necessita un ricovero, o quella che soffre di effetti collaterali dopo l'assunzione di un farmaco
+
+Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una stima non distorta della proporzione della popolazione e la distribuzione campionaria si approssima ad una normale 
+
+ -->
+
+---
+### Exercise #15
 
 <div style="font-size: 80%">
 
@@ -3603,106 +3628,24 @@ updateButton_exercise_14();
 <img src="./img/confidence_intervals/endometriosis.png" img height="180px" border="4px"/>
 </center>
 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= 1291, \text{ } \text{ } \text{ } \text{ } m = 46$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{46}{1291} = 0.036 = 3.6\%$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.036\times(1-0.036)}{1291}} = 0.005$
-
-</div>
-
----
-### Exercise #14 -- Solution
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= 1291, \text{ } \text{ } \text{ } \text{ } m = 46$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{46}{1291} = 0.036 = 3.6\%$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.036\times(1-0.036)}{1291}} = 0.005$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 0.005 = 0.01$
-
-</div>
-
----
-### Exercise #14 -- Solution
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= 1291, \text{ } \text{ } \text{ } \text{ } m = 46$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{46}{1291} = 0.036 = 3.6\%$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.036\times(1-0.036)}{1291}} = 0.005$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 0.005 = 0.01$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{p} - \text{95\% ME} \text{ } ; \text{ } \bar{p} + \text{95\% ME} =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.036 - 0.01 \text{ } ; \text{ } 0.036 + 0.01 ) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.026 \text{ } ; \text{ } 0.046 ) = (2.6\% \text{ } ; \text{ } 4.6\%)$
-
-
-</div>
-
-
----
-### Confidence intervals for differences of proportion
-
-<div style="font-size: 90%" >
-
-<!-- :pushpin: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups? -->
-
-<span style="display:block; height:40px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mathcal{N} = (\pi_{\text{i}} - \pi_{\text{c}}, \frac{\pi_i \times (1-\pi_i)}{n_i}+\frac{\pi_c \times (1-\pi_c)}{n_c})$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_i \times (1-\bar{p}_i)}{n_i}+\frac{\bar{p}_c \times (1-\bar{p}_c)}{n_c}}$
-
-</div>
-
-
-<!--
-Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazienti con una certa caratteristica che provengono da due diverse popolazioi, come la proporzione di uomini e donne che soffrono di una qualche malattia, o due gruppi di persone che rispondono o meno ad un farmaco
-
- Per il teorema del limite centrale, di nuovo, la differenza tra le proporzioni campionarie e' una stima non distorta della differenza di proporzioni nella popolazione e la distribuzione campionaria si approssima ad una normale  -->
-
----
-### Exercise #15
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups?
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/nejm.png" img height="160px" border="4px"/>
-</center>
-
 <div class="columns">
 <div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ }  p_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \text{ ?}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= \text{ ?}, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= \text{ ?}, \text{ } \text{ }  p_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \text{ ?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= \text{ ?}, \text{ } \text{ } \text{ } \text{ } m = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \text{ ?}$ 
 
 </div>
 <div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_\text{i} \times (1-\bar{p}_\text{i})}{n_\text{i}}+\frac{\bar{p}_\text{c} \times (1-\bar{p}_\text{c})}{n_\text{c}}} = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \text{ ?}$
 
 </div>
 </div>
 
 </div>
 
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:1px;"></span>
+
 
 <style>
   #countdown_exercise_15{
@@ -3794,6 +3737,214 @@ updateButton_exercise_15();
 
 <div style="font-size: 50%" align="left">
 
+<br/> Ferrero S.., *et al.*, *Prevalence of newly diagnosed endometriosis in women attending the general practitioner*,  <br/> Int J Gynaecol Obstet, 2020
+
+</div>
+
+---
+### Exercise #15 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/endometriosis.png" img height="180px" border="4px"/>
+</center>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= 1291, \text{ } \text{ } \text{ } \text{ } m = 46$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{46}{1291} = 0.036 = 3.6\%$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.036\times(1-0.036)}{1291}} = 0.005$
+
+</div>
+
+---
+### Exercise #15 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= 1291, \text{ } \text{ } \text{ } \text{ } m = 46$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{46}{1291} = 0.036 = 3.6\%$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.036\times(1-0.036)}{1291}} = 0.005$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 0.005 = 0.01$
+
+</div>
+
+---
+### Exercise #15 -- Solution
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n= 1291, \text{ } \text{ } \text{ } \text{ } m = 46$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{p} = \frac{m}{n} = \frac{46}{1291} = 0.036 = 3.6\%$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{SE} = \sqrt{\frac{\bar{p}\times(1-\bar{p})}{n}} = \sqrt{\frac{0.036\times(1-0.036)}{1291}} = 0.005$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% ME} = 2 \times \hat{SE} = 2 \times 0.005 = 0.01$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{p} - \text{95\% ME} \text{ } ; \text{ } \bar{p} + \text{95\% ME} =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.036 - 0.01 \text{ } ; \text{ } 0.036 + 0.01 ) =$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= (0.026 \text{ } ; \text{ } 0.046 ) = (2.6\% \text{ } ; \text{ } 4.6\%)$
+
+
+</div>
+
+
+---
+### Confidence intervals for differences of proportion
+
+<div style="font-size: 90%" >
+
+<!-- :pushpin: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups? -->
+
+<span style="display:block; height:40px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mathcal{N} = (\pi_{\text{i}} - \pi_{\text{c}}, \frac{\pi_i \times (1-\pi_i)}{n_i}+\frac{\pi_c \times (1-\pi_c)}{n_c})$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_i \times (1-\bar{p}_i)}{n_i}+\frac{\bar{p}_c \times (1-\bar{p}_c)}{n_c}}$
+
+</div>
+
+
+<!--
+Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazienti con una certa caratteristica che provengono da due diverse popolazioi, come la proporzione di uomini e donne che soffrono di una qualche malattia, o due gruppi di persone che rispondono o meno ad un farmaco
+
+ Per il teorema del limite centrale, di nuovo, la differenza tra le proporzioni campionarie e' una stima non distorta della differenza di proporzioni nella popolazione e la distribuzione campionaria si approssima ad una normale  -->
+
+---
+### Exercise #16
+
+<div style="font-size: 80%">
+
+:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups?
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/nejm.png" img height="160px" border="4px"/>
+</center>
+
+<div class="columns">
+<div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= \text{ ?}, \text{ } \text{ } \text{ }  p_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \text{ ?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= \text{ ?}, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= \text{ ?}, \text{ } \text{ }  p_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \text{ ?}$ 
+
+</div>
+<div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\hat{\text{SE}} = \sqrt{\frac{\bar{p}_\text{i} \times (1-\bar{p}_\text{i})}{n_\text{i}}+\frac{\bar{p}_\text{c} \times (1-\bar{p}_\text{c})}{n_\text{c}}} = \text{ ?}$
+
+</div>
+</div>
+
+</div>
+
+<span style="display:block; height:10px;"></span>
+
+<style>
+  #countdown_exercise_16{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_16.running {
+    background-color: green;
+  }
+  #countdown_exercise_16.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_16"></button>
+
+<script>
+<!--
+const countdown_exercise_16= document.getElementById("countdown_exercise_16");
+const seconds_exercise_16= 300; // seconds_exercise_16
+let timeLeft_exercise_16= seconds_exercise_16;
+let timerInterval_exercise_16= null;
+
+function formatTime_exercise_16(seconds_exercise_16) {
+  const minutes = Math.floor(seconds_exercise_16/ 60);
+  const remainingseconds_exercise_16= seconds_exercise_16% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_16).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_16() {
+  countdown_exercise_16.textContent = formatTime_exercise_16(timeLeft_exercise_16);
+}
+
+function startTimer_exercise_16() {
+  if (timerInterval_exercise_16=== null) {
+    countdown_exercise_16.classList.add('running');
+    countdown_exercise_16.classList.remove('finished');
+    timerInterval_exercise_16= setInterval(() => {
+      if (timeLeft_exercise_16> 0) {
+        timeLeft_exercise_16--;
+        updateButton_exercise_16();
+      } else {
+        clearInterval(timerInterval_exercise_16);
+        timerInterval_exercise_16= null;
+        countdown_exercise_16.classList.remove('running');
+        countdown_exercise_16.classList.add('finished');
+        countdown_exercise_16.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_16();
+  }
+}
+
+function pauseTimer_exercise_16() {
+  clearInterval(timerInterval_exercise_16);
+  timerInterval_exercise_16= null;
+  countdown_exercise_16.classList.remove('running');
+}
+
+function resetTimer_exercise_16() {
+  timeLeft_exercise_16= seconds_exercise_16;
+  updateButton_exercise_16();
+  countdown_exercise_16.classList.remove('finished');
+  countdown_exercise_16.classList.remove('running');
+  timerInterval_exercise_16= null;
+}
+
+countdown_exercise_16.addEventListener("click", () => {
+  if (countdown_exercise_16.classList.contains('finished')) {
+    resetTimer_exercise_16();
+  } else {
+    startTimer_exercise_16();
+  }
+});
+
+updateButton_exercise_16();
+-->
+</script>
+
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 50%" align="left">
+
 <br/> Connor, E.M. *et al.*, *Reduction of Maternal-Infant Transmission of Human Immunodeficiency Virus Type 1 with Zidovudine Treatment*, NEJM, 1994
 
 </div>
@@ -3804,7 +3955,7 @@ Randomized Trial on the efficacy of AZT in reducing the risk of maternal-infant 
 HIV positive pregnant women randomized to receive AZT or placebo -->
 
 ---
-### Exercise #15 -- Solution
+### Exercise #16 -- Solution
 
 <div style="font-size: 80%">
 
@@ -3826,7 +3977,7 @@ HIV positive pregnant women randomized to receive AZT or placebo -->
 <!--  differenza tra le proporzioni campionarie-->
 
 ---
-### Exercise #15 -- Solution
+### Exercise #16 -- Solution
 
 <div style="font-size: 80%">
 
@@ -3846,7 +3997,7 @@ HIV positive pregnant women randomized to receive AZT or placebo -->
 </div>
 
 ---
-### Exercise #15 -- Solution
+### Exercise #16 -- Solution
 
 <div style="font-size: 80%">
 
