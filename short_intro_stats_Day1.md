@@ -3660,7 +3660,7 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 <!-- Diagramma a barre orizzontali 
 variazione ulteriore: Circular bar chart, lollipop -->
 
----
+<!-- ---
 ## Circular bar chart
 
 <div class="columns">
@@ -3693,7 +3693,7 @@ Visconti, A., *et al.*. *The genetics and epidemiology of N-and O-immunoglobulin
 </center>
 
 </div>
-</div>
+</div> -->
 
 
 
@@ -3740,6 +3740,16 @@ Wow, that’s a lot of orange. Any patterns in the data just seem to be dominate
 </center>
 
 <!-- ne way of managing this would be to move away from using bars entirely, for example, using the position of a dot to mark each data point. The length aspect no longer exists and the reader is forced to look at the position of the data point relative to the x-axis in order to make a comparison between categories. -->
+
+---
+### The y-axis'd be plotted from 0, but not like this
+
+<span style="display:block; height:40px;"></span>
+
+<center>
+<img src="./img/visualization/gemini_sleep.jpeg" img height="400px" border="4px"/>
+</center>
+
 
 ---
 ## Lollipop chart
