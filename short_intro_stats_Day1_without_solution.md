@@ -64,7 +64,7 @@ section {
 ## Why are we here?
 
 ---
-## Will you buy this mouthwash?
+## Would you buy this mouthwash?
 
 <span style="display:block; height:10px;"></span>
 
@@ -109,7 +109,7 @@ Artefatto dovuto alla doppia scala, vado a trasformare le due distribuzioni empi
 
 - English women, who consume large quantities of milk, develop some types of tumours 18 times more frequently than Japanese women, who rarely drink it
 * Tumours usually appear late in life.
-* British women live, on average, 12 years more than Japanese women
+* British women live, on average, 12 years longer than Japanese women
 
 <span style="display:block; height:50px;"></span>
 
@@ -134,7 +134,7 @@ Correlation is not causation, Correlazione non e' causalita', "dopo di" non sign
 
 <span style="display:block; height:10px;"></span>
 
-- Because "numbers" (or rather, the way they are presented) are sometimes deceiving
+- Because “numbers” (or rather, the way they are presented) can sometimes be misleading
 
 
 <div class="columns">
@@ -215,7 +215,7 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 
 <span style="display:block; height:30px;"></span>
 
-- Because "numbers" (or rather, the way they are presented) are sometimes deceiving
+- Because “numbers” (or rather, the way they are presented) can sometimes be misleading
 - Because “numbers” (and the way they are presented) help us describe, understand, and change the world
 
 ---
@@ -266,7 +266,7 @@ E se questo e' ovvio oggi, lo dobbiamo alla sua abilita' nel raccogliere e prese
 
 <span style="display:block; height:60px;"></span>
 
-- How do we answer?
+- The study protocol
 
 </div>
 <div>
@@ -432,25 +432,10 @@ Ci saranno anche delle formule matematiche, ma non preoccupatevi: andremo a spie
 
 <span style="display:block; height:50px;"></span>
 
-- Understand the difference between population and sample
-- Understand the difference between sampling strategies
-- Understand sampling error and bias
+- Understand the difference between populations and samples
+- Recognize the different sampling strategies
+- Acknowledge sampling error and bias
 
----
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/sampling/PPDAC.png" img height="500px" border="0px"/>
-</center>
-
-<span style="display:block; height:5px;"></span>
-
-<div style="font-size: 50%" align="right">
-
-Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
-
-</div>
 
 <!-- Nella parte di Planning, il ricercatore decide come rispondere alla domanda di ricerca. Solitamente ignorata, ma assoulutamente cruciale, GARBACE IN, GARBACE OUT. Questo include, 
  i) verificare se esiste una collezione di dati di alta qualit`a che pu`o essere usata, ii) decidere e giustificare perch ́e sia necessario raccogliere nuove collezioni di dati, e quali dati siano necessari e come debbano essere raccolti 
@@ -507,7 +492,7 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Patients with COVID-19–associated ARDS in the Brazilian ICUs involved in the study
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
 
 </div>
@@ -518,7 +503,6 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 <br/><br/> Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", JAMA, 2020, doi:10.1001/jama.2020.17021
 
 </div>
-
 
 ---
 ### Exercise #2
@@ -533,8 +517,15 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Patients with Acute respiratory distress syndrome (ARDS) 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Patients with COVID-19–associated ARDS &nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Brazilian patients with COVID-19–associated ARDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Patients with COVID-19–associated ARDS in the Brazilian ICUs involved in the study
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Patients without COVID-19–associated ARDS
+
+</div>
+
+
+<div style="font-size: 50%" align="right">
+
+<br/><br/> Tomazini, B.M., *et al.*, Effect of dexamethasone on days alive and ventilator-free in patients with moderate or severe acute respiratory distress syndrome and COVID-19: the CoDEX randomized clinical trial.", JAMA, 2020, doi:10.1001/jama.2020.17021
 
 </div>
 
@@ -552,14 +543,13 @@ Ovviamente questi campioni devono essere scelti con procedimenti e regole che ga
 
 <div style="font-size: 95%">
 
-:dart: &nbsp;&nbsp;&nbsp; An **opportunity** sample is the sample drawn from the part of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the population that is close to hand (and which may not 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; represent the whole population)
+:dart: &nbsp;&nbsp;&nbsp; An **opportunity** sample is the sample drawn from the part of the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  population that is most readily available (and which may not 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; represent the entire population)
 
 <span style="display:block; height:10px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; All the patients presenting to a given clinic in a given period of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; time are enrolled
+* **Example**: we enrol all patients who present to a given clinic during a specified period
 
 </div>
 
@@ -574,13 +564,13 @@ Nel campionamento non-probabilistico, o opportunustico, la selezione del campion
 
 <div style="font-size: 95%">
 
-:dart: &nbsp;&nbsp;&nbsp; A **random** sample is the sample in which the probability of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getting any particular sample may be calculated (and which 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; should represent the whole population)
+:dart: &nbsp;&nbsp;&nbsp;A random sample is one in which the probability of selecting any 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; particular member can be calculated (and which should represent 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the entire population)
 
 <span style="display:block; height:10px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; A randomly selected set of patients with the disease is enrolled
+* **Example**: we enrol a randomly selected group of patients with the disease 
 
 </div>
 
@@ -589,24 +579,13 @@ Nel campionamento non-probabilistico, o opportunustico, la selezione del campion
 ---
 ## Strategy 1: Simple random sampling
 
-<div class="columns">
-<div>
-
 <span style="display:block; height:10px;"></span>
 
-<div style="font-size: 85%">
 
-:dart: &nbsp;&nbsp;&nbsp; A sample of size $n$ drawn from a 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population of size $N$ ensuring 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; that every possible sample of 
+:dart: &nbsp;&nbsp;&nbsp; A sample of size $n$ is drawn from a  population of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; size $N$  ensuring that  every possible sample of 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; size $n$ is equally likely
 
-</div>
-</div>
-<div>
-
-</div>
-</div>
 
 <!-- Nel campionamento casuale semplice tutte le unità della popolazione hanno la stessa probabilità di essere estratte:
 
@@ -675,81 +654,19 @@ Decidere quante unità si vogliono selezionare e calcolare la frazione di campio
 
 <!--  Estrarre le unità tramite sorteggio casuale o tavole dei numeri casuali (costruite in modo da non avere vizi sistematici. Sono delle serie di numeri tra 0 e 9 disposti a caso e caratterizzati dall’avere una distribuzione uniforme) -->
 
----
-## Strategy 2: Systematic Sampling
 
-<div class="columns">
-<div>
+---
+## Strategy 2: Stratified Random Sampling
 
 <span style="display:block; height:50px;"></span>
 
-<div style="font-size: 95%">
+:dart: &nbsp;&nbsp;&nbsp; The population is divided into homogeneous group (strata)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and a simple random sample is drawn from each stratum
 
-:pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 42$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $step = N/n = 90/10=9$ 
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<img src="./img/sampling/numbers-tombola.jpg" img height="400px" align="right" border="0px"/>
-
-</div>
-</div>
-
-<!-- Estraggo a caso una prima unita'
-Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli individui estratti  -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Variation**: stratified sampling proportional to size
 
 ---
-## Strategy 2: Systematic Sampling
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:50px;"></span>
-
-<div style="font-size: 95%">
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $N=90$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n=10$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 42$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $step = N/n = 90/10=9$ 
-
-</div>
-</div>
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<img src="./img/sampling/numbers-tombola_systematic.jpg" img height="400px" align="right" border="0px"/>
-
-</div>
-</div>
-
-<!--  dopo la prima estrazione casuale si estrae una unità ogni N/n-->
-
----
-## Strategy 3: Stratified Random Sampling
-
-<span style="display:block; height:50px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; The population is divided into homogenous group (strata) and 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a simple random sample is drawn from each stratum
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #1: stratified systematic sample 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation #2: stratified sampling proportional to size
-
----
-## Strategy 3: Stratified Random Sampling
+## Strategy 2: Stratified Random Sampling
 
 <div class="columns">
 <div>
@@ -785,15 +702,18 @@ Mi calcolo il passo di campionamento, ovvero una distanza costante tra gli indiv
 <!-- Esempi di strata : sesso, eta', condizione sociale -->
 
 ---
-## Strategy 4: Cluster sampling
+## Strategy 3: Cluster sampling
 
 <span style="display:block; height:10px;"></span>
 
 :dart: &nbsp;&nbsp;&nbsp; The population is divided into clusters, and a simple random 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample is drawn
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Variation: one stage (observing everything) *vs* 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; two stage (sampling within clusters)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Variations**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - one-stage: observing everything within selected clusters
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - two-stage: taking a further random sample within the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; selected clusters
+
 
 <!-- Le unità della popolazione sono suddivise in CLUSTER o GRAPPOLI in base a circostanze organizzative, strutturali, geografiche.
 All’interno dei cluster le unità possono essere molto diverse tra di loro.
@@ -802,7 +722,7 @@ Il campione si forma estraendo casualmente un numero prestabilito di cluster, do
  -->
 
 ---
-## Strategy 4: Cluster sampling
+## Strategy 3: Cluster sampling
 
 <span style="display:block; height:1px;"></span>
 
@@ -849,18 +769,173 @@ ethnic group or school type.
 
 <div style="font-size: 90%">
 
-:question: &nbsp;&nbsp;&nbsp; A representative of a cheese factory is asking questions  on cheese
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  consumption to every 5th customer entering the supermarket
+:question: &nbsp;&nbsp;&nbsp; A representative is conducting a survey on the popularity of a 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new product by interviewing every fifth customer who enters 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the supermarket near the company they work for
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which kind of sampling strategy are they using?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What type of sampling strategy are they using?
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) simple random sampling
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) systematic sampling
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) cluster sampling
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) stratified sampling
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above 
 
 </div>
+
+<span style="display:block; height:10px;"></span>
+
+
+---
+## What if the sample is not representative?
+
+<!-- <span style="display:block; height:1px;"></span> -->
+
+- The conclusions **cannot** be generalized
+
+<center>
+<img src="./img/sampling/ATD_Family.png" img height="300px" border="0px"/>
+<center>
+
+
+<!-- Per anni il manichino e' stato solo male, nonostante le donne comprino il 62% delle auto in nord-america e il "female" dummy e' un downsize del male e provato solo nel sedile del passeggero 
+
+Le donne soffrono maggiori colpi di frusta
+
+primo test con vero manichino donna nel 2023
+
+
+consider a vaccine trial carried out using student volunteers. If it is reasonable to assume that in their response to the vaccine and exposure to disease students are typical of the community at large, the results will have general applicability. If, on the other hand, students differ in any respect which may materially affect their response to the vaccine or exposure to disease, the conclusions from the trial are restricted to the population of students and do not have general applicability. Deciding whether or not ‘students are typical’ is not a statistical issue, but depends on an informed judgement taking into account relevant biological and epidemiological knowledge.
+-->
+
+<span style="display:block; height:30px;"></span>
+
+<div style="font-size: 50%" align="right">
+
+Caroline Criado-Perez, *Invisible Women: Exposing Data Bias in a World Designed for Men*, Ballantine Books, 2019
+
+</div>
+
+---
+## In practice: from the target population...
+
+<center>
+<img src="./img/sampling/Beinasco.png" img height="550px" border="4px"/>
+<center>
+
+
+<!-- Supponiamo che tu debba valutare il gradimento di un centro di salute mentale che ha aperto, in via sperimentale, lo scorso anno a Beinasco. 
+
+Beinasco ha una \textbf{popolazione} di circa 18,000 abitanti e hai accesso ad un estratto dell'elenco telefonico
+ -->
+---
+## ... through the sampling frame ...
+
+<center>
+<img src="./img/sampling/Elenco_page1.png" img height="500px" border="4px"/>
+
+<img src="./img/sampling/Elenco_page2.png" img height="500px" border="4px"/>
+</center>
+
+<!-- e l'elenco di tutti gli individui in una popolazione da cui si scelgono soggetti che faranno parte del campione 
+
+Come facciamo a scegliere chi estrarre?
+
+-->
+
+---
+## ... to the sample
+
+<center>
+<img src="./img/sampling/Elenco_page1_sampled.png" img height="500px" border="4px"/>
+
+<img src="./img/sampling/Elenco_page2_sampled.png" img height="500px" border="4px"/>
+</center>
+
+
+---
+## All done?
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+- who is ineligible?
+
+</div>
+<div>
+
+<span style="display:block; height:50px;"></span>
+
+<img src="./img/sampling/Ineligible.png" img height="200px" border="4px"/>
+
+</div>
+</div>
+
+<!-- An ineligible sampling unit is an individual or entity selected through a sampling process but does not meet the specific eligibility criteria for the survey or study. These units are identified during data collection, often through a screening process, and are then removed from the sample so they do not skew results. Reasons for ineligibility include being outside a geographic boundary, failing to meet demographic requirements (e.g., age), or being a business when the survey targets individuals -->
+
+---
+## All done?
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+- who is ineligible?
+- who does not respond?
+
+</div>
+<div>
+
+
+</div>
+</div>
+
+---
+## All done?
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+- who is ineligible?
+- who does not respond?
+
+</div>
+<div>
+
+<span style="display:block; height:70px;"></span>
+
+<img src="./img/sampling/sampling_schema.png" img height="420px" align="right" border="0px"/>
+
+</div>
+</div>
+
+---
+## Selection bias
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+- **Non-response bias**
+
+</div>
+<div>
+
+
+</div>
+</div>
+
+<!-- Faccio domande molto personali (uso di cannabis) 
+
+Surveys asking for personal, legal, or other sensitive information are prone to non-response bias, simply because there is some information respondents don’t feel comfortable disclosing.
+-->
+
 
 
 ---
@@ -871,7 +946,7 @@ ethnic group or school type.
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
+- **Survivor bias**
 
 </div>
 <div>
@@ -893,11 +968,11 @@ e l’errore logico che si commette quando si prendano in considerazione solo gl
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
+- **Survivor bias**
 
 <div style="font-size: 90%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer lasting"*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer-lasting"*
 
 </div>
 
@@ -909,14 +984,14 @@ e l’errore logico che si commette quando si prendano in considerazione solo gl
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
+- **Survivor bias**
 
 <div style="font-size: 90%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer lasting"*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"Buildings used to be more beautiful/longer-lasting"*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"I don't understand why, nowadays, one should to do X,  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I never did it, and I'm still here to tell it"*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *"I don't understand why, nowadays, one should do X. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I never did it, and I'm still here to tell the tale."*
 
 <div>
 
@@ -933,8 +1008,7 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
-- Volunteer bias
+- **Volunteer bias**
 
 
 </div>
@@ -955,8 +1029,7 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
-- Volunteer bias
+- **Volunteer bias**
 
 <div style="font-size: 90%">
 
@@ -972,24 +1045,20 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
-- Volunteer bias
-- Lost to follow up bias
+- **Lost to follow up bias**
 
 ---
 ## Selection bias
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
-- Volunteer bias
-- Lost to follow up bias
+- **Lost to follow up bias**
 
 <div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a court of 100 cancer patients 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up. What do we conclude about this new drug knowing that these 30 people...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a cohort of 100 cancer patients
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited at a center of excellence. 30 did not show up for the follow-up.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  What can we conclude about this new drug if we know that these 30 patients...
 
 
 </div>
@@ -999,15 +1068,14 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
-- Volunteer bias
-- Lost to follow up bias
+- **Lost to follow up bias**
 
 <div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a court of 100 cancer patients 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up. What do we conclude about this new drug knowing that these 30 people...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a cohort of 100 cancer patients
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited at a center of excellence. 30 did not show up for the follow-up.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  What can we conclude about this new drug if we know that these 30 patients...
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
 
 </div>
@@ -1017,17 +1085,16 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
-- Volunteer bias
-- Lost to follow up bias
+- **Lost to follow up bias**
 
 <div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a court of 100 cancer patients 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up. What do we conclude about this new drug knowing that these 30 people...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a cohort of 100 cancer patients
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited at a center of excellence. 30 did not show up for the follow-up.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  What can we conclude about this new drug if we know that these 30 patients...
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped the drug?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped taking the drug?
 
 </div>
 
@@ -1036,31 +1103,49 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <span style="display:block; height:10px;"></span>
 
-- Survivor bias
-- Volunteer bias
-- Lost to follow up bias
+- **Lost to follow up bias**
 
 <div style="font-size: 80%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a court of 100 cancer patients 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited in a center of excellence, 30 of whom did not show up at the follow 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up. What do we conclude about this new drug knowing that these 30 people....
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A pharma company is testing a new drug on a cohort of 100 cancer patients
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; recruited at a center of excellence. 30 did not show up for the follow-up.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  What can we conclude about this new drug if we know that these 30 patients...
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - died?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped the drug?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stopped taking the drug?
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  went back home?
 
 </div>
 
 
 ---
-## Selection bias
+## Independent and paired samples
 
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:60px;"></span>
 
-- Survivor bias
-- Volunteer bias
-- Lost to follow up bias
-- $\dots$
+<center>
+<img src="./img/sampling/independent_vs_paired.png" img height="300px" border="0px"/>
+</center>
+
+<!-- Sino ad ora abbiamo lavorato su Campioni indipendenti: non vi è relazione tra osservazioni appartenenti a campioni diversi
+
+Esistiono pero' anche campioni appaiati, in cui dati di un campione sono associati con quelli dell’altro. Ad ogni osservazione nel primo gruppo corrisponde un’osservazione nel secondo
+
+Indipendenti> peso nei pazienti diabetici e nei sani
+Appaiati: peso nei pazienti diabetici alla diagnosi e dopo 10 anni -->
+
+---
+## Independent and paired samples
+
+<span style="display:block; height:60px;"></span>
+
+<center>
+<img src="./img/sampling/independent_vs_paired_2.png" img height="300px" border="0px"/>
+</center>
+
+<!-- I capioni appaiati possono anche essere essere persone diverse ma matchate per caratteristiche salienti (eta', sesso, peso corporeo, ...)  -->
+
+
 
 ---
 ![bg opacity](./img/backgrounds/sampling_bg.png)
@@ -1069,10 +1154,15 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 
 <span style="display:block; height:1px;"></span>
 
+<div style="font-size: 90%">
 
-- A population includes all individuals for whom we'd like to study a phenomenon, and it's (theoretically) infinite
-- When can't study a population, we can use different approaches to sample a (representative?) subset of the population
-- Samples may suffer from biases
+- The population is the set of all individuals for whom we want to study a phenomenon and is, theoretically, infinite.
+- The sample is a (representative?) subset of the population.
+- The more representative a sample is of the population, the more robust our conclusions.
+- Even representative (random) samples can suffer from bias.
+- There are different experimental designs.
+
+</div>
 
 <!-- - La popolazione &egrave; l'insieme di tutti gli individui per cui vogliamo studiare un fenomeno ed è, teoricamente, infinita
 - Il campione &egrave; un sotto insieme (rappresentativo?) della popolazione
@@ -1088,31 +1178,137 @@ X indossare una cintura di sicurezza, mettere le sicurezze sul lavoro... when he
 ---
 ## Learning objectives
 
-<span style="display:block; height:50px;"></span>
+<span style="display:block; height:1px;"></span>
 
+<div style="font-size: 90%">
+
+- Define what a variable is
+- Identify the causes of an observation's variability
 - Understand the differences between data types
-- Be able to summarise each data type
+- Be able to summarise each data type with the correct statistics
 - Understand the difference between parameters and statistics
 - Understand why visualise your data is important
-
----
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/descriptive/PPDAC_qualitative.png" img height="500px" border="0px"/>
-</center>
-
-<div style="font-size: 50%" align="right">
-
-Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
 
 </div>
 
 ---
+## A variable...
+
+<span style="display:block; height:1px;"></span>
+
+- They record information about a characteristic of interest
+
+* They are imperfect: they don’t always measure what we care about 
+  - knowledge of a subject $\neq$ exam grade
+  <!-- - benessere di un Paese $\neq$ prodotto interno lordo -->
+
+* They vary: from person to person, from moment to moment, $\dots$ seemingly at random
+
+
+<!-- 
+
+Dato informazione su una variabile di interesse
+
+Un dato corrisponde a un'informazione su un membro di una popolazione (sesso, altezza, numero dei battiti cardiaci, titolo di studio, età,…) , viene codificata in variabili. 
+
+Proxy: chiedendo alla gente quanto si sentisse felice la settimana
+scorsa in una scala da 0 a 10 non si coglie piú di tanto il benessere emotivo
+del Paese. 
+
+
+La variabilita' di tali variabili (differenze che vediamo tra le osservazioni) ci dice come le caratteristiche di una paopolazione (eta', sesso, altezza... ) differiscano da individuo a individuo 
+
+Questa variabilita' dipende sia da fattori conosciuti o conoscibili sia da effetti casuali (random noise)
+ -->
+
+---
+## What causes this variability?
+
+<div style="font-size: 90%">
+
+- In a study on neonatal age, 18 paediatricians measure the head circumference of a doll simulating a three-month-old baby
+
+<img src="./img/data/head_circiference_doll.png" img height="350px" align="left" border="4px"/>
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Why do the collected 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data vary?
+
+</div>
+
+<!-- Given that all nurses were measuring the head of the same doll, all of the head circumference measurements should be the same. In other words, there should be no variability in the measurements. However, the above graph clearly illustrates that there was variability in the measurements. Why was there variability in the measurements of the doll’s head circumference? (Select all that apply.)
+
+Some nurses held the tape measure tighter around the infants head while others held it looser.
+Each nurse put the tape measure in a slightly different place on the doll’s head
+Some nurses may have misread the tape measure.
+The doll’s head changed size between measurements. -->
+
+<!--  the above question, all of the variability in scores was created by measurement error because everyone was measuring the same thing and, therefore, should have obtained the same score. Unfortunately, measurement error is always present. No matter what you are measuring, you will never be able to measure it perfectly every time. You can, however, reduce the amount of measurement error. In the context of measuring an infant’s head circumference, how could the developmental psychologist and/or nurses reduce the variability in scores created by measurement error (i.e., what could they do to increase the accuracy/reliability of each measurement?). Select all that apply.
+
+Give the nurses a lot of practice measuring different dolls’ heads.
+Train the nurses to use a consistent degree of tension in the tape measure. -->
+
+---
+## What causes this variability?
+
+<div style="font-size: 90%">
+
+- In the same study, a paediatrician measure the head circumference of 35 three-month-old babies
+
+<img src="./img/data/head_circiference_children.png" img height="350px" align="left" border="4px"/>
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Why do the collected 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data vary?
+
+</div>
+
+
+<!-- Anche qui rimangono errori di misurazione -->
+
+---
+## What causes this variability?
+
+<div style="font-size: 90%">
+
+- In the same study, a paediatrician measure the head circumference of other 35 three-month-old babies exposed to second-hand smoke
+
+<img src="./img/data/head_circiference_children_groups.png" img height="350px" align="left" border="4px"/>
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Why do the collected 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data vary?
+
+</div>
+
+<!-- Anche qui rimangono errori di misurazione e variabilita' individuale -->
+
+---
+## Why should we know the difference?
+
+
+<div style="font-size: 90%">
+
+- We will see how to determine whether the variability depends on the experimental conditions or whether it is due to individual differences and/or measurement errors.
+
+<span style="display:block; height:20px;"></span>
+
+<center>
+<img src="./img/data/head_circiference_doll.png" img height="190px"  border="4px"/> 
+<img src="./img/data/head_circiference_children.png" img height="190px"  border="4px"/>
+<img src="./img/data/head_circiference_children_groups.png" img height="190px" border="4px"/>
+</center>
+
+</div>
+
+
+---
 # Type of data
 
-<img src="./img/descriptive/variables.png" img height="450px" align="right" border="0px"/>
+<img src="./img/data/variables.png" img height="450px" align="right" border="0px"/>
 
 <!-- Andiamo a dividere i dati in variabili quantitative (o numeriche) o qualitative (o categorighe) 
 
@@ -1136,31 +1332,7 @@ Categoriche si dividono in 2 classi
 
 <span style="display:block; height:1px;"></span>
 
-<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
-
-</div>
-</div>
-
----
-## What type of data is this?
-
-<div class="columns">
-<div>
-
-<div style="font-size: 80%">
-
-<span style="display:block; height:40px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; The number of death in a hospital
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+<img src="./img/data/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
 
 </div>
 </div>
@@ -1184,7 +1356,31 @@ Categoriche si dividono in 2 classi
 
 <span style="display:block; height:1px;"></span>
 
-<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+<img src="./img/data/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+
+</div>
+</div>
+
+---
+## What type of data is this?
+
+<div class="columns">
+<div>
+
+<div style="font-size: 80%">
+
+<span style="display:block; height:40px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; The number of patients in ICU
+
+</div>
+
+</div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<img src="./img/data/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
 
 </div>
 </div>
@@ -1208,7 +1404,7 @@ Categoriche si dividono in 2 classi
 
 <span style="display:block; height:1px;"></span>
 
-<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+<img src="./img/data/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
 
 </div>
 </div>
@@ -1223,7 +1419,7 @@ Categoriche si dividono in 2 classi
 
 <span style="display:block; height:40px;"></span>
 
-:question: &nbsp;&nbsp;&nbsp; Fasting blood sugar levels
+:question: &nbsp;&nbsp;&nbsp; Body temperature
 
 </div>
 
@@ -1232,7 +1428,7 @@ Categoriche si dividono in 2 classi
 
 <span style="display:block; height:1px;"></span>
 
-<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+<img src="./img/data/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
 
 </div>
 </div>
@@ -1247,7 +1443,7 @@ Categoriche si dividono in 2 classi
 
 <span style="display:block; height:40px;"></span>
 
-:question: &nbsp;&nbsp;&nbsp; Passing the driving licence test
+:question: &nbsp;&nbsp;&nbsp; The result of a coin toss
 
 </div>
 
@@ -1256,10 +1452,99 @@ Categoriche si dividono in 2 classi
 
 <span style="display:block; height:1px;"></span>
 
-<img src="./img/descriptive/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
+<img src="./img/data/select_data_type.drawio.png" img height="450px" align="right" border="0px"/>
 
 </div>
 </div>
+
+---
+## A single variable, many types
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  Example: age
+
+---
+## A single variable, many types
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  Example: age
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Date of birth + date of visit
+
+---
+## A single variable, many types
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  Example: age
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Date of birth + date of visit
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - How old are you?
+
+---
+## A single variable, many types
+
+<span style="display:block; height:10px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp;  Example: age
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Date of birth + date of visit
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - How old are you?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Which of these age groups do you belong to?
+
+---
+## Discretization
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 80%">
+
+- From a series of continuous values to intervals (or classes)
+- The choice of the number of classes and their boundaries is arbitrary
+- The classes must be mutually exclusive
+
+<!-- - Riportate anche le classi nulle (frequenza zero) -->
+
+</div>
+
+</div>
+<div>
+
+<div style="font-size: 90%">
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{BMI} = \frac{\text{weight}_\text{kg}}{\text{height}_m^2}$
+
+| BMI | Classification
+| ----: | -----: |
+|< 18,5 | Underweight
+18,5 – 24, 9 | Healthy Weight
+25,0 – 29,9 | Overweight
+30,0 – 34,9  | Class 1 Obesity
+35,0 – 39,9 | Class 2 Obesity
+| > 39,9 | Class 3 Obesity
+
+</div>
+
+</div>
+</div>
+
+<!-- Frequenze si usato per dati qualitativi, ma cosa facciamo se abbiamo dati quantitativi?
+
+In questo caso si possono ancora usare, ma la frequenza non è riferita ad un singolo valore, ma ad intervalli (o classi) di valori. 
+
+ESEMPIO QUI DEL BMI
+
+La scelta del numero di classi e degli estremi è arbitraria. Entrambi vengono determinati in base a criteri di convenienza.
+
+Il numero di classi può oscillare e dipende dalla numerosità dei dati (in genere utilizzare da 5 a 20 classi).
+
+Scegliere estremi che siano clinicamente/biologicamente significativi o naturali e, preferibilmente, di uguale ampiezza.
+
+Le classi debbono essere mutuamente esclusive (fate attenzione agli estremi!!).
+
+-->
 
 ---
 ### Exercise #4
@@ -1302,8 +1587,6 @@ N: discreto
 Lactate dehydrogenase, dichotomized according to the upper limit of normal for each centre.
 -->
 
-
-
 --- 
 ## Why is it important?
 
@@ -1339,14 +1622,18 @@ Visconti A., *et al.*, Total serum *N*‐glycans associate with response to immu
 Numeriche media/SD, categoriche N/% -->
 
 ---
-## Categorical variables
+<span style="display:block; height:150px;"></span>
+
+# Categorical variables
+
+---
+## Frequency table
 
 <div class="columns">
 <div>
 
 <span style="display:block; height:40px;"></span>
 
-#### Frequency table
 
 <div style="font-size: 87%">
 
@@ -1355,7 +1642,7 @@ Numeriche media/SD, categoriche N/% -->
 
 </div>
 
-<span style="display:block; height:130px;"></span>
+<span style="display:block; height:170px;"></span>
 
 <div style="font-size: 50%">
  
@@ -1377,7 +1664,7 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 possono assumere valori compresi tra 0 e n (dimensione del campione)
 la loro somma è pari a n
 
-Relativa: rapporto tra la frequenza assoluta con cui si manifesta una modalità e la numerosità totale del campione
+Relativa: rapporto tra la frequenza assoluta con cui si manifesta una modalità e la numerosità Total del campione
 possono assumere valori compresi tra 0 e 1 (o 0 e 100)
 la loro somma è pari a 1
 
@@ -1416,10 +1703,12 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 </center>
 
 
+
 </div>
 </div>
 
 <!-- Le frequenze relative: facilitano la percezione del peso delle modalità -->
+
 
 ---
 ## Contingency table
@@ -1448,7 +1737,7 @@ Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administe
 
 <div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^*$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
 
 <span style="display:block; height:1px;"></span>
@@ -1459,16 +1748,21 @@ Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administe
 
 <center>
 
-|  | CBT | Standard | Total |
+|  | Men | Women | Total |
 | ----: | ----- | ---- | ----|
-| Males |  |  |  |
-| Females |  |  |  |
+| CBT |  |  |  |
+| Standard |  |  |  |
 | Total |  |  |  |
 
 </center>
 
 </div>
 
+<div style="font-size: 70%">
+
+$^*$ By convention, relative frequencies are calculated per row
+
+</div>
 
 <!--  `e una tabella a doppia entrata (con righe e colon- ne) in cui si riportano le frequenze congiunte di due variabili. 
 
@@ -1480,19 +1774,20 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 
 <div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+:question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women in the sample similar?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False
 
-:question: &nbsp;&nbsp;&nbsp; Comparing the two arms, is the proportion of men and women similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp;&nbsp;&nbsp;&nbsp; c) I need more elements to decide
+:question: &nbsp;&nbsp;&nbsp; Is the proportion of men similar in the two arms?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False 
 
 <center>
 
-|  | CBT | Standard | Total |
-| ----: | -----: | ----: | ----: |
-| Males |  35 (32.7%) |  29 (30.9%) | 64  (31.8%)|
-| Females | 72 (67.3%) |  65 (69.1%) | 137 (68.2%) |
-| Total | 107 | 94  | 201 |
+|  | Men | Women | Total |
+| ----: | ----- | ---- | ----|
+| CBT |  |  |  |
+| Standard |  |  |  |
+| Total |  |  |  |
+
 
 </center>
 
@@ -1503,6 +1798,13 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 
 LEGGERE PRIMA DI DARE LA Solution Nel campione, quindi vado a vedere la colonna dei totali, Le donne sono il doppio degli uomini. No, non sono uguali
 -->
+
+
+
+---
+<span style="display:block; height:150px;"></span>
+
+# Numerical variables
 
 ---
 ### Measures of central tendency and dispersion
@@ -1526,10 +1828,15 @@ Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione del
 
 :dart: &nbsp;&nbsp;&nbsp; The most frequent item
 
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:20px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; $x= \{1, 1, 1, 3, 4, 4, 7, 8, 8, 9, 9\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(x)=1$
+<center>
+<img src="./img/descriptive/range.png" img height="65px" border="0px"/>
+</center>
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mode = 26
 
 <!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
 
@@ -1550,10 +1857,10 @@ Si usa soprattutto per i dati categorici -->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(z)= \text{ } ?$
 
-
 <!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
 
 Si usa soprattutto per i dati categorici -->
+
 
 ---
 ## Measure of central tendency: median
@@ -1563,8 +1870,9 @@ Si usa soprattutto per i dati categorici -->
 <span style="display:block; height:10px;"></span>
 
 <center>
-<img src="./img/descriptive/median.png" img height="300px" border="0px"/>
+<img src="./img/descriptive/median.png" img height="250px" border="0px"/>
 </center>
+
 
 <div style="font-size: 90%" align="right">
 
@@ -1610,24 +1918,35 @@ Si usa soprattutto per i dati categorici -->
 
 :question: &nbsp;&nbsp;&nbsp; Calculate the median of the following data sets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)= \text{ ?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $x= \{40, 6, 75, 55, 34\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)= \text{ ?}$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(z)=\text{ ?}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $y= \{40, 6, 175, 55, 34\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)=\text{ ?}$ 
 
 
 <span style="display:block; height:40px;"></span>
 
+
 <!-- La mediana non e' influenzata da valori anomali o estremi (outliers) -->
+
+
+---
+## Median and outliers
+
+<center>
+<img src="./img/descriptive/median_outlier.png" img height="400px" border="0px"/>
+</center>
+
+:dart: &nbsp;&nbsp;&nbsp; Robust to outliers
 
 ---
 ## Quartiles
 
-<span style="display:block; height:20px;"></span>
+<span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/descriptive/quartiles.png" img height="300px" border="0px"/>
+<img src="./img/descriptive/quartiles.png" img height="250px" border="0px"/>
 </center>
 
 <!-- Mentre la mediana divide i dati in due meta' esatte, molto usati sono anche i quartili, che dividono i dati in 4 parti uguali -->
@@ -1640,24 +1959,53 @@ Si usa soprattutto per i dati categorici -->
 
 </div>
 
+---
+## Percentiles
+
+<span style="display:block; height:20px;"></span>
+
+<center>
+<img src="./img/descriptive/percentile.png" img height="350px" border="0px"/>
+</center>
+
+<!-- Mentre la mediana divide i dati in due meta' esatte, molto usati sono anche i quartili, che dividono i dati in 4 parti uguali -->
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 90%" align="right">
+
+:warning: Data should be sorted!
+
+</div>
+
+<!-- I quartili sono robusti rispetto ai valori anomal, anche se l'ultimo fosse 1000 e il primo -1000 non cambierebbero -->
+
 
 ---
 ## Measure of central tendency: mean
 
-<span style="display:block; height:1px;"></span>
+<div style="font-size: 95%">
 
-:dart: &nbsp;&nbsp;&nbsp; Arithmetic mean
+:dart: &nbsp;&nbsp;&nbsp; (Arithmetic) Mean
 
 $$
 {\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)=
 {\frac {x_{1}+x_{2}+\dots +x_{n}}{n}}
 $$
 
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:30px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{4, 36, 45, 50, 75\}$ 
+<center>
+<img src="./img/descriptive/range.png" img height="65px" border="0px"/>
+</center>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = {\frac{1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right) = \frac{4 + 36 + 45 + 50 + 75}{5} = 42$
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}}= \frac{5+18+20+22+24+25+25+26+26+26+27+27+28+29+30}{15}=23.9$
+
+</div>
+
+
 
 <!-- Somma dei singoli valori diviso il numero di osservazioni  -->
 
@@ -1668,11 +2016,11 @@ $$
 
 :question: &nbsp;&nbsp;&nbsp; Calculate the mean of the following data sets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{6, 34, 40, 55, 75\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {y}} = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $x= \{40, 6, 75, 55, 34\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {x}} = \text{ ?}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \{6, 34, 40, 55, 175\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {z}} = \text{ ?}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $y= \{40, 6, 175, 55, 34\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\bar {y}} = \text{ ?}$
 
 
 <span style="display:block; height:10px;"></span>
@@ -1681,24 +2029,29 @@ $$
 
 Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori alla media per evidenziare queste situazioni  -->
 
----
-## Mode *vs* &nbsp;median *vs* &nbsp;mean
+<!-- La media non e' particolarmente robusta rispetto agli outliers. Il valore atipico SOVRADIMENSIONA la media.
 
-<span style="display:block; height:100px;"></span>
+Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori alla media per evidenziare queste situazioni  -->
+
+---
+## Mean and outliers
 
 <center>
-<img src="./img/descriptive/mode_vs_median_vs_mean.png" img height="200px" border="0px"/>
+
+<img src="./img/descriptive/mean_outlier.png" img height="400px" border="0px"/>
 </center>
 
-<!-- La moda e' la parte piu' alta della curva, la mediana divide l'area in 2 parti uguali e la media e' il "balance point", quello in cui starebbe in equilibrio se fosse fatta di un materiale solido -->
+
+:dart: &nbsp;&nbsp;&nbsp; Sensitive to outliers
+
 
 ---
 ## The shape of a distribution
 
-<span style="display:block; height:70px;"></span>
+<span style="display:block; height:10px;"></span>
 
 <center>
-<img src="./img/descriptive/434px-Relationship_between_mean_and_median_under_different_skewness.png" img height="250px" border="0px"/>
+<img src="./img/descriptive/Relationship_between_mean_and_median_under_different_skewness.png" img height="450px" border="0px"/>
 </center>
 
 <!-- La posizione di moda media e mediana va a definire anche quella che e' la forma della distribuzione, che descrive come una Distribuzione empirica e/o Di- stribuzione di popolazione si distribuisce. 
@@ -1712,13 +2065,26 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
 ---
 ## The shape of a distribution
 
-<span style="display:block; height:70px;"></span>
+<span style="display:block; height:40px;"></span>
 
 <center>
-<img src="./img/descriptive/Bimodal_geological.png" img height="350px" border="0px"/>
+<img src="./img/descriptive/Bimodal.png" img height="420px" border="0px"/>
 </center>
 
+
 <!-- Si dice che una distribuzione sia bi- o multi-modale quando presenta due o piu` gobbe corrispondenti ai diversi valori che la moda puo` assumere nel campione.
+ -->
+
+---
+## The shape of a distribution
+
+<span style="display:block; height:40px;"></span>
+
+<center>
+<img src="./img/descriptive/Bimodal_two_distro.png" img height="420px" border="0px"/>
+</center>
+
+<!-- Solitamente una distribuzione con piu' mode e' l'unione di due distribuzioni distinti (per esempio la circonferenza cranica dei bambini esposti o non esposti al fumo passivo, o i voti di chi ha frequentato o non ha frequentato le lezioni di statistica)
  -->
 
 ---
@@ -1743,6 +2109,7 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
 </div>
 </div>
 
+
 ---
 ## Measures of dispersion
 
@@ -1756,23 +2123,26 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
 <span style="display:block; height:10px;"></span>
 
 <center>
-<img src="./img/descriptive/sd.png" img height="450px" border="4px"/>
+<img src="./img/descriptive/sd.png" img height="450px" border="0px"/>
 </center>
+
 
 ---
 ## Measure of dispersion: range
 
 <span style="display:block; height:1px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; ${\text{range}(x)}= \text{max}(x)-\text{min}(x)$
+:dart: &nbsp;&nbsp;&nbsp; ${\text{range}}= \text{max}-\text{min}$
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:60px;"></span>
 
 <center>
-<img src="./img/descriptive/outliers_range.svg" img height="250px" border="0px"/>
+<img src="./img/descriptive/range.png" img height="70px" border="0px"/>
 </center>
 
-&nbsp;&nbsp;&nbsp; $\text{range}(x)= \text{max}(x)-\text{min}(x)=9,754-2,830=6,924$
+<span style="display:block; height:40px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{range}= 30-5=25$
 
 <!-- INTERVALLO di VARIAZIONE. Il range ha tuttavia un'utilita' limitata, si basa solo sui due valori estremi, senza indicare come si distribuiscono i dati entro l’intervallo e non e' robusta quando ci sono valori anomali 
 
@@ -1787,13 +2157,16 @@ piu; semplice, meno informativo  Il range ha tuttavia un'utilita' limitata: tien
 
 <span style="display:block; height:1px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; ${\text{IQR}(x)}= \text{Q3}(x)-\text{Q1}(x)$
+:dart: &nbsp;&nbsp;&nbsp; ${\text{IQR}}= \text{Q1}-\text{Q3}$
 
 <span style="display:block; height:20px;"></span>
 
 <center>
-<img src="./img/descriptive/iqr.png" img height="300px" border="0px"/>
+<img src="./img/descriptive/iqr.png" img height="230px" border="0px"/>
 </center>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{IQR}= 22 - 27$
+
 
 <!-- Non sono considerati i valori estremi, ma sappiamo come si distribuisce la meta dei dati rispetto al valore centrale -->
 
@@ -1813,78 +2186,77 @@ piu; semplice, meno informativo  Il range ha tuttavia un'utilita' limitata: tien
 
 <span style="display:block; height:1px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; $s^2 = \frac{1}{n-1}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}$
+<div style="font-size: 95%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
+:dart: &nbsp;&nbsp;&nbsp; $s^2 = \frac{1}{n-1}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dove &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/descriptive/range.png" img height="65px" border="0px"/>
+</center>
 
 <span style="display:block; height:1px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{1, 2, 3\}$ &nbsp;&nbsp;&nbsp; $\bar{x}=\frac{1+2+3}{3}=2$
+${\bar {x}}= 23.9$
+$s^2= \frac{(5-23.9)^2+(18-23.9)^2+(20-23.9)^2+ \text{ } \dots \text{ } +(28-23.9)^2+(29-23.9)^2+(30-23.9)^2}{(15-1)}=37.6$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \frac{1}{2}\times [1^2+ 0^2+1^2 ]=  \frac{1}{2}\times 2 = 1$
+</div>
+
+</div>
 
 <!-- Andiamo a fare la distanza (differenza) tra ciascun valore e la media, la eleviamo al quatrato, la sommiamo e andiamo a dividerla per la dimensione del campione - 1 -->
 
----
-## Measure of dispersion: variance
-
-<span style="display:block; height:1px;"></span>
-
-:dart: &nbsp;&nbsp;&nbsp; $s^2 = \frac{1}{n-1}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; why &nbsp; $\frac{1}{n-1}$ &nbsp; ?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sum _{i=1}^{n}(x_{i}-\bar {x} ) = 0$
-
-<span style="display:block; height:1px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{1, 2, 3\}$ &nbsp;&nbsp;&nbsp; $\bar{x}=\frac{1+2+3}{3}=2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sum _{i=1}^{n}(x_{i}-\bar {x} ) = (1-2) + (2-2) + (3-2) =$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1 + 0 + 1 = 0$
-
-<!-- Perche' si divide per (n-1) e non n, come ci aspetteremmo? 
-
-Dipende dal fatto che La somma degli scarti dalla media aritmetica è nulla
-Qundi se conosco i primi (n-1) valori, conosco anche l'ultimo
-
-n-1 rappresenta quindi i gradi di liberta', il cui numero e' uguale al nuerio di dati (n) meno il numero di costanti gia' calcolate dai dati (in questo caso 1, la media) --> 
 
 ---
 ## Measure of dispersion: standard deviation
 
 <span style="display:block; height:1px;"></span>
 
-:dart: &nbsp;&nbsp;&nbsp; $s = \sqrt{s^2} = \sqrt {{\frac {1}{n-1}}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}}$
+<div style="font-size: 95%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
+:dart: &nbsp;&nbsp;&nbsp; $s = \sqrt{s^2} = \sqrt {{\frac {1}{n-1}}\sum _{i=1}^{n}(x_{i}-\bar {x} )^{2}}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dove &nbsp;&nbsp;&nbsp; ${\bar {x}}= {\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)$ 
+
+<span style="display:block; height:30px;"></span>
+
+<center>
+<img src="./img/descriptive/range.png" img height="65px" border="0px"/>
+</center>
 
 <span style="display:block; height:1px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp;  $x= \{1, 2, 3\}$ &nbsp;&nbsp;&nbsp; $\bar{x}=\frac{1+2+3}{3}=2$
+${\bar {x}}= 23.9$
+$s= \sqrt{\frac{(5-23.9)^2+(18-23.9)^2+ \text{ } \dots \text{ } +(29-23.9)^2+(30-23.9)^2}{(15-1)}} = \sqrt{37.6}=6.1$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s = \sqrt {\frac{1}{3-1}\times [(1-2)^2+ (2-2)^2+(3-2)^2] }=$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \sqrt {\frac{1}{2}\times [1^2+ 0^2+1^2 }]= \sqrt {\frac{1}{2}\times 2}= \sqrt {1} = 1$
+</div>
+
+</div>
+
+---
+## Standard deviation and outliers
+
+<span style="display:block; height:1px;"></span>
+
+<div style="font-size: 95%">
+
+:question: &nbsp;&nbsp;&nbsp; What are the standard deviations of these datasets?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $x= \{40, 6, 75, 55, 34\}$ &nbsp;&nbsp;&nbsp;&nbsp; $\bar{x} = 42$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${s_{x}} = 25.6$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $y= \{40, 6, 175, 55, 34\}$ &nbsp;&nbsp;&nbsp; $\bar{y} = 62$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${s_{y}} = 65.6$
+
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+:dart: &nbsp;&nbsp;&nbsp; Sensitive to outliers
+
 
 <!-- che nella varianza l'unità di misura è diversa da quella della variabile su cui è calcolata (abbiamo fatto il quadrato delle fifferenze, ricordate?), si utilizza la sua radice quadrata detta SCARTO QUADRATICO MEDIO o deviazione standard. -->
 
----
-## Centrality, dispersion, and data types
 
-<span style="display:block; height:50px;"></span>
-
-| Data type | Centrality Measure | Dispersion Measure |
-| ---- | ----- | ---- |
-| Nominal | Mode | - |
-| Ordinal | Mode, Median | Range, IQR |
-| Numeric | Mode, Median, Mean | Range, IQR, standard deviation |
-
-<!-- Scelta della misura di tendenza centrale
-- media se la distribuzione è simmetrica
-- mediana se la distribuzione NON è simmetrica (forse a causa di valori estremi)
-- moda per indicare il valore più comune nell’ambito della distribuzione  (ma come accennavo piu' usato nel caso di variabile categoriche)
-
-Inoltre, Se la numerosità del campione è piccola, la mediana e il range interquartile sono misure più robuste
--->
 
 ---
 ### Exercise #12
@@ -1926,6 +2298,7 @@ Reilly, J. *et al.*. *Procedure‐Specific Surgical Site Infection Rates and Pos
 
 </div>
 
+
 ---
 ## Parameters *vs*  &nbsp;statistics
 
@@ -1961,7 +2334,7 @@ Reilly, J. *et al.*. *Procedure‐Specific Surgical Site Infection Rates and Pos
 
 <div style="font-size: 90%">
 
-- categorical data
+- **Categorical data**
   - absolute frequency
   - relative frequency
 
@@ -2011,7 +2384,7 @@ Long labels? Think of an horizontal version.
 
 <div style="font-size: 90%">
 
-- categorical data
+- **Categorical data**
   - absolute frequency
   - relative frequency
 
@@ -2049,7 +2422,7 @@ variazione ulteriore: Circular bar chart, lollipop -->
 
 <div style="font-size: 90%">
 
-- categorical data
+- **Categorical data**
   - absolute frequency
   - relative frequency
 
@@ -2115,9 +2488,9 @@ Visconti, A., *et al.*. *The genetics and epidemiology of N-and O-immunoglobulin
 
 
 ---
-## What does this graph tell us?
+## What information does this graph convey?
 
-- From 1 to 10, how happy were you yesterday?
+- On a scale from 1 to 10, how happy did you feel yesterday?
 
 <center>
 <img src="./img/visualization/wellbeing_cropped.png" img height="400px" border="4px"/>
@@ -2127,9 +2500,9 @@ Visconti, A., *et al.*. *The genetics and epidemiology of N-and O-immunoglobulin
 
 ---
 
-## What does this graph tell us?
+## What information does this graph convey?
 
-- From 1 to 10, how happy were you yesterday?
+- On a scale from 1 to 10, how happy did you feel yesterday?
 
 <center>
 <img src="./img/visualization/wellbeing_from_zero.png" img height="400px" border="4px"/>
@@ -2148,9 +2521,9 @@ Wow, that’s a lot of orange. Any patterns in the data just seem to be dominate
 
  -->
 ---
-## What does this graph tell us?
+## What information does this graph convey?
 
-- From 1 to 10, how happy were you yesterday?
+- On a scale from 1 to 10, how happy did you feel yesterday?
 
 <center>
 <img src="./img/visualization/wellbeing_dots.png" img height="400px" border="4px"/>
@@ -2159,7 +2532,7 @@ Wow, that’s a lot of orange. Any patterns in the data just seem to be dominate
 <!-- ne way of managing this would be to move away from using bars entirely, for example, using the position of a dot to mark each data point. The length aspect no longer exists and the reader is forced to look at the position of the data point relative to the x-axis in order to make a comparison between categories. -->
 
 ---
-### The y-axis'd be plotted from 0, but not like this
+### The y-axis should start from 0, but not like this
 
 <span style="display:block; height:40px;"></span>
 
@@ -2178,7 +2551,7 @@ Wow, that’s a lot of orange. Any patterns in the data just seem to be dominate
 
 <div style="font-size: 90%">
 
-- categorical data
+- **Categorical data**
   - absolute frequency
   - relative frequency
 
@@ -2212,7 +2585,7 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 
 <div style="font-size: 90%">
 
-- categorical data
+- **Categorical data**
   - relative frequency
 
 </div>
@@ -2259,7 +2632,7 @@ Don't put several pie charts one beside each other to compare them.
 
 <div style="font-size: 90%">
 
-- categorical data
+- **Categorical data**
   - relative frequency
 
 </div>
@@ -2295,7 +2668,7 @@ Ho migliorato la grafica andando ad annotare le percentuali -->
 
 <div style="font-size: 90%">
 
-- categorical data
+- **Categorical data**
   - relative frequency
 
 </div>
@@ -2361,8 +2734,8 @@ In Figure 1.4 the ‘cancer’ icons are randomly scattered among the 100. While
 
 <div style="font-size: 90%">
 
-- categorical data
-  - relative frequency
+- **Categorical data**
+  - joint relative frequency
 
 </div>
 
@@ -2386,7 +2759,7 @@ In Figure 1.4 the ‘cancer’ icons are randomly scattered among the 100. While
 
 <!-- Mosaic plots provide an ideal method both for visualizing contingency tables.
 
-Sono la proporzione sul totale.  
+Sono la proporzione sul Total.  
 
 round(prop.table(freq_a)*100, 0)
 
@@ -2409,7 +2782,7 @@ round(prop.table(freq_a)*100, 0)
 
 <div style="font-size: 90%">
 
-- numerical data
+- **Numerical data**
 
 </div>
 
@@ -2447,7 +2820,7 @@ Play with the bin size, it can give different insight.
 
 <div style="font-size: 90%">
 
-- numerical data
+- **Numerical data**
 
 </div>
 
@@ -2486,7 +2859,7 @@ Avoid filling with color palettes. anche se
 
 <div style="font-size: 90%">
 
-- numerical data
+- **Numerical data**
 
 </div>
 
@@ -2513,6 +2886,39 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 Anche se a volte pou' essere confuso
  -->
 
+
+
+---
+## Frequency polygon
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:40px;"></span>
+
+<div style="font-size: 90%">
+
+- **Numerical data**
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+<div style="font-size: 50%">
+ 
+Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to immune checkpoint inhibition therapy and survival in patients with advanced melanoma*, BMC Cancer, 2023 doi:10.1186/s12885-023-10511-3
+
+</div>
+
+</div>
+<div>
+<center>
+<img src="./img/visualization/Age_histogram_bin5_response_freq_poly.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
 ---
 ## Miami plot/Mirror histogram
 
@@ -2523,7 +2929,7 @@ Anche se a volte pou' essere confuso
 
 <div style="font-size: 90%">
 
-- numerical data
+- **Numerical data**
 
 </div>
 
@@ -2548,6 +2954,8 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 <!-- No legenda, uso i colori, ho fissato gli assi 
 Ovviamente si puo' usare solo se ci sono due variabili, ne avessimo 3 o piu' ricadremmo nel caso precedente
 -->
+
+
 
 ---
 ## Boxplot
@@ -2579,7 +2987,7 @@ Non usare colori
 
 <div style="font-size: 90%">
 
-- numerical data
+- **Numerical data**
 
 </div>
 
@@ -2638,7 +3046,7 @@ Boxplot hides the underlying distribution. Use jitter if low number of data poin
 
 <div style="font-size: 90%">
 
-- numerical data
+- **Numerical data**
 
 </div>
 
@@ -2674,17 +3082,493 @@ Boxplot hides the underlying distribution. Use jitter if low number of data poin
 <img src="./img/visualization/DataSaurusDozen.gif" img height="450px" border="4px"/>
 </center>
 
+
 ---
-![bg opacity](./img/descriptive_bg.png)
+#### The (linear) relationship between two numerical variables
+
+
+<div style="font-size: 78%">
+
+What happened to children who underwent cardiac surgery in certain British hospitals between 1991 and 1995?
+
+</div>
+
+<div style="font-size: 48%">
+
+<center>
+
+Hospital | Surgery | Survivors (N) | Deaths (N) | Survivors (%) | Deaths (%) |
+----:    | ----: | ----: | ----: | ----: | ----: |
+Bristol |        143 |       102 |     41 |              71.3 |            28.7 |
+Leicester |        187 |       162 |     25 |              86.6 |            13.4 |
+Leeds |        323 |       299 |     24 |              92.6 |             7.4 |
+Oxford |        122 |        99 |     23 |              81.1 |            18.9 |
+Guys |        164 |       139 |     25 |              84.8 |            15.2 |
+Liverpool |        405 |       363 |     42 |              89.6 |            10.4 |
+Southampton |        239 |       215 |     24 |              90.0 |            10.0 |
+Great Ormond St |        482 |       429 |     53 |              89.0 |            11.0 |
+Newcastle |        195 |       169 |     26 |              86.7 |            13.3 |
+Harefield |        177 |       152 |     25 |              85.9 |            14.1 |
+Birmingham |        581 |       523 |     58 |              90.0 |            10.0 |
+Brompton |        301 |       270 |     31 |              89.7 |            10.3 |
+
+
+</center>
+
+</div>
+
+<div style="font-size: 40%" align="right">
+
+D.J. Spiegelhalter *et al.*, *Commissioned Analysis of Surgical Performance Using Routine Data: <br/> Lessons from the Bristol Inquiry*, 2002, Journal of the Royal Statistical Society Series A: Statistics in Society
+
+</div>
+
+
+<!-- Public concern did not die down, and an official inquiry was ordered: this brought in a team of statisticians who were given the grim task of comparing the survival rates in Bristol with elsewhere in the UK between 1984 and 1995. 
+
+Sto mostrando sia morti che sopravvissuti per evirare positive/negative framing, che abbiamo visto nella lezione introduttiva
+
+Non facile da capire cosa succede, una tabella con molte righe e colonne
+ -->
+
+---
+## Let's visualize the data
+
+<span style="display:block; height:1px;"></span>
+
+<div class="columns">
+<div>
+
+<center>
+<img src="./img/descriptive/Children_death.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+<div>
+
+</div>
+</div>
+
+<!-- Come si chiama questa rappresentazione grafica? 
+Istogramma 
+
+- label lunghe, meglio in orizzontale
+- ordinati per frequenza, cosi' a colpo d'occhio si capisce chi ha piu' o meno morti
+
+Da questo plot, sembrerebbe che Bristol non sia il posto piu' problematico
+-->
+
+---
+## Let's visualize the data
+
+<span style="display:block; height:1px;"></span>
+
+<div class="columns">
+<div>
+
+<center>
+<img src="./img/descriptive/Children_death.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Children_surgery.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- 
+Andiamo ora a metterci il numero totale di interventi
+
+Qui si vede gia' la differenza con Bristol. 
+Notate che questa volta li ho ordinati secondo l'ordine utilizzato nel primo plot, per facilitare la comparazione.
+
+Da questa doppia visualizzazione sembrerebbe che ci sia anche una relazione tra le due variabili: piu' unterventi si fanno, piu' morti ci sono
+
+Ma c'e' una visualizzazione (e una statistica) migliore che mi per riassumere questi due aspetti
+ -->
+
+---
+#### The (linear) relationship between two numerical variables
+
+<span style="display:block; height:1px;"></span>
+
+<div class="columns">
+<div>
+
+
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Children_death_vs_surgery.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
+#### The (linear) relationship between two numerical variables
+
+
+<span style="display:block; height:1px;"></span>
+
+<div class="columns">
+<div>
+
+<div style="font-size: 90%">
+
+Correlation coefficient$^1$
+
+- $r = 0.82$
+* $r_\text{no Bristol} = 0.93$
+
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+<div style="font-size: 60%">
+
+$^1$ Here, Pearson's (originally formulated by Galton). &nbsp;&nbsp; Another correlation coefficients is Spearman's.
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Children_death_vs_surgery.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+
+
+<!-- 
+A scatterplot displays the relationship between 2 numeric variables. For each data point, the value of its first variable is represented on the X axis, the second on the Y axis
+Notare assi non a zero. Per lo scatter va bene.
+
+Correlazione `e una relazione tra due variabili in cui a ciascun valore di una corrisponda un valore dell’altra. 
+Pearson correlation coefficient o indice di correlazione di Pearson, `e un in- dice che misura l’esistenza di una relazione lineare (o Correlazione) tra due variabili. Ha un valore compreso tra +1 e −1 , dove +1 corrispon- de alla perfetta correlazione lineare positiva, 0 corrisponde a un’assenza di correlazione lineare e −1 corrisponde alla perfetta correlazione lineare negativa.
+
+There is a considerable interest in the so-called ‘volume effect’ in surgery – the claim that busier hospitals get better survival rates, possibly since they achieve greater efficiency and have more experience.
+
+Attenzione alla causalita':
+Osservare una correlazione non implica un nesso di Causalit`a ma segnala la tendenza di una variabile a cambiare in funzione dell’altra (“correlazione non significa causazione”). 
+- the high correlation showed that bigger hospitals were associated with lower mortality. But we could not conclude that bigger hospitals caused the lower mortality.
+- piccoli ospedali hanno magari casi piu' semplici, che spiegano Leeds & Co 
+- oppure better hospitals simply attracted more patients.
+
+launched an investigation after complaints from Joshua’s and other bereaved parents, and in 1998 two surgeons and the ex-chief executive were found guilty of serious medical misconduct. 
+-->
+
+---
+### Correlation coefficients
+
+<div style="font-size: 85%">
+
+- **Do not indicate causality**
+- Ranges between $-1$ and  $1$
+- The sign indicates the direction of the **linear** relationship
+- The absolute value indicates the strenght of the **linear** relationship
+
+</div>
+
+<div style="font-size: 80%" align="right">
+
+| $\|r\|$ | Interpretation |
+| ----:    | :---- |
+0-0.25 | None or very weak correlation
+0.25-0.50 | Moderate correlation
+0.50-0.75 | Good correlation
+0.75-0.99 | Excellent correlation
+1| Perfect correlation
+
+</div>
+
+---
+### Correlation coefficients
+
+<div style="font-size: 90%">
+
+
+- $r^2 \times 100 = R^2$ (or coefficient of determination) indicates the percentage of variability in one variable that is predicted by the variability of the other variable
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $R^2 = r^2 \times 100 = 0.82^2 \times 100 = 0.67 \times 100$  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$  &nbsp; $67\%$ of the variability
+
+
+</div>
+
+
+
+
+---
+## Correlation and outliers
+
+<span style="display:block; height:1px;"></span>
+
+
+<div class="columns">
+<div>
+
+<div style="font-size: 98%">
+
+Height (cm) and mean number of points scored
+
+</div>
+
+- $r = 0.72$
+
+
+<center>
+<!-- <img src="./img/descriptive/basketball.jpg" img height="250px" border="4px"/> -->
+</center>
+
+</div>
+<div>
+
+<center>
+<!-- <img src="./img/descriptive/Basketball.png" img height="500px" border="4px"/> -->
+</center>
+
+</div>
+</div>
+
+<!-- Lillard 1.88
+Adetokumbo 2.11 -->
+
+---
+## Correlation and outliers
+
+<span style="display:block; height:1px;"></span>
+
+
+<div class="columns">
+<div>
+
+<div style="font-size: 98%">
+
+Height (cm) and mean number of points scored
+
+</div>
+
+- $r = 0.72$
+
+
+<center>
+<img src="./img/descriptive/basketball.jpg" img height="250px" border="4px"/>
+</center>
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Basketball.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+<!-- Lillard 1.88
+Adetokumbo 2.11 -->
+
+---
+## Correlation and outliers
+
+<span style="display:block; height:1px;"></span>
+
+
+<div class="columns">
+<div>
+
+<div style="font-size: 98%">
+
+Height (cm) and mean number of points scored
+
+</div>
+
+- $r = 0.72$
+- $r_\text{no outliers} = 0.07$
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Basketball_noout.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+---
+## From correlation to linear regression
+
+<span style="display:block; height:1px;"></span>
+
+<div class="columns">
+<div>
+
+$y = \alpha + \beta x$
+
+<span style="display:block; height:200px;"></span>
+
+<div style="font-size: 985%"> 
+
+$\text{Deaths} = 14 + 0.07 \times \text{Surgeries}$
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Children_death_vs_surgery_regression_line.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+
+<!-- $\alpha \rightarrow$ intercetta
+$\beta \rightarrow$ coefficiente angolare -->
+
+---
+## From correlation to linear regression
+
+<span style="display:block; height:1px;"></span>
+
+<div class="columns">
+<div>
+
+$y = \alpha + \beta x$
+
+<span style="display:block; height:200px;"></span>
+
+<div style="font-size: 85%"> 
+
+$\text{Deaths} = 14 + 0.07 \times \text{Surgeries}$
+
+
+
+$\text{Surgeries} = 500$
+$\text{Deaths} = 14 + 0.07 \times 500 = 49$
+
+</div>
+
+</div>
+<div>
+
+<center>
+<img src="./img/descriptive/Children_death_vs_surgery_regression_line_interpolate.png" img height="500px" border="4px"/>
+</center>
+
+</div>
+</div>
+
+
+<!-- $\alpha \rightarrow$ intercetta
+$\beta \rightarrow$ coefficiente angolare -->
+
+---
+### Linear regression: interpolation and extrapolation
+
+<div style="font-size: 80%"> 
+
+:question: &nbsp;&nbsp;&nbsp; How many girls named Emma were born in 2004, 2010, 2015, and 2020?
+
+</div>
+
+<span style="display:block; height:0px;"></span>
+
+<center>
+<img src="./img/descriptive/emma_hidden.png" img height="400px" border="4px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+https://www.istat.it/dati/calcolatori/contanomi/
+
+</div>
+
+---
+### Linear regression: interpolation and extrapolation
+
+<div style="font-size: 80%"> 
+
+:question: &nbsp;&nbsp;&nbsp; How many girls named Emma were born in 2004, 2010, 2015, and 2020?
+
+</div>
+
+<span style="display:block; height:0px;"></span>
+
+<center>
+<img src="./img/descriptive/emma_guess.png" img height="400px" border="4px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+https://www.istat.it/dati/calcolatori/contanomi/
+
+</div>
+
+---
+### Linear regression: interpolation and extrapolation
+
+<div style="font-size: 80%"> 
+
+:question: &nbsp;&nbsp;&nbsp; How many girls named Emma were born in 2004, 2010, 2015, and 2020?
+
+</div>
+
+<span style="display:block; height:0px;"></span>
+
+<center>
+<img src="./img/descriptive/emma_all.png" img height="400px" border="4px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+https://www.istat.it/dati/calcolatori/contanomi/
+
+</div>
+
+
+---
+## Regression to the mean
+
+<span style="display:block; height:0px;"></span>
+
+<center>
+<img src="./img/descriptive/mother_daughter.png" img height="440px" border="4px"/>
+</center>
+
+<div style="font-size: 50%" align="right">
+
+F. Galton, *Regression Towards Mediocrity in Hereditary Stature*, The Journal of the 
+Anthropological Institute of Great Britain and Ireland, 1886, https://doi.org/10.2307/2841583
+
+</div>
+
+---
+![bg opacity](./img/backgrounds/descriptive_bg.png)
 
 ## Summary
 
 
-<div style="font-size: 85%">
+<div style="font-size: 80%">
 
-- Data come in different types
+- Variables describe characteristics of interest
+- Their variability depends both on known or knowable factors (such as individual differences and experimental conditions) and on random effects (statistical noise, such as measurement errors).
+- Variables can be of different types
 - Categorical variables can be summarized with absolute and relative frequencies 
-- Numerical variables can be summarized with measures of central tendency and dispersion, remembering that some of these measures are influenced by asimmetrical distribution and/or outliers
+- Numerical variables can be summarized using measures of central tendency, dispersion, and correlation, which can be misleading when empirical distributions are asymmetric 
 - Variables can be summarised with multiple graphical representations (but some are better than others), and visualising your data is always a good idea
 - Samples are summarised by statistics, populations by parameters
 
