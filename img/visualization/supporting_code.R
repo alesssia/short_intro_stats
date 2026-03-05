@@ -13,7 +13,8 @@ font.size <- 22
 graphic.settings <- theme_bw(base_size = font.size) + theme(axis.ticks = element_line(size = 0.3)) +  theme(legend.title = element_blank()) + theme(plot.subtitle=element_text(size=font.size/4*3), plot.title=element_text(size=font.size))
 
 
-setwd("/Users/visconti/Documents/Teaching/biostat_101/slide/img/visualization")
+setwd("/Users/visconti/Documents/Teaching/short_intro_stats/img/visualization")
+
 md <- read.csv("/Users/visconti/Documents/Research/2021/random/PRIMM/doc/sdata/PRIMM_glycomics_anonymised_raw_data.csv")
 
 
@@ -105,7 +106,7 @@ png("MStage_waffle.png")
 print(g)
 dev.off()
 
-stop()
+
 
 tmp <- table(md$metastatic_stage, md$sex)
 colnames(tmp) <- c("Females", "Males")
@@ -159,24 +160,39 @@ dev.off()
 
 data <- data.frame(var1=md$age[md$ORR == "Yes"], var2=c(rep(NA, 10), md$age[md$ORR == "No"]))
 
-p <- ggplot(data, aes(x=x) ) +
-  geom_histogram( aes(x = var1, y=..count..), binwidth=5, color="black", fill="#66C2A5" ) +
-  geom_label( aes(x=100, y=2.5, label="Response: Yes"), color="#66C2A5") +
-  geom_histogram( aes(x = var2, y=-..count..), binwidth=5, color="black", fill= "#FC8D62") +
-  geom_label( aes(x=100, y=-2.5, label="Response: No"), color="#FC8D62")  +
-  ylim(-11, 11) + xlim(20, 110) + graphic.settings + xlab("Age (years)") + ylab("Counts") + ggtitle("Bin size = 5") + theme(legend.position="bottom") 
+  p <- ggplot(data, aes(x=x) ) +
+    geom_histogram( aes(x = var1, y=..count..), binwidth=5, color="black", fill="#66C2A5" ) +
+    geom_label( aes(x=100, y=2.5, label="Response: Yes'"), color="#66C2A5") +
+    geom_histogram( aes(x = var2, y=-..count..), binwidth=5, color="black", fill= "#FC8D62") +
+    geom_label( aes(x=100, y=-2.5, label="Response: No"), color="#FC8D62")  +
+    ylim(-11, 11) + xlim(20, 110) + graphic.settings + xlab("Age (years)") + ylab("Counts") + ggtitle("Bin size = 5") + theme(legend.position="bottom") 
+
+  
   
 png("Age_histogram_bin5_response_mirror.png")
 print(p)
 dev.off()
   
   
-p <- ggplot(md, aes(x=age)) + geom_histogram(aes(y=..density.., fill=ORR), position = "identity", binwidth=5, color="black", alpha=0.2) + scale_fill_manual("Response", values=c("#FC8D62", "#66C2A5")) + scale_color_manual("Response", values=c("#FC8D62", "#66C2A5")) + theme_bw(base_size = font.size) + theme(axis.ticks = element_line(size = 0.3)) + theme(plot.subtitle=element_text(size=font.size/4*3), plot.title=element_text(size=font.size)) + xlab("Age (years)") + ylab("Density") + ggtitle("Bin size = 5") + theme(legend.position="bottom") + geom_density(aes(colour=ORR), adjust = 0.6, bw=5, lwd=2)
+# p <- ggplot(md, aes(x=age)) + geom_histogram(aes(y=..density.., fill=ORR), position = "identity", binwidth=5, color="black", alpha=0.2) + scale_fill_manual("Response", values=c("#FC8D62", "#66C2A5")) + scale_color_manual("Response", values=c("#FC8D62", "#66C2A5")) + theme_bw(base_size = font.size) + theme(axis.ticks = element_line(size = 0.3)) + theme(plot.subtitle=element_text(size=font.size/4*3), plot.title=element_text(size=font.size)) + xlab("Age (years)") + ylab("Density") + ggtitle("Bin size = 5") + theme(legend.position="bottom") + geom_density(aes(colour=ORR), adjust = 0.6, bw=5, lwd=2)
+#
+#
+# png("Age_histogram_bin5_response_density.png")
+# print(p)
+# dev.off()
 
-   
-png("Age_histogram_bin5_response_density.png")
+p <- ggplot(md, aes(x=age)) + geom_histogram(aes(fill=ORR), binwidth=5, color="gray74", alpha=0.1, position = 'identity') +
+	 geom_freqpoly(aes(color=ORR, y=after_stat(count)), binwidth=5, linewidth=2) +
+
+ 	 scale_fill_manual("Risposta", values=c("#FC8D62", "#66C2A5")) + scale_color_manual("Response", values=c("#FC8D62", "#66C2A5")) +
+	 
+	 theme_bw(base_size = font.size) + theme(axis.ticks = element_line(size = 0.3)) + theme(plot.subtitle=element_text(size=font.size/4*3), plot.title=element_text(size=font.size)) + xlab("Age (years)") + ylab("Counts") + ggtitle("Bin size = 5") + theme(legend.position="bottom")
+ 
+
+png("Age_histogram_bin5_response_freq_poly.png")
 print(p)
 dev.off()
+
 
 
 glycans <- read.csv("/Users/visconti/Documents/Research/2017/random/mfalchi/glycans/data/original_data/Data_release_IgA_TwinsUK_20171222.csv")
@@ -208,7 +224,8 @@ dev.off()
 p <- ggplot(md, aes(x = ORR, y = age)) +
   geom_half_boxplot(fill="grey84", outlier.shape = NA, size=0.8, nudge = 0.05) + 
   geom_half_dotplot(colour="grey24", method="histodot", dotsize=0.5) +
-  geom_half_violin(fill="grey84", side = "r", alpha=0.5, nudge = 0.01) + graphic.settings + xlab("Response") + ylab("Age (years)")
+  # geom_half_violin(fill="grey84", side = "r", alpha=0.5, nudge = 0.01) + 
+  graphic.settings + xlab("Response") + ylab("Age (years)")
   
 png("Boxplot_age_ORR_violin.png")
 print(p)
