@@ -1,21 +1,44 @@
 library(ggplot2)
 library(patchwork)
 
-font.size <- 20
-graphic.settings <- theme_bw(base_size = font.size) + theme(axis.ticks = element_line(size = 0.3))  +  theme(axis.line.x=element_blank(), axis.text.y=element_blank(), axis.ticks.y=element_blank(), axis.title.y=element_blank(), axis.title.x=element_blank())
+font.size <- 22
+graphic.settings <- theme_bw(base_size = font.size) + theme(axis.ticks = element_line(size = 0.3)) +  theme(legend.title = element_blank()) + theme(plot.subtitle=element_text(size=font.size/4*3), plot.title=element_text(size=font.size))
 
-set.seed(42)
 
-n <- 2500
-df <- data.frame(n=1:n, x=round(rnorm(n, mean = 0, sd = 10), 1), y=10)
+# set.seed(42)
+#
+# n <- 2500
+# df <- data.frame(n=1:n, x=round(rnorm(n, mean = 0, sd = 10), 1), y=10)
+#
+# p <- ggplot(df, aes(x=x, y=y)) + geom_point(position = "jitter") + ylim(c(9.4,10.6))
+# p <- p + geom_segment(aes(x = 0, y = 10.5, xend = 0, yend = 9.5), size=2, colour="darkgreen") + geom_segment(aes(x = -5, y = 9.5, xend = -25, yend = 9.5), arrow = arrow(length = unit(0.5, "cm")), size=2, colour="darkmagenta") + geom_segment(aes(x = 5, y = 9.5, xend = 25, yend = 9.5), arrow = arrow(length = unit(0.5, "cm")), size=2, colour="darkmagenta")
+# p <- p + graphic.settings + theme(legend.position="none", legend.title = element_blank())
+#
+# png("../descriptive/descriptive.png", width=500, height=250)
+# print(p)
+# dev.off()
 
-p <- ggplot(df, aes(x=x, y=y)) + geom_point(position = "jitter") + ylim(c(9.4,10.6))
-p <- p + geom_segment(aes(x = 0, y = 10.5, xend = 0, yend = 9.5), size=2, colour="darkgreen") + geom_segment(aes(x = -5, y = 9.5, xend = -25, yend = 9.5), arrow = arrow(length = unit(0.5, "cm")), size=2, colour="darkmagenta") + geom_segment(aes(x = 5, y = 9.5, xend = 25, yend = 9.5), arrow = arrow(length = unit(0.5, "cm")), size=2, colour="darkmagenta") 
-p <- p + graphic.settings + theme(legend.position="none", legend.title = element_blank())
 
-png("../descriptive/descriptive.png", width=500, height=250)
+setwd("/Users/visconti/Documents/Teaching/short_intro_stats/img/descriptive")
+
+pp <- data.frame(x=c(6, 34, 40, 55, 175, 0, 0), y=c(rep(0, 5), 1, -1))
+
+p <- ggplot(pp, aes(x=x, y=y, label=x)) + geom_point(size=3) + geom_segment(aes(x = 0, y = 0, xend = 180, yend = 0), size=1) +  geom_text(vjust = 2) 
+p <- p +  geom_segment(aes(x = 40, y = -0.3, xend = 40, yend = -0.1), arrow = arrow(length = unit(0.5, "cm")), size=1, colour="darkmagenta") + annotate('text', x = 40, y = -0.35, label = "Median", parse=T, size=5, colour="darkmagenta")
+p <- p + ylim(-0.4, 0.4) + graphic.settings + theme(legend.position="none", legend.title = element_blank()) + theme(axis.text.y=element_blank()) + xlab("") + ylab("")  + theme(panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank(), panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank(), axis.ticks.y=element_blank(), panel.border = element_blank()) + scale_x_discrete(breaks=NULL) 
+
+
+
+png("median_outlier.png", width=500, height=250)
 print(p)
 dev.off()
+
+p <- p +  geom_segment(aes(x = 62, y = -0.3, xend = 62, yend = -0.1), arrow = arrow(length = unit(0.5, "cm")), size=1, colour="darkgreen") + annotate('text', x = 62, y = -0.35, label = "Mean", parse=T, size=5, colour="darkgreen")
+
+png("mean_outlier.png", width=500, height=250)
+print(p)
+dev.off()
+
 
 
 

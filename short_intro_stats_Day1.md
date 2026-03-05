@@ -2887,6 +2887,17 @@ updateButton_exercise_9();
 <!-- La mediana non e' influenzata da valori anomali o estremi (outliers) -->
 
 ---
+## Median and outliers
+
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/descriptive/median_outlier.png" img height="300px" border="4px"/>
+</center>
+
+:dart: &nbsp;&nbsp;&nbsp; Robust to outliers
+
+---
 ## Quartiles
 
 <span style="display:block; height:20px;"></span>
@@ -3052,6 +3063,17 @@ Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori
 <!-- La media non e' particolarmente robusta rispetto agli outliers. Il valore atipico SOVRADIMENSIONA la media.
 
 Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori alla media per evidenziare queste situazioni  -->
+
+---
+## Mean and outliers
+
+<span style="display:block; height:50px;"></span>
+
+<center>
+<img src="./img/descriptive/mean_outlier.png" img height="300px" border="4px"/>
+</center>
+
+:dart: &nbsp;&nbsp;&nbsp; Sensitive to outliers
 
 ---
 ## Mode *vs* &nbsp;median *vs* &nbsp;mean
