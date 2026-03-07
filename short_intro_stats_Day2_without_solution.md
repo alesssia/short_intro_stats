@@ -34,11 +34,11 @@ section {
 ---
 ## Recap
 
-<span style="display:block; height:1px;"></span>
 
 <div style="font-size: 90%">
 
 - The collection, organisation, summarisation, and analysis of data <br/> &nbsp;&nbsp;&nbsp; &rarr; *Descriptive* &nbsp;statistics
+
 - The drawing of inferences about a body of data when only a part of the data is observed <br/> &nbsp;&nbsp;&nbsp; &rarr; *Inferential* &nbsp;statistics
 
 <span style="display:block; height:1px;"></span>
@@ -56,13 +56,13 @@ section {
 ---
 ## Recap
 
-<span style="display:block; height:1px;"></span>
 
 <div style="font-size: 90%">
 
-- There are different types of data
+- There are different types of variables
 - Categorical variables  are described with absolute and relative frequencies
-- Numerical variables are described with measures of central tendency (mode, median, mean) and dispersion (range, IQR, standard deviation)
+- Numerical variables are described with measures of central tendency, dispersion, and correlation
+- Variables can be summarised with multiple graphical representations 
 - Parameters (calculated on the population) *vs*&nbsp; statistics (calculated on the sample)
 
 </div>
@@ -77,53 +77,39 @@ section {
 ---
 ## Learning objectives
 
-<span style="display:block; height:50px;"></span>
 
-- Know the characteristics of the Normal distribution
-- Know the characteristics of the Standard Normal distribution
-- Know the characteristics of the Student's $\mathcal{t}$ distribution
+- Understand the characteristics of the Normal and the Standard Normal distributions
+- Calculate and interpret $z$-scores
+- Determine the proportion of individuals in a population who exhibits a certain characteristic
+- Calculate the probability that an individual in a population exhibits a certain characteristic
 
----
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/normal/PPDAC.png" img height="500px" border="0px"/>
-</center>
-
-<div style="font-size: 50%" align="right">
-
-Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
-
-</div>
 
 ---
-## Let's go back to populations
+## Population distribution
 
 <div class="columns">
 <div>
 
 <span style="display:block; height:10px;"></span>
 
-Birth weight distribution for British twins
+What is the distribution of birth weight among English twins?
 
-<span style="display:block; height:155px;"></span>
+<span style="display:block; height:180px;"></span>
 
 <div style="font-size: 80%" align="right">
 
-$N=1,000,000$
-$\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
-$median = 2408\text{ g}$
+$N=1 \text{M}$
+$median = 2400\text{ g}$
+$\mu = 2400\text{ g}; \text{ } \sigma = 580\text{ g}$
 
 </div>
 
 </div>
 <div>
 
-<span style="display:block; height:30px;"></span>
 
 <center>
-<img src="./img/normal/Twin_BW_hist.png" img height="450px" border="4px"/>
+<img src="./img/normal/Twin_BW_hist.png" img height="550px" border="0px"/>
 </center>
 
 </div>
@@ -131,32 +117,31 @@ $median = 2408\text{ g}$
 <!-- The population distribution is the pattern made by the birth weights of all these babies, which we can obtain from TwinsUK data on the weights for 1M twins born in the UK from 1917 to 1998 to non-Hispanic white women – although this is not the entire set of twin births, it is such a large sample that we can take it as the population. (sono dati simulati a partire da dati reali) -->
 
 ---
-## Let's go back to populations
+## Population distribution
 
 <div class="columns">
 <div>
 
 <span style="display:block; height:10px;"></span>
 
-Birth weight distribution for British twins
+What is the distribution of birth weight among English twins?
 
-<span style="display:block; height:155px;"></span>
+<span style="display:block; height:180px;"></span>
 
 <div style="font-size: 80%" align="right">
 
-$N=1,000,000$
-$\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
-$median = 2408\text{ g}$
+$N=1 \text{M}$
+$median = 2400\text{ g}$
+$\mu = 2400\text{ g}; \text{ } \sigma = 580\text{ g}$
 
 </div>
 
 </div>
 <div>
 
-<span style="display:block; height:30px;"></span>
 
 <center>
-<img src="./img/normal/Twin_BW_hist_normale.png" img height="450px" border="4px"/>
+<img src="./img/normal/Twin_BW_hist_normale.png" img height="550px" border="0px"/>
 </center>
 
 </div>
@@ -174,78 +159,28 @@ Figure shows a normal curve with the same mean and standard deviation as the rec
 <div class="columns">
 <div>
 
-<span style="display:block; height:30px;"></span>
+<span style="display:block; height:40px;"></span>
 
 - $\mathcal{N} = (\mu, \sigma^2)$
-- $\text{mode} \equiv \text{median} \equiv \text{mean}$
+- $\text{mode} \equiv \text{mean} \equiv \text{median}$
 - Symmetrical
-
-
-<span style="display:block; height:120px;"></span>
-
-<div style="font-size: 80%" align="right">
-
-$f(x)={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}$
-
-</div>
 
 </div>
 <div>
 
-<span style="display:block; height:30px;"></span>
+
 
 <center>
-<img src="./img/normal/Twin_BW_normale.png" img height="450px" border="4px"/>
+<img src="./img/normal/Twin_BW_normale.png" img height="550px" border="0px"/>
 </center>
 
 </div>
 
-<!-- La distribuzione GAUSSIANA è una distribuzione caratterizzata da una forma a campana.
-E' simmetrica.
-Definita in maniera univoca dalla media e dalla deviazione standard 
-
-sigma^2 e' la varianza <!-- The normal distribution is characterized by its mean, or expectation, and its standard deviation.
+<!-- The normal distribution is characterized by its mean, or expectation, and its standard deviation.
 
 It is an impressive achievement to be able to summarize over a million births by just these two quantities. 
  -->
 
----
-## The Normal distribution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:40px;"></span>
-
-- $\text{Area under the curve} = 1$
-- proportion $\equiv$ likelihood
-
-<span style="display:block; height:150px;"></span>
-
-<div style="font-size: 70%" align="right">
-
-$\text{very low birth weight (VLBW)} < 1500 \text{ g}$
-$\text{Twins with VLBW} = 6\%$
-$\mathcal{P}(\text{twins with VLBW}) = 0.06$
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-<center>
-<img src="./img/normal/Twin_BW_normale_area.png" img height="450px" border="4px"/>
-</center>
-
-</div>
-
-<!-- il fatto che l'area e' 1 dipende dal fatto che la normale sia una distribuzione di probabilita'
-
-For medical rather than statistical reasons, babies below 1,500 g ‘very low birth weight’. Figure 3.2(d) shows that we would expect 6% of babies in this group to be very low birth weight – in fact the actual number is ~74K (0.7%), in close agreement with the prediction from the normal curve. 
-
- -->
 
 ---
 ### Exercise #1
@@ -255,10 +190,10 @@ For medical rather than statistical reasons, babies below 1,500 g ‘very low bi
 
 <span style="display:block; height:10px;"></span>
 
-<div style="font-size: 90%">
+<div style="font-size: 85%">
 
-:question: &nbsp;&nbsp;&nbsp; Which distributions has the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; largest mean?
+:question: &nbsp;&nbsp;&nbsp; Which curve has the largest 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mean?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Green
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Blue
@@ -272,11 +207,13 @@ For medical rather than statistical reasons, babies below 1,500 g ‘very low bi
 <span style="display:block; height:80px;"></span>
 
 <center>
-<img src="./img/normal/1200px-Normal_Distribution_PDF.svg_covered.png" img height="300px" border="4px"/>
+<img src="./img/normal/1200px-Normal_Distribution_PDF.svg_covered.png" img height="350px" border="4px"/>
 </center>
 
 </div>
 </div>
+
+<span style="display:block; height:1px;"></span>
 
 
 ---
@@ -287,10 +224,10 @@ For medical rather than statistical reasons, babies below 1,500 g ‘very low bi
 
 <span style="display:block; height:10px;"></span>
 
-<div style="font-size: 90%">
+<div style="font-size: 85%">
 
-:question: &nbsp;&nbsp;&nbsp; Which distributions has the 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; largest standard deviation?
+:question: &nbsp;&nbsp;&nbsp; Which curve has the largest 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standard deviation?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Green
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Blue
@@ -304,43 +241,36 @@ For medical rather than statistical reasons, babies below 1,500 g ‘very low bi
 <span style="display:block; height:80px;"></span>
 
 <center>
-<img src="./img/normal/1200px-Normal_Distribution_PDF.svg_sd_covered.png" img height="300px" border="4px"/>
+<img src="./img/normal/1200px-Normal_Distribution_PDF.svg_sd_covered.png" img height="350px" border="4px"/>
 </center>
 
 </div>
 </div>
 
+<span style="display:block; height:1px;"></span>
 
 ---
-## The Normal distribution
+## Three-sigma rule
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:px;"></span>
+<span style="display:block; height:60px;"></span>
 
-<div style="font-size: 80%">
+<div style="font-size: 85%">
 
-- 3 $\sigma$ rule:
-  - 68% of the observed values are at 1 $\sigma$ from the mean
-  - 95% at 2 $\sigma$
-  - 99.7% at 3 $\sigma$
+- approximately 68% of the values lie within one standard deviations (1 $\sigma$) of the mean
 
-<span style="display:block; height:1px;"></span>
-
-- Empirical rule:
-  - values $< 2 \sigma$ are *"common"*
-  - values $> 2 \sigma$ are *"unusual"*  
-  - values $> 3 \sigma$ are *"outliers"*  
 
 </div>
 </div>
 <div>
-<span style="display:block; height:80px;"></span>
 
-<center>
-<img src="./img/normal/Standard_Normal_Distribution.png" img height="370px" border="4px"/>
-</center>
+<span style="display:block; height:10px;"></span>
+
+
+<img src="./img/normal/3sigma_1.png" img height="320px" border="0px"/>
+
 
 </div>
 
@@ -348,8 +278,112 @@ For medical rather than statistical reasons, babies below 1,500 g ‘very low bi
 
 68% at 1SD -> valori comuni vs valori inusuali -->
 
+
 ---
-## Outliers
+## Three-sigma rule
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<div style="font-size: 85%">
+
+- approximately 68% of the values lie within one standard deviations (1 $\sigma$) of the mean
+- approximately 95% lie within 2 $\sigma$ 
+
+</div>
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<img src="./img/normal/3sigma_2_a.png" img height="320px" border="0px"/>
+
+
+</div>
+
+---
+## Three-sigma rule
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<div style="font-size: 85%">
+
+- approximately 68% of the values lie within one standard deviations (1 $\sigma$) of the mean
+- approximately 95% lie within 2 $\sigma$ 
+
+</div>
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<img src="./img/normal/3sigma_2_b.png" img height="320px" border="0px"/>
+
+
+</div>
+
+---
+## Three-sigma rule
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<div style="font-size: 85%">
+
+- approximately 68% of the values lie within one standard deviations (1 $\sigma$) of the mean
+- approximately 95% lie within 2 $\sigma$ 
+- approximately 99.7% lie within 3 $\sigma$ 
+
+</div>
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+
+<img src="./img/normal/3sigma_3_a.png" img height="320px" border="0px"/>
+
+
+</div>
+
+---
+## Three-sigma rule
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:60px;"></span>
+
+<div style="font-size: 85%">
+
+- approximately 68% of the values lie within one standard deviations (1 $\sigma$) of the mean
+- approximately 95% lie within 2 $\sigma$ 
+- approximately 99.7% lie within 3 $\sigma$ 
+
+
+</div>
+</div>
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+
+<img src="./img/normal/3sigma_3_b.png" img height="320px" border="0px"/>
+
+
+</div>
+
+
+
+---
+## Back to the boxplot.
 
 <span style="display:block; height:1px;"></span>
 
@@ -360,295 +394,450 @@ For medical rather than statistical reasons, babies below 1,500 g ‘very low bi
 <!-- Se i dati sono distribuiti normalmente c'e' una corrispondenza tra 1.5IQR dal 1o e 3o quartile e le standard deviation dalla media 
 1.5 IQR (fence of the boxplot) -> If the data are normally distributed, the fence will be 2.7 standard deviations from the mean, so cases outside of it will be quite rare (0.4%)
 -->
+-->
 
 ---
 ### Exercise #3
 
 <div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; The height of the Italian male population is distributed according to
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a Normal distribution with mean 170 cm and standard deviation 9.5 cm
+:question: &nbsp;&nbsp;&nbsp; The height of the Italian male population follows a Normal distribution  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with a mean of 170 cm and a standard deviation of 9.5 cm.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate the following values, when possible
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The median height
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $>170 \text{ cm}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) The proportion of Italian men taller than $170 \text{ cm}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The values considered unusual and/or outliers
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) The most common height
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) The range that includes 68% of the individuals
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) The tallest Italian man's height
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) The height of the tallest Italian man
 
 </div>
 
 
 ---
-## Proportion $\equiv$ likelihood
+## Characterize a single observation
 
-<div class="columns">
-<div>
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 90%">
+
+Suppose we are caring for a newborn twin who weighs 1450g. 
+
+</div>
+
+<span style="display:block; height:50px;"></span>
+
+<div style="font-size: 90%" align="right">
+
+How can this newborn’s weight be characterized <br/> in relation to the overall population?
+
+</div>
+
+---
+## Let’s take a step back…
+
+<div style="font-size: 90%">
+
+<img src="./img/normal/Twin_BW_normale_zscore.png" img height="500px" border="0px" align="right"/>
+
+<span style="display:block; height:70px;"></span>
+
+- The mean indicates the center of a distribution
+- The standard deviation indicates the "typical" distance from the mean
+
+</div>
+
+
+---
+## Characterize a single observation
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 90%">
+
+Suppose we are caring for a newborn twin who weighs 1450g
+
+- The mean indicates the center of a distribution
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 1450\text{ g} < \mu = 2400\text{ g}$ &nbsp;&nbsp; $\rightarrow$ &nbsp;&nbsp; $x - \mu = 1450\text{ g}-2400\text{ g}=-950\text{ g}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ The newborn weighs below the mean
+
+---
+## Characterize a single observation
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 90%">
+
+Suppose we are caring for a newborn twin who weighs 1450g
+
+- The mean indicates the center of a distribution
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 1450\text{ g} < \mu = 2400\text{ g}$ &nbsp;&nbsp; $\rightarrow$ &nbsp;&nbsp; $x - \mu = 1450\text{ g}-2400\text{ g}=-950\text{ g}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ The newborn weighs below the mean
+
+- The standard deviation indicates the "typical" distance from the mean
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $|x - \mu| = 950\text{ g} > \sigma = 580\text{ g}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ The weight is "atypically" far from the mean
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+</div>
+
+---
+## Characterize a single observation
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 90%">
+
+Suppose we are caring for a newborn twin who weighs 1450g
+
+- The mean indicates the center of a distribution
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x = 1450\text{ g} < \mu = 2400\text{ g}$ &nbsp;&nbsp; $\rightarrow$ &nbsp;&nbsp; $x - \mu = 1450\text{ g}-2400\text{ g}=-950\text{ g}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ The newborn weighs below the mean
+
+- The standard deviation indicates the "typical" distance from the mean
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $|x - \mu| = 950\text{ g} > \sigma = 580\text{ g}$ &nbsp;&nbsp; $\rightarrow$ &nbsp;&nbsp; $\frac{x - \mu}{\sigma} = \frac{-950\text{ g}}{580\text{ g}} = -1.87$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ The weight is "atypically" far from the mean
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ It is an (almost) "unusual" weight
+
+</div>
+
+---
+## Characterize a single observation
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 90%">
+
+Suppose we are caring for a newborn twin who weighs 1450g
+
+<span style="display:block; height:0px;"></span>
+
+<img src="./img/normal/Twin_BW_normale_zscore_annotated.png" img height="450px" border="0px" align="right"/>
+
+<span style="display:block; height:1px;"></span>
+
+
+- The mean indicates the center of a distribution
+&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ The newborn weighs below the mean
+
+- The standard deviation indicates the "typical" distance from the mean
+&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ The weight is "atypically" far from the mean
+&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ It is an (almost) "unusual" weight
+
+</div>
+
+---
+## The $z$-score
+
+<div style="font-size: 120%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z= \frac{x - \mu}{\sigma}$
+
+</div>
 
 <span style="display:block; height:20px;"></span>
 
 <div style="font-size: 90%">
 
-- 6% of the twins have a very low birth weight
-- The probability of being very low birth weight is 0.06
+- Indicates whether an observation is above or below the population mean
+- Indicates whether an observation’s deviation from the mean is large or small relative to the population’s typical deviation
+
+</div>
+
+
+---
+### Exercise #4 
+
+<div style="font-size: 63%">
+
+:question: &nbsp;&nbsp;&nbsp; Maria suffered a traumatic brain injury following an accident, and the neurologist  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; caring for her administered three tests.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1.$ Memory test: Maria heard words and had to repeat them. She recalled 6 words;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the general population recalls a mean of 7 objects, with a standard deviation of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.3 words.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $2.$ Object naming test: Maria had to identify objects from drawings. She recognized
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7; the general population recognizes a mean of 10 objects, with a standard deviation 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of 0.59 objects.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $3.$ Stroop test: Maria was given a list of colours written in different inks and had to 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name the ink colour as quickly as possible. She took 15.7 seconds; the general 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population  takes a mean of 16.2 seconds, with a standard deviation of 1.3 seconds.
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Based on these results, should the neurologist focus on Maria’s memory, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object naming ability, or attention in future visits?
+
+</div>
+
+
+---
+## The Standard Normal distribution
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 90%">
+
+- $z = \frac{x - \mu}{\sigma}$
+- $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
+
+</duv>
+
+<img src="./img/normal/n2z.png" img height="400px" align="right" border="0px"/>
+
+
+---
+## The Standard Normal distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:80px;"></span>
+
+<div style="font-size: 90%">
+
+- $Z = (0, 1)$
+- Area under the curve. $= 1$
+- proportion $\equiv$ probability
+
+</div>
+
+</div>
+<div>
 
 <span style="display:block; height:20px;"></span>
 
-<div align="right">
-How did we get these numbers?
-</div>
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:30px;"></span>
-
 <center>
-<img src="./img/normal/Twin_BW_normale_area.png" img height="450px" border="4px"/>
+<img src="./img/normal/normal_table_zoom.jpg" img height="420px" border="4px"/>
 </center>
 
 </div>
-
----
-## The Standard Normal distribution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-- $\mathcal{N} = Z = (0, 1)$
-
-</div>
-<div>
-
 </div>
 
-<!-- Distribuzione normale standardizzata -->
+<!-- 
+this is also known as her Z-score, which simply measures how many standard deviations a data-point is from the mean.
 
----
-## The Standard Normal distribution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-- $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
-
-</div>
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/normal/n2z_1.png" img height="400px" border="4px"/>
-</center>
-</div>
-
-<!-- Magenta: mu=4, sd=1.5 -->
-
----
-## The Standard Normal distribution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-- $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
-
-- $z = \frac{x - \mu}{}$
-</div>
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/normal/n2z_2.png" img height="400px" border="4px"/>
-</center>
-</div>
-
----
-## The Standard Normal distribution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-- $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
-
-- $z = \frac{x - \mu}{\sigma}$
-</div>
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/normal/n2z_3.png" img height="400px" border="4px"/>
-</center>
-</div>
-
----
-## The Standard Normal distribution
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-- $\mathcal{N} = (\mu, \sigma^2) \rightarrow Z = (0, 1)$
-
-- $z = \frac{x - \mu}{\sigma}$
-
-</div>
-<div>
-
-<center>
-<img src="./img/normal/normal_table.jpg" img height="550px" border="4px"/>
-</center>
-</div>
-</div>
-
-<!-- E perche la SND ci piace? Perche' esistono delle tavole che ci dicono qual e' l'area sottesa  ad una certa porzione della curva, che corrispondono alla probabilita' di trovare (nel caso di queste tavole) un valore < di quello osservato (area colorata)
+E perche la SND ci piace? Perche' esistono delle tavole che ci dicono qual e' l'area sottesa  ad una certa porzione della curva, che corrispondono alla probabilita' di trovare (nel caso di queste tavole) un valore < di quello osservato (area colorata)
 
 Ci sono diverse versioni di queste tabelle, per esempio quella complementare che riporta l'area per la zona bianca (probabilita' di osservare valori piu' estremi) -->
 
 ---
-### The Standard Normal distribution in practice
+## Proportion $\equiv$ probability
+
 
 <div style="font-size: 90%">
 
-<div class="columns">
-<div>
+<img src="./img/normal/Twin_BW_normale_area.png" img height="500px" border="0px" align="right"/>
 
-<span style="display:block; height:30px;"></span>
+<span style="display:block; height:40px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-</div>
-<div>
-
-<span style="display:block; height:360px;"></span>
-
-</div>
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
-
-</div>
-
----
-### The Standard Normal distribution in practice
-
-<div style="font-size: 90%">
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{1500\text{ g} - 2404\text{ g}}{580\text{ g}}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1.56$
+- 6% of twins are born with very low birth weight (< 1500g)
+- The probability of being born with very low birth weight is 0.06
 
 <span style="display:block; height:80px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
-
-</div>
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/normal/normal_table_zoom.jpg" img height="380px" border="4px"/>
-</center> 
-
-</div>
+<div align="right">
+But how was it calculated? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 </div>
 
 </div>
 
 ---
-### The Standard Normal distribution in practice
+## Let’s calculate the probability/proportion.
 
-<div style="font-size: 90%">
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp; What is the probability that a twin is born with very low birth weight?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (2400, 580^2)$
+
+<span style="display:block; height:1px;"></span>
+
+
+
+
+</div>
+
+---
+## Let’s calculate the probability/proportion.
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp; What is the probability that a twin is born with very low birth weight?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (2400, 580^2)$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Compute the $z$-score
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{x - \mu}{\sigma} = \frac{1500-2400}{580} = \frac{-900}{580} = -1.55$
+
+</div>
+
+---
+## Let’s calculate the probability/proportion.
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp; What is the probability that a twin is born with very low birth weight?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (2400, 580^2)$
+
+<img src="./img/normal/Twin_BW_normale_area_z.png" img height="400px" align=right border="0px"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Compute the $z$-score
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{x - \mu}{\sigma} = \frac{1500-2400}{580} = \frac{-900}{580} = -1.55$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Draw a Normal Distribution, and 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  shade the area we are interested in
+
+</div>
+
+---
+## Let’s calculate the probability/proportion.
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp; What is the probability that a twin is born with very low birth weight?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (2400, 580^2)$
+
+<img src="./img/normal/normal_table_zoom.jpg" img height="350px" align=right border="4px"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Compute the $z$-score
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{x - \mu}{\sigma} = \frac{1500-2400}{580} = \frac{-900}{580} = -1.55$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Draw a Normal Distribution, and 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  shade the area we are interested in
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Use a Unit Normal Table to find 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the area of the shaded curve
+
+</div>
+
+---
+## Let’s calculate the probability/proportion.
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp; What is the probability that a twin is born with very low birth weight?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (2400, 580^2)$
+
+<img src="./img/normal/panic.gif" img height="350px" align=right border="4px"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Compute the $z$-score
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{x - \mu}{\sigma} = \frac{1500-2400}{580} = \frac{-900}{580} = -1.55$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Draw a Normal Distribution, and 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  shade the area we are interested in
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Use a Unit Normal Table to find 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the area of the shaded curve
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ There are no negative z-scores
+
+</div>
+
+---
+## Find the area of the shaded curve
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:30px;"></span>
+<span style="display:block; height:1px;"></span>
 
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{1500\text{ g} - 2404\text{ g}}{580\text{ g}}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1.56$
+<center>
+<img src="./img/normal/Twin_BW_normale_area_z.png" img height="450px" border="0px"/>
+</center>
 
 </div>
 <div>
 
-<span style="display:block; height:160px;"></span>
+<span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/normal/area_normal_symmetrical.png" img height="180px" border="4px"/>
-</center> 
+<img src="./img/normal/Twin_BW_normale_area_z_simmetrica.png" img height="450px" border="0px"/>
+</center>
 
 </div>
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = \text{ ?}$
+---
+## Find the area of the shaded curve
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+
 
 </div>
+<div>
+
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/normal/Twin_BW_normale_area_z_1-alpha.png" img height="450px" border="0px"/>
+</center>
+
+
+</div>
+</div>
+
+
+---
+## Compute the probability/proportion
+
+<span style="display:block; height:0px;"></span>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp; What is the probability that a twin is born with very low birth weight?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (2400, 580^2)$
+
+<img src="./img/normal/normal_table_zoom_example.jpg" img height="350px" align=right border="4px"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Compute the $z$-score
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $z = \frac{x - \mu}{\sigma} = \frac{1500-2400}{580} = \frac{-900}{580} = -1.55$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Draw a Normal Distribution, and 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  shade the area we are interested in
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Use a Unit Normal Table to find 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the area of the shaded curve
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P} = 1 - 0.9394 = 0.0606 \rightarrow 6.06\%$
 
 <!-- Fare vedere che la curva e' simmetrica quindi possiamo usare 1.56 per conoscere l'area -->
 
----
-### The Standard Normal distribution in practice
 
-<div style="font-size: 90%">
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-:pushpin: &nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{z} = \frac{x - \mu}{\sigma} =  \frac{1500\text{ g} - 2404\text{ g}}{580\text{ g}}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= -1.56$
-
-</div>
-<div>
-
-<span style="display:block; height:60px;"></span>
-
-<center>
-<img src="./img/normal/normal_table_zoom_example.jpg" img height="350px" border="4px"/>
-</center> 
-
-</div>
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P}(x < 1500 \text{ g}) = 1 - 0.9406 = 0.0594 \rightarrow 5.94\%$
-
-</div>
 
 ---
-### Exercise #4
+### Exercise #5
 
 <div style="font-size: 80%" >
 
-:question: &nbsp;&nbsp;&nbsp; Not knowing that the baby has a twin, the pediatrician tells to the mother that
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a birth weight lower than $2500$ g is unusual. Should the mother be worried?
+:question: &nbsp;&nbsp;&nbsp;  Not knowing that the baby is a twin, the pediatrician tells the mother that 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a birth weight below 2500 g is unusual. Is it really unusual?
 
 </div>
 
@@ -662,6 +851,9 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
 
 </div>
+
+<span style="display:block; height:140px;"></span>
+
 
 
 </div>
@@ -680,80 +872,38 @@ Ci sono diverse versioni di queste tabelle, per esempio quella complementare che
 
 
 ---
-## The Student's $\mathcal{t}$ distribution
+## Percentiles
 
-<div class="columns">
-<div>
+<span style="display:block; height:1px;"></span>
+
+<center>
+<img src="./img/descriptive/percentile.png" img height="350px" border="0px"/>
+</center>
+
+<!-- Mentre la median divide i dati in due meta' esatte, molto usati sono anche i quartili, che dividono i dati in 4 parti uguali -->
 
 <span style="display:block; height:10px;"></span>
 
-<div style="font-size: 80%" >
+<div style="font-size: 90%" align="right">
 
-- When observations are too little to be approximated to a Normal distribution
-  
-</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{P} = 0.57$ tells us that our newborn twin is in the 57th percentile
 
 </div>
-<div>
-
-<span style="display:block; height:5px;"></span>
-
-<center>
-<img src="./img/normal/tdist.png" img height="450px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- Quando la dimensione campionaria e' grande la nostra fiducia nell'approssimare sigma con la varianza campionaria e' ben riposta  e possiamo usare la normale per il calcolo dei CI, ma cosa succede quando i campioni soo piccoli? Usiamo la distribuzione  di Student
-
-- e' una famiglia di distribuzioni, 1 per ogni valore campionario n-1
-
-Come la normale:
-- ha media 0
-- e' simmetrica
-- ha varianza >1 che si avvicina a 1 al crescere di N
-
-
-Meno appuntita al centro e code piu' alte
- -->
 
 ---
-## The Student's $\mathcal{t}$ distribution
+## Summary
 
-<div class="columns">
-<div>
+<span style="display:block; height:0px;"></span>
 
-<span style="display:block; height:10px;"></span>
+<div style="font-size: 80%">
 
-<div style="font-size: 80%" >
-
-- When observations are too little to be approximated to a Normal distribution
-
-- Student's $\mathcal{t}$ distribution
-  - keeps into account the degree of freedom $(\mathcal{df})$
-  - one sample of size $n \rightarrow \mathcal{df} = n -1$
-
+- Many natural phenomena follow a Normal distribution
+- The Normal distribution is defined by the mean and standard deviation and corresponds to a probability distribution
+- A population’s Normal distribution allows us to determine both the probability of observing a certain value and its expected frequency
+- If the data follow a Normal distribution, approximately 68% of values lie within 1 standard deviation of the mean, 95% within 2, and 99.7% within 3
+- The z-score allows us to position an observation relative to the reference population and to compare data from very different distributions
 
 </div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/normal/tdist_table.png" img height="550px" border="4px"/>
-</center>
-
-</div>
-</div>
-
-<!-- una famiglia di distribuzioni, 1 per ogni valore campionario n-1
-
- infatti la t-dist tiene conto dei valori campionari n-1, detti anche Gradi di liberta', che misurano la quantità di informazione disponibile nei dati che può essere usata per stimare sigma (affidabilità della stima s)
-
-All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più affidabile: con n grande la distribuzione t si avvicina alla distribuzione normale
- -->
-
 
 ---
 ![bg opacity](./img/backgrounds/confidence_intervals_bg.png)
@@ -769,22 +919,9 @@ All’aumentare di n (e dei GdL) la stima di sigma attraverso s è sempre più a
 
 <span style="display:block; height:50px;"></span>
 
-- Understanding how to move from empirical to theoretical distributions
-- Be able to calculate and interpret point and interval estimates (confidence intervals)
-
----
-
-<span style="display:block; height:2px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/PPDAC.png" img height="500px" border="0px"/>
-</center>
-
-<div style="font-size: 50%" align="right">
-
-Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
-
-</div>
+- Be able to use sample statistics to infer population parameters
+- Be able to communicate the uncertainty of a statistic
+- Be able to calculate and interpret a confidence interval
 
 ---
 ## &nbsp;&nbsp;&nbsp; :warning:  Disclaimer  :warning:
@@ -793,10 +930,10 @@ Spiegelhalter, D., *The Art of Statistics: Learning From Data*, Pelican, 2019
 
 <div style="font-size: 90%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If this part seems difficult to you, it's because it's really difficult.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If this part seems difficult, it’s because it really is.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You may have to spend quite a bit of time before understanding
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  it completely. Don't worry, we've all been there!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You may need to spend some time fully understanding it
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Don’t worry, we’ve all been there!
 
 </div>
 
@@ -827,292 +964,88 @@ Procedimento induttivo che ha lo scopo di stimare i parametri (caratteristiche) 
 
 Sulla base di un campione estratto casualmente da 1 popolazione cosa può essere detto circa la popolazione da cui il campione è stato estratto? -->
 
----
-## How accurate are we?
-
-<div style="font-size: 90%">
-
-The mean BMI for Italian 11 years old girls is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
-
-</div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/Females_11yo_complete_dataset.png" img height="380px" border="4px"/>
-</center>
-
-<!-- In the age band of 11 yo there were about 400 girls. Since we know the survey was based on a proper random-sampling scheme, it is fairly reasonable to assume that the study population matches the target population, which is the Italian adolescent population. The crucial question is: how close are these statistics to what we would have found had we been able to ask every 11yo in the country? 
-
-Magenta dotted line is the mean
-
-As an illustration of how the accuracy of statistics depends on sample size, we shall pretend for the moment that the men in the survey in fact represent the population in which we are interested. 
--->
 
 ---
-## Sample size
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 10$
-
-</div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/Females_11yo_N10.png" img height="420px" border="4px"/>
-</center>
-
-<!--
-For illustration, we then take successive samples of individuals from this ‘population’ of 760 men, pausing when we reach 10, 50, 100, 200 and 380 men. 
-
-The data distributions of these samples are shown 
-
-it is clear that the smaller samples are ‘bumpier’, and the summary stats (mean here) is sensitive to single data-points
-
- Magenta dotted line is the mean
-Density should use another scale -->
-
----
-## Sample size
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 50$
-
-</div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/Females_11yo_N50.png" img height="420px" border="4px"/>
-</center>
-
-<!-- the rather high number of partners  in the first sample of ten individuals gets steadily overwhelmed, as the statistics get closer and closer to those of the whole group of 796 men as the sample size increases. -->
-
----
-## Sample size
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 100$
-
-</div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/Females_11yo_N100.png" img height="420px" border="4px"/>
-</center>
-
-<!-- the rather high number of partners  in the first sample of ten individuals gets steadily overwhelmed, as the statistics get closer and closer to those of the whole group of 796 men as the sample size increases. -->
-
----
-## Sample size
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 200$
-
-</div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/Females_11yo_N200.png" img height="420px" border="4px"/>
-</center>
-
-<!-- the rather high number of partners  in the first sample of ten individuals gets steadily overwhelmed, as the statistics get closer and closer to those of the whole group of 796 men as the sample size increases. -->
-
----
-## Sample size
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n = 300$
-
-</div>
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/Females_11yo_N300.png" img height="420px" border="4px"/>
-</center>
-
-<!-- the rather high number of partners  in the first sample of ten individuals gets steadily overwhelmed, as the statistics get closer and closer to those of the whole group of 796 men as the sample size increases. -->
-
----
-### Exercise #5
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%">
-
-:question: &nbsp;&nbsp;&nbsp; When the sample size increases, an estimate of a parameter
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) improves
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) worsens
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) is sensitive to single data-points
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) there is no difference
-
-
-</div>
-
-
----
-## How accurate are we?
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%">
-
-With this example, we introduced two ideas:<br/>
-
-  1. Larger samples improve population parameter estimation
-
-  2. If we keep extracting (sub)samples, we get a feeling for ​​the variation (aka confidence interval) around the "plausible" value of the population parameter
-
-<span style="display:block; height:1px;"></span>
-
-<div align="right">
-
-and so, now?
-
-</div>
-
-</div>
-
----
-## Estimates & confidence intervals
-
-How does one estimate the variation around the true population parameter, if what they are looking for is the true population parameter?
+##  Sampling error
 
 <span style="display:block; height:10px;"></span>
 
-<img src="./img/confidence_intervals/dog-chasing-tail-6.gif" img height="300px" border="0px" style="float: right; padding: 10px 50px 100px 100px;"/>
-
-<!--  
-Now we come to a critical step. In order to work out how accurate these statistics might be, we need to think of how much our statistics might change if we (in our imagination) were to repeat the sampling process many times. In other words, if we repeatedly drew samples of 796 men from the country, how much would the calculated statistics vary?
-
-If we knew how much these estimates would vary, then it would help tell us how accurate our actual estimate was. But unfortunately we could only work out the precise variability in our estimates if we knew precisely the details of the population. And this is exactly what we do not know.  -->
-
----
-## Estimates & confidence intervals
-
-<span style="display:block; height:10px;"></span>
-
-1. Assuming that the population is similar to the sample <br/> $\rightarrow$ *via* bootstrapping
-
-2. Making mathematical assumptions about the shape of the population distribution <br/> $\rightarrow$ *via* central limit theorem
-
-<!-- There are two ways to resolve this circularity. The first is to make some mathematical assumptions about the shape of the population distribution, and use sophisticated probability theory to work out the variability we would expect in our estimate, and hence how far away we might expect, say, the average of our sample to be from the mean of the population. This is the traditional method that is taught in statistics textbooks, and we shall see how this works in Chapter 9. 
-
-However, there is an alternative approach, based on the plausible assumption that the population should look roughly like the sample. Since we cannot repeatedly draw a new sample from the population, we instead repeatedly draw new samples from our sample! -->
-
----
-## Estimates & confidence intervals
-
-<div style="font-size: 80%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $N_\text{Bootstrapping} = 1000$
-
-</div>
-
-<span style="display:block; height:0px;"></span>
-
 <center>
-<img src="./img/confidence_intervals/bootstrapping.png" img height="450px" border="4px"/>
+<img src="./img/confidence_intervals/sampling_variability_2.png" img height="450px" border="0px"/>
 </center>
 
-<!-- If we repeat this resampling, say, 1,000 times, we get 1,000 possible estimates of the mean. These are displayed as histograms, with each histogram showing the spread of bootstrap estimates around the mean of the original sample. These are known as sampling distributions of estimates, since they reflect the variability in estimates that arise from repeated sampling of data.
+<!--  Sampling error occurs when the sample’s characteristics differ from the population’s characteristics. The greater the discrepancy, the greater the sampling error.  
 
-Figure displays some clear features. The first, and perhaps most notable, is that almost all trace of the skewness of the original samples has gone – the distributions of the estimates based on the resampled data are almost symmetric around the mean of the original data. This is a first glimpse of what is known as the Central Limit Theorem, which says that the distribution of sample means tends towards the form of a normal distribution with increasing sample size, almost regardless of the shape of the original data distribution. 
-
-Additionally, is that the bootstrap distributions get narrower as the sample size increases
- -->
-
----
-## Estimates & confidence intervals
-
-<div style="font-size: 80%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Interval including 95% of the means obtained *via* bootstrapping
-
-</div>
-
-<span style="display:block; height:0px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/bootstrapping_fence.png" img height="450px" border="4px"/>
-</center>
-
-<!-- For example, we can find the range of values that contains 95% of the means of the bootstrap resamples, and call this a 95% uncertainty interval
-for the original estimates, or alternatively they can be called margins of error. These are shown in Table 7.2 – the symmetry of the bootstrap distributions means the uncertainty intervals are roughly symmetric around the original estimate.
-
-Per farlo sfruttiamo le proprieta' della distribuzione normale (indipendentemente dalla distribuzione del campione) 
-
-Ma prima osserviamo ancora che the bootstrap distributions get narrower as the sample size increases, which is reflected in the steadily narrower 95% uncertainty intervals.
- -->
-
- ---
-## Estimates & confidence intervals
-
-<div style="font-size: 80%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Interval including 95% of the means obtained *via* bootstrapping
-
-</div>
-
-<span style="display:block; height:0px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/bootstrapping_CI.png" img height="450px" border="4px"/>
-</center>
-
-<!-- For example, we can find the range of values that contains 95% of the means of the bootstrap resamples, and call this a 95% uncertainty interval
-for the original estimates, or alternatively they can be called margins of error. These are shown in Table 7.2 – the symmetry of the bootstrap distributions means the uncertainty intervals are roughly symmetric around the original estimate.
-
-Per farlo sfruttiamo le proprieta' della distribuzione normale (indipendentemente dalla distribuzione del campione) 
-
-Ma prima osserviamo ancora che the bootstrap distributions get narrower as the sample size increases, which is reflected in the steadily narrower 95% uncertainty intervals.
-The second important feature of Figure 7.3 is that the bootstrap distributions get narrower as the sample size increases, which is reflected in the steadily narrower 95% uncertainty intervals. 
-
-Bootstrapping provides an intuitive, computer-intensive way of assessing the uncertainty in our estimates, without making strong assumptions and without using probability theory. But the technique is not feasible when it comes to, say, working out the margins of error on unemployment surveys of 100,000 people. Although bootstrapping is a simple, brilliant and extraordinarily effective idea, it is just too clumsy to bootstrap such large quantities of data, especially when a convenient theory exists that can generate formulae for the width of uncertainty intervals.
-
+If a sample had dramatically different characteristics than the population, it would provide sample statistics that are dramatically different from the population, creating a lot of sampling error. If you are trying to represent a specific population and get a poor sample,  even if the rest of the study is executed perfectly, the sample results will not represent those of the population, and the entire purpose for doing the study is compromised. Therefore, obtaining a representative sample that minimizes sampling error is critically important. Researchers minimize sampling error with good sampling procedures.
 -->
 
 ---
-### Exercise #6
+##  Sampling error
 
-<span style="display:block; height:1px;"></span>
+<span style="display:block; height:10px;"></span>
 
-:question: &nbsp;&nbsp;&nbsp; When the sample size increases, the accuracy of a parameter 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; estimate...
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) improves
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) worsens
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
+<center>
+<img src="./img/confidence_intervals/sampling_variability_3.png" img height="450px" border="0px"/>
+</center>
 
 ---
-## Let's stop for a minute
+##  Sampling error
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/sampling_variability_4.png" img height="450px" border="0px"/>
+</center>
+
+---
+##  Sampling error
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/sampling_variability_5.png" img height="450px" border="0px"/>
+</center>
+
+---
+## The sampling distribution
+
+<div class="columns">
+<div>
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/confidence_intervals/sampling_distro.png" img height="450px" border="0px"/>
+</center>
+
+</div>
+<div>
 
 <div style="font-size: 90%">
 
-We introduced two difficult and important concepts:
-
-  1. there is a variability in the estimate of a parameter that depends on the sample
-
-  2. the shape of the sampling distribution doesn't depend on the shape of the empirical distribution, and can be approximate to a Normal distribution for large samples
-
 <span style="display:block; height:1px;"></span>
 
-<div align="right">
-
-We now have all the elements for facing the second approach that<br/> can be used to calculate parameters estimates and confidence interval
 
 </div>
+
+</div>
+</div>
+
+
+---
+## The Central Limit Theorem
+
+<span style="display:block; height:2px;"></span>
+
+<div style="font-size: 90%">
+
+- There is variability in the estimate of a parameter that depends on the sample (the sampling distribution).
+
+- We would like to have a range of plausible ("common") values for the population parameter
+
+- The shape of the sampling distribution does not depend on the shape of the empirical distribution and, for large samples, can be approximated by a Normal distribution
+
+
 </div>
 
 <!-- 
@@ -1124,78 +1057,30 @@ We now have all the elements for facing the second approach that<br/> can be use
 
 Rather remarkably, this has all been accomplished without any mathematics except the idea of drawing observations at random. -->
 
+
 ---
-### The sampling distribution & <br/> the central limit theorem
+## Let’s put the jigsaw together
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/sampling_distro.png" img height="350px" border="0px"/>
-</center>
-
-</div>
-<div>
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ &nbsp; standard error (SE)
-
-</div>
-
-</div>
-</div>
-
-
-<!-- Distribuzione campionaria e' la distribuzione di tutti i possibile valori che possono essere assunti da qualche statistica (e.g., la media) calcolata da campioni della stessa dimensione ed estratti casualmente dalla stessa popolazione 
-
-Come si costruisce? 
-1. Estraggo tutti i possibili campioni di dimensione n
-2. Calcolo la statistica di interesse
-3. Tengo traccia di ciascun valore della statistica e della sua frequenza 
-
-La forma della distribuzione delle medie campionarie è approssimativamente normale,  indipendentemente dalla distribuzione dei valori della popolazione d’origine dalla quale i campioni sono estratti, per n sufficientemente grande.
-
-Teorema del limite centrale ci dice che la Distribuzione campionaria tende a presentare una Distribuzione Normale N = (μ, σ2 ), indipendentemente
-dalla forma della distribuzione empirica osservata nel Campione quando
-questo `e sufficientemente grande (≈ n > 30). La statistica misurata viene
-considerata uno stimatore del Parametro μ della distribuzione campiona-
-ria, mentre la sua Standard deviation è la radice quadrata del rapporto tra tra la varianza della popolazione e la dimensione del campione usato per calcolarla 
-anche conosciuta come Errore standard della stima della statistica.
-
-L'errore standard diminuisce al crescere di N e al decrescere della varianza
-
-Quanto deve essere grande il campione perch&egrave; la distribuzione sia normale? 
-Nella maggior parte delle situazioni pratiche, n=30 e' soddisfacente, ma l'approssimazione migliora all'aumentare di n (lo vedremo tra qualche slide) -->
-
----
-## Let's put the pieces together...
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:50px;"></span>
+<span style="display:block; height:2px;"></span>
 
 <div style="font-size: 80%">
 
-- the sampling distribution is a Normal distribution
-- in a Normal distrubution, 95% of the data are at (about) $2 \times \text{SD}$ from the mean
-- a 95% confidence interval is at (about) $2 \times \text{SE}$ from the sampling distribution mean
+- The sampling distribution can be approximated by a Normal distribution
+- In a Normal distribution, about 95% of the values (those "common") lie within two standard deviations of the mean
+- A 95% confidence interval (CI) lies (approximately) $\pm \text{} 2 \times SE$ from the mean of the sampling distribution
 
 </div>
 
 </div>
 <div>
 
-<span style="display:block; height:30px;"></span>
+<span style="display:block; height:120px;"></span>
 
-<center>
-<img src="./img/normal/Standard_Normal_Distribution.png" img height="400px" border="4px"/>
-</center>
+<img src="./img/normal/3sigma_2_a.png" img height="300px" border="0px"/>
+
 </div>
 </div>
 
@@ -1208,115 +1093,79 @@ Tutti concetti che ci torneranno utili tra poco
 -->
 
 ---
-## Calculating confidence intervals
+## Computing a Confidence Interval
 
-<div style="font-size: 90%">
+<div style="font-size: 88%">
 
-:dart: &nbsp; A 95% CI is at (about) $2 \times \text{SE}$ from the sampling distribution mean ($\bar{x}$)
-
-</div>
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:30px;"></span>
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Calculate SE
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Calculate $2 \times \text{SE}$, *i.e.*, $95\%$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Margin of Error (ME)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Calculate the $95\% \text{ CI}$ as 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $(\bar{x} - \text{ ME} \text{ } ; \text{ } \bar{x} + \text{ ME} )$
-
-</div>
-
-</div>
-<div>
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/confidence_intervals/ME_and_CI.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-</div>
-
----
-### Exercise #7
-
-<div style="font-size: 90%" >
-
-The mean BMI for Italian 11 years old girls ($n=403$) is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
-
-:question: &nbsp;&nbsp;&nbsp; Calculate the 95% CI for the true mean $\mu$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{SE}=\sigma/\sqrt{n} = \text{ ?} \rightarrow$ &nbsp;&nbsp;&nbsp; $\hat{\text{SE}}=s/\sqrt{n} = \text{ ?}$
-
-</div>
-
-
----
-### Exercise #8
-
-<div style="font-size: 90%" >
-
-:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the confidence interval?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) none of the above
-
-</div>
-
-
-
-
----
-## Interpreting confidence intervals 
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp; A confidence interval is a range of values which includes the
-&nbsp;&nbsp;&nbsp; estimated parameter with a given degree of confidence
-
----
-## Interpreting confidence intervals 
-
-<div style="font-size: 90%">
-
-&nbsp;&nbsp;&nbsp; If we could sample the population 100 times, 95 would estimate a
-&nbsp;&nbsp;&nbsp;  confidence interval which includes the true population parameter
+:dart: &nbsp; A 95% CI lies ± 2 × SE from the sampling distribution mean ($\bar{x}$)
 
 </div>
 
 <div class="columns">
 <div>
 
-<span style="display:block; height:30px;"></span>
+<span style="display:block; height:50px;"></span>
 
-<div style="font-size: 90%">
+<div style="font-size: 88%">
 
-:pushpin: &nbsp;&nbsp;&nbsp; Population: Italian women 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25-74 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu=123 \text{ mmHg}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Compute the SE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Compute $2 \times \text{SE}$, *i.e.*, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $95\%$ Margin of Error (ME)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Compute the $95\% \text{ CI}$ as 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $(\bar{x} - \text{ ME} \text{ } ; \text{ } \bar{x} + \text{ ME} )$
 
 </div>
 
 </div>
 <div>
 
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/confidence_intervals/womenBP.png" img height="350px" border="4px"/>
+<img src="./img/confidence_intervals/ME_and_CI.png" img height="450px" border="0px"/>
 </center>
 
 </div>
+</div>
+
+---
+### Confidence intervals for the mean
+
+<span style="display:block; height:40px;"></span>
+
+:pushpin: &nbsp;&nbsp;&nbsp; $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} = \text{standard error (SE)}$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sigma =$? $\longrightarrow \hat{SE} = \frac{s}{\sqrt{n}}$
+
+
+
+---
+### Exercise #6
+
+<div style="font-size: 90%" >
+
+In a sample of 403 Italian 11-year-old girls, the mean BMI is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
+
+:question: &nbsp; What is the 95% CI for the true population mean ?
+
+
+</div>
+
+<span style="display:block; height:180px;"></span>
+
+---
+## Interpreting confidence intervals 
+
+<div style="font-size: 90%">
+
+- If we could sample the population 100 times and compute the corresponding 100 CIs, 95 of them would include the true population parameter
+<img src="./img/confidence_intervals/simulated_BMI_CI.png" img height="390px" border="-px" align="right"/>
+
+:pushpin: &nbsp;&nbsp;&nbsp; Population: Italian 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11-year-old girls
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu=18.4  \text{ kg}/\text{m}^2$
+
 </div>
 
 <!-- Cosa rappresentano quindi i CI? Che dati 100 campioni estratti dalla popolazione, 95 stimano un IC al cui interno è compresa la media reale della popolazione e solo 5 stimano un ic che non include la media reale 
@@ -1325,45 +1174,67 @@ a confidence interval is the range of population parameters for which our observ
 -->
 
 ---
-### Exercise #9
+### Exercise #7
 
 <div style="font-size: 75%" >
 
 :question: &nbsp;&nbsp;&nbsp; In the Results section, the authors reported the following
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *In Mexican Americans, the mean age at menarche was 12.09 years 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (95% CI = 11.81 to 12.37 years)*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *In Mexican Americans, the mean age at menarche was 12.09 years*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *(95% CI = 11.81 to 12.37 years old)*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this means that...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This means that...
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the age at menarche for Mexican American girls is included between 11.81 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) The age at menarche for Mexican American girls lies between 11.81
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and 12.37 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 95% of Mexican American girls experience menarche between 11.81 and
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  12.37 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) the mean age at menarche for Mexican American girls has a 95% probability 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of being included between 11.81 and 12.37 years old
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) none of the above
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 95% of Mexican American girls experience menarche between 11.81 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and 12.37 years old
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) The mean age at menarche for Mexican American girls has a 95% 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; probability of being between 11.81 and 12.37 years.
+
+</div>
+
+---
+## The confidence on the confidence intervals 
+
+<span style="display:block; height:2px;"></span>
+
+<div style="font-size: 90%">
+
+- A confidence interval is a range of values which includes the
+ estimated parameter with a given level of confidence (*e.g.*, 95%)
+- Its width depends on the margin of error
+- The margin of error is evaluated as:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $2 \times \text{SE}$ (at a confidence level of 95%)
+
+<span style="display:block; height:60px;"></span>
+
+<div align="right">
+But why do we multiply by 2? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+
+---
+## The confidence level
+
+<div style="font-size: 90%">
+
+:dart: &nbsp; We multiply by the critical value from the Normal distribution $z$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  that corresponds to our confidence level
 
 </div>
 
 
-<!-- Questa differenza di 200 euro a dx e sx della media e' il margine di errore del 95% -->
-
-
----
-## The $\alpha$ level
-
-:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \approx 2 \times \hat{SE} \text{ ; }  \bar{x} + \approx 2 \times \hat{SE})$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $\approx 2$ &nbsp; ?
-
 <div class="columns">
 <div>
 <span style="display:block; height:10px;"></span>
+
 <div style="font-size: 80%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
-| ----: | ----- | ---- | ----|
-| 95% | 5% | 2.5% |  |
+| Confidence Level | $\alpha$ | $\alpha/2$ | 
+| ----: | ----- | ---- | 
+| 95% | 5% | 2.5% |  
 
 </div>
 
@@ -1371,7 +1242,7 @@ a confidence interval is the range of population parameters for which our observ
 <div>
 
 <center>
-<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
+<img src="./img/confidence_intervals/alpha_level.png" img height="440px" border="0px"/>
 </center>
 
 </div>
@@ -1382,10 +1253,14 @@ a confidence interval is the range of population parameters for which our observ
 Quando accettiamo un livello di confidenza del 95% accettiamo implicitamente un errore del 5%, distribuito equamente a dx e sx dell'intrevallo di confidenza (in verde), quindi 2.5% per parte -->
 
 ---
-## The $\alpha$ level
+## The confidence level
 
-:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \approx 2 \times \hat{SE} \text{ ; }  \bar{x} + \approx 2 \times \hat{SE})$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $\approx 2$ &nbsp; ?
+<div style="font-size: 90%">
+
+:dart: &nbsp; We multiply by the critical value from the Normal distribution $z$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  that corresponds to our confidence level
+
+</div>
 
 <div class="columns">
 <div>
@@ -1393,9 +1268,9 @@ Quando accettiamo un livello di confidenza del 95% accettiamo implicitamente un 
 
 <div style="font-size: 80%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
-| ----: | ----- | ---- | ----|
-| 95% | 5% | 2.5% |  |
+| Confidence Level | $\alpha$ | $\alpha/2$ | 
+| ----: | ----- | ---- | 
+| 95% | 5% | 2.5% |
 
 $100\% - 2.5\% = 97.5\%$ 
 </div>
@@ -1404,7 +1279,7 @@ $100\% - 2.5\% = 97.5\%$
 <div>
 
 <center>
-<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
+<img src="./img/confidence_intervals/alpha_level_area.png" img height="440px" border="0px"/>
 </center>
 
 </div>
@@ -1413,10 +1288,14 @@ $100\% - 2.5\% = 97.5\%$
 <!--  e qual e' l'aera di questa parte bianca? E' la totalita' dell'area (1, o 100%) meno l'area bianca (2.5%), quindi 97.5%-->
 
 ---
-## The $\alpha$ level
+## The confidence level
 
-:dart: &nbsp;&nbsp;&nbsp; $\text{95\% CI} = (\bar{x} - \approx 2 \times \hat{SE} \text{ ; }  \bar{x} + \approx 2 \times \hat{SE})$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; $\approx 2$ &nbsp; $\rightarrow 1.96$
+<div style="font-size: 90%">
+
+:dart: &nbsp; We multiply by the critical value from the Normal distribution $z$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  that corresponds to our confidence level
+
+</div>
 
 <div class="columns">
 <div>
@@ -1425,9 +1304,9 @@ $100\% - 2.5\% = 97.5\%$
 
 <div style="font-size: 80%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
-| ----: | ----- | ---- | ----|
-| 95% | 5% | 2.5% | 1.96 |
+| Confidence Level | $\alpha$ | $\alpha/2$ | 
+| ----: | ----- | ---- | 
+| 95% | 5% | 2.5% |
 
 $100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$  
 
@@ -1448,7 +1327,14 @@ $100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$
 coefficiente di attendibilita'-->
 
 ---
-## The $\alpha$ level
+## The confidence level
+
+<div style="font-size: 90%">
+
+:dart: &nbsp; We multiply by the critical value from the Normal distribution $z$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  that corresponds to our confidence level
+
+</div>
 
 <div class="columns">
 <div>
@@ -1456,24 +1342,25 @@ coefficiente di attendibilita'-->
 
 <div style="font-size: 80%" >
 
-| Confidence Level | $\alpha$ | $\alpha/2$ | $z_{\alpha/2}$ |
-| ----: | -----: | ---- | ----:|
-| 95% | 5% | 2.5% | 1.96 |
-| 90% | 10% | 5.0% | 1.65 |
-| 99% | 1% | 0.5% | 2.58 |
+| Confidence Level | $\alpha$ | $\alpha/2$ | 
+| ----: | ----- | ---- | 
+| 95% | 5% | 2.5% |
+| 90% | 10% | 5.0% | 
+| 99% | 1% | 0.5% | 
 
 <span style="display:block; height:10px;"></span>
 
 $100\% - 2.5\% = 97.5\% \rightarrow \mathcal{z} = 1.96$ 
 $100\% - 5.0\% = 95.0\% \rightarrow \mathcal{z} = 1.65$ 
 $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.58$ 
+
 </div>
 
 </div>
 <div>
 
 <center>
-<img src="./img/confidence_intervals/alpha_level.png" img height="400px" border="4px"/>
+<img src="./img/confidence_intervals/alpha_level_area.png" img height="440px" border="0px"/>
 </center>
 
 </div>
@@ -1484,38 +1371,28 @@ $100\% - 0.5\% = 99.5\% \rightarrow \mathcal{z} = 2.58$
 Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 
 ---
-### Exercise #10
+### Exercise #8
 
-<div class="columns">
-<div>
+<div style="font-size: 90%" >
 
-<span style="display:block; height:30px;"></span>
+:question: &nbsp;&nbsp;&nbsp; Given that $\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} \rightarrow$ &nbsp; standard error (SE), 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  how can one reduce the width of the confidence interval?
 
-<div style="font-size: 80%" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) increasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) decreasing $n$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) increasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) decreasing $\sigma$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) increasing the confidence level
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) decreasing the confidence level
 
-:question: &nbsp;&nbsp;&nbsp; The larger the confidence level...
+
+</div>
 
 <span style="display:block; height:10px;"></span>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) the larger the CI
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) the smaller the CI
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) there is no difference
-
-</div>
-
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
-</center>
-
-</div>
-</div>
-
 
 ---
-### Exercise #11
+### Exercise #9
 
 <div class="columns">
 <div>
@@ -1545,8 +1422,10 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 </div>
 </div>
 
+<span style="display:block; height:20px;"></span>
+
 ---
-### Exercise #12
+### Exercise #10
 
 <div class="columns">
 <div>
@@ -1576,8 +1455,181 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 </div>
 </div>
 
+<span style="display:block; height:20px;"></span>
+
+
 ---
-## And for small samples?
+## The Central Limit Theorem
+
+<div style="font-size: 90%">
+
+- There is variability in the estimate of a parameter that depends on the sample (the sampling distribution).
+
+- We would like to have a range of plausible ("common") values for the population parameter
+
+- The shape of the sampling distribution does not depend on the shape of the empirical distribution and, **<u>for large samples</u>**, can be approximated by a Normal distribution
+
+
+<div align="right">
+How large is “large”? &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+</div>
+
+---
+## The Central Limit Theorem
+
+<div style="font-size: 90%">
+
+- There is variability in the estimate of a parameter that depends on the sample (the sampling distribution).
+
+- We would like to have a range of plausible ("common") values for the population parameter
+
+- The shape of the sampling distribution does not depend on the shape of the empirical distribution and, **<u>for large samples</u>**, can be approximated by a Normal distribution
+
+
+<div align="right">
+What if our sample is "small"?
+</div>
+
+</div>
+
+---
+## What if our sample is "small"?
+
+<img src="./img/confidence_intervals/tdist_df_empty.png" img height="440px" border="0px" align="right"/>
+
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 85%" >
+
+- Cannot approximated with a Normal distribution
+- One should use the Student’s $\mathcal{t}$ distribution
+  
+</div>
+
+<!-- Quando la dimensione campionaria e' grande la nostra fiducia nell'approssimare sigma con la varianza campionaria e' ben riposta  e possiamo usare la normale per il calcolo dei CI, ma cosa succede quando i campioni soo piccoli? Usiamo la distribuzione  di Student
+ -->
+
+---
+## The Student's $\mathcal{t}$ distribution 
+
+<img src="./img/confidence_intervals/tdist_df1.png" img height="440px" border="0px" align="right"/>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 85%" >
+
+- It takes into account the degrees of freedom (df)
+
+</div>
+
+<!-- 
+- &egrave; una famiglia di distribuzioni, 1 per ogni valore campionario n-1
+
+Come la normale:
+- ha media 0
+- &egrave; simmetrica
+- ha varianza >1 che si avvicina a 1 al crescere di N
+
+
+Meno appuntita al centro e code pi&ugrave; alte
+ -->
+
+---
+## The Student's $\mathcal{t}$ distribution 
+
+<img src="./img/confidence_intervals/tdist_df1.png" img height="440px" border="0px" align="right"/>
+
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 85%" >
+
+- It takes into account the degrees of freedom (df)
+  - In a sample of size $n$  $\rightarrow \text{df} = n -1$
+  - In two samples of size $n_1$ and $n_2$  $\rightarrow$ &nbsp; $\text{df} = n_1 + n_2 - 2$
+
+</div>
+
+ ---
+## The Student's $\mathcal{t}$ distribution 
+
+<img src="./img/confidence_intervals/tdist_df5.png" img height="440px" border="0px" align="right"/>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 85%" >
+
+- It takes into account the degrees of freedom (df)
+  - In a sample of size $n$  $\rightarrow \text{df} = n -1$
+  - In two samples of size $n_1$ and $n_2$  $\rightarrow$ &nbsp; $\text{df} = n_1 + n_2 - 2$
+  
+</div>
+
+
+<!-- 
+- &egrave; una famiglia di distribuzioni, 1 per ogni valore campionario n-1
+
+Come la normale:
+- ha media 0
+- &egrave; simmetrica
+- ha varianza >1 che si avvicina a 1 al crescere di N
+
+
+Meno appuntita al centro e code pi&ugrave; alte
+ -->
+
+ ---
+## The Student's $\mathcal{t}$ distribution 
+
+<img src="./img/confidence_intervals/tdist_df30.png" img height="440px" border="0px" align="right"/>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 85%" >
+
+- It takes into account the degrees of freedom (df)
+  - In a sample of size $n$  $\rightarrow \text{df} = n -1$
+  - In two samples of size $n_1$ and $n_2$  $\rightarrow$ &nbsp; $\text{df} = n_1 + n_2 - 2$
+
+</div>
+
+<!-- 
+- &egrave; una famiglia di distribuzioni, 1 per ogni valore campionario n-1
+
+Come la normale:
+- ha media 0
+- &egrave; simmetrica
+- ha varianza >1 che si avvicina a 1 al crescere di N
+
+
+Meno appuntita al centro e code pi&ugrave; alte
+ -->
+
+---
+## The Student's $\mathcal{t}$ distribution 
+
+<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px" align="right"/>
+
+<span style="display:block; height:10px;"></span>
+
+<div style="font-size: 85%" >
+
+- It takes into account the degrees of freedom (df)
+  - In a sample of size $n$  $\rightarrow \text{df} = n -1$
+  - In two samples of size $n_1$ and $n_2$  $\rightarrow$ &nbsp; $\text{df} = n_1 + n_2 - 2$
+
+
+<span style="display:block; height:10px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\longrightarrow \text{95\% ME} = \mathcal{t} \times \hat{SE}$ 
+
+</div>
+
+---
+### Exercise #11
 
 <div class="columns">
 <div>
@@ -1586,34 +1638,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 
 <div style="font-size: 80%" >
 
-:pushpin: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{95\% CI} = \text{ ?}$ 
-
-</div>
-</div>
-<div>
-
-<center>
-<img src="./img/confidence_intervals/tdist_table_zoom.png" img height="550px" border="4px"/>
-</center>
-
-</div>
-</div>
-
----
-### Exercise #13
-
-<div class="columns">
-<div>
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 80%" >
-
-:question: &nbsp;&nbsp;&nbsp; $n=15$ &nbsp;&nbsp;&nbsp; patients with T2D
+:question: &nbsp;&nbsp;&nbsp; $n=15$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\bar{x}_{\text{BMI}} = 25.0 \text{ kg}/\text{m}^2$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s_{\text{BMI}}  = 2.7 \text{ kg}/\text{m}^2$
 
@@ -1624,6 +1649,10 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 
 
 </div>
+
+<span style="display:block; height:40px;"></span>
+
+
 
 </div>
 <div>
@@ -1671,7 +1700,7 @@ Ci sono casi in cui vogliamo stimare la differenza tra medie di una popolazione 
 Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tra le medie campionarie e' una stima non distorta della differenza delle medie delle due popolazioni -->
 
 ---
-### Exercise #14
+### Exercise #12
 
 <div style="font-size: 80%">
 
@@ -1699,9 +1728,10 @@ Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tr
 
 </div>
 
+<span style="display:block; height:1px;"></span>
 
 
-<span style="display:block; height:40px;"></span>
+<span style="display:block; height:1px;"></span>
 
 <div style="font-size: 50%" align="left">
 
@@ -1720,7 +1750,6 @@ Qual e' il CI per la differenza delle medie dei due gruppi?
 
 ---
 ## Confidence intervals for proportions
-
 
 <span style="display:block; height:40px;"></span>
 
@@ -1742,7 +1771,7 @@ Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una 
  -->
 
 ---
-### Exercise #15
+### Exercise #13
 
 <div style="font-size: 80%">
 
@@ -1770,8 +1799,9 @@ Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una 
 
 </div>
 
+<span style="display:block; height:1px;"></span>
 
-<span style="display:block; height:40px;"></span>
+<span style="display:block; height:1px;"></span>
 
 <div style="font-size: 50%" align="left">
 
@@ -1800,7 +1830,7 @@ Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazient
  Per il teorema del limite centrale, di nuovo, la differenza tra le proporzioni campionarie e' una stima non distorta della differenza di proporzioni nella popolazione e la distribuzione campionaria si approssima ad una normale  -->
 
 ---
-### Exercise #16
+### Exercise #14
 
 <div style="font-size: 80%">
 
@@ -1828,8 +1858,12 @@ Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazient
 
 </div>
 
+<span style="display:block; height:10px;"></span>
 
-<span style="display:block; height:40px;"></span>
+
+
+
+<span style="display:block; height:1px;"></span>
 
 <div style="font-size: 50%" align="left">
 
@@ -1842,6 +1876,7 @@ Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazient
 Randomized Trial on the efficacy of AZT in reducing the risk of maternal-infant HIV transmission
 HIV positive pregnant women randomized to receive AZT or placebo -->
 
+
 ---
 ![bg opacity](./img/backgrounds/confidence_intervals_bg.png)
 
@@ -1851,11 +1886,10 @@ HIV positive pregnant women randomized to receive AZT or placebo -->
 
 - We use statistics to estimate parameters (point estimates)
 - Interval estimates (CI and/or ME) should be communicated along with the point estimates 
-- The sample size influences the size of the CI
-- Sampling distributions tend to show a normal distribution if the sample size is large enough (CLT)
-- We can take advantage of the CLT to calculate interval estimates (CI) 
-- For small sample size, the sampling distribution is approximated to a Student's $\mathcal{t}$ 
-- 95% confidence intervals tell us the the true value has 95% probability of being inside the given range
+- Sample size influences the width of CIs
+- The Central Limit Theorem states that sampling distributions tend toward a normal distribution for large samples, and it provides formulas for calculating confidence intervals
+- A 95% confidence interval results from a procedure that, in 95% of cases, contains the true population value.
+- For small samples, the sampling distribution is approximated by the Student’s t distribution.
 
 </div>
 
