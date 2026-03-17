@@ -1659,7 +1659,7 @@ updateButton_Exercise_5();
 
 <div style="font-size: 90%">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If this part seems difficult, it’s because it really is.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If this part seems complex, it’s because it really is.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You may need to spend some time fully understanding it
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Don’t worry, we’ve all been there!
@@ -3871,11 +3871,11 @@ Abbiamo un grado di confidenza del X% che la proporzione del della popolazione p
 <div style="font-size: 80%" >
 
 - We use statistics to estimate parameters (point estimates)
-- Interval estimates (CI and/or ME) should be communicated along with the point estimates 
+- Interval estimates (CI or ME) should be communicated along with the point estimates 
 - Sample size influences the width of CIs
 - The Central Limit Theorem states that sampling distributions tend toward a normal distribution for large samples, and it provides formulas for calculating confidence intervals
 - A 95% confidence interval results from a procedure that, in 95% of cases, contains the true population value.
-- For small samples, the sampling distribution is approximated by the Student’s t distribution.
+- For small samples, the sampling distribution is approximated by the Student’s t distribution
 
 </div>
 

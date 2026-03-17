@@ -1885,11 +1885,11 @@ HIV positive pregnant women randomized to receive AZT or placebo -->
 <div style="font-size: 80%" >
 
 - We use statistics to estimate parameters (point estimates)
-- Interval estimates (CI and/or ME) should be communicated along with the point estimates 
+- Interval estimates (CI or ME) should be communicated along with the point estimates 
 - Sample size influences the width of CIs
 - The Central Limit Theorem states that sampling distributions tend toward a normal distribution for large samples, and it provides formulas for calculating confidence intervals
 - A 95% confidence interval results from a procedure that, in 95% of cases, contains the true population value.
-- For small samples, the sampling distribution is approximated by the Student’s t distribution.
+- For small samples, the sampling distribution is approximated by the Student’s t distribution
 
 </div>
 
