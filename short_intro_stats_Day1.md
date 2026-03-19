@@ -2365,8 +2365,12 @@ Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administe
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
 </center>
+
+</div>
+
+<div style="font-size: 70%">
 
 <center>
 
@@ -2378,13 +2382,9 @@ Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administe
 
 </center>
 
-</div>
-
-<div style="font-size: 70%">
-
 $^*$ By convention, relative frequencies are calculated per row
 
-</div>
+
 
 <style>
   #countdown_Exercise_6{
@@ -2471,6 +2471,8 @@ updateButton_Exercise_6();
 -->
 </script>
 
+</div>
+
 <!--  `e una tabella a doppia entrata (con righe e colon- ne) in cui si riportano le frequenze congiunte di due variabili. 
 
 La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoterapia "focalizzata sul problema" e "orientata all'azione". Essa si concentra sul cambiamento delle distorsioni cognitive (come pensieri, convinzioni e atteggiamenti) e sui comportamenti ad esse associati, per migliorare la regolazione emotiva[1][2] e sviluppare adeguate strategie di coping. 
@@ -2487,8 +2489,12 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
 </center>
+
+</div>
+
+<div style="font-size: 70%">
 
 <center>
 
@@ -2513,8 +2519,12 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
 </center>
+
+</div>
+
+<div style="font-size: 70%">
 
 <center>
 
@@ -2539,8 +2549,12 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
 </center>
+
+</div>
+
+<div style="font-size: 70%">
 
 <center>
 
@@ -2576,8 +2590,12 @@ We've just filled a contingency table (using the absolute frequencies)
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
 </center>
+
+</div>
+
+<div style="font-size: 70%">
 
 <center>
 
@@ -2615,8 +2633,12 @@ Potete calcolare la frequenza dei due sessi in ciuascun ramo del RCT (come ho fa
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
+<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
 </center>
+
+</div>
+
+<div style="font-size: 70%">
 
 <center>
 
@@ -3002,33 +3024,6 @@ Si usa soprattutto per i dati categorici -->
 
 <!-- Divide l'insieme di dati in due parti uguali, con il numero osservazioni <= mediana uguale a quello >= -->
 
----
-## Measure of central tendency: median
-
-:dart: &nbsp;&nbsp;&nbsp;The "middle" value
-
-<span style="display:block; height:1px;"></span>
-
-<div style="font-size: 90%">
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $n=7,  x= \{1, 3, 3, 6, 7, 8, 9\}$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)=x_{(n+1)/2} = x_{(7+1)/2}=x_4=6$ 
-
-:pushpin: &nbsp;&nbsp;&nbsp;  $n=8,  x= \{1, 2, 3, 4, 5, 6, 8, 9\}$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)={\frac {x_{(n/2)}+x_{((n/2)+1)}}{2}} = {\frac {x_{(8/2)}+x_{((8/2)+1)}}{2}}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $={\frac {x_{4}+x_{5}}{2}} = {\frac {4+5}{2}} = 4.5$ 
-
-</div>
-
-<div style="font-size: 90%" align="right">
-
-:warning: Data should be sorted!
-
-</div>
-
-<!-- Quando il numero di osservazioni e' pari, ci sono due valori mediani, e in questo caso si prende la loro media aritmetica -->
 
 
 ---
@@ -3071,7 +3066,7 @@ Si usa soprattutto per i dati categorici -->
 <script>
 <!--
 const countdown_exercise_9= document.getElementById("countdown_exercise_9");
-const seconds_exercise_9= 60; // seconds_exercise_9
+const seconds_exercise_9= 30; // seconds_exercise_9
 let timeLeft_exercise_9= seconds_exercise_9;
 let timerInterval_exercise_9= null;
 
@@ -3302,7 +3297,7 @@ $$
 <script>
 <!--
 const countdown_exercise_10= document.getElementById("countdown_exercise_10");
-const seconds_exercise_10= 120; // seconds_exercise_10
+const seconds_exercise_10= 60; // seconds_exercise_10
 let timeLeft_exercise_10= seconds_exercise_10;
 let timerInterval_exercise_10= null;
 
@@ -3486,7 +3481,7 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
 <script>
 <!--
 const countdown_exercise_11= document.getElementById("countdown_exercise_11");
-const seconds_exercise_11= 60; // seconds_exercise_11
+const seconds_exercise_11= 30; // seconds_exercise_11
 let timeLeft_exercise_11= seconds_exercise_11;
 let timerInterval_exercise_11= null;
 
@@ -3733,9 +3728,9 @@ $s= \sqrt{\frac{(5-23.9)^2+(18-23.9)^2+ \text{ } \dots \text{ } +(29-23.9)^2+(30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which measures do we use to describe this variable?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) mean and standard deviation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) median and interquartile range 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and standard deviation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) mean and interquartile range 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and interquartile range 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) median and standard deviation
 
 </div>
 
@@ -3763,7 +3758,7 @@ $s= \sqrt{\frac{(5-23.9)^2+(18-23.9)^2+ \text{ } \dots \text{ } +(29-23.9)^2+(30
 <script>
 <!--
 const countdown_exercise_12= document.getElementById("countdown_exercise_12");
-const seconds_exercise_12= 60; // seconds_exercise_12
+const seconds_exercise_12= 30; // seconds_exercise_12
 let timeLeft_exercise_12= seconds_exercise_12;
 let timerInterval_exercise_12= null;
 
@@ -3844,11 +3839,13 @@ con la mediana e il range interquartile (perché la variabile non ha una distrib
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which measures do we use to describe this variable?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) mean and standard deviation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) median and interquartile range &nbsp; :white_check_mark:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and standard deviation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) I need more information to answer
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) mean and interquartile range 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) median and interquartile range &nbsp; :white_check_mark:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) median and standard deviation
 
 </div>
+
+
 
 --- 
 ## Outliers in the wild
