@@ -508,30 +508,6 @@ Suppose we are caring for a newborn twin who weighs 1450g
 
 </div>
 
----
-## Characterize a single observation
-
-<span style="display:block; height:0px;"></span>
-
-<div style="font-size: 90%">
-
-Suppose we are caring for a newborn twin who weighs 1450g
-
-<span style="display:block; height:0px;"></span>
-
-<img src="./img/normal/Twin_BW_normale_zscore_annotated.png" img height="450px" border="0px" align="right"/>
-
-<span style="display:block; height:1px;"></span>
-
-
-- The mean indicates the center of a distribution
-&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ The newborn weighs below the mean
-
-- The standard deviation indicates the "typical" distance from the mean
-&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ The weight is "atypically" far from the mean
-&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ It is an (almost) "unusual" weight
-
-</div>
 
 ---
 ## The $z$-score
@@ -557,20 +533,18 @@ Suppose we are caring for a newborn twin who weighs 1450g
 
 <div style="font-size: 63%">
 
-:question: &nbsp;&nbsp;&nbsp; Maria suffered a traumatic brain injury following an accident, and the neurologist  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; caring for her administered three tests.
+:question: &nbsp;&nbsp;&nbsp; Maria suffered a traumatic brain injury following an accident, and the neurologist caring 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  for her administered three tests.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1.$ Memory test: Maria heard words and had to repeat them. She recalled 6 words;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the general population recalls a mean of 7 objects, with a standard deviation of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.3 words.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1.$ Memory test: Maria heard words and had to repeat them. She recalled 6 words; the general
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  population recalls a mean of 7 words, with a standard deviation of 1.3 words.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $2.$ Object naming test: Maria had to identify objects from drawings. She recognized
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7; the general population recognizes a mean of 10 objects, with a standard deviation 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of 0.59 objects.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $2.$ Object naming test: Maria had to identify objects from drawings. She recognized 7; the general
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  population recognizes a mean of 10 objects, with a standard deviation of 0.59 objects.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $3.$ Stroop test: Maria was given a list of colours written in different inks and had to 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name the ink colour as quickly as possible. She took 15.7 seconds; the general 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; population  takes a mean of 16.2 seconds, with a standard deviation of 1.3 seconds.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $3.$ Stroop test: Maria was given a list of colours written in different inks and had to name the ink
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  colour as quickly as possible. She took 15.7 seconds; the general population  takes a mean of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16.2 seconds, with a standard deviation of 1.3 seconds.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Based on these results, should the neurologist focus on Maria’s memory, 
@@ -848,7 +822,7 @@ But how was it calculated? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <div style="font-size: 80%" >
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu = 2404\text{ g}; \text{ } \sigma = 580\text{ g}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu = 2400\text{ g}; \text{ } \sigma = 580\text{ g}$
 
 </div>
 
@@ -1035,8 +1009,6 @@ If a sample had dramatically different characteristics than the population, it w
 ---
 ## The Central Limit Theorem
 
-<span style="display:block; height:2px;"></span>
-
 <div style="font-size: 90%">
 
 - There is variability in the estimate of a parameter that depends on the sample (the sampling distribution).
@@ -1045,17 +1017,14 @@ If a sample had dramatically different characteristics than the population, it w
 
 - The shape of the sampling distribution does not depend on the shape of the empirical distribution and, for large samples, can be approximated by a Normal distribution
 
+<div align="right">
+
+The sampling distribution of the mean is
+$\mathcal{N} = (\mu, \frac{\sigma^2}{n})$ with $\sqrt{ \frac{\sigma^2}{n}} = \frac{\sigma}{\sqrt{n}} = \text{standard error (SE)}$ 
 
 </div>
 
-<!-- 
-- the variability in statistics based on samples
-
-- the fact that the shape of the distribution of the statistics does not depend on the shape of the original distribution from which the individual data-points are drawn
-
-- bootstrapping data when we do not want to make assumptions about the shape of the population
-
-Rather remarkably, this has all been accomplished without any mathematics except the idea of drawing observations at random. -->
+</div>
 
 
 ---
@@ -1147,7 +1116,7 @@ Tutti concetti che ci torneranno utili tra poco
 
 In a sample of 403 Italian 11-year-old girls, the mean BMI is $18.4 \pm  3.3 \text{ kg}/\text{m}^2$
 
-:question: &nbsp; What is the 95% CI for the true population mean ?
+:question: &nbsp; What is the 95% CI for the true population mean?
 
 
 </div>
@@ -1416,7 +1385,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 <div>
 
 <center>
-<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="450px" border="0px"/>
 </center>
 
 </div>
@@ -1449,7 +1418,7 @@ Faremo piu' avanti degli esercizi in cui ci calcoleremo 90 e 99% CI -->
 <div>
 
 <center>
-<img src="./img/confidence_intervals/unannotated_CI.png" img height="400px" border="4px"/>
+<img src="./img/confidence_intervals/unannotated_CI.png" img height="450px" border="0px"/>
 </center>
 
 </div>
@@ -1704,12 +1673,13 @@ Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tr
 
 <div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in mean between the two groups?
+:question: &nbsp;&nbsp;&nbsp; Which is the range of values which includes the *true* difference in mean 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; between the two groups with a 95% confidence level?
 
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/confidence_intervals/jama_network.png" img height="180px" border="4px"/>
+<img src="./img/confidence_intervals/jama_network.png" img height="200px" border="4px"/>
 </center>
 
 <div class="columns">
@@ -1728,16 +1698,12 @@ Non lo abbiamo vistp in dettaglio in precedenza, ma, per il CLT la differenza tr
 
 </div>
 
-<span style="display:block; height:1px;"></span>
-
-
-<span style="display:block; height:1px;"></span>
-
 <div style="font-size: 50%" align="left">
 
-<br/> Tomazini B.M., *et al.*, *Effect of Dexamethasone on Days Alive and Ventilator-Free in Patients With Moderate or Severe Acute Respiratory Distress Syndrome and COVID-19*, JAMA, 2020
+<br/> Tomazini B.M., *et al.*, *Effect of Dexamethasone on Days Alive and Ventilator-Free in <br/>Patients With Moderate or Severe Acute Respiratory Distress Syndrome and COVID-19*, JAMA, 2020
 
 </div>
+
 
 
 <!-- Abbiamo due gruppo di pazienti con COVID-19 e sindrome da distress respiratorio acuto moderato o grave (ARDS
@@ -1775,12 +1741,13 @@ Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una 
 
 <div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* proportion of women with endometriosis in the population?
+:question: &nbsp;&nbsp;&nbsp; Which is the range of values which includes *true* proportion of women 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with endometriosis in the population  with a 95% confidence level?
 
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/confidence_intervals/endometriosis.png" img height="180px" border="4px"/>
+<img src="./img/confidence_intervals/endometriosis.png" img height="200px" border="4px"/>
 </center>
 
 <div class="columns">
@@ -1799,13 +1766,9 @@ Per il teorema del limite centrale, di nuovo, la proporzione campionaria e' una 
 
 </div>
 
-<span style="display:block; height:1px;"></span>
-
-<span style="display:block; height:1px;"></span>
-
 <div style="font-size: 50%" align="left">
 
-<br/> Ferrero S.., *et al.*, *Prevalence of newly diagnosed endometriosis in women attending the general practitioner*,  <br/> Int J Gynaecol Obstet, 2020
+<br/> Ferrero S.., *et al.*, *Prevalence of newly diagnosed endometriosis <br/> in women attending  the general practitioner*,   Int J Gynaecol Obstet, 2020
 
 </div>
 
@@ -1834,12 +1797,13 @@ Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazient
 
 <div style="font-size: 80%">
 
-:question: &nbsp;&nbsp;&nbsp; Which is the *true* difference in proportion between two groups?
+:question: &nbsp;&nbsp;&nbsp; Which is the range of values which includes the *true* difference in  proportion
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; between the two groups with a 95% confidence level?
 
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/confidence_intervals/nejm.png" img height="160px" border="4px"/>
+<img src="./img/confidence_intervals/nejm.png" img height="190px" border="4px"/>
 </center>
 
 <div class="columns">
@@ -1858,16 +1822,9 @@ Spesso, nella clinica, siamo interessati a confrontare le proporzioni di pazient
 
 </div>
 
-<span style="display:block; height:10px;"></span>
-
-
-
-
-<span style="display:block; height:1px;"></span>
-
 <div style="font-size: 50%" align="left">
 
-<br/> Connor, E.M. *et al.*, *Reduction of Maternal-Infant Transmission of Human Immunodeficiency Virus Type 1 with Zidovudine Treatment*, NEJM, 1994
+<br/> Connor, E.M. *et al.*, *Reduction of Maternal-Infant Transmission of <br/>Human Immunodeficiency Virus Type 1 with Zidovudine Treatment*, NEJM, 1994
 
 </div>
 
