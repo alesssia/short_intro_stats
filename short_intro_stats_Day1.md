@@ -419,6 +419,136 @@ If the law of the country is that cars should drive on the right, then we can de
 Ci saranno anche delle formule matematiche, ma non preoccupatevi: andremo a spiegarle e saranno un aiuto per svolgere gli esercizi e in generale capire cosa stiamo facendo (si', ci sono anche degli esercizi!)
 -->
 
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{2 \times (8 - 3 + 5 )}{4}$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{2 \times (8 - 3 + 5 )}{4} = \frac{2 \times 10}{4} = \frac{20}{4} = 5$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - powers (of 2)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{2 \times (8 - 3 + 5 )^2}{4}$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - powers (of 2)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{2 \times (8 - 3 + 5 )^2}{4} = \frac{2 \times 10^2}{4} =  \frac{2 \times 100}{4} = \frac{200}{4} = 50$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - powers (of 2)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - (square) root
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{\frac{2 \times (8 - 3 + 5 )^2}{4}}$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - powers (of 2)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - (square) root
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{\frac{2 \times (8 - 3 + 5 )^2}{4}} = \sqrt{\frac{2 \times 10^2}{4}} =  \sqrt{\frac{2 \times 100}{4}}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \sqrt{\frac{200}{4}} = \sqrt{50} \approx \sqrt{49} = 7$
+
+</div>
+
 
 ---
 ![bg opacity](./img//backgrounds/sampling_bg.png)
@@ -2333,58 +2463,35 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 <!-- Le frequenze relative: facilitano la percezione del peso delle modalità -->
 
 ---
-## Contingency table
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/descriptive/Cbt_sex_abstract.png" img height="350px" border="4px"/>
-</center>
-
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 50%" align="right">
- 
-Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administered Small-Group Cognitive Behavior Therapy for Persistent Insomnia in General Practice*, Sleep, 2007, doi:10.1186/s12885-023-10511-3
-
-</div>
-
-<!-- SPIEGARE CHE SI TRATTA DI UN RCT E COSA DIAVOLO E' UN RCT -- Useremo questo studio per costruire e capire cos'e' una tabelle di contingenza 
-
- `e una tabella a doppia entrata (con righe e colon- ne) in cui si riportano le frequenze congiunte di due variabili.
--->
-
----
 ### Exercise #6
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^*$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
-</center>
-
-</div>
 
 <div style="font-size: 70%">
 
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^{(*)}$ using the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   following information 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Out of 279, 230, and 130 healthcare professionals working in medicine, surgery, and* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *other wards (*e.g.*, laboratories and other hospital services), 122, 107, and 51 were*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  non-drinkers, respectively.*
+
+</div>
+
+<div style="font-size: 65%">
+
 <center>
 
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT |  |  |  |
-| Standard |  |  |  |
-| Total |  |  |  |
+| Ward/Drinking | No |  Yes | Total |
+| ----: | -----: | ----: | ----: |
+| Medicine |   |    |    |
+| Surgery |   |    |  |
+| Others |  |   |  |
+| Total |  |   |  |
 
 </center>
 
-$^*$ By convention, relative frequencies are calculated per row
+$^{(*)}$ By convention, relative frequencies are calculated per row
 
-
+</div>
 
 <style>
   #countdown_Exercise_6{
@@ -2471,7 +2578,7 @@ updateButton_Exercise_6();
 -->
 </script>
 
-</div>
+
 
 <!--  `e una tabella a doppia entrata (con righe e colon- ne) in cui si riportano le frequenze congiunte di due variabili. 
 
@@ -2481,28 +2588,27 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 ---
 ### Exercise #6 -- Solution
 
-<div style="font-size: 80%">
+<div style="font-size: 70%">
 
-:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^{(*)}$ using the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   following information 
 
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
-</center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Out of 279, 230, and 130 healthcare professionals working in medicine, surgery, and* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *other wards (*e.g.*, laboratories and other hospital services), 122, 107, and 51 were*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  non-drinkers, respectively.*
 
 </div>
 
-<div style="font-size: 70%">
+<div style="font-size: 65%">
 
 <center>
 
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT |  | 72 |  107 |
-| Standard |  | 65 | 94 |
-| Total |  |  | 201 |
+| Ward/Drinking | No |  Yes | Total |
+| ----: | -----: | ----: | ----: |
+| Medicine | 122  |    |  279  |
+| Surgery | 107  |    | 230 |
+| Others | 51 |   | 130 |
+| Total |  |   |  |
 
 </center>
 
@@ -2511,28 +2617,27 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 ---
 ### Exercise #6 -- Solution
 
-<div style="font-size: 80%">
+<div style="font-size: 70%">
 
-:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^{(*)}$ using the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   following information 
 
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
-</center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Out of 279, 230, and 130 healthcare professionals working in medicine, surgery, and* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *other wards (*e.g.*, laboratories and other hospital services), 122, 107, and 51 were*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  non-drinkers, respectively.*
 
 </div>
 
-<div style="font-size: 70%">
+<div style="font-size: 65%">
 
 <center>
 
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT | 35 | 72 |  107 |
-| Standard | 29 | 65 | 94 |
-| Total |  |  |  201 |
+| Ward/Drinking | No |  Yes | Total |
+| ----: | -----: | ----: | ----: |
+| Medicine | 122  |  157  |  279  |
+| Surgery | 107  | 123   | 230 |
+| Others | 51 |  79 | 130 |
+| Total |  |   |  |
 
 </center>
 
@@ -2541,36 +2646,37 @@ La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoter
 ---
 ### Exercise #6 -- Solution
 
-<div style="font-size: 80%">
+<div style="font-size: 70%">
 
-:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^{(*)}$ using the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   following information 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Out of 279, 230, and 130 healthcare professionals working in medicine, surgery, and* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *other wards (*e.g.*, laboratories and other hospital services), 122, 107, and 51 were*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  non-drinkers, respectively.*
+
+</div>
+
+<div style="font-size: 65%">
+
+<center>
+
+| Ward/Drinking | No |  Yes | Total |
+| ----: | -----: | ----: | ----: |
+| Medicine | 122  |  157  |  279  |
+| Surgery | 107  | 123   | 230 |
+| Others | 51 |  79 | 130 |
+| Total | 280 | 359  | 639 |
+
+</center>
+
+</div>
 
 <span style="display:block; height:1px;"></span>
 
-<center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
-</center>
+<div style="font-size: 70%" align="right">
 
-</div>
-
-<div style="font-size: 70%">
-
-<center>
-
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT | 35 | 72 |  107 |
-| Standard | 29 | 65 | 94 |
-| Total | 64 | 137 |  201 |
-
-</center>
-
-</div>
-
-<div style="font-size: 80%" align="right">
-
-We've just filled a contingency table (using the absolute frequencies)
+We've just filled a **contingency table** (using the absolute frequencies)
 
 </div>
 
@@ -2582,34 +2688,29 @@ We've just filled a contingency table (using the absolute frequencies)
 ---
 ### Exercise #6 -- Solution
 
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
-</center>
-
-</div>
-
 <div style="font-size: 70%">
 
-<center>
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^{(*)}$ using the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   following information 
 
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT | 35 (35/107) | 72 (72/107) |  107 |
-| Standard | 29 (29/94) | 65 (65/94) | 94 |
-| Total | 64 (64/201) | 137 (137/201) |  201 |
-
-</center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Out of 279, 230, and 130 healthcare professionals working in medicine, surgery, and* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *other wards (*e.g.*, laboratories and other hospital services), 122, 107, and 51 were*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  non-drinkers, respectively.*
 
 </div>
 
-<div style="font-size: 65%" align="right">
+<div style="font-size: 65%">
+
+<center>
+
+| Ward/Drinking | No |  Yes | Total |
+| ----: | -----: | ----: | ----: |
+| Medicine | 122 (122/279)  |  157 (157/279)  |  279  |
+| Surgery | 107 (107/230)  | 123 (123/230)   | 230 |
+| Others | 51 (51/130)  |  79 (79/130)  | 130 |
+| Total | 280 (280/639) | 359 (359/639)  | 639 |
+
+</center>
 
 By convention, relative frequencies are calculated per row
 
@@ -2625,37 +2726,30 @@ Potete calcolare la frequenza dei due sessi in ciuascun ramo del RCT (come ho fa
 ---
 ### Exercise #6 -- Solution
 
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="90px" border="4px"/>
-</center>
-
-</div>
-
 <div style="font-size: 70%">
 
-<center>
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^{(*)}$ using the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   following information 
 
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT | 35 (32.7%) | 72 (67.3%) |  107 |
-| Standard | 29 (30.9%) | 65 (69.1%) | 94 |
-| Total | 64 (31.8%) | 137 (68.2%) |  201 |
-
-
-</center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Out of 279, 230, and 130 healthcare professionals working in medicine, surgery, and* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *other wards (*e.g.*, laboratories and other hospital services), 122, 107, and 51 were*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  non-drinkers, respectively.*
 
 </div>
 
+<div style="font-size: 65%">
 
-<div style="font-size: 65%" align="right">
- 
+<center>
+
+| Ward/Drinking | No |  Yes | Total |
+| ----: | -----: | ----: | ----: |
+| Medicine | 122 (43.7%)  |  157 (56.3%)  |  279  |
+| Surgery | 107 (46.5%)  | 123 (53.5%)   | 230 |
+| Others | 51 (39.2%)  |  79 (60.8%)  | 130 |
+| Total | 280 (43.8%) | 359 (56.2%)  | 639 |
+
+</center>
+
 By convention, relative frequencies are calculated per row
 
 </div>
@@ -2663,181 +2757,6 @@ By convention, relative frequencies are calculated per row
 
 <!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità -->
 
----
-### Exercise #7
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women in the sample similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False
-
-:question: &nbsp;&nbsp;&nbsp; Is the proportion of men similar in the two arms?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False 
-
-<center>
-
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT | 35 (32.7%) | 72 (67.3%) |  107 |
-| Standard | 29 (30.9%) | 65 (69.1%) | 94 |
-| Total | 64 (31.8%) | 137 (68.2%) |  201 |
-
-
-</center>
-
-<div>
-
-<style>
-  #countdown_Exercise_7{
-    padding: 10px 20px;
-    font-size: 20px;
-    color: white;
-    background-color: gray;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
-  }
-  #countdown_Exercise_7.running {
-    background-color: green;
-  }
-  #countdown_Exercise_7.finished {
-    background-color: red;
-  }
-</style>
-
-<button id="countdown_Exercise_7"></button>
-
-<script>
-<!--
-const countdown_Exercise_7= document.getElementById("countdown_Exercise_7");
-const seconds_Exercise_7= 30; // seconds_Exercise_7
-let timeLeft_Exercise_7= seconds_Exercise_7;
-let timerInterval_Exercise_7= null;
-
-function formatTime_Exercise_7(seconds_Exercise_7) {
-  const minutes = Math.floor(seconds_Exercise_7/ 60);
-  const remainingseconds_Exercise_7= seconds_Exercise_7% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_Exercise_7).padStart(2, '0')}`;
-}
-
-function updateButton_Exercise_7() {
-  countdown_Exercise_7.textContent = formatTime_Exercise_7(timeLeft_Exercise_7);
-}
-
-function startTimer_Exercise_7() {
-  if (timerInterval_Exercise_7=== null) {
-    countdown_Exercise_7.classList.add('running');
-    countdown_Exercise_7.classList.remove('finished');
-    timerInterval_Exercise_7= setInterval(() => {
-      if (timeLeft_Exercise_7> 0) {
-        timeLeft_Exercise_7--;
-        updateButton_Exercise_7();
-      } else {
-        clearInterval(timerInterval_Exercise_7);
-        timerInterval_Exercise_7= null;
-        countdown_Exercise_7.classList.remove('running');
-        countdown_Exercise_7.classList.add('finished');
-        countdown_Exercise_7.textContent = "Time's up!";
-      }
-    }, 1000);
-  } else {
-    pauseTimer_Exercise_7();
-  }
-}
-
-function pauseTimer_Exercise_7() {
-  clearInterval(timerInterval_Exercise_7);
-  timerInterval_Exercise_7= null;
-  countdown_Exercise_7.classList.remove('running');
-}
-
-function resetTimer_Exercise_7() {
-  timeLeft_Exercise_7= seconds_Exercise_7;
-  updateButton_Exercise_7();
-  countdown_Exercise_7.classList.remove('finished');
-  countdown_Exercise_7.classList.remove('running');
-  timerInterval_Exercise_7= null;
-}
-
-countdown_Exercise_7.addEventListener("click", () => {
-  if (countdown_Exercise_7.classList.contains('finished')) {
-    resetTimer_Exercise_7();
-  } else {
-    startTimer_Exercise_7();
-  }
-});
-
-updateButton_Exercise_7();
--->
-</script>
-
-<!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità 
-
-LEGGERE PRIMA DI DARE LA Solution Nel campione, quindi vado a vedere la colonna dei totali, Le donne sono il doppio degli uomini. No, non sono uguali
--->
-
----
-### Exercise #7 -- Solution
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women in the sample similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp; :white_check_mark: 
-
-:question: &nbsp;&nbsp;&nbsp; Is the proportion of men similar in the two arms?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False 
-
-<center>
-
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT | 35 (32.7%) | 72 (67.3%) |  107 |
-| Standard | 29 (30.9%) | 65 (69.1%) | 94 |
-| Total | 64 (31.8%) | 137 (68.2%) |  201 |
-
-
-</center>
-
-<!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità 
-
-Nel campione, quindi vado a vedere la colonna dei totali, Le donne sono il doppio degli uomini. No, non sono uguali
-
-LEGGERE PRIMA DI DARE LA Solution DELLA SECONDA Nel due bracci dell'esperimento, quindi vado a confrontare le due colonne, la proporzione di donne e' sempre il 70% e di uomini e' sempre il 30%, quindi si', sono simili
-
--->
-
-</div>
-
----
-### Exercise #7 -- Solution
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women in the sample similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False &nbsp; :white_check_mark: 
-
-:question: &nbsp;&nbsp;&nbsp; Is the proportion of men similar in the two arms?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True  &nbsp; :white_check_mark: &nbsp;&nbsp;&nbsp;&nbsp; b) False 
-
-<center>
-
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT | 35 (32.7%) | 72 (67.3%) |  107 |
-| Standard | 29 (30.9%) | 65 (69.1%) | 94 |
-| Total | 64 (31.8%) | 137 (68.2%) |  201 |
-
-
-</center>
-
-<!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità 
-
-
-Nel due bracci dell'esperimento, quindi vado a confrontare le due colonne, la proporzione di donne e' sempre il 70% e di uomini e' sempre il 30%, quindi si', sono simili
--->
-
-</div>
 
 ---
 <span style="display:block; height:150px;"></span>
@@ -2881,7 +2800,7 @@ Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione del
 Si usa soprattutto per i dati categorici -->
 
 ---
-### Exercise #8
+### Exercise #7
 
 <span style="display:block; height:1px;"></span>
 
@@ -2894,6 +2813,153 @@ Si usa soprattutto per i dati categorici -->
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(z)= \text{ } ?$
+
+<style>
+  #countdown_exercise_7{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  #countdown_exercise_7.running {
+    background-color: green;
+  }
+  #countdown_exercise_7.finished {
+    background-color: red;
+  }
+</style>
+
+<button id="countdown_exercise_7"></button>
+
+<script>
+<!--
+const countdown_exercise_7= document.getElementById("countdown_exercise_7");
+const seconds_exercise_7= 30; // seconds_exercise_7
+let timeLeft_exercise_7= seconds_exercise_7;
+let timerInterval_exercise_7= null;
+
+function formatTime_exercise_7(seconds_exercise_7) {
+  const minutes = Math.floor(seconds_exercise_7/ 60);
+  const remainingseconds_exercise_7= seconds_exercise_7% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_7).padStart(2, '0')}`;
+}
+
+function updateButton_exercise_7() {
+  countdown_exercise_7.textContent = formatTime_exercise_7(timeLeft_exercise_7);
+}
+
+function startTimer_exercise_7() {
+  if (timerInterval_exercise_7=== null) {
+    countdown_exercise_7.classList.add('running');
+    countdown_exercise_7.classList.remove('finished');
+    timerInterval_exercise_7= setInterval(() => {
+      if (timeLeft_exercise_7> 0) {
+        timeLeft_exercise_7--;
+        updateButton_exercise_7();
+      } else {
+        clearInterval(timerInterval_exercise_7);
+        timerInterval_exercise_7= null;
+        countdown_exercise_7.classList.remove('running');
+        countdown_exercise_7.classList.add('finished');
+        countdown_exercise_7.textContent = "Time's up!";
+      }
+    }, 1000);
+  } else {
+    pauseTimer_exercise_7();
+  }
+}
+
+function pauseTimer_exercise_7() {
+  clearInterval(timerInterval_exercise_7);
+  timerInterval_exercise_7= null;
+  countdown_exercise_7.classList.remove('running');
+}
+
+function resetTimer_exercise_7() {
+  timeLeft_exercise_7= seconds_exercise_7;
+  updateButton_exercise_7();
+  countdown_exercise_7.classList.remove('finished');
+  countdown_exercise_7.classList.remove('running');
+  timerInterval_exercise_7= null;
+}
+
+countdown_exercise_7.addEventListener("click", () => {
+  if (countdown_exercise_7.classList.contains('finished')) {
+    resetTimer_exercise_7();
+  } else {
+    startTimer_exercise_7();
+  }
+});
+
+updateButton_exercise_7();
+-->
+</script>
+
+<!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
+
+Si usa soprattutto per i dati categorici -->
+
+---
+### Exercise #7 -- Solution
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the mode of the following data sets
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(y)=1 \text{ } \& \text{ }  4$
+
+<span style="display:block; height:1px;"></span>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(z)= \text{It doesn't exist}$
+
+<!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
+Ci possono essere piu' mode (la distribuzione e' detta multi modale)
+
+Si usa soprattutto per i dati categorici -->
+
+---
+## Measure of central tendency: median
+
+:dart: &nbsp;&nbsp;&nbsp;The "middle" value
+
+<span style="display:block; height:10px;"></span>
+
+<center>
+<img src="./img/descriptive/median.png" img height="250px" border="0px"/>
+</center>
+
+
+<div style="font-size: 90%" align="right">
+
+:warning: Data should be sorted!
+
+</div>
+
+<!-- Divide l'insieme di dati in due parti uguali, con il numero osservazioni <= mediana uguale a quello >= -->
+
+
+
+---
+### Exercise #8
+
+<span style="display:block; height:1px;"></span>
+
+:question: &nbsp;&nbsp;&nbsp; Calculate the median of the following data sets
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $x= \{40, 6, 75, 55, 34\}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)= \text{ ?}$ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $y= \{40, 6, 175, 55, 34\}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)=\text{ ?}$ 
+
+
+<span style="display:block; height:40px;"></span>
 
 <style>
   #countdown_exercise_8{
@@ -2980,159 +3046,12 @@ updateButton_exercise_8();
 -->
 </script>
 
-<!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
-
-Si usa soprattutto per i dati categorici -->
-
----
-### Exercise #8 -- Solution
-
-<span style="display:block; height:1px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; Calculate the mode of the following data sets
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $y= \{1, 1, 1, 3, 4, 4, 4, 7, 8, 8, 9, 9\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(y)=1 \text{ } \& \text{ }  4$
-
-<span style="display:block; height:1px;"></span>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $z= \{1, 3, 4, 7, 8, 9, 11, 17, 21, 42\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{mode}(z)= \text{It doesn't exist}$
-
-<!-- se ciascun valore si presenta una volta sola, le nostre osservazioni non hanno moda
-Ci possono essere piu' mode (la distribuzione e' detta multi modale)
-
-Si usa soprattutto per i dati categorici -->
-
----
-## Measure of central tendency: median
-
-:dart: &nbsp;&nbsp;&nbsp;The "middle" value
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/descriptive/median.png" img height="250px" border="0px"/>
-</center>
-
-
-<div style="font-size: 90%" align="right">
-
-:warning: Data should be sorted!
-
-</div>
-
-<!-- Divide l'insieme di dati in due parti uguali, con il numero osservazioni <= mediana uguale a quello >= -->
-
-
-
----
-### Exercise #9
-
-<span style="display:block; height:1px;"></span>
-
-:question: &nbsp;&nbsp;&nbsp; Calculate the median of the following data sets
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $x= \{40, 6, 75, 55, 34\}$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(x)= \text{ ?}$ 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $y= \{40, 6, 175, 55, 34\}$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{median}(y)=\text{ ?}$ 
-
-
-<span style="display:block; height:40px;"></span>
-
-<style>
-  #countdown_exercise_9{
-    padding: 10px 20px;
-    font-size: 20px;
-    color: white;
-    background-color: gray;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
-  }
-  #countdown_exercise_9.running {
-    background-color: green;
-  }
-  #countdown_exercise_9.finished {
-    background-color: red;
-  }
-</style>
-
-<button id="countdown_exercise_9"></button>
-
-<script>
-<!--
-const countdown_exercise_9= document.getElementById("countdown_exercise_9");
-const seconds_exercise_9= 30; // seconds_exercise_9
-let timeLeft_exercise_9= seconds_exercise_9;
-let timerInterval_exercise_9= null;
-
-function formatTime_exercise_9(seconds_exercise_9) {
-  const minutes = Math.floor(seconds_exercise_9/ 60);
-  const remainingseconds_exercise_9= seconds_exercise_9% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_9).padStart(2, '0')}`;
-}
-
-function updateButton_exercise_9() {
-  countdown_exercise_9.textContent = formatTime_exercise_9(timeLeft_exercise_9);
-}
-
-function startTimer_exercise_9() {
-  if (timerInterval_exercise_9=== null) {
-    countdown_exercise_9.classList.add('running');
-    countdown_exercise_9.classList.remove('finished');
-    timerInterval_exercise_9= setInterval(() => {
-      if (timeLeft_exercise_9> 0) {
-        timeLeft_exercise_9--;
-        updateButton_exercise_9();
-      } else {
-        clearInterval(timerInterval_exercise_9);
-        timerInterval_exercise_9= null;
-        countdown_exercise_9.classList.remove('running');
-        countdown_exercise_9.classList.add('finished');
-        countdown_exercise_9.textContent = "Time's up!";
-      }
-    }, 1000);
-  } else {
-    pauseTimer_exercise_9();
-  }
-}
-
-function pauseTimer_exercise_9() {
-  clearInterval(timerInterval_exercise_9);
-  timerInterval_exercise_9= null;
-  countdown_exercise_9.classList.remove('running');
-}
-
-function resetTimer_exercise_9() {
-  timeLeft_exercise_9= seconds_exercise_9;
-  updateButton_exercise_9();
-  countdown_exercise_9.classList.remove('finished');
-  countdown_exercise_9.classList.remove('running');
-  timerInterval_exercise_9= null;
-}
-
-countdown_exercise_9.addEventListener("click", () => {
-  if (countdown_exercise_9.classList.contains('finished')) {
-    resetTimer_exercise_9();
-  } else {
-    startTimer_exercise_9();
-  }
-});
-
-updateButton_exercise_9();
--->
-</script>
-
 
 
 <!-- La mediana non e' influenzata da valori anomali o estremi (outliers) -->
 
 ---
-### Exercise #9 -- Solution
+### Exercise #8 -- Solution
 
 <span style="display:block; height:1px;"></span>
 
@@ -3156,7 +3075,7 @@ updateButton_exercise_9();
 <!-- La mediana non e' influenzata da valori anomali o estremi (outliers) -->
 
 ---
-### Exercise #9 -- Solution
+### Exercise #8 -- Solution
 
 <span style="display:block; height:1px;"></span>
 
@@ -3258,7 +3177,7 @@ $$
 <!-- Somma dei singoli valori diviso il numero di osservazioni  -->
 
 ---
-### Exercise #10
+### Exercise #9
 
 <span style="display:block; height:1px;"></span>
 
@@ -3274,7 +3193,7 @@ $$
 <span style="display:block; height:10px;"></span>
 
 <style>
-  #countdown_exercise_10{
+  #countdown_exercise_9{
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -3284,77 +3203,77 @@ $$
     cursor: pointer;
     float: right;
   }
-  #countdown_exercise_10.running {
+  #countdown_exercise_9.running {
     background-color: green;
   }
-  #countdown_exercise_10.finished {
+  #countdown_exercise_9.finished {
     background-color: red;
   }
 </style>
 
-<button id="countdown_exercise_10"></button>
+<button id="countdown_exercise_9"></button>
 
 <script>
 <!--
-const countdown_exercise_10= document.getElementById("countdown_exercise_10");
-const seconds_exercise_10= 60; // seconds_exercise_10
-let timeLeft_exercise_10= seconds_exercise_10;
-let timerInterval_exercise_10= null;
+const countdown_exercise_9= document.getElementById("countdown_exercise_9");
+const seconds_exercise_9= 60; // seconds_exercise_9
+let timeLeft_exercise_9= seconds_exercise_9;
+let timerInterval_exercise_9= null;
 
-function formatTime_exercise_10(seconds_exercise_10) {
-  const minutes = Math.floor(seconds_exercise_10/ 60);
-  const remainingseconds_exercise_10= seconds_exercise_10% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_10).padStart(2, '0')}`;
+function formatTime_exercise_9(seconds_exercise_9) {
+  const minutes = Math.floor(seconds_exercise_9/ 60);
+  const remainingseconds_exercise_9= seconds_exercise_9% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_9).padStart(2, '0')}`;
 }
 
-function updateButton_exercise_10() {
-  countdown_exercise_10.textContent = formatTime_exercise_10(timeLeft_exercise_10);
+function updateButton_exercise_9() {
+  countdown_exercise_9.textContent = formatTime_exercise_9(timeLeft_exercise_9);
 }
 
-function startTimer_exercise_10() {
-  if (timerInterval_exercise_10=== null) {
-    countdown_exercise_10.classList.add('running');
-    countdown_exercise_10.classList.remove('finished');
-    timerInterval_exercise_10= setInterval(() => {
-      if (timeLeft_exercise_10> 0) {
-        timeLeft_exercise_10--;
-        updateButton_exercise_10();
+function startTimer_exercise_9() {
+  if (timerInterval_exercise_9=== null) {
+    countdown_exercise_9.classList.add('running');
+    countdown_exercise_9.classList.remove('finished');
+    timerInterval_exercise_9= setInterval(() => {
+      if (timeLeft_exercise_9> 0) {
+        timeLeft_exercise_9--;
+        updateButton_exercise_9();
       } else {
-        clearInterval(timerInterval_exercise_10);
-        timerInterval_exercise_10= null;
-        countdown_exercise_10.classList.remove('running');
-        countdown_exercise_10.classList.add('finished');
-        countdown_exercise_10.textContent = "Time's up!";
+        clearInterval(timerInterval_exercise_9);
+        timerInterval_exercise_9= null;
+        countdown_exercise_9.classList.remove('running');
+        countdown_exercise_9.classList.add('finished');
+        countdown_exercise_9.textContent = "Time's up!";
       }
     }, 1000);
   } else {
-    pauseTimer_exercise_10();
+    pauseTimer_exercise_9();
   }
 }
 
-function pauseTimer_exercise_10() {
-  clearInterval(timerInterval_exercise_10);
-  timerInterval_exercise_10= null;
-  countdown_exercise_10.classList.remove('running');
+function pauseTimer_exercise_9() {
+  clearInterval(timerInterval_exercise_9);
+  timerInterval_exercise_9= null;
+  countdown_exercise_9.classList.remove('running');
 }
 
-function resetTimer_exercise_10() {
-  timeLeft_exercise_10= seconds_exercise_10;
-  updateButton_exercise_10();
-  countdown_exercise_10.classList.remove('finished');
-  countdown_exercise_10.classList.remove('running');
-  timerInterval_exercise_10= null;
+function resetTimer_exercise_9() {
+  timeLeft_exercise_9= seconds_exercise_9;
+  updateButton_exercise_9();
+  countdown_exercise_9.classList.remove('finished');
+  countdown_exercise_9.classList.remove('running');
+  timerInterval_exercise_9= null;
 }
 
-countdown_exercise_10.addEventListener("click", () => {
-  if (countdown_exercise_10.classList.contains('finished')) {
-    resetTimer_exercise_10();
+countdown_exercise_9.addEventListener("click", () => {
+  if (countdown_exercise_9.classList.contains('finished')) {
+    resetTimer_exercise_9();
   } else {
-    startTimer_exercise_10();
+    startTimer_exercise_9();
   }
 });
 
-updateButton_exercise_10();
+updateButton_exercise_9();
 -->
 </script>
 
@@ -3364,7 +3283,7 @@ updateButton_exercise_10();
 Vedremo piu' avanti, con le misure di dispersione, come accopagnare altri valori alla media per evidenziare queste situazioni  -->
 
 ---
-### Exercise #10 -- Solution
+### Exercise #9 -- Solution
 
 <span style="display:block; height:1px;"></span>
 
@@ -3440,7 +3359,7 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
  -->
 
 ---
-### Exercise #11
+### Exercise #10
 
 <div style="font-size: 90%">
 
@@ -3458,7 +3377,7 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
 </div>
 
 <style>
-  #countdown_exercise_11{
+  #countdown_exercise_10{
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -3468,77 +3387,77 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
     cursor: pointer;
 	float: right;
   }
-  #countdown_exercise_11.running {
+  #countdown_exercise_10.running {
     background-color: green;
   }
-  #countdown_exercise_11.finished {
+  #countdown_exercise_10.finished {
     background-color: red;
   }
 </style>
 
-<button id="countdown_exercise_11"></button>
+<button id="countdown_exercise_10"></button>
 
 <script>
 <!--
-const countdown_exercise_11= document.getElementById("countdown_exercise_11");
-const seconds_exercise_11= 30; // seconds_exercise_11
-let timeLeft_exercise_11= seconds_exercise_11;
-let timerInterval_exercise_11= null;
+const countdown_exercise_10= document.getElementById("countdown_exercise_10");
+const seconds_exercise_10= 30; // seconds_exercise_10
+let timeLeft_exercise_10= seconds_exercise_10;
+let timerInterval_exercise_10= null;
 
-function formatTime_exercise_11(seconds_exercise_11) {
-  const minutes = Math.floor(seconds_exercise_11/ 60);
-  const remainingseconds_exercise_11= seconds_exercise_11% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_11).padStart(2, '0')}`;
+function formatTime_exercise_10(seconds_exercise_10) {
+  const minutes = Math.floor(seconds_exercise_10/ 60);
+  const remainingseconds_exercise_10= seconds_exercise_10% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_10).padStart(2, '0')}`;
 }
 
-function updateButton_exercise_11() {
-  countdown_exercise_11.textContent = formatTime_exercise_11(timeLeft_exercise_11);
+function updateButton_exercise_10() {
+  countdown_exercise_10.textContent = formatTime_exercise_10(timeLeft_exercise_10);
 }
 
-function startTimer_exercise_11() {
-  if (timerInterval_exercise_11=== null) {
-    countdown_exercise_11.classList.add('running');
-    countdown_exercise_11.classList.remove('finished');
-    timerInterval_exercise_11= setInterval(() => {
-      if (timeLeft_exercise_11> 0) {
-        timeLeft_exercise_11--;
-        updateButton_exercise_11();
+function startTimer_exercise_10() {
+  if (timerInterval_exercise_10=== null) {
+    countdown_exercise_10.classList.add('running');
+    countdown_exercise_10.classList.remove('finished');
+    timerInterval_exercise_10= setInterval(() => {
+      if (timeLeft_exercise_10> 0) {
+        timeLeft_exercise_10--;
+        updateButton_exercise_10();
       } else {
-        clearInterval(timerInterval_exercise_11);
-        timerInterval_exercise_11= null;
-        countdown_exercise_11.classList.remove('running');
-        countdown_exercise_11.classList.add('finished');
-        countdown_exercise_11.textContent = "Time's up!";
+        clearInterval(timerInterval_exercise_10);
+        timerInterval_exercise_10= null;
+        countdown_exercise_10.classList.remove('running');
+        countdown_exercise_10.classList.add('finished');
+        countdown_exercise_10.textContent = "Time's up!";
       }
     }, 1000);
   } else {
-    pauseTimer_exercise_11();
+    pauseTimer_exercise_10();
   }
 }
 
-function pauseTimer_exercise_11() {
-  clearInterval(timerInterval_exercise_11);
-  timerInterval_exercise_11= null;
-  countdown_exercise_11.classList.remove('running');
+function pauseTimer_exercise_10() {
+  clearInterval(timerInterval_exercise_10);
+  timerInterval_exercise_10= null;
+  countdown_exercise_10.classList.remove('running');
 }
 
-function resetTimer_exercise_11() {
-  timeLeft_exercise_11= seconds_exercise_11;
-  updateButton_exercise_11();
-  countdown_exercise_11.classList.remove('finished');
-  countdown_exercise_11.classList.remove('running');
-  timerInterval_exercise_11= null;
+function resetTimer_exercise_10() {
+  timeLeft_exercise_10= seconds_exercise_10;
+  updateButton_exercise_10();
+  countdown_exercise_10.classList.remove('finished');
+  countdown_exercise_10.classList.remove('running');
+  timerInterval_exercise_10= null;
 }
 
-countdown_exercise_11.addEventListener("click", () => {
-  if (countdown_exercise_11.classList.contains('finished')) {
-    resetTimer_exercise_11();
+countdown_exercise_10.addEventListener("click", () => {
+  if (countdown_exercise_10.classList.contains('finished')) {
+    resetTimer_exercise_10();
   } else {
-    startTimer_exercise_11();
+    startTimer_exercise_10();
   }
 });
 
-updateButton_exercise_11();
+updateButton_exercise_10();
 -->
 </script>
 
@@ -3549,7 +3468,7 @@ updateButton_exercise_11();
 
 
 ---
-### Exercise #11 -- Solution
+### Exercise #10 -- Solution
 
 <div style="font-size: 90%">
 
@@ -3715,7 +3634,7 @@ $s= \sqrt{\frac{(5-23.9)^2+(18-23.9)^2+ \text{ } \dots \text{ } +(29-23.9)^2+(30
 
 
 ---
-### Exercise #12
+### Exercise #11
 
 <div style="font-size: 90%">
 
@@ -3735,7 +3654,7 @@ $s= \sqrt{\frac{(5-23.9)^2+(18-23.9)^2+ \text{ } \dots \text{ } +(29-23.9)^2+(30
 </div>
 
 <style>
-  #countdown_exercise_12{
+  #countdown_exercise_11{
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -3745,77 +3664,77 @@ $s= \sqrt{\frac{(5-23.9)^2+(18-23.9)^2+ \text{ } \dots \text{ } +(29-23.9)^2+(30
     cursor: pointer;
     float: right;
   }
-  #countdown_exercise_12.running {
+  #countdown_exercise_11.running {
     background-color: green;
   }
-  #countdown_exercise_12.finished {
+  #countdown_exercise_11.finished {
     background-color: red;
   }
 </style>
 
-<button id="countdown_exercise_12"></button>
+<button id="countdown_exercise_11"></button>
 
 <script>
 <!--
-const countdown_exercise_12= document.getElementById("countdown_exercise_12");
-const seconds_exercise_12= 30; // seconds_exercise_12
-let timeLeft_exercise_12= seconds_exercise_12;
-let timerInterval_exercise_12= null;
+const countdown_exercise_11= document.getElementById("countdown_exercise_11");
+const seconds_exercise_11= 30; // seconds_exercise_11
+let timeLeft_exercise_11= seconds_exercise_11;
+let timerInterval_exercise_11= null;
 
-function formatTime_exercise_12(seconds_exercise_12) {
-  const minutes = Math.floor(seconds_exercise_12/ 60);
-  const remainingseconds_exercise_12= seconds_exercise_12% 60;
-  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_12).padStart(2, '0')}`;
+function formatTime_exercise_11(seconds_exercise_11) {
+  const minutes = Math.floor(seconds_exercise_11/ 60);
+  const remainingseconds_exercise_11= seconds_exercise_11% 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainingseconds_exercise_11).padStart(2, '0')}`;
 }
 
-function updateButton_exercise_12() {
-  countdown_exercise_12.textContent = formatTime_exercise_12(timeLeft_exercise_12);
+function updateButton_exercise_11() {
+  countdown_exercise_11.textContent = formatTime_exercise_11(timeLeft_exercise_11);
 }
 
-function startTimer_exercise_12() {
-  if (timerInterval_exercise_12=== null) {
-    countdown_exercise_12.classList.add('running');
-    countdown_exercise_12.classList.remove('finished');
-    timerInterval_exercise_12= setInterval(() => {
-      if (timeLeft_exercise_12> 0) {
-        timeLeft_exercise_12--;
-        updateButton_exercise_12();
+function startTimer_exercise_11() {
+  if (timerInterval_exercise_11=== null) {
+    countdown_exercise_11.classList.add('running');
+    countdown_exercise_11.classList.remove('finished');
+    timerInterval_exercise_11= setInterval(() => {
+      if (timeLeft_exercise_11> 0) {
+        timeLeft_exercise_11--;
+        updateButton_exercise_11();
       } else {
-        clearInterval(timerInterval_exercise_12);
-        timerInterval_exercise_12= null;
-        countdown_exercise_12.classList.remove('running');
-        countdown_exercise_12.classList.add('finished');
-        countdown_exercise_12.textContent = "Time's up!";
+        clearInterval(timerInterval_exercise_11);
+        timerInterval_exercise_11= null;
+        countdown_exercise_11.classList.remove('running');
+        countdown_exercise_11.classList.add('finished');
+        countdown_exercise_11.textContent = "Time's up!";
       }
     }, 1000);
   } else {
-    pauseTimer_exercise_12();
+    pauseTimer_exercise_11();
   }
 }
 
-function pauseTimer_exercise_12() {
-  clearInterval(timerInterval_exercise_12);
-  timerInterval_exercise_12= null;
-  countdown_exercise_12.classList.remove('running');
+function pauseTimer_exercise_11() {
+  clearInterval(timerInterval_exercise_11);
+  timerInterval_exercise_11= null;
+  countdown_exercise_11.classList.remove('running');
 }
 
-function resetTimer_exercise_12() {
-  timeLeft_exercise_12= seconds_exercise_12;
-  updateButton_exercise_12();
-  countdown_exercise_12.classList.remove('finished');
-  countdown_exercise_12.classList.remove('running');
-  timerInterval_exercise_12= null;
+function resetTimer_exercise_11() {
+  timeLeft_exercise_11= seconds_exercise_11;
+  updateButton_exercise_11();
+  countdown_exercise_11.classList.remove('finished');
+  countdown_exercise_11.classList.remove('running');
+  timerInterval_exercise_11= null;
 }
 
-countdown_exercise_12.addEventListener("click", () => {
-  if (countdown_exercise_12.classList.contains('finished')) {
-    resetTimer_exercise_12();
+countdown_exercise_11.addEventListener("click", () => {
+  if (countdown_exercise_11.classList.contains('finished')) {
+    resetTimer_exercise_11();
   } else {
-    startTimer_exercise_12();
+    startTimer_exercise_11();
   }
 });
 
-updateButton_exercise_12();
+updateButton_exercise_11();
 -->
 </script>
 
@@ -3826,7 +3745,7 @@ con la media e la deviazione standard (come per tutte le altre variabili in tabe
 con la mediana e il range interquartile (perché la variabile non ha una distribuzione normale) -->
 
 ---
-### Exercise #12 -- Solution
+### Exercise #11 -- Solution
 
 <div style="font-size: 90%">
 

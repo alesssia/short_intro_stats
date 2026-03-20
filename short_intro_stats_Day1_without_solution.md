@@ -419,6 +419,126 @@ If the law of the country is that cars should drive on the right, then we can de
 Ci saranno anche delle formule matematiche, ma non preoccupatevi: andremo a spiegarle e saranno un aiuto per svolgere gli esercizi e in generale capire cosa stiamo facendo (si', ci sono anche degli esercizi!)
 -->
 
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{2 \times (8 - 3 + 5 )}{4}$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{2 \times (8 - 3 + 5 )}{4} = \frac{2 \times 10}{4} = \frac{20}{4} = 5$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - powers (of 2)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{2 \times (8 - 3 + 5 )^2}{4}$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - powers (of 2)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\frac{2 \times (8 - 3 + 5 )^2}{4} = \frac{2 \times 10^2}{4} =  \frac{2 \times 100}{4} = \frac{200}{4} = 50$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - powers (of 2)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - (square) root
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{\frac{2 \times (8 - 3 + 5 )^2}{4}}$
+
+</div>
+
+---
+## Math?!?
+
+<span style="display:block; height:1px;"></span>
+
+
+<img src="./img/normal/panic.gif" img height="400px" align="left" border="4px"/>
+
+<div style="font-size: 80%">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To follow this course, you need to be able to perform the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following operations (usually using a calculator)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - addition, subtraction, multiplication, division
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - powers (of 2)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - (square) root
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\sqrt{\frac{2 \times (8 - 3 + 5 )^2}{4}} = \sqrt{\frac{2 \times 10^2}{4}} =  \sqrt{\frac{2 \times 100}{4}}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $= \sqrt{\frac{200}{4}} = \sqrt{50} \approx \sqrt{49} = 7$
+
+</div>
 
 ---
 ![bg opacity](./img//backgrounds/sampling_bg.png)
@@ -1711,56 +1831,33 @@ Visconti A., *et al.*, *Total serum *N*‐glycans associate with response to imm
 
 
 ---
-## Contingency table
-
-<span style="display:block; height:10px;"></span>
-
-<center>
-<img src="./img/descriptive/Cbt_sex_abstract.png" img height="350px" border="4px"/>
-</center>
-
-<span style="display:block; height:10px;"></span>
-
-<div style="font-size: 50%" align="right">
- 
-Espie. CA, *et al.*, *Randomized Clinical Effectiveness Trial of Nurse-Administered Small-Group Cognitive Behavior Therapy for Persistent Insomnia in General Practice*, Sleep, 2007, doi:10.1186/s12885-023-10511-3
-
-</div>
-
-<!-- SPIEGARE CHE SI TRATTA DI UN RCT E COSA DIAVOLO E' UN RCT -- Useremo questo studio per costruire e capire cos'e' una tabelle di contingenza 
-
- `e una tabella a doppia entrata (con righe e colon- ne) in cui si riportano le frequenze congiunte di due variabili.
--->
-
----
 ### Exercise #6
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^*$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  using the information contained in the abstract
-
-<span style="display:block; height:1px;"></span>
-
-<center>
-<img src="./img/descriptive/Cbt_sex_abstract_numbers.png" img height="100px" border="4px"/>
-</center>
-
-<center>
-
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT |  |  |  |
-| Standard |  |  |  |
-| Total |  |  |  |
-
-</center>
-
-</div>
 
 <div style="font-size: 70%">
 
-$^*$ By convention, relative frequencies are calculated per row
+:question: &nbsp;&nbsp;&nbsp; Complete the table with the correct absolute and relative frequencies$^{(*)}$ using the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   following information 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Out of 279, 230, and 130 healthcare professionals working in medicine, surgery, and* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *other wards (*e.g.*, laboratories and other hospital services), 122, 107, and 51 were*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  non-drinkers, respectively.*
+
+</div>
+
+<div style="font-size: 65%">
+
+<center>
+
+| Ward/Drinking | No |  Yes | Total |
+| ----: | -----: | ----: | ----: |
+| Medicine |   |    |    |
+| Surgery |   |    |  |
+| Others |  |   |  |
+| Total |  |   |  |
+
+</center>
+
+$^{(*)}$ By convention, relative frequencies are calculated per row
 
 </div>
 
@@ -1768,38 +1865,6 @@ $^*$ By convention, relative frequencies are calculated per row
 
 La CBT (in italiano: terapia cognitivo-comportamentale) è una forma di psicoterapia "focalizzata sul problema" e "orientata all'azione". Essa si concentra sul cambiamento delle distorsioni cognitive (come pensieri, convinzioni e atteggiamenti) e sui comportamenti ad esse associati, per migliorare la regolazione emotiva[1][2] e sviluppare adeguate strategie di coping. 
 -->
-
----
-### Exercise #7
-
-<div style="font-size: 80%">
-
-:question: &nbsp;&nbsp;&nbsp; Is the proportion of men and women in the sample similar?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False
-
-:question: &nbsp;&nbsp;&nbsp; Is the proportion of men similar in the two arms?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) True &nbsp;&nbsp;&nbsp;&nbsp; b) False 
-
-<center>
-
-|  | Men | Women | Total |
-| ----: | ----- | ---- | ----|
-| CBT |  |  |  |
-| Standard |  |  |  |
-| Total |  |  |  |
-
-
-</center>
-
-<div>
-
-
-<!-- Le frequenze relative consentono di confrontare la distribuzione di una variabile in campioni di diversa numerosità 
-
-LEGGERE PRIMA DI DARE LA Solution Nel campione, quindi vado a vedere la colonna dei totali, Le donne sono il doppio degli uomini. No, non sono uguali
--->
-
-
 
 ---
 <span style="display:block; height:150px;"></span>
@@ -1843,7 +1908,7 @@ Dispersione o variabilita'  -> Forniscono un’indicazione della dispersione del
 Si usa soprattutto per i dati categorici -->
 
 ---
-### Exercise #8
+### Exercise #7
 
 <span style="display:block; height:1px;"></span>
 
@@ -1884,7 +1949,7 @@ Si usa soprattutto per i dati categorici -->
 
 
 ---
-### Exercise #9
+### Exercise #8
 
 <span style="display:block; height:1px;"></span>
 
@@ -1982,7 +2047,7 @@ $$
 <!-- Somma dei singoli valori diviso il numero di osservazioni  -->
 
 ---
-### Exercise #10
+### Exercise #9
 
 <span style="display:block; height:1px;"></span>
 
@@ -2060,7 +2125,7 @@ Viceversa, una distribuzione asimmetrica negativa `e caratterizzata da una curva
  -->
 
 ---
-### Exercise #11
+### Exercise #10
 
 <div style="font-size: 90%">
 
@@ -2231,7 +2296,7 @@ $s= \sqrt{\frac{(5-23.9)^2+(18-23.9)^2+ \text{ } \dots \text{ } +(29-23.9)^2+(30
 
 
 ---
-### Exercise #12
+### Exercise #11
 
 <div style="font-size: 90%">
 
