@@ -365,6 +365,15 @@ ATTENZIONE ad un ultimo punto: i dati su cui andiamo a testare la nostra ipotesi
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\mu_{\text{c}} - \mu_{\text{i}} = 0$ &nbsp;&nbsp;&nbsp; $\leftarrow$
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $\bar{x}_{\text{c}} - \bar{x}_{\text{i}} = 6.6 - 4.0 = 2.6$
 
+<span style="display:block; height:10px;"></span>
+
+<div align="right">
+
+$2.6 \neq 0$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Can we stop here? &nbsp;&nbsp;&nbsp;
+
+</div>
+
 </div>
 <div>
 
@@ -1294,14 +1303,15 @@ Likely, our sample is too small to determine <br/> with confidence whether to re
 ---
 ### Exercise #8
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 <span style="display:block; height:1px;"></span>
 
 <center>
-<img src="./img/confidence_intervals/nejm.png" img height="140px" border="4px"/>
+<img src="./img/confidence_intervals/nejm.png" img height="160px" border="4px"/>
 </center>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  \bar{p}_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
@@ -1312,22 +1322,19 @@ Likely, our sample is too small to determine <br/> with confidence whether to re
 
 </div>
 
-
-
-<span style="display:block; height:1px;"></span>
-
 <div style="font-size: 50%" align="left">
 
-<br/> Connor, E.M. *et al.*, *Reduction of Maternal-Infant Transmission of Human Immunodeficiency Virus Type 1 with Zidovudine Treatment*, NEJM, 1994
+<br/>Connor, E.M. *et al.*, *Reduction of Maternal-Infant Transmission of Human Immunodeficiency <br/>Virus Type 1 with Zidovudine Treatment*, NEJM, 1994
 
 </div>
 
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  \bar{p}_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 183, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= 40, \text{ } \text{ }  \bar{p}_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \frac{40}{183} = 0.22$ 
@@ -1351,17 +1358,18 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  \bar{p}_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 183, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= 40, \text{ } \text{ }  \bar{p}_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \frac{40}{183} = 0.22$ 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Define a null hypothesis $(\mathcal{H_0})$ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zidovudine is **as effective as** placebo to reduce mother-infant 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\rightarrow$ &nbsp; $\mathcal{H}_0: \pi_\text{c} - \pi_\text{i} = 0$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The rate of mother-to-infant HIV transmission is **independent** of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; zidovudine use
+
 
 </div>
 
@@ -1369,9 +1377,10 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  \bar{p}_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 183, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= 40, \text{ } \text{ }  \bar{p}_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \frac{40}{183} = 0.22$ 
@@ -1385,9 +1394,10 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  \bar{p}_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 183, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= 40, \text{ } \text{ }  \bar{p}_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \frac{40}{183} = 0.22$ 
@@ -1400,9 +1410,10 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  \bar{p}_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 183, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= 40, \text{ } \text{ }  \bar{p}_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \frac{40}{183} = 0.22$ 
@@ -1410,8 +1421,6 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Generate the sampling distribution of the chosen test statistic, 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; assuming $\mathcal{H_0}$ to be true
 
-
-<span style="display:block; height:10px;"></span>
 
 <div class="columns">
 <div>
@@ -1444,15 +1453,15 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{i}}= 180, \text{ } \text{ } \text{ } \text{ } m_{\text{i}}= 13, \text{ } \text{ } \text{ }  \bar{p}_\text{i} = \frac{m_\text{i}}{n_\text{i}} = \frac{13}{180} = 0.07$ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{\text{c}}= 183, \text{ } \text{ }  \text{ } \text{ }  m_{\text{c}}= 40, \text{ } \text{ }  \bar{p}_\text{c} = \frac{m_\text{c}}{n_\text{c}} = \frac{40}{183} = 0.22$ 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Generate the sampling distribution of the chosen test statistic, 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; assuming $\mathcal{H_0}$ to be true
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Generate the sampling distribution assuming $\mathcal{H_0}$ to be true
 
 </div>
 
@@ -1490,9 +1499,10 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{tot_\text{infected}}{total} = \frac{53}{363} = 0.146$
 
@@ -1530,9 +1540,10 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{tot_\text{infected}}{total} = \frac{53}{363} = 0.146$
 
@@ -1592,9 +1603,10 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{tot_\text{infected}}{total} = \frac{53}{363} = 0.146$
 
@@ -1647,9 +1659,10 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{tot_\text{infected}}{total} = \frac{53}{363} = 0.146$
 
@@ -1702,9 +1715,10 @@ non le riporto nelle slide perche' tra poco diventeranno parecchio piene! -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{tot_\text{infected}}{total} = \frac{53}{363} = 0.146$
 
@@ -1763,9 +1777,10 @@ $\chi^2 = \sum \frac{(Observed- Expected)^2}{Expected} = \frac{(13-26.28)^2}{26.
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{tot_\text{infected}}{total} = \frac{53}{363} = 0.146$
 
@@ -1825,16 +1840,15 @@ $\text{df}= (n_\text{rows}-1) \times (n_\text{columns}-1) = 1$
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{tot_\text{infected}}{total} = \frac{53}{363} = 0.146$
-
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:10x;"></span>
 
 <center>
-<img src="./img/hypothesis_testing/chitable.png" img height="190px" border="4px"/>
+<img src="./img/hypothesis_testing/chitable.png" img height="210px" border="4px"/>
 </center>
 
 </div>
@@ -1855,16 +1869,15 @@ I GdL sono numero di righe -1 * numero di colonne -1 -->
 ---
 ## Pearson's $\chi^2$ test
 
-<div style="font-size: 80%" >
+<div style="font-size: 78%" >
 
-:question: &nbsp;&nbsp;&nbsp; Is Zidovudine better than placebo to reduce mother-infant HIV transmission?
+:question: &nbsp;&nbsp;&nbsp; Is zidovudine **not** as effective as placebo in reducing mother-to-infant 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HIV transmission?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\Pi = \frac{tot_\text{infected}}{total} = \frac{53}{363} = 0.146$
-
-<span style="display:block; height:10px;"></span>
+<span style="display:block; height:10x;"></span>
 
 <center>
-<img src="./img/hypothesis_testing/chitable.png" img height="190px" border="4px"/>
+<img src="./img/hypothesis_testing/chitable.png" img height="210px" border="4px"/>
 </center>
 
 </div>
@@ -2200,7 +2213,7 @@ False | $\beta$  |  $1 - \beta$ <br/> Power |
 
 
 <center>
-<img src="./img/hypothesis_testing/power.png" img height="500px" border="4px"/>
+<img src="./img/hypothesis_testing/power.png" img height="500px" border="0px"/>
 </center>
 
 </div>
